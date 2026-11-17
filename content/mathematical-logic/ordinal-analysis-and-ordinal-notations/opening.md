@@ -1,0 +1,13 @@
+Ordinal analysis measures the strength of a formal theory by an ordinal. The model is [Gentzen's consistency proof](/QPV0HNP22S/) of 1936. Gentzen fixed a primitive recursive notation system for the ordinals below [$\varepsilon_0$](/KT50SMH3EC/), the least ordinal $\varepsilon$ with $\omega^\varepsilon = \varepsilon$. He showed that [primitive recursive arithmetic](/WCXH72T8D8/), together with [transfinite induction](/0ZHQMQ2C1N/) along this notation system for quantifier-free formulas, proves the consistency of [Peano arithmetic](/HACXBCM7SS/). Every other step of the proof is finitary. Since $\mathsf{PA}$ does not prove its own consistency, it cannot prove this induction; Gentzen also showed that it proves transfinite induction up to each ordinal below $\varepsilon_0$. So $\varepsilon_0$ is the exact length of induction that $\mathsf{PA}$ cannot reach, its [proof-theoretic ordinal](/C72RBH0CDR/).
+
+The same programme applies to stronger theories, and each gets a larger ordinal. The ordinals soon outgrow Cantor normal form, and naming them needs new notation systems: the [Veblen functions](/JQFAE9S2F4/), which name the ordinals up to the Feferman–Schütte ordinal $\Gamma_0$, the ordinal of predicative analysis; and the ordinal collapsing functions, such as the [Buchholz psi functions](/E7WEFRMQTB/), which use names of uncountable ordinals to name large countable ones. The analysis itself often works with infinitary derivations, which replace the induction axioms by the $\omega$-rule, eliminate cuts, and read off an ordinal bound from the height of the result.
+
+An ordinal analysis gives more than a consistency proof. It yields the functions that the theory proves total, the $\Pi_1$ sentences it proves, and a comparison of theories by a single number.
+
+## What the planned pages will cover
+
+The pages will treat Gentzen's proof in detail, systems of ordinal notations from Cantor normal form to the collapsing functions, infinitary proof theory with the $\omega$-rule, and the proof-theoretic ordinals of the standard theories of arithmetic and analysis.
+
+## What to read meanwhile
+
+For the ordinals, read [ordinal numbers](/0YSCSX5YZC/) and [epsilon nought](/KT50SMH3EC/). For the proof theory, read the [cut-elimination theorem](/AYRZ98Y0NW/) and the opening of Chapter 2.13. The limits that make the analysis necessary are in Chapter 2.11, in [Gödel's second incompleteness theorem](/4PZM5GJTR5/), and the iteration of consistency along ordinals is in [Turing and Feferman progressions](/F7Z4BV2KHD/) and [reflection principles](/NB485KFXKV/). The overview page [ordinal analysis](/C5E5TG8PGP/) gives a short summary.

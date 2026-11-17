@@ -1,0 +1,18 @@
+## History
+
+Reasoning with connectives is old. The Stoic logician Chrysippus, in the third century BC, is often credited with a deductive system for "if", "and" and "or", including the rule now called modus ponens. The modern subject starts with George Boole, who treated logic as algebra in 1847 and in 1854, and with Gottlob Frege, whose *Begriffsschrift* of 1879 gave the first axiomatic system with modus ponens as its rule. Frege's axioms were not independent: Jan Łukasiewicz later showed that one of them follows from the others.
+
+The semantic side came into focus in 1921, when Emil Post and Ludwig Wittgenstein both published truth tables for the connectives. Post used them in his Columbia thesis to prove that the propositional part of *Principia Mathematica* is complete. Paul Bernays had already proved completeness in his habilitation thesis of 1918 under David Hilbert. Hilbert and Wilhelm Ackermann put propositional logic at the start of their textbook of 1928, and Łukasiewicz introduced his bracket-free prefix notation in 1924. The study of small axiom systems grew from the same school: Jean Nicod gave a single axiom in the Sheffer stroke, and Łukasiewicz found a single axiom for the implicational calculus in 1948.
+
+The question of which connectives are enough has a separate line. Charles Sanders Peirce knew around 1880 that NAND alone, and NOR alone, express every truth function, but he did not publish this. Henry Sheffer published the result in 1913, and NAND is now called the Sheffer stroke. Post settled the general question in his monograph *The Two-Valued Iterative Systems of Mathematical Logic* of 1941, which describes every closed class of Boolean functions.
+
+Compactness entered through first-order logic. Kurt Gödel proved the compactness theorem for countable first-order languages in 1930, and Anatoly Maltsev proved the uncountable case in 1936; the propositional theorem is the special case with no quantifiers. William Craig proved his interpolation theorem in 1957, and Roger Lyndon strengthened it in 1959.
+
+The computational side began with clauses. Alfred Horn pointed out the significance of Horn clauses in 1951. Martin Davis and Hilary Putnam used the resolution rule on ground clauses in their procedure of 1960, and John Alan Robinson made resolution a method for first-order logic in 1965. Grigori Tseitin presented his transformation at the Leningrad seminar on mathematical logic in 1966, in the paper "On the complexity of derivation in propositional calculus". Stephen Cook proved in 1971 that satisfiability is NP-complete, and Leonid Levin found the result independently. William Dowling and Jean Gallier published a linear-time algorithm for Horn satisfiability in 1984.
+
+## Further reading
+
+- Elliott Mendelson, *Introduction to Mathematical Logic*, sixth edition (2015). Chapter 1 is the source of the system L used here, with full derivations, the deduction theorem, the Kalmár proof of completeness and independence proofs by matrices.
+- Herbert B. Enderton, *A Mathematical Introduction to Logic*, second edition (2001). Chapter 1 treats the language, unique readability, truth assignments, compactness and functional completeness with care and many exercises.
+- Dirk van Dalen, *Logic and Structure*. Its first chapter covers propositional logic by natural deduction, with a completeness proof by maximal consistent sets that carries over to first-order logic.
+- Raymond M. Smullyan, *First-Order Logic* (1968). The first part develops propositional logic by analytic tableaux and gives short proofs of completeness and compactness.

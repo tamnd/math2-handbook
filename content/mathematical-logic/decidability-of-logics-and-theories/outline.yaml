@@ -1,0 +1,59 @@
+groups:
+  - title: The decision problem and its negative answer
+    intro: >
+      Hilbert asked for a procedure that decides whether a first-order sentence is valid. These entries pose the
+      question, say what it means for a theory to be decidable, and prove that no such procedure exists for full
+      first-order logic, over all structures or over finite ones only.
+    entries:
+      - DJNYM72Z4G
+      - HWC687ES0Q
+      - VA6BNNY2YC
+      - XP6FW2WDWT
+
+  - title: Decidable fragments of first-order logic
+    intro: >
+      Church's theorem leaves room for fragments. A fragment is decidable when its satisfiable sentences have small
+      or well-shaped models: [monadic logic](/SERN6CRVWW/) and the [Bernays-Schönfinkel-Ramsey class](/ZF79MZRQ8V/)
+      have small models, and [two-variable logic](/S7C3C7DJRF/) and the [guarded fragment](/Y7YS1C3GAE/) have
+      models that can be cut down to size.
+    entries:
+      - SERN6CRVWW
+      - ZF79MZRQ8V
+      - S7C3C7DJRF
+      - Y7YS1C3GAE
+
+  - title: Decidable arithmetics
+    intro: >
+      Arithmetic with both $+$ and $\cdot$ is undecidable, but each operation alone gives a decidable theory.
+      [Presburger arithmetic](/4W0E9G7PPV/) is decided by quantifier elimination, Skolem arithmetic by a product
+      decomposition, and Büchi arithmetic by finite automata reading base-$k$ digits.
+    entries:
+      - 4W0E9G7PPV
+      - X86G2FXTPC
+      - NSTECGT93D
+
+  - title: Monadic second-order logic and automata
+    intro: >
+      Monadic second-order logic over words and trees is decided by translating formulas into automata. The three
+      theorems here move from finite words to infinite words to the infinite binary tree, and each step needs a
+      stronger automaton model.
+    entries:
+      - AK66XQ59Z3
+      - YPDXVTH5JR
+      - PXKKP038RG
+
+  - title: Graphs of bounded treewidth
+    intro: >
+      [Courcelle's theorem](/DD4JB8XJ5A/) carries tree automata over to graphs that look like trees, and gives
+      linear-time algorithms for every property that monadic second-order logic can express. Seese's theorem shows
+      that bounded treewidth is also necessary for a decidable monadic theory.
+    entries:
+      - DD4JB8XJ5A
+      - RT898AFHWT
+
+  - title: Transferring undecidability
+    intro: >
+      Most undecidability proofs for theories go through a theory that stays undecidable in every consistent
+      extension. Such a theory, interpreted in another, makes the other undecidable too.
+    entries:
+      - 9JDDFN8PT7

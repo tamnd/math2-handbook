@@ -1,0 +1,39 @@
+groups:
+  - title: From argument to text
+    intro: >
+      A proof is found in scratch work and then written for a reader. The entries describe the steps of writing
+      a proof, the difference between the search and the finished text, and the moves that the logical form of
+      the goal and of the hypotheses dictates. Unpacking definitions is the first of those moves and often the
+      only one a short proof needs.
+    entries:
+      - 8JQHJK94RZ
+      - E97XXFW9MV
+      - 872K5XB580
+      - 41JZ39GE3F
+  - title: Words and formats
+    intro: >
+      Proofs have a small vocabulary of their own: "let", "fix", "suppose", "hence", "it suffices to show". The
+      entries explain what each word commits the writer to, then compare three formats: the paragraph proof, the
+      two-column proof of school geometry and the hierarchically numbered structured proof.
+    entries:
+      - GKMRQCA8CW
+      - P8PCGFASP8
+      - H2W8D7BMSW
+  - title: Detail and style
+    intro: >
+      Every written proof omits steps. The question is which omissions a given reader can fill and which are
+      gaps. The style entry collects the rules on sentences, symbols and displays that make a proof easy to
+      follow.
+    entries:
+      - VYGBV5D8Y4
+      - D5YPYTQ88G
+  - title: The reader's side
+    intro: >
+      Reading a proof well is an active skill: each line is checked against what it claims to follow from, and
+      the reader explains to themselves why it holds. Checking a proof goes further and looks for the case
+      where the argument breaks. The last entry describes the larger unit in which proofs are published, the
+      research paper.
+    entries:
+      - 40GCSM2G56
+      - 4M98ZZNK0E
+      - XZHACQ74C0

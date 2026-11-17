@@ -1,0 +1,13 @@
+A proof interpretation translates the formulas of one theory into formulas of another, and its proofs into proofs, so that what one theory proves the other proves in translation. Interpretations of this kind answer two questions at once. They compare the strength of theories, and they show what information a proof contains beyond the truth of its conclusion.
+
+The first examples translate classical logic into intuitionistic logic. The Gödel–Gentzen [double-negation translation](/HGJVM49PA4/) puts $\neg\neg$ in front of chosen subformulas, so that a formula is classically provable exactly when its translation is intuitionistically provable; it follows that Peano arithmetic is consistent if [Heyting arithmetic](/CK8ZQRN183/) is. Kleene's [realizability](/4H35VQ16DC/) reads an intuitionistic proof of $\forall x\, \exists y\, A(x, y)$ as an algorithm that computes $y$ from $x$. Gödel's [Dialectica interpretation](/HZ17ES9PDY/) of 1958 sends each formula of Heyting arithmetic to a formula $\exists x\, \forall y\, A_D(x, y)$, and each proof to a term of his system T that gives the witness $x$.
+
+A [conservative extension](/N238J43XNE/) proves no new sentences of a given class. Many conservation results come from interpretations. The fragment $\mathrm{I}\Sigma_1$ of Peano arithmetic proves the same $\Pi_2$ sentences as [primitive recursive arithmetic](/WCXH72T8D8/), so a proof in $\mathrm{I}\Sigma_1$ that a function is total gives a primitive recursive bound. The system $\mathrm{WKL}_0$ of second-order arithmetic is conservative over $\mathsf{PRA}$ for $\Pi^0_2$ sentences, which shows that a good part of analysis is finitistically justified in the sense of [Hilbert's program](/P1RW6JWX73/). Applied to actual proofs in analysis, the same methods extract explicit bounds and rates; this work is called proof mining.
+
+## What the planned pages will cover
+
+The pages will treat the negative translations, realizability and the Dialectica interpretation, the main conservation theorems between classical and intuitionistic theories and between fragments of arithmetic, interpretability between theories, and the extraction of programs and bounds from proofs.
+
+## What to read meanwhile
+
+Chapter 2.1 has [conservative extension](/N238J43XNE/), [extension by definitions](/GCK0NN60E4/) and the [relative consistency proof](/X3G0RG2GPZ/), which already uses an interpretation. Chapter 2.10 has [primitive recursive arithmetic](/WCXH72T8D8/) and the [fragments of Peano arithmetic](/T70PYM1F36/), and Chapter 2.7 has [Herbrand's theorem](/VZ21F10WRS/), the oldest result that extracts witnesses from a proof. For the intuitionistic side, see [intuitionistic logic](/Q11N8X99FK/) and the opening of Chapter 2.23.

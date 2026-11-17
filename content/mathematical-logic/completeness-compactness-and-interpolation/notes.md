@@ -1,0 +1,17 @@
+## History
+
+David Hilbert and Wilhelm Ackermann posed the question in their book *Grundzüge der theoretischen Logik* of 1928: does the first-order calculus derive every valid formula? Kurt Gödel answered it in his doctoral thesis at the University of Vienna in 1929 and published the proof in 1930 in *Monatshefte für Mathematik und Physik*. The compactness theorem for countable languages appeared there as a corollary. Anatoly Maltsev proved compactness for uncountable languages in 1936. Mojżesz Presburger proved in 1929 that his arithmetic of addition is complete and decidable, and Gödel's incompleteness theorems of 1931 showed that no such result holds once multiplication is added.
+
+The proof of completeness used today is Leon Henkin's of 1949. Henkin added witness constants, extended a consistent set to a maximal one by Lindenbaum's lemma, and read the model off the closed terms. Adolf Lindenbaum had found the lemma without publishing it; Alfred Tarski published it in 1930 and gave him the credit. Gisbert Hasenjaeger simplified Henkin's proof in 1953. Henkin's method works for languages of any size and gives the bound $\max(|L|, \aleph_0)$ on the size of the model, and Henkin used it again for the theory of types. Later proofs of compactness were purely semantic, through ultraproducts and Łoś's theorem.
+
+Jacques Herbrand proved his theorem in his thesis, *Recherches sur la théorie de la démonstration*, defended at the Sorbonne in 1930, before Gentzen's sequent calculus existed. Alonzo Church and Alan Turing made the notion of an algorithm exact in 1936, and with it the notion of a decidable set of axioms. William Craig proved in 1953, in "On axiomatizability within a system" in the *Journal of Symbolic Logic*, that a theory with a computably enumerable set of theorems has a decidable set of axioms. Carl Hempel discussed the use of the theorem to eliminate theoretical terms in science, and Hilary Putnam criticized this use in a 1965 paper called "Craig's theorem".
+
+Abraham Robinson published his joint consistency theorem in 1956, in a paper on consistency and the theory of definition, and used it for a new proof of Beth's definability theorem. Craig proved the interpolation theorem in 1957, and the two results imply each other by compactness. Roger Lyndon published the signed refinement in 1959, in "An interpolation theorem in the predicate calculus" in the *Pacific Journal of Mathematics*; he was interested in sentences preserved under homomorphic images.
+
+## Further reading
+
+- Herbert B. Enderton, *A Mathematical Introduction to Logic*, second edition (2001). Chapter 2 proves soundness, completeness and compactness for the calculus used in this chapter, and discusses axiomatizable theories and their decidability.
+- Dirk van Dalen, *Logic and Structure*, fifth edition (2013). A compact account of the Henkin proof and of the first applications of compactness, from the side of natural deduction.
+- Wilfrid Hodges, *A Shorter Model Theory* (1997). Compactness and its applications, interpolation and Robinson's theorem, as the tools of model theory.
+- C. C. Chang and H. J. Keisler, *Model Theory*, third edition (1990). The standard reference for the Henkin construction, ultraproducts and interpolation theorems.
+- H.-D. Ebbinghaus, J. Flum and W. Thomas, *Mathematical Logic*, second edition (1994). Completeness, compactness and Herbrand's theorem, with Lindström's characterization of first-order logic at the end.

@@ -1,0 +1,37 @@
+groups:
+  - title: Evidence that is not proof
+    intro: >
+      Pólya's patterns of plausible inference say how a verified consequence or an analogy makes a conjecture
+      more credible, and why one false consequence refutes it. Experimental mathematics does the same work with
+      a computer: it computes, guesses an exact form, and tests the guess at higher precision.
+    entries:
+      - 8DHD3H1CJ9
+      - BPEPTN0TT9
+
+  - title: When evidence misleads
+    intro: >
+      A conjecture checked up to $10^{18}$ can still be false, and a pattern seen in the first five cases often
+      is. These entries say how much a finite check supports a claim, why small numbers agree by coincidence,
+      and what made four famous patterns fail.
+    entries:
+      - JFD3QWCX8Z
+      - 8AFXPXCE3N
+      - A2KSJSQSF6
+
+  - title: From heuristic to conjecture
+    intro: >
+      Some evidence comes from a model rather than from data: treat the primes as random, count parameters
+      against conditions, compare the sizes of terms. Such arguments predict precise statements. Forming a
+      conjecture is the step from data or models to a statement exact enough to be proved or refuted.
+    entries:
+      - VCQQNJ3SEZ
+      - R2T42N5XGK
+
+  - title: Machines and physics as sources
+    intro: >
+      Two further sources of conjectures: programs that search spaces of formulas or objects, and physical
+      systems such as levers, strings and soap films whose laws force a result. Both give candidates, and both
+      leave a proof, or an independent check, still to be done.
+    entries:
+      - D1YQW43N3K
+      - THJV0NFPDQ

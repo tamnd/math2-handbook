@@ -1,0 +1,16 @@
+# The books that the pages cite by ISBN, with the data of their editions (from Open Library).
+"9780122384523": {author: Herbert B. Enderton, title: A Mathematical Introduction to Logic, publisher: Harcourt/Academic Press, year: 2001}
+"9780387905785": {author: Stanley Burris and H. P. Sankappanavar, title: A Course in Universal Algebra, publisher: Springer, year: 1981}
+"9780387942858": {author: Joseph J. Rotman, title: An Introduction to the Theory of Groups, publisher: Springer, year: 1995}
+"9780132413770": {author: Michael Artin, title: Algebra, publisher: Pearson, year: 2010}
+"9780471433347": {author: David S. Dummit and Richard M. Foote, title: Abstract Algebra, publisher: Wiley, year: 2004}
+"9780521655958": {author: Pertti Mattila, title: Geometry of Sets and Measures in Euclidean Spaces, publisher: Cambridge University Press, year: 1999}
+"9780521701464": {author: George S. Boolos, John P. Burgess and Richard C. Jeffrey, title: Computability and Logic, publisher: Cambridge University Press, year: 2007}
+"9780521857840": {author: Peter Smith, title: "An Introduction to Gödel's Theorems", publisher: Cambridge University Press, year: 2007}
+"9780691164076": {author: George Pólya, title: "How to Solve It: A New Aspect of Mathematical Method", publisher: Princeton University Press, year: 2014}
+"9780898715101": {author: Philip Hartman, title: Ordinary Differential Equations, publisher: SIAM, year: 2002}
+"9781108439534": {author: Daniel J. Velleman, title: "How to Prove It: A Structured Approach", publisher: Cambridge University Press, year: 2019}
+"9781305657960": {author: Joseph A. Gallian, title: Contemporary Abstract Algebra, publisher: Cengage, year: 2017}
+"9781447145578": {author: Dirk van Dalen, title: Logic and Structure, publisher: Springer, year: 2012}
+"9781482237726": {author: Elliott Mendelson, title: Introduction to Mathematical Logic, publisher: CRC Press, year: 2015}
+"9783319917542": {author: John M. Lee, title: Introduction to Riemannian Manifolds, publisher: Springer, year: 2019}

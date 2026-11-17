@@ -1,0 +1,17 @@
+## History
+
+Gottlob Frege's *Begriffsschrift* of 1879 gave the first formal language with quantifiers, in a two-dimensional notation, and it allowed quantification over concepts as well as objects. The linear notation with $\forall$ and $\exists$ that we use comes from Peano, Russell and Hilbert. Frege also treated definite descriptions as names, in his *Grundgesetze* of 1893, with a default value when uniqueness fails. Bertrand Russell's paper "On Denoting" of 1905 analysed descriptions away by quantifiers, and *Principia Mathematica* made the analysis part of its formal system. Peter Strawson objected in 1950 that a failed description makes a statement neither true nor false.
+
+The first-order fragment was isolated slowly. Thoralf Skolem introduced Skolem functions in 1920, in his proof of Löwenheim's theorem on countable models, and used prenex forms in that work and in 1922. In 1922 he also proposed to read Zermelo's "definite properties" in set theory as first-order formulas. David Hilbert and Wilhelm Ackermann's book of 1928 presented the first-order part as the "restricted functional calculus", gave the conversion to prenex form, and asked whether its proof system is complete. Kurt Gödel answered yes in his thesis of 1929, and his paper of 1930 extended the result to the calculus with identity. Jacques Herbrand used Skolem functions in 1930 to reduce first-order provability to propositional tautologies.
+
+Hilbert introduced the epsilon operator in the early 1920s as a tool of his programme. Ackermann's dissertation of 1924 used the epsilon-substitution method for a consistency proof of arithmetic, which turned out to cover only a fragment. Hilbert and Paul Bernays proved the two epsilon theorems in the second volume of their *Grundlagen der Mathematik*, in 1939, and Ackermann completed the substitution method for arithmetic in 1940, after Gentzen's work.
+
+Several ideas of the chapter took their final form later. Leon Henkin's completeness theorem of 1950 for the theory of types treated higher-order logic with general models as many-sorted first-order logic, and Hao Wang's paper of 1952 studied the many-sorted calculus as a formal system. Kleene and Mostowski classified arithmetical formulas by their prenex prefixes, which gave the arithmetical hierarchy. Alonzo Church's lambda calculus of the 1930s made renaming of bound variables an explicit rule, and John Alan Robinson's resolution method of 1965 made Skolemization a standard step in automated theorem proving.
+
+## Further reading
+
+- Herbert B. Enderton, *A Mathematical Introduction to Logic*, second edition (2001). Chapter 2 defines first-order languages, terms, formulas, free variables and substitution with full proofs, including unique readability.
+- Elliott Mendelson, *Introduction to Mathematical Logic*, sixth edition (2015). Chapter 2 sets up first-order languages and theories with equality, and proves the prenex normal form theorem.
+- Heinz-Dieter Ebbinghaus, Jörg Flum and Wolfgang Thomas, *Mathematical Logic*. The early chapters treat the syntax of first-order languages, substitution and normal forms with great care.
+- David Hilbert and Paul Bernays, *Grundlagen der Mathematik*, volume 2 (1939). The original source for the epsilon calculus and the two epsilon theorems.
+- Bertrand Russell, "On Denoting", *Mind* (1905). A short paper that gives the analysis of definite descriptions used in this chapter.

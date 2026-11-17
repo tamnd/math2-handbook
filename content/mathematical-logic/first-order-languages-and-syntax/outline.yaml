@@ -1,0 +1,58 @@
+# The order of chapter 2.4. Groups are read in order; entries in a group too.
+groups:
+  - title: Symbols, terms and formulas
+    intro: >
+      A first-order language starts from a signature of constant, function and relation symbols. Terms name
+      elements, atomic formulas apply relation symbols to terms, and the connectives and quantifiers build all
+      other formulas. Each of these sets is defined by induction, so proofs about them go by induction too.
+    entries:
+      - 086QKPF0A6
+      - WDVVEYD6AT
+      - 6D3WA7N2W4
+      - MCZRXR3SVB
+      - HYJ10AF6RT
+
+  - title: Variables, sentences and substitution
+    intro: >
+      A quantifier binds the occurrences of its variable in its scope, and the other occurrences are free. A
+      sentence has no free variables, so only sentences make claims on their own. Substitution puts a term in
+      place of the free occurrences of a variable, and it must not let a quantifier capture a variable of the term.
+    entries:
+      - 9CNGDRAMGC
+      - DKFGQTRYZE
+      - NCDZ969V7X
+
+  - title: Theories, equality and sorts
+    intro: >
+      A theory is a set of sentences. Equality is usually a logical symbol with its own axioms, and these entries
+      show what those axioms give. Many-sorted logic allows several domains, and it reduces to the one-sorted
+      case by a predicate for each sort.
+    entries:
+      - 92SWXST1ZM
+      - Q1494G7FBM
+      - 7TDHDN8P96
+
+  - title: Normal forms
+    intro: >
+      Every formula is equivalent to one with all its quantifiers in front. Replacing the existential quantifiers
+      of such a prefix by new function symbols then gives a universal sentence that is satisfiable exactly when
+      the original is.
+    entries:
+      - CS82V969DE
+      - GCPQGMJYEV
+
+  - title: Terms that choose and terms that describe
+    intro: >
+      First-order syntax has no term for "some $x$ with $A$" or "the $x$ with $A$". Hilbert's epsilon calculus adds
+      the first and proves that it changes nothing in the end. Russell's analysis removes the second by
+      quantifiers, and it shows why the scope of a description matters.
+    entries:
+      - TH5ZKCKN3W
+      - PD2R4XT79Q
+
+  - title: The standard languages
+    intro: >
+      A list of the signatures used for orders, graphs, groups, rings, fields, arithmetic, set theory and vector
+      spaces, with one typical axiom for each. Later chapters refer to these languages by name.
+    entries:
+      - CG8FE46WJC

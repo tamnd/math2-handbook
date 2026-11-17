@@ -1,0 +1,53 @@
+groups:
+  - title: Symbols, conventions and equality signs
+    intro: >
+      Notation fixes symbols, layout rules and letter conventions. Some symbols mean different things in
+      different books, such as $\N$, $\subset$ and $\log$, and the second entry gives the choice of this site for
+      each. Then come the standard shortcuts that are strictly wrong but safe, the family of signs that look like
+      $=$, and a reference glossary.
+    entries:
+      - QKEX4PD029
+      - CSFEP56A7D
+      - JV68YRB5YZ
+      - BCGR3NPPXC
+      - 2PTCAGCWZE
+
+  - title: The words of mathematical English
+    intro: >
+      Proofs use short forms such as "iff" and "wlog", informal words such as "vanish" and "folklore", and
+      judgements such as "trivial" and "clearly". The last entry of the group makes "canonical" and "natural"
+      precise: a construction that needs no arbitrary choice.
+    entries:
+      - 4ZNYMYRRY3
+      - 4M1FGQ0HNZ
+      - Y0HXCJRB9B
+      - F8WNADZFMM
+
+  - title: Almost all, and from some point on
+    intro: >
+      Many true statements hold only outside a small set of exceptions, or only for large values. These entries
+      make "almost all", "generic", "eventually" and "frequently" exact, and show that each phrase hides a pair of
+      quantifiers or a choice of what "small" means.
+    entries:
+      - N1XSAXCQY3
+      - FEQ7WATMHF
+
+  - title: Comparing results
+    intro: >
+      Mathematicians compare results by implication: a stronger statement implies a weaker one. A sharp result
+      cannot be improved in its stated form, and an elementary proof avoids a stated set of advanced tools, as the
+      1948 proofs of the [prime number theorem](/0EHBY5Y84N/) avoided complex analysis.
+    entries:
+      - KCK4AQ469Q
+      - KWQV0G0VJ3
+      - 84SZZBACP3
+
+  - title: Judging objects and proofs
+    intro: >
+      The last words of the chapter are judgements: a pathological object breaks a natural guess, words such as
+      "deep", "slick" and "brute force" rate results and proofs, and a mark such as Q.E.D. or $\blacksquare$
+      closes a proof.
+    entries:
+      - WMBZPYPN2D
+      - STHWD1K9AN
+      - ET9J6R9T5C

@@ -1,0 +1,76 @@
+# The order of chapter 2.3. Groups are read in order; entries in a group too.
+groups:
+  - title: Formulas and their values
+    intro: >
+      The language comes first: variables, connectives and brackets, and the rule that builds formulas from them.
+      Unique readability says that each formula is built in exactly one way, so a value can be defined by one
+      clause per connective. A truth valuation is that value.
+    entries:
+      - 09K9MWD2QQ
+      - TT7WT5HPN9
+      - 6KBJX91N7G
+      - H31CS3HK5P
+
+  - title: Consequence and satisfiability
+    intro: >
+      A formula follows from a set when every valuation that makes the set true makes the formula true. This
+      is the same as saying that the set together with the negation of the formula has no model. Equisatisfiability
+      is a weaker relation that only asks whether two formulas both have models.
+    entries:
+      - 1HK0VYWTV7
+      - QN7M1JCGT9
+      - B37TYWXS74
+
+  - title: Normal forms and clauses
+    intro: >
+      Every formula is equivalent to a conjunction of disjunctions of literals, and to a disjunction of
+      conjunctions. The conjunctive form, written as a set of clauses, is the input of most decision methods.
+      Horn clauses are the special case in which satisfiability is easy.
+    entries:
+      - 0B3D4C8YF2
+      - 0GVDFAY4KW
+      - T3SXVH3ZZC
+      - QR92EZDTKF
+
+  - title: Which connectives are enough
+    intro: >
+      A set of connectives is functionally complete when it expresses every truth function. Post's theorem gives
+      five closed classes of functions and says that a set is complete exactly when it escapes all five.
+    entries:
+      - TDZVCWYJ9F
+      - WGBR7JHBV4
+
+  - title: The Hilbert system
+    intro: >
+      A Hilbert system derives formulas from axiom schemas by modus ponens. These entries set up the system L,
+      prove the deduction theorem that makes derivations practical, and study smaller systems: the implicational
+      calculus with Peirce's law, systems with a single axiom, and the matrix method for showing that an axiom
+      is independent of the others.
+    entries:
+      - 1MGMQX43B8
+      - 9X08XK5RV2
+      - GMSZ75D5WE
+      - ZMVBAY7ZZD
+      - 644XCQAC8C
+      - 729RCBPAM3
+
+  - title: Soundness, completeness and compactness
+    intro: >
+      The three metatheorems tie proof to truth. Soundness says that L proves only tautologies, and completeness
+      says that it proves all of them, also from infinite sets of premises. Compactness follows, and it turns
+      facts about finite objects into facts about infinite ones.
+    entries:
+      - XD629S54CS
+      - 81ZNY1XKYJ
+      - 4X9126SEMM
+      - S7SW0CZZ9V
+
+  - title: Resolution and interpolation
+    intro: >
+      Resolution is a proof system with one rule that works on clauses, and it is the base of practical
+      satisfiability solvers. The Tseitin transformation produces its input in linear size. Craig interpolation
+      closes the chapter with a statement about the variables that a proof needs.
+    entries:
+      - ZDW6N1PGJ7
+      - S367PDDP61
+      - TRS2HY57EG

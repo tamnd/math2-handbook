@@ -1,0 +1,13 @@
+The box of modal logic can be read in many ways, and each reading gives a logic of its own. This chapter collects the main ones: logics of time, knowledge and belief, obligation, conditionals and action. Each uses the Kripke semantics of Chapter 2.20 with worlds and relations chosen to fit the reading, and each has its own axioms and its own puzzles.
+
+Temporal logic began with Arthur Prior's *Time and Modality* of 1957, with operators for "it will always be" and "it has always been". In computer science, Amir Pnueli proposed in 1977 [linear temporal logic](/RMJ56ZPA63/) for reasoning about programs that run forever, with operators such as "next", "until", "always" and "eventually". [Computation tree logic](/F6JA5C5BJX/), from Clarke and Emerson in 1981, quantifies over the branches of possible futures. These logics are the languages of [model checking](/VNY0VXVZ53/), which verifies hardware and software designs against specifications, and their decision procedures rest on automata, as in [Büchi's theorem on S1S](/YPDXVTH5JR/).
+
+Epistemic logic, begun by Jaakko Hintikka's *Knowledge and Belief* of 1962, reads $K_a\varphi$ as "agent $a$ knows $\varphi$". Knowledge is often modelled by [$\mathrm{S5}$](/VC3A2VWXND/), with an equivalence relation for indistinguishable worlds, and belief by $\mathrm{KD45}$. With several agents one defines [common knowledge](/7BCMKF2P7X/), which everyone knows, everyone knows that everyone knows, and so on. Deontic logic, from Georg Henrik von Wright in 1951, treats "it is obligatory that"; its standard system is $\mathrm{KD}$, and puzzles such as Chisholm's paradox show its limits. The [material conditional](/0NMG7W7Q11/) is a poor model of "if", and the logics of [counterfactual conditionals](/ZGYG7WN7EC/) of Stalnaker (1968) and David Lewis (1973) evaluate a conditional at the nearest worlds where its antecedent holds. Logics of agency describe what an agent sees to, and justification logic replaces the box by explicit evidence terms.
+
+## What the planned pages will cover
+
+The pages will treat tense logic and linear and branching temporal logics with their decision procedures and model checking, epistemic and doxastic logic with common knowledge and dynamic epistemic logic, deontic logic and its paradoxes, conditional logics, logics of agency and justification logic.
+
+## What to read meanwhile
+
+Read the openings of Chapters 2.20 and 2.21 for the semantics. The pages [linear temporal logic](/RMJ56ZPA63/), [computation tree logic](/F6JA5C5BJX/), [model checking](/VNY0VXVZ53/), [common knowledge](/7BCMKF2P7X/) and [counterfactual logic](/ZGYG7WN7EC/) cover particular logics, and [strict implication](/5JW54NP52K/) is the oldest modal account of the conditional.

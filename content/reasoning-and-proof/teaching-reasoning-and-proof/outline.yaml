@@ -1,0 +1,55 @@
+groups:
+  - title: The field and the views behind it
+    intro: >
+      Research on teaching proof studies where logic, sets and proof sit in curricula and what learners make
+      of them. The second entry turns to the views of mathematics that teachers and students hold, such as
+      mathematics as a set of rules or as a field of inquiry, and how these views shape what counts as a proof
+      in class.
+    entries:
+      - H5BM68GXS9
+      - 174ES70CS8
+
+  - title: Logic, language, argument and sets
+    intro: >
+      Four entries on the means of proof as students meet them: the logic of conditionals and quantifiers,
+      which students often read in an everyday way; the special language of mathematics, its symbols and its
+      definitions; argument in class, where a proof is built and judged in public; and the sets of the New Math
+      and its Venn diagrams.
+    entries:
+      - K1Y2MAQQ9E
+      - S19WMS43TW
+      - E77B813MT4
+      - 12ZNG0NRY7
+
+  - title: Learning to prove
+    intro: >
+      What convinces a student is a proof scheme: authority, examples, or deduction. The entries describe the
+      transition courses that teach proof at university, Toulmin's layout of an argument as claim, data and
+      warrant, the research on why students fail to prove, and the research on how students and mathematicians
+      read and judge a given proof.
+    entries:
+      - YVNRVXJR68
+      - HQDCSJG379
+      - RVZCSFDB2Y
+      - 5K2969GSWE
+      - 52Y2MW27J0
+
+  - title: Approaches to teaching proof
+    intro: >
+      Three ways of bringing students to proof: the Moore method and inquiry-based learning, where students
+      prove the theorems themselves; school curricula from the NCTM standards to the A level, which set out
+      when and how proof is taught; and generic and pre-formal proofs, which argue through one example, actions
+      or a picture.
+    entries:
+      - WKM6535VHG
+      - 7ZSHDS63QY
+      - SG9XA69J64
+
+  - title: Concept images and new tools
+    intro: >
+      A student's picture of a concept can differ from its definition, and a proof uses the definition. The
+      last entry treats proof assistants such as Lean, Rocq and Isabelle in proof courses, where a program
+      checks every step and the student sees at once which step fails.
+    entries:
+      - C5S2X0WDJ8
+      - KGPHY3F0GC

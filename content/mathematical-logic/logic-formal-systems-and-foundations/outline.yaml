@@ -1,0 +1,77 @@
+# The order of chapter 2.1 (Logic, formal systems and foundations). Groups are read in order; entries in a group too.
+groups:
+  - title: What logic studies
+    intro: >
+      Three overview entries set the scene. The first says what mathematical logic is and how its four
+      branches fit together, the second asks what mathematics rests on, and the third tells how the subject
+      grew from Aristotle and Boole to Gödel and beyond.
+    entries:
+      - DYJ0KGTPMR
+      - EFFRJFW67Y
+      - WP3602P9EH
+
+  - title: Aristotle's syllogistic
+    intro: >
+      The oldest formal logic studies arguments with two premises such as "every $M$ is $P$, every $S$ is $M$,
+      so every $S$ is $P$". These entries give the four sentence forms, the square of opposition that relates
+      them, and the figures and moods that classify the valid arguments. The recurring question is whether
+      "every $S$ is $P$" claims that some $S$ exists.
+    entries:
+      - MZBNX2T6Q6
+      - VYNBSVZ2TH
+      - S4BTTGFR6J
+      - 1TD6HRM5NG
+
+  - title: Formal systems and their rules
+    intro: >
+      A [formal system](/439M8B4DY2/) fixes symbols, formulas, axioms and rules so precisely that a machine
+      can check a derivation. To talk about such a system we need a second language, the metalanguage, and
+      a clear idea of what a [rule of inference](/QPD3X471Q1/) is and when a rule is derivable or merely
+      admissible.
+    entries:
+      - 439M8B4DY2
+      - D9G8M42GKC
+      - QPD3X471Q1
+
+  - title: Consequence in the abstract
+    intro: >
+      Many logics share the same skeleton: a relation $\Gamma \vdash \varphi$ that is reflexive, monotone and
+      closed under cut. The second entry goes one level up and compares whole logics, with institutions,
+      logical frameworks and Lindström's characterization of first-order logic.
+    entries:
+      - J78Y1M4GND
+      - RQXV7PM2WT
+
+  - title: Consistency, completeness and soundness
+    intro: >
+      These are the properties we ask of a theory or a proof system. [Consistency](/VM8TQ70CVJ/) forbids
+      proving both $\varphi$ and $\neg\varphi$, Post's notions do the same job without a negation sign, and
+      [soundness](/4A84VHDTHV/) says that every provable formula is valid. Read the three together and keep
+      the different senses of "complete" apart.
+    entries:
+      - VM8TQ70CVJ
+      - WK2P0E82B4
+      - 4A84VHDTHV
+
+  - title: Comparing and extending theories
+    intro: >
+      A theory can be extended by new symbols and axioms without changing what it says about the old ones;
+      that is a [conservative extension](/N238J43XNE/), and definitions are the main example. When a theory
+      cannot be shown consistent outright, one shows it consistent relative to another. Hilbert's program
+      asked for finitary consistency proofs of all of mathematics, and Gödel's second theorem showed the
+      limits of that hope.
+    entries:
+      - N238J43XNE
+      - GCK0NN60E4
+      - X3G0RG2GPZ
+      - P1RW6JWX73
+
+  - title: Other views of logic
+    intro: >
+      Two entries step outside the usual symbolic presentation. Peirce's [existential graphs](/D3ZS6WHPM1/)
+      do propositional and first-order logic with diagrams, and the entry on logical constants asks which
+      notions count as logical at all, with the answer that they are the ones invariant under permutations
+      of the domain.
+    entries:
+      - D3ZS6WHPM1
+      - 2QQ7Q5SKP8

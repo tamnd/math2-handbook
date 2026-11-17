@@ -1,0 +1,40 @@
+# The order of chapter 2.6, proof systems for first-order logic. Groups are read in order; entries in a group too.
+groups:
+  - title: The Hilbert calculus
+    intro: >
+      The oldest style of proof system has many axioms and one rule, modus ponens. Its two basic metatheorems
+      say when a free variable may be generalized and when a hypothesis may be moved across the arrow, and
+      both are proved by induction on deductions. The restriction on variables in each theorem is where
+      first-order logic differs from propositional logic.
+    entries:
+      - N95HV0VWSM
+      - VKSK35Y52Z
+      - 8M9ZFDR4DH
+  - title: Natural deduction and sequents
+    intro: >
+      Gentzen replaced the axioms by rules that introduce and eliminate each connective and quantifier, so
+      that a formal proof looks like a written one. Fitch's boxes give the same system in a linear layout.
+      The sequent calculus keeps the rules but puts them all on the left and right of a sequent
+      $\Gamma \Rightarrow \Delta$, which makes proofs analysable and leads to cut elimination.
+    entries:
+      - 6KT3BJZ7D1
+      - 2B6XC7XJA8
+      - W72CA3R9MP
+  - title: Refutation methods
+    intro: >
+      A refutation method proves $\varphi$ by showing that $\neg\varphi$ has no model. A tableau breaks the
+      negated goal into simpler pieces until every branch closes; an open branch that never closes is a
+      Hintikka set, and so describes a model. Resolution works on clauses with unification, and it is the
+      base of most automated provers.
+    entries:
+      - WGWBBVE8GX
+      - RJNDEG07R1
+      - DEB3CF4Z2D
+  - title: One logic, many calculi
+    intro: >
+      The systems of the chapter prove the same sentences, and the proof of this runs once around a cycle of
+      translations. The last entry says how each system treats the equality symbol, which needs its own
+      axioms or rules in every calculus.
+    entries:
+      - A9AAHN4BMH
+      - Y90Z13AXY8

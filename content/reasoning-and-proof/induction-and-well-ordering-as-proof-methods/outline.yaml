@@ -1,0 +1,54 @@
+groups:
+  - title: Induction and its equivalents
+    intro: >
+      Ordinary induction proves $P(n)$ for every $n \ge n_0$ from a base case and a step from $n$ to $n + 1$.
+      Strong induction lets the step use every earlier case, and the well-ordering principle says that every
+      nonempty set of natural numbers has a least element. The group ends with the theorem that the three
+      principles prove each other over a small base theory.
+    entries:
+      - 0ASJVEFA9J
+      - 0KMVFSHFGZ
+      - 01BX15HSRR
+      - J2P9FWBP3Q
+
+  - title: Arguing from a least case
+    intro: >
+      Two methods use the [well-ordering principle](/01BX15HSRR/) through a proof by contradiction. A
+      minimal counterexample is a smallest object without the property, and the proof finds a smaller one
+      or shows that it has the property after all. Infinite descent turns each solution of a problem into a
+      smaller solution, which is impossible in the natural numbers.
+    entries:
+      - JGRCNPKNGG
+      - 0EFYCFHYFG
+
+  - title: Making the induction work
+    intro: >
+      Some true statements have induction steps that cannot be proved as they stand. A stronger statement
+      can give a stronger hypothesis; two variables can be handled by nested induction, by induction on the
+      sum or in lexicographic order; and a step by doubling, followed by a step down, can replace the step
+      from $n$ to $n + 1$.
+    entries:
+      - F94KJC2RXP
+      - AABX4YPKRR
+      - QC9FKGZH1V
+
+  - title: Induction beyond the natural numbers
+    intro: >
+      Lists, trees, formulas and strings are defined by base clauses and rules, and structural induction
+      proves a property of all of them with one case per rule. Graphs, sets and polynomials have no such
+      definition, but each has a size in the natural numbers, and induction on that size proves claims about
+      all of them.
+    entries:
+      - 12MQ2NJ29A
+      - AM4GQQMZ3C
+      - B2D8PTFNN1
+
+  - title: Worked cases, right and wrong
+    intro: >
+      The chapter ends with a famous false proof, a famous correct one and a list of errors. The false proof
+      that all horses have the same colour fails at one step, from $1$ to $2$. The tiling of a deficient
+      $2^n \times 2^n$ board by L-trominoes shows how an induction step can be read off a picture.
+    entries:
+      - AJ2FDJJGTH
+      - EXRJ0JF2Q3
+      - V52HDTMPV5

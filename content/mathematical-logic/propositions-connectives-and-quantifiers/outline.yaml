@@ -1,0 +1,96 @@
+# The order of chapter 2.2 (Propositions, connectives and quantifiers). Groups are read in order; entries in a group too.
+groups:
+  - title: Propositions and truth values
+    intro: >
+      A [proposition](/0ZGC7ZESYN/) is a declarative sentence with exactly one truth value, even when we do not
+      know which. [Bivalence](/5DYNDW9526/) is the principle that there are only two values, and it is what
+      makes truth tables possible.
+    entries:
+      - 0ZGC7ZESYN
+      - 5DYNDW9526
+
+  - title: The connectives
+    intro: >
+      Negation, conjunction, disjunction, exclusive or, implication and the biconditional each get an entry
+      with their truth tables, their rules and the ways ordinary English misleads. The last two entries step
+      back: there are $16$ binary [connectives](/QS0XVAN9BG/) in all, and the [Sheffer stroke](/1NNYWRN6B8/)
+      alone can express every one of them.
+    entries:
+      - 029JBBF693
+      - 025YZN3VJW
+      - 0F72FK8EKB
+      - PTMR3P9J6C
+      - 0NMG7W7Q11
+      - 0S6GMNJ62Y
+      - QS0XVAN9BG
+      - 1NNYWRN6B8
+
+  - title: Truth tables, tautologies and equivalence
+    intro: >
+      A [truth table](/05RSK4Q657/) lists the value of a formula under each of the $2^n$ valuations of its
+      variables. A formula true in every row is a [tautology](/05006AJ7DZ/), and two formulas with the same
+      column are [logically equivalent](/0JMR2HM2N2/).
+    entries:
+      - 05RSK4Q657
+      - 05006AJ7DZ
+      - 0JMR2HM2N2
+
+  - title: The laws of propositional logic
+    intro: >
+      The [laws](/A9CSGZNBV5/) are the equivalences used to rewrite formulas: commutative, associative,
+      distributive, absorption and the rest. Four of them get entries of their own, and each of those entries
+      says which direction survives in intuitionistic logic.
+    entries:
+      - A9CSGZNBV5
+      - 0RYYK8PG4S
+      - MP4R7T546Z
+      - 0NFAGWH84K
+      - 09PKJKA6J0
+
+  - title: An implication and its relatives
+    intro: >
+      From $p \to q$ we can form the converse, the inverse and the contrapositive, and only the
+      [contrapositive](/04T1CT7212/) is equivalent to the original. The language of
+      [necessary and sufficient conditions](/09BJQQB3VS/) is the same idea in the words of a theorem.
+    entries:
+      - 09A3N7ZN5G
+      - 04T1CT7212
+      - 09BJQQB3VS
+
+  - title: Rules of inference and fallacies
+    intro: >
+      Four valid argument forms carry most proofs: [modus ponens](/0Y0MQYST0M/), modus tollens, hypothetical
+      syllogism and disjunctive syllogism. The [formal fallacies](/T5BG7Y4J0T/) look like them and fail, each
+      refuted by one row of a truth table. [Vacuous truth](/0V4QXPGJQK/) closes the group: an implication with
+      a false antecedent is true.
+    entries:
+      - 0Y0MQYST0M
+      - 32AQPJQQAM
+      - 7MT8CPCEM4
+      - 6EFJF9NAYX
+      - T5BG7Y4J0T
+      - 0V4QXPGJQK
+
+  - title: Predicates and quantifiers
+    intro: >
+      A [predicate](/0QHEWQD30B/) becomes a proposition when its variables get values or are bound. The
+      quantifiers $\forall$, $\exists$ and $\exists!$ bind them; their negations swap $\forall$ and $\exists$,
+      and the [order of quantifiers](/0FYQMKFE77/) decides whether a witness may depend on the other
+      variables.
+    entries:
+      - 0QHEWQD30B
+      - 0GHS47PDAQ
+      - 0MSRQHCNN9
+      - 0QAJHFGZZJ
+      - 0P3A06QNDP
+      - 05SZQKH75K
+      - 0FYQMKFE77
+
+  - title: Putting statements into symbols
+    intro: >
+      The last two entries use everything before them. [Translating into logical form](/WGZX7GV3PP/) turns a
+      sentence of mathematical English into a formula with the same truth conditions, and the
+      [knights and knaves](/K17GT0KGZF/) puzzles turn a story into a biconditional to be solved by truth table.
+    entries:
+      - WGZX7GV3PP
+      - K17GT0KGZF

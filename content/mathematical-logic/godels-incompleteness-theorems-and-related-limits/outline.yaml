@@ -1,0 +1,69 @@
+groups:
+  - title: Coding syntax in arithmetic
+    intro: >
+      Formulas and proofs are finite strings, so they can be coded by numbers. Once they are, syntactic
+      properties become arithmetical ones: "is a proof of" is decidable and representable in
+      [Robinson arithmetic](/3K1AKGXF8A/), and "is provable" is a $\Sigma_1$ formula. The diagonal lemma then
+      gives sentences that speak about themselves.
+    entries:
+      - MFJXPAF0R0
+      - 6M12VR1GT6
+      - NB2BCZR40F
+      - F6H4STF9RG
+      - 3PRW76471J
+
+  - title: The first incompleteness theorem
+    intro: >
+      A consistent, computably axiomatized theory that contains $\mathsf{Q}$ leaves some sentence undecided. Gödel
+      proved this under the hypothesis of $\omega$-consistency, and Rosser showed that plain consistency is enough.
+      The last entry says what exactly fails: negation completeness.
+    entries:
+      - 4S29X1GTV4
+      - X9WYNYE29C
+      - DH9RQ61GVD
+      - 319P85G2C1
+
+  - title: The second incompleteness theorem
+    intro: >
+      A consistent theory that contains enough arithmetic does not prove the sentence that says it is consistent.
+      The proof formalizes the first theorem inside the theory, and its hypotheses are about how the consistency
+      statement is written.
+    entries:
+      - 4PZM5GJTR5
+      - 4NBAX3VRQ7
+
+  - title: Truth
+    intro: >
+      Provability is definable in arithmetic, but truth is not: no formula defines the set of codes of true
+      sentences. Truth for sentences of bounded complexity is definable, and these partial truth predicates are
+      the tool behind many later arguments.
+    entries:
+      - YRV6SYK2BY
+      - Y2MF1EZAM7
+
+  - title: Löb's theorem and self-reference
+    intro: >
+      A theory proves "if $\varphi$ is provable then $\varphi$" only when it proves $\varphi$. The theorem answers
+      Henkin's question about the sentence that says of itself that it is provable.
+    entries:
+      - 3HD30YG3DG
+      - SBMQ5QHG9W
+
+  - title: Beyond consistency
+    intro: >
+      Consistency is the weakest soundness statement. [Reflection principles](/NB485KFXKV/) assert more, and adding
+      them, or consistency statements, again and again along ordinal notations gives the progressions of Turing and
+      Feferman.
+    entries:
+      - NB485KFXKV
+      - F7Z4BV2KHD
+
+  - title: Length of proofs, weak theories and meaning
+    intro: >
+      The last entries ask what the theorems cost and what they mean. Adding an unprovable sentence can shorten
+      proofs beyond any computable bound; very weak theories can prove their own consistency in a restricted
+      sense; and the theorems are often stated with more force than they have.
+    entries:
+      - 37X5XBDBNX
+      - D8SGFVA3RT
+      - PT61MFHC13

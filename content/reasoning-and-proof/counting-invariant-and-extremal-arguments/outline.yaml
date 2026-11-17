@@ -1,0 +1,52 @@
+groups:
+  - title: The pigeonhole principle
+    intro: >
+      If more than $n$ objects go into $n$ boxes, some box gets two. The general form gives a box with at
+      least $\ceil{m/n}$ of $m$ objects, and the infinite form gives a box with infinitely many. The skill is
+      in choosing the objects and the boxes, and the applications show four classic choices.
+    entries:
+      - 0HGVCWQGY3
+      - 0BY7GN3449
+      - 0FS3RHF6KE
+      - 5EAFG80VX6
+
+  - title: Counting in two ways
+    intro: >
+      Counting one finite set in two ways gives an equation between the two counts. Double counting sums a
+      table of pairs by rows and by columns; the bijection principle says that two finite sets have the same
+      size when a bijection exists; and a combinatorial proof uses both to prove an identity without algebra.
+    entries:
+      - 0F8YBHF2W3
+      - 0GV2573FP4
+      - SS07J9ZAQ7
+
+  - title: Invariants and monovariants
+    intro: >
+      A process of moves is studied through a quantity attached to its states. An invariant does not change,
+      so a target with a different value cannot be reached. A monovariant changes in one direction only, so a
+      process on a well-ordered set of values must stop. Parity and colourings are the most common sources of
+      invariants.
+    entries:
+      - 8NQ190278Y
+      - TP3GC5J08D
+      - H9JT1XNDKQ
+      - 90Q4PK1CST
+
+  - title: Extremal and averaging arguments
+    intro: >
+      A largest or smallest object, when one exists, often has properties that a general object lacks, and
+      the proof shows that a failure of the claim would give a larger or smaller one. An averaging argument
+      says that some element is at least the average, which proves existence without saying which element.
+    entries:
+      - MD3MRG90W4
+      - HXP9VMXV8S
+
+  - title: Existence by counting, probability and diagonals
+    intro: >
+      An object with a property exists if there are more objects than bad ones, or if a random object has
+      the property with positive probability. Diagonalization builds an object that differs from every member
+      of a given list, and it proves that some sets are uncountable and some problems undecidable.
+    entries:
+      - 1KVSS0KRZA
+      - 6YY8W7HG5M
+      - V2H30SA654

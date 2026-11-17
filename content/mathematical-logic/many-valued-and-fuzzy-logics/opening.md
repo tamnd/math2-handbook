@@ -1,0 +1,13 @@
+Classical logic rests on the [principle of bivalence](/5DYNDW9526/): every proposition is true or false. [Many-valued logics](/DWYCKAKXZD/) allow further truth values. Jan Łukasiewicz introduced a three-valued logic in 1920, with a third value for statements about the contingent future, and Emil Post studied $n$-valued systems in 1921. Stephen Kleene's [three-valued connectives](/B7KATP4SEA/) read the middle value as "undefined", as for a computation that has not halted; the [weak Kleene connectives](/BCK5QXQXA6/) make any compound with an undefined part undefined. Belnap's four-valued logic of 1977 adds a value for "both true and false" beside "neither", for reasoning from inconsistent information.
+
+The general tool is the logical matrix: an algebra of truth values for the connectives, with a set of designated values that count as true. A formula is valid if it takes a designated value under every assignment. Matrices also serve classical logic itself, since a matrix that satisfies all but one axiom shows the [independence of that axiom](/729RCBPAM3/). The [truth tables](/05RSK4Q657/) of Chapter 2.2 are the two-valued case, and questions of [functional completeness](/TDZVCWYJ9F/) and [Post's theorem](/WGBR7JHBV4/) have many-valued versions; [Post algebras](/RD2A5Z7E2B/) are their algebraic form.
+
+Infinite-valued Łukasiewicz logic takes values in $[0, 1]$, with $v(\neg\varphi) = 1 - v(\varphi)$ and $v(\varphi \to \psi) = \min(1,\, 1 - v(\varphi) + v(\psi))$. Its axioms were conjectured by Łukasiewicz, and their completeness was proved by Rose and Rosser in 1958 and, algebraically, by C. C. Chang through [MV-algebras](/8T4M7RN9AC/). Fuzzy logic grew from Lotfi Zadeh's [fuzzy sets](/GV9NVFFFXF/) of 1965. In Petr Hájek's mathematical fuzzy logic of 1998, conjunction is interpreted by a continuous t-norm on $[0, 1]$. The three basic t-norms give Łukasiewicz, Gödel and product logic, and Hájek's basic logic $\mathrm{BL}$ is the logic common to all continuous t-norms.
+
+## What the planned pages will cover
+
+The pages will treat logical matrices and consequence, the three-valued logics of Łukasiewicz and Kleene, Post's systems and Belnap's four values, infinite-valued Łukasiewicz logic and MV-algebras, t-norm based fuzzy logics and $\mathrm{BL}$, and logics of probability.
+
+## What to read meanwhile
+
+Read the [principle of bivalence](/5DYNDW9526/), [truth tables](/05RSK4Q657/) and [truth-value gaps](/4CBCWZQZ12/) in Chapter 2.2, and [functional completeness](/TDZVCWYJ9F/) and [independence of axioms](/729RCBPAM3/) in Chapter 2.3. The pages [many-valued logic](/DWYCKAKXZD/), [MV-algebra](/8T4M7RN9AC/) and [fuzzy set](/GV9NVFFFXF/) cover the main notions, and the opening of Chapter 2.27 places these algebras in algebraic logic.

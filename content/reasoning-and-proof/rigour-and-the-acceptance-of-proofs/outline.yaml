@@ -1,0 +1,41 @@
+groups:
+  - title: What rigour is
+    intro: >
+      A proof is rigorous when each step follows from earlier ones by accepted rules, with nothing left that its
+      reader cannot fill in. These entries describe rigour relative to a reader, compare the proofs of daily
+      practice with derivations in a formal system, and follow the standard from Greek geometry to the
+      computer age.
+    entries:
+      - E1PE9R8DBB
+      - 8VZ77R4R8S
+      - 20F7K9RVT6
+
+  - title: Pictures and computers
+    intro: >
+      Two kinds of argument sit at the edges of the usual written proof. A picture can make an identity
+      visible, and it is a proof when a reader can turn it into a general argument. A computer can check a
+      finite list of cases too long for any person, and the proof is then accepted when the reduction, the
+      program and the machine are trusted.
+    entries:
+      - V6ESFEFKJC
+      - MC18C7BMFT
+
+  - title: Length and acceptance
+    intro: >
+      Some proofs are too long for one reader to check, and every proof is accepted by people rather than by a
+      rule. These two entries say how long proofs are checked by division of labour and by later versions, and
+      how refereeing, consensus and the passage of time decide whether a claimed proof is accepted.
+    entries:
+      - RM0S65BHWH
+      - MJ3EHQJJHX
+
+  - title: What proofs are for
+    intro: >
+      A proof does more than certify a statement. Mathematicians prove known theorems again to gain
+      understanding or new methods; Jaffe, Quinn and Thurston argued in 1993 and 1994 about what speculation
+      and proof each contribute; and Erdős's Book describes the ideal of a proof that explains as well as
+      convinces.
+    entries:
+      - KNQDDN6PT2
+      - K3M3TEX7SJ
+      - A4RJYP79A7

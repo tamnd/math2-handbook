@@ -1,0 +1,48 @@
+groups:
+  - title: What a proof is
+    intro: >
+      The area page gives a map of the whole volume. The next two entries say what counts as a proof, a finite
+      chain of justified steps, and why only deduction proves, while checking cases and guessing explanations only
+      suggest. Forty prime values of $n^2 + n + 41$ in a row still prove nothing about all $n$.
+    entries:
+      - SGSVYFDSYK
+      - 0B94TKFQJX
+      - 5V35SGEN1T
+
+  - title: How results are stated
+    intro: >
+      A proved statement gets a label, such as theorem, lemma or corollary, that tells the reader its role. Its
+      content is a conclusion that holds under stated hypotheses. These entries show how to read a statement and
+      how to test each hypothesis by dropping it and looking for a counterexample.
+    entries:
+      - KK5F0F03ZW
+      - W48XN2MEM9
+
+  - title: Axioms and conjectures
+    intro: >
+      A theory starts from primitive terms and axioms and proves everything else. At the other end are statements
+      that are believed but not proved. The two entries show where proofs start, and how a conjecture becomes a
+      theorem, like [Fermat's Last Theorem](/0Y5X3SDBCZ/), or falls to a counterexample.
+    entries:
+      - GD2JBXJV5Z
+      - WMEMMHZ3BH
+
+  - title: Why mathematicians prove, and how they work
+    intro: >
+      A proof does more than verify. It explains, communicates, leads to new results and puts results in order.
+      The second entry describes the wider method: how concepts are formed, how problems are chosen and how
+      results are tested before a proof exists.
+    entries:
+      - ENY0GKRJS8
+      - 3FJ3XMV9KD
+
+  - title: Examples, generalization and classification
+    intro: >
+      Mathematicians learn from examples and non-examples, pass from cases to general notions, and sort objects
+      into lists up to equivalence with invariants. The last entry contrasts two styles of research: solving hard
+      single problems and building general theories.
+    entries:
+      - F3NNR77WKP
+      - 976RZZCT1H
+      - 9HQ3TADPA8
+      - Z29HM45R29

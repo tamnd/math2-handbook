@@ -1,0 +1,43 @@
+groups:
+  - title: What a fallacy is
+    intro: >
+      A mathematical fallacy is an argument that looks valid and reaches a false or unjustified conclusion. The
+      entry separates fallacies from paradoxes, from true results that only look surprising, and from howlers
+      that reach a true answer by a wrong method.
+    entries:
+      - S2BW0FDHV8
+  - title: Rules used outside their range
+    intro: >
+      Many algebraic fallacies apply a rule that is true only under a hypothesis that the argument drops:
+      cancelling a factor that may be $0$, taking $\sqrt{a^2} = a$ for negative $a$, using $(a^b)^c = a^{bc}$ for
+      complex numbers, or treating a divergent series or an improper integral as an ordinary sum. Each entry
+      shows the false step and the hypothesis that would make it valid.
+    entries:
+      - V7601AG5G3
+      - 75ZEQ21AG2
+      - KDXKVT5K1E
+  - title: Figures that mislead
+    intro: >
+      A diagram can suggest an incidence or an equal area that is not there. The classic proof that every triangle
+      is isosceles and the missing square puzzle both rest on a figure that is drawn wrongly by a small amount.
+    entries:
+      - 5CJ4KD4D96
+  - title: Errors of logic
+    intro: >
+      These errors are independent of the subject matter. An argument assumes what it is to prove, reverses an
+      implication, generalizes from examples, swaps the order of quantifiers, or treats one-way steps as
+      equivalences. Each has a valid form close to it, and the entries set the two side by side.
+    entries:
+      - JPHE53PABT
+      - J7KFCFQRBT
+      - ZX6ERT3SW7
+      - CRW82NARQV
+      - 641ZP4RA5S
+  - title: Errors in practice
+    intro: >
+      Errors also occur in published work by strong mathematicians, and some of them took years to find. The
+      last entry describes the rhetorical substitutes for a proof, such as citing an unchecked authority or
+      waving at a step.
+    entries:
+      - 1CV4HTA6C8
+      - D8A1K052XV

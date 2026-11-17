@@ -1,0 +1,51 @@
+# The order of chapter 2.5. Groups are read in order; entries in a group too.
+groups:
+  - title: Structures and satisfaction
+    intro: >
+      A structure gives a domain and a meaning to each symbol of a signature. Tarski's satisfaction relation then
+      says, clause by clause, when a formula holds under an assignment of elements to its variables. Truth of a
+      sentence is the case where the assignment does not matter.
+    entries:
+      - 983GZBQYT4
+      - 2RBQPV02AS
+      - K7XDVK5854
+
+  - title: Models and validity
+    intro: >
+      A model of a theory is a structure in which all its sentences are true. A valid formula is satisfied in
+      every structure under every assignment. Logical consequence, satisfiability and validity are three ways of
+      saying the same thing about classes of models.
+    entries:
+      - MVCH6N9SNW
+      - 5SDS9T8E7J
+
+  - title: Three basic lemmas
+    intro: >
+      Three lemmas are used in almost every later proof. The coincidence lemma says that only the free variables
+      and the symbols that occur matter. The substitution lemma says that substituting a term has the same
+      effect as changing the assignment, and isomorphism invariance says that isomorphic structures satisfy the
+      same formulas.
+    entries:
+      - FM580NZ9W6
+      - A7S460KHBM
+      - NDTJ2E895C
+
+  - title: Structures made of terms
+    intro: >
+      The closed terms of a signature form a domain of their own, the Herbrand universe. In a Herbrand structure
+      each term names itself, and for universal sentences without equality these structures are enough to decide
+      satisfiability.
+    entries:
+      - NFW38QJ3A7
+      - HKW429DSDK
+
+  - title: Games, definability and a puzzle
+    intro: >
+      Truth can also be defined by a game between a verifier and a falsifier, and for first-order logic the game
+      gives the same answer as Tarski's clauses. A formula with free variables defines a relation on a structure,
+      and automorphisms show when a relation cannot be defined. The drinker paradox closes the chapter with a
+      valid sentence that sounds false.
+    entries:
+      - D45Z7HETDA
+      - 1DQ1M6ZWS4
+      - 8BMQTZZEWB

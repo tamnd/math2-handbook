@@ -1,0 +1,13 @@
+Propositional proof complexity asks how long proofs of propositional tautologies must be. Every tautology has a proof in any complete [propositional calculus](/09K9MWD2QQ/), and a [truth table](/05RSK4Q657/) check always works, but a truth table has $2^n$ rows for $n$ letters. The question is whether some proof system always has short proofs, of length polynomial in the size of the tautology.
+
+Stephen Cook and Robert Reckhow made this precise in 1979. A proof system is a polynomial-time algorithm that checks proofs, and it is polynomially bounded if every tautology has a proof of polynomial length. They showed that a polynomially bounded proof system exists exactly when NP equals [co-NP](/5HWR2NK8N1/). So lower bounds for stronger and stronger proof systems are a route towards separating complexity classes, and in particular towards the [P versus NP](/MFN5GYZH5Z/) problem.
+
+The systems studied form a ladder. Near the bottom is [resolution](/ZDW6N1PGJ7/), which works with clauses and is the basis of most programs that test [satisfiability](/3QKF32ZAKN/). Above it are bounded-depth Frege systems, then Frege systems, which are the textbook [Hilbert systems](/1MGMQX43B8/), and extended Frege systems, which may introduce abbreviations for formulas. Cutting planes reasons with linear inequalities over the integers. The first major lower bound was Armin Haken's theorem of 1985: the formulas that express the [pigeonhole principle](/0HGVCWQGY3/) for $n + 1$ pigeons and $n$ holes need resolution refutations of exponential size. Samuel Buss showed in 1987 that the same formulas have proofs of polynomial size in Frege systems. No superpolynomial lower bound is known for Frege systems, and this is the central open problem of the field.
+
+## What the planned pages will cover
+
+The pages will define proof systems and polynomial simulation, treat resolution and its lower bounds through the pigeonhole and [Tseitin formulas](/S367PDDP61/), the size–width method and feasible interpolation, and survey bounded-depth Frege, Frege, extended Frege, cutting planes and algebraic systems. They will also explain the link with bounded arithmetic.
+
+## What to read meanwhile
+
+Chapter 2.3 has the starting points: the [Hilbert system](/1MGMQX43B8/), [resolution](/ZDW6N1PGJ7/), whose [soundness and completeness](/DH1P95R390/) are proved on a separate page, and [Craig interpolation for propositional logic](/TRS2HY57EG/), which is behind feasible interpolation. The page on [proof complexity](/1Q046J0AW2/) summarizes the subject, and the problem of [satisfiability](/QN7M1JCGT9/) gives the algorithmic side. The opening of Chapter 2.18 describes the theories of arithmetic that correspond to these proof systems.

@@ -1,0 +1,47 @@
+# The order of chapter 2.7, completeness, compactness and interpolation. Groups are read in order; entries in a group too.
+groups:
+  - title: Soundness and completeness
+    intro: >
+      Soundness says that the Hilbert calculus proves only valid consequences; completeness says that it
+      proves all of them. The proof of completeness goes through Henkin's method: extend a consistent set to a
+      maximal consistent set with witnesses, and read a model off its closed terms. The model existence
+      theorem is the result, and Gödel's completeness theorem is a corollary.
+    entries:
+      - AVD7T7J063
+      - SC0BSJ3GT6
+      - RY8KRKR097
+      - G0DTR159RN
+      - WQ1ZE255SF
+  - title: Compactness
+    intro: >
+      A set of sentences has a model as soon as each finite subset has one. This one fact gives nonstandard
+      models of arithmetic, infinite models of theories with large finite models, and proofs that classes such
+      as finite groups, torsion groups, connected graphs and well-orders are not first-order.
+    entries:
+      - 1NR3HAWG9D
+      - PES0S9XQZ5
+  - title: Axiomatizable theories
+    intro: >
+      A theory with a decidable set of axioms has a computably enumerable set of theorems, and Craig's theorem
+      gives the converse. A complete theory of this kind is decidable.
+    entries:
+      - 3ANXZC3BEG
+      - 6AN62NQ8AN
+  - title: Herbrand's theorem and interpolation
+    intro: >
+      Herbrand's theorem reduces the validity of an existential sentence to a propositional tautology among
+      its ground instances. Craig's interpolation theorem finds, between $\varphi$ and a consequence $\psi$, a
+      sentence in their common vocabulary; Lyndon's version also respects the signs of relation symbols, and
+      Robinson's joint consistency theorem is the same fact in the language of models.
+    entries:
+      - VZ21F10WRS
+      - E2CBFNAVZY
+      - BRDT1BT7WW
+      - R6AN38DNBD
+  - title: Two kinds of completeness
+    intro: >
+      The completeness of a logic and the completeness of a theory are different properties. The last entry
+      sets Gödel's completeness theorem beside his incompleteness theorems and explains why they do not
+      conflict.
+    entries:
+      - 28AX3A4N86

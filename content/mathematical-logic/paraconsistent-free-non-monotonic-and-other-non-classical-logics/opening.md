@@ -1,0 +1,15 @@
+This chapter gathers logics that each keep most of classical logic and change one principle, to fit a particular kind of reasoning: reasoning from inconsistent information, about things that may not exist, or towards conclusions that may later be withdrawn.
+
+Paraconsistent logics reject the principle of [explosion](/TTKZGJEEK7/), by which a contradiction implies every statement. In classical logic an inconsistent theory proves everything and is useless, but real bodies of information, such as large databases or early versions of a scientific theory, may contain contradictions and still be worth reasoning with. Stanisław Jaśkowski gave a first system in 1948, and Newton da Costa developed a hierarchy of systems from the 1960s. Graham Priest's logic of paradox $\mathrm{LP}$ uses three values and allows [truth-value gluts](/WH94DG6D3Q/), statements that are both true and false; the view that some contradictions are true is called dialetheism. A [paraconsistent logic](/C7YWCR87QJ/) need not give up the [law of noncontradiction](/MP4R7T546Z/) as a theorem, only the step from a contradiction to everything.
+
+Free logic, studied by Karel Lambert and others, drops the assumption that every name denotes something in the domain, so that "Pegasus does not exist" can be true. It bears on the treatment of [definite descriptions](/PD2R4XT79Q/) and of partial functions, as in [partial logic](/F5SP7HQFFS/). [Connexive logic](/NQFYY76BSM/) adds Aristotle's thesis $\neg(\neg p \to p)$ and Boethius' thesis, principles that classical logic rejects.
+
+Non-monotonic logics model reasoning in which a conclusion may be withdrawn when more information arrives, such as "birds fly, Tweety is a bird, so Tweety flies", which fails once one learns that Tweety is a penguin. Classical [consequence relations](/J78Y1M4GND/) are monotonic, so such reasoning needs new tools. Raymond Reiter's default logic and John McCarthy's circumscription both appeared in 1980, and Kraus, Lehmann and Magidor gave in 1990 an abstract theory of non-monotonic consequence. The chapter also covers the logic of natural language, combinations of logics, and [quantum logic](/2E9DMB7A6Q/), which Birkhoff and von Neumann proposed in 1936 to describe the propositions of quantum mechanics.
+
+## What the planned pages will cover
+
+The pages will treat explosion and the main paraconsistent systems, free and partial logics, connexive logic, default logic, circumscription and the theory of non-monotonic consequence, quantum logic, and general methods for combining logics.
+
+## What to read meanwhile
+
+In Chapter 2.1, read [consistency](/VM8TQ70CVJ/), the [consequence relation](/J78Y1M4GND/) and [abstract logical systems](/RQXV7PM2WT/), which say what changing a logic means. The pages [explosion](/TTKZGJEEK7/), [paraconsistent logic](/C7YWCR87QJ/), [truth-value gaps](/4CBCWZQZ12/), [partial logic](/F5SP7HQFFS/) and [connexive logic](/NQFYY76BSM/) cover particular systems, and [generalized quantifiers](/MFV98WTF4G/) in Chapter 2.8 bear on the logic of natural language.

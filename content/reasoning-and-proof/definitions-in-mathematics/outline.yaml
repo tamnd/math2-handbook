@@ -1,0 +1,30 @@
+groups:
+  - title: What a definition is and what it must prove
+    intro: >
+      A definition gives a new term an exact meaning in known terms; it is a stipulation, not a claim. Yet each
+      kind of definition carries a proof obligation: a recursion needs the recursion theorem, a definition by
+      abstraction needs an equivalence relation, and a rule on classes needs a proof that it does not depend on
+      the representative chosen.
+    entries:
+      - 8ZCZ3HW91Z
+      - B60DBNF77S
+      - HNGZEBKVY2
+
+  - title: One object, several descriptions
+    intro: >
+      A notion often has several definitions that pick out the same objects, and proving that they agree is a
+      theorem. A definition that says "the $x$ such that ..." needs existence and uniqueness, and when strict
+      uniqueness fails, a weaker uniqueness "up to" an equivalence relation is often what is true.
+    entries:
+      - NZ42PS2P1A
+      - 5P955TVSS2
+      - CBC72TX3NQ
+
+  - title: Where definitions start and how they change
+    intro: >
+      Not every term can be defined: a theory starts from primitive notions, such as point and line, fixed only
+      by axioms. The last entry asks why definitions take the form they do, from the exclusion of $1$ from the
+      primes to the repairs of the definition of a polyhedron that Lakatos described.
+    entries:
+      - QMQEJKFEYZ
+      - S1R1VD31BS

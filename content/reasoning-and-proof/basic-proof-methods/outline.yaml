@@ -1,0 +1,51 @@
+groups:
+  - title: The map and the direct method
+    intro: >
+      The chapter opens with a map of the methods, sorted by the logical form of the goal. Then come the two
+      moves that start most proofs: assume the hypothesis and reason forward, and let $x$ be an arbitrary
+      element. Almost every later method ends in a [direct proof](/0NTF6DMVAP/) of some changed goal.
+    entries:
+      - G9JFJGY4TQ
+      - 0NTF6DMVAP
+      - CX38X989TB
+
+  - title: Indirect proofs
+    intro: >
+      Two methods start from the negation of the conclusion. A proof by contrapositive proves "not $Q$
+      implies not $P$" and ends at a definite statement. A proof by contradiction assumes the negation and
+      reaches any contradiction at all. The two are easy to confuse, and the entries say when each one fits.
+    entries:
+      - 0BB5TPGQ1N
+      - 0J0XBKG64S
+
+  - title: Splitting the goal
+    intro: >
+      Some goals are proved in parts. A proof by cases covers every possibility with finitely many cases,
+      and a biconditional is two implications, or a cycle of implications when a list of statements is to
+      be shown equivalent.
+    entries:
+      - 0WCP0PVET6
+      - TFQ1845T84
+
+  - title: Existence and uniqueness
+    intro: >
+      An existence statement is proved by naming a witness and checking it, or by showing that a witness
+      must exist without naming it. The second kind of proof is valid in classical mathematics and gives
+      less information. Uniqueness is a separate claim with its own proof: two objects with the property are
+      equal.
+    entries:
+      - 01XM7JEKHY
+      - JZQVJ9XT63
+      - GQHHNV79PA
+
+  - title: Counterexamples, shortcuts and impossibility
+    intro: >
+      One instance refutes a universal claim, and no number of instances proves one. A symmetry can cut a
+      proof by cases down to one case, when the statement really has that symmetry. The forward-backward
+      method is a way to find a proof, not a way to write it. The chapter ends with proofs that no object or
+      method of a given kind exists.
+    entries:
+      - 0ED72CTBNP
+      - Y7NE0E6PCV
+      - V8ZB838JY5
+      - 6F55216R53

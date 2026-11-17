@@ -1,0 +1,48 @@
+groups:
+  - title: The language and the weakest theories
+    intro: >
+      Formal arithmetic starts with a language for $0$, successor, addition, multiplication and order, and with
+      theories that have no induction at all. [Robinson arithmetic](/3K1AKGXF8A/) has finitely many axioms and
+      proves every true numerical equation, and still fails to prove simple general laws such as $0 + x = x$.
+    entries:
+      - D8SD54M5PN
+      - 3K1AKGXF8A
+      - Q5MT8WY7JM
+
+  - title: Peano arithmetic and quantifier complexity
+    intro: >
+      [Peano arithmetic](/HACXBCM7SS/) adds induction for every formula. To compare it with its parts, formulas
+      are sorted by their quantifiers: $\Delta_0$ formulas have only bounded quantifiers, and $\Sigma_n$ and $\Pi_n$
+      formulas have $n$ alternating blocks of unbounded quantifiers in front.
+    entries:
+      - HACXBCM7SS
+      - GE43CSZTS9
+
+  - title: What Robinson arithmetic proves and represents
+    intro: >
+      Weak as it is, Robinson arithmetic proves every true $\Sigma_1$ sentence and represents every recursive
+      function. These facts, with Gödel's $\beta$-function for coding finite sequences, are the arithmetic behind
+      the incompleteness theorems.
+    entries:
+      - 69234Z1V00
+      - BJF29XET83
+      - BM6P0C2AC2
+
+  - title: Fragments between Robinson and Peano arithmetic
+    intro: >
+      Between $\mathsf{Q}$ and $\mathsf{PA}$ lie theories that restrict induction to a class of formulas, or that
+      avoid quantifiers altogether. Each has its own class of provably total functions. Each $\mathrm{I}\Sigma_n$
+      with $n \ge 1$ is finitely axiomatizable, and that is why $\mathsf{PA}$, the union of the strictly increasing
+      chain, is not.
+    entries:
+      - WCXH72T8D8
+      - 2JD80TE553
+      - T70PYM1F36
+      - M5WNB181T7
+
+  - title: True arithmetic
+    intro: >
+      Above all the axiomatized theories sits the set of all sentences true in the natural numbers. It is
+      complete, and by the results of this and the next chapter it has no computable axiomatization.
+    entries:
+      - DX0KPMH4QZ

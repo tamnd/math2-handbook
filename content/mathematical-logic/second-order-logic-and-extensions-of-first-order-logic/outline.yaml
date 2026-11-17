@@ -1,0 +1,46 @@
+# The order of chapter 2.8, second-order logic and extensions of first-order logic. Groups are read in order; entries in a group too.
+groups:
+  - title: Second-order logic and its two semantics
+    intro: >
+      Second-order logic adds variables for relations and quantifiers over them. In the full semantics a
+      relation variable ranges over all relations on the domain, and the logic describes the natural numbers
+      and the real numbers up to isomorphism, at the price of completeness, compactness and Löwenheim-Skolem.
+      In Henkin's semantics it ranges over a family of relations that satisfies the comprehension schema, and
+      the logic becomes many-sorted first-order logic.
+    entries:
+      - G6X7SZSNC5
+      - KWEJFK5943
+      - 5GS6DRJ5SY
+  - title: Higher orders and Frege's arithmetic
+    intro: >
+      Relations of relations give third-order logic, and the types go on from there. In the full semantics
+      nothing new is gained: every higher-order sentence reduces to a second-order one. Frege's theorem shows
+      what second-order logic can do with one extra principle, that the number of $F$ equals the number of $G$
+      exactly when $F$ and $G$ are equinumerous.
+    entries:
+      - K40YJX8K1G
+      - J36EHBHF6J
+  - title: Monadic second-order logic
+    intro: >
+      Allowing only quantifiers over sets keeps enough power to express parity of length, connectivity and
+      colourings. On words it defines exactly the regular languages, and the link with automata makes many of
+      its theories decidable.
+    entries:
+      - 3WHQFSHR58
+  - title: Branching, independence and dependence
+    intro: >
+      A first-order prefix lets each existential variable depend on every universal variable before it. The
+      Henkin quantifier, independence-friendly logic and dependence logic each allow a variable to depend on
+      fewer, in different notations. All three express exactly the existential second-order properties.
+    entries:
+      - KMNVEGS34N
+      - DPMKT2KRB8
+      - DNAPTJ98WD
+  - title: Generalized and plural quantifiers
+    intro: >
+      A Lindström quantifier is any isomorphism-closed class of structures, such as "infinitely many",
+      "uncountably many" or "most". Plural quantification reads monadic second-order variables as "some
+      things", without sets, and bears on the question whether second-order logic is logic.
+    entries:
+      - MFV98WTF4G
+      - DZVEFDYYZX

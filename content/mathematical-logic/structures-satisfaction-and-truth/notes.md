@@ -1,0 +1,18 @@
+## History
+
+Models were used before there was a formal notion of structure. Eugenio Beltrami gave a model of the hyperbolic plane inside Euclidean geometry in 1868, and David Hilbert used models in 1899 to prove that axioms of geometry are independent. Alessandro Padoa's method of 1900 for showing that a primitive notion is not definable from the others is an early form of the automorphism method of this chapter.
+
+Alfred Tarski gave the recursive definition of satisfaction in his 1933 monograph on the concept of truth in formalized languages, published in Polish, with a German translation in 1935. He defined satisfaction of formulas by sequences of objects, which play the part of assignments, and truth of a sentence as satisfaction by every sequence. He observed that satisfaction depends only on the terms of the sequence that correspond to the free variables, which is the coincidence lemma. His adequacy condition, convention T, asks that a definition of truth imply every instance of "'snow is white' is true if and only if snow is white". Tarski also studied the definable sets of real numbers in a paper of 1931.
+
+Tarski's definition of 1933 was for languages with one intended meaning. Truth relative to an arbitrary structure became the standard notion with the model theory of the 1950s: Tarski's papers "Contributions to the theory of models" of 1954 and 1955 named the subject, and the form used today appears in the paper of Tarski and Robert Vaught of 1957, "Arithmetical extensions of relational systems". Structures were then also called relational systems, and Anatoly Mal'cev called them algebraic systems. Meanwhile the link between validity and proof had been settled: Hilbert and Wilhelm Ackermann asked in 1928 whether every valid formula is provable, Kurt Gödel answered yes in his dissertation of 1929, and Alonzo Church and Alan Turing proved in 1936 that no algorithm decides validity.
+
+Jacques Herbrand introduced the domain of closed terms in his thesis of 1930, "Recherches sur la théorie de la démonstration", in the proof of the theorem that now bears his name. The name "Herbrand universe" became standard in automated theorem proving after John Alan Robinson's paper of 1965 on resolution, and Maarten van Emden and Robert Kowalski showed in 1976 that the meaning of a logic program is its least Herbrand model.
+
+Game interpretations of the quantifiers go back to remarks of Charles Sanders Peirce. Paul Lorenzen developed dialogical logic in the 1950s, and Jaakko Hintikka developed game-theoretic semantics in the 1960s and 1970s. Leon Henkin introduced branching quantifiers in 1961, and Hintikka and Gabriel Sandu introduced independence-friendly logic in 1989. The drinker principle became widely known through Raymond Smullyan's puzzle book *What Is the Name of This Book?* of 1978.
+
+## Further reading
+
+- Herbert B. Enderton, *A Mathematical Introduction to Logic*, second edition (2001). Section 2.2 defines structures, satisfaction and truth, and proves the coincidence, substitution and homomorphism results with many examples of definability.
+- Wilfrid Hodges, *A Shorter Model Theory*. The first chapters treat structures, definable sets and automorphisms from the point of view of a working model theorist.
+- Heinz-Dieter Ebbinghaus, Jörg Flum and Wolfgang Thomas, *Mathematical Logic*. A careful account of satisfaction, the coincidence and substitution lemmas and isomorphism invariance.
+- Alfred Tarski, "The concept of truth in formalized languages", in *Logic, Semantics, Metamathematics* (1956). The English translation of the 1933 monograph, where satisfaction was first defined.

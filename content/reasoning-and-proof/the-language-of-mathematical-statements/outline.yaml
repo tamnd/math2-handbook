@@ -1,0 +1,38 @@
+groups:
+  - title: Statements and the words that join them
+    intro: >
+      Mathematical English mixes words and symbols under stricter rules than ordinary English. A statement is a
+      sentence with exactly one truth value; an open sentence such as $x > 2$ becomes one only when $x$ is fixed
+      or quantified. The connectives "and", "or", "not" and "but" build longer statements, and the mathematical
+      "or" is inclusive.
+    entries:
+      - 661V0DH7V3
+      - S9MHMRAX88
+      - 12QQ51VK01
+
+  - title: Conditionals and quantifiers
+    intro: >
+      Most theorems have the form "if $P$, then $Q$", often with "for every" or "there is" in front. These two
+      entries give the many English forms of a conditional, including "only if", "necessary" and "sufficient",
+      and show how quantifiers are written, hidden and bounded.
+    entries:
+      - FA6YZGR2SS
+      - EGTZPA6QH3
+
+  - title: Negation, existence and uniqueness
+    intro: >
+      To prove a statement false, or to argue by contradiction, you must state its negation, and five rules push
+      "not" inward through the connectives and quantifiers. Statements of the form "there is exactly one" are
+      proved in two parts: existence and uniqueness.
+    entries:
+      - K930V33BSC
+      - ACSC75R7R5
+
+  - title: Where ordinary language misleads
+    intro: >
+      Words such as "a", "the", "any" and "or", the scope of "not", and the grouping of spoken formulas can each
+      give a sentence two readings. The Wason selection task shows how often careful readers still misread a
+      plain conditional.
+    entries:
+      - 8BZPKYF912
+      - 7GYZJ2MGY9

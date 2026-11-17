@@ -1,0 +1,52 @@
+groups:
+  - title: What a heuristic is
+    intro: >
+      A heuristic is a question or a suggestion that often leads to an idea and never guarantees one. The first
+      entry separates heuristics from algorithms and from proofs. The second gives Pólya's plan for a whole
+      solution, in four phases, with a list of questions for each phase.
+    entries:
+      - 6KCEWEP4WA
+      - DYD57G2Y5Z
+
+  - title: Changing the size of the problem
+    intro: >
+      Three heuristics move between a problem and its relatives: a similar problem ([analogy](/7KDT0R1HF2/)), a
+      smaller class of cases ([specialization](/FTBJX4G51S/)) and a larger one
+      ([generalization](/8NJ0VN9Z97/)). The inventor's paradox explains why the larger problem is sometimes the
+      easier one, as when a stronger induction hypothesis makes an induction go through.
+    entries:
+      - 7KDT0R1HF2
+      - FTBJX4G51S
+      - 8NJ0VN9Z97
+      - FVRKDXBJF6
+
+  - title: Starting from the goal
+    intro: >
+      When the goal is clear, ask what would come just before it. Working backwards is the analysis and
+      synthesis of Greek geometry. An auxiliary problem is the general form of the same move: solve a related
+      problem first, because its solution leads to the solution of the given one.
+    entries:
+      - 3QTB9S1THS
+      - DYSJB93V11
+
+  - title: Adding, splitting and changing
+    intro: >
+      These heuristics act on the problem itself. Add an element that is not in the statement, such as a line,
+      a variable or a function. Split the problem into parts and put the partial results together. Drop or
+      change a condition. Or draw a figure and choose names and coordinates that show the structure.
+    entries:
+      - 8TKKRAXKFN
+      - KEZPDNM2NH
+      - KT5SASGTQ5
+      - 6CVYB413ER
+
+  - title: Discovery beyond single rules
+    intro: >
+      The last entries look at discovery as a whole. Lakatos describes how counterexamples change a theorem and
+      its concepts. Intuition guides the search and can mislead it. Poincaré and Hadamard report on sudden ideas
+      after long work. Problem posing makes new problems from solved ones.
+    entries:
+      - 79P9CTRN0V
+      - 4BT08RE4CR
+      - XMGGTNSTYC
+      - Y896GWYF8A
