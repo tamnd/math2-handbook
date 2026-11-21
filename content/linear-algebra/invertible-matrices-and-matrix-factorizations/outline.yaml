@@ -1,0 +1,63 @@
+# The order of chapter 3.4, invertible matrices and matrix factorizations. Groups are read in order; entries in a group too.
+groups:
+  - title: Inverses and their first rules
+    intro: >
+      A square matrix is invertible when some matrix undoes it from both sides. The first entries give the
+      definition, the formula for the inverse of a $2 \times 2$ matrix, the rule $(AB)^{-1} = B^{-1}A^{-1}$,
+      and the fact that makes inverses of square matrices easy to check: one of the two products $AB = I$ and
+      $BA = I$ already gives the other.
+    entries:
+      - 0EB9N0S33C
+      - 8XWC7RKNN1
+      - 0S4WTRE9GG
+      - 0753Y2X5K6
+
+  - title: Elementary matrices and row reduction
+    intro: >
+      Each row operation is multiplication on the left by an [elementary matrix](/01REXW3WWE/). This turns
+      Gauss-Jordan elimination into matrix algebra. A square matrix is invertible exactly when it row reduces
+      to $I_n$, and reducing $[A \mid I_n]$ computes $A^{-1}$ at the same time. The last entry shows how an
+      inverse solves $Ax = b$ for every right-hand side at once.
+    entries:
+      - 01REXW3WWE
+      - 1ZK55FS2BF
+      - 0Z83DHFMYM
+      - 3RQX3T70NX
+
+  - title: The invertible matrix theorem
+    intro: >
+      For an $n \times n$ matrix over a field, about twenty conditions turn out to say the same thing: pivots,
+      solutions of linear systems, columns, rows and the linear map $x \mapsto Ax$ all give tests for
+      invertibility. Triangular matrices are the case where the test can be read off the diagonal.
+    entries:
+      - ACDFDABVQK
+      - 7X1B65CTG4
+
+  - title: Groups of matrices and transvections
+    intro: >
+      The invertible $n \times n$ matrices form a group, $\mathrm{GL}_n(F)$, and those of determinant $1$ form
+      the normal subgroup $\mathrm{SL}_n(F)$. The row-replacement matrices $I + cE_{ij}$, called transvections,
+      generate $\mathrm{SL}_n(F)$; adding one diagonal matrix gives all of $\mathrm{GL}_n(F)$.
+    entries:
+      - 0FCHE902D7
+      - 0V9PMN0RBH
+      - 0DTCBCKEJP
+      - YSS4XNY9RC
+
+  - title: Factorizations from elimination
+    intro: >
+      Gaussian elimination, read as matrix algebra, factors a matrix. Without row exchanges it gives $A = LU$;
+      done block by block it gives the Schur complement and a formula for the inverse of a block matrix. The
+      Sherman-Morrison-Woodbury formula, which updates an inverse after a low-rank change, is a consequence.
+    entries:
+      - 0RKG5YW66Y
+      - 6HWFBXYPZP
+      - MDZDEFE53C
+
+  - title: Equivalence of matrices
+    intro: >
+      If row and column operations are both allowed, every $m \times n$ matrix of rank $r$ can be brought to the
+      form $\begin{pmatrix} I_r & 0 \\ 0 & 0 \end{pmatrix}$. So the rank is the only invariant of a matrix under
+      $A \mapsto PAQ$.
+    entries:
+      - 0CMHSGTWXB

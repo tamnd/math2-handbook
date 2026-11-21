@@ -1,0 +1,47 @@
+# The order of chapter 3.7, direct sums, complements and quotient spaces. Groups are read in order; entries in a group too.
+groups:
+  - title: Direct sums and products
+    intro: >
+      A space is the [internal direct sum](/0XYYT5KNTX/) of subspaces when each vector splits into pieces from
+      them in exactly one way. The [external direct sum](/0S7W6EG32V/) builds such a space from spaces that are
+      not inside a common one, and the [direct product](/0EX2HPXPJ6/) allows all families of coordinates, not
+      only the finitely supported ones. For finitely many factors the two constructions agree.
+    entries:
+      - 0XYYT5KNTX
+      - 0S7W6EG32V
+      - 0EX2HPXPJ6
+  - title: Complements and projections
+    intro: >
+      A complement of $U$ in $V$ is a subspace $W$ with $V = U \oplus W$. Every subspace has one, but it is
+      almost never unique. Choosing a complement is the same as choosing a projection, a linear map $P$ with
+      $P^2 = P$, whose image is $U$ and whose kernel is $W$.
+    entries:
+      - 0M83V17KHX
+      - 0P9T8WHNMH
+      - 033DA1WE8Y
+  - title: Quotient spaces
+    intro: >
+      The quotient $V/U$ is the set of cosets $v + U$, with the operations inherited from $V$. It needs no
+      choice, its dimension is $\dim V - \dim U$, and a linear map that vanishes on $U$ passes to it in exactly
+      one way.
+    entries:
+      - 0BR3FY5Q8M
+      - 0SXDQ6TN00
+      - 0ZERJX6PH6
+  - title: The isomorphism theorems
+    intro: >
+      The three isomorphism theorems are the same as for groups, and their proofs come from the universal
+      property. The first says $V/\ker T \cong \operatorname{im} T$. The second gives the Grassmann formula for
+      $\dim(U + W)$, and the third says that quotients can be taken in stages.
+    entries:
+      - 0MTBGVZ4XJ
+      - 0APN65D6Y6
+      - 07RB3EMBWW
+  - title: Codimension and exact sequences
+    intro: >
+      The codimension of $U$ is $\dim V/U$. It measures how many independent linear conditions cut out $U$,
+      and it stays finite in many infinite-dimensional cases. Exact sequences record kernels and images along a
+      chain of maps, and over a field every short exact sequence splits.
+    entries:
+      - JJCGJ1EGCQ
+      - 946YAZNYKX

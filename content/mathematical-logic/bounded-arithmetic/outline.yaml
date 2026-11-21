@@ -1,0 +1,38 @@
+# The order of chapter 2.18, bounded arithmetic. Groups are read in order; entries in a group too.
+groups:
+  - title: Theories and definable sets
+    intro: >
+      Bounded arithmetic restricts induction to formulas in which every quantifier is bounded by a term.
+      The first entry defines $\mathsf{I}\Delta_0$ and Buss's theories $S^i_2$ and $T^i_2$. The sets
+      definable by bounded formulas are exactly those in the linear-time hierarchy, and Parikh's theorem
+      bounds the witnesses of every $\forall \exists$ theorem of $\mathsf{I}\Delta_0$ by a polynomial.
+    entries:
+      - A2CFPP8JMN
+      - FYGWNXETVJ
+      - YPQPC1WJMV
+  - title: Feasible functions and witnessing
+    intro: >
+      Cook's theory $\mathsf{PV}$ has a function symbol for every polynomial-time function, given by
+      limited recursion on notation. Buss's witnessing theorem shows that the $\Sigma^b_1$-definable
+      functions of $S^1_2$ are exactly the polynomial-time functions. The theorem of Krajíček, Pudlák and
+      Takeuti links a collapse of the theories to a collapse of the polynomial hierarchy.
+    entries:
+      - FMM44KFZQT
+      - RH4R7GTTAX
+      - YP7KE8E6DC
+  - title: Propositional translations and the pigeonhole principle
+    intro: >
+      The Paris–Wilkie translation turns a bounded formula with a new relation symbol into a family of
+      constant-depth propositional formulas, and proofs into short proofs. The pigeonhole principle is the
+      main test case: its strength in weak theories matches the size of its propositional proofs.
+    entries:
+      - ZVD982MVST
+      - NJ18EZ5JBC
+  - title: Separation and approximate counting
+    intro: >
+      Whether the theories $S^i_2$ and $T^i_2$ are all different is open, and a separation is expected to
+      be as hard as questions of complexity theory. Jeřábek's approximate counting, based on the dual weak
+      pigeonhole principle, shows what bounded arithmetic can say about the sizes of sets.
+    entries:
+      - PEJQDHHX8E
+      - 65K2S22DGZ

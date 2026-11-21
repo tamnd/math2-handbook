@@ -1,0 +1,79 @@
+# The order of chapter 3.11, eigenvalues, the characteristic polynomial and the minimal polynomial. Groups are read in order; entries in a group too.
+groups:
+  - title: Eigenvalues, eigenvectors and eigenspaces
+    intro: >
+      An eigenvector of an endomorphism $T$ is a nonzero vector $v$ that $T$ only stretches,
+      $Tv = \lambda v$, and $\lambda$ is its eigenvalue. The eigenvectors for one eigenvalue,
+      together with $0$, form the eigenspace, the kernel of $T - \lambda I$. The set of
+      eigenvalues is the spectrum, and it depends on the field: a rotation of the plane has
+      none over $\R$ and two over $\C$.
+    entries:
+      - 0BQAA2BK3Q
+      - 0N6960W0BV
+      - 0G0RFPG8HR
+      - 0XPX5NC67E
+  - title: The characteristic polynomial
+    intro: >
+      The eigenvalues of an $n \times n$ matrix $A$ are the roots of the monic polynomial
+      $p_A(t) = \det(tI - A)$ of degree $n$. Similar matrices have the same characteristic
+      polynomial, so it is defined for an endomorphism of a finite-dimensional space. The last
+      entry of the group turns the theory into a procedure for small matrices.
+    entries:
+      - 0VSSPAFM2C
+      - C98TZ6ZAXC
+      - 053QVHF6N7
+      - 7JJE96MZQY
+  - title: Trace, determinant and the coefficients
+    intro: >
+      The coefficients of $p_A$ are, up to sign, the sums of the principal minors of $A$ of each
+      size. The two extreme ones give the trace and the determinant, and when $p_A$ splits these
+      are the sum and the product of the eigenvalues, counted with multiplicity.
+    entries:
+      - 0FRYPZ6D0X
+      - 0NMXDCNNKR
+      - 0C2F40MEBC
+  - title: Independence and multiplicities
+    intro: >
+      Eigenvectors for distinct eigenvalues are linearly independent, so the sum of the
+      eigenspaces is direct. Each eigenvalue has two multiplicities: the algebraic one, its
+      multiplicity as a root of $p_A$, and the geometric one, the dimension of its eigenspace.
+      The geometric multiplicity never exceeds the algebraic one, and the gap is what can
+      prevent a matrix from being diagonalizable.
+    entries:
+      - 0HNMFG8F8K
+      - 0FY42N02DV
+      - 099TWVJ909
+  - title: Existence and related eigenvalue problems
+    intro: >
+      Over an algebraically closed field every endomorphism of a nonzero finite-dimensional
+      space has an eigenvalue, and Axler's proof of this uses no determinants. Over $\R$ there
+      is always an invariant subspace of dimension $1$ or $2$. The group ends with two
+      companions of the eigenvalue problem: the products $AB$ and $BA$, and eigenvectors that
+      multiply from the left.
+    entries:
+      - 08CJB2NQ92
+      - KAV44BRV77
+      - MCXV71BY74
+      - 32M8VY9A1M
+  - title: Polynomials in an endomorphism and the minimal polynomial
+    intro: >
+      A polynomial $f$ can be evaluated at $T$, and $f(T)$ has the eigenvalues $f(\lambda)$.
+      In finite dimension some nonzero polynomial kills $T$, and the polynomials that kill $T$
+      form an ideal of $F[x]$. Its monic generator is the minimal polynomial $m_T$, which divides
+      every annihilating polynomial and has the eigenvalues as its roots.
+    entries:
+      - 0E3MV6E6MG
+      - 0PBN8VEKY8
+      - 03NDVCSHSB
+      - 0VTAD25A3G
+      - 0QF4ZEFG52
+  - title: The Cayley-Hamilton theorem
+    intro: >
+      Every square matrix over a commutative ring satisfies its own characteristic polynomial,
+      $p_A(A) = 0$. So $m_A$ divides $p_A$, and in turn $p_A$ divides a power of $m_A$. The
+      theorem also gives $A^{-1}$ and every power $A^k$ as polynomials in $A$ of degree less
+      than $n$.
+    entries:
+      - 0F765KFC2J
+      - 093X6MN6Y6
+      - R4CPYXFJEQ

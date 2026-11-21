@@ -1,0 +1,72 @@
+# The order of chapter 3.3, matrices and the operations on them. Groups are read in order; entries in a group too.
+groups:
+  - title: Matrices and their sizes
+    intro: >
+      An $m \times n$ matrix is a rectangular array of $mn$ entries from a ring or field. The square matrices,
+      with $m = n$, include the zero matrix and the identity matrix $I_n$, which play the parts of $0$ and $1$.
+    entries:
+      - 0VD9ZSWWJG
+      - 0JXZKX526R
+      - 4KY5AWGMW5
+      - 6NHZRCKJNW
+  - title: Sums and products
+    intro: >
+      Matrices of the same size add entry by entry. A matrix times a vector is a combination of its columns,
+      and the product $AB$, defined when $A$ has as many columns as $B$ has rows, has the entries
+      $\sum_k a_{ik} b_{kj}$. The product is associative but not commutative.
+    entries:
+      - 0Y7H3SAVA1
+      - 0PDVQEP0ZC
+      - 032Q9FB8MT
+      - 073E4XC016
+      - 0P506SPZP2
+  - title: The matrix ring and its simplest members
+    intro: >
+      The $n \times n$ matrices over a ring $R$ form the matrix ring $M_n(R)$, which for $R \neq 0$ is not commutative when
+      $n \ge 2$. Inside it sit the scalar matrices $cI$, which commute with everything when $R$ is commutative, the diagonal matrices,
+      which multiply entry by entry on the diagonal, and the upper triangular matrices, which are closed under
+      products.
+    entries:
+      - AB2MD5CD13
+      - 067NKSBEWT
+      - 044JNC7ZAA
+      - 0N4XY7Z3NN
+  - title: Transpose and symmetry
+    intro: >
+      The transpose $A^{\mathsf T}$ swaps rows and columns, and it reverses products:
+      $(AB)^{\mathsf T} = B^{\mathsf T} A^{\mathsf T}$. Symmetric matrices satisfy $A^{\mathsf T} = A$ and
+      skew-symmetric ones $A^{\mathsf T} = -A$. Over $\C$ the conjugate transpose $A^*$ takes the place of the
+      transpose, and the Hermitian matrices, $A^* = A$, take the place of the symmetric ones.
+    entries:
+      - 09DXWYRD43
+      - 09GK5PS824
+      - 0VR671PHE5
+      - 0PBY4E9GQF
+      - 0DXKE10PHF
+      - 0P17NGQQMQ
+  - title: Blocks
+    intro: >
+      Cutting a matrix along rows and columns gives a block matrix, and block matrices multiply by the usual
+      rule with blocks in place of entries, as long as the cuts line up. A block diagonal matrix acts on each
+      block separately.
+    entries:
+      - 0ASDFEQS6P
+      - 001T5FJDC1
+  - title: The trace
+    intro: >
+      The trace of a square matrix is the sum of its diagonal entries. It is linear, and
+      $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ even when $AB$ and $BA$ have different sizes.
+    entries:
+      - 0XC1RDBY7A
+      - 0Y4NF1DRKD
+  - title: Matrices defined by equations
+    intro: >
+      Some matrices are named by an equation they satisfy: nilpotent, $N^k = 0$; idempotent, $P^2 = P$;
+      involutory, $A^2 = I$. Commuting matrices satisfy $AB = BA$. The matrix units $E_{ij}$, with a single
+      $1$, are the building blocks of all matrices and the main tool for proofs about commuting.
+    entries:
+      - 07BSPZPSMF
+      - 0KCE8CG86P
+      - NH2QE3671N
+      - 8G3X8MPG7E
+      - 4H93XF4RVH

@@ -1,0 +1,56 @@
+# The order of chapter 2.12, natural independence results and fast-growing functions. Groups are read in order; entries in a group too.
+groups:
+  - title: Termination games
+    intro: >
+      Three processes on finite objects that always stop, although Peano arithmetic cannot prove it.
+      Goodstein sequences rewrite numbers in hereditary base notation, and the hydra games cut heads
+      from finite trees. Each step lowers an ordinal below $\varepsilon_0$, or below a much larger ordinal
+      for the Buchholz hydra, and that is the proof of termination.
+    entries:
+      - XQMNJF241J
+      - C028FF4TWM
+      - 9APRFM0G7F
+  - title: Ramsey-type statements
+    intro: >
+      The strengthened finite Ramsey theorem asks for a homogeneous set that is large, with at least
+      as many elements as its least element. This small change turns a theorem of $\mathsf{PA}$ into one that
+      $\mathsf{PA}$ cannot prove. The Kanamori-McAloon principle gives a second statement of the same strength
+      with regressive colourings.
+    entries:
+      - 4P2BAT6YC3
+      - 509ZWA0R26
+      - NM5WYBK6BG
+  - title: Trees and graphs
+    intro: >
+      Finite forms of Kruskal's tree theorem and of the graph minor theorem bound the length of a sequence
+      of trees or graphs that grow by one at each step. These statements go far beyond $\mathsf{PA}$: they
+      are unprovable in $\mathsf{ATR}_0$ and in $\Pi^1_1\text{-}\mathsf{CA}_0$.
+    entries:
+      - 12XRGBWH59
+      - WXNTPQGJ38
+  - title: Methods of proof
+    intro: >
+      Two tools prove the unprovability results. An indicator is a function that is large exactly on
+      the intervals that contain models of a theory. The provably total functions of a theory form a class that
+      a fast-growing function can escape, and then the theory cannot prove that function total.
+    entries:
+      - JWTZ8NVVGK
+      - Z742YPHPNS
+  - title: Hierarchies of functions
+    intro: >
+      Ordinal-indexed hierarchies measure the strength of a theory by growth rate. The fast-growing
+      hierarchy $f_\alpha$ and the Hardy hierarchy $H_\alpha$ are linked by $H_{\omega^\alpha} = f_\alpha$, and
+      the functions below $\varepsilon_0$ are exactly the bounds on what $\mathsf{PA}$ proves total. The slow-growing
+      hierarchy $g_\alpha$ grows much more slowly and depends strongly on the fundamental sequences.
+    entries:
+      - R6ZC4BJGXV
+      - X8RKXQASR9
+      - VDF6R9EVJ2
+  - title: Worms and the general picture
+    intro: >
+      Beklemishev's worm principle comes from provability logic and is again true but unprovable in
+      $\mathsf{PA}$. The last entry gathers the examples under one heading, concrete incompleteness, and
+      states what they have in common.
+    entries:
+      - MHDZGDNEPS
+      - E2H655A7BS

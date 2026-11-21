@@ -1,0 +1,67 @@
+# The order of chapter 3.14, inner product spaces. Groups are read in order; entries in a group too.
+groups:
+  - title: Inner products
+    intro: >
+      An inner product is a map with three axioms: linear in the first slot, conjugate symmetric and positive
+      definite. Over $\R$ the dot product is the model; over $\C$ the second factor carries a conjugate, so that
+      $\ip{x}{x}$ is a sum of squared moduli. An inner product space is a vector space together with one chosen
+      inner product, and the same space can carry many.
+    entries:
+      - 0NB0AWGJBW
+      - 0QVNCJXRY3
+  - title: Length and the two inequalities
+    intro: >
+      The inner product gives every vector a length $\norm{x} = \sqrt{\ip{x}{x}}$. The
+      [Cauchy-Schwarz inequality](/0RFWW56Y22/) bounds $\abs{\ip{x}{y}}$ by $\norm{x}\norm{y}$, and the
+      [triangle inequality](/SRN4T2G6AM/) follows from it, so the length is a norm and $\norm{x - y}$ is a
+      distance.
+    entries:
+      - 0MFJJV97RJ
+      - 0RFWW56Y22
+      - SRN4T2G6AM
+  - title: The norm and the inner product determine each other
+    intro: >
+      Every induced norm satisfies the parallelogram law, and the polarization identity recovers the inner
+      product from the norm. Together they say which norms come from inner products, and they show that a
+      linear map that keeps lengths also keeps inner products.
+    entries:
+      - 026HPGYGS4
+      - 05FKHRT0B4
+  - title: Right angles
+    intro: >
+      Two vectors are orthogonal when their inner product is $0$. The Pythagorean theorem holds in every inner
+      product space, but its converse holds only over $\R$: over $\C$ the identity
+      $\norm{x + y}^2 = \norm{x}^2 + \norm{y}^2$ detects only $\operatorname{Re}\ip{x}{y} = 0$.
+    entries:
+      - 0Y2X7P2WB7
+      - 0BVTDM872V
+  - title: Orthonormal families and coordinates
+    intro: >
+      An orthonormal family is made of unit vectors at right angles. In an orthonormal basis each coordinate is
+      one inner product, $v = \sum_i \ip{v}{e_i} e_i$. Bessel's inequality bounds the squared coordinates of a
+      vector on any orthonormal family by $\norm{v}^2$, and Parseval's identity is the case of equality, for a
+      basis.
+    entries:
+      - 0RW9TNNT87
+      - 0S9GGTR0EX
+      - 09DZ8CD1AK
+      - 0RBT5PB74K
+      - 047RFCNVSK
+  - title: Making a basis orthonormal
+    intro: >
+      The [Gram-Schmidt process](/0VT6P0GNQR/) subtracts from each vector its components along the earlier
+      directions and then normalizes. It keeps the spans of the first $j$ vectors, and it proves that every
+      finite-dimensional inner product space has an orthonormal basis, and that every orthonormal family extends
+      to one.
+    entries:
+      - 0VT6P0GNQR
+      - 0Y85GYEGSF
+  - title: The Gram matrix and linear forms
+    intro: >
+      The [Gram matrix](/00SPJSDT3Z/) of a family holds all its inner products. It is Hermitian and positive
+      semidefinite, invertible exactly when the family is independent, and its determinant is a squared volume.
+      The Riesz representation theorem writes each linear form as $\ip{\cdot}{u}$ for one vector $u$, which
+      depends antilinearly on the form over $\C$.
+    entries:
+      - 00SPJSDT3Z
+      - 04GYPXDXNH

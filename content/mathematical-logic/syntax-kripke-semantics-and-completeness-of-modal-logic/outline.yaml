@@ -1,0 +1,62 @@
+# The order of chapter 2.20, syntax, Kripke semantics and completeness of modal logic. Groups are read in order; entries in a group too.
+groups:
+  - title: The modal language and Kripke semantics
+    intro: >
+      A modal formula adds the box $\square$ and the diamond $\lozenge$ to propositional logic. A Kripke model
+      reads them over a set of worlds with an accessibility relation: $\square\varphi$ holds at $w$ when
+      $\varphi$ holds at every world that $w$ sees. These entries fix the language, the truth clauses, and the
+      three levels of validity: in a model, on a frame, and on a class of frames.
+    entries:
+      - C3RZY20ETK
+      - NGHWZ9Y7ZV
+      - XBCYFDPS2F
+  - title: Normal modal logics and their axioms
+    intro: >
+      A normal modal logic contains the axiom $\mathrm{K}$ and is closed under necessitation, and the
+      formulas valid on any class of frames form one. The axioms $\mathrm{T}$, $\mathrm{D}$, $\mathrm{B}$,
+      $\mathrm{4}$ and $\mathrm{5}$ are valid on a frame exactly when its relation is reflexive, serial,
+      symmetric, transitive or Euclidean.
+    entries:
+      - D1TJYZZDCY
+      - G989VP2NGP
+      - FDFQFWPM4X
+  - title: The standard systems
+    intro: >
+      Adding axioms to $\mathsf{K}$ gives the familiar logics $\mathsf{T}$, $\mathsf{D}$, $\mathsf{K4}$,
+      $\mathsf{S4}$, $\mathsf{S5}$ and $\mathsf{B}$, each the logic of one class of frames. The entries
+      compare them, reduce their iterated modalities, and end with the strict implication of Lewis, from
+      which the subject began.
+    entries:
+      - XVYMEZKH7R
+      - N60RVXSA5W
+      - VC3A2VWXND
+      - 2QPT4KCM0Q
+      - 5JW54NP52K
+  - title: Completeness, filtration and decidability
+    intro: >
+      The canonical model takes the maximal consistent sets as worlds and refutes every non-theorem; when its
+      frame has the right properties, completeness follows at once. Filtration then shrinks a countermodel to
+      at most $2^{\abs{\Sigma}}$ worlds, which gives the finite model property and, for finitely axiomatized
+      logics, decidability.
+    entries:
+      - TVE4F04KME
+      - 6ZZSHAKG5F
+      - 3NT8RCA6HE
+  - title: Modal logic and first-order logic
+    intro: >
+      The standard translation reads each modal formula as a first-order formula in one free variable, and
+      validity on a frame as a second-order sentence. Ladner's theorem then measures how hard modal
+      satisfiability is: PSPACE-complete for the logics from $\mathsf{K}$ to $\mathsf{S4}$, NP-complete for
+      $\mathsf{S5}$.
+    entries:
+      - YW6YGBMVQY
+      - 1P2B0C7CQ4
+  - title: Neighbourhoods and several boxes
+    intro: >
+      Two extensions of the basic picture close the chapter. Neighbourhood semantics gives each world a
+      family of sets instead of a set of successors, and so covers logics without axiom $\mathrm{K}$.
+      Multimodal logic has one box per agent, direction of time or program, and its new questions are about
+      the axioms that link the boxes.
+    entries:
+      - CN7HK9K1B6
+      - ERG3KAQWYF

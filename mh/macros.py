@@ -91,7 +91,8 @@ def expand(math: str, defs: dict[str, tuple[int, str]], depth: int = 0) -> str:
         for k2, a in enumerate(args, 1):
             rep = rep.replace(f"#{k2}", a)
         # a control word right after the expansion must stay apart from it: `\R x` → `\mathbb{R} x`
-        if not n and rep[-1:].isalpha() and math[j:j + 1].isalpha():
+        # also after a body that ends in a control word: `\ip{x}{u}u` → `\left\langle x, u\right\rangle u`
+        if math[j:j + 1].isalpha() and ((not n and rep[-1:].isalpha()) or re.search(r"\\[A-Za-z]+$", rep)):
             rep += " "
         if math[:m.start()].rstrip()[-1:] in ("_", "^"):   # a bare script, `S_\N`: it needs its braces
             rep = "{" + rep + "}"
@@ -100,7 +101,7 @@ def expand(math: str, defs: dict[str, tuple[int, str]], depth: int = 0) -> str:
     return "".join(out)
 
 
-_MATH = re.compile(r"\$\$.*?\$\$|(?<![\\$])\$[^$\n]+\$", re.S)
+_MATH = re.compile(r"\$\$.*?\$\$|(?<![\\$])\$(?:\\.|[^$\n\\])+\$", re.S)   # an escaped \$ (Lewis's spheres $\$_w$) stays inside
 
 
 def expand_md(md: str, lines: str) -> str:

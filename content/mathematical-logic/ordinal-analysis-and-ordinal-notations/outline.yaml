@@ -1,0 +1,63 @@
+# The order of chapter 2.14, ordinal analysis and ordinal notations. Groups are read in order; entries in a group too.
+groups:
+  - title: The aim and the scale
+    intro: >
+      An ordinal analysis of a theory has three parts: a natural notation system, a proof in the theory of
+      transfinite induction along each initial segment of it, and a proof that the theory reaches no further.
+      The first entry states this programme; the second says what counts as a notation system and why
+      Kleene's $\mathcal{O}$ and artificial orders of type $\omega$ do not.
+    entries:
+      - C5E5TG8PGP
+      - 7MBX59Y7N9
+  - title: Epsilon nought and Peano arithmetic
+    intro: >
+      The first analysis is Gentzen's. The ordinal $\varepsilon_0$ is the least fixed point of
+      $\alpha \mapsto \omega^\alpha$, and Cantor normal form names every ordinal below it. Primitive recursive
+      arithmetic with quantifier-free induction along $\varepsilon_0$ proves the consistency of
+      [Peano arithmetic](/0QFT7Z76N5/), and Peano arithmetic proves induction up to each smaller ordinal. The
+      proof-theoretic ordinal turns these two facts into a definition.
+    entries:
+      - KT50SMH3EC
+      - QPV0HNP22S
+      - ZE54ABPMJ0
+      - C72RBH0CDR
+  - title: Infinitary derivations
+    intro: >
+      Schütte's method replaces the induction axioms by the $\omega$-rule, which derives $\forall x\, A(x)$
+      from all the instances $A(\bar n)$. Proofs become well-founded infinite trees, cut elimination works, and
+      the heights of the cut-free trees give the upper bound $\varepsilon_0$ for Peano arithmetic.
+    entries:
+      - XAMKAB1BZM
+  - title: Predicative notations
+    intro: >
+      The Veblen functions $\varphi_\gamma$ enumerate fixed points of fixed points, starting from
+      $\varphi_0(\alpha) = \omega^\alpha$. Their limit $\Gamma_0$ is the ordinal of predicative analysis and of
+      $\mathrm{ATR}_0$. Functions with more arguments reach the small and large Veblen ordinals.
+    entries:
+      - JQFAE9S2F4
+      - CNN7BK5YAW
+      - ZHDM657G3D
+  - title: Collapsing functions
+    intro: >
+      Beyond the Veblen hierarchy, notations name large countable ordinals with the help of uncountable ones.
+      A collapsing function such as $\psi$ or Buchholz's $\psi_\nu$ sends $\alpha$ to the least ordinal that
+      cannot be built from below with arguments less than $\alpha$. The Bachmann–Howard ordinal and the
+      Takeuti–Feferman–Buchholz ordinal are values of these functions, and Rathjen's function goes on to a Mahlo
+      cardinal.
+    entries:
+      - QH3ENXFRSV
+      - 8S6CT4TMB7
+      - E7WEFRMQTB
+      - M7D1HEJQVH
+      - NZWRK062WQ
+  - title: Impredicative theories
+    intro: >
+      The theories $\mathrm{ID}_\nu$ of iterated inductive definitions are the stepping stones to
+      $\Pi^1_1$-comprehension. Takeuti's analysis of $\Pi^1_1$-comprehension began the impredicative part of
+      the subject, and his conjecture on cut elimination for second-order logic shows why it is hard. Buchholz's
+      $\Omega$-rule and Pohlers's local predicativity are the methods that settled the theories $\mathrm{ID}_\nu$.
+    entries:
+      - 5VNT564Y2W
+      - 2MGJJTSRFD
+      - W560YMCPA3
+      - 5C4YBXQV15

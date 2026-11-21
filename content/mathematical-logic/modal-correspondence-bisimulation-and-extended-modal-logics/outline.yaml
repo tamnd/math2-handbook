@@ -1,0 +1,68 @@
+# The order of chapter 2.21, modal correspondence, bisimulation and extended modal logics. Groups are read in order; entries in a group too.
+groups:
+  - title: Bisimulation and expressive power
+    intro: >
+      A bisimulation links worlds of two models that agree on atoms and can match each other's moves along the
+      relation. Modal formulas cannot tell bisimilar worlds apart, and on image-finite models modal equivalence
+      is bisimilarity. Van Benthem's theorem turns this into a description of modal logic as the
+      bisimulation-invariant part of first-order logic.
+    entries:
+      - X27BR4YP2Y
+      - DBDNYXA7ME
+      - Y89MGMWE4H
+  - title: Correspondence and definability
+    intro: >
+      Read on frames, a modal formula is a second-order condition on the relation, and often it is equivalent to
+      a first-order one. Sahlqvist's theorem gives a syntactic class of formulas with computable first-order
+      correspondents that are also canonical, and the Goldblatt–Thomason theorem says which elementary classes
+      of frames some set of modal formulas defines.
+    entries:
+      - 3RYBWYPJVD
+      - S4SSDMETJM
+      - GX5E3GNRCS
+  - title: General frames, incompleteness and the lattice of logics
+    intro: >
+      A general frame restricts the valuations to an algebra of admissible sets, and every normal modal logic is
+      complete for its descriptive frames. Kripke frames alone are not enough: some logics are complete for no
+      class of them, and the McKinsey formula defines a class of frames that is not first-order. The normal modal
+      logics form a lattice with exactly two coatoms, the logics of the two one-point frames.
+    entries:
+      - 6W9MEGN982
+      - W67YJQTT50
+      - 4N4ZNWZRE2
+      - EZ011FT3GT
+  - title: Quantified modal logic
+    intro: >
+      Adding quantifiers brings domains of objects at each world. Whether $\forall x \square \varphi$ implies
+      $\square \forall x \varphi$, and conversely, depends on whether the domains shrink or grow along the
+      relation; these are the Barcan formula and its converse.
+    entries:
+      - D2H3S12V7X
+      - 9PYDNBA5X4
+  - title: Fixed points, programs and names
+    intro: >
+      Three extensions keep bisimulation in view and stay decidable in their main forms. The modal
+      $\mu$-calculus adds least and greatest fixed points, propositional dynamic logic has one box for each
+      regular program, and hybrid logic adds names for worlds and the binder $\downarrow$.
+    entries:
+      - MZ0M2KR9S0
+      - VJ78A0Q22R
+      - NVPQ9W9DED
+  - title: Topology and intuitionistic logic
+    intro: >
+      Reading $\square$ as the interior of a topological space makes $\mathsf{S4}$ the logic of every dense-in-itself
+      metric space, in particular of the real line. The Gödel–McKinsey–Tarski translation embeds intuitionistic
+      logic in $\mathsf{S4}$, and the Blok–Esakia theorem lifts it to an isomorphism of lattices of logics.
+    entries:
+      - HWJXMBNHQ0
+      - 2VF0546VXK
+      - BXVNEN55MR
+      - BB9TA5Q9PN
+  - title: Products and impossible worlds
+    intro: >
+      Products of frames give modal logics of several dimensions, close to first-order logic with few
+      variables, and they can be undecidable even when each factor is decidable. Impossible worlds go the other
+      way and weaken the logic, to model agents who do not know every consequence of what they know.
+    entries:
+      - JA2EBWVW8A
+      - 8PAJMAN8DM

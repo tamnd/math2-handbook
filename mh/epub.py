@@ -83,7 +83,7 @@ tests and reviews in the project. Errors remain. Please report them at
 # TeX that pandoc's MathML writer (texmath) cannot read and prints as source. XeTeX reads all of it; the EPUB
 # gets equivalent forms: `{n \atop k}` (Stirling and Eulerian numbers), `\xRightarrow{a}`, `\textsc{update}` (a
 # procedure name; MathML has no small capitals, so capitals), `{\rm best}`, `\cfrac`, `\tbinom` and `\bmod`.
-_MATH = re.compile(r"\$\$.*?\$\$|(?<![\\$])\$[^$\n]+\$", re.S)
+_MATH = re.compile(r"\$\$.*?\$\$|(?<![\\$])\$(?:\\.|[^$\n\\])+\$", re.S)   # an escaped \$ (Lewis's spheres $\$_w$) stays inside
 _MATHML = [
     (re.compile(r"(?<!\\)\{\s*([^{}$]*?)\s*\\atop\s*([^{}$]*?)\s*(?<!\\)\}"),
      lambda m: "{\\begin{matrix}" + m[1] + "\\\\" + m[2] + "\\end{matrix}}"),
@@ -97,6 +97,9 @@ _MATHML = [
     (re.compile(r"\\cfrac(?![A-Za-z])"), lambda m: "\\dfrac"),
     (re.compile(r"\\tbinom(?![A-Za-z])"), lambda m: "\\binom"),
     (re.compile(r"\\bmod(?![A-Za-z])"), lambda m: "\\mathbin{\\mathrm{mod}}"),
+    # texmath cannot negate ⊳ and ⊲; they have negated characters of their own
+    (re.compile(r"\\not\s*\\rhd(?![A-Za-z])"), lambda m: "\\ntriangleright"),
+    (re.compile(r"\\not\s*\\lhd(?![A-Za-z])"), lambda m: "\\ntriangleleft"),
     # texmath cannot read \not before a group, as in the negated "|~" of nonmonotonic reasoning
     (re.compile(r"\\not\s*\\mathrel\{\|\\!\\sim\}"), lambda m: "\\mathrel{|\\!\\nsim}"),
     # texmath has \big but not the relation sizes \bigm, \Bigm, \biggm, \Biggm (as in P(A \bigm| B))

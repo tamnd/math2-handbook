@@ -1,0 +1,39 @@
+# The order of chapter 3.9, dual spaces and duality. Groups are read in order; entries in a group too.
+groups:
+  - title: Linear forms and hyperplanes
+    intro: >
+      A [linear form](/07YQ1C78G0/) is a linear map from a vector space to its field of scalars, such as a
+      coordinate, an evaluation $p \mapsto p(2)$ or an integral. The kernel of a nonzero form is a hyperplane,
+      and the hyperplane fixes the form up to a nonzero scalar.
+    entries:
+      - 07YQ1C78G0
+      - XR0EQN0H8T
+  - title: The dual space and its dimension
+    intro: >
+      The linear forms on $V$ form a vector space $V^*$. A basis of $V$ gives the dual basis of coordinate
+      forms, so $\dim V^* = \dim V$ when $V$ is finite-dimensional. In infinite dimension the dual is strictly
+      larger, and the Erdős–Kaplansky theorem gives its exact dimension.
+    entries:
+      - 07JBSZE0V4
+      - 0ZD2CF6ZS0
+      - 00889YD15K
+      - S5ET1HG2ZX
+  - title: The double dual and annihilators
+    intro: >
+      Evaluation $v \mapsto (\varphi \mapsto \varphi(v))$ is an injective map $V \to V^{**}$ that uses no
+      basis, and it is an isomorphism exactly when $V$ is finite-dimensional. The annihilator $U^0$ of a
+      subspace is the set of forms that vanish on it; it reverses inclusions, and
+      $\dim U + \dim U^0 = \dim V$.
+    entries:
+      - 0ZJM9D7NPS
+      - 0ASHNYF7AG
+      - 06Q1EFVH0Q
+  - title: The dual map
+    intro: >
+      A linear map $f \colon V \to W$ gives $f^* \colon W^* \to V^*$, $f^*(\varphi) = \varphi \circ f$, in the
+      opposite direction. In dual bases its matrix is the transpose of the matrix of $f$. Its kernel and image
+      are annihilators, which gives a basis-free proof that row rank equals column rank.
+    entries:
+      - 0AZ5ARP287
+      - 0ZPB3180AY
+      - 7FA499AW3T

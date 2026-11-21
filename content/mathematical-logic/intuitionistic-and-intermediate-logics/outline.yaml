@@ -1,0 +1,71 @@
+# The order of chapter 2.23, intuitionistic and intermediate logics. Groups are read in order; entries in a group too.
+groups:
+  - title: The logic
+    intro: >
+      [Intuitionistic logic](/Q11N8X99FK/) keeps the introduction and elimination rules of the connectives and
+      drops the law of excluded middle; it proves $\neg\neg(p \vee \neg p)$ but not $p \vee \neg p$.
+      [Minimal logic](/V7MTF4P01E/) drops ex falso as well, so that $\bot$ behaves like an atom, and it proves
+      the same negative formulas as intuitionistic logic.
+    entries:
+      - Q11N8X99FK
+      - V7MTF4P01E
+  - title: Four semantics
+    intro: >
+      [Kripke models](/5GTQ69W47T/) on partial orders read a world as a state of knowledge that can only grow.
+      [Beth models](/GPC8Y4ZCSA/) on trees differ only in the clause for disjunction. The
+      [topological semantics](/RKFTMQNWRC/) takes values in the open sets of a space such as $\R$, and the
+      [algebraic semantics](/JM1XJXWZYH/) in Heyting algebras, where superintuitionistic logics correspond to
+      varieties. Intuitionistic logic is complete for each of the four.
+    entries:
+      - 5GTQ69W47T
+      - GPC8Y4ZCSA
+      - RKFTMQNWRC
+      - JM1XJXWZYH
+  - title: Metatheorems
+    intro: >
+      The [disjunction and existence properties](/YTRVX6F3FX/) say that a proof of $\varphi \vee \psi$ yields a
+      proof of one disjunct. [Glivenko's theorem](/B9M3P61ZVA/) embeds classical propositional logic by double
+      negation, and [Gödel's theorem](/CFCPJA1QF5/) shows that no finite truth table characterizes intuitionistic
+      logic. [Intuitionistic predicate logic](/MW0RVDRFTA/) needs growing domains. The
+      [Kleene slash](/YRRKEEHNCD/) gives a syntactic proof of the disjunction property, and
+      [admissible rules](/C5K35H0R4Y/) are the rules that preserve theoremhood without being derivable.
+    entries:
+      - YTRVX6F3FX
+      - B9M3P61ZVA
+      - CFCPJA1QF5
+      - MW0RVDRFTA
+      - YRRKEEHNCD
+      - C5K35H0R4Y
+  - title: Intermediate logics
+    intro: >
+      An [intermediate logic](/H5NSKEP3P2/) lies between intuitionistic and classical logic and is closed under
+      modus ponens and substitution; there are continuum many. The main examples are
+      [Gödel–Dummett logic LC](/FA88H7FDPY/) of linear frames, the logic [KC](/CX032ACTMZ/) of weak excluded
+      middle and directed frames, [Kreisel–Putnam logic](/X0C1NC7FXX/) and
+      [Medvedev's logic of finite problems](/R2FD01J3PC/).
+    entries:
+      - H5NSKEP3P2
+      - FA88H7FDPY
+      - CX032ACTMZ
+      - X0C1NC7FXX
+      - R2FD01J3PC
+  - title: Tools for the lattice
+    intro: >
+      The [Jankov formula](/CVGBEFQG0Q/) of a finite subdirectly irreducible Heyting algebra is refuted in that
+      algebra and axiomatizes the largest logic that the algebra does not validate. The
+      [Rieger–Nishimura lattice](/KAB6KM98ZZ/) lists all formulas in one variable, infinitely many up to
+      equivalence. [Maksimova's theorem](/M3RTNGG3J5/) finds exactly seven intermediate logics with Craig
+      interpolation.
+    entries:
+      - CVGBEFQG0Q
+      - KAB6KM98ZZ
+      - M3RTNGG3J5
+  - title: Modalities and dialogues
+    intro: >
+      [Intuitionistic modal logic](/J57YRDWX3G/) puts $\square$ and $\lozenge$ on an intuitionistic base, where they
+      are no longer dual, and interprets them in birelational frames. [Dialogical logic](/ZCEBYYP67J/) defines
+      validity as a winning strategy in a debate, and one structural rule separates the intuitionistic from the
+      classical game.
+    entries:
+      - J57YRDWX3G
+      - ZCEBYYP67J

@@ -1,0 +1,39 @@
+# The order of chapter 2.16, provability and interpretability logics. Groups are read in order; entries in a group too.
+groups:
+  - title: GL and its Kripke semantics
+    intro: >
+      The logic $\mathsf{GL}$ adds Löb's axiom $\square(\square p \to p) \to \square p$ to the basic normal
+      modal logic. The axiom implies the transitivity axiom 4 and holds on a frame exactly when the frame is
+      transitive and has no infinite ascending chains. Completeness for finite transitive irreflexive frames
+      makes $\mathsf{GL}$ decidable.
+    entries:
+      - WJK0YA4GP2
+      - QQ6PZFGGB3
+      - 1DMFNR7FZT
+  - title: Arithmetical completeness and fixed points
+    intro: >
+      Solovay's theorem says that $\mathsf{GL}$ proves exactly the modal formulas whose arithmetical
+      translations are all provable in Peano arithmetic, and that $\mathsf{GLS}$ gives the ones that are all
+      true. The de Jongh–Sambin theorem solves self-referential equations inside $\mathsf{GL}$, with a unique
+      solution.
+    entries:
+      - 1ZRWVDYPX0
+      - TDDX1NHG8D
+  - title: Grz and GLP
+    intro: >
+      Reading $\square p$ as "$p$ is true and provable" gives the Grzegorczyk logic, the logic of finite
+      partial orders. Japaridze's logic $\mathsf{GLP}$ has one box for each level of provability and is
+      complete for arithmetic, but no Kripke frame is complete for it.
+    entries:
+      - 2Q8E4GQF3B
+      - 3EDRQJJHMT
+  - title: Algebras, interpretability and quantifiers
+    intro: >
+      Magari algebras are Boolean algebras with an operator that obeys Löb's law, and they are the
+      algebraic models of $\mathsf{GL}$. Interpretability logic adds a binary operator for relative
+      interpretability, with Veltman frames as its semantics. With quantifiers, the provability logic of
+      Peano arithmetic is no longer decidable or even axiomatizable.
+    entries:
+      - PHWAN904PT
+      - BGKZTSQN3W
+      - 5K9J8R8SCP

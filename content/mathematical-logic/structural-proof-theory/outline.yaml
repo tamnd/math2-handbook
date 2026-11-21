@@ -1,0 +1,65 @@
+# The order of chapter 2.13, structural proof theory. Groups are read in order; entries in a group too.
+groups:
+  - title: Proofs and the cut rule
+    intro: >
+      Structural proof theory treats formal derivations as finite trees that can be cut apart and
+      rearranged. The cut rule is the formal use of a lemma, and Gentzen's cut-elimination theorem says
+      that the sequent calculi LK and LJ do not need it. The proof is a double induction on the degree of
+      the cut formula and on the heights of the derivations above the cut.
+    entries:
+      - N4EDJNMTEF
+      - DAMGTSY6VV
+      - AYRZ98Y0NW
+  - title: What cut-free proofs give
+    intro: >
+      A cut-free derivation contains only subformulas of its end sequent, and a normal natural deduction
+      derivation has the same property. From it follow consistency, a bounded search space, and the
+      midsequent theorem, which splits a proof of a prenex sequent into a propositional part and a chain
+      of quantifier steps. Herbrand's theorem is read off from the midsequent.
+    entries:
+      - Z2NXKDK06G
+      - W33WAE1XTC
+      - 1FPWTGE14W
+  - title: Calculi without structural rules, and the cost of cuts
+    intro: >
+      Kleene's calculi G3 build weakening and contraction into the axioms and rules. Their rules are
+      height-preserving invertible, or nearly so, and this turns backward search into a decision
+      procedure. The price of removing cuts is measured exactly: a tower of exponentials in the cut rank,
+      and no elementary bound in general.
+    entries:
+      - EXMS77F2XN
+      - KP5KA51FC4
+      - B5F5HB4YK7
+  - title: Meaning from rules
+    intro: >
+      Proof-theoretic semantics takes the introduction rules of a connective as its definition and asks
+      that the elimination rules be in harmony with them. Harmony is checked by local reductions, the same
+      steps that normalization uses. Prior's tonk shows what goes wrong without it.
+    entries:
+      - K97KZB5R7N
+  - title: Beyond sequents
+    intro: >
+      Many logics have no cut-free ordinary sequent calculus. Hypersequents put several sequents side by
+      side, display calculi add structural connectives that can be moved across the turnstile, labelled
+      calculi name the worlds of a Kripke model, and deep inference applies rules inside formulas. Each
+      format restores cut elimination and the subformula property for a wider class of logics.
+    entries:
+      - 3PR9PEMXJ4
+      - 1X7D5CBXB7
+      - VW8XP95XCB
+      - 4ZW0SHW2RG
+  - title: Proof search and identity
+    intro: >
+      Focusing restricts cut-free proofs to a normal form with alternating phases, which removes most of
+      the redundant choices in proof search. The question of when two derivations are the same proof has
+      a good answer for intuitionistic logic, by normalization, and an open one for classical logic.
+    entries:
+      - AMMKNENT3R
+      - G7B4XWMS7Q
+  - title: Hilbert's method
+    intro: >
+      The epsilon substitution method is the older route to consistency, from the Hilbert school. It
+      assigns numbers to witness terms and repairs false critical formulas one at a time. Ackermann showed
+      in 1940 that for arithmetic the process stops, by an induction up to $\varepsilon_0$.
+    entries:
+      - F5HTHB46SH

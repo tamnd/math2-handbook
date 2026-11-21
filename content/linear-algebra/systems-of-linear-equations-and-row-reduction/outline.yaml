@@ -1,0 +1,63 @@
+# The order of chapter 3.2, systems of linear equations and row reduction. Groups are read in order; entries in a group too.
+groups:
+  - title: Linear equations and systems
+    intro: >
+      A linear equation over a field $F$ is $a_1 x_1 + \cdots + a_n x_n = b$, and a system is a finite list of
+      them with the same unknowns. A system is consistent when it has a solution. A homogeneous system, with
+      all constants $0$, always has the solution $x = 0$.
+    entries:
+      - 0Q3ZT8J05R
+      - 0GT4WWGWH2
+      - 0X6V9B1V10
+      - 04KGXJG1A2
+  - title: Matrices and row operations
+    intro: >
+      A system is stored as its coefficient matrix $A$ and its augmented matrix $[A \mid b]$. The three
+      elementary row operations, a swap, a scaling by a nonzero number and the addition of a multiple of
+      another row, can each be undone, so they do not change the solution set. Matrices joined by a chain of
+      them are row equivalent.
+    entries:
+      - 0P7A2MJD24
+      - 0YCDZ7N8VD
+      - 04XWH28452
+      - 006BHFWMAP
+  - title: Echelon forms and pivots
+    intro: >
+      Row operations bring every matrix to a staircase shape, the row echelon form, and further to the
+      reduced row echelon form. The reduced form is unique, so the positions of its leading entries, the
+      pivots, belong to the matrix itself. The pivot columns give the basic variables and the others the free
+      variables.
+    entries:
+      - 0VYCDGMJJJ
+      - 0WF5AQYTW6
+      - BF9SMZMJZE
+      - 0J0BBCMJ5W
+  - title: The algorithms
+    intro: >
+      Gaussian elimination reaches a row echelon form in about $\tfrac23 n^3$ operations for an $n \times n$
+      matrix, and back substitution then solves a triangular system in about $n^2$ more. Gauss–Jordan
+      elimination continues to the reduced form, from which the solutions are read off directly.
+    entries:
+      - 0JVJ2WCXZH
+      - 0ATFVE08MW
+      - 098D6FQN3N
+  - title: The solution set
+    intro: >
+      The system $Ax = b$ asks whether $b$ is a linear combination of the columns of $A$. The echelon form
+      decides whether a solution exists and whether it is unique, and the free variables become the parameters
+      of the solution set. That set is empty or a translate $p + N$ of the null space $N$ of $A$, and the
+      Rouché–Capelli theorem says the same with ranks.
+    entries:
+      - E7SAHXQEVC
+      - BKA191KD1S
+      - KQT68YPHD1
+      - PDH3HKXWAZ
+      - 0HV1SKWPMS
+  - title: Shapes and fields
+    intro: >
+      Systems with more equations than unknowns usually have no solution, and systems with fewer equations than
+      unknowns never have exactly one. The last entry runs row reduction over finite fields, where a
+      consistent system over a field of $q$ elements has exactly $q^k$ solutions, $k$ the number of free variables.
+    entries:
+      - QJ0P26J9BV
+      - J6A58MEM8R

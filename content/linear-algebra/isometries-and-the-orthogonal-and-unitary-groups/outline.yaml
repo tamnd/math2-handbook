@@ -1,0 +1,47 @@
+# The order of chapter 3.17, isometries and the orthogonal and unitary groups. Groups are read in order; entries in a group too.
+groups:
+  - title: Linear isometries
+    intro: >
+      A linear isometry keeps norms, $\norm{Tv} = \norm{v}$. By the polarization identities it then keeps inner
+      products, so lengths and angles together. Over $\R$ a map that keeps distances and fixes $0$ is
+      automatically linear.
+    entries:
+      - 07SJXTWVQW
+      - 0R7VXTYHYZ
+  - title: Orthogonal matrices and their groups
+    intro: >
+      The matrix of an isometry of $\R^n$ in an orthonormal basis is an orthogonal matrix, $Q^{\mathsf{T}} Q = I$:
+      its columns are orthonormal. These matrices form the orthogonal group $O(n)$, their determinants are $\pm 1$,
+      and those with determinant $1$ form the rotation group $SO(n)$, a subgroup of index two.
+    entries:
+      - 0W02QESPJQ
+      - WWK2E8BRGF
+      - 6WBVP2PB1Y
+  - title: Unitary matrices and their groups
+    intro: >
+      Over $\C$ the same conditions with the conjugate transpose give unitary matrices, $U^* U = I$, the unitary
+      group $U(n)$ and the special unitary group $SU(n)$. The circle group $U(1)$ and the group $SU(2)$ of unit
+      quaternions are the smallest cases, and both reappear in geometry and physics.
+    entries:
+      - 0AR68JTMDT
+      - VW5H9XFNJB
+      - ZRYYPHWESP
+  - title: Rotations and reflections
+    intro: >
+      Rotation matrices and reflections in hyperplanes are the basic orthogonal maps. In the plane every
+      orthogonal matrix is a rotation $R(\theta)$ or a reflection $S(\alpha)$. In space every rotation turns about
+      an axis by Euler's theorem, and the axis and the angle can be read off the matrix.
+    entries:
+      - HNY4CPEEJA
+      - 06BRDF3F0E
+      - C97Z06HHB2
+      - 2ZVG43GSKA
+  - title: The structure of orthogonal maps
+    intro: >
+      Every orthogonal matrix is orthogonally similar to a block diagonal matrix of plane rotations and entries
+      $\pm 1$. Every element of $O(n)$ is a product of at most $n$ reflections, and the Cayley transform
+      parametrizes the rotations without the eigenvalue $-1$ by skew-symmetric matrices.
+    entries:
+      - QTY3VMFGY1
+      - 0VMWGYY35Q
+      - HKQ5YY027B

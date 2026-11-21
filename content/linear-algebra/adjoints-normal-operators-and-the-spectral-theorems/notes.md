@@ -1,0 +1,17 @@
+## History
+
+The spectral theorem began as the principal axis theorem of mechanics and geometry. Leonhard Euler found the principal axes of inertia of a rigid body in the eighteenth century, and quadrics in three variables were brought to their axes by a rotation. Augustin-Louis Cauchy treated the general case in 1829: a real symmetric matrix of any size has real eigenvalues, and a quadratic form in $n$ variables can be reduced to a sum of squares by an orthogonal change of variables. Carl Gustav Jacobi gave in 1846 an iterative method that diagonalizes a symmetric matrix by a sequence of plane rotations, and it is still used.
+
+Charles Hermite introduced the forms now named after him and showed in 1855 that Hermitian matrices, like real symmetric ones, have real eigenvalues. The adjoint $T^*$ is also called the Hermitian adjoint after him. Issai Schur proved in 1909 that every complex matrix is unitarily similar to a triangular one, and the inequality $\sum \abs{\lambda_i}^2 \le \sum \abs{a_{ij}}^2$ of the exercises is in the same paper. The class of normal matrices, those that commute with their adjoint, became the natural setting of the complex spectral theorem. Many characterizations of normality were collected in the survey "Normal matrices" by Robert Grone, Charles Johnson, Eduardo Sá and Henry Wolkowicz in 1987, and extended by Ludwig Elsner and Khakim Ikramov in 1998.
+
+The variational view of eigenvalues came from physics. Lord Rayleigh used the quotient that bears his name in *The Theory of Sound* (1877) to estimate frequencies of vibration, and Walther Ritz turned it into a method of computation; the quotient is also called the Rayleigh-Ritz ratio. Ernst Fischer gave the min-max description of all eigenvalues of a quadratic form in 1905, and Richard Courant used it in 1920 for differential operators, which is why the theorem carries both names.
+
+The word "spectrum" comes from David Hilbert's papers on integral equations, from 1904 on, where the spectral theorem was carried to infinite dimensions. John von Neumann extended it to unbounded self-adjoint operators around 1929, to give quantum mechanics a firm basis, in which observables are self-adjoint operators. The finite-dimensional theorems of this chapter are the model for all of that theory.
+
+## Further reading
+
+- Sheldon Axler, *Linear Algebra Done Right*, fourth edition (2024). The chapter on operators on inner product spaces develops adjoints, self-adjoint and normal operators and both spectral theorems without determinants, as in the operator forms of this chapter.
+- Stephen H. Friedberg, Arnold J. Insel and Lawrence E. Spence, *Linear Algebra*, fifth edition (2019). The chapter on inner product spaces covers adjoints, normal and self-adjoint operators, Schur's theorem and spectral decompositions with many worked examples.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, second edition (2013). The reference for unitary similarity, Schur's theorem, normal matrices and the variational characterizations of the eigenvalues of Hermitian matrices.
+- Beresford N. Parlett, *The Symmetric Eigenvalue Problem* (1980; reprinted 1998). Rayleigh quotients, min-max theorems and the algorithms that compute the eigenvalues of symmetric matrices.
+- Paul R. Halmos, *Finite-Dimensional Vector Spaces*, second edition (1958). A short classic that treats adjoints and the spectral theorem with an eye on Hilbert space.

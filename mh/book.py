@@ -16,7 +16,7 @@ import yaml
 from .corpus import Corpus, Node, slugify
 
 # The volumes of this edition: number -> tag of the area.
-VOLUMES = {1: "SGSVYFDSYK", 2: "DYJ0KGTPMR"}
+VOLUMES = {1: "SGSVYFDSYK", 2: "DYJ0KGTPMR", 3: "GN8GYSDZFX"}
 
 
 @dataclass

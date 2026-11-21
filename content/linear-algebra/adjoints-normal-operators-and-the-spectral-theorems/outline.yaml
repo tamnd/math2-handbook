@@ -1,0 +1,49 @@
+# The order of chapter 3.16, adjoints, normal operators and the spectral theorems. Groups are read in order; entries in a group too.
+groups:
+  - title: The adjoint
+    intro: >
+      Every linear map $T$ between finite-dimensional inner product spaces has a unique adjoint $T^*$ with
+      $\langle Tv, w \rangle = \langle v, T^* w \rangle$. In orthonormal bases its matrix is the conjugate
+      transpose; in other bases a Gram matrix corrects the formula. The kernel of $T^*$ is the orthogonal
+      complement of the image of $T$, which is the fundamental-subspace picture without matrices.
+    entries:
+      - 0R9NMSM1ZP
+      - 0DBTE6HVBD
+      - YPP8XT6B7Y
+  - title: Self-adjoint operators
+    intro: >
+      An operator with $T^* = T$ is self-adjoint; in an orthonormal basis its matrix is Hermitian, or symmetric over
+      $\R$. Its eigenvalues are real, it has an eigenvector even over $\R$, found as a maximum of
+      $\langle Tv, v \rangle$ on the unit sphere, and eigenvectors for distinct eigenvalues are orthogonal.
+    entries:
+      - 0NEGN5CRSC
+      - 0C4NT4GT3X
+      - 0JHGAV9H25
+  - title: Schur's theorem and normal operators
+    intro: >
+      Over $\C$ every operator is upper triangular in some orthonormal basis. This is Schur's theorem, and it is
+      the key to the spectral theorems. Normal operators, those with $T T^* = T^* T$, are the ones whose
+      triangular form is in fact diagonal.
+    entries:
+      - V1JG4C7R7B
+      - 0C8BR8XRTR
+  - title: The spectral theorems
+    intro: >
+      Over $\C$, an operator has an orthonormal basis of eigenvectors exactly when it is normal. Over $\R$, exactly
+      when it is self-adjoint. In matrix form, a Hermitian matrix is $U D U^*$ with $U$ unitary and $D$ real, and a
+      real symmetric matrix is $Q D Q^{\mathsf{T}}$ with $Q$ orthogonal.
+    entries:
+      - 04CW1P44VD
+      - 0DGZBQWZWN
+      - 06J4PXRG22
+  - title: Consequences of the spectral theorems
+    intro: >
+      An operator with an orthonormal eigenbasis is a sum $\sum_j \lambda_j P_j$ of orthogonal projections, so
+      functions of it are computed eigenvalue by eigenvalue. A real normal operator has a block form with
+      $2 \times 2$ rotation-like blocks, commuting normal operators share an eigenbasis, and the Rayleigh quotient
+      gives the extreme eigenvalues as extreme values.
+    entries:
+      - D5KVBA1K9R
+      - G6T1FNE3JC
+      - BFQQDA489F
+      - 06WHP8SE98

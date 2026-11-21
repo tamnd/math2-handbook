@@ -1,0 +1,49 @@
+# The order of chapter 2.17, reverse mathematics and subsystems of second-order arithmetic. Groups are read in order; entries in a group too.
+groups:
+  - title: Second-order arithmetic and the method
+    intro: >
+      Second-order arithmetic has variables for numbers and for sets of numbers, and it can code the reals,
+      continuous functions and countable structures. Reverse mathematics fixes a weak base theory and proves
+      that a theorem of ordinary mathematics is equivalent to a set-existence axiom. The equivalence shows
+      which axioms the theorem needs.
+    entries:
+      - DC60FYCSPM
+      - 7SQS69T17R
+  - title: The big five and their models
+    intro: >
+      Most theorems studied so far are equivalent to one of five systems, from the base system
+      $\mathsf{RCA}_0$ of computable mathematics up to $\Pi^1_1\text{-}\mathsf{CA}_0$. Each entry gives the
+      axioms, typical equivalent theorems and the $\omega$-models of one system. The last entry treats the
+      $\beta$-models, which are correct about well-orderings.
+    entries:
+      - XQENB067R3
+      - 7W9EG02T79
+      - NAASTN80QN
+      - MKB74TX3Z8
+      - T21WETAHN5
+      - J0Z2GNJZ2W
+  - title: Ramsey's theorem and the zoo
+    intro: >
+      Ramsey's theorem for pairs implies none of the big five systems above $\mathsf{RCA}_0$ and is implied
+      by $\mathsf{ACA}_0$. Many other principles from combinatorics sit between the main systems, and the
+      zoo collects what is known about them. Weak weak König's lemma, the system for measure theory, is one
+      of them.
+    entries:
+      - ZT5KV6KJ3E
+      - E3X5B175ZR
+      - KPHM3025GW
+  - title: Higher-order reverse mathematics
+    intro: >
+      Kohlenbach's version of the program works in the language of all finite types, so that functionals
+      such as Kleene's quantifier and discontinuous functions on the reals can be stated directly. The
+      entry compares it with the second-order version.
+    entries:
+      - NPDRXTBW5W
+  - title: Foundational consequences
+    intro: >
+      Conservation results for $\mathsf{WKL}_0$ show that much of analysis is reducible to finitistic
+      arithmetic, a partial realization of Hilbert's program. The strength of $\mathsf{ATR}_0$ matches the
+      limit $\Gamma_0$ of predicative mathematics in the analysis of Feferman and Schütte.
+    entries:
+      - Z26S516BKH
+      - 43BSXNWQBG

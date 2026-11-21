@@ -1,0 +1,64 @@
+# The order of chapter 3.13, canonical forms under similarity. Groups are read in order; entries in a group too.
+groups:
+  - title: Cyclic subspaces and companion matrices
+    intro: >
+      The smallest invariant subspace that contains a vector $v$ is spanned by $v, Tv, T^2 v, \dots$. On it
+      the map acts in the simplest way, and its matrix in the basis $v, Tv, \dots$ is the companion matrix of
+      one polynomial, the $T$-annihilator of $v$. These two entries supply the building blocks of every
+      canonical form in the chapter.
+    entries:
+      - 42MMQBTP0M
+      - 0ZCWPNZTQ3
+
+  - title: Invariant factors and the rational canonical form
+    intro: >
+      Every space splits into cyclic subspaces whose annihilators divide each other. These annihilators, the
+      invariant factors, are a complete list of invariants of similarity, and they give one normal form in
+      each class, the rational canonical form. The last entry computes them by row and column operations on
+      the characteristic matrix $xI - A$.
+    entries:
+      - R3Z20J19BR
+      - F7GJPMVBXA
+      - 042JWAR3Q0
+      - 92VZF0QRM8
+
+  - title: Two consequences over every field
+    intro: >
+      The invariant factors are computed inside the field of the entries, so two matrices that are similar
+      over a larger field are already similar over the smaller one. The same computation shows that $A$ and
+      $A^{\mathsf T}$ are always similar.
+    entries:
+      - 5PVFX89NM7
+      - C708QKZPE6
+
+  - title: The Jordan normal form
+    intro: >
+      When the characteristic polynomial splits, a finer normal form is available. The
+      [Jordan block](/07PH4RX0X5/) $\lambda I + N$ is the piece; the normal form of nilpotent maps, by
+      Jordan chains and partitions, does the work on each generalized eigenspace; and the ranks of the powers
+      of $A - \lambda I$ give the block sizes in practice.
+    entries:
+      - 07PH4RX0X5
+      - Z2RTKWZZAZ
+      - 085HQ5G5TE
+      - 7M1W0ZA49Q
+
+  - title: Other forms for special purposes
+    intro: >
+      A real matrix may have nonreal eigenvalues, and the real Jordan form keeps the matrix real by pairing
+      conjugate blocks into real blocks of size $2k$. The Weyr form carries the same data as the Jordan form
+      in a different basis, one in which the matrices that commute with $A$ become block upper triangular.
+    entries:
+      - MPFT45RFGV
+      - 9XEA4VR8WP
+
+  - title: Centralizers and the shape of the classification
+    intro: >
+      The invariant factors also measure the matrices that commute with $A$: their dimension is at least $n$,
+      with equality exactly for cyclic $A$. The chapter ends with an overview of what the classification
+      achieves, why pairs of matrices are a different kind of problem, and a count of the conjugacy classes
+      of $GL_n$ over a finite field.
+    entries:
+      - GXZGWZSJ2J
+      - H3E52HTEZ2
+      - 4FV9TDGWWH

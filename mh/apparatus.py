@@ -85,16 +85,20 @@ def subject_index(book: Book, vol: Volume, refs: Refs) -> str:
             if fold(a) != fold(e.name) and a not in terms:
                 terms[a] = f"{md_plain(a)}, *see* [{md_plain(e.name)}]({refs.target(e.tag)})\n"
     # pages outside the volume that its entries use: the site has them
-    for t, users in mentioned.items():
+    # in the order of the tags, so that the index does not change from build to build; two pages with the same
+    # name (a definition and a concept) both get a line
+    seen = set(terms)
+    for t in sorted(mentioned):
+        users = mentioned[t]
         if book.volume_of.get(t) == vol.number:
             continue
         n = nodes[t]
-        if n.name in terms or n.kind in ("example", "counterexample", "proof"):
+        if n.name in seen or n.kind in ("example", "counterexample", "proof"):
             continue
         where = f"[{book.ref(t)}]({refs.target(t)})" if book.ref(t) else f"[site]({refs.target(t)})"
-        terms[n.name] = f"{md_plain(n.name)} ({where}), used in {_links(book, refs, users)}\n"
+        terms[n.name + "\0" + t] = f"{md_plain(n.name)} ({where}), used in {_links(book, refs, users)}\n"
     groups = defaultdict(list)
-    for t in sorted(terms, key=fold):
+    for t in sorted(terms, key=lambda k: (fold(k.split("\0")[0]), k)):
         groups[_letter(t)].append(terms[t])
     return _render(groups)
 

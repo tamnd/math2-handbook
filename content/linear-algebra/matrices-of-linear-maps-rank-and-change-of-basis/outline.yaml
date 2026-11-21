@@ -1,0 +1,51 @@
+# The order of chapter 3.8, matrices of linear maps, rank and change of basis. Groups are read in order; entries in a group too.
+groups:
+  - title: Matrices and linear maps
+    intro: >
+      Once bases are fixed, a linear map is the same as a matrix: column $j$ holds the coordinates of the image
+      of the $j$-th basis vector. The correspondence is an isomorphism $\operatorname{Hom}(V, W) \cong
+      M_{m \times n}(F)$, and it turns composition of maps into the product of matrices.
+    entries:
+      - 0YQSGNYE3K
+      - 06HMCTAQH3
+      - 05Q1B7MH0M
+  - title: The four fundamental subspaces
+    intro: >
+      An $m \times n$ matrix $A$ has four subspaces attached to it: the column space and the left null space in
+      $F^m$, the row space and the null space in $F^n$. Row reduction gives a basis of each. Over $\R$ they
+      come in orthogonal pairs, and their dimensions are $r$, $m - r$, $r$ and $n - r$ for $r$ the rank.
+    entries:
+      - 03AJKXH1AV
+      - 069MCGX635
+      - 0PHDYNR24D
+      - 73DVECPAT6
+  - title: Rank
+    intro: >
+      The [rank](/0ZC9YTXZRY/) is the common dimension of the row space and the column space. This group proves
+      that the two dimensions agree, relates rank to nullity, bounds the rank of a product, and writes every
+      matrix of rank $r$ as a product $CR$ of an $m \times r$ and an $r \times n$ matrix.
+    entries:
+      - 0ZC9YTXZRY
+      - 0TZAG60ZYT
+      - TR48YQGCCA
+      - 02FDWY55AS
+      - 5JGAG62VN8
+  - title: Change of basis and similarity
+    intro: >
+      A change of basis is recorded by an invertible matrix $P$ whose columns are the new basis vectors in old
+      coordinates. The matrix of a map then changes to $Q^{-1} A P$, and the matrix of an endomorphism to
+      $P^{-1} A P$. Matrices related in this way are similar, and similar matrices share rank, trace,
+      determinant and characteristic polynomial, though these do not decide similarity.
+    entries:
+      - 0MKRHZB3WS
+      - 0MQXVZEBMT
+      - 0E89HQATM8
+      - J4Q3B9ZNHF
+  - title: Trace and the Fredholm alternative
+    intro: >
+      Since similar matrices have the same trace, the trace of an endomorphism is defined without a basis. The
+      Fredholm alternative says when $Ax = b$ can be solved: exactly when $b$ is orthogonal, in the sense of
+      $y^\top b = 0$, to the null space of $A^\top$.
+    entries:
+      - 0KZDNGA561
+      - 4HH8C9V8JQ

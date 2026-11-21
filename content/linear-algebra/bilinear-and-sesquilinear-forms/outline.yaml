@@ -1,0 +1,59 @@
+# The order of chapter 3.19, bilinear and sesquilinear forms. Groups are read in order; entries in a group too.
+groups:
+  - title: Bilinear forms and their matrices
+    intro: >
+      A bilinear form is a map $B \colon V \times V \to F$ that is linear in each slot. In a basis it is
+      $B(x, y) = x^T A y$ with $A_{ij} = B(e_i, e_j)$, and a change of basis replaces $A$ by $P^T A P$. This rule
+      defines congruence of matrices, which plays for forms the part that similarity plays for linear maps.
+    entries:
+      - 0SQZMXB6GP
+      - 0QK6K857HS
+      - 0SPYAGE7T0
+      - WJWNYSQKK8
+  - title: Symmetric, alternating and reflexive forms
+    intro: >
+      Two kinds of form carry most of the theory: symmetric forms, with $B(u, v) = B(v, u)$, and alternating
+      forms, with $B(v, v) = 0$. They are exactly the forms for which orthogonality is a symmetric relation, by
+      the theorem on [reflexive forms](/M0G958M917/). Outside characteristic $2$, alternating and
+      skew-symmetric mean the same.
+    entries:
+      - 0AXZNE5XNH
+      - 0DGDS5XY84
+      - M0G958M917
+  - title: Nondegeneracy, orthogonality and isotropy
+    intro: >
+      A form is nondegenerate when its radical is zero, that is, when its matrix is invertible; then
+      $u \mapsto B(u, \cdot)$ identifies $V$ with its dual. For such a form, orthogonal complements still satisfy
+      $\dim W + \dim W^\perp = \dim V$, but a vector can be orthogonal to itself. Such isotropic vectors lead to
+      the hyperbolic plane, the basic piece of every isotropic form.
+    entries:
+      - 01NHFZF2SK
+      - 01TXN7ETH2
+      - MZHFGPV1YT
+      - 1X5PZSK44P
+  - title: Sesquilinear and Hermitian forms
+    intro: >
+      Over $\C$ a bilinear form cannot be positive, since $B(iv, iv) = -B(v, v)$. A sesquilinear form is
+      conjugate-linear in the second slot, and a Hermitian form adds $h(v, u) = \overline{h(u, v)}$. The complex
+      inner products are the positive definite Hermitian forms.
+    entries:
+      - 054YEQ0Y8M
+      - 48P4A1CX85
+  - title: Alternating forms and symplectic spaces
+    intro: >
+      Alternating forms have a complete classification over every field: there is a basis in which the matrix
+      is a sum of blocks $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ and a zero block, so the rank is even
+      and is the only invariant. A nondegenerate alternating form makes a symplectic space, whose Lagrangian
+      subspaces have half its dimension.
+    entries:
+      - V8KKHKXXB3
+      - PQ7JJY0VPH
+  - title: Witt's theory of symmetric forms
+    intro: >
+      For a nondegenerate symmetric form outside characteristic $2$, the space splits into hyperbolic planes and
+      an anisotropic part, and the number of planes is the Witt index. Witt's theorem says that every isometry
+      between two subspaces extends to the whole space; in particular, an isometry carries any totally
+      isotropic subspace onto any other of the same dimension.
+    entries:
+      - BPMRSPB6GD
+      - CCB8VNQCV0

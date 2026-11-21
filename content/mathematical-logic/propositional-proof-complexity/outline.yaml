@@ -1,0 +1,49 @@
+# The order of chapter 2.19, propositional proof complexity. Groups are read in order; entries in a group too.
+groups:
+  - title: Proof systems and the main question
+    intro: >
+      A propositional proof system is a polynomial-time function onto the tautologies, and its proofs are
+      compared by size and by p-simulation. The Cook–Reckhow theorem turns the question whether some system has
+      short proofs of every tautology into the question whether NP equals coNP.
+    entries:
+      - 1Q046J0AW2
+      - 3V24CYWDT6
+      - YS1T29B00B
+  - title: Frege and extended Frege
+    intro: >
+      Frege systems are the textbook Hilbert calculi, and by Reckhow's theorem all of them are p-equivalent.
+      Extended Frege adds abbreviations by new variables. No superpolynomial lower bound is known for either
+      system, and the reasons are set out in the problem entry.
+    entries:
+      - J2BAR09TPF
+      - 5YSE04SHFH
+      - ANSV13M4FS
+  - title: Resolution and its lower bounds
+    intro: >
+      Resolution works with clauses and is the system behind SAT solvers. Haken's theorem gives the first
+      exponential lower bound, for the pigeonhole formulas; the size-width relation of Ben-Sasson and
+      Wigderson reduces such bounds to bounds on the width of clauses, and the Tseitin formulas on expanders are
+      the standard hard examples.
+    entries:
+      - 6JSH907W5R
+      - 4PCEYEW3JG
+      - GWDGRPAQSM
+      - JXTCC6KXNG
+      - RJ571F7FF0
+  - title: Between resolution and Frege
+    intro: >
+      Three families of systems sit between resolution and Frege. Bounded-depth Frege restricts the depth of
+      the lines, cutting planes reasons with linear inequalities over the integers, and the algebraic systems
+      reason with polynomials and are measured by degree. Each is strong on some formulas and weak on others.
+    entries:
+      - 41QJ1WEMJ3
+      - KKCX2HQP2K
+      - ZERBQSTZB5
+  - title: Interpolation and proof search
+    intro: >
+      Feasible interpolation turns a short refutation of $A(p, q) \wedge B(p, r)$ into a small circuit in $p$,
+      so circuit lower bounds become proof lower bounds. Automatizability asks whether short proofs can also be
+      found quickly, and the two questions are linked.
+    entries:
+      - 59GJCM8C66
+      - WBECDG163W

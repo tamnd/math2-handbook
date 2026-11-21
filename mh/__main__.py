@@ -104,6 +104,8 @@ def check_content(book: Book, which) -> list[str]:
             probs.append(f"{rel}: style: exclamation mark")
         if re.search(r"\bIn this chapter,? we will\b", prose):
             probs.append(f"{rel}: style: 'In this chapter, we will'")
+        if re.search(r"^: .*\\\\", t, flags=re.M):
+            probs.append(f"{rel}: a table caption contains \\\\ (a matrix?), which breaks the LaTeX caption")
         if re.search(r"\b(AI|language model|LLM)\b", prose):
             probs.append(f"{rel}: style: mentions AI")
         if f.endswith("exercises.md"):

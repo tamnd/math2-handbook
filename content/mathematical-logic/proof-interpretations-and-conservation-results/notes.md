@@ -1,0 +1,19 @@
+## History
+
+Kolmogorov gave the first [double-negation translation](/HGJVM49PA4/) in 1925, and Glivenko proved in 1929 that a propositional formula is a classical tautology exactly when its double negation is intuitionistically provable. Gödel and Gentzen found the translation that now carries their names independently in 1933; Gödel used it to show that classical [Peano arithmetic](/0QFT7Z76N5/) is consistent relative to [Heyting arithmetic](/CK8ZQRN183/). Kuroda's variant, with $\neg\neg$ after each universal quantifier, dates from 1951.
+
+Kreisel introduced the [no-counterexample interpretation](/4BCD1EM542/) in "On the interpretation of non-finitist proofs" (1951 and 1952), and derived it from Ackermann's consistency proof for arithmetic with the epsilon substitution method. Gödel published the [Dialectica interpretation](/HZ17ES9PDY/) in 1958 in the journal *Dialectica*, under the title "Über eine bisher noch nicht benützte Erweiterung des finiten Standpunktes"; he had presented the idea in lectures in the early 1940s. Spector extended it to classical analysis with [bar recursion](/8CCG6F2FAT/) in a paper that appeared in 1962, after his death. Tait's 1967 paper on functionals of finite type gave the computability method that proves the normalization of [system T](/A4WR995XZP/).
+
+Friedman published the [A-translation](/6CCK0TT69P/) in "Classically and intuitionistically provably recursive functions" (1978), and Dragalin found the same method independently. Parsons proved in 1970 that $\mathrm{I}\Sigma_1$ is $\Pi^0_2$-conservative over [primitive recursive arithmetic](/WCXH72T8D8/); Mints and Takeuti gave other proofs, and Sieg's [Herbrand analysis](/MESZ87G9ET/) made the cut-elimination proof direct. Friedman showed in the 1970s that $\mathsf{WKL}_0$ is $\Pi^0_2$-conservative over PRA, and Harrington proved the $\Pi^1_1$ conservation of $\mathsf{WKL}_0$ over $\mathsf{RCA}_0$ by forcing.
+
+Relative interpretations go back to the Beltrami–Klein models of non-Euclidean geometry. Tarski, Mostowski and Robinson made them a tool of logic in *Undecidable Theories* (1953). Feferman's "Arithmetization of metamathematics in a general setting" (1960) proved that PA interprets $\mathsf{PA} + \neg\mathrm{Con}(\mathsf{PA})$, and Orey and Hájek characterized [interpretability](/8H03GRMDYG/) between extensions of PA by $\Pi_1$ conservativity.
+
+Kreisel asked in the 1950s what more one knows when one has a proof of a theorem, and called the programme "unwinding proofs". Kohlenbach turned it into the systematic [proof mining](/XR1JXQG1CD/) of analysis with monotone functional interpretations, from the 1990s on. Tao used the same finitary form of convergence in ergodic theory, under the name metastability.
+
+## Further reading
+
+- Ulrich Kohlenbach, *Applied Proof Theory: Proof Interpretations and their Use in Mathematics* (Springer, 2008). The standard text on functional interpretations and proof mining, with many case studies from analysis.
+- A. S. Troelstra (ed.), *Metamathematical Investigation of Intuitionistic Arithmetic and Analysis* (Lecture Notes in Mathematics 344, Springer, 1973). The classical reference for negative translations, realizability and the Dialectica interpretation of HA.
+- Jeremy Avigad and Solomon Feferman, "Gödel's functional ("Dialectica") interpretation", in Samuel R. Buss (ed.), *Handbook of Proof Theory* (Elsevier, 1998). A full and readable account of the interpretation, its variants and its uses for conservation results.
+- Petr Hájek and Pavel Pudlák, *Metamathematics of First-Order Arithmetic* (Springer, 1993). Covers the fragments of PA, Parsons's theorem and interpretability between arithmetic theories.
+- Samuel R. Buss (ed.), *Handbook of Proof Theory* (Elsevier, 1998). Its chapters cover cut elimination, Herbrand's theorem, first-order arithmetic and the provably total functions of the theories in this chapter.

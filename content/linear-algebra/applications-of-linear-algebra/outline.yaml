@@ -1,0 +1,42 @@
+# The order of chapter 3.21, applications of linear algebra. Groups are read in order; entries in a group too.
+groups:
+  - title: Linear systems in models
+    intro: >
+      Many models lead straight to a system $Ax = b$: traffic flow at junctions, currents in a circuit, the
+      balance of atoms in a chemical reaction and the input-output model of an economy. Interpolation by a
+      polynomial is a square Vandermonde system, and fitting a line or a curve to more data than unknowns is
+      a least-squares problem solved by the normal equations.
+    entries:
+      - 1QXFM0DNAH
+      - NR58EBS932
+      - C170QFW8QB
+  - title: Powers of matrices and evolution in time
+    intro: >
+      A system that changes in steps follows $x_{k+1} = A x_k$, so $x_k = A^k x_0$, and the eigenvalues of $A$
+      decide the long-run behaviour. Linear recurrences, predator-prey and population models, Markov chains
+      and PageRank are all of this form. A system that changes continuously follows $x' = Ax$, and its
+      solutions are built from $e^{\lambda t} v$ for eigenpairs $(\lambda, v)$.
+    entries:
+      - K00NJY6C33
+      - 2F1B461YN7
+      - Y9FRWY8YX4
+      - 9ZPQYZ5NDP
+      - DH7CQXQYJX
+  - title: Coordinates in graphics and signals
+    intro: >
+      Computer graphics writes translations, rotations and perspective as matrices by adding one homogeneous
+      coordinate. Signal and image processing changes basis, to the Fourier or Haar basis or from RGB to YCbCr,
+      so that a few coordinates carry most of the information. The SVD gives the best such compression of a
+      single image matrix.
+    entries:
+      - REB4ZHN28T
+      - 6NANBCYMG2
+      - 9QB82PPEMV
+  - title: Discrete structures
+    intro: >
+      The Lights Out puzzle is a linear system over the field $\mathbb F_2$, solved by row reduction like any
+      other. The adjacency, incidence and Laplacian matrices of a graph count walks, describe cycles and cuts,
+      and turn Kirchhoff's laws for electrical networks into linear algebra.
+    entries:
+      - E8DZ9CPEEE
+      - JFWP2SBCF0

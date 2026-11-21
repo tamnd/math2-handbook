@@ -1,0 +1,42 @@
+# The order of chapter 2.15, proof interpretations and conservation results. Groups are read in order; entries in a group too.
+groups:
+  - title: Negative translations
+    intro: >
+      Double negations placed at the right subformulas turn every classical theorem into an intuitionistic
+      one. Friedman's A-translation then replaces falsity by a formula and removes the double negation in
+      front of a $\Pi^0_2$ conclusion. Together they show that Peano arithmetic and Heyting arithmetic prove
+      the same $\Pi^0_2$ sentences.
+    entries:
+      - HGJVM49PA4
+      - 6CCK0TT69P
+  - title: Functional interpretations and proof mining
+    intro: >
+      Gödel's system T gives the functionals of finite type that the Dialectica interpretation uses as
+      witnesses. Kreisel's no-counterexample interpretation reads classical theorems of arithmetic in the
+      same terms, and Spector's bar recursion extends the method to analysis. Proof mining applies these
+      interpretations to actual proofs and extracts bounds and rates of metastability.
+    entries:
+      - A4WR995XZP
+      - HZ17ES9PDY
+      - 4BCD1EM542
+      - 8CCG6F2FAT
+      - XR1JXQG1CD
+  - title: Conservation theorems
+    intro: >
+      A stronger theory is conservative over a weaker one for a class of sentences when it proves no new
+      sentences of that class. The first entry surveys the three ways to prove such results: by models, by
+      cut elimination and by interpretations. Parsons's theorem is the main example for fragments of
+      arithmetic.
+    entries:
+      - TNZ995J8AP
+      - 2VYJXZZDGB
+  - title: Interpretations between theories and Herbrand analysis
+    intro: >
+      A relative interpretation translates one theory into another and so compares their strength. For
+      extensions $S$ and $T$ of Peano arithmetic, $S$ interprets $T$ exactly when every $\Pi_1$ theorem of
+      $T$ is a theorem of $S$. Herbrand analysis reads
+      primitive recursive witnesses off proofs in the fragment $\mathrm{I}\Sigma_1$, and gives a proof of
+      Parsons's theorem.
+    entries:
+      - 8H03GRMDYG
+      - MESZ87G9ET

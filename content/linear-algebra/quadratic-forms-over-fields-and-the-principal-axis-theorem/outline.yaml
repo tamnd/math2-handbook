@@ -1,0 +1,50 @@
+# The order of chapter 3.20, quadratic forms over fields and the principal axis theorem. Groups are read in order; entries in a group too.
+groups:
+  - title: Quadratic forms and polar forms
+    intro: >
+      A quadratic form is a homogeneous polynomial of degree $2$, or, without coordinates, a map with
+      $Q(av) = a^2 Q(v)$ whose polar form $Q(u + v) - Q(u) - Q(v)$ is bilinear. Outside characteristic $2$,
+      quadratic forms and symmetric bilinear forms determine each other, and $Q(x) = x^T A x$ for exactly one
+      symmetric matrix $A$.
+    entries:
+      - 0RBQS1JJCR
+      - 0HYFWKKY3C
+  - title: Diagonalization and the law of inertia
+    intro: >
+      Every quadratic form outside characteristic $2$ becomes a sum $a_1 x_1^2 + \cdots + a_n x_n^2$ in a
+      suitable basis, found for example by completing squares. Over $\R$ the numbers of positive, negative and
+      zero coefficients do not depend on the choice, by Sylvester's law of inertia, and the triple
+      $(p, q, r)$ classifies real forms.
+    entries:
+      - 0Z3FEWZ8HA
+      - 0WFED3K3DQ
+      - 07EZA80NEH
+  - title: Forms over other fields
+    intro: >
+      Over $\C$ the rank is the only invariant. Over a finite field of odd order, the dimension and the
+      determinant modulo squares classify the nondegenerate forms, and every form in three or more variables
+      has a nontrivial zero. The discriminant, the determinant modulo nonzero squares, is the first invariant
+      over every field.
+    entries:
+      - 0CEX9BRXRZ
+      - 2HBR7137AD
+      - MZFRXECCMC
+  - title: Definite and indefinite forms
+    intro: >
+      A real form is positive definite when $Q(v) > 0$ for all $v \ne 0$; these are the squared norms of
+      inner products. Together with the negative definite, the two semidefinite and the indefinite forms they
+      make five types, which decide the shape of a graph near a critical point.
+    entries:
+      - 0RP20HFYM3
+      - 01RBSSGMY5
+  - title: The principal axis theorem and its geometry
+    intro: >
+      Over $\R$ the diagonalization can be done by a rotation: the [principal axis theorem](/0PR5P9Z4KM/)
+      writes $Q = \lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$ with the eigenvalues of $A$. Applied to conics and
+      quadric surfaces, it gives their axes and their normal forms. On unit vectors, $Q$ ranges exactly between
+      the smallest and the largest eigenvalue.
+    entries:
+      - 0PR5P9Z4KM
+      - 1DGT7X9E35
+      - F42W4DQHBK
+      - YS4HT1EYE5

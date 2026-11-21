@@ -75,7 +75,8 @@ def brace_scripts(tex: str) -> str:
     # unicode-math's \not looks for a negated character; ↝ has none and XeTeX dies ("bad native font flag"),
     # and before a group, as in the negated "|~" \not\mathrel{|\!\sim}, it gives "Missing { inserted"
     tex = re.sub(r"\\not\s*\\mathrel\{([^{}]*)\}", lambda m: r"\centernot{\mathrel{" + m[1] + "}}", tex)
-    return tex.replace(r"\not\leadsto", r"\centernot\leadsto")
+    # the same for ⊳ (`T \not\rhd U`, T does not interpret U) and its relatives
+    return re.sub(r"\\not\s*\\(leadsto|rhd|lhd|unrhd|unlhd)(?![A-Za-z])", r"\\centernot\\\1", tex)
 
 
 _GREEK = ("alpha beta gamma delta epsilon varepsilon zeta eta theta vartheta iota kappa lambda mu nu xi pi rho sigma "

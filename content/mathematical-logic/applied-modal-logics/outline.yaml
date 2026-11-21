@@ -1,0 +1,66 @@
+# The order of chapter 2.22, applied modal logics. Groups are read in order; entries in a group too.
+groups:
+  - title: Logics of time
+    intro: >
+      [Temporal logic](/8XB117FKKV/) reads the box as "always in the future" and adds a past operator, and its
+      axioms correspond to properties of the order of time such as transitivity and density. Over the natural
+      numbers, [linear temporal logic](/RMJ56ZPA63/) describes single runs of a program, while
+      [computation tree logic](/F6JA5C5BJX/) quantifies over the branches of a tree of runs; [CTL*](/Y4XZ94GRXV/)
+      contains both. [Kamp's theorem](/CQ0QCQK5JT/) says that since and until express all of first-order logic
+      over complete linear orders, and [interval temporal logics](/991B5RR6X4/) take intervals instead of points
+      as the units of time.
+    entries:
+      - 8XB117FKKV
+      - RMJ56ZPA63
+      - F6JA5C5BJX
+      - Y4XZ94GRXV
+      - CQ0QCQK5JT
+      - 991B5RR6X4
+  - title: Knowledge and belief
+    intro: >
+      [Epistemic logic](/EA34W4ERRE/) gives each agent an accessibility relation of worlds it cannot tell apart,
+      usually an equivalence relation, so that knowledge obeys $\mathrm{S5}$. With several agents one defines
+      [common knowledge](/7BCMKF2P7X/) as reachability in any number of steps, and the
+      [muddy children puzzle](/BG9TYCJ7HP/) shows it at work. [Doxastic logic](/RTP4HTZYK3/) drops factivity
+      and treats belief as $\mathrm{KD45}$, and [dynamic epistemic logic](/9465T2PWZT/) adds announcements that
+      change the model.
+    entries:
+      - EA34W4ERRE
+      - 7BCMKF2P7X
+      - BG9TYCJ7HP
+      - RTP4HTZYK3
+      - 9465T2PWZT
+  - title: Obligation, conditionals and agency
+    intro: >
+      [Deontic logic](/7B74J6J5JV/) reads the box as "it is obligatory that" and takes the logic $\mathrm{KD}$ of
+      serial frames, whose paradoxes show what a single box cannot say. [Conditional logic](/ZGYG7WN7EC/)
+      replaces the box by a binary connective evaluated at the closest worlds where the antecedent holds, so
+      that strengthening the antecedent fails. [STIT logic](/WYY2JXWMYY/) adds agents who choose among the
+      histories of a branching time.
+    entries:
+      - 7B74J6J5JV
+      - ZGYG7WN7EC
+      - WYY2JXWMYY
+  - title: Evidence, belief change and knowability
+    intro: >
+      [Justification logic](/5HKWCXEFG1/) replaces $\square\varphi$ by $t{:}\varphi$, with a term $t$ that names
+      the evidence, and its logic of proofs realizes $\mathrm{S4}$. [AGM belief revision](/Y05YQN7HGQ/) states
+      postulates for adding a belief that contradicts the old ones, and
+      [Gärdenfors's triviality theorem](/WMZ1QP7KQY/) shows that they clash with the Ramsey test for
+      conditionals. [Fitch's paradox](/HVCW7QYXSW/) derives from "every truth is knowable" that every truth is
+      known.
+    entries:
+      - 5HKWCXEFG1
+      - Y05YQN7HGQ
+      - WMZ1QP7KQY
+      - HVCW7QYXSW
+  - title: Questions, concepts and values
+    intro: >
+      [Inquisitive logic](/EX0ND8DCTN/) evaluates formulas at sets of worlds, so that a disjunction can ask a
+      question. [Description logic](/TXQ80B8ZSA/) is multimodal $\mathrm{K}$ in another notation and is the
+      basis of ontology languages. [Axiological logic](/4BRXSBXXWG/) treats "good", "bad" and "better" through
+      preference orders on worlds.
+    entries:
+      - EX0ND8DCTN
+      - TXQ80B8ZSA
+      - 4BRXSBXXWG

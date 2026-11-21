@@ -1,0 +1,25 @@
+A linear map is easiest to understand in a basis where it does not mix coordinates. If $A = P D P^{-1}$ with $D$ diagonal, then $A$ stretches each column of $P$ by its own factor, and every question about $A$ becomes a question about $n$ numbers. The Fibonacci matrix $\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ is of this kind: its eigenvalues are $\varphi = \tfrac{1 + \sqrt 5}{2}$ and $\psi = \tfrac{1 - \sqrt 5}{2}$, and writing $A^k = P \operatorname{diag}(\varphi^k, \psi^k) P^{-1}$ gives the closed formula for the Fibonacci numbers in one line. A Markov chain whose transition matrix has eigenvalues $1$ and $0.7$ settles to a steady state, because $0.7^k \to 0$.
+
+Not every matrix can be treated this way. The shear $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has only one line of eigenvectors, and the rotation $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ has none over $\R$. The chapter says exactly which maps are diagonalizable, and what can be done with the others. The common tool is the invariant subspace: a subspace that $T$ maps into itself. A basis of eigenvectors is a splitting of $V$ into invariant lines. A triangular form is a chain of invariant subspaces, one in each dimension. The generalized eigenspaces are invariant subspaces on which $T$ has a single eigenvalue. Everything in the chapter is a way of finding invariant subspaces and fitting them together.
+
+## What the chapter covers
+
+The chapter is in seven groups, read in order.
+
+1. **Invariant subspaces.** The definition of an [invariant subspace](/0ACX5QT8TE/), and the [restriction and quotient operators](/0KN7EPH7Z0/) that cut $T$ into two smaller maps with $p_T = p_{T|_U} \, p_{\bar T}$.
+2. **When a map is diagonalizable.** The [diagonalizable matrix](/07SQCNV233/), the [characterization by a basis of eigenvectors](/056SW1E0AC/), the sufficient condition of [$n$ distinct eigenvalues](/0Y95Z7MT02/), the [test by multiplicities](/CDB8KCNNG9/) and the [minimal polynomial criterion](/0MPAJRB23T/). The [defective matrices](/5F2AV5855Y/) show the ways a matrix can fail.
+3. **Using a diagonalization.** The [eigendecomposition](/D0AP2R7272/) as a sum of rank-one pieces, and [powers of a diagonalizable matrix](/0TNR9BQ871/) with their use for recurrences and long-term behaviour.
+4. **Commuting families and triangular forms.** [Simultaneous diagonalization](/0FK17N4DKA/) of commuting diagonalizable maps, [triangularization](/0363JMQ42Y/) when $p_T$ splits, and [simultaneous triangularization](/42PG67Q5YN/) of commuting maps.
+5. **Splitting the space with polynomials.** The [kernels lemma](/ACBNK1VFVG/) for coprime polynomials and the [primary decomposition theorem](/49ZHBMYKVE/) along the irreducible factors of $m_T$.
+6. **Generalized eigenvectors.** [Generalized eigenvectors](/01H6QKWGDH/) and [generalized eigenspaces](/0AJ035ZTZE/), and the [decomposition into generalized eigenspaces](/0Z3GDY89T5/) when $p_T$ splits.
+7. **Nilpotent and semisimple parts.** [Nilpotent](/063D5Z2C70/) and [semisimple](/08VRX3Q4PB/) endomorphisms, the [Jordan-Chevalley decomposition](/011K11VPJN/) $T = S + N$, and the [Fitting decomposition](/77SACA9CVQ/) $V = \ker T^n \oplus \operatorname{im} T^n$.
+
+## A first reading
+
+For a first reading, take these entries in order: [invariant subspace](/0ACX5QT8TE/), [diagonalizable matrix](/07SQCNV233/), [diagonalizable iff there is a basis of eigenvectors](/056SW1E0AC/), [$n$ distinct eigenvalues imply diagonalizable](/0Y95Z7MT02/), [the test by multiplicities](/CDB8KCNNG9/), [defective matrix](/5F2AV5855Y/), [powers of a diagonalizable matrix](/0TNR9BQ871/), [triangularization](/0363JMQ42Y/), [generalized eigenspace](/0AJ035ZTZE/) and [the decomposition into generalized eigenspaces](/0Z3GDY89T5/). These carry a first course: how to decide whether a matrix is diagonalizable, how to diagonalize it, and what replaces diagonalization when it fails. The worked examples attached to the diagonalizable matrix entry are the best place to practise the computations.
+
+The [minimal polynomial criterion](/0MPAJRB23T/), the [kernels lemma](/ACBNK1VFVG/) and the [primary decomposition](/49ZHBMYKVE/) are the tools of a second pass; they give shorter proofs and work over any field. Semisimple maps, the Jordan-Chevalley decomposition and the Fitting decomposition can wait until you need them for the [Jordan normal form](/085HQ5G5TE/) of the next chapter or for Lie theory.
+
+## Before you start
+
+You need [eigenvalues](/0BQAA2BK3Q/), [eigenvectors](/0N6960W0BV/) and [eigenspaces](/0G0RFPG8HR/), the [characteristic polynomial](/0VSSPAFM2C/), [algebraic](/0FY42N02DV/) and [geometric multiplicity](/099TWVJ909/), the [minimal polynomial](/03NDVCSHSB/) and the [Cayley-Hamilton theorem](/0F765KFC2J/), all from the previous chapter. You also need [direct sums](/0XYYT5KNTX/), [projections](/033DA1WE8Y/) and [quotient spaces](/0BR3FY5Q8M/), [similar matrices](/0E89HQATM8/), and the [determinant of a block triangular matrix](/0J9TVTNB4K/). For the kernels lemma, recall Bézout's identity $a p + b q = 1$ for coprime polynomials.

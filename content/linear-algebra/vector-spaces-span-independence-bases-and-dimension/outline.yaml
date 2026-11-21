@@ -1,0 +1,85 @@
+# The order of chapter 3.5, vector spaces, span, independence, bases and dimension. Groups are read in order; entries in a group too.
+groups:
+  - title: Vector spaces and their examples
+    intro: >
+      A vector space is a set with an addition and a scalar multiplication over a field that obey eight axioms.
+      The first entry states them and tests them on examples and non-examples. The others are the spaces used
+      all through the volume: lists $F^n$, matrices, polynomials, and functions and sequences.
+    entries:
+      - 000AYPA9AJ
+      - 713F6AM1X1
+      - 0RE6X3BGPN
+      - 0JGZCDT5DN
+      - 0GZB2SN0PH
+
+  - title: Subspaces
+    intro: >
+      A subspace is a subset that contains $0$ and is closed under the two operations. Intersections of
+      subspaces are subspaces, unions of two subspaces almost never are, and the sum $U + W$ is the smallest
+      subspace that contains both.
+    entries:
+      - 00YC1D652K
+      - 0V33SPH7RR
+      - 0JMTY8MF54
+
+  - title: Span and linear independence
+    intro: >
+      Linear combinations are the only expressions that the operations of a vector space can build. The span of
+      a set is the collection of its combinations, a spanning set reaches every vector, and an independent family
+      has no nontrivial relation. In $F^m$ both questions reduce to pivots of a matrix.
+    entries:
+      - 0V8F3E48E6
+      - 0DTY8B9HMS
+      - 088RYKAWK9
+      - 0CRMGPAH83
+      - 76GG9B25A1
+
+  - title: Bases and coordinates
+    intro: >
+      A basis is an independent spanning family, so every vector is a combination of it in exactly one way. The
+      coefficients form the coordinate vector, and with a basis of $n$ vectors the space becomes a copy of $F^n$.
+    entries:
+      - 0KCQ9Y3QKA
+      - C5QA672NPH
+      - 04CYQHN6MC
+
+  - title: Dimension
+    intro: >
+      The [Steinitz exchange lemma](/08ZDRN6H41/) says that an independent list is never longer than a spanning
+      list. It follows that all bases of a space have the same size, the dimension. A space is
+      finite-dimensional when it has a finite spanning set.
+    entries:
+      - 08ZDRN6H41
+      - 0WK0Y8RH1M
+      - 03GSZ8RTZJ
+      - 0ZHWKQMVX5
+
+  - title: Building bases
+    intro: >
+      A spanning set can be thinned to a basis, and an independent set can be extended to one. In finite
+      dimension this is done one vector at a time; in general it needs Zorn's lemma, which gives a basis for every
+      vector space, for example a basis of $\R$ over $\Q$.
+    entries:
+      - 06MRNP4BNT
+      - 0M4SXE5WW3
+      - 00MS9VMQ9Z
+      - ZCBD0GRGVA
+
+  - title: Counting dimensions
+    intro: >
+      In a space of dimension $n$, a subspace has dimension at most $n$, and $n$ vectors form a basis as soon as
+      they are independent or as soon as they span. Grassmann's formula relates the dimensions of $U$, $W$, their
+      sum and their intersection.
+    entries:
+      - 0QW084460E
+      - 096V7H13H9
+      - 06HTJNCMPA
+
+  - title: Changing the field
+    intro: >
+      The theory works over every field. Over a finite field with $q$ elements a space of dimension $n$ has $q^n$
+      vectors, and its bases can be counted. Between $\R$ and $\C$, a real space can be complexified and a complex
+      space can be viewed as a real space of twice the dimension.
+    entries:
+      - J9VE1X14PV
+      - CT2F31EDH8

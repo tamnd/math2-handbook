@@ -1,0 +1,50 @@
+# The order of chapter 3.1, overview and vectors in the plane and in space. Groups are read in order; entries in a group too.
+groups:
+  - title: The subject and how it is taught
+    intro: >
+      Four essays look at linear algebra as a whole. The overview gives the three views of the subject,
+      equations, matrices and linear maps, and a map of the later chapters. The other three describe how
+      courses are built, how the theory of eigenvalues can avoid determinants, and the errors students make
+      most often.
+    entries:
+      - Y7PBW8VD4Q
+      - 9AXCDDT1Z1
+      - 4C6EBHFF3R
+      - 79YPKR857M
+  - title: Vectors and their length
+    intro: >
+      A vector in the plane or in space is an arrow, or a list of its components. Vectors add tip to tail and
+      are stretched by numbers. The length $\norm{v} = \sqrt{v_1^2 + \cdots + v_n^2}$ is the Pythagorean
+      theorem in coordinates, and it gives distances and unit vectors.
+    entries:
+      - 0QN3D80AWP
+      - 0XKBKGTCPC
+  - title: The dot product
+    intro: >
+      The dot product $u \cdot v = u_1 v_1 + \cdots + u_n v_n$ is also $\norm{u}\,\norm{v} \cos\theta$. From it come
+      the angle between two vectors, the test $u \cdot v = 0$ for perpendicular vectors, and the projection of one
+      vector on another.
+    entries:
+      - 0S52TNNTH9
+      - 0ZEHZY85E6
+      - 03NK6RSRQ1
+      - 0JW13B48YP
+  - title: Products in space
+    intro: >
+      In $\R^3$ there is a second product, the cross product $a \times b$: a vector perpendicular to $a$ and $b$
+      whose length is the area of their parallelogram. Combined with the dot product it gives the scalar triple
+      product, a signed volume, and the vector triple product, which has an expansion by dot products.
+    entries:
+      - 0N5N15HWZ7
+      - 34VJYG6GVD
+      - 03FTB26QYD
+  - title: Lines, planes, distances and proofs
+    intro: >
+      A line is $a + t d$ and a plane is $n \cdot (r - a) = 0$. Projections and cross products then give the
+      distances from a point to a plane or a line and between two lines. The last entry uses vectors to prove
+      theorems of plane geometry and to solve problems with forces and velocities.
+    entries:
+      - 0399QFDFS8
+      - 07SDJ5DNE4
+      - C6GAS92QHX
+      - ZVEKWJTSV7
