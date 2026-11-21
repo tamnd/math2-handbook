@@ -1,0 +1,13 @@
+[Nonstandard analysis](/WM62GKCBWN/) does calculus with true infinitesimals: numbers $\varepsilon \ne 0$ with $\abs{\varepsilon} < 1/n$ for every positive integer $n$. Leibniz and Euler reasoned this way, but their infinitesimals had no rigorous definition, and the limits of the nineteenth century replaced them. Abraham Robinson supplied one in the 1960s with model theory. Take an [ultrapower](/5ZVJK0V0GF/) of the real field over a nonprincipal ultrafilter on $\N$. By [Łoś's theorem](/AGYBSTD7BG/) it is an elementary extension of $\R$, and the class of the sequence $(1/n)$ is a positive infinitesimal, as the example that [an ultrapower of the real field contains infinitesimals](/4W5HFEXSKT/) shows. The result is the field ${}^*\R$ of [hyperreal numbers](/421QMTFG9T/).
+
+Two principles do the work. The [transfer principle](/3RT74FQYG1/) says that a first-order statement about $\R$ with its functions and relations holds exactly when its starred version holds in ${}^*\R$. The [standard part](/1ZBY4W4E81/) map sends each finite hyperreal to the unique real infinitely close to it. With them, $f$ is continuous at $a$ when $f(x)$ is infinitely close to $f(a)$ for every $x$ infinitely close to $a$, and a derivative is the standard part of a difference quotient with an infinitesimal increment.
+
+Analysis needs more than the first-order theory of one field: it quantifies over sets, functions and sequences. The usual frame is a superstructure over $\R$ with an elementary embedding into a nonstandard universe. The elements of images of sets are the internal sets, and transfer speaks only about them. An ultrapower over a nonprincipal ultrafilter on $\N$ is $\aleph_1$-saturated, by the theorem on [saturation of ultraproducts](/DYXQP8WS63/), and Loeb's construction of [measures](/CM6XF84MNY/) from hyperfinite counting uses this saturation. Edward Nelson's [internal set theory](/9EAHDX44B2/) takes another route: it adds a predicate "standard" to set theory with three axiom schemes and no new construction.
+
+## What the planned pages will cover
+
+The pages will treat ultrapower constructions of the hyperreals, superstructures and the nonstandard embedding, internal and external sets, transfer, saturation and overspill, hyperfinite sets and Loeb measure, and axiomatic approaches such as internal set theory.
+
+## What to read meanwhile
+
+Read [ultraproducts](/AX9Q86GB8M/), ultrapowers and Łoś's theorem in Chapter 4.3, and [elementary embeddings](/CGH8C8EA9N/) in Chapter 4.2. The [applications of compactness](/PES0S9XQZ5/) in Chapter 2.7 build a nonstandard model of arithmetic with a new constant above every numeral; the same idea, applied to the theory of $\R$, gives infinitesimals. The opening of Chapter 4.5 treats saturated models in general.

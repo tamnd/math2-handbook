@@ -10,7 +10,8 @@ In computer science, SAT solvers decide large instances of the [Boolean satisfia
 - **Some questions have no algorithm.** By [Church's theorem](/VA6BNNY2YC/) first-order validity is undecidable, while [Presburger arithmetic](/4W0E9G7PPV/) is decidable.
 - **Formal systems have limits.** By the [first](/X9WYNYE29C/) and [second incompleteness theorems](/4PZM5GJTR5/), a consistent, computably axiomatized theory with enough arithmetic leaves sentences undecided and does not prove its own consistency. By [Tarski's theorem](/YRV6SYK2BY/) arithmetical truth is not definable in arithmetic.
 - **Proofs are objects too.** By the [cut-elimination theorem](/AYRZ98Y0NW/) proofs have normal forms, and an ordinal such as [$\varepsilon_0$](/KT50SMH3EC/) measures the strength of a theory.
-- **There is more than one logic.** Modal, intuitionistic, many-valued and substructural logics change classical logic for definite reasons, and [Kripke semantics](/NGHWZ9Y7ZV/) serves several of them.
+- **There is more than one logic.** Modal, intuitionistic, many-valued, substructural and paraconsistent logics change classical logic for definite reasons. [Kripke semantics](/NGHWZ9Y7ZV/) serves several of them, and [algebraic logic](/Z3DE4R4RET/) treats each as a class of algebras.
+- **Truth needs care.** By the liar paradox, the naive schema $T(\ulcorner \varphi \urcorner) \leftrightarrow \varphi$ is inconsistent over arithmetic; theories of truth keep parts of it.
 
 ## The chapters
 
@@ -60,7 +61,15 @@ In computer science, SAT solvers decide large instances of the [Boolean satisfia
 
 **Chapter 2.23, Intuitionistic and intermediate logics**, treats the logic of constructive proof: [intuitionistic logic](/Q11N8X99FK/), its [Kripke](/5GTQ69W47T/) and [Heyting algebra](/JM1XJXWZYH/) semantics, the [disjunction property](/YTRVX6F3FX/), [Glivenko's theorem](/B9M3P61ZVA/), and the [intermediate logics](/H5NSKEP3P2/) such as [Gödel–Dummett logic](/FA88H7FDPY/).
 
-The last five chapters have no entries yet; the book prints their openings only. **Chapter 2.24** treats logics with more than two truth values, including fuzzy logics. **Chapter 2.25** treats logics without some structural rules, such as linear and relevance logic. **Chapter 2.26** covers paraconsistent, free and non-monotonic logics. **Chapter 2.27** studies logics through classes of algebras. **Chapter 2.28** treats theories of truth and the liar paradox.
+**Chapter 2.24, Many-valued and fuzzy logics**, adds truth values. [Strong Kleene logic](/SZHA10A9X7/), [Łukasiewicz's three-valued logic](/1CE2TGM6MQ/) and [first-degree entailment](/KXTP4P3GHT/) are finite [logical matrices](/P7E926JK13/). [Łukasiewicz infinite-valued logic](/NFCEM44XYH/) takes values in $[0, 1]$, and fuzzy logics such as [Hájek's BL](/3AQ5GHTXA4/) come from [t-norms](/VR6D8JXX1W/).
+
+**Chapter 2.25, Substructural, linear and relevance logics**, drops or controls [weakening](/VHRXX0T5XT/), [contraction](/V0MZVC2XA9/) and [exchange](/YAFD18WYJ8/), over the [full Lambek calculus](/V5XVVN16GS/). Girard's [linear logic](/2P2184B6HE/) counts formulas as resources and has [proof nets](/HN6WN1VE39/); [relevance logic](/KXTCZ2FY5M/) makes premises share variables with the conclusion and is undecidable by [Urquhart's theorem](/X7F69S7QPX/).
+
+**Chapter 2.26, Paraconsistent, free, non-monotonic and other non-classical logics**, changes one classical assumption at a time. [Paraconsistent logics](/C7YWCR87QJ/) reject [explosion](/TTKZGJEEK7/), and [dialetheism](/3P0FM0AQF3/) accepts some true contradictions. [Free logic](/Y0CNMRXHVJ/) allows terms that denote nothing, and in [default logic](/K4AYFFKY2D/) new premises can remove conclusions.
+
+**Chapter 2.27, Algebraic logic**, studies logics through algebras, starting from the [Lindenbaum–Tarski algebra](/QC9M3Q8B8Q/). Classical logic goes with [Boolean algebras](/KG7730QZMQ/), modal logics with [modal algebras](/3H85NSFWHK/), Łukasiewicz logic with [MV-algebras](/8T4M7RN9AC/) and substructural logics with [residuated lattices](/E337A6WVH3/); [algebraizable logics](/CESWST3NWA/) make this exact.
+
+**Chapter 2.28, Truth and the semantic paradoxes**, starts from the [liar paradox](/KBYY281V8T/). The [Tarskian hierarchy](/Z6MCGB0ZFX/) keeps classical logic, [Kripke's theory of truth](/ES71QTSTNV/) lets the liar lack a value, and the [revision theory](/ZQ4TWM7K6E/) revises classical hypotheses. [Axiomatic theories of truth](/KE8ZX8KVA3/) vary in strength, and [McGee's theorem](/GQW8RQVZJ4/) limits the type-free ones.
 
 ## How to read this volume
 
@@ -72,6 +81,8 @@ For proof theory, read the [cut-elimination theorem](/AYRZ98Y0NW/) in Chapter 2.
 
 For modal and intuitionistic logic, the propositional core is enough. Read [modal logic](/C3RZY20ETK/), [Kripke semantics](/NGHWZ9Y7ZV/), the [common modal axioms](/FDFQFWPM4X/), the [canonical model](/TVE4F04KME/) and [filtration](/6ZZSHAKG5F/) in Chapter 2.20; [bisimulation](/X27BR4YP2Y/) in Chapter 2.21; then [intuitionistic logic](/Q11N8X99FK/), its [Kripke semantics](/5GTQ69W47T/) and [Glivenko's theorem](/B9M3P61ZVA/) in Chapter 2.23. Chapter 2.22 applies these tools.
 
+For other logics, read [many-valued logic](/DWYCKAKXZD/), [substructural logic](/ZZKTJY5J4T/), [paraconsistent logic](/C7YWCR87QJ/) and the [Lindenbaum–Tarski algebra](/QC9M3Q8B8Q/) in Chapters 2.24 to 2.27. For truth, after Chapter 2.11, read the [liar paradox](/KBYY281V8T/), [Kripke's theory of truth](/ES71QTSTNV/) and the [axiomatic theories of truth](/KE8ZX8KVA3/) in Chapter 2.28.
+
 Each entry stands on its own; its facts box lists what it needs, with the number of the entry that explains it.
 
 ## What you need first
@@ -80,4 +91,4 @@ You should be able to read and write proofs, as [Volume 1](/SGSVYFDSYK/) teaches
 
 ## The exercises
 
-Each chapter with entries ends with exercises in three bands. Exercises marked ◦ test close reading: compute a truth table, find the free variables of a formula, test a sentence in a small structure; each takes a few minutes. Exercises marked • use an idea in a new place, such as deriving a formula, building a countermodel or applying compactness. Exercises marked ★ are harder; some ask for a known theorem in your own words. Hints for many of them are in the appendix *Hints to the exercises*.
+Each chapter ends with exercises in three bands. Exercises marked ◦ test close reading, such as computing a truth table; those marked • use an idea in a new place, such as building a countermodel; those marked ★ are harder, and some ask for a known theorem in your own words. Many have hints in the appendix *Hints to the exercises*.

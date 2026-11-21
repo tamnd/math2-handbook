@@ -1,0 +1,60 @@
+# The order of chapter 2.28, truth and the semantic paradoxes. Groups are read in order; entries in a group too.
+groups:
+  - title: The liar and Tarski's theory
+    intro: >
+      The liar sentence says of itself that it is not true. With the [diagonal lemma](/3PRW76471J/) it exists in
+      every theory that contains Robinson arithmetic, and together with the naive truth schema it gives a
+      contradiction. Tarski's answer has two parts: conditions that any definition of truth must meet, and a
+      hierarchy of languages in which each truth predicate applies only to the levels below it.
+    entries:
+      - KBYY281V8T
+      - 8FBF0EFFC9
+      - Z6MCGB0ZFX
+  - title: Other paradoxes of self-reference
+    intro: >
+      The liar has relatives. The truth-teller is consistent with either value, the Berry and Grelling-Nelson
+      paradoxes concern definability and satisfaction, and Yablo's infinite sequence avoids direct
+      self-reference and gives an $\omega$-inconsistent theory in place of an inconsistent one. The knower
+      paradox shows that a factive knowledge predicate closed under proof is already inconsistent.
+    entries:
+      - XADBJH4872
+      - MYP4A5VRBA
+      - E1XCM5TEFD
+      - 6FJXAN1ND9
+      - N3BWQRFQCC
+  - title: Fixed points and revision
+    intro: >
+      Kripke builds a partial truth predicate in stages, by iterating the strong Kleene jump until it reaches a
+      fixed point, so that $T(\ulcorner \varphi \urcorner)$ and $\varphi$ always have the same value and the liar has
+      none. The revision theory keeps classical logic at every stage and studies which sentences settle down
+      when the hypotheses about $T$ are revised again and again.
+    entries:
+      - ES71QTSTNV
+      - ZQ4TWM7K6E
+  - title: Gaps and gluts
+    intro: >
+      A gap is a sentence that is neither true nor false, and a glut is one that is both. Gap theories keep the
+      truth schema by giving up excluded middle; glut theories keep excluded middle and give up explosion, as
+      in the logic of paradox. In four-valued first-degree entailment the liar is one or the other in every
+      fixed point.
+    entries:
+      - 4CBCWZQZ12
+      - WH94DG6D3Q
+  - title: Axiomatic theories of truth
+    intro: >
+      Truth can also be a primitive predicate with axioms over Peano arithmetic. Typed theories such as TB and
+      $\mathsf{CT}^-$ are conservative, but compositional truth with full induction proves the consistency of
+      $\mathsf{PA}$. The type-free theories KF and FS describe Kripke's fixed points and the revision semantics
+      in classical logic, and McGee's theorem explains why FS has no standard model.
+    entries:
+      - KE8ZX8KVA3
+      - W4MSCKSG3D
+      - 2F15E76R0Z
+      - GQW8RQVZJ4
+  - title: Vagueness
+    intro: >
+      The sorites paradox uses no self-reference: a chain of plausible conditionals leads from a clear heap to
+      a clear non-heap. Its standard answers, epistemicism, supervaluation and degrees of truth, use some of the
+      same tools as the answers to the liar.
+    entries:
+      - 2BV7KAZG1H

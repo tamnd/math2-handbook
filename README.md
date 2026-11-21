@@ -10,18 +10,19 @@ a reference site does not need and a textbook does: an introduction to each volu
 reading order for each chapter, summaries, exercises in three bands with hints, notes on history and further
 reading, a bibliography and an index.
 
-## Volumes in edition 0.2.0
+## Volumes in edition 0.3.0
 
 Built from [`tamnd/math2`](https://github.com/tamnd/math2) at the commit named in [`EDITION`](EDITION), the content
-of release v0.2.0. The edition number of the handbook follows the release of the site it is built from; a larger
+of release v0.3.0. The edition number of the handbook follows the release of the site it is built from; a larger
 fourth number would mark a new build of the same release. The books are on the
 [releases page](https://github.com/tamnd/math2-handbook/releases).
 
 | | Volume | Chapters | Entries | Worked examples | Learner pages |
 |---|---|---:|---:|---:|---|
 | 1 | Reasoning and proof | 14 | 180 | 398 | written |
-| 2 | Mathematical logic | 28 | 392 | 670 | written for chapters 2.1–2.23; openings for the other 5 |
+| 2 | Mathematical logic | 28 | 493 | 876 | written |
 | 3 | Linear algebra | 21 | 397 | 483 | written |
+| 4 | Model theory | 27 | 42 | 66 | written for chapters 4.1–4.4; openings for the other 23 |
 
 The other areas of the site join as their reading orders are written.
 

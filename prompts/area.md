@@ -1,7 +1,7 @@
 # Brief: write the learner layer of one volume (or part of one)
 
 You are writing pages of **The Math 2.0 Handbook**, a book built from the pages of the site
-<https://math2.tamnd.com> (project Math 2.0, content repo tamnd/math2, edition v0.2.0). The builder turns each area
+<https://math2.tamnd.com> (project Math 2.0, content repo tamnd/math2, edition v0.3.0). The builder turns each area
 of the site into a volume and each sub-area into a chapter; the entries (nodes) are already written, with their
 proofs and examples. Your job is the *learner layer*: the pages that turn a run of entries into a textbook a person
 can learn from alone.
@@ -12,8 +12,8 @@ Read this whole brief before you write anything. Then read the gold sample (belo
 
 - The handbook repo: `~/github/tamnd/math2-handbook`. Work only in `content/<area-id>/` for the chapters you are
   given. Do not edit anything else: not `mh/`, not `tex/`, not other chapters, not `prompts/`.
-- The content, read-only: `~/hb-work/math2-0.2.0`. A node is the file
-  `~/hb-work/math2-0.2.0/nodes/<first three characters of the tag>/<TAG>.md` (YAML front matter, then the body),
+- The content, read-only: `~/hb-work/math2-0.3.0`. A node is the file
+  `~/hb-work/math2-0.3.0/nodes/<first three characters of the tag>/<TAG>.md` (YAML front matter, then the body),
   e.g. `nodes/0NT/0NTF6DMVAP.md`. Never edit these files. Never touch `~/github/tamnd/math2` or
   `~/github/tamnd/math2-agent`.
 - Do not run `git` anywhere. Do not commit. Do not build PDFs. Do not delete files you did not write.
@@ -22,10 +22,10 @@ Read this whole brief before you write anything. Then read the gold sample (belo
 
 Run these from `~/github/tamnd/math2-handbook` (each takes a few seconds):
 
-    python3 -m mh brief --content ~/hb-work/math2-0.2.0 --volume N                  # every chapter
-    python3 -m mh brief --content ~/hb-work/math2-0.2.0 --volume N --chapter K      # one chapter
-    python3 -m mh brief --content ~/hb-work/math2-0.2.0 --volume N --chapter K --sections
-    python3 -m mh check --content ~/hb-work/math2-0.2.0 --volume N                  # must be clean for your chapters
+    python3 -m mh brief --content ~/hb-work/math2-0.3.0 --volume N                  # every chapter
+    python3 -m mh brief --content ~/hb-work/math2-0.3.0 --volume N --chapter K      # one chapter
+    python3 -m mh brief --content ~/hb-work/math2-0.3.0 --volume N --chapter K --sections
+    python3 -m mh check --content ~/hb-work/math2-0.3.0 --volume N                  # must be clean for your chapters
 
 The brief prints the chapter's sub-area page (summary and prerequisites), then each entry as
 `1.5.2 Direct proof` with its tag, kind, length and the one-line description from the reading order, and under it
@@ -168,7 +168,7 @@ printed by the brief without `--chapter`) is your base.
 
 ## Finish
 
-1. Run `python3 -m mh check --content ~/hb-work/math2-0.2.0 --volume N` and fix every problem it reports for your
+1. Run `python3 -m mh check --content ~/hb-work/math2-0.3.0 --volume N` and fix every problem it reports for your
    chapters (problems in other chapters are not yours).
 2. Re-read each file once against this brief.
 3. Report back: the files written (with word counts, `wc -w`), the number of exercises per chapter, and any factual

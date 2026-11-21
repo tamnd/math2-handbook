@@ -1,0 +1,54 @@
+# The order of chapter 4.1, basic notions of model theory. Groups are read in order; entries in a group too.
+groups:
+  - title: The subject and its history
+    intro: >
+      Model theory studies structures through the first-order sentences true in them, and theories through
+      their models. The overview says what the subject asks and how its parts fit together; the history
+      follows the basic notions from Löwenheim's theorem of 1915 to the geometric model theory of today.
+    entries:
+      - HFTBG5PMXC
+      - JNBJW8RTJD
+  - title: Maps between structures
+    intro: >
+      A substructure is a subset closed under the functions and constants, with the restricted relations. An
+      embedding is an isomorphism onto a substructure, so it must reflect relations as well as preserve them.
+      Reducts forget symbols and expansions add them; naming every element of $M$ by a constant gives the
+      language $L_M$, used throughout the next chapter.
+    entries:
+      - 676H7EGTKJ
+      - SCRB74SWQN
+      - EY20BF96SJ
+  - title: Theories and elementary equivalence
+    intro: >
+      The theory $\operatorname{Th}(\mathcal{M})$ collects every sentence true in $\mathcal{M}$, and
+      $\operatorname{Mod}(T)$ collects every model of $T$. Two structures with the same theory are elementarily
+      equivalent, and a theory is complete when all its models are. Isomorphic structures are elementarily
+      equivalent; $(\Q, <)$ and $(\R, <)$ show that the converse fails.
+    entries:
+      - X9HV9C6X4F
+      - P3B1V182N4
+      - 655K8Y7VS8
+  - title: Elementary classes and axiomatization
+    intro: >
+      A class of structures is elementary when it is $\operatorname{Mod}(T)$ for some theory $T$, and basic
+      elementary when one sentence suffices. The [compactness theorem](/1NR3HAWG9D/) decides most questions
+      of this kind: it shows that finite groups do not form an elementary class and that the theory of
+      algebraically closed fields has no finite axiomatization.
+    entries:
+      - MEC3ZMC4F1
+      - JR6XPJ7X56
+  - title: Definable sets
+    intro: >
+      A set is definable when a formula, perhaps with parameters, carves it out of a structure. Automorphisms
+      that fix the parameters map definable sets onto themselves, and this is the standard way to prove that
+      a set is not definable.
+    entries:
+      - CY1TXHF6KQ
+  - title: What first-order theories can and cannot say
+    intro: >
+      A list of standard theories, with their signatures and axioms, gives the stock of examples for the rest
+      of the volume. Then compactness and games show that finiteness, torsion, well-ordering, connectedness
+      and the Archimedean property cannot be expressed by any set of first-order sentences.
+    entries:
+      - AWASYPREVT
+      - T1S9T0RKHJ

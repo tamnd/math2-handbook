@@ -1,0 +1,40 @@
+# The order of chapter 4.2, elementary extensions and the Löwenheim-Skolem theorems. Groups are read in order; entries in a group too.
+groups:
+  - title: Elementary embeddings and substructures
+    intro: >
+      An elementary embedding preserves the truth of every formula, with parameters, and an elementary
+      substructure is the image of an inclusion of this kind. The Tarski–Vaught test reduces elementarity to
+      a condition on witnesses that mentions truth only in the larger structure, and with automorphisms it
+      proves that $(\Q, <) \preceq (\R, <)$.
+    entries:
+      - CGH8C8EA9N
+      - 8WZF9SBP39
+      - 60SA99BER7
+  - title: Diagrams, Skolem functions and the Löwenheim–Skolem theorems
+    intro: >
+      The atomic diagram of $\mathcal{M}$ describes its extensions, and the elementary diagram its elementary
+      extensions; with compactness they give large models. Closing a set under witnesses, or under Skolem
+      functions, gives small elementary substructures. Together these give the Löwenheim–Skolem theorem: an
+      infinite structure has elementary substructures or extensions of every infinite cardinality at least
+      $\abs{L}$.
+    entries:
+      - EP5E317TNW
+      - 484M0TZ1S7
+      - NKQY9NB955
+  - title: Chains and amalgamation
+    intro: >
+      The union of an elementary chain is an elementary extension of each of its members, and the union of a
+      chain of models of a $\forall\exists$ theory is again a model. Two elementary extensions of one
+      structure embed elementarily into a common one. These are the two tools that build large models by
+      steps.
+    entries:
+      - NHCRZ74JHH
+      - P2VMSM4H4Y
+  - title: Partial elementary maps and the limits of elementary equivalence
+    intro: >
+      A partial elementary map preserves all formulas on a subset of the domain; it is the stage of an
+      elementary embedding built one element at a time. The last entry collects pairs of structures that are
+      elementarily equivalent but not isomorphic, even when both are countable.
+    entries:
+      - XTNYY0WRQ5
+      - 4WGKBXG068

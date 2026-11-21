@@ -1,0 +1,13 @@
+Two questions run through this chapter: whether an algorithm decides which first-order sentences are true in a given ring or field of number theory, and which subsets, such as the integers inside the rationals, a formula can define there. The answers are tied together, since defining a structure whose theory is undecidable makes the larger theory undecidable too.
+
+The integers are the first case. By [Hilbert's tenth problem](/X8TVJSVTD4/), solved by Matiyasevich in 1970 after work of Davis, Putnam and Julia Robinson, no algorithm decides whether a polynomial equation with integer coefficients has an integer solution, so even the existential theory of the ring $\Z$ is undecidable. Julia Robinson showed in 1949 that $\Z$ is definable in the field $\Q$ by a first-order formula, so the theory of $\Q$ is undecidable as well; whether the existential theory of $\Q$ is decidable is still open. Similar definitions show that the theory of every number field is undecidable, while Rumely proved that solvability of polynomial equations in the ring of all algebraic integers is decidable.
+
+Some structures of arithmetic are decidable. [Presburger arithmetic](/4W0E9G7PPV/), the theory of $(\N, +)$, and [Skolem arithmetic](/X86G2FXTPC/), the theory of $(\N, \cdot)$, are both decidable. Tarski asked whether the theory of the real field with exponentiation is decidable; Macintyre and Wilkie proved that it is if [Schanuel's conjecture](/65PV4VFP9Y/) holds. Ultraproducts give a different kind of result. They turn statements about all large primes into statements about one field of characteristic $0$, as in the [Ax–Kochen theorem](/PHT3TJCS90/), and they give uniform estimates for the number of points of a definable set over finite fields.
+
+## What the planned pages will cover
+
+The pages will treat Hilbert's tenth problem over $\Z$, $\Q$ and rings of integers, Julia Robinson's definition of $\Z$ in $\Q$ and its later forms, the undecidability of number fields, decidable rings such as the algebraic integers, ultraproducts of finite fields and of $p$-adic fields, and Tarski's problems on exponentiation and on identities of arithmetic.
+
+## What to read meanwhile
+
+Read [decidable theories](/HWC687ES0Q/), [essential undecidability](/9JDDFN8PT7/) and Presburger arithmetic in Chapter 2.9, and [true arithmetic](/DX0KPMH4QZ/) in Chapter 2.10. [Gödel's first incompleteness theorem](/X9WYNYE29C/) in Chapter 2.11 lies behind the undecidability of arithmetic. In this volume, read [Łoś's theorem](/AGYBSTD7BG/) in Chapter 4.3 and the example that [an ultraproduct of prime fields has characteristic zero](/145GABE79C/). The page [Hilbert's tenth problem and Diophantine sets](/2VRQSVM9KJ/) gives the details of the solution.

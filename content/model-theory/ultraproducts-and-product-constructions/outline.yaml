@@ -1,0 +1,45 @@
+# The order of chapter 4.3, ultraproducts and product constructions. Groups are read in order; entries in a group too.
+groups:
+  - title: Reduced products and ultraproducts
+    intro: >
+      A family of structures and a filter on the index set give a reduced product: sequences are identified
+      when they agree on a set in the filter. When the filter is an ultrafilter the result is an ultraproduct,
+      and [Łoś's theorem](/AGYBSTD7BG/) says that a first-order sentence holds in it exactly when it holds in
+      almost all factors.
+    entries:
+      - F4WRD396PB
+      - AX9Q86GB8M
+      - AGYBSTD7BG
+  - title: Compactness and ultrapowers
+    intro: >
+      Łoś's theorem gives a proof of the compactness theorem with no proof calculus: index the finite subsets
+      of a theory and take an ultraproduct of their models. When all factors are the same structure the
+      ultraproduct is an ultrapower, and the diagonal map embeds the structure elementarily into it.
+    entries:
+      - EY09JT7270
+      - 5ZVJK0V0GF
+  - title: Elementary equivalence and elementary classes
+    intro: >
+      Ultrapowers give an algebraic test for elementary equivalence: two structures satisfy the same sentences
+      exactly when they have isomorphic ultrapowers, and exactly when one embeds elementarily into an
+      ultrapower of the other. From these results comes Keisler's description of the elementary classes by
+      closure under ultraproducts.
+    entries:
+      - A37HPCKCE2
+      - QPX9HG9BH4
+      - 4HNAJQQ8Z0
+  - title: Products
+    intro: >
+      For direct products and their relatives, the Feferman-Vaught theorem reduces the truth of a formula in
+      the product to the truth of finitely many formulas in the factors, combined by a formula about sets of
+      indices. Elementary equivalence of factors therefore passes to products.
+    entries:
+      - RYMZZ2AWFT
+  - title: Saturation and Keisler's order
+    intro: >
+      Ultraproducts over countably incomplete ultrafilters realize many types, and good ultrafilters give
+      stronger saturation. Keisler's order compares complete theories by which regular ultrafilters saturate
+      their ultrapowers.
+    entries:
+      - DYXQP8WS63
+      - TD5D2G5PYP

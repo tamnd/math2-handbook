@@ -1,0 +1,18 @@
+## History
+
+The liar is old. The tradition credits Eubulides, a Megarian philosopher of the fourth century BC, with the liar and with the sorites, and medieval logicians studied the liar and its relatives under the name *insolubilia*; Thomas Bradwardine wrote a treatise of that name in the fourteenth century. The modern interest began with the paradoxes of set theory. Bertrand Russell, in "Mathematical logic as based on the theory of types" (1908), listed the liar beside his own paradox and stated the paradox of definability that he attributed to G. G. Berry. In the same year Kurt Grelling and Leonard Nelson published the paradox of the word "heterological".
+
+Alfred Tarski gave the first mathematical theory of truth in his Polish monograph of 1933, translated into German in 1935 as *Der Wahrheitsbegriff in den formalisierten Sprachen*. He stated Convention T, defined truth for formal languages in a richer metalanguage, and proved that a language with enough arithmetic cannot define its own truth. His essay "The semantic conception of truth" (1944) explained the theory to philosophers. David Kaplan and Richard Montague published the knower paradox in 1960, in "A paradox regained".
+
+Saul Kripke's "Outline of a theory of truth" (1975) replaced Tarski's levels by stages of one inductive construction, with a partial truth predicate and grounded sentences; Robert Martin and Peter Woodruff found the fixed-point construction independently in the same year. Hans Herzberger, Anil Gupta and Nuel Belnap started the revision theory in 1982, and Gupta and Belnap set it out in *The Revision Theory of Truth* (1993). Graham Priest proposed the logic of paradox in "The logic of paradox" (1979) and defended the view that the liar is both true and false. Stephen Yablo published his sequence of sentences in "Paradox without self-reference" (1993).
+
+The axiomatic study of truth over arithmetic grew in the 1980s. Henryk Kotlarski, Stanisław Krajewski and Alistair Lachlan proved in 1981 that compositional truth without extra induction is conservative over Peano arithmetic. Vann McGee proved his $\omega$-inconsistency theorem in 1985, Harvey Friedman and Michael Sheard compared type-free systems of truth in 1987, and Solomon Feferman published his axiomatization of Kripke's fixed points in "Reflecting on incompleteness" (1991). Volker Halbach's *Axiomatic Theories of Truth* (2011) collects these results. For vagueness, Kit Fine's "Vagueness, truth and logic" (1975) developed supervaluation, and Timothy Williamson's *Vagueness* (1994) defended the epistemic view.
+
+## Further reading
+
+- Alfred Tarski, "The semantic conception of truth" (1944). Tarski's own non-technical account of Convention T, the metalanguage and the liar.
+- Saul Kripke, "Outline of a theory of truth" (1975). A short paper that introduces fixed points, groundedness and the least fixed point, and is still the best first source for them.
+- Volker Halbach, *Axiomatic Theories of Truth* (2011). The standard monograph on $\mathsf{TB}$, $\mathsf{CT}$, $\mathsf{KF}$ and $\mathsf{FS}$, with the proofs of conservativity and of McGee's theorem.
+- Anil Gupta and Nuel Belnap, *The Revision Theory of Truth* (1993). The full account of revision sequences, circular definitions and the systems $\mathsf{T}^*$ and $\mathsf{T}^{\#}$.
+- Graham Priest, *In Contradiction*, second edition (2006). The case for gluts and for a paraconsistent treatment of the liar, with the logic of paradox.
+- Timothy Williamson, *Vagueness* (1994). A history of the sorites and a defence of epistemicism, with a careful critique of supervaluation and degrees of truth.

@@ -1,0 +1,21 @@
+1. (a), (b) and (c) are substructures: each contains $0$ and is closed under $+$. (d) is not, since $1 + 1 = 2$; (e) is not, since it does not contain $0$. In $\set{+, -, 0}$ the set $\N$ is no longer a substructure, because $-1 \notin \N$; the answers for (b) to (e) stay the same.
+
+2. (a) $6\Z$, since $\gcd(12, 18) = 6$ and $6 = 18 - 12$. (b) The dyadic rationals $\set{k / 2^m : k \in \Z, m \in \N}$, that is, $\Z[\tfrac{1}{2}]$. (c) $\Z$: it contains $1$, is closed under $+$, $-$ and $\cdot$, and every subring contains it. (d) $\set{0}$.
+
+5. (a) $\exists x\, \forall y\, \neg(y < x)$, true in $\N$ only. (b) $\forall x\, \exists y\, (y + y = x)$, true in $\Q$ only. (c) $\exists x\, (x \cdot x = 1 + 1)$, true in $\R$ only. (d) $\exists x\, (x \cdot x + 1 = 0)$, true in $\C$ only.
+
+6. (a) Complete, as the theory of any structure is. (b) Not complete: density holds in $(\Q, <)$ and fails in $(\Z, <)$. (c) Complete: all its models are three-element sets, hence isomorphic, hence elementarily equivalent. (d) Not complete: it decides neither $\exists x\, \exists y\, \neg(x = y)$ nor its negation, as a one-element set and a two-element set show.
+
+8. (a) The conjunction of the group axioms with $\forall x\, (x \cdot x \cdot x \cdot x \cdot x \cdot x = e)$. (b) If $T$ axiomatized the class, add a constant $c$ and the sentences $c^n \ne e$ for $n \ge 1$. A finite part holds in $\Z / m\Z$ with $c = 1$ and $m$ large, so the whole set has a model: a group of finite exponent with an element of infinite order.
+
+12. (a) $x = 0$: $\forall y\, (x \cdot y = x)$. $x = 1$: $\forall y\, (x \cdot y = y)$. $x \mid y$: $\exists z\, (x \cdot z = y)$. $x$ prime: $x \ne 0 \wedge x \ne 1 \wedge \forall a\, \forall b\, (a \cdot b = x \to a = 1 \vee b = 1)$, with $0$ and $1$ replaced by their definitions. (b) Let $\sigma(0) = 0$ and let $\sigma$ exchange the exponents of $2$ and $3$ in each factorization. Then $\sigma$ is an automorphism of $(\N, \cdot)$, and $2 < 3$ while $\sigma(2) = 3 > 2 = \sigma(3)$.
+
+14. $T$ has no finite models, because a nontrivial torsion-free group is infinite. A model of size $\aleph_1$ is a $\Q$-vector space of dimension $\aleph_1$, since a space of countable dimension is countable; two such spaces are isomorphic. The signature is countable, so the test applies. Both $(\Q, +)$ and $(\R, +)$ are models.
+
+16. (a) The orbit $\set{s^n(x) : n \in \Z}$ of each element is infinite, so it is a copy of $\Z$ with the successor. (b) $T$ has no finite models, and a model of size $\aleph_1$ has $\aleph_1$ orbits, because each orbit is countable; two such models are isomorphic orbit by orbit. Apply the Łoś–Vaught test. (c) A finite part of $T$ forbids cycles only of lengths up to some $N$; the cycle $\Z / (N+1)\Z$ with $s(x) = x + 1$ satisfies it.
+
+17. Elementary: a graph is bipartite exactly when it has no closed walk of odd length, and "no closed walk of length $2k + 1$" is one sentence for each $k$. If one sentence $\sigma$ defined the class, the set consisting of $\neg\sigma$ and of these sentences for all $k$ would be finitely satisfiable, in a long odd cycle, but it has no model.
+
+18. (a) An automorphism $h$ fixes $0$ and $1$, hence every rational. It preserves the order, because the order is defined without parameters. If $h(a) \ne a$, a rational lies between $a$ and $h(a)$, and this contradicts the preservation of the order. (b) There are $2^{\aleph_0}$ pairs of a formula and a finite tuple of parameters, and $2^{2^{\aleph_0}}$ subsets of $\R$.
+
+19. Let $\mathcal{M}$ have the distinct elements $a_1, \dots, a_n$. Let $\delta(\bar x)$ be the conjunction of the formulas $x_i \ne x_j$ for $i \ne j$, of $c = x_j$ for each constant $c$ with value $a_j$, of $f(x_{i_1}, \dots, x_{i_k}) = x_j$ whenever $f^{\mathcal{M}}(a_{i_1}, \dots, a_{i_k}) = a_j$, and of $R(x_{i_1}, \dots, x_{i_k})$ or its negation, as it holds in $\mathcal{M}$. Because $L$ is finite, $\delta$ is a finite conjunction. The sentence $\exists \bar x\, (\delta(\bar x) \wedge \forall y\, (y = x_1 \vee \dots \vee y = x_n))$ is true in $\mathcal{M}$, and in any model of it the map that sends $a_i$ to the witness for $x_i$ is an isomorphism. A complete theory with the model $\mathcal{M}$ has the same consequences as $\operatorname{Th}(\mathcal{M})$.

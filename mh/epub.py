@@ -102,6 +102,8 @@ _MATHML = [
     (re.compile(r"\\not\s*\\lhd(?![A-Za-z])"), lambda m: "\\ntriangleleft"),
     # texmath cannot read \not before a group, as in the negated "|~" of nonmonotonic reasoning
     (re.compile(r"\\not\s*\\mathrel\{\|\\!\\sim\}"), lambda m: "\\mathrel{|\\!\\nsim}"),
+    # texmath has no \S; the section sign is the second modality of light linear logic
+    (re.compile(r"\\S(?![A-Za-z])"), lambda m: "§"),
     # texmath has \big but not the relation sizes \bigm, \Bigm, \biggm, \Biggm (as in P(A \bigm| B))
     (re.compile(r"\\(big|Big|bigg|Bigg)m(?![A-Za-z])\s*(\\\||\\[A-Za-z]+|.)"),
      lambda m: "\\mathrel{\\" + m[1] + m[2] + "}"),

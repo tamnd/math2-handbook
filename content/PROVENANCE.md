@@ -39,6 +39,20 @@ corrected on the site after its release v0.2.0, in [tamnd/math2#408](https://git
 this edition prints the entries as they are in v0.2.0. The pages of Volume 1 and chapters 2.1 to 2.11 are those of
 edition 0.1.1.
 
+For edition 0.3.0 (November 2026, built from release v0.3.0 of the site), the same brief was used for the new pages:
+chapters 2.24 to 2.28, which complete Volume 2, and Volume 4, *Model theory*, new in this edition, whose first four
+chapters have entries. Nine writers shared the work: one for each of the five chapters of Volume 2 (the writer of
+2.28 also revised the introduction of Volume 2 for the complete volume), two for chapters 4.1 to 4.4, and two for
+the openings of the 23 chapters of Volume 4 that have no entries yet, one of whom wrote the introduction of
+Volume 4. The exercises were again worked and their answers checked with short scripts, and `mh check` is clean for all
+four volumes. Twelve errors that the writers found in eleven entries (a false equivalence between FDE and the pair
+LP, K3; a wrong example for the Tarski–Vaught test; an axiom pair called inconsistent without the axioms that make
+it so; a fragment of $R$ called decidable; a misattributed name, a wrong year and an overstated attribution in
+history sections; a wrong case and a wrong subscript in one remark; and three loose or incomplete statements) were
+corrected on the site after its release v0.3.0, in [tamnd/math2#410](https://github.com/tamnd/math2/pull/410); this
+edition prints the entries as they are in v0.3.0. A link in the summary of chapter 2.7 that pointed to the wrong
+entry now points to *True arithmetic*. The other pages of Volumes 1 to 3 are those of edition 0.2.0.
+
 ## Known limits
 
 - The history in the notes rests on the `### History` sections and the sources of the entries, and on general

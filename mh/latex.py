@@ -71,6 +71,8 @@ def brace_scripts(tex: str) -> str:
     tex = _PRIME_SUB_SUP.sub(_prime_sub_sup, tex)
     # unicode-math sets \mathrm in the text font, which has no math Greek: `\mathrm{k\Omega}` (a unit) loses its Ω.
     # The Greek letter goes outside, upright from the math font (\symup; \mathup is the text font too).
+    # the math italic font has no Ł: `x \to_{Ł} y` (the Łukasiewicz conditional) loses its subscript; set it upright
+    tex = re.sub(r"(?<!\\)([_^])(?:\{Ł\}|Ł)", r"\1{\\mathrm{Ł}}", tex)
     tex = _MATHRM_GREEK.sub(lambda m: (r"\mathrm{" + m[1] + "}" if m[1] else "") + r"\symup{" + "\\" + m[2] + "}", tex)
     # unicode-math's \not looks for a negated character; ↝ has none and XeTeX dies ("bad native font flag"),
     # and before a group, as in the negated "|~" \not\mathrel{|\!\sim}, it gives "Missing { inserted"

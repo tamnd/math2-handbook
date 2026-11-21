@@ -1,0 +1,32 @@
+# The order of chapter 4.4, back-and-forth methods and Ehrenfeucht-Fraïssé games. Groups are read in order; entries in a group too.
+groups:
+  - title: Back and forth
+    intro: >
+      Cantor's proof that any two countable dense linear orders without endpoints are isomorphic extends a
+      finite partial isomorphism one element at a time, alternating between the two sides. A back-and-forth
+      system keeps the extension property and drops the counting; two structures with such a system are
+      partially isomorphic, written $\mathcal{A} \cong_p \mathcal{B}$.
+    entries:
+      - 6F2DB4HTJR
+      - EWB8KXZMCV
+  - title: Quantifier rank and the finite games
+    intro: >
+      The quantifier rank of a formula is its nesting depth of quantifiers, and $\mathcal{A} \equiv_n
+      \mathcal{B}$ means agreement on all sentences of rank at most $n$. The game $G_n$ has $n$ rounds, and
+      the [Ehrenfeucht-Fraïssé theorem](/72BMYXGFA8/) says that Duplicator wins it exactly when
+      $\mathcal{A} \equiv_n \mathcal{B}$, for a finite relational signature. Finite linear orders are the first
+      full case: $n$ rounds cannot tell apart two orders with at least $2^n - 1$ elements.
+    entries:
+      - FVEVRE5XNZ
+      - 2RE7YAZK8R
+      - 72BMYXGFA8
+      - ZZPXVVZARC
+  - title: The infinite game and non-definability
+    intro: >
+      Karp's theorem identifies partial isomorphism with equivalence in the infinitary logic
+      $L_{\infty\omega}$ and with a win for Duplicator in the game of infinite length. The finite games then
+      become a method: to show that a property is not first-order, give for each $n$ a pair of structures that
+      differ on the property and on which Duplicator wins the game with $n$ rounds.
+    entries:
+      - KAWWZ2DF0G
+      - VT2PSXKM50

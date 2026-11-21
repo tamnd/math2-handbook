@@ -1,0 +1,72 @@
+# The order of chapter 2.24, many-valued and fuzzy logics. Groups are read in order; entries in a group too.
+groups:
+  - title: Truth values and matrices
+    intro: >
+      A many-valued logic replaces the two classical values by a larger set $V$ and picks out a set $D$ of
+      designated values that count as true. The pair of an algebra of truth tables and a designated set is a
+      [logical matrix](/P7E926JK13/), and consequence means that designated premises give a designated
+      conclusion. By Wójcicki's theorem every structural logic arises from a class of matrices.
+    entries:
+      - DWYCKAKXZD
+      - P7E926JK13
+  - title: Three and four values
+    intro: >
+      Four small logics read the third value in different ways: "possible" for Łukasiewicz, "undefined" for
+      strong Kleene, "meaningless" for weak Kleene. [First-degree entailment](/KXTP4P3GHT/) adds a fourth
+      value for "both true and false". Changing one table entry or the designated set changes the logic, and
+      the entries track which classical laws survive.
+    entries:
+      - 1CE2TGM6MQ
+      - SZHA10A9X7
+      - BCK5QXQXA6
+      - KXTP4P3GHT
+  - title: Functional completeness
+    intro: >
+      Post's logics have a cyclic negation, and with $\max$ it defines every function on $m$ values. A
+      [Sheffer function](/1K829SJG3K/) does the same job alone. Webb's function $\max(x, y) + 1 \bmod m$ is
+      one, and Słupecki's and Rosenberg's criteria decide completeness in general.
+    entries:
+      - YHYSGRE7JV
+      - 1K829SJG3K
+  - title: Infinite-valued Łukasiewicz logic
+    intro: >
+      On $[0, 1]$ the Łukasiewicz tables give a logic whose axioms are complete for finite sets of premises
+      but not for infinite ones. [Chang's theorem](/QM0F33QE9P/) proves completeness through MV-algebras, and
+      [McNaughton's theorem](/E11A9H8Z7Q/) says that the formulas define exactly the continuous piecewise linear
+      functions with integer coefficients.
+    entries:
+      - NFCEM44XYH
+      - QM0F33QE9P
+      - E11A9H8Z7Q
+  - title: Fuzzy logics from t-norms
+    intro: >
+      Mathematical fuzzy logic reads $[0, 1]$ as degrees of truth and interprets strong conjunction by a
+      [t-norm](/VR6D8JXX1W/) and implication by its residuum. The residuum exists exactly for left-continuous
+      t-norms. MTL is the logic of all of them, BL the logic of the continuous ones, and Łukasiewicz, Gödel and
+      product logic are the three basic cases.
+    entries:
+      - 8DH4QM6AX8
+      - VR6D8JXX1W
+      - 3AQ5GHTXA4
+      - PT5PHKJDYM
+      - YTHRDT9PDR
+  - title: Quantifiers and degrees
+    intro: >
+      Quantifiers become infima and suprema. [First-order Gödel logics](/H8C323CV3T/) depend on the order type
+      of the set of truth values, and standard validity in first-order Łukasiewicz logic is
+      $\Pi^0_2$-complete, so it has no complete computable axiomatization. Pavelka logic puts truth constants
+      into the language and makes provability a matter of degree.
+    entries:
+      - H8C323CV3T
+      - YG62F8YC0P
+      - VAHH1505Z0
+  - title: Games, probabilities and vectors
+    intro: >
+      Three neighbours close the chapter. In the [Rényi–Ulam game](/402GXME26B/) with one lie, the states of
+      knowledge are Ł3-valued functions. [Probability logic](/Z2WRGJDRQT/) gives bounds for conclusions from
+      uncertain premises, and it is not truth-functional. [Vector logic](/DJ41X602BJ/) writes truth values as
+      vectors and connectives as matrices.
+    entries:
+      - 402GXME26B
+      - Z2WRGJDRQT
+      - DJ41X602BJ

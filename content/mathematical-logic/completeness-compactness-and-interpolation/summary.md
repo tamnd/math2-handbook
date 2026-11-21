@@ -18,7 +18,7 @@
 | [Presburger arithmetic](/4W0E9G7PPV/) | yes | yes | yes |
 | [Theory of groups](/RX9MB386C5/) | yes | no | no |
 | [Peano arithmetic](/0QFT7Z76N5/) | yes | no | no |
-| [True arithmetic](/JV24HVZPJ0/) $\operatorname{Th}(\N, +, \cdot)$ | no | yes | no |
+| [True arithmetic](/DX0KPMH4QZ/) $\operatorname{Th}(\N, +, \cdot)$ | no | yes | no |
 
 : Five theories. The rows show that the three properties are independent of each other except for one link: a theory that is recursively axiomatizable and complete is decidable.
 

@@ -1,0 +1,58 @@
+# The order of chapter 2.25, substructural, linear and relevance logics. Groups are read in order; entries in a group too.
+groups:
+  - title: The structural rules
+    intro: >
+      A sequent calculus has rules for the connectives and three rules that only manage the hypotheses:
+      weakening adds one, contraction merges two copies of one, and exchange swaps two. A substructural logic
+      drops or restricts at least one of them. Each rule matches an axiom of Hilbert style and an equation on
+      residuated lattices.
+    entries:
+      - ZZKTJY5J4T
+      - VHRXX0T5XT
+      - V0MZVC2XA9
+      - YAFD18WYJ8
+  - title: The Lambek calculi
+    intro: >
+      The full Lambek calculus $\mathsf{FL}$ has no structural rule at all, and it is the common base of the
+      family; its extensions add the rules back one by one. The older Lambek calculus $\mathsf{L}$ has only
+      fusion and the two implications $\backslash$ and $/$, and it reads formulas as the types of words.
+    entries:
+      - V5XVVN16GS
+      - 5FAC9KX4H0
+  - title: Linear logic and its models
+    intro: >
+      Linear logic drops weakening and contraction, keeps exchange, and gives them back to the formulas marked
+      with $!$ and $?$. Proof nets present its multiplicative proofs as graphs, phase semantics gives models in
+      commutative monoids, and coherence spaces give models in which proofs are cliques.
+    entries:
+      - 2P2184B6HE
+      - HN6WN1VE39
+      - 64MHHQQ6G6
+      - WSGZ5HGK1X
+  - title: Complexity of linear logic
+    intro: >
+      Provability is NP-complete for the multiplicative fragment, PSPACE-complete with the additives, and
+      undecidable with the exponentials. The light linear logics weaken the rules for $!$ and $?$ until cut
+      elimination runs in elementary or in polynomial time.
+    entries:
+      - BNRWJB2R8C
+      - E7JVJSSWBT
+  - title: Relevance logic
+    intro: >
+      A relevance logic proves $A \rightarrow B$ only when $A$ and $B$ share a variable. The systems
+      $\mathbf{R}$, $\mathbf{E}$ and $\mathbf{T}$ have a semantics with a ternary relation and a star map on
+      points, and Urquhart proved that all three are undecidable.
+    entries:
+      - KXTCZ2FY5M
+      - H4Z8J0KMAY
+      - X7F69S7QPX
+  - title: More substructural logics
+    intro: >
+      Affine logic adds weakening to linear logic. Bunched logic puts an intuitionistic and a multiplicative
+      implication side by side and is the logic behind separation logic. Abelian logic reads implication as
+      subtraction in an ordered group, and ludics studies what the rules of a connective are.
+    entries:
+      - K67C2N2QAH
+      - 5JKHNK7AR5
+      - W3CPQAFQJ3
+      - S4PWX2MFM2

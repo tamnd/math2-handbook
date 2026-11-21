@@ -1,0 +1,61 @@
+# The order of chapter 2.26, paraconsistent, free, non-monotonic and other non-classical logics. Groups are read in order; entries in a group too.
+groups:
+  - title: Non-classical logics and explosion
+    intro: >
+      A logic can differ from classical logic by changing its laws, by adding new connectives, or both. The
+      first test case is explosion, the rule that a contradiction entails every formula. The Lewis argument
+      derives it from disjunction introduction, disjunctive syllogism and transitivity, so a logic without
+      explosion must give up one of the three.
+    entries:
+      - 3JK7T9D6X1
+      - TTKZGJEEK7
+  - title: Paraconsistent logics
+    intro: >
+      A paraconsistent logic lets an inconsistent theory stay non-trivial. Priest's [logic of paradox](/BXJZG67PX3/)
+      does it with a third value that is both true and false, and dialetheism is the view that some sentences
+      really have this value. Da Costa's systems mark the formulas that behave classically, Jaśkowski's logic
+      keeps the assertions of different speakers apart, and adaptive logics use classical rules wherever the
+      premises allow it.
+    entries:
+      - C7YWCR87QJ
+      - BXJZG67PX3
+      - 3P0FM0AQF3
+      - KN2VBRQB3Q
+      - 489SFB5NX2
+      - X8RW5F4261
+  - title: Empty names, gaps, connexive theses and many conclusions
+    intro: >
+      Free logic drops the assumption that every singular term denotes, and partial logic lets formulas lack a
+      truth value. Connexive logic adds theses such as $\sim(\sim A \to A)$ that are not classical tautologies.
+      Multiple-conclusion logic changes the form of consequence itself, so that $\Gamma \vdash \Delta$ reads
+      "if all of $\Gamma$ hold, then some member of $\Delta$ holds".
+    entries:
+      - Y0CNMRXHVJ
+      - F5SP7HQFFS
+      - NQFYY76BSM
+      - 3AJTDAP93H
+  - title: Nonmonotonic reasoning
+    intro: >
+      In a nonmonotonic logic a new premise can remove a conclusion. Reiter's default logic draws conclusions
+      by fixed points called extensions. The rules of system $\mathbf{P}$ of Kraus, Lehmann and Magidor say
+      which properties such a relation should keep, and preferential models are their semantics.
+    entries:
+      - BKDFH4PKRP
+      - K4AYFFKY2D
+      - G4QC9MKFAG
+  - title: Combined logics and the logic of language
+    intro: >
+      Fusion, products and fibring join two logics into one, and the collapse problem shows that the join can
+      prove more than either part. Montague grammar combines a typed lambda calculus with possible worlds to
+      give a fragment of English an exact model-theoretic semantics.
+    entries:
+      - HP1N0MBTDJ
+      - FT512R206H
+  - title: Logics from physics and computation
+    intro: >
+      Quantum logic takes the closed subspaces of a Hilbert space as propositions; they form an orthomodular
+      lattice in which the distributive law fails. Computability logic reads a formula as a game between a
+      machine and its environment, and calls it valid when an algorithm always wins.
+    entries:
+      - 2E9DMB7A6Q
+      - C7CV0XMSTT

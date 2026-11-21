@@ -1,0 +1,22 @@
+The even integers, ordered as usual, form a copy of $(\Z, <)$: the map $n \mapsto 2n$ is an isomorphism of $(\Z, <)$ onto $(2\Z, <)$, so the two orders satisfy the same sentences. Still, $2\Z$ does not sit inside $\Z$ in a way that first-order logic accepts. The formula $\exists z\, (x < z \wedge z < y)$ holds of $0$ and $2$ in $\Z$, with $z = 1$, and fails of the same two elements in $2\Z$. The rationals inside the reals behave differently: every formula with parameters from $\Q$ has the same truth value in $(\Q, <)$ and in $(\R, <)$. In the language of the chapter, $(\Q, <)$ is an elementary substructure of $(\R, <)$, and $(2\Z, <)$ is a substructure of $(\Z, <)$ that is not elementary.
+
+Elementary substructures and extensions are the maps of model theory, and the chapter gives the tools to produce them. The main result is the Löwenheim–Skolem theorem: for every infinite cardinal $\kappa \ge \abs{L}$, an infinite $L$-structure has an elementary substructure or an elementary extension of size $\kappa$. So the real field has a countable elementary substructure, the field of real algebraic numbers, and the ordered set $(\N, <)$ has an elementary extension of size $\aleph_1$. A first-order theory with an infinite model cannot fix the size of its models, and if set theory has a model at all, it has a countable one.
+
+## What the chapter covers
+
+The chapter is in four groups, read in order.
+
+1. **Elementary embeddings and substructures.** [Elementary embeddings](/CGH8C8EA9N/) preserve every formula with parameters; [elementary substructures](/8WZF9SBP39/) are the corresponding inclusions. The [Tarski–Vaught test](/60SA99BER7/) says that a substructure is elementary exactly when every formula with parameters in it that has a witness in the big structure has a witness in the substructure.
+2. **Diagrams, Skolem functions and the Löwenheim–Skolem theorems.** The [diagram lemmas](/EP5E317TNW/) turn embeddings and elementary embeddings into models of sets of sentences, so that compactness can build them. The [Löwenheim–Skolem theorem](/484M0TZ1S7/) follows, with [Skolem functions and Skolem hulls](/NKQY9NB955/) as the standard way to build small elementary substructures.
+3. **Chains and amalgamation.** The [elementary chain theorem](/NHCRZ74JHH/) controls unions of chains, and the [elementary amalgamation theorem](/P2VMSM4H4Y/) puts two elementary extensions of one structure into a common one.
+4. **Partial elementary maps and the limits of elementary equivalence.** [Partial elementary maps](/XTNYY0WRQ5/) are maps on subsets that preserve all formulas, the stages of back-and-forth constructions. The chapter ends with pairs that show the gap between [elementary equivalence and isomorphism](/4WGKBXG068/).
+
+## A first reading
+
+For a first reading, take these entries in order: [elementary embedding](/CGH8C8EA9N/), [elementary substructure](/8WZF9SBP39/), [Tarski–Vaught test](/60SA99BER7/), [diagram lemmas](/EP5E317TNW/), [Löwenheim–Skolem theorem](/484M0TZ1S7/), [elementary chain theorem](/NHCRZ74JHH/) and [elementary equivalence versus isomorphism](/4WGKBXG068/). The attached examples of the first two entries are worth reading in full: they show the two standard ways to prove elementarity, by quantifier elimination and by the Tarski–Vaught test with automorphisms, and two typical ways in which it fails.
+
+Skolem functions, the amalgamation theorem and partial elementary maps can wait for a second pass. They return in the chapters on types and saturated models and on back-and-forth methods, where they are used at full strength.
+
+## Before you start
+
+You need the previous chapter, [basic notions of model theory](/AY09KYSW81/): [substructures](/676H7EGTKJ/), [embeddings](/SCRB74SWQN/), the expansion of a structure by constants for its elements in [reducts and expansions](/EY20BF96SJ/), [elementary equivalence](/P3B1V182N4/), [complete theories](/655K8Y7VS8/) and [definable sets](/CY1TXHF6KQ/). From Volume 2 you need [structures, satisfaction and truth](/NJDME6F845/), in particular the [isomorphism invariance of truth](/NDTJ2E895C/), and the [compactness theorem](/1NR3HAWG9D/) from [completeness, compactness and interpolation](/FBWW4J1XWG/). The Löwenheim–Skolem theorem is a statement about [cardinal numbers](/0EBACQFAZW/), and its proofs use the [axiom of choice](/0HTGB13FE2/); the examples use [dense linear orders](/2W4S2H4VYA/), [algebraically closed fields](/0PF6TM8TWT/) and [real closed fields](/DDY3Q3PJ6W/), with [quantifier elimination](/7FDDXV3JK7/) quoted as a black box.

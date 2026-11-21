@@ -1,0 +1,80 @@
+# The order of chapter 2.27, algebraic logic. Groups are read in order; entries in a group too.
+groups:
+  - title: Formulas as elements of an algebra
+    intro: >
+      Identify two formulas when the logic proves them equivalent, and the connectives become operations on
+      the classes. For classical logic the result is the Lindenbaum–Tarski algebra, a Boolean algebra, and a
+      formula is a theorem exactly when the equation $\varphi \approx 1$ holds in every Boolean algebra.
+    entries:
+      - Z3DE4R4RET
+      - QC9M3Q8B8Q
+      - KG7730QZMQ
+  - title: Algebras of modal logic
+    intro: >
+      A Boolean algebra with an operator $\Box$ that preserves $1$ and finite meets is a modal algebra, and
+      the interior algebras are the ones for $\mathrm{S4}$. The Jónsson–Tarski theorem embeds every modal
+      algebra in the complex algebra of its ultrafilter frame, so algebraic and Kripke semantics meet.
+    entries:
+      - BDEX7HET71
+      - 3H85NSFWHK
+      - HC5V2QFFWB
+  - title: Algebras of fuzzy logics
+    intro: >
+      MV-algebras are the algebras of infinite-valued Łukasiewicz logic, with the unit interval and
+      $x \oplus y = \min(1, x + y)$ as the main example. Mundici's equivalence turns them into
+      lattice-ordered abelian groups with a strong unit. BL-algebras, the algebras of Hájek's basic logic,
+      contain both the MV-algebras and the Gödel algebras.
+    entries:
+      - 8T4M7RN9AC
+      - 64NDFWQEZ2
+      - ERNYMVEGKC
+  - title: Residuation
+    intro: >
+      A residuated lattice has a monoid operation with left and right residuals, $xy \le z$ iff
+      $y \le x \backslash z$ iff $x \le z / y$. These are the algebras of substructural logics. A
+      residuated Boolean algebra puts the same structure on a Boolean algebra, as for formal languages and
+      for binary relations.
+    entries:
+      - E337A6WVH3
+      - KCG48CWY69
+  - title: Post, Moisil and Nelson algebras
+    intro: >
+      Three more classes of algebras for many-valued and constructive logics. Post algebras are built on
+      the $n$-element chain with a cyclic negation, Łukasiewicz–Moisil algebras add operators that read
+      off the truth degrees of an element, and Nelson algebras model constructive logic with strong
+      negation through twist structures over Heyting algebras.
+    entries:
+      - RD2A5Z7E2B
+      - 51A2GMPDYK
+      - XRGDT262HQ
+  - title: Algebras of first-order logic
+    intro: >
+      Cylindric algebras treat existential quantification over each variable as an operation $c_\kappa$
+      and equality of variables as constants $d_{\kappa\lambda}$. The locally finite algebras of infinite
+      dimension are representable, which is the completeness theorem again, while for finite dimension
+      $n \ge 3$ the representable ones have no finite axiomatization. Halmos's polyadic algebras do the
+      same for first-order logic without equality.
+    entries:
+      - 1MDT9BF81H
+      - WZ1BZYVD5G
+      - CQ9A86S3J4
+  - title: Relation algebras
+    intro: >
+      Tarski's relation algebras axiomatize composition, converse and identity of binary relations. Not
+      every relation algebra is an algebra of relations, and the representable ones form a variety with
+      no finite basis. Their equations express exactly the three-variable fragment of first-order logic.
+    entries:
+      - GQK4DSA11K
+      - 7R95RBEPP8
+      - AHWXJ3GT02
+  - title: Abstract algebraic logic
+    intro: >
+      An algebraizable logic is one whose consequence relation translates into the equational consequence
+      of a class of algebras and back. The Leibniz hierarchy grades logics by how well the Leibniz operator
+      behaves, Suszko's reduction shows that every logic has a two-valued semantics, and the bridge
+      theorems turn interpolation, definability and deduction theorems into algebraic properties.
+    entries:
+      - CESWST3NWA
+      - 6JT3CMJT8F
+      - 2FQB3NQF8A
+      - C3DC1C23SQ
