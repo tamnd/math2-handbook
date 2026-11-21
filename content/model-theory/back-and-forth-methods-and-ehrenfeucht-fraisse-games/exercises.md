@@ -2,7 +2,7 @@
 
 2. ◦ Write a sentence of quantifier rank $2$ that is true in $(\N, <)$ and false in $(\Z, <)$.
 
-3. ◦ Let $A$ and $B$ be sets with no structure, with $\abs{A} = 4$ and $\abs{B} = 6$. What is the largest $n$ for which Duplicator wins the [Ehrenfeucht-Fraïssé game](/2RE7YAZK8R/) $G_n(A, B)$? Describe how Spoiler wins the game with one more round.
+3. ◦ Let $A$ and $B$ be sets with no structure, with $\abs{A} = 4$ and $\abs{B} = 6$. What is the largest $n$ for which Duplicator wins the [Ehrenfeucht–Fraïssé game](/2RE7YAZK8R/) $G_n(A, B)$? Describe how Spoiler wins the game with one more round.
 
 4. ◦ For each pair of finite linear orders, give the largest $n$ with $L_m \equiv_n L_k$, where $L_m$ has $m$ elements. (a) $L_3$ and $L_4$. (b) $L_5$ and $L_6$. (c) $L_{15}$ and $L_{20}$. (d) $L_{31}$ and $L_{100}$.
 

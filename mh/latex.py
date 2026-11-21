@@ -144,6 +144,8 @@ def build(book: Book, vol: Volume, md: str, outdir: str, edition: str, date: str
     open(os.path.join(outdir, "body.md"), "w").write(md)
     body = pandoc_latex(md)
     t1 = time.time()
+    # ᗮ (U+15EE), Mathlib's notation for the orthogonal complement `Uᗮ`, is in no font of the chain: a raised ⊥
+    body = body.replace("ᗮ", r"\textsuperscript{\(\perp\)}")
     fb = Fallback()
     body = fb.apply(body)
     body = brace_scripts(body)

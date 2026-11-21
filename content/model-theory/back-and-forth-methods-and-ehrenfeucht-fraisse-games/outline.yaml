@@ -1,4 +1,4 @@
-# The order of chapter 4.4, back-and-forth methods and Ehrenfeucht-Fraïssé games. Groups are read in order; entries in a group too.
+# The order of chapter 4.4, back-and-forth methods and Ehrenfeucht–Fraïssé games. Groups are read in order; entries in a group too.
 groups:
   - title: Back and forth
     intro: >
@@ -13,7 +13,7 @@ groups:
     intro: >
       The quantifier rank of a formula is its nesting depth of quantifiers, and $\mathcal{A} \equiv_n
       \mathcal{B}$ means agreement on all sentences of rank at most $n$. The game $G_n$ has $n$ rounds, and
-      the [Ehrenfeucht-Fraïssé theorem](/72BMYXGFA8/) says that Duplicator wins it exactly when
+      the [Ehrenfeucht–Fraïssé theorem](/72BMYXGFA8/) says that Duplicator wins it exactly when
       $\mathcal{A} \equiv_n \mathcal{B}$, for a finite relational signature. Finite linear orders are the first
       full case: $n$ rounds cannot tell apart two orders with at least $2^n - 1$ elements.
     entries:

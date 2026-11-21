@@ -53,6 +53,18 @@ corrected on the site after its release v0.3.0, in [tamnd/math2#410](https://git
 edition prints the entries as they are in v0.3.0. A link in the summary of chapter 2.7 that pointed to the wrong
 entry now points to *True arithmetic*. The other pages of Volumes 1 to 3 are those of edition 0.2.0.
 
+For edition 0.3.1 (November 2026, built from release v0.3.1 of the site), the same brief was used for chapters 4.5
+to 4.7 of Volume 4 (types and saturated models; countable models and categoricity; Fraïssé theory and homogeneous
+structures), which have entries in this release. Three writers shared the work, one for each chapter, and the
+introduction of Volume 4 was revised for the seven written chapters. The exercises were again worked and their
+answers checked with short scripts, and `mh check` is clean for all four volumes. Seven loose or incomplete
+statements that the writers found in seven entries (four missing the hypothesis of a countable signature or an
+uncountable cardinal, a list of the homogeneous graphs without the complete multipartite graphs, a form of the
+Vaught conjecture called both stronger and equivalent, and an example that read a definition differently from its
+entry) were corrected on the site after its release v0.3.1, in
+[tamnd/math2#412](https://github.com/tamnd/math2/pull/412); this edition prints the entries as they are in v0.3.1.
+The other pages of Volumes 1 to 3 are those of edition 0.3.0.
+
 ## Known limits
 
 - The history in the notes rests on the `### History` sections and the sources of the entries, and on general

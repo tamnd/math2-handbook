@@ -10,7 +10,7 @@
 
 6. ◦ Let $U$ be a nonprincipal ultrafilter on $\N$. Give the cardinality of each structure. (a) $(\Z/5\Z)^{\N}/U$. (b) $\prod_{n \ge 1} (\Z/n\Z)/U$. (c) $\Q^{\N}/U$. (d) $\prod_{n \in \N} \set{0, 1, \ldots, 7}/U$.
 
-7. ◦ Do $(\Z, <)$ and $(\Q, <)$ have isomorphic ultrapowers? Do $(\Q, <)$ and $(\R, <)$? Use the [Keisler-Shelah theorem](/A37HPCKCE2/) and say which direction of it you need in each case.
+7. ◦ Do $(\Z, <)$ and $(\Q, <)$ have isomorphic ultrapowers? Do $(\Q, <)$ and $(\R, <)$? Use the [Keisler–Shelah theorem](/A37HPCKCE2/) and say which direction of it you need in each case.
 
 8. • Which of these sentences are preserved by all reduced products? For each one that is not, give structures in which it holds and a reduced product of them in which it fails. (a) $\forall x\, \forall y\, (xy = yx)$. (b) $\forall x\, (x \neq 0 \to \exists y\, (xy = 1))$. (c) $\forall x\, \forall y\, (x \le y \vee y \le x)$. (d) $\forall x\, \forall y\, \forall z\, (x \le y \wedge y \le z \to x \le z)$. (e) $\forall x\, (x \cdot x = 1 \to x = 1)$.
 
@@ -24,7 +24,7 @@
 
 13. • Let $P_n$ be the path graph with vertices $0, 1, \ldots, n$ and edges between $i$ and $i+1$. Using an ultraproduct of the $P_n$, show that the class of connected graphs is not elementary.
 
-14. • Decide which pairs of abelian groups are elementarily equivalent. (a) $\Z$ and $\Z \times \Z$. (b) $\Z \times \Q$ and $\Z \times \Q \times \Q$. (c) $\Q$ and $\Q \times \Q$. (d) $\Z/2\Z \times \Z/4\Z$ and $\Z/8\Z$. For (b), say how the [Feferman-Vaught theorem](/RYMZZ2AWFT/) enters.
+14. • Decide which pairs of abelian groups are elementarily equivalent. (a) $\Z$ and $\Z \times \Z$. (b) $\Z \times \Q$ and $\Z \times \Q \times \Q$. (c) $\Q$ and $\Q \times \Q$. (d) $\Z/2\Z \times \Z/4\Z$ and $\Z/8\Z$. For (b), say how the [Feferman–Vaught theorem](/RYMZZ2AWFT/) enters.
 
 15. • Use [Frayne's theorem](/QPX9HG9BH4/) to show that if $M \equiv N$ and $N$ is finite, then $M \cong N$.
 

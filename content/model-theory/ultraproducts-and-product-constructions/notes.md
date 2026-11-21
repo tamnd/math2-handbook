@@ -10,9 +10,9 @@ Abraham Robinson's [nonstandard analysis](/WM62GKCBWN/) of the 1960s gave ultrap
 
 ## Further reading
 
-- C. C. Chang and H. J. Keisler, *Model Theory*, third edition (1990). Chapters 4 and 6 are the standard reference for reduced products, ultraproducts, good ultrafilters and the Keisler-Shelah theorem.
+- C. C. Chang and H. J. Keisler, *Model Theory*, third edition (1990). Chapters 4 and 6 are the standard reference for reduced products, ultraproducts, good ultrafilters and the Keisler–Shelah theorem.
 - J. L. Bell and A. B. Slomson, *Models and Ultraproducts: An Introduction* (1969). A whole book built around ultraproducts, from Boolean algebras to the characterization of elementary classes.
-- Wilfrid Hodges, *Model Theory* (1993). Covers reduced products, the Feferman-Vaught theorem and products in more generality than most texts.
+- Wilfrid Hodges, *Model Theory* (1993). Covers reduced products, the Feferman–Vaught theorem and products in more generality than most texts.
 - David Marker, *Model Theory: An Introduction* (2002). A short, clear treatment of ultraproducts and Łoś's theorem within a first course.
 - Robert Goldblatt, *Lectures on the Hyperreals: An Introduction to Nonstandard Analysis* (1998). Builds the hyperreals as an ultrapower and develops calculus on them.
 - W. W. Comfort and S. Negrepontis, *The Theory of Ultrafilters* (1974). The set theory of ultrafilters, including good and regular ultrafilters.

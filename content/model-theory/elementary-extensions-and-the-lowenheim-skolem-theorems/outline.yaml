@@ -1,4 +1,4 @@
-# The order of chapter 4.2, elementary extensions and the Löwenheim-Skolem theorems. Groups are read in order; entries in a group too.
+# The order of chapter 4.2, elementary extensions and the Löwenheim–Skolem theorems. Groups are read in order; entries in a group too.
 groups:
   - title: Elementary embeddings and substructures
     intro: >

@@ -1,0 +1,17 @@
+## History
+
+Types became central in the study of countable models in the 1950s and around 1960. The [omitting types theorem](/7MFGBVDVG9/) came from work of Leon Henkin and Steven Orey in the 1950s on $\omega$-consistency. Czesław Ryll-Nardzewski, Erwin Engeler and Lars Svenonius characterized the $\aleph_0$-categorical theories by their types in 1959, and Robert Vaught studied prime, atomic and countable saturated models in "Denumerable models of complete theories" (1961). These results on [$\aleph_0$-categorical theories](/A22K1X8GKD/) and [prime models](/S8W40PYNHX/) belong to the next chapter, and they are the reason this one treats isolated types with care.
+
+The topology on types is the Stone topology. Marshall Stone proved in 1936 that every Boolean algebra is the algebra of clopen sets of a compact totally disconnected space, and $S_n(A)$ is this space for the [Lindenbaum-Tarski algebra](/QC9M3Q8B8Q/) of formulas over $A$. Michael Morley used the Stone spaces and their Cantor-Bendixson ranks in "Categoricity in power" (1965), his proof that a countable theory categorical in one uncountable cardinal is categorical in all of them. Counting types became the basis of Saharon Shelah's stability theory, in which a theory is graded by how large $S_1(A)$ can be.
+
+Saturated models were introduced by Morley and Vaught in "Homogeneous universal models" (1962). They proved that saturated models of the same theory and size are isomorphic, and that a model is saturated exactly when it is homogeneous and universal in the right cardinals. The existence of saturated models in a given size needs assumptions on cardinal arithmetic, and [special models](/CBNPB0QZGQ/) remove this need in strong limit cardinals. H. Jerome Keisler showed in the early 1960s that ultrapowers give saturated models, which links this chapter to [Chapter 4.3](/HZG1YP26AB/).
+
+The closure operators have algebraic roots. In *Foundations of Algebraic Geometry* (1946) André Weil worked inside a universal domain, an algebraically closed field of infinite transcendence degree, which is a saturated model of the theory of algebraically closed fields. John Baldwin and Alistair Lachlan used [algebraic closure](/DKAGC639W9/) as a dimension theory in "On strongly minimal sets" (1971). Jon Barwise and John Schlipf introduced [recursively saturated](/ZGEXNRHC9M/) and resplendent models in "An introduction to recursively saturated and resplendent models" (1976). In his book *Classification Theory and the Number of Non-isomorphic Models* (1978) Shelah worked inside one large saturated model, and later texts adopted this convention of the [monster model](/EYTTQZ0E1S/).
+
+## Further reading
+
+- David Marker, *Model Theory: An Introduction* (2002). Chapter 4 treats types, omitting types, saturated, homogeneous and universal models, with many examples in dense orders and fields.
+- Wilfrid Hodges, *A Shorter Model Theory* (1997). Gives saturation, special models and recursive saturation in more generality, with care about the different conventions.
+- C. C. Chang and H. J. Keisler, *Model Theory*, third edition (1990). The classical reference for omitting types and for saturated and special models.
+- Katrin Tent and Martin Ziegler, *A Course in Model Theory* (2012). Works in a monster model from early on and shows how types and automorphisms are used in stability theory.
+- Richard Kaye, *Models of Peano Arithmetic* (1991). Develops recursively saturated and resplendent models of arithmetic in detail.

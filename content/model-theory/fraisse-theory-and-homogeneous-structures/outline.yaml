@@ -1,0 +1,59 @@
+# The order of chapter 4.7, Fraïssé theory and homogeneous structures. Groups are read in order; entries in a group too.
+groups:
+  - title: Ages and the three properties
+    intro: >
+      The age of a structure is the class of finitely generated structures that embed into it. Every age is
+      closed under substructures and has the joint embedding property. The amalgamation property asks more:
+      two members that share a common part must fit into a third member along that part. These three
+      conditions are the hypotheses of Fraïssé's theorem, and the examples show that none of them follows
+      from the others.
+    entries:
+      - 5FKW715RGJ
+      - XSCSX39GEZ
+      - 59FQ5Q2B8R
+  - title: Ultrahomogeneity and Fraïssé's theorem
+    intro: >
+      A structure is ultrahomogeneous when every isomorphism between finitely generated substructures
+      extends to an automorphism. [Fraïssé's theorem](/V5CKNFP3HC/) matches the countable ultrahomogeneous
+      structures with the classes that have the three properties and countably many isomorphism types, and
+      the structure that a class gives is its [Fraïssé limit](/HJVRBDQSGG/).
+    entries:
+      - H8VM37SSAX
+      - V5CKNFP3HC
+      - HJVRBDQSGG
+  - title: Homogeneous graphs and their classification
+    intro: >
+      The finite graphs give the Rado graph, and the finite graphs with no $K_n$ give the Henson graph
+      $G_n$. The Lachlan–Woodrow theorem says that these, the disjoint unions of equal complete graphs, and
+      the complements of all of them are the only countably infinite ultrahomogeneous graphs. Similar
+      lists exist for partial orders, tournaments and directed graphs.
+    entries:
+      - RMXR0FEF54
+      - TZT25G2YB3
+      - F7PA1RVBCG
+      - CWKWP7G6HB
+  - title: Automorphism groups
+    intro: >
+      The automorphism group of a countable structure is a topological group, with the pointwise stabilizers
+      of finite tuples as basic open subgroups. Hrushovski showed that partial isomorphisms of a finite graph
+      extend to automorphisms of one larger finite graph, and this is the key step in proving that the
+      automorphism group of the Rado graph has the small index property.
+    entries:
+      - TA9KGWV9NM
+      - RZAF6NVEXC
+  - title: Ramsey classes and topological dynamics
+    intro: >
+      A class of finite structures is a Ramsey class when every colouring of the copies of a small member in
+      a large enough member has a monochromatic copy of a given middle member. For ordered Fraïssé classes,
+      the Kechris–Pestov–Todorcevic correspondence says that this holds exactly when the automorphism group
+      of the limit fixes a point in every compact space on which it acts.
+    entries:
+      - 96Q4P7PZVY
+      - 8XS8FCTF8T
+  - title: Hrushovski amalgamation
+    intro: >
+      A predimension such as $\delta(A) = \abs{A} - \abs{E(A)}$ singles out the self-sufficient substructures,
+      and amalgamating only over those gives a generic structure in place of the Fraïssé limit. This variant
+      of the method produces stable theories with new geometric behaviour.
+    entries:
+      - 933BFNKPXF

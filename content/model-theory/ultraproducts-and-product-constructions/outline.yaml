@@ -30,7 +30,7 @@ groups:
       - 4HNAJQQ8Z0
   - title: Products
     intro: >
-      For direct products and their relatives, the Feferman-Vaught theorem reduces the truth of a formula in
+      For direct products and their relatives, the Feferman–Vaught theorem reduces the truth of a formula in
       the product to the truth of finitely many formulas in the factors, combined by a formula about sets of
       indices. Elementary equivalence of factors therefore passes to products.
     entries:

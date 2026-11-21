@@ -6,13 +6,13 @@ Roland Fraïssé, in his thesis published in 1954, described elementary equivale
 
 Carol Karp, the author of *Languages with Expressions of Infinite Length* (1964), proved that [partial isomorphism](/EWB8KXZMCV/) is exactly equivalence in $L_{\infty\omega}$. Dana Scott proved in 1965 that each countable structure is described, up to isomorphism among countable structures, by a single sentence of $L_{\omega_1\omega}$, its Scott sentence. Both results grew out of the back-and-forth method.
 
-The finite games found a second home in computer science. In [finite model theory](/4XRVJE0KAN/) the compactness theorem fails, and Ehrenfeucht-Fraïssé games became the standard way to show that a query is not first-order. Ronald Fagin used games for monadic second-order logic in the 1970s. William Hanf in 1965 and Haim Gaifman in 1982 gave locality theorems, which give winning strategies for Duplicator without playing the game move by move.
+The finite games found a second home in computer science. In [finite model theory](/4XRVJE0KAN/) the compactness theorem fails, and Ehrenfeucht–Fraïssé games became the standard way to show that a query is not first-order. Ronald Fagin used games for monadic second-order logic in the 1970s. William Hanf in 1965 and Haim Gaifman in 1982 gave locality theorems, which give winning strategies for Duplicator without playing the game move by move.
 
 ## Further reading
 
-- Wilfrid Hodges, *Model Theory* (1993). Chapter 3 treats back-and-forth systems, Ehrenfeucht-Fraïssé games and the infinitary logic $L_{\infty\omega}$ in full generality.
-- Joseph G. Rosenstein, *Linear Orderings* (1982). Cantor's theorem, back-and-forth arguments and Ehrenfeucht-Fraïssé games on orders, with many worked cases.
+- Wilfrid Hodges, *Model Theory* (1993). Chapter 3 treats back-and-forth systems, Ehrenfeucht–Fraïssé games and the infinitary logic $L_{\infty\omega}$ in full generality.
+- Joseph G. Rosenstein, *Linear Orderings* (1982). Cantor's theorem, back-and-forth arguments and Ehrenfeucht–Fraïssé games on orders, with many worked cases.
 - Heinz-Dieter Ebbinghaus and Jörg Flum, *Finite Model Theory*, second edition (1999). The games and their variants as tools for logic on finite structures.
 - Leonid Libkin, *Elements of Finite Model Theory* (2004). An introduction aimed at computer scientists, with games for parity, connectivity and locality.
 - Jouko Väänänen, *Models and Games* (2011). Builds first-order and infinitary logic around games from the start.
-- Joel Spencer, *The Strange Logic of Random Graphs* (2001). Ehrenfeucht-Fraïssé games used to prove zero-one laws for random graphs.
+- Joel Spencer, *The Strange Logic of Random Graphs* (2001). Ehrenfeucht–Fraïssé games used to prove zero-one laws for random graphs.

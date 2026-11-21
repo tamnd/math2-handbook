@@ -1,0 +1,50 @@
+# The order of chapter 4.6, countable models and categoricity. Groups are read in order; entries in a group too.
+groups:
+  - title: Categoricity in a cardinal
+    intro: >
+      A theory is $\kappa$-categorical when it has exactly one model of size $\kappa$ up to isomorphism. The
+      [Łoś–Vaught test](/ZR7Y5C235P/) turns this into completeness when there are no finite models and
+      $\kappa \ge \abs{L}$. Dense linear orders are the first example, and a table sorts the standard theories
+      into the four patterns: categorical in every infinite cardinal, only in $\aleph_0$, only in the
+      uncountable cardinals, or in none.
+    entries:
+      - 1JJCGNX240
+      - ZR7Y5C235P
+      - 2W4S2H4VYA
+      - 20QJANNKP7
+  - title: Atomic and prime models
+    intro: >
+      An isolated type is realized in every model, so a model that realizes only isolated types is a natural
+      candidate for the smallest model. In a countable language the countable atomic models are exactly the
+      prime models, those that embed elementarily into every model, and any two of them are isomorphic.
+    entries:
+      - HSJ4F9J8SM
+      - S8W40PYNHX
+  - title: Saturated models and countable categoricity
+    intro: >
+      At the other end from the prime model is the countable saturated model, which realizes every type over
+      every finite set; it exists exactly when the theory has countably many types. When every type is
+      isolated the two ends meet, and the [Ryll-Nardzewski theorem](/1513J40TKA/) shows that this happens
+      exactly when there are finitely many $n$-types for each $n$.
+    entries:
+      - 7GN6XF590M
+      - 1513J40TKA
+      - A22K1X8GKD
+  - title: The number of countable models
+    intro: >
+      A complete countable theory never has exactly two countable models, and Ehrenfeucht's theory shows that
+      three is possible. For infinitely many models, Morley proved that the number is at most $\aleph_1$ or
+      exactly $2^{\aleph_0}$; whether $\aleph_1 < 2^{\aleph_0}$ countable models can occur is the open Vaught
+      conjecture.
+    entries:
+      - E5W3RRSY5Z
+      - XT2D23G98S
+      - YVBHE2SEE6
+      - JFG783DEG8
+  - title: Small theories
+    intro: >
+      A theory is small when it has countably many complete $n$-types for each $n$. Smallness is the first
+      dividing line in counting countable models: a small theory has a prime model and a countable saturated
+      model, and a theory that is not small has $2^{\aleph_0}$ countable models.
+    entries:
+      - W6XM5NVNRP
