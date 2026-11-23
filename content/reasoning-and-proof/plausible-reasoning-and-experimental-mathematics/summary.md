@@ -1,28 +1,54 @@
 ## What to remember
 
-- **Plausible reasoning** makes a statement more or less credible without settling it. Pólya's basic pattern: if $A$ implies $B$ and $B$ turns out true, $A$ becomes more credible. If $B$ turns out false, $A$ is refuted, and that step is deductive. Verifying a consequence that was unlikely in advance counts for more than verifying one that was expected anyway.
-- **Experimental mathematics** computes to find patterns and exact values. Compute a number to many digits, use an integer relation algorithm such as PSLQ or LLL to guess a closed form, and test the guess at higher precision. The output is a conjecture until it is proved, as the BBP formula for $\pi$ was.
-- **Numerical evidence** is weak evidence for statements about all integers. Pólya's conjecture fails first near $9 \cdot 10^8$, and $\pi(x) < \operatorname{li}(x)$ fails somewhere below $1.4 \cdot 10^{316}$. When the error terms grow like $\log \log x$ or $\sqrt{x}/\log x$, no feasible check reaches the range where the behaviour shows.
-- Guy's **strong law of small numbers**: there are not enough small numbers to meet the many demands made of them. Early agreement of two sequences is often a coincidence. His second law: when two sequences agree in their first terms, they need not be the same.
-- **Heuristic arguments** predict results from models: treat $n$ as prime with probability $1/\ln n$, count parameters against conditions, or compare the orders of size of terms. The Hardy–Littlewood constant for twin primes comes from such a model and agrees with the data. A heuristic gives a prediction, not a proof, and the model can be wrong in ways the data does not reveal at first.
-- **Forming a conjecture** means stating it precisely: the range of the variables, the exact claim, and what would refute it. Gather small cases, take differences and ratios, compare with known sequences, then test the statement on cases you did not use to form it.
-- **Machine-assisted discovery** uses programs that propose conjectures (Graffiti, the Ramanujan Machine) or search for objects with a property (FunSearch, AlphaEvolve). A constructed object can be checked independently, and then the result is a theorem. A proposed identity is evidence of the same kind as any numerical evidence.
-- **Physical arguments** read mathematics off levers, strings, soap films and currents. Archimedes found the volume of the sphere by balancing slices before he proved it by exhaustion. A physical argument usually takes for granted that an extremum or equilibrium exists, and that is often the step a proof has to supply.
+- **Pólya's fundamental inductive pattern**: from "$A$ implies $B$" and "$B$ is true" infer "$A$ is more credible".
+  A surprising consequence counts for more than an expected one, and an analogy can raise credibility in the same
+  way. The **demonstrative pattern** "$A$ implies $B$, $B$ is false, so $A$ is false" is deduction and is certain.
+- An **integer relation** for real numbers $x_1, \ldots, x_n$ is a list of integers $a_1, \ldots, a_n$, not all
+  zero, with $a_1 x_1 + \cdots + a_n x_n = 0$. The **experimental method** computes the numbers to high precision,
+  finds a relation with small coefficients (PSLQ or LLL), tests it at higher precision and on new consequences,
+  and then proves it. A report of a found relation states the precision, the range and the method.
+- **Numerical evidence** is weighed against the scale on which a failure can occur. When the controlling quantity
+  grows like $\ln \ln x$, a check up to $10^{18}$ reaches only $\ln \ln x \approx 3.7$. The Pólya conjecture
+  first fails at $906150257$, the Mertens conjecture is false although no counterexample is known, and
+  $\pi(x) < \operatorname{li}(x)$ holds for every computed $x$ but fails for some $x$.
+- **Guy's strong law of small numbers**: there are not enough small numbers to meet the many demands made of them,
+  so different rules agree on their first values by coincidence. His **second law**: two numbers that look equal
+  need not be equal, as $e^{\pi\sqrt{163}}$ and the Borwein integrals show.
+- A **heuristic argument** predicts a fact from a model that is not fully justified: random models (the Cramér
+  model, where $n \ge 3$ is prime with probability $1/\ln n$), dimension counts and scaling. Its conclusion is a
+  conjecture. A **probabilistic proof**, such as Erdős's lower bound for Ramsey numbers, studies an object that
+  really is random and is a proof.
+- **Forming a conjecture**: tabulate, take differences (a polynomial of degree $d$ has constant $d$-th
+  differences), look at special cases, then state the claim with all quantifiers and hypotheses and test it on
+  cases that were not used to find it.
+- A program's output (a conjecture from Graffiti, a cap set from FunSearch, a multiplication scheme from
+  AlphaEvolve) is a **candidate**. A construction is accepted after an independent check; a conjecture after a
+  proof.
+- A **physical argument** suggests a result and often the plan of its proof. Its hidden assumption is usually that
+  an equilibrium or a minimum exists, which is what Weierstrass questioned in [Dirichlet's principle](/RKK3XHG4MR/).
 
-## Kinds of evidence compared
+| Kind of support | What it gives | What it lacks |
+|---|---|---|
+| Checked cases | the statement holds in a finite range | any reason for cases beyond the range |
+| Heuristic argument | a model in which the statement is expected, often with a predicted constant | a justification of the model |
+| Experimental relation | a formula correct to the precision used | a guarantee that the agreement is not a coincidence |
+| Physical argument | a mechanism, and often the plan of a proof | proofs that equilibria and minima exist |
+| Machine output | a candidate conjecture or construction | an independent check or proof |
+| Proof | certainty, given the axioms | nothing |
 
-| Kind of evidence | What it gives | Where it led to a theorem | Where it misled |
-|---|---|---|---|
-| [A verified consequence](/8DHD3H1CJ9/) | More credibility | [Euler's Basel sum](/A1NXVMGPG0/) | [A false consequence refutes](/GHWRJ1BQTN/) |
-| [High-precision computation](/BPEPTN0TT9/) | A closed form to prove | [The BBP formula](/ZQWC236CQQ/) | [Ramanujan's constant](/7ZM5VCCB7H/) |
-| [A finite check](/JFD3QWCX8Z/) | Support up to a bound | [Goldbach partitions grow](/RKFZV5NFXE/) | [$\pi(x) < \operatorname{li}(x)$](/Q61WD2AEBS/) |
-| [Small cases](/8AFXPXCE3N/) | A pattern | [Sums of odd numbers](/9WSEMZ8BWN/) | [31, 331, 3331](/1HBCH5V3AN/) |
-| [A model or count](/VCQQNJ3SEZ/) | A prediction | [Lines on surfaces](/MSMXVPKRN1/) | [Twin primes, still open](/XHHKMPD8A9/) |
-| [A table of data](/R2T42N5XGK/) | A precise conjecture | [Sums of two squares](/GD5KTM6Y6P/) | [A list does not fix its continuation](/G9FEX51ASB/) |
-| [A physical system](/THJV0NFPDQ/) | A value or a shape | [Archimedes' sphere](/QHY889QBEC/) | [The Fermat point at a wide angle](/1SXA826AZS/) |
+: Kinds of support for a mathematical statement, and what each lacks.
 
-: Seven kinds of evidence in the chapter. For each, an attached example where the evidence pointed to a theorem and one where it misled or left the question open.
+## Common errors
 
-## Weighing evidence in practice
-
-Ask three questions of any evidence. What would the data look like if the conjecture were false? Has the check reached the range where the error terms matter? Were the cases used to test the conjecture different from the cases used to find it? Prefer evidence from several independent sources: numerics, a heuristic model, and a proof of a special case. Report what was checked and to what precision. Keep the word "theorem" for statements that have been proved.
+- Reading "more credible" as "true". Forty prime values of $n^2 + n + 41$ do not make the next one prime.
+- Fitting a formula to $k$ values and treating the fit as evidence. A polynomial of degree $k - 1$ fits any $k$
+  values, so the fit itself shows nothing; only cases not used in the fit test it.
+- Quoting a verification range without the scale of the problem. Going from $10^6$ to $4 \cdot 10^{18}$ moves
+  $\ln \ln x$ only from $2.63$ to $3.76$.
+- Trusting agreement to a few digits. The integral $I_7$ of the Borwein sequence differs from $\pi/2$ by about
+  $2.31 \cdot 10^{-11}$, so ten correct digits report a false equality.
+- Calling a heuristic a proof, or a probabilistic proof a heuristic. The test is whether the randomness is in the
+  model of a fixed object or in the object itself.
+- Stating a conjecture without its exact hypotheses. "An odd prime $p$ is a sum of two squares if and only if
+  $p \equiv 1 \pmod 4$" is a theorem, but without the word "prime" it is false: $21 \equiv 1 \pmod 4$ is not a
+  sum of two squares.

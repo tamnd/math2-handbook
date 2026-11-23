@@ -1,53 +1,58 @@
-1. ◦ Compute $n!$ and $2^n$ for $n = 0, 1, \ldots, 5$. What is the least natural number $n_0$ such that $n! > 2^n$ holds for $n_0$ and for every larger $n$?
+1. ◦ A proof by [strong induction](/0KMVFSHFGZ/) shows that every integer $n \ge 18$ can be written as $4a + 7b$ with natural numbers $a$ and $b$, using the step from $n - 4$ to $n$. Which base cases does the proof need? Check them, and show that $17$ has no such form, so that the start $18$ cannot be lowered.
 
-2. ◦ Let $P(n)$ be "$3$ divides $4^n + 1$". Show that $P(n)$ implies $P(n + 1)$ for every natural number $n$. Is $P(n)$ true for any $n$? What does this say about the base case of an induction?
+2. ◦ Compute $1 \cdot 1! + 2 \cdot 2! + \cdots + n \cdot n!$ for $n = 1, 2, 3, 4, 5$. Guess a closed formula and prove it by [induction](/0ASJVEFA9J/).
 
-3. ◦ Which of these sets has a least element? (a) The set of natural numbers $n$ with $n^2 > 50$. (b) The set of positive rational numbers. (c) The set of negative integers. (d) The set of natural numbers $n$ such that $n$ divides $0$. Give the least element where there is one, and say why the [well-ordering principle](/01BX15HSRR/) does not apply where there is none.
+3. ◦ Give the least element of each set, or explain why there is none.
+(a) $\set{n \in \N : n^2 \ge 200}$;
+(b) $\set{n \in \N : n \ge 1 \text{ and } 7 \mid 3^n - 1}$;
+(c) $\set{n \in \Z : n^2 < 50}$;
+(d) $\set{x \in \Q : x > 0 \text{ and } x^2 > 2}$.
+The integers are not well-ordered. Why does the set in (c) still have a least element?
 
-4. ◦ Which integers from $1$ to $12$ can be written as $3a + 5b$ with natural numbers $a$ and $b$? A proof by [strong induction](/0KMVFSHFGZ/) that every $n \ge 8$ has this form uses the step from $n - 3$ to $n$. Which base cases does it need?
+4. ◦ Compute $n!$ and $3^n$ for $n = 0, 1, \ldots, 8$. Find the least $n_0$ such that $n! > 3^n$ for every $n \ge n_0$, and prove the inequality from that base. For which $n$ is the step $(n + 1)! = (n + 1) \cdot n! > 3 \cdot 3^n$ valid?
 
-5. ◦ "Claim: for every natural number $n$, if $a$ and $b$ are natural numbers with $\max(a, b) = n$, then $a = b$. The case $n = 0$ is clear. If $\max(a, b) = n + 1$, then $\max(a - 1, b - 1) = n$, so $a - 1 = b - 1$ by the induction hypothesis, and $a = b$." The claim is false. Which step fails, and for which $a$ and $b$?
+5. ◦ Find the error. "Let $F_0 = 0$, $F_1 = 1$ and $F_n = F_{n-1} + F_{n-2}$ for $n \ge 2$. Claim: every $F_n$ is even. Base case: $F_0 = 0$ is even. Step: let $n \ge 1$ and assume that $F_k$ is even for every $k < n$. Then $F_n = F_{n-1} + F_{n-2}$ is a sum of two even numbers, so it is even." For which $n$ does the step fail, and what rule for base cases does the proof break?
 
-6. ◦ A descent argument produces a strictly decreasing sequence of sizes. For which of these sets of sizes must every such sequence be finite? (a) $\N$. (b) $\Z$. (c) The positive rationals. (d) The pairs of natural numbers in lexicographic order.
+6. ◦ Find the error. "Claim: $n^2 \le 2^n$ for every $n \ge 1$. Base case: $1 \le 2$. Step: assume $n^2 \le 2^n$. Then $(n + 1)^2 = n^2 + 2n + 1 \le 2^n + 2n + 1 \le 2^n + 2^n = 2^{n+1}$." Find the least $n$ for which the claim is false and the values of $n$ for which the step is invalid. From which base does the same argument give a correct proof?
 
-7. ◦ Let $S$ be the smallest set of integers that contains $3$ and contains $x + y$ whenever it contains $x$ and $y$. Describe $S$. Is $12$ in $S$? Is $0$? Is $4$?
+7. ◦ Let $S$ be the smallest set of positive integers that contains $1$ and contains $2n$ and $n + 3$ whenever it contains $n$. Describe $S$, and prove your description in both directions. Is $2026$ in $S$? Is $2025$?
 
-8. ◦ A statement $P(n)$ about positive integers satisfies three conditions: $P(1)$ holds; $P(n)$ implies $P(2n)$ for every $n \ge 1$; and $P(n)$ implies $P(n - 1)$ for every $n \ge 5$. For which positive integers $n$ do these conditions prove $P(n)$?
+8. ◦ Define $g(m, 0) = g(0, n) = 1$ for all $m, n \in \N$, and $g(m, n) = g(m - 1, n) + g(m, n - 1) + g(m - 1, n - 1)$ for $m, n \ge 1$. Compute $g(2, 2)$ and $g(3, 2)$. Prove by [double induction](/AABX4YPKRR/) on $m + n$ that every $g(m, n)$ is odd. Which pairs are base cases?
 
-9. ◦ "Claim: $2^n = 1$ for every natural number $n$. Base case: $2^0 = 1$. Step: let $n \ge 0$ and assume $2^k = 1$ for every $k \le n$. Then $2^{n+1} = 2^n \cdot 2^n / 2^{n-1} = 1 \cdot 1 / 1 = 1$." Find the first $n$ for which the step fails, and say why.
+9. ◦ For which positive integers $n$ do these conditions prove $P(n)$?
+(a) $P(1)$ holds; $P(n)$ implies $P(n^2)$ for every $n \ge 1$; $P(n)$ implies $P(n - 1)$ for every $n \ge 2$.
+(b) The same, with $P(2)$ in place of $P(1)$.
 
-10. • Prove by [induction](/0ASJVEFA9J/) that $n! > 2^n$ for every integer $n \ge 4$.
+10. • Let $f_n = 2^{2^n} + 1$ for $n \in \N$. Prove that $f_0 f_1 \cdots f_{n-1} = f_n - 2$ for every $n \ge 1$. Deduce that any two different numbers $f_m$ and $f_n$ are coprime.
 
-11. • Prove that $1^3 + 2^3 + \cdots + n^3 = \left( \frac{n(n + 1)}{2} \right)^2$ for every $n \ge 1$.
+11. • Let $u_1 = 1$, $u_2 = 2$ and $u_{k+1} = u_k + u_{k-1}$ for $k \ge 2$. Prove by strong induction that every positive integer is a sum of distinct terms $u_k$, no two with consecutive indices. Write $100$ and $2026$ in this form.
 
-12. • Prove that $7$ divides $3^{2n+1} + 2^{n+2}$ for every natural number $n$.
+12. • Let $p_n = \prod_{k=1}^{n} \left(1 + \frac{1}{k^3}\right)$. Show that a direct induction on the claim $p_n < 3$ gets stuck. Then prove the stronger claim $p_n \le 3 - \frac{1}{n}$ for every $n \ge 1$, and say why it implies $p_n < 3$.
 
-13. • Prove by strong induction that every positive integer is a sum of distinct powers of $2$.
+13. • A graph here is finite, with no loops and no repeated edges. Prove that a graph with $n \ge 1$ vertices and at least $n$ edges contains a cycle. Use a [minimal counterexample](/JGRCNPKNGG/) with the fewest vertices, and use the fact that a graph in which every vertex has degree at least $2$ contains a cycle.
 
-14. • An induction on $n$ that tries to prove $\sum_{k=1}^n \frac{1}{k(k + 1)} < 1$ directly gets stuck. Say where, then [strengthen the claim](/F94KJC2RXP/) to an exact formula and prove it.
+14. • Addition on $\N$ is defined by $m + 0 = m$ and $m + S(n) = S(m + n)$, where $S$ is the successor. Prove that $m + n = n + m$ for all $m, n \in \N$. First prove $0 + n = n$ and $S(m) + n = S(m + n)$, each by induction on $n$.
 
-15. • Use a [minimal counterexample](/JGRCNPKNGG/) to prove that every positive integer $n$ can be written as $n = 2^a m$ with $a$ a natural number and $m$ odd.
+15. • For positive reals $x_1, \ldots, x_n$ let $G$ be the geometric mean $(x_1 \cdots x_n)^{1/n}$ and $H$ the harmonic mean $n / (1/x_1 + \cdots + 1/x_n)$. Prove $H \le G$ by [forward-backward induction](/QC9FKGZH1V/): prove the case $n = 2$, the step from $n$ to $2n$, and the step from $n$ to $n - 1$. Do not quote the AM-GM inequality.
 
-16. • Prove by [infinite descent](/0EFYCFHYFG/) that the equation $x^3 = 4y^3$ has no solution in positive integers.
+16. • Lists are built from the empty list $[\,]$ by putting an element in front, $a : xs$. Joining is defined by $[\,] \mathbin{+\!\!+} ys = ys$ and $(a : xs) \mathbin{+\!\!+} ys = a : (xs \mathbin{+\!\!+} ys)$, and reversal by $\operatorname{rev}[\,] = [\,]$ and $\operatorname{rev}(a : xs) = \operatorname{rev}(xs) \mathbin{+\!\!+} [a]$. Prove by [structural induction](/12MQ2NJ29A/) that $\operatorname{rev}(\operatorname{rev}(xs)) = xs$ for every list. A direct attempt gets stuck; first prove $\operatorname{rev}(xs \mathbin{+\!\!+} [a]) = a : \operatorname{rev}(xs)$.
 
-17. • Define $a(m, n)$ for natural numbers $m$ and $n$ by $a(m, 0) = a(0, n) = 1$ and $a(m, n) = a(m - 1, n) + a(m, n - 1)$ for $m, n \ge 1$. Prove that $a(m, n) \le 2^{m+n}$ for all $m$ and $n$, by induction on $m + n$.
+17. • Let $S$ be the smallest subset of $\Z^2$ that contains $(0, 0)$ and contains $(a + 2, b)$ and $(a + 1, b + 1)$ whenever it contains $(a, b)$. Prove that $S = \set{(a, b) \in \Z^2 : b \ge 0,\ a \ge b,\ a - b \text{ even}}$.
 
-18. • Use [forward-backward induction](/QC9FKGZH1V/) to prove that $(x_1 + \cdots + x_n) \left( \frac{1}{x_1} + \cdots + \frac{1}{x_n} \right) \ge n^2$ for all positive reals $x_1, \ldots, x_n$. Do not quote Jensen's inequality; prove the case $n = 2$ and the two steps directly.
+18. • Any finite number of straight lines cuts the plane into regions. Prove by [induction on size](/B2D8PTFNN1/), on the number of lines, that the regions can be coloured black and white so that any two regions with a common boundary segment get different colours. The lines may be parallel and may meet three at a point.
 
-19. • The formulas of propositional logic are built from the variables $p, q, r, \ldots$ by the rules: if $A$ is a formula, so is $\neg A$; if $A$ and $B$ are formulas, so are $(A \wedge B)$, $(A \vee B)$ and $(A \to B)$. Prove by [structural induction](/12MQ2NJ29A/) that in every formula the number of occurrences of variables is one more than the number of binary connectives.
+19. • Use the conditions (B1) to (B4) and the principles (I), (SI) and (WO) as stated in the entry on the [equivalence of induction and well-ordering](/J2P9FWBP3Q/). Let $N = \N \cup \set{\infty}$, with the usual order on $\N$ and $n < \infty$ for every $n \in \N$, and let $S(n) = n + 1$ and $S(\infty) = \infty$. Which of (B1) to (B4) hold? Which of (I), (SI) and (WO) hold? Which condition does this example show to be needed?
 
-20. • The sequence $(a_n)$ is defined by $a_0 = 2$, $a_1 = 3$ and $a_{n+1} = 3a_n - 2a_{n-1}$ for $n \ge 1$. Prove that $a_n = 2^n + 1$ for every natural number $n$. How many base cases does your proof use, and why?
+20. • Two players take turns removing $1$, $3$ or $4$ coins from a pile, and the player who takes the last coin wins. Prove by strong induction that the player about to move loses, against best play, exactly when the number of coins leaves remainder $0$ or $2$ on division by $7$. Who wins with $2026$ coins, and with what first move?
 
-21. • A tournament is a finite set of players in which each two players have played once and one of them won. Prove by [induction on size](/B2D8PTFNN1/) that the players of every tournament can be listed as $v_1, v_2, \ldots, v_n$ so that $v_i$ beat $v_{i+1}$ for each $i < n$.
+21. • Let $n$ be a positive integer that is not a perfect square, and let $m = \floor{\sqrt n}$. Suppose that $\sqrt n$ is rational. Use the [well-ordering principle](/01BX15HSRR/) on the set of positive integers $k$ with $k \sqrt n \in \Z$, and the number $k(\sqrt n - m)$, to reach a contradiction.
 
-22. • Prove by induction on the number of elements that every finite nonempty set of real numbers has a largest element.
+22. ★ Let $f$ be a function from the positive integers to the positive integers with $f(n + 1) > f(f(n))$ for every $n \ge 1$. Prove that $f(n) = n$ for every $n$.
 
-23. ★ Prove that the only integer solution of $x^2 + y^2 + z^2 = 2xyz$ is $x = y = z = 0$.
+23. ★ Prove that every positive integer is a sum of numbers of the form $2^a 3^b$ with $a, b \in \N$, no one of which divides another. Find such a sum for $100$.
 
-24. ★ Prove that every rational number $p/q$ with $0 < p/q < 1$ is a sum of distinct unit fractions $1/n$. Take $1/n$ as large as possible with $1/n \le p/q$, and use strong induction on the numerator.
+24. ★ Formulas are built from the variables $p$ and $q$ by the rules: if $A$ and $B$ are formulas, so are $\neg A$ and $(A \leftrightarrow B)$. Prove that every such formula is true in an even number of the four rows of its truth table. Deduce that no such formula is equivalent to $p \land q$.
 
-25. ★ Prove that for every integer $n \ge 6$, a square can be cut into exactly $n$ squares, not necessarily of the same size.
+25. ★ Prove that for every $n \ge 1$ there is an $n$-digit number, with every digit $1$ or $2$, that is divisible by $2^n$. Give such numbers for $n = 1, 2, 3, 4$.
 
-26. ★ Using the base theory (B1) to (B4) of the entry on the [equivalence of induction and well-ordering](/J2P9FWBP3Q/), prove that well-ordering implies induction. Say where you use (B3) and (B4).
-
-27. ★ Let $F_0 = 0$, $F_1 = 1$ and $F_{k+1} = F_k + F_{k-1}$. Prove that $F_{m+n} = F_m F_{n+1} + F_{m-1} F_n$ for all $m \ge 1$ and $n \ge 0$, and deduce that $F_m$ divides $F_{2m}$.
+26. ★ Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^2 + b^2$. Prove that $k = (a^2 + b^2)/(ab + 1)$ is a perfect square. Use [infinite descent](/0EFYCFHYFG/): for a fixed $k$ that is not a square, take a solution with $a + b$ least and $a \ge b$, and replace $a$ by the other root of $x^2 - kbx + b^2 - k = 0$.

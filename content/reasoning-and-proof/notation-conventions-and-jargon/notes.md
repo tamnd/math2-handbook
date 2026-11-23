@@ -1,32 +1,17 @@
 ## History
 
-Most of the signs in this chapter are younger than the mathematics they write.
-Robert Recorde introduced the equals sign in *The Whetstone of Witte* in 1557, with two parallel lines because "noe .2. thynges, can be moare equalle".
-Letters for unknowns and for given quantities came with Viète at the end of the sixteenth century, and Descartes fixed the habit of $x, y, z$ for unknowns and $a, b, c$ for constants in *La Géométrie* of 1637.
-Leibniz chose the integral sign in the 1670s, and Euler spread $f(x)$, $e$, $i$ and $\Sigma$ through his books in the eighteenth century.
+Most of the signs in this chapter are much younger than the mathematics they record. Robert Recorde introduced the equals sign in *The Whetstone of Witte* in 1557. François Viète wrote letters for both known and unknown quantities at the end of the sixteenth century, and Descartes, in *La Géométrie* of 1637, fixed the habit of using late letters such as $x, y, z$ for unknowns and early letters for constants. Gauss introduced the congruence sign $\equiv$ in the *Disquisitiones Arithmeticae* of 1801. Paul Bachmann used the symbol $O$ in 1894, and Edmund Landau spread it, together with the symbol $o$, in his book on the distribution of primes of 1909. Each field settled its own habits in this way, one book at a time, which is why the conflicts of the chapter exist. The standard ISO 80000-2, published in 2009 and revised in 2019, recommends choices such as $0 \in \N$, but it binds nobody.
 
-Many later signs came with a single book or paper.
-Gauss introduced $\equiv$ for congruence in the *Disquisitiones Arithmeticae* of 1801.
-Bachmann used $O$ in 1894, and Landau made the notation standard in his books on number theory from 1909.
-The conflicts treated in the chapter come from this piecemeal growth: each field fixed its own habit, and no one has the authority to choose for all of them.
-The standard ISO 80000-2, published in 2009 and revised in 2019, makes recommendations, such as $0 \in \N$, but books follow it only in part.
+The end marks are older than the symbols. The Greek phrase that closes Euclid's propositions was rendered in Latin as *quod erat demonstrandum*, and Spinoza closed the demonstrations of his *Ethics*, published in 1677, with Q.E.D. Paul Halmos is credited with the tombstone $\blacksquare$ and with the abbreviation "iff".
 
-The marks that end a proof have a long past.
-"Q.E.D." abbreviates the Latin *quod erat demonstrandum*, which translates the phrase that closes the propositions of Euclid's *Elements*.
-Spinoza used it throughout his *Ethics* of 1677, written in the manner of geometry.
-Paul Halmos claimed the tombstone $\blacksquare$ as his own, and he is also credited with the word "iff".
+Several of the words with a hidden definition received their exact meaning in the twentieth century. Henri Lebesgue's thesis of 1902 introduced his measure and with it "almost everywhere"; René Baire's thesis of 1899 introduced the notion of category behind "generic". Henri Cartan introduced filters in 1937, and with them "eventually" and "almost all" became statements about a family of large sets. Samuel Eilenberg and Saunders Mac Lane made "natural" exact in "General theory of natural equivalences" of 1945, the paper that began category theory, and the double dual of a vector space was one of their first examples.
 
-The jargon grew in the same way.
-"Trivial" comes from the trivium, the three elementary arts of the medieval curriculum.
-"Canonical" and "natural" were informal words until Eilenberg and Mac Lane gave "natural" an exact meaning in the 1940s; their paper "General theory of natural equivalences" of 1945 started category theory.
-The senses of "almost all" each come from one theory: measure zero from Lebesgue's thesis of 1902, meagre sets from Baire's thesis of 1899, and natural density from analytic number theory.
-In 1872 Weierstrass presented to the Berlin Academy a continuous function that is nowhere differentiable, and many analysts of the time saw it as a monster; Banach showed in 1931 that such functions are in fact the typical ones in the meagre sense.
-The talk of elementary proofs owes much to the prime number theorem: Hadamard and de la Vallée Poussin proved it in 1896 with complex analysis, and Selberg and Erdős found proofs without it in 1948.
+The words that judge results have their own landmarks. Karl Weierstrass presented a continuous, nowhere differentiable function to the Prussian Academy of Sciences in 1872, and Stefan Banach showed in 1931 that such functions are the typical ones in the sense of category. Jacques Hadamard and Charles de la Vallée Poussin proved the prime number theorem in 1896 with complex analysis; in a lecture of 1921 Hardy doubted that an elementary proof existed, and Atle Selberg and Paul Erdős published elementary proofs in 1949. The book *Inequalities* by Hardy, Littlewood and Pólya, of 1934, made the search for best constants and cases of equality a standard part of the study of an inequality.
 
 ## Further reading
 
-- Paul R. Halmos, *How to Write Mathematics* (1970), is a short essay on writing, with advice on notation, on symbols at the start of sentences and on the words of proofs.
-- G. H. Hardy, J. E. Littlewood and G. Pólya, *Inequalities* (1934), is the classic book on inequalities, where the questions of sharpness and of cases of equality are asked for every result.
-- Bernard R. Gelbaum and John M. H. Olmsted, *Counterexamples in Analysis* (1964), collects the pathological functions and sets of real analysis, with the guesses that each one breaks.
-- Daniel J. Velleman, *How to Prove It* (third edition, 2019), explains the language of proofs, including the quantifier words hidden in mathematical jargon.
-- George Pólya, *How to Solve It* (1945), discusses the stronger statement that is easier to prove, among the other habits of problem solving.
+- Paul R. Halmos, "How to Write Mathematics" (1970). A short essay on mathematical writing, with practical advice on symbols, on notation that helps or hinders, and on the words of proofs.
+- Florian Cajori, *A History of Mathematical Notations* (two volumes, 1928 and 1929). The standard reference on where each symbol came from and which rivals it displaced.
+- Nicholas J. Higham, *Handbook of Writing for the Mathematical Sciences*. A practical guide to notation, definitions and the conventions of mathematical English, with many examples of good and bad usage.
+- G. H. Hardy, J. E. Littlewood and G. Pólya, *Inequalities* (1934). The classic treatment of inequalities, where every result comes with the question whether its constant is sharp and when equality holds.
+- Bernard R. Gelbaum and John M. H. Olmsted, *Counterexamples in Analysis* (1964). A collection of the functions and sets of real analysis that were once called pathological, each with the plausible statement it refutes.

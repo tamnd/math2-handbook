@@ -1,25 +1,33 @@
-Many statements in mathematics are about every natural number, or every finite graph, or every list. One finite argument cannot check infinitely many cases one at a time, but it can check that each case follows from earlier ones. That is induction. To prove $1 + 3 + \cdots + (2n - 1) = n^2$ for every $n \ge 1$, check $n = 1$, then show that adding $2n + 1$ to $n^2$ gives $(n + 1)^2$. To prove that every integer $n \ge 2$ is a product of primes, assume it for all smaller integers: if $n$ is not prime, then $n = ab$ with $a$ and $b$ smaller than $n$, and the products for $a$ and $b$ combine.
+Draw $n$ straight lines in the plane so that no two are parallel and no three pass through one point, and count the regions they cut the plane into. By hand you find $2$ regions for one line, $4$ for two, $7$ for three and $11$ for four. The differences are $2, 3, 4$, which suggests the formula
+$$R(n) = 1 + \frac{n(n + 1)}{2}.$$
+A pattern in four cases is not a proof. Put $n$ points on a circle in general position and join every pair by a chord: the numbers of regions inside the circle are $1, 2, 4, 8, 16$ for $n = 1, \dots, 5$, and then $31$, not $32$, for $n = 6$.
 
-The same fact about the natural numbers appears in a second form. Every nonempty set of natural numbers has a least element, so if a statement had counterexamples, it would have a smallest one. Many proofs start there: take the smallest counterexample and find a smaller one, or take a solution of an equation and build a smaller solution. Fermat called the second form infinite descent and used it to prove that certain Diophantine equations have no solutions in positive integers.
+What settles the question for the lines is an argument that links each case to the one before. Add the $(n + 1)$st line to a picture with $n$ lines. It crosses each of the $n$ old lines exactly once, at $n$ different points, so it is cut into $n + 1$ pieces, and each piece splits one old region in two. So $R(n + 1) = R(n) + n + 1$, and with $R(0) = 1$ this gives the formula for every $n$. That is a proof by [mathematical induction](/0ASJVEFA9J/): a base case and a step that carries the truth from each case to the next.
 
-Writing the base case and the step is routine. The difficulty is choosing what to induct on, what exactly to assume, and what to prove. The chapter collects the forms induction takes in practice and the errors that make a plausible induction prove a false statement.
+The same proof can be read backwards. If the formula failed for some $n$, there would be a least such $n$, and it cannot be $0$, so the formula holds for $n - 1$ and the step gives it for $n$. This is the [well-ordering principle](/01BX15HSRR/) at work. The chapter shows that these two views are one fact about the natural numbers, and it builds a set of tools on that fact: a smallest failure, a statement made stronger so that the step goes through, an induction in two variables or along a structure, and an honest list of the ways an induction proof goes wrong.
 
 ## What the chapter covers
 
-The chapter is in five groups.
-
-1. **Induction and its equivalents.** [Mathematical induction](/0ASJVEFA9J/), [strong induction](/0KMVFSHFGZ/) and the [well-ordering principle](/01BX15HSRR/) are three forms of one fact, and [their equivalence](/J2P9FWBP3Q/) is proved over a stated base theory.
-2. **Arguing from a least case.** The [minimal counterexample](/JGRCNPKNGG/) and [infinite descent](/0EFYCFHYFG/) use the well-ordering principle inside a proof by contradiction.
-3. **Making the induction work.** [Strengthening the induction hypothesis](/F94KJC2RXP/) proves more to get a step that works. [Double induction](/AABX4YPKRR/) handles two variables, and [forward-backward induction](/QC9FKGZH1V/) proves the claim for powers of $2$ and then steps down.
-4. **Induction beyond the natural numbers.** [Structural induction](/12MQ2NJ29A/) works over sets given by an [inductive definition](/AM4GQQMZ3C/), and [induction on size](/B2D8PTFNN1/) works over graphs, sets and polynomials.
-5. **Worked cases, right and wrong.** The false proof that [all horses are the same colour](/AJ2FDJJGTH/), the [tiling of a deficient board by L-trominoes](/EXRJ0JF2Q3/), and a list of [errors in induction proofs](/V52HDTMPV5/).
+1. **Induction and strong induction.** [Mathematical induction](/0ASJVEFA9J/) proves $P(n)$ for all $n \ge n_0$ from a base case and a step from $n$ to $n + 1$. [Strong induction](/0KMVFSHFGZ/) lets the step use every earlier case, which is what a proof about prime factors needs.
+2. **Least elements and the equivalence of the principles.** The [well-ordering principle](/01BX15HSRR/) gives a least element of every nonempty set of natural numbers. The [equivalence of induction and well-ordering](/J2P9FWBP3Q/) states exactly which properties of $\N$ make the three principles interchangeable.
+3. **Arguing from a smallest case.** A [minimal counterexample](/JGRCNPKNGG/) is refuted by a smaller one. [Infinite descent](/0EFYCFHYFG/) shows that a Diophantine equation has no solution because each solution would give a smaller one.
+4. **Choosing what to prove and in what order.** [Strengthening the induction hypothesis](/F94KJC2RXP/) rescues a stuck step. [Double induction](/AABX4YPKRR/) handles two variables, and [forward-backward induction](/QC9FKGZH1V/) climbs through the powers of $2$ and comes back down.
+5. **Induction on structures and on size.** [Structural induction](/12MQ2NJ29A/) follows the rules that build lists, trees and formulas, and [inductive and recursive definitions](/AM4GQQMZ3C/) explain why such rules define anything. [Induction on size](/B2D8PTFNN1/) chooses the number to induct on for graphs, sets and polynomials.
+6. **A false proof, a true one, and the errors.** The proof that [all horses are the same color](/AJ2FDJJGTH/) fails at one step. [Tiling a $2^n \times 2^n$ board with one square removed](/EXRJ0JF2Q3/) is a correct induction with a picture. [Errors in induction proofs](/V52HDTMPV5/) collects the common mistakes.
 
 ## A first reading
 
-Read these entries first, in order: [mathematical induction](/0ASJVEFA9J/), [strong induction](/0KMVFSHFGZ/), the [well-ordering principle](/01BX15HSRR/), [minimal counterexample](/JGRCNPKNGG/), [infinite descent](/0EFYCFHYFG/), [strengthening the induction hypothesis](/F94KJC2RXP/), [induction on size](/B2D8PTFNN1/), [all horses are the same colour](/AJ2FDJJGTH/) and [errors in induction proofs](/V52HDTMPV5/). Work through the attached examples of the first entry in full; they show the layout that every later proof follows.
+1. [Mathematical induction](/0ASJVEFA9J/), with the examples on the sum of odd numbers and on $2^n > n^2$.
+2. [Strong induction](/0KMVFSHFGZ/), with the postage example.
+3. [Well-ordering principle](/01BX15HSRR/).
+4. [Minimal counterexample](/JGRCNPKNGG/).
+5. [Strengthening the induction hypothesis](/F94KJC2RXP/).
+6. [Structural induction](/12MQ2NJ29A/).
+7. [Induction on size](/B2D8PTFNN1/).
+8. [All horses are the same color](/AJ2FDJJGTH/) and [errors in induction proofs](/V52HDTMPV5/).
 
-On a first pass you can skip the [equivalence theorem](/J2P9FWBP3Q/), which matters mainly for the foundations, and [forward-backward induction](/QC9FKGZH1V/). Read [structural induction](/12MQ2NJ29A/) and [inductive definitions](/AM4GQQMZ3C/) before any work in logic or computer science, where formulas, terms and programs are defined in that way.
+On a first pass you can skip the [equivalence theorem](/J2P9FWBP3Q/), which matters for the foundations of arithmetic, and [forward-backward induction](/QC9FKGZH1V/), which is a special tool. [Infinite descent](/0EFYCFHYFG/) and [double induction](/AABX4YPKRR/) can wait until a problem needs them.
 
 ## Before you start
 
-You should know the methods of the chapter on [basic proof methods](/958EF46EYJ/), in particular [proof by contradiction](/0J0XBKG64S/) and the [map of proof methods](/G9JFJGY4TQ/), and you should be able to read quantifiers and implications as in [the language of statements](/WMY13MXY3W/). You need the idea of a [mathematical proof](/0B94TKFQJX/) and the [natural numbers](/0MWKJ44V5A/) with their order; in this book they start at $0$. The [Peano axioms](/0QFT7Z76N5/) are needed only for the equivalence theorem. A few examples use graphs, binary trees and polynomials, and each one defines what it uses.
+You need [basic proof methods](/958EF46EYJ/), in particular proof by contradiction, and the wider survey of [proof methods](/G9JFJGY4TQ/). You should be able to read quantifiers and implications, as in the [language of statements](/WMY13MXY3W/), and know what counts as a [mathematical proof](/0B94TKFQJX/). The [natural numbers](/0MWKJ44V5A/) with their order are the setting throughout. The [Peano axioms](/0QFT7Z76N5/) are needed only for the equivalence theorem.

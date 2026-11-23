@@ -1,33 +1,27 @@
-1. (a) A heuristic: it may or may not show a pattern. (b) An algorithm: it always ends with a quotient and a remainder. (c) A heuristic. (d) A proof: each step is justified, and the conclusion is certain.
+1. ◦ (a), (c) and (e) are heuristics: they say what to try and may lead nowhere. (b) and (d) are algorithms: every step is fixed and they end with the correct result.
 
-3. For $n = 1, \ldots, 10$ the values $11, 13, 17, 23, 31, 41, 53, 67, 83, 101$ are all prime. At $n = 11$ the value is $121 = 11^2$.
+3. ◦ The values are $3, 7, 31, 127$, all prime. The conjecture "$2^p - 1$ is prime for every prime $p$" fails first at $p = 11$: $2^{11} - 1 = 2047 = 23 \cdot 89$.
 
-5. Put $y = x^3$. Then $y^2 - 9y + 8 = (y - 1)(y - 8) = 0$, so $x^3 = 1$ or $x^3 = 8$, and $x = 1$ or $x = 2$. The reduction is bilateral: the real solutions in $x$ and the solutions in $y$ correspond one to one, since $x \mapsto x^3$ is a bijection of $\R$.
+4. ◦ (a) With inner radius $0$ the chord is a diameter, so the outer radius is $5$ and the area is $25\pi$. (b) The radius to the point of contact is perpendicular to the chord and bisects it, so $R^2 = r^2 + 5^2$ and the area is $\pi(R^2 - r^2) = 25\pi$.
 
-6. (a) Local but not global: a diagonal from $V$ runs outside the dart, so the lemma fails, but the angles still add up to $360^\circ$. (b) Global: each point of the star has an angle of $36^\circ$, so the sum is $180^\circ$, not $540^\circ$. The lemma fails as well. One can also bar this "monster" by defining a polygon to be simple.
+5. ◦ Five litres in the large jug come from pouring a full large jug into a small jug holding $1$ litre, and $1$ litre in the small jug comes from $1$ litre in the large jug. Moves: fill the large jug, pour into the small one, empty the small one, pour again, empty again, pour the remaining litre into the small jug, fill the large jug, pour into the small one until it is full. Eight moves, which is the least possible.
 
-7. The two evenings are preparation, Saturday is incubation, the bus is illumination, and Sunday is verification. The missing case shows why verification is a stage of its own.
+7. ◦ Reflect $A$ in the $x$-axis to $A' = (0, -3)$. The line $A'B$ is $y = 2x - 3$ and meets the axis at $P = (\frac{3}{2}, 0)$; the least value is $A'B = \sqrt{80} = 4\sqrt 5$.
 
-8. The ride takes $\frac{1}{2} + \frac{3}{4} = \frac{5}{4}$ hours for $60$ km, so the average is $48$ km/h. The intuition averages the speeds as if equal *times* were spent at each; here equal *distances* are, and the right mean is the harmonic mean.
+9. ◦ $F = 6 + 5 = 11$ and $V - E + F = 16 - 24 + 11 = 3$. The surface is a topological sphere, but the top face of the large cube is a ring, not a disc; the proof treats each face as a polygon that can be cut into triangles by diagonals.
 
-11. By the angle bisector theorem, the bisector from $A$ meets $BC$ at $D$ with $BD : DC = AB : AC$. So $D$ is the midpoint exactly when $AB = AC$. For the ratio $1 : 2$, take $AB = 3$, $AC = 6$ and $BC = 6$.
+15. • $2^{2026} \equiv 0 \pmod 8$. Since $2^{100} \equiv 1 \pmod{125}$, $2^{2026} \equiv 2^{26} \equiv 114 \pmod{125}$. The number below $1000$ that is $114$ modulo $125$ and divisible by $8$ is $864$.
 
-12. From $\sum_{k \le n} 1/k^2 < 2$ you only get $\sum_{k \le n+1} 1/k^2 < 2 + \frac{1}{(n+1)^2}$. For the stronger statement the step needs $\frac{1}{(n+1)^2} \le \frac{1}{n} - \frac{1}{n+1} = \frac{1}{n(n+1)}$, which is true.
+19. • For $P_n \le 1/\sqrt{3n}$ the step needs $(2n+1)^2 (n+1) \le n (2n+2)^2$, which reduces to $n + 1 \le 0$ and is false. For the stronger claim, $P_1 = \frac{1}{2} = 1/\sqrt 4$, and the step needs $(2n+1)^2 (3n+4) \le (2n+2)^2 (3n+1)$; the right side minus the left side is $n \ge 0$. The stronger statement gives the induction a stronger hypothesis.
 
-14. The first player wins. The totals to reach are those that leave $100$ a multiple of $11$ away: $1, 12, 23, \ldots, 89, 100$. The first player says $1$, and after the opponent adds $k$, adds $11 - k$.
+21. ★ The earlier $n - 1$ planes cut the $n$th plane in $n - 1$ lines in general position, which divide it into $1 + (n - 1) + \binom{n-1}{2}$ regions, and each of these splits one region of space in two. Summing from $R(0) = 1$ gives
+$$R(n) = \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + \binom{n}{3} = \frac{n^3 + 5n + 6}{6},$$
+so $R(0), \dots, R(4) = 1, 2, 4, 8, 15$.
 
-16. $2^{100} \equiv 0 \pmod 4$. Since $2^{10} = 1024 \equiv -1 \pmod{25}$, we get $2^{100} \equiv 1 \pmod{25}$. The only number from $0$ to $99$ that is $0$ modulo $4$ and $1$ modulo $25$ is $76$.
+22. ★ The proof removes edges that lie on a cycle (each removal joins two faces, so $E$ and $F$ drop by $1$) until a tree is left, where $V - E + F = V - (V - 1) + 1 = 2$. Ending with one tree needs the graph to be connected. For $c$ components the same removals end with a forest of $c$ trees, where $E = V - c$ and $F = 1$, so $V - E + F = 1 + c$.
 
-17. Without the second condition, the locus is the circle $x^2 + y^2 = 1$ with $A$ and $B$ removed. Intersecting with the lines $y = \pm\frac{1}{2}$ gives the four points $\left(\pm\frac{\sqrt{3}}{2}, \pm\frac{1}{2}\right)$.
+23. ★ Write $q(t) = At^2 + 2Bt + C$ with $A = \sum a_i^2$, $B = \sum a_i b_i$, $C = \sum b_i^2$. If $A = 0$ every $a_i$ is $0$ and both sides are $0$. Otherwise $q(t) \ge 0$ for all real $t$, so the discriminant $4B^2 - 4AC$ is at most $0$. Equality holds exactly when $q$ has a real root $t$, that is, when $b_i = -t a_i$ for all $i$, or when all $a_i$ are $0$.
 
-20. Take $n = 6$, $a = 2$, $b = 3$. The refuted lemma is "if $n \nmid a$, then $\gcd(n, a) = 1$", which holds for every $a$ exactly when $n$ is prime. Corrected theorem: if $p$ is prime and $p \mid ab$, then $p \mid a$ or $p \mid b$. (Another correct form keeps any $n$ and adds the hypothesis $\gcd(n, a) = 1$.)
+24. ★ The distance from $0$ to each centre $(\pm 1, \dots, \pm 1)$ is $\sqrt n$, so $r_n = \sqrt n - 1$; for $n = 2$ this is $\sqrt 2 - 1 \approx 0.41$. The ball lies in the box when $r_n \le 2$, that is $n \le 9$; at $n = 10$ it sticks out.
 
-21. A square of side $k$ cells can be placed in $(n - k + 1)(m - k + 1)$ ways, so the number is $\sum_{k=1}^{n} (n - k + 1)(m - k + 1)$. For $3 \times 5$ it is $15 + 8 + 3 = 26$.
-
-22. The guess is $1 + n + \binom{n}{2} + \binom{n}{3}$, which gives $2, 4, 8$ for $n = 1, 2, 3$ and $15$ for $n = 4$. For the proof, the $n$-th plane meets the other $n - 1$ planes in $n - 1$ lines in general position, which cut it into $1 + (n - 1) + \binom{n-1}{2}$ pieces; each piece splits one region of space into two.
-
-23. For $\frac{1}{\sqrt{3n}}$ the step needs $(2n+1)^2 (3n+3) \le (2n+2)^2 \cdot 3n$, which reduces to $n + 1 \le 0$. For $\frac{1}{\sqrt{3n+1}}$ it needs $(2n+1)^2(3n+4) \le (2n+2)^2(3n+1)$, which reduces to $19n \le 20n$.
-
-24. Let $I(t) = \int_0^1 \frac{x^t - 1}{\ln x}\, dx$. Then $I'(t) = \int_0^1 x^t\, dx = \frac{1}{t+1}$ and $I(0) = 0$, so $I(t) = \ln(1 + t)$ and the answer is $\ln 6$.
-
-25. If $p_1, \ldots, p_k$ were all the irreducible polynomials, then $p_1 p_2 \cdots p_k + 1$ has degree at least $1$, so it has an irreducible factor. That factor is some $p_i$, and then $p_i$ divides $1$, which is impossible.
+25. ★ $I + J = \int_0^{\pi/2} 1\,dx = \frac{\pi}{2}$, and $x \mapsto \frac{\pi}{2} - x$ exchanges $\sin$ and $\cos$, so $I = J$. Hence $I = \frac{\pi}{4}$ for every $n$.

@@ -82,6 +82,20 @@ year of Wiles's proof, and the sign of the homogeneous system behind an augmente
 site after its release v0.4.0, in [tamnd/math2#465](https://github.com/tamnd/math2/pull/465); this edition prints
 the entries as they are in v0.4.0. The pages of chapters 1.4 to 1.14 and of Volume 2 are those of edition 0.3.1.
 
+For edition 0.5.0 (November 2026, built from release v0.5.0 of the site), the site had rewritten the entries of
+chapters 1.4 to 1.14 of Volume 1, *Reasoning and proof*, in textbook prose, so the learner pages of those eleven
+chapters were written again from scratch with the brief of edition 0.4.0, adapted to proofs. Each opening starts
+from a puzzle, a claim or a flawed argument that a student can check by hand; each summary gives, for every method,
+the form of statement it proves, the skeleton of its proof and when to use it, and ends with common errors. Every
+numerical answer and every parity, invariant and pigeonhole claim was checked by script or by brute force, and no
+exercise repeats an example printed in the entries. Six writers shared the eleven chapters and the introduction of
+Volume 1. `mh check` is clean for all four volumes. Three errors that the writers found in three
+entries (a student's argument that described the opposite of the belief the entry explains, a strict inequality that
+is an equality in a case the setup allows, and a missing hypothesis in the improved Euler theorem of Lakatos) were
+corrected on the site after its release v0.5.0, in [tamnd/math2#469](https://github.com/tamnd/math2/pull/469); this
+edition prints the entries as they are in v0.5.0. The entries of Volumes 2 to 4 did not change between v0.4.0 and
+v0.5.0, so their books are those of edition 0.4.0.
+
 ## Known limits
 
 - The history in the notes rests on the `### History` sections and the sources of the entries, and on general

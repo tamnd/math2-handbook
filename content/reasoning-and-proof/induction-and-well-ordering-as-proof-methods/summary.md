@@ -1,29 +1,32 @@
 ## What to remember
 
-- **Induction.** If $P(n_0)$ holds, and $P(n)$ implies $P(n + 1)$ for every $n \ge n_0$, then $P(n)$ holds for every $n \ge n_0$. The step is proved for an arbitrary $n$, and the assumption $P(n)$ is the induction hypothesis.
-- **Strong induction.** If, for each $n$, the truth of $P(k)$ for every $k < n$ implies $P(n)$, then $P(n)$ holds for every natural number $n$. A step that uses the cases $n - 1, \ldots, n - j$ needs $j$ base cases, or must treat the small $n$ separately.
-- **Well-ordering.** Every nonempty subset of $\N$ has a least element. Over the base theory of a linear order with $0$ and a successor, induction, strong induction and well-ordering are equivalent.
-- **Minimal counterexample and descent.** To prove that no object of size in $\N$ fails $P$, take a counterexample of least size and derive a contradiction. To prove that a set $S$ is empty, show that each element of $S$ gives an element of $S$ of smaller size.
-- **Strengthening.** If the step from $P(n)$ to $P(n + 1)$ fails, prove a statement $Q(n)$ that implies $P(n)$ and has a provable step. Proving $\sum_{k=1}^n 1/k^2 \le 2 - 1/n$ proves the bound $2$.
-- **Two variables and doubling.** A claim $P(m, n)$ can be proved by nested induction, by induction on $m + n$, or in lexicographic order. Forward-backward induction proves $P(n)$ for an infinite set of $n$, usually the powers of $2$, and then $P(n) \Rightarrow P(n - 1)$ for every $n \ge 2$.
-- **Structure and size.** For an inductively defined set, the smallest set that contains the base objects and is closed under the rules, a property holds for every element if it holds for the base objects and each rule keeps it. For graphs, sets or polynomials, choose a size function and induct on it, breaking an object of size $n + 1$ down into smaller ones.
-- **Errors.** A step must hold for every $n$ from the base case on, including the smallest, and must stay inside the domain of the claim. The false proof that all horses have the same colour fails only at the step from $1$ to $2$.
+- [Mathematical induction](/0ASJVEFA9J/) proves "$P(n)$ for every integer $n \ge n_0$". Prove $P(n_0)$; then fix an arbitrary $n \ge n_0$, assume $P(n)$ and derive $P(n + 1)$. Choose it when case $n + 1$ is built from case $n$ by one small change.
+- [Strong induction](/0KMVFSHFGZ/) proves the same form of statement, but the step assumes $P(k)$ for every $k$ with $n_0 \le k < n$ and derives $P(n)$. Choose it when case $n$ splits into cases that may be far below $n$, as in factoring. If the step uses only $P(n - 1), \dots, P(n - r)$, prove $r$ base cases $P(n_0), \dots, P(n_0 + r - 1)$ directly.
+- The [well-ordering principle](/01BX15HSRR/): every nonempty subset of $\N$ has a least element. It fails for $\Z$ and for the positive rationals. Over the base properties (B1) to (B4) of $\N$, it is [equivalent](/J2P9FWBP3Q/) to induction and to strong induction.
+- A [minimal counterexample](/JGRCNPKNGG/) proof of "$P(n)$ for all $n \ge n_0$": suppose not, let $m$ be the least $n$ with $P(n)$ false, and build from $m$ a failure at some $m'$ with $n_0 \le m' < m$. [Infinite descent](/0EFYCFHYFG/) proves that no object of a kind exists: give each object a size in $\N$ and show that every object yields one of smaller size.
+- [Strengthening the hypothesis](/F94KJC2RXP/): when the step for $P$ is stuck, find $Q$ with $Q(n) \Rightarrow P(n)$ for every $n$ and prove $Q$ by induction. A typical $Q$ replaces a fixed bound by a bound that tightens with $n$, or asks for every position where $P$ asked for one.
+- [Double induction](/AABX4YPKRR/) proves $P(m, n)$ for all pairs in $\N \times \N$ by induction along a well-order of the pairs: on $m + n$, nested on $m$ then $n$, or lexicographic. The step for $(m, n)$ may use only pairs that come earlier in the chosen order. [Forward-backward induction](/QC9FKGZH1V/) proves $P(n)$ for all $n$ in an infinite set (often the powers of $2$) and then $P(n) \Rightarrow P(n - 1)$ for every $n \ge 2$.
+- [Structural induction](/12MQ2NJ29A/) proves $P(x)$ for every $x$ in an [inductively defined](/AM4GQQMZ3C/) set $X$, the smallest set that contains the base elements and is closed under the constructors: one case per base element, and one case per constructor with the hypothesis on its parts. A recursive definition on $X$ is well defined when each element is built in exactly one way.
+- [Induction on size](/B2D8PTFNN1/) proves a claim about all objects (graphs, sets, polynomials) by induction on a number attached to them. $P(n)$ must read "every object of size $n$ has the property". The step starts from an arbitrary object of size $n + 1$ and removes something; it does not build up from a special object of size $n$.
 
-| Method | What the proof assumes | What it must show | Typical use |
+## Which form to use
+
+| Form | Statement proved | The step may use | Base cases |
 |---|---|---|---|
-| Induction | $P(n)$ | $P(n_0)$ and $P(n + 1)$ | sums, divisibility, inequalities in $n$ |
-| Strong induction | $P(k)$ for all $k < n$ | $P(n)$, with enough base cases | factorization, recursions of order $2$ or more |
-| Minimal counterexample | a counterexample of least size | a smaller counterexample, or a contradiction | existence of prime factors, colourings |
-| Infinite descent | an element of $S$ | an element of $S$ of smaller size | Diophantine equations without solutions |
-| Double induction | smaller pairs $(m', n')$ | $P(m, n)$ | binomial coefficients, the Ackermann function |
-| Forward-backward induction | $P(n)$ | $P(2n)$ and $P(n - 1)$ | the inequality of arithmetic and geometric means |
-| Structural induction | $P$ for the parts | $P$ for each base object and each rule | lists, trees, formulas |
-| Induction on size | the claim for smaller objects | the claim for an object of size $n + 1$ | graphs, finite sets, polynomials |
+| Ordinary induction | $P(n)$ for $n \ge n_0$ | $P(n)$ only | $P(n_0)$ |
+| Strong induction | $P(n)$ for $n \ge n_0$ | $P(k)$ for all $n_0 \le k < n$ | every case the step cannot reach |
+| Minimal counterexample | $P(n)$ for $n \ge n_0$ | a least failure $m$ | none separately; $m = n_0$ is a case of the argument |
+| Infinite descent | no object exists | an object of smallest size | none |
+| Double induction | $P(m, n)$ for all pairs | pairs earlier in a fixed well-order | the least pairs of that order |
+| Structural induction | $P(x)$ for all $x \in X$ | $P$ for the parts of $x$ | one per base element |
 
-: The forms of induction in this chapter, with the hypothesis each one gives and what remains to be proved.
+: The forms of induction and what each step is allowed to assume
 
-## Checking an induction proof
+## Common errors
 
-Read the claim $P(n)$ first and write it out as a sentence with $n$ free; many errors come from a claim that changes meaning between the base case and the step. Then check four things. The base cases are proved, and there are as many as the step needs. The step is proved for an arbitrary $n$ at or above the base, with no hidden condition such as $n \ge 2$. The step uses only the cases the method allows, and they lie inside the domain: no $n - 1$ when $n = 0$, no $a - 1$ when $a$ may be $0$. And the step breaks an arbitrary object of size $n + 1$ down; building a large object up from a small one covers only the objects that the construction happens to reach.
-
-When the step stalls, try a stronger claim before a different method. A bound that the step cannot keep, such as $\sum 1/k^2 \le 2$, often becomes provable as a sharper bound that depends on $n$. When the step needs more than one earlier case, switch to strong induction or to a minimal counterexample, which is the same argument written from the other end.
+- **No base case.** "$n^2 + n$ is odd" has a valid step and no true case.
+- **Too few base cases.** A step from $P(n - 2)$ to $P(n)$ with only $P(0)$ proved covers only the even $n$.
+- **A step that fails for small $n$.** In the horses proof the step from $1$ to $2$ uses two groups that share no horse. Test the step at its smallest value of $n$.
+- **Building up instead of breaking down.** Adding a vertex to a special graph of size $n$ reaches only some graphs of size $n + 1$.
+- **Well-ordering where it fails.** A set of rationals or of all integers need not have a least element.
+- **A recursion with an ambiguous build.** A rule on strings where some string is built in two ways can assign it two values.

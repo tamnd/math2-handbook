@@ -1,43 +1,95 @@
-1. ◦ Say whether each inference is deductive or only plausible, in the sense of [plausible reasoning](/8DHD3H1CJ9/). (a) $A$ implies $B$; $B$ is false; so $A$ is false. (b) $A$ implies $B$; $B$ is true; so $A$ is more credible. (c) $A$ is analogous to $B$; $B$ is true; so $A$ is more credible. (d) $A$ implies $B$; $A$ is true; so $B$ is true.
+1. ◦ The numbers $11$, $111$, $11111$ and $1111111$ consist of $2$, $3$, $5$ and $7$ ones. Someone notices that
+$11$ is prime and that $2$ is prime, and conjectures that a number written with $p$ ones is prime whenever $p$ is
+prime. Test the conjecture on the case $p = 3$, and say which of Pólya's patterns settles it.
 
-2. ◦ The values of $f(n) = n^2 - 79n + 1601$ are prime for $n = 0, 1, \ldots, 79$. Compute $f(80)$ and factor it. Then write $f(n)$ in terms of $m = n - 40$ and say why the run of primes has length $80$.
+2. ◦ A tempting rule says that $n > 1$ is prime exactly when $n$ divides $2^n - 2$. Show that $341 = 11 \cdot 31$
+breaks the rule by computing $2^{10}$ modulo $341$ and deducing $2^{341} \equiv 2 \pmod{341}$.
 
-3. ◦ Two rules both give $1, 2, 4, 8$ for $n = 1, 2, 3, 4$: $a_n = 2^{n-1}$ and $b_n = \sum_{k=0}^{3} \binom{n-1}{k}$. Find the fifth term of each. What does this say about guessing a rule from four terms, as in the [strong law of small numbers](/8AFXPXCE3N/)?
+3. ◦ Goldbach conjectured that every odd number greater than $1$ is a prime or a prime plus twice a square,
+$p + 2k^2$ with $k \ge 1$. The first exception is $5777$. Check that $5777$ is not prime, and that
+$5777 - 2k^2$ is composite for $k = 1, 2, 3$, by giving a factor of each number.
 
-4. ◦ Take the sequence $1, 5, 14, 30, 55$. Form its successive differences until they are constant, and use them to predict the next term. Name a formula that fits all six terms.
+4. ◦ The first four primes are $2, 3, 5, 7$. Find, by finite differences, the value at $n = 5$ of the polynomial of
+degree at most $3$ that takes the values $2, 3, 5, 7$ at $n = 1, 2, 3, 4$. Compare it with the fifth prime.
 
-5. ◦ List all ways of writing $128$ as a sum of two primes $p \le q$. Compare the count with the size of $128$ and say why a single small count is no evidence against the Goldbach conjecture.
+5. ◦ A computation returns $\alpha = 0.7320508075688772\ldots$. Find integers $a, b, c$, not all zero, with
+$a + b\alpha + c\alpha^2 = 0$ (to the precision shown), and state the conjectured closed form of $\alpha$.
 
-6. ◦ Let $\lambda(n) = (-1)^{\Omega(n)}$, where $\Omega(n)$ counts the prime factors of $n$ with multiplicity, and let $L(n) = \sum_{k \le n} \lambda(k)$. Compute $L(n)$ for $n = 1, \ldots, 10$. Pólya conjectured $L(n) \le 0$ for all $n \ge 2$. Using [numerical evidence for conjectures](/JFD3QWCX8Z/), say what is known about the first $n$ where it fails.
+6. ◦ Compute $\ln \ln x$ for $x = 10^{100}$ and $x = 10^{1000}$, to two decimal places. If a pattern can only fail
+where $\ln \ln x > 10$, how much closer to a failure does a check up to $10^{1000}$ get than a check up to
+$10^{100}$, on this scale?
 
-7. ◦ Which of these establish a theorem, and which are evidence? (a) PSLQ finds an integer relation among $50$-digit values of three constants. (b) Goldbach's conjecture is checked for every even number up to $4 \cdot 10^{18}$. (c) A search program outputs a colouring with a stated property, and a short independent program confirms that the colouring has it. (d) Erdős's counting argument shows that some $2$-colouring of the edges of $K_n$ has no monochromatic $K_k$ when $\binom{n}{k} 2^{1 - \binom{k}{2}} < 1$.
+7. ◦ Count the primes up to $100$ of the form $4k + 1$ and of the form $4k + 3$. The count of the second kind stays
+at least the count of the first kind for every $x$ up to $26860$, and falls behind at $x = 26861$. What does the
+table up to $100$ prove about the inequality "$\#\{p \le x : p \equiv 3 \pmod 4\} \ge \#\{p \le x : p \equiv 1 \pmod 4\}$
+for all $x$"?
 
-8. ◦ A computation gives $x = 0.4142135623$. Guess an exact value for $x$, find a polynomial with integer coefficients that it should satisfy, and say what further computation would test the guess, in the manner of [experimental mathematics](/BPEPTN0TT9/).
+8. ◦ For each item, say whether the support given proves the claim or only makes it more credible.
+(a) A program checks $n = 0, 1, \ldots, 39$; claim: $n^2 + n + 41$ is prime for every integer $n$ with
+$0 \le n \le 39$. (b) The same program; claim: $n^2 + n + 41$ is prime for every $n \ge 0$. (c) An integer
+relation search finds a relation that holds to $200$ digits; claim: the relation is exact. (d) The expected number
+of single-coloured copies of $K_k$ in a random red-blue colouring of the edges of $K_n$ is less than $1$; claim:
+some colouring of $K_n$ has no single-coloured $K_k$. (e) Soap films between pins always meet in threes at
+angles of $120^\circ$; claim: a shortest road network joining the pins has only such junctions.
 
-9. • Use the model in which an integer near $x$ is prime with probability $1/\ln x$ to estimate the number of primes in the interval $(10^6, 10^6 + 1000]$. The true count is $75$. Is the error what the model would lead you to expect?
+9. ◦ A line in the plane is the zero set of $ax + by + c$ with $(a, b, c) \neq 0$, and two points in general
+position determine one line. Use the same dimension count to predict how many points in general position determine
+a curve of degree at most $3$, the zero set of a nonzero polynomial of degree at most $3$ in $x$ and $y$.
 
-10. • Compute the partial sums of $\sum_{n \ge 1} \frac{1}{n(n+1)(n+2)}$ for $n$ up to $5$, guess the value of the series, and prove the guess by a partial fraction decomposition.
+10. • Count the ways to write $126$ and $128$ as $p + q$ with primes $p \le q$. The Hardy–Littlewood prediction for
+the number of such sums of an even number $n$ contains the factor $\prod (p - 1)/(p - 2)$ over the odd primes $p$
+dividing $n$. Compute this factor for $126$ and $128$, and say whether it accounts for the direction of the
+difference between the two counts.
 
-11. • Fermat conjectured that every $F_n = 2^{2^n} + 1$ is prime, after checking $n = 0, \ldots, 4$. Show that $641$ divides $F_5$ by using $641 = 5 \cdot 2^7 + 1 = 5^4 + 2^4$, without multiplying out $2^{32}$.
+11. • List the primes below $60$ that can be written as $x^2 + 2y^2$ with integers $x, y$. Form a conjecture that
+describes these primes by their residue modulo $8$, and prove one half of it: an odd prime of the form
+$x^2 + 2y^2$ is congruent to $1$ or $3$ modulo $8$.
 
-12. • Let $r_n$ be the largest number of regions into which chords between $n$ points in general position on a circle cut the disc. Granting $r_n = \binom{n}{4} + \binom{n}{2} + 1$, prove that $r_n = \sum_{k=0}^{4} \binom{n-1}{k}$, and deduce that $r_n = 2^{n-1}$ exactly when $n \le 5$.
+12. • A naive random model treats "$p$ is prime", "$p + a$ is prime" and "$p + b$ is prime" as independent events.
+Show that $p, p + 2, p + 4$ are all prime only for $p = 3$, so the model is wrong for this pattern. Show that no
+prime blocks the patterns $(p, p + 2, p + 6)$ and $(p, p + 4, p + 6)$ in the same way, and find the least $p$ for
+each.
 
-13. • List the primes below $50$ of the form $x^2 + 2y^2$ with integers $x$ and $y$. [Form a conjecture](/R2T42N5XGK/) about which primes have this form in terms of their residue mod $8$, and test it on the primes from $50$ to $100$.
+13. • A computation gives $(1 + \sqrt 2)^{10} = 6725.99985\ldots$. Explain the near-integer: show that
+$a_n = (1 + \sqrt 2)^n + (1 - \sqrt 2)^n$ is an integer for every $n \ge 0$, compute $a_{10}$, and bound the
+distance from $(1 + \sqrt 2)^{10}$ to $a_{10}$.
 
-14. • Use the model of exercise 9 to estimate the expected number of primes among the Fermat numbers $F_n$ with $n \ge 5$. Explain why this [heuristic argument](/VCQQNJ3SEZ/) supports the belief that there are only finitely many Fermat primes, and why it is not a proof.
+14. • Compute $s_n = \sum_{k=0}^{n} \binom{n}{k}^2$ for $n = 1, \ldots, 5$, recognise the values as a known
+sequence of binomial coefficients, and prove the resulting formula by counting.
 
-15. • A conic in the plane is the zero set of $ax^2 + bxy + cy^2 + dx + ey + f$ with not all coefficients zero. Count parameters to predict how many conics pass through $5$ given points. Show that the prediction fails when $4$ of the $5$ points lie on a line.
+15. • Compute the partial sums $S_N = \sum_{n=1}^{N} \frac{1}{n(n+1)(n+2)}$ for $N = 1, 2, 3, 4$ as fractions.
+Guess the limit and a closed form for $S_N$, and prove the closed form.
 
-16. • A closed thread lies on a soap film stretched on a wire frame. When the film inside the loop is broken, the thread pulls into a circle, which suggests that among closed curves of given length the circle bounds the largest area. Name the step that this [physical argument](/THJV0NFPDQ/) takes for granted. Then show what goes wrong with the same step in this argument: "Let $N$ be the largest positive integer. Then $N^2 \ge N$, so $N^2 = N$ and $N = 1$."
+16. • Erdős's counting argument shows: if $\binom{n}{k} 2^{1 - \binom{k}{2}} < 1$, then some red-blue colouring of
+the edges of $K_n$ has no single-coloured $K_k$, so the Ramsey number satisfies $R(k, k) > n$. For $k = 5$, find
+the largest $n$ for which the inequality holds, and state the resulting lower bound.
 
-17. • A computer gives $(1 + \sqrt{2})^{10} \approx 6725.99985$. Explain why the number is so close to an integer, and find the integer, by considering $a_n = (1 + \sqrt{2})^n + (1 - \sqrt{2})^n$.
+17. • Four pins stand at the corners of a unit square. A soap film between two plates joined by the pins forms a
+network with two junctions on the line through the midpoints of two opposite sides, where three segments meet at
+$120^\circ$. Compute the total length of this network and compare it with the two diagonals and with three sides
+of the square.
 
-18. • Count the tilings of a $2 \times n$ board by $1 \times 2$ dominoes for $n = 1, \ldots, 6$, form a conjecture, and prove it by looking at the leftmost column.
+18. • A random model says that an odd number near $N$ is prime with probability about $2/\ln N$. Using
+$\ln F_n \approx 2^n \ln 2$ for the Fermat numbers $F_n = 2^{2^n} + 1$, estimate the expected number of primes
+among $F_5, F_6, F_7, \ldots$ under this model, to two decimal places.
 
-19. ★ Observing that $n^2 + n + 41$ is prime for many $n$, one might look for a better polynomial. Prove that no nonconstant polynomial with integer coefficients takes prime values at every integer $n \ge 0$.
+19. • Let $t_n$ be the number of ways to tile a $2 \times n$ rectangle with $1 \times 2$ dominoes. Find
+$t_1, \ldots, t_5$ by drawing, form a conjecture, and prove it with a recurrence. What is $t_6$?
 
-20. ★ Show that every prime factor $p$ of $F_n$ satisfies $p \equiv 1 \pmod{2^{n+1}}$. List the primes up to $641$ that this allows as factors of $F_5$. How does this shorten Euler's search?
+20. ★ Prove that no non-constant polynomial $f$ with integer coefficients has $f(n)$ prime for every integer
+$n \ge 1$.
 
-21. ★ Compute $s_n = \sum_{k=0}^{n} \binom{n}{k}^2$ for $n = 0, \ldots, 5$, identify the sequence, and prove your conjecture by counting the ways to choose $n$ people from $n$ women and $n$ men.
+21. ★ Fermat studied $2^{2^n} + 1$ rather than $2^m + 1$ for all $m$. Prove that if $2^m + 1$ is prime with
+$m \ge 1$, then $m$ is a power of $2$.
 
-22. ★ In the model of exercise 9, the expected number of ways to write $n$ as $k + (n - k)$ with $k$ and $n - k$ both prime is about $\sum_{k=2}^{n-2} \frac{1}{\ln k \, \ln(n-k)}$. Show that this sum is at least $\frac{n-3}{(\ln n)^2}$, so that the model predicts many Goldbach partitions for large $n$. Show that the model also predicts many partitions for large odd $n$, and that this is false. What correction does this suggest?
+22. ★ A conic is the zero set of a nonzero polynomial $ax^2 + bxy + cy^2 + dx + ey + f$. Prove that any five points
+of the plane lie on some conic. Then find the conic through $(0,0)$, $(1,0)$, $(0,1)$, $(1,1)$ and $(2,3)$, and
+say what kind of curve it is.
+
+23. ★ Let $g(n)$ be the number of ways to write $n$ as $p + q$ with primes $p \le q$. The Cramér model, with
+independent events of probability $1/\ln m$, predicts that $g(n)$ grows like $n/(\ln n)^2$ for all large $n$,
+even or odd. Show that $g(n) \le 1$ for every odd $n$, and explain which assumption of the model fails.
+
+24. ★ Prove that if a polynomial $f$ of degree $d$ takes integer values at $x = 0, 1, \ldots, d$, then $f(n)$ is
+an integer for every integer $n$, positive or negative. Use the forward differences $\Delta f(x) = f(x+1) - f(x)$
+and the polynomials $\binom{x}{k} = x(x-1)\cdots(x-k+1)/k!$.

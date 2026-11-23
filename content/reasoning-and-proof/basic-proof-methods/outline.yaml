@@ -1,9 +1,12 @@
 groups:
-  - title: The map and the direct method
+  - title: Reading the goal, and the direct proof
     intro: >
-      The chapter opens with a map of the methods, sorted by the logical form of the goal. Then come the two
-      moves that start most proofs: assume the hypothesis and reason forward, and let $x$ be an arbitrary
-      element. Almost every later method ends in a [direct proof](/0NTF6DMVAP/) of some changed goal.
+      The topic page sorts the methods by the logical form of the statement to be proved: the outermost
+      symbol of the goal suggests the first line of the proof. A [direct proof](/0NTF6DMVAP/) of "if $P$, then
+      $Q$" assumes $P$ and derives $Q$, which is valid because the implication can fail only when $P$ is true
+      and $Q$ false. A universal statement $\forall x \in D \; P(x)$ is proved by letting $x$ be an arbitrary
+      element of $D$, about which nothing is assumed beyond $x \in D$, and proving $P(x)$; checking cases, however
+      many, proves only the cases checked.
     entries:
       - G9JFJGY4TQ
       - 0NTF6DMVAP
@@ -11,41 +14,57 @@ groups:
 
   - title: Indirect proofs
     intro: >
-      Two methods start from the negation of the conclusion. A proof by contrapositive proves "not $Q$
-      implies not $P$" and ends at a definite statement. A proof by contradiction assumes the negation and
-      reaches any contradiction at all. The two are easy to confuse, and the entries say when each one fits.
+      When the hypothesis gives little to compute with but its failure does, the proof goes through a negation.
+      The implication $P \Rightarrow Q$ is logically equivalent to its contrapositive $\neg Q \Rightarrow \neg P$, and
+      not to its converse $Q \Rightarrow P$ or its inverse $\neg P \Rightarrow \neg Q$. A proof by contradiction
+      assumes the negation of the goal and derives a statement together with its negation; to prove a negative
+      statement $\neg P$ this is a refutation, and only the proof of a positive statement from $\neg\neg P$ uses the
+      law of excluded middle.
     entries:
       - 0BB5TPGQ1N
       - 0J0XBKG64S
 
-  - title: Splitting the goal
+  - title: Splitting the work
     intro: >
-      Some goals are proved in parts. A proof by cases covers every possibility with finitely many cases,
-      and a biconditional is two implications, or a cycle of implications when a list of statements is to
-      be shown equivalent.
+      Some goals are proved in pieces. If $A_1 \lor \dots \lor A_k$ holds and each $A_i$ implies $R$, then $R$
+      holds, so a proof by cases needs a split that is exhaustive and a proof in every case. A biconditional
+      $P \iff Q$ is the two implications $P \Rightarrow Q$ and $Q \Rightarrow P$, and a list $P_1, \dots, P_n$ is
+      proved equivalent by any set of implications in which every $P_i$ reaches every $P_j$, for example the cycle
+      $P_1 \Rightarrow P_2 \Rightarrow \dots \Rightarrow P_n \Rightarrow P_1$.
     entries:
       - 0WCP0PVET6
       - TFQ1845T84
 
   - title: Existence and uniqueness
     intro: >
-      An existence statement is proved by naming a witness and checking it, or by showing that a witness
-      must exist without naming it. The second kind of proof is valid in classical mathematics and gives
-      less information. Uniqueness is a separate claim with its own proof: two objects with the property are
-      equal.
+      An existence statement $\exists x \, P(x)$ is proved constructively by naming a witness and checking it, or
+      non-constructively by a case split or a contradiction that shows a witness must exist without naming it,
+      as the intermediate value theorem does for a real root of $x^5 - x - 1$. "Exactly one" adds uniqueness:
+      $\exists! x \, P(x)$ means $\exists x \, P(x)$ together with $\forall x \, \forall y \, (P(x) \land P(y) \Rightarrow x = y)$,
+      and the two halves are proved separately.
     entries:
       - 01XM7JEKHY
       - JZQVJ9XT63
       - GQHHNV79PA
 
-  - title: Counterexamples, shortcuts and impossibility
+  - title: Refuting a claim, and using symmetry
     intro: >
-      One instance refutes a universal claim, and no number of instances proves one. A symmetry can cut a
-      proof by cases down to one case, when the statement really has that symmetry. The forward-backward
-      method is a way to find a proof, not a way to write it. The chapter ends with proofs that no object or
-      method of a given kind exists.
+      The negation of $\forall x \, (H(x) \Rightarrow C(x))$ is $\exists x \, (H(x) \land \neg C(x))$, so one object
+      that satisfies every hypothesis and fails the conclusion refutes a universal claim; an object that fails a
+      hypothesis refutes nothing. Symmetry shortens the cases of the previous groups: if $S(a, b)$ and
+      $S(b, a)$ say the same thing, then proving $S(a, b)$ for $a \le b$ proves it for all $a$ and $b$, and this is
+      the exact content of "without loss of generality".
     entries:
       - 0ED72CTBNP
       - Y7NE0E6PCV
+
+  - title: Finding a proof, and proving that none exists
+    intro: >
+      The forward-backward method is a way to find a proof rather than a form for writing one: each backward
+      step replaces the goal $B$ by a sufficient condition $B'$ with $B' \Rightarrow B$, and the proof is written
+      forward once the two chains meet. The last entry proves the negative statement $\neg \exists x \, P(x)$ by
+      showing that every candidate leads to a contradiction, usually through a remainder or an invariant, as in
+      the proof that $x^2 - 3y^2 = 2$ has no integer solution because squares are $0$ or $1$ modulo $3$.
+    entries:
       - V8ZB838JY5
       - 6F55216R53

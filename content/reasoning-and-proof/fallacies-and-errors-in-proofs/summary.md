@@ -1,35 +1,34 @@
 ## What to remember
 
-- **A fallacy** is an argument with the form of a proof and at least one invalid step that looks valid. A howler is a fallacy whose conclusion happens to be true, as in cancelling the $6$s in $\frac{16}{64} = \frac{1}{4}$.
-- **Cancellation needs a non-zero factor.** From $ac = bc$ one may conclude $a = b$ only when $c \ne 0$. Dividing an equation by an expression in $x$ loses the solutions where it vanishes.
-- **Roots and powers have hypotheses.** $\sqrt{ab} = \sqrt a \, \sqrt b$ needs $a, b \ge 0$; $\sqrt{a^2} = \abs{a}$, not $a$; and $(a^b)^c = a^{bc}$ can fail for complex $a$ or non-integer exponents.
-- **Infinite sums are not finite sums.** Rearranging a conditionally convergent series can change its sum, and $\int_a^b f = F(b) - F(a)$ needs $f$ continuous on $[a, b]$. Iterated limits need not be equal.
-- **Implication runs one way.** From $P \Rightarrow Q$ and $Q$ nothing follows about $P$, and from $P \Rightarrow Q$ and $\neg P$ nothing follows about $Q$. The valid forms are modus ponens and modus tollens.
-- **Examples prove existence, not generality.** A universal claim needs a proof; one counterexample refutes it.
-- **Quantifiers do not commute.** $\exists y \, \forall x \, P(x, y)$ implies $\forall x \, \exists y \, P(x, y)$, and the converse fails in general.
-- **Squaring and similar steps do not reverse.** A solution found through a non-reversible step must be checked in the original equation.
-- **Published proofs can be wrong.** An incorrect proof does not make its result false: Kempe's argument for four colours failed, and the theorem was later proved.
+- A **fallacy** is an argument that looks valid and has an invalid step. Its conclusion is usually false, but a wrong method can give a right answer (a howler), and a true but surprising result, such as $0.999\ldots = 1$, is not a fallacy. To find the error, test each step against the exact rule it uses, hypotheses included.
+- **Cancellation.** For real or complex numbers, $ac = bc$ holds exactly when $c = 0$ or $a = b$. So $ac = bc \Rightarrow a = b$ needs $c \ne 0$.
+- **Roots and powers.** For real $a, b \ge 0$, $\sqrt{ab} = \sqrt{a}\sqrt{b}$; for real $x$, $\sqrt{x^2} = \abs{x}$. The rule $(a^m)^n = a^{mn}$ holds for $a > 0$ and all real $m, n$, and for $a \ne 0$ when $m$ and $n$ are integers. For complex $w$, $\operatorname{Log}(e^w) = w$ only when the imaginary part of $w$ lies in $(-\pi, \pi]$.
+- **Infinite processes.** Grouping and rearranging the terms of a series are safe when the series converges absolutely; by [Riemann's rearrangement theorem](/0E7VBYGFF7/) a conditionally convergent series can be rearranged to any real sum. The formula $\int_a^b f = F(b) - F(a)$ needs $F' = f$ on all of $[a, b]$, which fails when $f$ is unbounded inside the interval. Limits, sums and integrals may be exchanged only under a hypothesis such as uniform convergence or domination.
+- **Valid and invalid forms.** Modus ponens and modus tollens are valid. Affirming the consequent and denying the antecedent are invalid: one case with true premises and a false conclusion shows it.
+- **Examples.** One example proves an existential statement and one counterexample refutes a universal one. No number of checked cases proves a statement about infinitely many cases; checking every case proves a statement about finitely many.
+- **Order of quantifiers.** $\exists y\, \forall x\, P(x, y)$ implies $\forall x\, \exists y\, P(x, y)$, and the converse fails: every real number has a larger one, and no real number is larger than all of them.
+- **Solving equations.** Squaring both sides, multiplying by an expression that may vanish, or applying a function that is not injective gives an implication, not an equivalence: the new equation may have extra solutions, so check every candidate in the original. Dividing by an expression that may vanish can lose solutions.
+- **Circularity and intimidation.** A proof is circular if it uses its conclusion, or a result proved from it, as a premise; trace where each premise comes from. A "clearly" in place of an argument marks a step to check.
 
-| Error | Invalid step | Valid form nearby |
-|---|---|---|
-| Division by zero | $ac = bc \Rightarrow a = b$ | Same, when $c \ne 0$ |
-| Roots of negatives | $\sqrt{ab} = \sqrt a \, \sqrt b$ for all $a, b$ | Same, when $a, b \ge 0$ |
-| Rearranging a series | Any order gives the same sum | Same, for absolutely convergent series |
-| Improper integral | $\int_{-1}^{1} x^{-2} \, dx = [-x^{-1}]_{-1}^{1}$ | The formula, when the integrand is continuous on the interval |
-| Circular reasoning | The conclusion is used as a premise | Use only earlier results whose proofs do not use the conclusion |
-| Affirming the consequent | $P \Rightarrow Q$ and $Q$, so $P$ | Modus ponens: $P \Rightarrow Q$ and $P$, so $Q$ |
-| Denying the antecedent | $P \Rightarrow Q$ and $\neg P$, so $\neg Q$ | Modus tollens: $P \Rightarrow Q$ and $\neg Q$, so $\neg P$ |
-| Proof by example | $P(a)$ for some $a$, so $\forall x \, P(x)$ | $P(a)$ for some $a$, so $\exists x \, P(x)$ |
-| Quantifier shift | $\forall x \, \exists y \, P$, so $\exists y \, \forall x \, P$ | $\exists y \, \forall x \, P$, so $\forall x \, \exists y \, P$ |
-| Non-reversible step | Squaring treated as an equivalence | Check every candidate in the original equation |
+## Four forms with a conditional
 
-: The common errors of the chapter, the step that fails, and the correct rule closest to it.
+| Name | Premises | Conclusion | Valid? |
+|---|---|---|---|
+| Modus ponens | $P \Rightarrow Q$ and $P$ | $Q$ | yes |
+| Modus tollens | $P \Rightarrow Q$ and $\neg Q$ | $\neg P$ | yes |
+| Affirming the consequent | $P \Rightarrow Q$ and $Q$ | $P$ | no |
+| Denying the antecedent | $P \Rightarrow Q$ and $\neg P$ | $\neg Q$ | no |
 
-## Finding the error
+: The two invalid forms are the valid ones applied to the converse $Q \Rightarrow P$. With $P$ "$6$ divides $n$", $Q$ "$3$ divides $n$" and $n = 9$, both invalid forms have true premises and a false conclusion.
 
-- **Test the conclusion first.** If the conclusion is false, the argument has a wrong step; check each step on the specific numbers until one fails.
-- **Ask each rule for its hypothesis.** For every cancellation, root, exponent law, interchange of limits or use of a figure, state the condition under which the rule holds and check it.
-- **Write the logical form.** Many errors of logic disappear once the quantifiers and implications are written out: a reversed arrow or a swapped $\forall\exists$ becomes visible.
-- **Check the direction of each step.** In solving an equation, mark each step as "implies" or "is equivalent to", and check the candidates when any step is one-way.
-- **Do not trust the figure.** Redraw it accurately, or replace each fact read off it by a proof from the axioms.
-- **Treat "obviously" as a request for a reason.** A step that is only asserted, or justified by who asserted it, is a gap until it is proved.
+## Common errors
+
+- **Cancelling a factor that can be zero.** Before dividing by $x - 2$ or $a - b$, ask whether it can vanish. In the classic "proofs" of $2 = 1$ it vanishes by construction.
+- **Squaring without checking.** After squaring, or after multiplying by an expression in the unknown, every candidate must be put back into the original equation.
+- **Reasoning from the converse.** A proof of "if $P$ then $Q$" that starts from $Q$ and ends with $P$ proves the converse. Check the direction of each implication, and reverse the chain only where every step is an equivalence.
+- **Proof by example.** Forty checked values of $n$ prove nothing about all $n$.
+- **Shifting a quantifier.** "For each $x$ there is a $\delta$" does not give one $\delta$ for all $x$. Write the quantifiers out and keep their order.
+- **Trusting the figure.** Recompute the key facts of a figure with coordinates, or derive the position of each point from the axioms.
+- **Using the result to prove itself.** When a proof cites a theorem, check that the theorem was not proved from the statement now being proved.
+
+Two tests find most errors. If the conclusion is false, put a value into each line and stop at the first false line. If the same steps prove something false in another case, the argument proves too much.

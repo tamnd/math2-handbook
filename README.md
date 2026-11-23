@@ -10,10 +10,10 @@ a reference site does not need and a textbook does: an introduction to each volu
 reading order for each chapter, summaries, exercises in three bands with hints, notes on history and further
 reading, a bibliography and an index.
 
-## Volumes in edition 0.4.0
+## Volumes in edition 0.5.0
 
 Built from [`tamnd/math2`](https://github.com/tamnd/math2) at the commit named in [`EDITION`](EDITION), the content
-of release v0.4.0. The edition number of the handbook follows the release of the site it is built from; a larger
+of release v0.5.0. The edition number of the handbook follows the release of the site it is built from; a larger
 fourth number would mark a new build of the same release. The books are on the
 [releases page](https://github.com/tamnd/math2-handbook/releases).
 

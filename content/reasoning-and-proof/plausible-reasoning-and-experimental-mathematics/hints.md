@@ -1,25 +1,61 @@
-2. $f(80) = 6400 - 6320 + 1601 = 1681 = 41^2$. With $m = n - 40$, $f(n) = m^2 + m + 41$. As $n$ runs over $0, \ldots, 79$, $m$ runs over $-40, \ldots, 39$, and $m^2 + m + 41$ takes the same value at $m$ and $-1 - m$, so the $80$ values are the $40$ primes of $m^2 + m + 41$ for $m = 0, \ldots, 39$, each taken twice.
+1. $111 = 3 \cdot 37$, so the conjecture is false. The prime $11$ only made it more credible; the false case $111$
+refutes it by the demonstrative pattern "$A$ implies $B$, $B$ false, so $A$ false", which is deduction. (Also
+$11111 = 41 \cdot 271$ and $1111111 = 239 \cdot 4649$.)
 
-5. $128 = 19 + 109 = 31 + 97 = 61 + 67$, three ways. Powers of $2$ have few partitions because $128$ is not divisible by small odd primes, so $128 - p$ is less often prime. The conjecture asks only for one partition.
+3. $5777 = 53 \cdot 109$, $5775 = 3 \cdot 5^2 \cdot 7 \cdot 11$, $5769 = 3^2 \cdot 641$ and $5759 = 13 \cdot 443$.
+The remaining cases $k = 4, \ldots, 53$ are also composite, which is what makes $5777$ an exception.
 
-6. $L(n) = 1, 0, -1, 0, -1, 0, -1, -2, -1, 0$. Haselgrove proved in 1958 that the conjecture fails, and the least counterexample, $n = 906150257$, was found by Tanaka in 1980.
+5. $\alpha^2 + 2\alpha - 2 = 0$, that is $(a, b, c) = (-2, 2, 1)$; the positive root is $\alpha = \sqrt 3 - 1$. The
+relation is a conjecture until it is checked to more digits or proved.
 
-10. The partial sums are $\frac{1}{6}, \frac{5}{24}, \frac{9}{40}, \frac{7}{30}, \frac{5}{21}$. Write the term as $\frac{1}{2}\left(\frac{1}{n(n+1)} - \frac{1}{(n+1)(n+2)}\right)$; the sum telescopes to $\frac{1}{4}$.
+6. $\ln \ln 10^{100} \approx 5.44$ and $\ln \ln 10^{1000} \approx 7.74$. The larger check covers $10^{900}$ times
+as many numbers but moves only $2.30$ on the scale, and still stops well short of $10$.
 
-11. From $5 \cdot 2^7 \equiv -1 \pmod{641}$, raising to the fourth power gives $5^4 \cdot 2^{28} \equiv 1$. Since $5^4 \equiv -2^4$, this gives $-2^{32} \equiv 1$.
+7. There are $11$ primes of the form $4k + 1$ and $13$ of the form $4k + 3$ up to $100$. The table proves the
+inequality for $x \le 100$ and nothing beyond; the statement for all $x$ is false, with $26861$ as the first
+counterexample.
 
-12. Use Pascal's rule twice: $\binom{n}{4} = \binom{n-1}{4} + \binom{n-1}{3}$ and $\binom{n}{2} = \binom{n-1}{2} + \binom{n-1}{1}$. The sum equals $2^{n-1} = \sum_{k=0}^{n-1} \binom{n-1}{k}$ exactly when no terms with $k \ge 5$ are missing.
+8. (a) Proof: the claim is about finitely many cases, and all were checked. (b) Only more credible, and in fact
+false at $n = 40$. (c) Only more credible. (d) Proof: if every colouring had a single-coloured $K_k$, the
+expected number would be at least $1$. (e) Only more credible; it is a physical argument.
 
-14. Each $F_n$ is prime with probability about $1/\ln F_n \approx 1/(2^n \ln 2)$. The sum over $n \ge 5$ is $\frac{1}{16 \ln 2} \approx 0.09$.
+10. $126$ has $10$ representations and $128$ has $3$ ($19 + 109$, $31 + 97$, $61 + 67$). Since
+$126 = 2 \cdot 3^2 \cdot 7$, the factor is $\frac{2}{1} \cdot \frac{6}{5} = 2.4$, while $128 = 2^7$ gives $1$. The
+factor predicts more sums for $126$, in the observed direction; the rest of the gap is the noise of small numbers.
 
-16. It assumes that a curve of largest area exists. The integer argument makes the same assumption, and there it is false.
+12. One of $p, p + 2, p + 4$ is divisible by $3$, so it equals $3$. For $(0, 2, 6)$ and $(0, 4, 6)$ the residues
+modulo $3$ are $\{0, 2\}$ and $\{0, 1\}$, which miss a class, and three numbers cannot fill all classes modulo a
+prime $q \ge 5$. The least examples are $5, 7, 11$ and $7, 11, 13$.
 
-17. The recurrence $a_n = 2a_{n-1} + a_{n-2}$ with $a_0 = a_1 = 2$ shows that each $a_n$ is an integer; $a_{10} = 6726$. Since $\abs{1 - \sqrt{2}} < 1/2$, the second term is tiny, about $1.5 \cdot 10^{-4}$.
+13. Expand by the binomial theorem: the odd powers of $\sqrt 2$ cancel, or use $a_0 = a_1 = 2$ and
+$a_n = 2a_{n-1} + a_{n-2}$, since $1 \pm \sqrt 2$ are the roots of $t^2 = 2t + 1$. Then $a_{10} = 6726$, and
+$a_{10} - (1 + \sqrt 2)^{10} = (\sqrt 2 - 1)^{10} < 0.42^{10} < 2 \cdot 10^{-4}$.
 
-19. If $p(n_0) = q$ is prime, then $q$ divides $p(n_0 + kq)$ for every $k$, since $p(n_0 + kq) \equiv p(n_0) \pmod q$. A nonconstant polynomial takes the values $\pm q$ only finitely often.
+16. $2^{1 - \binom{5}{2}} = 2^{-9}$, so the condition is $\binom{n}{5} < 512$. Since $\binom{11}{5} = 462$ and
+$\binom{12}{5} = 792$, the largest $n$ is $11$ and $R(5,5) > 11$. The bound is far from the truth; much larger
+lower bounds come from explicit colourings.
 
-20. Since $2^{2^n} \equiv -1 \pmod p$, the order of $2$ modulo $p$ is exactly $2^{n+1}$, and it divides $p - 1$. For $F_5$ the primes allowed are $193, 257, 449, 577, 641$. Since $p \equiv 1 \pmod 8$, $2$ is a square mod $p$, which improves the condition to $p \equiv 1 \pmod{128}$, leaving $257$ and $641$.
+18. The sum is $\sum_{n \ge 5} \frac{2}{2^n \ln 2} = \frac{2}{\ln 2} \cdot \frac{1}{16} = \frac{1}{8 \ln 2}
+\approx 0.18$. The model ignores the known structure of the prime factors of $F_n$, so it is a heuristic and
+proves nothing.
 
-21. $1, 2, 6, 20, 70, 252$ are the central binomial coefficients $\binom{2n}{n}$. Sort the choices by the number $k$ of women chosen and use $\binom{n}{n-k} = \binom{n}{k}$.
+20. Suppose $p = f(1)$ is prime. For every integer $k$, $f(1 + kp) \equiv f(1) \equiv 0 \pmod p$, so $f(1 + kp)$
+is a prime divisible by $p$, hence equal to $p$. A non-constant polynomial takes the value $p$ only finitely
+often.
 
-22. Each term is at least $1/(\ln n)^2$ and there are $n - 3$ terms. For odd $n$ one of $k$ and $n - k$ is even, so at most one partition exists. The model must take account of divisibility by small primes, which leads to the singular series of Hardy and Littlewood.
+21. If $m$ has an odd factor $b > 1$, write $m = ab$. Since $x + 1$ divides $x^b + 1$ for odd $b$, the number
+$2^a + 1$ divides $2^m + 1$, and $1 < 2^a + 1 < 2^m + 1$.
+
+22. Each point gives one linear equation in the six coefficients, and five homogeneous linear equations in six
+unknowns have a nonzero solution. For the given points, $f = 0$, $d = -a$, $e = -c$, $b = 0$ and $a = -3c$, so the
+conic is $3x(x - 1) = y(y - 1)$, a hyperbola.
+
+23. If $n = p + q$ is odd, exactly one of $p, q$ is even, so it is $2$ and the other is $n - 2$; hence
+$g(n) \le 1$. The model treats "$p$ is prime" and "$n - p$ is prime" as independent, but the parity of $n - p$ is
+fixed by that of $p$. A correct model needs a factor for the prime $2$: it is $0$ for odd $n$ and $2$ for even $n$,
+which is why the predictions are made for even $n$ only.
+
+24. Write $f(x) = \sum_{k=0}^{d} c_k \binom{x}{k}$ with $c_k = \Delta^k f(0)$ (Newton's forward formula, proved by
+comparing values at $0, \ldots, d$). The $c_k$ are integers because they are integer combinations of
+$f(0), \ldots, f(d)$. Each $\binom{n}{k}$ is an integer for $n \ge 0$, and
+$\binom{-m}{k} = (-1)^k \binom{m + k - 1}{k}$ for $m > 0$.

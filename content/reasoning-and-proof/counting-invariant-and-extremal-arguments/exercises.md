@@ -1,55 +1,57 @@
-1. ◦ Show that among any $11$ distinct numbers from $\set{1, 2, \ldots, 20}$ there are two whose sum is $21$. Name the boxes. Is the claim true for $10$ numbers?
+1. ◦ How many numbers must be chosen from $\set{1, 2, \ldots, 30}$ to be sure that two of the chosen numbers have a sum divisible by $7$? Give a set with one number fewer that has no such pair.
 
-2. ◦ In a group of $100$ people, what is the largest number $k$ such that some $k$ of them must be born in the same month? Give a grouping of birth months that shows $k$ cannot be larger.
+2. ◦ A drawer holds $10$ red, $8$ blue and $6$ green socks, and you take socks out in the dark. How many must you take to be sure of (a) two socks of one colour; (b) three socks of one colour; (c) two red socks; (d) one sock of each colour?
 
-3. ◦ Explain why every sequence of integers that takes only finitely many values has a constant infinite subsequence. Give a sequence of integers that has no constant infinite subsequence.
+3. ◦ Each of $20$ students belongs to exactly $3$ clubs, and each club has exactly $6$ members. How many clubs are there? Could every club have exactly $7$ members instead?
 
-4. ◦ How many edges has a graph with $10$ vertices, each of degree $3$? Is there a graph whose vertices have the degrees $3, 3, 2, 2, 2, 1$?
+4. ◦ A $6 \times 6$ board is drawn with $7$ horizontal and $7$ vertical lines. Count the rectangles whose sides lie on these lines, by a [bijection](/0GV2573FP4/) with pairs of lines.
 
-5. ◦ The numbers $1, 2, \ldots, 10$ are written on a board. A move replaces two numbers $a$ and $b$ by $\abs{a - b}$. After nine moves one number is left. Can it be $0$? Name the [invariant](/8NQ190278Y/) you use.
+5. ◦ Four numbers stand on a circle: $1, 0, 0, 0$. A move adds $1$ to two neighbouring numbers. Can all four numbers become equal? Name the [invariant](/8NQ190278Y/) you use.
 
-6. ◦ Run the Euclidean algorithm on the pair $(252, 105)$, replacing $(a, b)$ by $(b, r)$ where $r$ is the remainder of $a$ on division by $b$, until the second number is $0$. Which quantity decreases at each step, and why does this show that the algorithm always stops?
+6. ◦ Each of $a_1, \ldots, a_n$ is $1$ or $-1$, and $S = a_1 a_2 + a_2 a_3 + \cdots + a_{n-1} a_n + a_n a_1$. Prove that $S \ne 0$ for $n = 9$ and for $n = 10$. Give an example with $S = 0$ for $n = 12$.
 
-7. ◦ One cell is removed from a $3 \times 3$ board. For which removed cells can the remaining $8$ cells be tiled by dominoes? Use the chessboard colouring for the cells where no tiling exists.
+7. ◦ A binary string of length $12$ has a run of $7$ if some $7$ consecutive digits are equal. Show by a count, without listing strings, that more than $90\%$ of the $2^{12}$ strings have no run of $7$.
 
-8. ◦ Seven integers have the sum $50$. Show that one of them is at least $8$. Must one of them be at least $9$?
+8. ◦ A list of reals in $[0, 1)$ begins $x_1 = 0.5172\ldots$, $x_2 = 0.3500\ldots$, $x_3 = 0.1415\ldots$, $x_4 = 0.0999\ldots$. Change the $n$th digit of $x_n$ by the rule "every digit becomes $5$, except that $5$ becomes $6$". Write the first four digits of the new number $d$. Why does the rule avoid the digits $0$ and $9$?
 
-9. ◦ A list of binary sequences begins with $s_1 = 0000\ldots$, $s_2 = 1010\ldots$, $s_3 = 1111\ldots$ and $s_4 = 0110\ldots$. Write the first four terms of the [diagonal](/V2H30SA654/) sequence $d$ with $d(n) = 1 - s_n(n)$.
+9. ◦ The numbers $1, 2, \ldots, 16$ are written in the cells of a $4 \times 4$ grid. Prove that some row has sum at least $34$, and that some two horizontally neighbouring cells have sum at least $17$. Give an arrangement in which every row has sum exactly $34$.
 
-10. • Ten points lie in an equilateral triangle of side $1$. Prove that two of them are at distance at most $1/3$.
+10. ◦ Which of these sequences must have a constant infinite subsequence? Give a counterexample for each one that need not.
+(a) A sequence of integers with $\abs{a_n} \le 100$ for every $n$.
+(b) A sequence of rational numbers in $[0, 1]$.
+(c) A sequence of integers with $a_n \le 100$ for every $n$.
+(d) The sequence of last digits of $n^2$.
 
-11. • Prove that among any $n + 1$ numbers chosen from $\set{1, 2, \ldots, 2n}$, two are coprime.
+11. • Prove that every positive integer $n$ has a positive multiple whose decimal digits are all $0$ or $1$. Look at the remainders of $1, 11, 111, \ldots$ on division by $n$. Find the smallest such multiple of $7$ and of $12$.
 
-12. • Prove by [double counting](/0F8YBHF2W3/) that $\sum_{k=0}^n k(k - 1) \binom{n}{k} = n(n - 1) 2^{n-2}$ for $n \ge 2$. Count the committees with a chair and a different secretary, chosen from $n$ people.
+12. • Prove that among any $7$ integers there are two whose sum or difference is divisible by $10$. Give $6$ integers for which this fails.
 
-13. • A path of length $2$ in a graph is a pair of edges with a common end. Prove that a finite graph has exactly $\sum_v \binom{\deg v}{2}$ such paths. Compute the number for the complete graph $K_n$ and for the cycle $C_n$ with $n \ge 4$.
+13. • Prove by [double counting](/0F8YBHF2W3/) that $\sum_{k=0}^{n} k^2 \binom{n}{k} = n(n + 1) 2^{n-2}$ for $n \ge 2$. Count the ways to choose, from $n$ people, a committee with a chair and a secretary, where one person may hold both posts.
 
-14. • A composition of $n$ is a way to write $n$ as an ordered sum of positive integers, such as $3 = 1 + 2 = 2 + 1 = 1 + 1 + 1$. Give a bijection between the compositions of $n$ and the subsets of $\set{1, \ldots, n - 1}$, and deduce that there are $2^{n-1}$ compositions.
+14. • Give a [combinatorial proof](/SS07J9ZAQ7/) that $\sum_{k=0}^{n} \binom{n}{k} 2^k = 3^n$. Name the set that both sides count.
 
-15. • Give a [combinatorial proof](/SS07J9ZAQ7/) that $\sum_{k=r}^n \binom{k}{r} = \binom{n + 1}{r + 1}$ for $0 \le r \le n$. Classify the $(r + 1)$-element subsets of $\set{1, \ldots, n + 1}$ by their largest element.
+15. • The numbers $1, 2, \ldots, 6$ are written on a board. A move erases two numbers $a$ and $b$ and writes $\frac{ab}{a + b}$. After five moves one number is left. Prove that it does not depend on the moves, and find it.
 
-16. • The numbers $1, 2, \ldots, 10$ are written on a board. A move replaces two numbers $a$ and $b$ by $ab + a + b$. After nine moves one number is left. Prove that it is always the same number, and find it.
+16. • Four people sit in a row, and the first has $8$ coins while the others have none. A move: a person with at least $2$ more coins than a neighbour gives that neighbour one coin. Prove by a [monovariant](/TP3GC5J08D/) that the process stops whatever moves are chosen, after at most $24$ moves.
 
-17. • In a parliament each member has at most three enemies, and enmity is mutual. Prove that the members can be split into two houses so that each member has at most one enemy in his or her own house. Use a [monovariant](/TP3GC5J08D/).
+17. • Each cell of a $4 \times 4$ board has a lamp. A move switches every lamp in one row, or every lamp in one column. At the start exactly one lamp is on. Can all lamps be switched off?
 
-18. • A knight's tour of a board visits each cell once by knight's moves; it is closed if the last cell is a knight's move from the first. Prove that the $7 \times 7$ board has no closed knight's tour.
+18. • A T-tetromino is four cells in a T shape. Prove that every tiling of a rectangle by T-tetrominoes uses an even number of tiles. Deduce that the $6 \times 6$ board has no such tiling, and show that the $4 \times 4$ board has one.
 
-19. • A T-tetromino is four cells forming a T. Prove that the $10 \times 10$ board cannot be tiled by T-tetrominoes.
+19. • Every cell of an infinite square grid holds a positive integer equal to the average of the four numbers in the cells that share a side with it. Prove that all the numbers are equal. Show that the claim fails if negative integers are allowed.
 
-20. • In a tournament, each two players have played once and one of them won. Prove that some player $x$ has this property: for every other player $v$, either $x$ beat $v$, or $x$ beat someone who beat $v$. Take $x$ with the largest number of wins.
+20. • Twelve people sit at a round table with $12$ seats, and each seat has a name card. Nobody sits at their own card. Prove that the table can be rotated so that at least two people sit at their own cards.
 
-21. • Let $S$ be a finite set of at least two points in the plane. Prove by the [extremal principle](/MD3MRG90W4/) that some point of $S$ is not the midpoint of any two other points of $S$.
+21. • An arithmetic progression of length $10$ in $\set{1, \ldots, 100}$ is a set $\set{a, a + d, \ldots, a + 9d}$ with $d \ge 1$. Count these progressions, and use a [counting argument](/1KVSS0KRZA/) to prove that the numbers $1, \ldots, 100$ can be coloured red and blue so that no such progression has all its terms of one colour.
 
-22. • The numbers $1, 2, \ldots, 10$ are placed around a circle in any order. Prove by an [averaging argument](/HXP9VMXV8S/) that some three consecutive numbers have a sum of at least $17$.
+22. • Prove by [diagonalization](/V2H30SA654/) that the strictly increasing sequences of natural numbers cannot be listed as $f_0, f_1, f_2, \ldots$. Make sure that your diagonal sequence is strictly increasing.
 
-23. • A decimal expansion is eventually periodic if from some place on it repeats a fixed block of digits. Prove, by a counting argument and without writing one down, that some real number in $[0, 1)$ has a decimal expansion that is not eventually periodic.
+23. ★ A path from $(0, 0)$ to $(n, n)$ uses unit steps right and up. Prove that the number of such paths that never go above the line $y = x$ is $\binom{2n}{n} - \binom{2n}{n+1}$. Reflect the part of a bad path after its first visit to the line $y = x + 1$. Compute the number for $n = 4$.
 
-24. ★ Prove that among any $n + 1$ numbers chosen from $\set{1, 2, \ldots, 2n}$, one divides another. Show that $n$ numbers are not always enough.
+24. ★ In the sliding puzzle on a $2 \times 3$ board, five tiles $1, \ldots, 5$ and one blank fill the six cells, and a move slides a tile into the blank cell from a neighbouring cell. Prove that from a given position at most $360$ of the $720$ arrangements can be reached. Deduce that two tiles cannot be swapped while all other tiles and the blank return to their places.
 
-25. ★ Let $\alpha$ be an irrational real number. Using the first of the [applications of the pigeonhole principle](/5EAFG80VX6/), prove that there are infinitely many fractions $p/q$ with $q \ge 1$ and $\abs{\alpha - p/q} < 1/q^2$.
+25. ★ Ten distinct two-digit numbers are given. Prove that two disjoint nonempty sets of them have the same sum.
 
-26. ★ Prove that the set of all functions $\N \to \N$ is uncountable, and that the set of functions $\N \to \N$ that take the value $0$ at all but finitely many arguments is countable.
+26. ★ Let $S$ be a finite set of at least three points in the plane, not all on one line. Prove by the [extremal principle](/MD3MRG90W4/) that some circle through three points of $S$ has no point of $S$ in its interior. Start from two points of $S$ at the least distance.
 
-27. ★ The entry on [counting arguments for existence](/1KVSS0KRZA/) shows that $R(k, k) > n$ when $\binom{n}{k} 2^{1 - \binom{k}{2}} < 1$. Deduce that $R(k, k) > 2^{k/2}$ for every $k \ge 3$.
-
-28. ★ Prove that the $8 \times 8$ board with one corner cell removed cannot be tiled by $1 \times 3$ bars.
+27. ★ In a tournament each two players play once and one of them wins. Prove that there is a tournament with $21$ players in which, for every two players, some third player beat both. Use a count of tournaments, and check that the same count fails for $20$ players.

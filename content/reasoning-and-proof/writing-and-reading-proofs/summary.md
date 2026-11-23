@@ -1,39 +1,35 @@
 ## What to remember
 
-- **A proof is a text for a stated reader.** It states exactly what is proved, introduces each letter with its type, gives a reason for each step and ends with the claim. A reason is a hypothesis, a definition, an earlier result or a rule of logic.
-- **Scratch work is not the proof.** The search may run backwards from the goal; the final text runs forwards from the hypotheses, and it keeps only the steps that the reader needs.
-- **The logical form fixes the first moves.** The outermost connective or quantifier of the goal, and of each given, says what sentence to write next.
-- **Unpack definitions until the goal is a statement about simpler objects,** and stop at the level where a calculation or a known result settles it.
-- **Proof words carry logical status.** "Let" and "fix" introduce an object, "suppose" opens an assumption, "hence" draws a consequence, "it suffices to show" replaces the goal by one that implies it.
-- **An omitted step is acceptable** for a reader when it is true, the reader can supply it with known results, and it needs no new idea. Otherwise it is a gap.
-- **Active reading** asks of each line what justifies it, tests the statement on examples, finds where each hypothesis is used, and states the main idea in a few sentences.
-- **Checking a proof** includes running the argument on a case where the conclusion fails. If every step still goes through, the argument has an error, and the first step that should break locates it.
+- **A written proof** states what it proves, introduces every letter before using it and says what kind of object it is, gives a reason for every step, and ends with the claim. It is written for a stated reader.
+- **Scratch work and the final proof** run in opposite directions. Scratch work starts from the goal and asks what would imply it; the final proof starts from the hypotheses and moves forward. A step that is not reversible, such as squaring or dividing by a quantity that may be $0$, must be checked before it is turned around.
+- **The logical form of the goal** gives the first move, and the logical form of a hypothesis tells how to use it (see the table). [Unpacking definitions](/41JZ39GE3F/) replaces each defined term by its definition and its quantifiers, until the goal speaks about objects you can handle.
+- **Proof words** have exact jobs. "Let" introduces an arbitrary object, "suppose" an assumption whose scope ends with its part of the proof, "for some" a witness that is not ours to choose, "hence" a consequence, and "we claim" a statement proved next.
+- **Layouts.** A two-column proof is a flat list of statements, each with a reason citing earlier rows; it has no scope for assumptions. A structured proof is a tree: each step has its own proof, an ASSUME or CASE holds only inside its step, and the Q.E.D. step of each list cites the steps it uses.
+- **Detail.** An omitted step is acceptable when it is true, when the intended reader can supply it from known results, and when it needs no new idea. Otherwise it is a gap, and a false step marked "routine" or "similarly" is an error.
+- **Style.** Every formula sits inside a sentence, no sentence starts with a symbol, words separate formulas, and every symbol keeps one meaning. The equals sign is not a word for "the next step is", and $\Rightarrow$ connects statements, not actions.
+- **Reading** means writing the reason for each line, testing the lines on an example, and marking where each hypothesis is used. A hypothesis that no line uses means that the theorem holds without it or that the proof has an error.
+- **Checking** ends in a verdict with reasons. An argument that would apply word for word to a case where the conclusion fails cannot be correct, so running the argument on such a case finds the faulty line.
 
-| Form of the goal | What to write |
-|---|---|
-| $\forall x \, P(x)$ | "Let $x$ be arbitrary." Then prove $P(x)$. |
-| $\exists x \, P(x)$ | Name a witness $a$ and prove $P(a)$. |
-| $P \Rightarrow Q$ | "Suppose that $P$." Then prove $Q$. |
-| $P \iff Q$ | Prove $P \Rightarrow Q$ and $Q \Rightarrow P$. |
-| $P \wedge Q$ | Prove $P$, then prove $Q$. |
-| $P \vee Q$ | Prove one part, or suppose that $P$ fails and prove $Q$. |
-| $\neg P$ | Suppose $P$ and derive a contradiction, or rewrite $\neg P$ in positive form. |
+## Goals and givens
 
-: The first sentence that the form of the goal dictates, from the entry on proof strategies by logical form.
+| Form | To prove it (goal) | To use it (given) |
+|---|---|---|
+| $P \Rightarrow Q$ | assume $P$, prove $Q$ | once $P$ is known, conclude $Q$ |
+| $\forall x \in A, \ P(x)$ | let $x \in A$ be arbitrary, prove $P(x)$ | apply it to any element of $A$ |
+| $\exists x \in A, \ P(x)$ | name an $x \in A$, check $P(x)$ | introduce a new letter $x_0$ with $P(x_0)$ |
+| $P \wedge Q$ | prove $P$, then prove $Q$ | use $P$ and $Q$ separately |
+| $P \vee Q$ | assume $\neg P$, prove $Q$ | split into the cases $P$ and $Q$ |
+| $\neg P$ | assume $P$, reach a contradiction | push the negation inside first |
+| $P \Leftrightarrow Q$ | prove $P \Rightarrow Q$ and $Q \Rightarrow P$ | use either implication |
 
-| Format | Shape | Strength | Weakness |
-|---|---|---|---|
-| Paragraph proof | Sentences in order | Reads like prose and shows the idea | Structure of a long proof is hard to see |
-| Two-column proof | Statements and reasons in a table | A reason for every step is visible | Awkward for long proofs, cases and contradiction, since a flat table has no place for an assumption that is later dropped |
-| Structured proof | Numbered tree of steps, such as $\langle 2 \rangle 3$ | Shows the logical structure, can be read to any depth | Adds little to a short argument |
-
-: Three formats for a written proof.
+: The same statement is handled one way as a goal and another way as a given. A witness from a given existential gets a new letter, never a letter already in use.
 
 ## Common errors
 
-- **The bare computation.** A column of formulas with no words: the reader cannot tell what is assumed and what is claimed.
-- **Scratch work handed in.** A chain that starts from the conclusion and ends at a true statement proves nothing unless every step reverses.
-- **One letter for two objects.** Two existential givens need two new letters; calling both witnesses $k$ silently assumes they are equal.
-- **Unpacking too far.** Expanding a definition down to the axioms buries the idea; stop where a known result applies.
-- **"From the diagram".** A figure suggests a fact but does not prove it; the reason must be a given, a definition or a theorem.
-- **Testing instead of checking.** Confirming that the conclusion holds in examples says nothing about whether the argument is valid.
+- **A column of formulas.** Equations without words do not say which lines are assumptions and which are claims.
+- **Handing in the scratch work.** A chain that starts from the goal and ends with a true statement proves nothing unless every step reverses.
+- **Choosing a witness that is not ours.** After "$n = 2k$ for some integer $k$", the letter $k$ is fixed by $n$; it cannot then be set to $5$, and two different witnesses need two different letters.
+- **An assumption that outlives its scope.** A case assumption used in the next case, or "suppose $x > 0$" still in force after its part of the proof has ended.
+- **"Similarly" without checking.** A change of sign or of the direction of an inequality often breaks the similarity.
+- **Checking examples instead of the argument.** Examples can refute a statement, but they say nothing about whether the argument is valid.
+- **Accepting a familiar-looking step.** A step that looks standard can still use a hypothesis that does not hold, such as multiplying an inequality by a number that may be negative.

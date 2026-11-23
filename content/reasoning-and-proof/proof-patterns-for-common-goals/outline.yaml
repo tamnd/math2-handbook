@@ -1,46 +1,76 @@
 groups:
-  - title: Equalities and properties of maps and relations
+  - title: Sets, functions and relations
     intro: >
-      Many goals in algebra and basic set theory have a fixed shape: two sets are equal, a map is injective,
-      a relation is an equivalence, two numbers are equal, an identity holds for every value of a variable.
-      Each shape has a standard proof, and the definitions say what that proof must check. The entries give
-      the pattern, the usual pitfalls and the failures that show why each check is needed.
+      Each goal here breaks into small checks on elements. Two sets are equal exactly when each is a subset of the
+      other, so a proof of $A = B$ is two proofs: take $x \in A$ and show $x \in B$, then the reverse. A function
+      $f \colon A \to B$ is injective when $f(a) = f(a')$ forces $a = a'$, and surjective when every $b \in B$ is
+      $f(a)$ for some $a \in A$. If some $g \colon B \to A$ has $g \circ f = \mathrm{id}_A$, then $f$ is injective,
+      and if $f \circ g = \mathrm{id}_B$, then $f$ is surjective, so a two-sided inverse proves both at once. A
+      relation is an equivalence relation when it is reflexive, symmetric and transitive; when $x \sim y$ is defined
+      by $h(x) = h(y)$ for some function $h$, all three properties hold at once, and the classes are the fibres of
+      $h$.
     entries:
       - MKHVRNW68H
       - DD2P85Y8E9
       - RGNF33GVHX
+
+  - title: Equal numbers and identities
+    intro: >
+      Set equality by two inclusions has a twin for numbers. If $a \le b$ and $b \le a$, then $a = b$, and the
+      same holds in every partial order: for inclusion of sets and for divisibility of positive integers, but not
+      for divisibility in $\Z$, where $2 \mid -2$ and $-2 \mid 2$. For real numbers, the inequality $a \le b$ often
+      comes from the lemma that $a \le b + \varepsilon$ for every $\varepsilon > 0$ implies $a \le b$. An identity
+      $E_1 = E_2$ is proved by a chain of equalities from one side to the other, each step justified; squaring both
+      sides of the goal is not such a step. For polynomials there is a short cut: two polynomials of degree at most
+      $d$ that agree at $d + 1$ distinct points are equal.
+    entries:
       - S3QADD13E9
       - XP5SDYKJX0
+
   - title: Estimates in analysis
     intro: >
-      Limits and continuity are statements of the form "for every $\varepsilon > 0$ there is a $\delta > 0$".
-      The epsilon-delta pattern proves them by working backwards from the target inequality. The
-      $\varepsilon/3$ argument passes a property through a uniform limit, and the density argument extends an
-      identity or an estimate from a dense set to the whole space.
+      In analysis an equality or a limit is usually proved by an estimate. An epsilon-delta proof finds $\delta$ in
+      scratch work, by bounding $\abs{f(x) - L}$ by a multiple of $\abs{x - a}$, and then writes the argument forward.
+      The epsilon over three argument walks from $f(x)$ to an approximation $g(x)$, then to $g(y)$, then to $f(y)$.
+      Its main theorem: if continuous functions $f_n \colon X \to \R$ on a set $X \subseteq \R$ converge uniformly
+      to $f$, then $f$ is continuous. The density argument proves a claim on a dense set and lets continuity carry it
+      to the rest: if $f, g \colon \R \to \R$ are continuous and $f(q) = g(q)$ for every rational $q$, then $f = g$.
     entries:
       - RXG5JTZ2PZ
       - VXV7M0QDH6
       - J2J35J3055
-  - title: Reducing the work
+
+  - title: Symmetry and reduction
     intro: >
-      Two patterns shrink a problem before it is attacked. A symmetry of the statement fixes the answer or pairs
-      terms so that they cancel. A transformation that preserves the claim, such as scaling or a change of
-      variable, reduces the general case to a special one.
+      These two patterns cut the work before it starts. A symmetry of a problem is a change $T$ that maps the data to
+      themselves and so maps solutions to solutions: then one case gives the others, a unique answer is fixed by
+      $T$, and a quantity written in two ways can be added to itself. For example, if $f$ is odd and integrable on
+      $[-a, a]$, then $\int_{-a}^{a} f(x) \, dx = 0$. Symmetry does not by itself put an extremum at a symmetric
+      point. Reduction to a special case uses a change that keeps the truth of the claim: if $f$ and $g$ are
+      homogeneous of the same degree $d$ and $t > 0$, then $f(tx) \ge g(tx)$ is equivalent to $f(x) \ge g(x)$, so
+      one quantity, and only one, may be normalized to $1$.
     entries:
       - H840D9TM2X
       - DX2H7AD66G
+
   - title: From local to global
     intro: >
-      Some properties are easy to check near one point and hard to check everywhere. The open-closed argument
-      shows that the set where a property holds is open, closed and non-empty, so it is the whole connected
-      space. Bootstrapping turns a weak a priori bound into a strong one by a continuity argument in time or in
-      a parameter.
+      A property that holds near one point can spread to a whole space. The open-closed argument rests on one
+      theorem: in a connected space $X$, such as an interval of $\R$, a subset that is non-empty, open and closed is
+      all of $X$. So a locally constant function on an interval is constant. Bootstrapping applies the same theorem
+      to a set of times. If $u \colon [0, T] \to [0, \infty)$ is continuous, $u(0) = 0$ and
+      $u(t) \le 1 + \tfrac18 u(t)^2$ for every $t$, then the weak bound $u(t) \le 2$ gives the strictly better
+      $u(t) \le \tfrac32$; the set where $u \le 2$ is then non-empty, open and closed, and $u \le \tfrac32$ on all
+      of $[0, T]$.
     entries:
       - 1JJCDJB7FM
       - YKA0ADKYFR
-  - title: Existence by procedure
+
+  - title: Existence by algorithm
     intro: >
-      A procedure that always stops and always returns a correct output proves that the output exists. The
-      proof has two parts: termination, by a natural number that decreases, and correctness, by an invariant.
+      The last pattern proves that an object exists by building it. The proof has two parts: the procedure stops,
+      because a natural number decreases strictly at each step, and its output is correct, because an invariant
+      holds at the start and is kept by every step. The model is the Euclidean algorithm: for integers $a > b > 0$
+      it stops with $\gcd(a, b)$, and run backwards it gives integers $x$ and $y$ with $ax + by = \gcd(a, b)$.
     entries:
       - X5HG1RNWQX

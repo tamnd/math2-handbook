@@ -1,0 +1,48 @@
+groups:
+  - title: What rigour asks for
+    intro: >
+      The entry [mathematical rigor](/E1PE9R8DBB/) defines rigour as the demand that every step of a proof has a
+      reason that a competent reader can check, and shows that the standard depends on the reader, the period and the starting
+      axioms: the intermediate value theorem is false over $\Q$, so its proof must use the completeness of $\R$.
+      [Formal and informal proofs](/8VZ77R4R8S/) expands a two-line argument into a derivation that a program can
+      check, and the [history of proof and rigor](/20F7K9RVT6/) follows how each change in the standard answered a
+      concrete failure, from Euclid to proof assistants.
+    entries:
+      - E1PE9R8DBB
+      - 8VZ77R4R8S
+      - 20F7K9RVT6
+
+  - title: Pictures and computers
+    intro: >
+      Two kinds of argument test the standard of the first group. A [proof without words](/V6ESFEFKJC/) shows one
+      case of an identity, and the reader must supply the general step and check that the picture means what it
+      seems to; the staircase that "proves" $\sqrt 2 = 2$ shows what happens otherwise. A
+      [computer-assisted proof](/MC18C7BMFT/) splits into a written reduction to finitely many cases and a
+      computation that settles them; trust in the computation comes from independent programs, certificates that a
+      small checker verifies, and formal proofs.
+    entries:
+      - V6ESFEFKJC
+      - MC18C7BMFT
+
+  - title: Proofs no single reader checks
+    intro: >
+      Some proofs are too long for one person: the classification of finite simple groups runs to thousands of
+      pages by about a hundred authors. [Long proofs and surveyability](/RM0S65BHWH/) asks whether a proof must be
+      checkable by one reader in a reasonable time, and [acceptance of proofs](/MJ3EHQJJHX/) describes how
+      refereeing, the consensus of experts and time turn a claimed proof into a theorem, with the cases of Kempe,
+      Wiles, Perelman and Mochizuki.
+    entries:
+      - RM0S65BHWH
+      - MJ3EHQJJHX
+
+  - title: What a proof gives beyond correctness
+    intro: >
+      A theorem needs only one correct proof, yet mathematicians keep finding new ones. [Many proofs of one
+      theorem](/KNQDDN6PT2/) shows what each new proof adds: a new reason, a new method or a stronger result. The
+      [debate of Jaffe and Quinn with Thurston](/K3M3TEX7SJ/) weighs speculation against proof and asks what proofs
+      are for, and [proofs from the Book](/A4RJYP79A7/) describes the proofs that mathematicians judge best: short,
+      built on one clear idea, and showing why the theorem holds.
+    entries:
+      - KNQDDN6PT2
+      - K3M3TEX7SJ
+      - A4RJYP79A7

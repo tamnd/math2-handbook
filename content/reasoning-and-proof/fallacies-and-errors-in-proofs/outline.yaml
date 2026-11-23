@@ -1,43 +1,56 @@
 groups:
   - title: What a fallacy is
     intro: >
-      A mathematical fallacy is an argument that looks valid and reaches a false or unjustified conclusion. The
-      entry separates fallacies from paradoxes, from true results that only look surprising, and from howlers
-      that reach a true answer by a wrong method.
+      A [mathematical fallacy](/S2BW0FDHV8/) is an argument that looks valid and contains an invalid step. Its
+      conclusion is usually false, as in "proofs" of $2 = 1$, but it may also be true, as when a wrong method gives
+      a right answer. The entry fixes the words used in the rest of the chapter and the one method that finds every
+      error: test each step against the exact statement of the rule it uses.
     entries:
       - S2BW0FDHV8
+
   - title: Rules used outside their range
     intro: >
-      Many algebraic fallacies apply a rule that is true only under a hypothesis that the argument drops:
-      cancelling a factor that may be $0$, taking $\sqrt{a^2} = a$ for negative $a$, using $(a^b)^c = a^{bc}$ for
-      complex numbers, or treating a divergent series or an improper integral as an ordinary sum. Each entry
-      shows the false step and the hypothesis that would make it valid.
+      Most fallacies in algebra and calculus use a true rule without its hypothesis. The rule
+      $ac = bc \Rightarrow a = b$ needs $c \ne 0$. The rule $\sqrt{ab} = \sqrt{a}\sqrt{b}$ needs $a, b \ge 0$, and
+      $\sqrt{x^2} = x$ needs $x \ge 0$; in general $\sqrt{x^2} = \abs{x}$. For infinite sums and integrals the hidden
+      hypotheses are convergence, often absolute convergence, and continuity of the integrand on the whole closed
+      interval. Each entry shows a false "proof", the rule it misuses, and the correct statement of that rule.
     entries:
       - V7601AG5G3
       - 75ZEQ21AG2
       - KDXKVT5K1E
+
   - title: Figures that mislead
     intro: >
-      A diagram can suggest an incidence or an equal area that is not there. The classic proof that every triangle
-      is isosceles and the missing square puzzle both rest on a figure that is drawn wrongly by a small amount.
+      A figure is one case, drawn by hand. It can place a point on the wrong side of a line or hide a gap too thin
+      to see, and a proof that reads a fact off the figure inherits the error. The entry works through the "proof"
+      that every triangle is isosceles and a dissection whose pieces seem to gain a unit of area, and shows how
+      coordinates or the axioms of betweenness expose each one.
     entries:
       - 5CJ4KD4D96
+
   - title: Errors of logic
     intro: >
-      These errors are independent of the subject matter. An argument assumes what it is to prove, reverses an
-      implication, generalizes from examples, swaps the order of quantifiers, or treats one-way steps as
-      equivalences. Each has a valid form close to it, and the entries set the two side by side.
+      These errors break the form of the argument, whatever its content. Only two of the four short forms with a
+      conditional are valid: from $P \Rightarrow Q$ and $P$ follows $Q$, and from $P \Rightarrow Q$ and
+      $\neg Q$ follows $\neg P$. A circular argument assumes what it proves. Examples prove an existential
+      statement and refute a universal one, and no finite list of examples proves a statement about infinitely many
+      cases. The statement $\exists y\, \forall x\, P(x, y)$ implies $\forall x\, \exists y\, P(x, y)$, and the
+      converse fails. When we solve an equation, a step that is not an equivalence can add or lose solutions, so every
+      candidate must be checked in the original equation.
     entries:
       - JPHE53PABT
       - J7KFCFQRBT
       - ZX6ERT3SW7
       - CRW82NARQV
       - 641ZP4RA5S
-  - title: Errors in practice
+
+  - title: Errors in the practice of proof
     intro: >
-      Errors also occur in published work by strong mathematicians, and some of them took years to find. The
-      last entry describes the rhetorical substitutes for a proof, such as citing an unchecked authority or
-      waving at a step.
+      The errors of the earlier groups also occur in published work by strong mathematicians. Kempe's proof of the
+      four colour theorem stood for eleven years, and Lamé's proof of Fermat's Last Theorem assumed unique
+      factorization in a ring where it fails. The last entry is about a social error: a step replaced by "clearly"
+      or by an appeal to authority. Each such word marks a step the reader must check.
     entries:
       - 1CV4HTA6C8
       - D8A1K052XV

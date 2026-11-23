@@ -1,51 +1,76 @@
 groups:
   - title: The pigeonhole principle
     intro: >
-      If more than $n$ objects go into $n$ boxes, some box gets two. The general form gives a box with at
-      least $\ceil{m/n}$ of $m$ objects, and the infinite form gives a box with infinitely many. The skill is
-      in choosing the objects and the boxes, and the applications show four classic choices.
+      The first group proves that a coincidence must occur. The basic form says that if more than $k$
+      objects go into $k$ boxes, some box receives at least two; the generalized form says that if $N$ objects
+      go into $k \ge 1$ boxes, some box receives at least $\ceil{N/k}$ of them; and the infinite form says that if
+      infinitely many objects go into finitely many boxes, some box receives infinitely many. The applications
+      show that the skill lies in choosing the boxes, as in Dirichlet's theorem: for every real $\alpha$ and
+      integer $N \ge 1$ there are integers $p, q$ with $1 \le q \le N$ and $\abs{q\alpha - p} < 1/N$.
     entries:
       - 0HGVCWQGY3
       - 0BY7GN3449
       - 0FS3RHF6KE
       - 5EAFG80VX6
 
-  - title: Counting in two ways
+  - title: Counting one set in two ways
     intro: >
-      Counting one finite set in two ways gives an equation between the two counts. Double counting sums a
-      table of pairs by rows and by columns; the bijection principle says that two finite sets have the same
-      size when a bijection exists; and a combinatorial proof uses both to prove an identity without algebra.
+      Where pigeonhole compares two sizes, this group makes two counts of one set agree. Double counting
+      says that for finite sets $A$ and $B$ and a relation $R \subseteq A \times B$, the number of pairs in $R$
+      is both the sum over $a \in A$ and the sum over $b \in B$ of the number of partners; with vertices and
+      edges this is the handshake lemma $\sum_v \deg v = 2\abs{E}$. The bijection principle says that two finite
+      sets have the same number of elements exactly when there is a bijection between them. Together they
+      give combinatorial proofs, which prove an identity by naming one set that both sides count.
     entries:
       - 0F8YBHF2W3
       - 0GV2573FP4
       - SS07J9ZAQ7
 
-  - title: Invariants and monovariants
+  - title: Quantities that do not change or move one way
     intro: >
-      A process of moves is studied through a quantity attached to its states. An invariant does not change,
-      so a target with a different value cannot be reached. A monovariant changes in one direction only, so a
-      process on a well-ordered set of values must stop. Parity and colourings are the most common sources of
-      invariants.
+      This group proves that a process cannot reach a position, or that it must stop. An invariant is a
+      quantity that no move changes: if $I(\text{start}) \ne I(\text{target})$, the target cannot be reached,
+      which is how the 15 puzzle with two tiles swapped is shown to be unsolvable. A monovariant is a quantity
+      that every move strictly decreases; if it takes values in $\N$, or in any set with no infinite decreasing
+      sequence, the process stops, while a strictly decreasing real quantity alone does not force this.
     entries:
       - 8NQ190278Y
       - TP3GC5J08D
+
+  - title: Parity and colouring
+    intro: >
+      Parity is the simplest invariant: a sum of an odd number of odd integers is odd, and the handshake
+      lemma shows that every finite graph has an even number of vertices of odd degree. Colouring proofs
+      carry the idea to tilings: colour the board so that every tile covers the same pattern of colours,
+      and compare with the colour counts of the region. The chessboard with two opposite corners removed has
+      $32$ squares of one colour and $30$ of the other, while each domino covers one of each, so no domino
+      tiling exists.
+    entries:
       - H9JT1XNDKQ
       - 90Q4PK1CST
 
-  - title: Extremal and averaging arguments
+  - title: Looking at the extreme and at the average
     intro: >
-      A largest or smallest object, when one exists, often has properties that a general object lacks, and
-      the proof shows that a failure of the claim would give a larger or smaller one. An averaging argument
-      says that some element is at least the average, which proves existence without saying which element.
+      These two methods find a good object without listing the objects. The extremal principle takes an
+      object that is largest or smallest in some measure, which exists in any finite nonempty set and in any
+      nonempty subset of $\N$, and shows that it has the property wanted; Kelly's proof of the
+      Sylvester-Gallai theorem takes a point and a line at the least positive distance and finds a line
+      through exactly two of a finite set of points, not all on one line. The averaging argument uses that
+      some value is at least the mean and some at most the mean, which gives, for example, a bipartite
+      subgraph with at least $m/2$ edges in every graph with $m$ edges.
     entries:
       - MD3MRG90W4
       - HXP9VMXV8S
 
-  - title: Existence by counting, probability and diagonals
+  - title: Existence without construction
     intro: >
-      An object with a property exists if there are more objects than bad ones, or if a random object has
-      the property with positive probability. Diagonalization builds an object that differs from every member
-      of a given list, and it proves that some sets are uncountable and some problems undecidable.
+      The last group proves that objects exist without naming one. A counting argument shows that the bad
+      candidates are fewer than all candidates: if $S$ is finite and $\abs{B} < \abs{S}$, or if $S$ is uncountable
+      and $B$ countable, then $S \setminus B$ is nonempty, so transcendental numbers exist. Probabilistic proofs
+      read a deterministic quantity as an expectation or a probability, as in Bernstein's proof that every
+      continuous function on $[0, 1]$ is a uniform limit of polynomials. Diagonalization builds an object that
+      differs from the $x$th object at the place $x$, and proves Cantor's theorem that no map $X \to \mathcal{P}(X)$
+      is onto.
     entries:
       - 1KVSS0KRZA
       - 6YY8W7HG5M

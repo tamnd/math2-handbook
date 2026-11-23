@@ -1,38 +1,51 @@
 groups:
-  - title: From argument to text
+  - title: From the plan to the written proof
     intro: >
-      A proof is found in scratch work and then written for a reader. The entries describe the steps of writing
-      a proof, the difference between the search and the finished text, and the moves that the logical form of
-      the goal and of the hypotheses dictates. Unpacking definitions is the first of those moves and often the
-      only one a short proof needs.
+      A written proof states what it proves, gives a reason for every step, introduces every letter before using
+      it, and ends with the claim. It is rarely found in the order it is written: scratch work starts from the goal
+      and works backward, and the final proof runs forward from the hypotheses, so every backward step must be
+      checked to reverse. The logical form of the goal gives the first move. To prove "for every $x \in A$,
+      $P(x)$", let $x$ be an arbitrary element of $A$ and prove $P(x)$; to prove "if $P$, then $Q$", assume $P$ and
+      prove $Q$; to prove "there is $x$ with $P(x)$", name an $x$ and check $P(x)$. Unpacking each defined term into
+      its definition then shows what remains to be done.
     entries:
       - 8JQHJK94RZ
       - E97XXFW9MV
       - 872K5XB580
       - 41JZ39GE3F
-  - title: Words and formats
+
+  - title: The words and layouts of a proof
     intro: >
-      Proofs have a small vocabulary of their own: "let", "fix", "suppose", "hence", "it suffices to show". The
-      entries explain what each word commits the writer to, then compare three formats: the paragraph proof, the
-      two-column proof of school geometry and the hierarchically numbered structured proof.
+      A few words carry the logic of a proof. "Let $x$ be …" introduces an arbitrary object, "suppose $P$"
+      introduces an assumption that holds only until its part of the proof ends, "hence" and "since" give reasons,
+      and "we claim" opens a proof inside the proof. The same logic can be laid out in other ways. A two-column proof
+      is a flat list of statements, each with a reason that cites earlier rows. A structured proof is a tree of
+      numbered steps, each with its own proof, in which an assumption made by ASSUME or CASE holds only inside the
+      proof of its step.
     entries:
       - GKMRQCA8CW
       - P8PCGFASP8
       - H2W8D7BMSW
+
   - title: Detail and style
     intro: >
-      Every written proof omits steps. The question is which omissions a given reader can fill and which are
-      gaps. The style entry collects the rules on sentences, symbols and displays that make a proof easy to
-      follow.
+      Every proof written for a person leaves steps out, and the question is which ones. An omitted step is
+      acceptable when it is true, when the intended reader can supply it from known results, and when it needs no
+      new idea; any other omission is a gap, and the worst gap is a false step called routine. Style is the other
+      half of readability: every formula sits inside a sentence, no sentence starts with a symbol, and every symbol
+      is defined before use and keeps one meaning.
     entries:
       - VYGBV5D8Y4
       - D5YPYTQ88G
-  - title: The reader's side
+
+  - title: Reading, checking and publishing proofs
     intro: >
-      Reading a proof well is an active skill: each line is checked against what it claims to follow from, and
-      the reader explains to themselves why it holds. Checking a proof goes further and looks for the case
-      where the argument breaks. The last entry describes the larger unit in which proofs are published, the
-      research paper.
+      Reading a proof means supplying its omitted reasons: the reason for each line, a test on an example, and the
+      place where each hypothesis is used. A hypothesis that the proof never uses means that the theorem holds without
+      it or that the proof has an error. Checking adds an adversarial test, based on one fact: an argument that
+      applies word for word to a case where the conclusion is false cannot be correct. At the largest scale, a
+      research paper states its main results in an abstract that makes sense alone, states them again in full in
+      the introduction, and proves them in the body through numbered lemmas and theorems.
     entries:
       - 40GCSM2G56
       - 4M98ZZNK0E

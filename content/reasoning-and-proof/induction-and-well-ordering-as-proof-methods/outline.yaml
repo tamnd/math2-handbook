@@ -1,53 +1,76 @@
 groups:
-  - title: Induction and its equivalents
+  - title: Induction and strong induction
     intro: >
-      Ordinary induction proves $P(n)$ for every $n \ge n_0$ from a base case and a step from $n$ to $n + 1$.
-      Strong induction lets the step use every earlier case, and the well-ordering principle says that every
-      nonempty set of natural numbers has a least element. The group ends with the theorem that the three
-      principles prove each other over a small base theory.
+      This group sets up the two working forms of induction on the natural numbers. Ordinary induction
+      says: if $P(n_0)$ holds, and $P(n)$ implies $P(n + 1)$ for every $n \ge n_0$, then $P(n)$ holds for
+      every $n \ge n_0$. Strong induction lets the step use every earlier case: if, for each $n \ge n_0$, the
+      truth of $P(k)$ for all $k$ with $n_0 \le k < n$ implies $P(n)$, then $P(n)$ holds for every $n \ge n_0$.
+      The model use is the proof that every integer $n \ge 2$ has a prime factor, where the step needs a
+      case far below $n$.
     entries:
       - 0ASJVEFA9J
       - 0KMVFSHFGZ
+
+  - title: Least elements and the equivalence of the principles
+    intro: >
+      The well-ordering principle states that every nonempty set of natural numbers has a least element.
+      It is the form of induction that a proof by contradiction uses, and it fails for the integers and for the
+      positive rationals. The equivalence theorem makes exact the claim that induction, strong induction and
+      well-ordering are one fact: if a set with $0$, a successor $S$ and an order $<$ satisfies (B1) $<$ is a
+      strict linear order, (B2) nothing lies below $0$, (B3) $S(n)$ is the next element after $n$, and (B4)
+      every nonzero element is a successor, then the three principles are equivalent. Condition (B4) cannot
+      be dropped.
+    entries:
       - 01BX15HSRR
       - J2P9FWBP3Q
 
-  - title: Arguing from a least case
+  - title: Arguing from a smallest case
     intro: >
-      Two methods use the [well-ordering principle](/01BX15HSRR/) through a proof by contradiction. A
-      minimal counterexample is a smallest object without the property, and the proof finds a smaller one
-      or shows that it has the property after all. Infinite descent turns each solution of a problem into a
-      smaller solution, which is impossible in the natural numbers.
+      Well-ordering turns into two methods of proof by contradiction. In a minimal counterexample, you
+      take the least $n$ for which $P(n)$ fails and produce a smaller failure. In infinite descent, you show
+      that every solution of a problem gives a solution with a smaller positive integer size, which is impossible
+      because $\N$ has no infinite strictly decreasing sequence. Fermat's method proves in this way that
+      $x^2 + y^2 = 3z^2$ has no solution in integers other than $x = y = z = 0$.
     entries:
       - JGRCNPKNGG
       - 0EFYCFHYFG
 
-  - title: Making the induction work
+  - title: Choosing what to prove and in what order
     intro: >
-      Some true statements have induction steps that cannot be proved as they stand. A stronger statement
-      can give a stronger hypothesis; two variables can be handled by nested induction, by induction on the
-      sum or in lexicographic order; and a step by doubling, followed by a step down, can replace the step
-      from $n$ to $n + 1$.
+      When the plain step does not go through, the proof can change the statement or the order of the
+      cases. A stronger statement can be easier to prove, because the hypothesis gives more: the bound
+      $\sum_{k=1}^n 1/k^2 \le 2 - 1/n$ goes through by induction where the bound $2$ does not. Double induction
+      proves $P(m, n)$ for all pairs along a well-order of $\N \times \N$, such as the order by $m + n$ or the
+      lexicographic order, which is how the lattice path count $\binom{m+n}{m}$ is proved. Forward-backward
+      induction proves $P(n)$ on an infinite set such as the powers of $2$ and then $P(n) \Rightarrow P(n - 1)$
+      for every $n \ge 2$; Cauchy proved the AM-GM inequality for all $n$ in this way.
     entries:
       - F94KJC2RXP
       - AABX4YPKRR
       - QC9FKGZH1V
 
-  - title: Induction beyond the natural numbers
+  - title: Induction on structures and on size
     intro: >
-      Lists, trees, formulas and strings are defined by base clauses and rules, and structural induction
-      proves a property of all of them with one case per rule. Graphs, sets and polynomials have no such
-      definition, but each has a size in the natural numbers, and induction on that size proves claims about
-      all of them.
+      Induction extends from numbers to objects built by rules. If a set $X$ is the smallest set that contains
+      some base elements and is closed under some constructors, then a property that holds for the base
+      elements and is preserved by each constructor holds for all of $X$; this is structural induction, and
+      it covers lists, trees and formulas. The same smallest-set clause justifies inductive and recursive
+      definitions, and a recursion on $X$ is well defined when each element is built in only one way. For
+      graphs, sets and polynomials, the method is induction on a size, where $P(n)$ must say "for every object
+      of size $n$" and the step must start from an arbitrary object of size $n + 1$ and break it down.
     entries:
       - 12MQ2NJ29A
       - AM4GQQMZ3C
       - B2D8PTFNN1
 
-  - title: Worked cases, right and wrong
+  - title: A false proof, a true one, and the errors
     intro: >
-      The chapter ends with a famous false proof, a famous correct one and a list of errors. The false proof
-      that all horses have the same colour fails at one step, from $1$ to $2$. The tiling of a deficient
-      $2^n \times 2^n$ board by L-trominoes shows how an induction step can be read off a picture.
+      The last group tests all the methods above against mistakes. The proof that all horses have the same
+      colour fails in a single step, from $1$ to $2$, where the two overlapping groups share no horse. The
+      tromino theorem is a correct induction whose step needs the strengthened claim: for every $n \ge 0$, a
+      $2^n \times 2^n$ board with any one square removed can be tiled by L-trominoes. The final entry lists
+      the errors that break induction proofs in practice, from a missing base case to a step that fails for
+      small $n$, each with a small case where it fails.
     entries:
       - AJ2FDJJGTH
       - EXRJ0JF2Q3

@@ -1,41 +1,37 @@
 ## What to remember
 
-- **Double inclusion.** $A = B$ if and only if $A \subseteq B$ and $B \subseteq A$.
-- **Maps.** $f \colon X \to Y$ is injective when $f(a) = f(b)$ implies $a = b$, and surjective when every $y \in Y$ equals $f(x)$ for some $x \in X$. A surjectivity proof must produce the $x$ and then check that $f(x) = y$. Between finite sets of the same size, injective and surjective are equivalent.
-- **Equivalence relations.** A relation is an equivalence relation when it is reflexive, symmetric and transitive; no two of the three imply the third. A relation of the form $x \sim y \iff f(x) = f(y)$ is always one.
-- **Two inequalities.** $a \le b$ and $b \le a$ give $a = b$ in any partial order. In $\R$, if $a \le b + \varepsilon$ for every $\varepsilon > 0$, then $a \le b$.
-- **Identities.** Transform one side into the other, or both into a common form, or show that the difference is $0$. A chain of equivalences works only when every step reverses. Two polynomials of degree at most $d$ that agree at $d + 1$ points are equal.
-- **Epsilon over three.** If $f_n \to f$ uniformly, then
-  $$\abs{f(x) - f(y)} \le \abs{f(x) - f_n(x)} + \abs{f_n(x) - f_n(y)} + \abs{f_n(y) - f(y)},$$
-  and a property of the $f_n$ such as continuity passes to $f$ when each term is made smaller than $\varepsilon/3$.
-- **Density.** Two continuous maps into a metric space that agree on a dense set agree everywhere. An estimate proved on a dense set extends by continuity.
-- **Open-closed.** In a connected space, a non-empty set that is both open and closed is the whole space. Show that the set where the property holds is non-empty, open and closed.
-- **Algorithms.** A procedure proves existence when it terminates, because a natural number decreases at each step, and when an invariant holds at every step and gives the required property at the end.
+- **Double inclusion.** $A = B$ holds exactly when $A \subseteq B$ and $B \subseteq A$. Skeleton: "Let $x \in A$. … So $x \in B$." and then the same from $B$ to $A$. A chain of "if and only if" steps proves both at once, but only if every step is reversible.
+- **Injective and surjective.** To prove $f \colon A \to B$ injective, assume $f(a) = f(a')$ and derive $a = a'$. To prove it surjective, take $b \in B$, solve $f(a) = b$ in scratch work, and check that the solution lies in $A$. If $g \circ f = \mathrm{id}_A$, then $f$ is injective; if $f \circ g = \mathrm{id}_B$, then $f$ is surjective; a two-sided inverse gives both.
+- **Equivalence relations.** Check reflexivity, symmetry and transitivity, each for arbitrary elements. If $x \sim y$ means $h(x) = h(y)$ for a function $h$, all three hold, and the classes are the fibres $h^{-1}(c)$.
+- **Two inequalities.** In a partial order, $a \le b$ and $b \le a$ give $a = b$. Choose it when a number has no formula, as for a supremum. For real numbers, if $a \le b + \varepsilon$ for every $\varepsilon > 0$, then $a \le b$.
+- **Identities.** Prove $E_1 = E_2$ by a chain $E_1 = F_1 = \dots = E_2$ of justified steps, for arbitrary values in the stated domain. Two polynomials of degree at most $d$ that agree at $d + 1$ distinct points are equal.
+- **Epsilon-delta and epsilon over three.** To prove $\lim_{x \to a} f(x) = L$, bound $\abs{f(x) - L} \le C \abs{x - a}$ for $\abs{x - a} < r$ and take $\delta = \min(r, \varepsilon / C)$; $\delta$ may depend on $\varepsilon$ and $a$, never on $x$. To control $f$ through an approximation $g$, fix $g$ close to $f$ at every point first, then pass from $f(x)$ to $g(x)$, $g(y)$ and $f(y)$.
+- **Density.** If $f, g \colon X \to \R$ are continuous on a metric space $X$ and agree on a dense subset, then $f = g$.
+- **Open-closed and bootstrapping.** In a connected space, a non-empty subset that is open and closed is the whole space. Bootstrapping uses it when a weak bound holds at the start and implies a strictly stronger bound.
+- **Proof by algorithm.** Termination: a natural number decreases strictly at each step. Correctness: an invariant holds at the start, each step keeps it, and with the stopping condition it gives the claim.
 
-| Goal | Pattern | What the proof checks |
+## Which pattern fits
+
+| Goal | Pattern | First line of the proof |
 |---|---|---|
-| $A = B$ for sets | Double inclusion | $x \in A \Rightarrow x \in B$ and $x \in B \Rightarrow x \in A$ |
-| $f$ injective | Equal outputs | $f(a) = f(b) \Rightarrow a = b$ |
-| $f$ surjective | Solve for a preimage | For each $y$, an $x$ in the domain with $f(x) = y$ |
-| $\sim$ an equivalence relation | Three checks, or a map $f$ | Reflexive, symmetric, transitive |
-| $a = b$ for numbers | Two inequalities | $a \le b$ and $b \le a$, or $a \le b + \varepsilon$ for all $\varepsilon > 0$ |
-| Identity in $x$ | Rewrite, or difference is zero | Every step valid for every $x$ in the domain |
-| Limit or continuity | Epsilon-delta | A $\delta$ for every $\varepsilon$, often $\delta = \min(1, c\varepsilon)$ |
-| Property of a uniform limit | $\varepsilon/3$ | Three terms, each below $\varepsilon/3$ |
-| Statement on all of a space | Density | The statement on a dense set, and continuity |
-| Property on a connected space | Open-closed | Non-empty, open, closed |
-| A strong a priori bound | Bootstrapping | A weak bound that improves itself, and continuity |
-| Existence of an object | Algorithm | Termination and an invariant |
+| $A = B$ for sets | double inclusion | "Let $x \in A$." |
+| $f$ injective | equal images give equal inputs | "Suppose $f(a) = f(a')$." |
+| $f$ surjective | solve for a preimage | "Let $b \in B$." |
+| $\sim$ is an equivalence | three checks, or fibres of a function | "Let $x, y, z \in X$." |
+| $a = b$ for numbers | two inequalities | "First, $a \le b$." |
+| $\lim_{x \to a} f(x) = L$ | scratch work for $\delta$ | "Let $\varepsilon > 0$." |
+| $P(x)$ for all $x$ in an interval | open-closed argument | "Let $S = \set{x : P(x)}$." |
+| an object exists | algorithm with variant and invariant | "Run the following procedure." |
 
-: The common goals of the chapter and the pattern that proves each.
+: The pattern is chosen by the form of the goal; the first line follows from the pattern, and the rest of the proof is the work.
 
-## Choosing a pattern
+## Common errors
 
-- **Read the goal first.** Write the goal in logical form. The outermost connective or quantifier usually fixes the pattern.
-- **Prefer the difference for identities.** Showing that the difference of the two sides is $0$ avoids steps that do not reverse, such as squaring both sides.
-- **Bound before solving.** In an epsilon-delta proof, first restrict to $\abs{x - a} < 1$ to bound the other factors, then choose $\delta = \min(1, c\varepsilon)$.
-- **Look for uniformity.** The $\varepsilon/3$ argument needs one $n$ that works for all points at once. With only pointwise convergence it fails, as the functions $x^n$ on $[0, 1]$ show.
-- **Look for a symmetry or a normalization.** If the statement is unchanged by swapping variables or by scaling, use that before computing.
-- **For local-to-global claims, check connectedness.** If the space is connected, the open-closed argument is often the shortest route.
-- **Check the domain.** A surjectivity proof that solves $f(x) = y$ must check that the $x$ found lies in the domain, and an absorption step $x \le A + x/2 \Rightarrow x \le 2A$ needs $x$ finite.
-
+- **One inclusion only.** Showing $A \subseteq B$ and writing $A = B$.
+- **Proving the converse of injectivity.** "If $a = a'$, then $f(a) = f(a')$" holds for every function and proves nothing.
+- **A preimage outside the domain.** Solving $f(a) = b$ gives a formula for $a$, and it still has to lie in $A$: for $n \mapsto 2n + 1$ on $\Z$, $(b - 1)/2$ is not an integer when $b$ is even.
+- **Squaring to prove an identity.** Squaring both sides of the claim can turn a false claim into a true line, as $\sqrt{x^2} = x$ at $x = -1$ shows.
+- **A $\delta$ that depends on $x$.** Then no single $\delta$ works for all $x$ near $a$.
+- **Choosing $N$ for one point.** An index chosen at the point $c$ does not control $\abs{f(x) - f_N(x)}$ for $x$ near $c$; pointwise convergence is not enough.
+- **Symmetric point, symmetric answer.** A problem symmetric in $x$ and $y$ need not have its maximum at $x = y$.
+- **A disconnected space.** On $(0, 1) \cup (2, 3)$ a locally constant function can take two values; the open-closed argument needs a connected space.

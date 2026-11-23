@@ -1,37 +1,27 @@
-1. In the weak sense, $x < y$ gives $f(x) \leq f(y)$, and in the strict sense it gives $f(x) < f(y)$. The floor function is increasing in the weak sense only, because $\floor{0} = \floor{1/2}$. The cube function is increasing in both senses.
+2. (a) Free: $n$ and $x$; bound: $k$; the value is $2 + 8 + 24 = 34$. (b) Free: $x$; bound: $t$; the value is $9$. (c) Free: $a$; bound: $y$. (d) Free: $x$, $a$ and $f$; bound: $\varepsilon$ and $\delta$. The letter $x$ in (d) is free because no quantifier binds it.
 
-2. $\sin^2(\pi/6) = (1/2)^2 = 1/4$. As an inverse function, $\sin^{-1}(1/2) = \arcsin(1/2) = \pi/6 \approx 0.524$. As a reciprocal, $\sin^{-1}(1/2) = 1/\sin(1/2) \approx 2.086$.
+7. (a) Eventually, with least threshold $51$; at $n = 50$ the two sides are equal. (b) Frequently, not eventually: every fifth number satisfies it and the others do not. (c) Neither, since it fails for every $n \ge 1000$. (d) The last digits of $2^1, 2^2, 2^3, 2^4, \dots$ repeat as $2, 4, 8, 6$, so the property holds exactly for $n \ge 4$ with $4 \mid n$: frequently, not eventually.
 
-3. The first is $2 + 3 \cdot 16 = 50$. In the second, $3^2$ binds before the minus sign, so $-3^2 = -9$, and $6 / 2 \cdot 3 = 3 \cdot 3 = 9$; the value is $0$.
+8. (a) Strictly stronger; $x = -3$ satisfies the second and not the first. (b) Equivalent: if $16 \mid n^2$, then $n = 2m$ and $4 \mid m^2$, so $m$ is even and $4 \mid n$. (c) Strictly stronger; $9$ is odd and not prime. (d) Strictly stronger; $x = \sqrt2$.
 
-4. (a) $\equiv$; (b) $\approx$; (c) $:=$; (d) $\cong$; (e) $=$, since the two sides agree for every $x$.
+9. (a) True, since $\tfrac13 - x + x^2 = (x - \tfrac12)^2 + \tfrac1{12} > 0$, but not sharp. The sharp constant is $\tfrac14$, attained at $x = \tfrac12$. (b) $C = \tfrac12$: the function $x/(1 + x)$ is increasing and tends to $\tfrac12$ as $x \to 1$, so every smaller constant fails near $1$, and the value $\tfrac12$ is not attained on $(0, 1)$.
 
-5. Take $a = 0$, $b = 0.08$ and $c = 0.16$.
+10. (a) Both: the exceptions are $0, \dots, 9$. (b) Density only: the powers of $2$ are infinite, but at most $\log_2 n + 1$ of them lie in $\set{1, \dots, n}$. (c) Neither: the exceptions are infinite and have density $\tfrac14$. (d) True in all three senses, because the exceptions $k\pi$, $k \in \Z$, form a countable set.
 
-7. Factor: $x^3 - x = x(x - 1)(x + 1)$, so it vanishes at $-1$, $0$ and $1$.
+11. (a) and (d) use only the given data, so they are canonical. (b) Another basis changes the matrix $A$ into $P^{-1} A P$, and $\det(P^{-1} A P) = \det A$, so the number does not depend on the basis. (c) The two bases give the matrices $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(4, 1)$, with traces $2$ and $5$, so the construction is not canonical.
 
-8. (a) $\sum_{k=1}^{10} k^2 = 385$; (b) $\sum_{k=1}^{10} (-1)^{k+1} k = -5$, since the five pairs $(2j - 1) - 2j$ each give $-1$.
+13. The inequality holds for $n = 0, 1$ and for every $n \ge 17$; it fails for $2 \le n \le 16$, with equality $2^{16} = 16^4 = 65536$ at $n = 16$. For the step, $(n + 1)^4 / n^4 = (1 + 1/n)^4 \le (18/17)^4 = 104976/83521 < 2$.
 
-9. (a) Eventually, from $n = 51$, since $n^2 > 50n$ means $n > 50$ for $n \geq 1$. (b) Frequently but not eventually. (c) Neither: it holds for small $n$ only. (d) Eventually, from $n = 7$: $6! = 720 < 729 = 3^6$, and $7! = 5040 > 2187 = 3^7$; each later step multiplies the left side by $n + 1 > 3$.
+15. (a) Yes: $(a + tn)^2 = a^2 + n(2at + t^2 n)$. (b) Yes: $3^4 = 81 \equiv 1 \pmod 5$, so $3^{a + 4t} \equiv 3^a$. (c) No: $[0] = [4]$ in $\Z/4$, but $2^0 = 1$ and $2^4 = 16 \equiv 2 \pmod 7$.
 
-10. Count the exceptions in each case. The perfect squares up to $n$ number about $\sqrt n$, so they are infinite but have density $0$. The integers form a countable closed set with empty interior. The multiples of $10$ have density $1/10$.
+16. The exceptions are the $n$ with $\gcd(n, 210) = 1$. Each block of $210$ consecutive integers contains exactly $1 \cdot 2 \cdot 4 \cdot 6 = 48$ of them, so the share in $\set{0, \dots, n}$ tends to $48/210 = 8/35$. The exceptions have positive density, and the statement is false.
 
-11. Compare $25!$ with $10^{25}$, then pass from $n$ to $n + 1$: the left side gains a factor $n + 1 \geq 26$ and the right side a factor $10$.
+22. If $10^k \le n < 10^{k+1}$, every number in $\set{0, \dots, n}$ without the digit $7$ has at most $k + 1$ digits, so there are at most $9^{k+1}$ of them, and their share is at most $9^{k+1}/10^k = 9 \cdot (0.9)^k$, which tends to $0$. The cofinite sense fails because the numbers $10^m$ are infinitely many exceptions.
 
-13. A chain of implications is enough for the order. For the converses, try $f(x) = x$, $f(x) = \abs{x}$ and a function with a jump at $0$.
+23. Fix $k$. For $n \ge 2k + 2$, each factor of $n(n - 1) \cdots (n - k)$ is at least $n/2$, so $2^n > \binom{n}{k+1} \ge (n/2)^{k+1}/(k+1)!$, and this exceeds $n^k$ once $n > 2^{k+1}(k+1)!$. For the second statement, every $n \ge 2$ fails with $k = n$, since $n^n \ge 2^n$. The first is $\forall k \, \exists N \, \forall n \ge N$, the second $\exists N \, \forall n \ge N \, \forall k$.
 
-16. Send a subset $A$ to its indicator function. Swapping $a$ and $b$ exchanges the two bijections from $\set{a, b}$ to $\set{0, 1}$, so the definition gives no reason to choose one.
+24. At $0$, the difference quotient is $h \sin(1/h)$, and $\abs{h \sin(1/h)} \le \abs h$, so $f'(0) = 0$. For $x \ne 0$, $f'(x) = 2x \sin(1/x) - \cos(1/x)$. At $x_k = 1/(2k\pi)$ this is $-1$, and $x_k \to 0$, so $f'(x)$ does not tend to $f'(0)$.
 
-18. Use $3 \cdot 4 = 12$ and Fermat's little theorem. A statement about classes is meaningful only if its truth does not depend on the integers chosen to name them; compare $3 < 5$ with $14 < 5$.
+25. Transitivity: add $a + d = b + c$ and $c + f = d + e$ and cancel $c + d$. The form depends only on the integer $a - b$, and $(a, b) \sim (c, d)$ says exactly that $a - b = c - d$. Then $c(3, 8) = c(10, 15) = (0, 5)$, so these are equivalent, while $c(7, 2) = (5, 0) \ne (0, 5) = c(2, 7)$.
 
-19. Look at the ratio of the two sides in each case and ask whether it stays bounded.
-
-20. Use induction: pass from $n$ to $n + 1$ by multiplying the left side by $n + 1 \geq 2$. For the second claim, try $n = 2$.
-
-21. Numbers with no digit $7$ in the first $k$ places lie in $9^k$ intervals of length $10^{-k}$. For the second question, the set is also closed with empty interior, but it is uncountable.
-
-22. At $0$, use $\abs{f(x)} \leq \abs{x}$. At a point $a \neq 0$, take a sequence of rationals and a sequence of irrationals that tend to $a$.
-
-23. Imitate Euclid with $N = 6 p_1 p_2 \cdots p_k - 1$, where $p_1, \dots, p_k$ are the primes of the form $6k + 5$ found so far. A product of numbers of the form $6k + 1$ has the same form.
-
-24. Take $a_n = 1$ when $n$ is a perfect square and $a_n = 0$ otherwise.
+26. $C = 9$. Expand the product as $3 + (a/b + b/a) + (a/c + c/a) + (b/c + c/b)$, and use $t + 1/t \ge 2$ for $t > 0$, which is $(t - 1)^2 \ge 0$, with equality only at $t = 1$. Equality holds exactly when $a = b = c$, so $9$ is attained and no larger constant works.

@@ -1,10 +1,12 @@
 groups:
-  - title: Symbols, conventions and equality signs
+  - title: Signs, layout and the conventions behind them
     intro: >
-      Notation fixes symbols, layout rules and letter conventions. Some symbols mean different things in
-      different books, such as $\N$, $\subset$ and $\log$, and the second entry gives the choice of this site for
-      each. Then come the standard shortcuts that are strictly wrong but safe, the family of signs that look like
-      $=$, and a reference glossary.
+      The first entries fix how mathematical symbols are read: which letters are bound and which are free,
+      how precedence settles $-3^2 = -9$, and which choices, such as $0 \in \N$ or the meaning of $f^2$, change
+      from book to book. An abuse of notation, such as writing $a$ for the class $[a]$ in $\Z/n$, is safe exactly
+      when the operation it hides is well defined, that is, independent of the representative. The entries on
+      equality signs and the glossary separate $=$, $:=$, $\equiv$, $\approx$ and $\cong$, and show that
+      $\approx$ is not transitive.
     entries:
       - QKEX4PD029
       - CSFEP56A7D
@@ -12,41 +14,50 @@ groups:
       - BCGR3NPPXC
       - 2PTCAGCWZE
 
-  - title: The words of mathematical English
+  - title: The words of proofs
     intro: >
-      Proofs use short forms such as "iff" and "wlog", informal words such as "vanish" and "folklore", and
-      judgements such as "trivial" and "clearly". The last entry of the group makes "canonical" and "natural"
-      precise: a construction that needs no arbitrary choice.
+      Proofs are written in sentences, and a few words carry logical weight. "i.e." must join two statements
+      that are equivalent in context, "resp." pairs two lists term by term, and "without loss of generality" is
+      valid only after a symmetry of the statement has been named. "Trivial" has a technical meaning (the
+      trivial subgroup, the solution $x = 0$ of a homogeneous system) and an informal one (the step needs no
+      new idea), and only the first is a fact about the mathematics.
     entries:
       - 4ZNYMYRRY3
       - 4M1FGQ0HNZ
       - Y0HXCJRB9B
-      - F8WNADZFMM
 
-  - title: Almost all, and from some point on
+  - title: Phrases with a hidden definition
     intro: >
-      Many true statements hold only outside a small set of exceptions, or only for large values. These entries
-      make "almost all", "generic", "eventually" and "frequently" exact, and show that each phrase hides a pair of
-      quantifiers or a choice of what "small" means.
+      Three phrases look informal but each unfolds to an exact statement. A canonical form for an equivalence
+      relation $\sim$ on $X$ is a map $c \colon X \to X$ with $c(x) \sim x$ and $x \sim y \Rightarrow c(x) = c(y)$,
+      and then $x \sim y$ holds if and only if $c(x) = c(y)$. "Almost all" says that the exceptions form a
+      negligible set, and the sense (finite, density zero, measure zero, meagre) must be named; "eventually
+      $P(n)$" means $\exists N \, \forall n \ge N \, P(n)$, and its negation is "frequently not $P(n)$".
     entries:
+      - F8WNADZFMM
       - N1XSAXCQY3
       - FEQ7WATMHF
 
   - title: Comparing results
     intro: >
-      Mathematicians compare results by implication: a stronger statement implies a weaker one. A sharp result
-      cannot be improved in its stated form, and an elementary proof avoids a stated set of advanced tools, as the
-      1948 proofs of the [prime number theorem](/0EHBY5Y84N/) avoided complex analysis.
+      The quantifier phrases of the previous group let us say exactly how one result improves another. A
+      statement $A$ is stronger than $B$ when $A \Rightarrow B$, so a theorem gets stronger when its hypothesis is
+      weakened or its conclusion strengthened. A constant $C$ in a bound $f(x) \le C g(x)$ on a class $X$, with
+      $g > 0$, is sharp when $C = \sup_{x \in X} f(x)/g(x)$, whether or not the supremum is attained. An
+      elementary proof is one that stays within an agreed list of tools, which is a statement about the tools and
+      not about the difficulty.
     entries:
       - KCK4AQ469Q
       - KWQV0G0VJ3
       - 84SZZBACP3
 
-  - title: Judging objects and proofs
+  - title: Judgements, and where a proof ends
     intro: >
-      The last words of the chapter are judgements: a pathological object breaks a natural guess, words such as
-      "deep", "slick" and "brute force" rate results and proofs, and a mark such as Q.E.D. or $\blacksquare$
-      closes a proof.
+      The last words judge objects and proofs rather than state facts. A pathological object fails a regularity
+      property that the familiar members of its class have, as the Weierstrass function, continuous everywhere
+      and differentiable nowhere, does; "deep" says that every known proof needs ideas well beyond those of the
+      statement, and "brute force" names a proof that checks cases. The chapter ends with the marks
+      $\blacksquare$, $\square$ and Q.E.D., which close a proof, and the sign $\therefore$, which only closes a step.
     entries:
       - WMBZPYPN2D
       - STHWD1K9AN

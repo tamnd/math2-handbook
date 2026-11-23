@@ -1,28 +1,34 @@
 ## What to remember
 
-- A **proof scheme**, in the sense of Harel and Sowder, is what convinces a person that a statement is true. External schemes rest on authority, ritual or the form of symbols; empirical schemes rest on examples or pictures; deductive schemes rest on general arguments from definitions. Many students start with external or empirical schemes, and teaching aims to move them to deductive ones.
-- Students often read a conditional "if $P$ then $Q$" in an everyday way: as a biconditional, or as a statement about cases where $P$ holds and empty otherwise. They also confuse a statement with its converse, and quantified statements with several quantifiers cause more errors than any connective.
-- **Mathematical language** gives everyday words special meanings ("or", "any", "similar", "product") and makes definitions exact. A student's **concept image**, the pictures, examples and properties attached to a concept, can conflict with the **concept definition**, and a proof must use the definition.
-- **Toulmin's model** lays out an argument as data, claim and warrant, with backing for the warrant, a qualifier on the claim and a rebuttal for the exceptions. It is used to analyse arguments in class and to separate deductive warrants from inductive or intuitive ones.
-- The research on **student difficulties** lists the same problems again and again: not knowing the definitions, not knowing how to begin, not seeing that examples do not prove a general claim, and not being able to read or check a proof. Students judge proofs by their form more than by their logic.
-- **Generic proofs** argue through one example in which the general reason is visible, and **action proofs** with counters or pictures argue through operations a child can do. They become proofs when the learner can say why the argument works for every case.
-- Teaching approaches range from transition courses on logic, sets and proof methods, through the Moore method and inquiry-based learning, where students prove the theorems themselves, to proof assistants, which check every step and tell the student at once where a step fails.
-- School curricula place proof differently: the NCTM standards (2000) made reasoning and proof a process standard for all grades, the Common Core asks students to "construct viable arguments and critique the reasoning of others", and the English A level lists proof by deduction, exhaustion and contradiction and disproof by counterexample.
+- A teacher's view of mathematics is taught along with the content. Ernest (1989) separated the instrumentalist, Platonist and problem-solving views, and Hanna (1990) separated proofs that only prove from proofs that also explain ([philosophy and mathematics in education](/174ES70CS8/)).
+- Students often read "if $P$ then $Q$" as a biconditional, or as a [defective conditional](/K1Y2MAQQ9E/) that counts as irrelevant, neither true nor false, when $P$ is false. In the four-card task with the rule "if a card has a vowel, then it has an even number", only the vowel card and the odd-number card can break the rule.
+- By Stylianides's definition, a classroom proof uses statements the class accepts, valid modes of argument known to the class, and representations the class understands. The materials depend on the class, but checking examples never qualifies ([reasoning and proof in the classroom](/E77B813MT4/)).
+- A [proof scheme](/YVNRVXJR68/) is what convinces a person and what that person offers to convince others. It belongs to the person, not to the text, and the three classes are external conviction, empirical and deductive.
+- Difficulties fall into five kinds: the view of what a proof is, logic, concepts, strategy, and writing. The same blank page can come from any of them, and each needs a different task ([student difficulties with proof](/5K2969GSWE/)).
+- Comprehension questions are local (meaning of terms, logical status of statements, justification of steps) or holistic (summary, modules, transfer, illustration); validation decides whether an argument is a proof at all ([proof comprehension and validation](/52Y2MW27J0/)).
+- A [generic proof](/SG9XA69J64/) argues on one example in a way that works for all cases. The test: replace the number by a letter and check that every step stays true.
+- A [concept image](/C5S2X0WDJ8/) is everything a person associates with a concept; the concept definition is the wording that specifies it. A conflict between them, such as "a tangent meets the curve once" against the tangent to $y = x^3$ at $x = 1$, which meets it again at $x = -2$, is a teaching opportunity.
+- The [Toulmin model](/RVZCSFDB2Y/) splits an argument into claim, data, warrant, backing, qualifier and rebuttal; the warrant is the part students most often leave unstated.
 
-## Frameworks of the chapter
+## The proof schemes of Harel and Sowder
 
-| Framework | What it describes | Attached example |
-|---|---|---|
-| [Proof schemes](/YVNRVXJR68/) | What convinces a learner | [Two odd numbers by examples](/6G5GATCE78/) |
-| [Toulmin model](/RVZCSFDB2Y/) | The parts of an argument | [A conjecture about $n^2 + n + 41$](/6KXTT705M2/) |
-| [Generic proof](/SG9XA69J64/) | One example that carries the general reason | [Three consecutive integers](/QFMBKN41PW/) |
-| [Action proof](/SG9XA69J64/) | Operations on objects | [Counters for two odd numbers](/ECTGXEPC65/) |
-| [Concept image](/C5S2X0WDJ8/) | A learner's picture of a concept | [A tangent touches once](/2PVD1J6J0G/) |
-| [Moore method](/WKM6535VHG/) | Students prove all the theorems | [Moore's topology course](/W05DW690QG/) |
-| [Inquiry-based learning](/WKM6535VHG/) | Students conjecture and prove in groups | [A unit on divisibility](/EAWQDSME6M/) |
+| Class | Subclass | What convinces the student | Typical sign |
+|---|---|---|---|
+| External conviction | Authoritarian | A teacher, a book or an expert says so | "We were told this is true" |
+| External conviction | Ritual | The argument has the look of a proof | Two columns, "QED", no checked content |
+| External conviction | Non-referential symbolic | Symbols manipulated without meaning | Algebra steps that are false for numbers |
+| Empirical | Inductive | Checking cases or measuring | "It works for $n = 1$ to $10$" |
+| Empirical | Perceptual | A picture or an image | "You can see it in the diagram" |
+| Deductive | Transformational | General reasoning about operations on objects | A step that holds for any $n$ |
+| Deductive | Axiomatic | Derivation from accepted statements | An argument from definitions and axioms |
 
-: Seven frameworks and approaches from the chapter, each with what it describes and an attached example.
+: Proof schemes, with what convinces a student in each and how it shows in written work
 
-## Using the research in a course
+## Common errors
 
-State definitions early and ask students to use them, since most failures to start a proof are failures to recall a definition. Ask for a reason with every example, and give counterexamples to patterns that hold for small cases. Make the logic explicit: write conditionals and quantifiers out, and ask for the negation and the converse of key statements. Have students read and judge proofs, including flawed ones, as well as write them. Choose the approach to suit the class, and expect any method to need time before students change what convinces them.
+- **Classifying the text instead of the student.** A copied textbook proof does not show a deductive scheme. Ask the student why each step holds before naming the scheme.
+- **Treating every wrong proof as one problem.** A proof of the converse needs work on logic; a blank page from a student who knows the facts needs work on strategy. More practice of the same kind helps with neither.
+- **Calling a single example a generic proof.** "$5^2 - 5 = 20$ is even" is a check. A generic proof shows a structure, such as $5^2 - 5 = 5 \cdot 4$, a product of consecutive integers.
+- **Taking a Venn diagram as a proof.** For four or more sets, circles cannot show every region, and in any case a picture is perceptual evidence. The proof is an element argument.
+- **Confusing reproduction with comprehension.** A student who can write out a proof from memory may still be unable to say what a step is for. Ask local and holistic questions instead.
+- **Reading research as a prescription.** Most studies are small or not randomized. The evidence that inquiry-based sections help is real but correlational, and the evidence on proof assistants is exploratory.

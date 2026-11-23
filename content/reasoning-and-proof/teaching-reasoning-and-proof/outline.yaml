@@ -1,55 +1,81 @@
 groups:
   - title: The field and the views behind it
     intro: >
-      Research on teaching proof studies where logic, sets and proof sit in curricula and what learners make
-      of them. The second entry turns to the views of mathematics that teachers and students hold, such as
-      mathematics as a set of rules or as a field of inquiry, and how these views shape what counts as a proof
-      in class.
+      The teaching of foundations studies how learners meet logic, sets, definitions, the
+      [axiomatic method](/GD2JBXJV5Z/) and [proof](/0B94TKFQJX/), and its central design question is whether
+      these are taught as objects of study, as a language, or only through use. Behind every answer stands a
+      view of mathematics. Ernest (1989) separated three views held by teachers: the instrumentalist view of
+      mathematics as a bag of rules, the Platonist view of a fixed body of truths to be discovered, and the
+      problem-solving view of a human activity of inquiry, and Hanna (1990) separated proofs that only prove
+      from proofs that also explain.
     entries:
       - H5BM68GXS9
       - 174ES70CS8
 
-  - title: Logic, language, argument and sets
+  - title: Logic, language and argument in the classroom
     intro: >
-      Four entries on the means of proof as students meet them: the logic of conditionals and quantifiers,
-      which students often read in an everyday way; the special language of mathematics, its symbols and its
-      definitions; argument in class, where a proof is built and judged in public; and the sets of the New Math
-      and its Venn diagrams.
+      This group follows the foundations strand by strand, using the views of the first group to explain
+      what a lesson actually teaches. Students read a [conditional](/FA6YZGR2SS/) as a biconditional or as a
+      "defective conditional" that says nothing when the hypothesis is false, and four-card tasks of
+      Wason type show this directly. Everyday meanings of words such as "or", "similar" and "increasing" clash
+      with their technical meanings, and the equals sign is often read as "the answer comes next". For the
+      classroom, Stylianides (2007) defined a proof as an argument for a claim that uses only accepted
+      statements, valid modes of argument and modes of representation that the class knows; the same
+      standard applied to sets shows why a [Venn diagram](/0KCT6DPXJK/) can suggest an identity but an
+      element argument proves it.
     entries:
       - K1Y2MAQQ9E
       - S19WMS43TW
       - E77B813MT4
       - 12ZNG0NRY7
 
-  - title: Learning to prove
+  - title: What convinces a learner
     intro: >
-      What convinces a student is a proof scheme: authority, examples, or deduction. The entries describe the
-      transition courses that teach proof at university, Toulmin's layout of an argument as claim, data and
-      warrant, the research on why students fail to prove, and the research on how students and mathematicians
-      read and judge a given proof.
+      With the classroom standard of the previous group in hand, these entries ask what actually removes a
+      student's doubt. Harel and Sowder (1998) defined a proof scheme as what convinces a person and what that
+      person offers to convince others, and sorted schemes into external conviction (authoritarian, ritual,
+      non-referential symbolic), empirical (inductive, perceptual) and deductive (transformational,
+      axiomatic). Transition-to-proof courses aim to move students to the deductive class, and the Toulmin
+      model lays out any argument as a claim, data, a warrant, backing, a qualifier and a rebuttal, so that a
+      teacher can see which part a student left out.
     entries:
       - YVNRVXJR68
       - HQDCSJG379
       - RVZCSFDB2Y
+
+  - title: Difficulties with proving and with reading proofs
+    intro: >
+      The schemes and layouts of the previous group give a language for what goes wrong. Student difficulties
+      fall into five kinds: the view of what a proof is, logic, concepts, strategy, and writing; a proof of
+      the [converse](/09A3N7ZN5G/) is a logic error, while not knowing where to begin is a strategy error even when
+      every fact needed is known. Reading is a separate skill: comprehension questions are local (the meaning
+      of a term, the logical status of a statement, the reason for a step) or holistic (a summary of the main idea,
+      the division into modules, transfer of the method, an illustrating example), and validation is deciding whether an argument is a proof at all.
+    entries:
       - 5K2969GSWE
       - 52Y2MW27J0
 
-  - title: Approaches to teaching proof
+  - title: Ways of teaching proof
     intro: >
-      Three ways of bringing students to proof: the Moore method and inquiry-based learning, where students
-      prove the theorems themselves; school curricula from the NCTM standards to the A level, which set out
-      when and how proof is taught; and generic and pre-formal proofs, which argue through one example, actions
-      or a picture.
+      Three answers to the difficulties of the previous group fill this group. In the Moore method and its
+      descendants, inquiry-based learning, students prove a sequence of statements themselves and present the
+      proofs to the class; Laursen and colleagues (2014) reported gains for students in such sections, with
+      women's gains matching men's, in a study that was not randomized. School curricula place proof in
+      geometry, in algebra or across all content, and a generic or pre-formal proof argues on one example in a
+      way that visibly works for every case: replacing the example by a letter turns it into a general proof.
     entries:
       - WKM6535VHG
       - 7ZSHDS63QY
       - SG9XA69J64
 
-  - title: Concept images and new tools
+  - title: Concept images and machine-checked proof
     intro: >
-      A student's picture of a concept can differ from its definition, and a proof uses the definition. The
-      last entry treats proof assistants such as Lean, Rocq and Isabelle in proof courses, where a program
-      checks every step and the student sees at once which step fails.
+      The last group looks at two limits on any method of the previous group. Tall and Vinner (1981) separated
+      the concept image, everything a person associates with a concept, from the concept definition, the words
+      that specify it; a student who believes a tangent line touches a curve only once is reasoning from the
+      image, and the tangent to $y = x^3$ at $x = 1$ meets the curve again at $x = -2$. Proof assistants such
+      as Lean force every step to be explicit, so they check work at once, but a formal proof is not a written
+      proof and the evidence on learning is still small and exploratory.
     entries:
       - C5S2X0WDJ8
       - KGPHY3F0GC

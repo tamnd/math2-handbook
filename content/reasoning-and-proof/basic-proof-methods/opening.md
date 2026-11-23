@@ -1,25 +1,44 @@
-A theorem has a logical form before it has a proof. "If $n^2$ is even, then $n$ is even" is an implication about every integer. "There is no largest prime" is the negation of an existence statement. "The equation $3x \equiv 1 \pmod 7$ has exactly one solution modulo $7$" is an existence claim and a uniqueness claim joined together. The form of the statement suggests the first line of its proof, and often the shape of the whole proof.
+Here is a claim and an attempted proof of it.
 
-Take the first example. A direct attack assumes $n^2 = 2k$ and gets stuck, because there is no good way to get a formula for $n$ from a formula for $n^2$. The [contrapositive](/0BB5TPGQ1N/) turns the claim around: if $n = 2k + 1$, then $n^2 = 2(2k^2 + 2k) + 1$ is odd. The same algebra, started from the other end, is a two-line proof. Choosing the method is often most of the work, and this chapter is about how to choose.
+*Claim.* For every integer $n$, if $3 \mid n^2$, then $3 \mid n$.
 
-The methods here are the ones every later chapter of the book uses without comment: direct proof, the arbitrary element, contrapositive, contradiction, cases, two directions of an equivalence, existence with or without a witness, uniqueness, counterexample, symmetry and impossibility. Each entry gives the method, the logic that makes it valid, worked examples, and a non-example where the method is misused.
+*Attempt.* Let $n = 3k$. Then $n^2 = 9k^2 = 3 \cdot 3k^2$, so $3 \mid n^2$.
+
+Every line of the attempt is correct, and it proves nothing about the claim. It starts from $3 \mid n$ and ends at $3 \mid n^2$, so it proves the converse. A direct attempt in the right direction does not get far either: from $n^2 = 3m$ there is no step that produces a factor $3$ in $n$, since the integers do not allow taking square roots.
+
+The proof that works changes the form of the goal. The claim is equivalent to its contrapositive: if $3 \nmid n$, then $3 \nmid n^2$. Now the hypothesis gives something to compute with. An integer not divisible by $3$ has the form $3k + 1$ or $3k + 2$, and in the two cases
+
+$$(3k + 1)^2 = 3(3k^2 + 2k) + 1, \qquad (3k + 2)^2 = 3(3k^2 + 4k + 1) + 1,$$
+
+so $n^2$ leaves remainder $1$ on division by $3$. The proof uses two methods, a contrapositive and a proof by cases, and each was chosen by looking at the form of the statement. The claim is the key step in the proof that $\sqrt 3$ is irrational, which is a third method again: assume $\sqrt 3 = a/b$ in lowest terms and derive a contradiction.
+
+This chapter collects the basic methods and says, for each one, which form of statement it proves, what the skeleton of the proof looks like, and how it goes wrong. The aim is that, faced with a new statement, you can write the first and last lines of its proof before you know the middle.
 
 ## What the chapter covers
 
-The chapter is in five groups, read in order.
-
-1. **The map and the direct method.** The [map of proof methods](/G9JFJGY4TQ/) sorts them by the form of the goal. A [direct proof](/0NTF6DMVAP/) assumes the hypothesis and reasons forward; [proving a universal statement](/CX38X989TB/) means arguing about an arbitrary element, never about a chosen one.
-2. **Indirect proofs.** [Proof by contrapositive](/0BB5TPGQ1N/) proves "not $Q$ implies not $P$". [Proof by contradiction](/0J0XBKG64S/) assumes the negation and derives a contradiction. The first ends at a definite statement, not $P$; the second may end at any contradiction, which makes it more general and its errors harder to find.
-3. **Splitting the goal.** A [proof by cases](/0WCP0PVET6/) needs cases that cover every possibility. A [biconditional](/TFQ1845T84/) needs two directions, and a list of equivalent statements needs a cycle of implications.
-4. **Existence and uniqueness.** A [constructive proof](/01XM7JEKHY/) names a witness. A [non-constructive proof](/JZQVJ9XT63/) shows that one exists without naming it. A [proof of uniqueness](/GQHHNV79PA/) shows that two objects with the property are equal.
-5. **Counterexamples, shortcuts and impossibility.** A [counterexample](/0ED72CTBNP/) refutes a universal claim. [Without loss of generality](/Y7NE0E6PCV/) reduces symmetric cases to one. The [forward-backward method](/V8ZB838JY5/) plans a proof from both ends. A [proof of impossibility](/6F55216R53/) shows that no object or method of a given kind exists.
+1. **Reading the goal, and the direct proof.** The topic page on [proof methods](/G9JFJGY4TQ/) matches the forms of statements to methods. Then [direct proof](/0NTF6DMVAP/) of an implication and [proving universal statements](/CX38X989TB/) by an arbitrary element.
+2. **Indirect proofs.** [Proof by contrapositive](/0BB5TPGQ1N/), and [proof by contradiction](/0J0XBKG64S/) in its two forms: the refutation of a statement and the proof of a positive statement from the impossibility of its negation.
+3. **Splitting the work.** [Proof by cases](/0WCP0PVET6/), with exhaustive splits, and [proving biconditionals and equivalences](/TFQ1845T84/), with two directions or a cycle of implications.
+4. **Existence and uniqueness.** [Constructive proof](/01XM7JEKHY/) by a named witness, [non-constructive existence](/JZQVJ9XT63/) without one, and [proof of uniqueness](/GQHHNV79PA/).
+5. **Refuting a claim, and using symmetry.** What a [counterexample](/0ED72CTBNP/) must satisfy, and when [without loss of generality](/Y7NE0E6PCV/) is a valid step.
+6. **Finding a proof, and proving that none exists.** The [forward-backward method](/V8ZB838JY5/) for planning a proof, and [proof of impossibility](/6F55216R53/) by remainders and invariants.
 
 ## A first reading
 
-For a first reading, take these ten entries in order: [proof methods](/G9JFJGY4TQ/), [direct proof](/0NTF6DMVAP/), [proving universal statements](/CX38X989TB/), [proof by contrapositive](/0BB5TPGQ1N/), [proof by contradiction](/0J0XBKG64S/), [proof by cases](/0WCP0PVET6/), [proving biconditionals](/TFQ1845T84/), [constructive proof](/01XM7JEKHY/), [counterexample](/0ED72CTBNP/) and the [forward-backward method](/V8ZB838JY5/). Read the worked examples printed with each one; the non-examples matter as much as the examples, since each shows a mistake that looks like a proof.
+Read these first, in order:
 
-On a first pass you can skip the L3 explanations, which connect the methods to natural deduction and intuitionistic logic, and the entries on [non-constructive proof](/JZQVJ9XT63/), [without loss of generality](/Y7NE0E6PCV/) and [impossibility](/6F55216R53/). Come back to them before Chapter 1.7, where impossibility proofs by invariants and colourings are the main subject.
+1. [Proof methods](/G9JFJGY4TQ/)
+2. [Direct proof](/0NTF6DMVAP/)
+3. [Proving universal statements](/CX38X989TB/)
+4. [Proof by contrapositive](/0BB5TPGQ1N/)
+5. [Proof by contradiction](/0J0XBKG64S/)
+6. [Proof by cases](/0WCP0PVET6/)
+7. [Proving biconditionals and equivalences](/TFQ1845T84/)
+8. [Constructive proof](/01XM7JEKHY/)
+9. [Counterexample](/0ED72CTBNP/)
+
+Non-constructive existence, uniqueness, wlog, the forward-backward method and impossibility proofs can wait for a second pass. On a first pass, skip the remarks on intuitionistic logic in the entries on contradiction and non-constructive proof; they explain why some mathematicians reject certain proofs, and the methods can be used without them.
 
 ## Before you start
 
-You need the language of statements from [the language of mathematical statements](/WMY13MXY3W/): conditionals, quantifiers, the rules for [negating a statement](/K930V33BSC/), and "exactly one". You need the idea of a [mathematical proof](/0B94TKFQJX/), which the chapter on [proof, theorems and mathematical method](/N4P3E53HM0/) explains. From school you need algebra with inequalities and the integers with even and odd numbers and divisibility. A few examples use sets, functions, limits or groups, and they say so at the start. The formal rules of inference behind the methods are in [propositions, connectives and quantifiers](/PM1AYWABA7/), but you do not need them to read this chapter.
+You need the connectives and quantifiers of [the language of mathematical statements](/WMY13MXY3W/), and in particular how to negate a statement with quantifiers, which is treated in [propositions, connectives and quantifiers](/PM1AYWABA7/). What a proof is, and what it may use, is the subject of [mathematical proof](/0B94TKFQJX/) and of [proof, theorems and mathematical method](/N4P3E53HM0/). The examples use divisibility, remainders, inequalities between real numbers and a little calculus. Induction, the method for statements about all natural numbers, has its own chapter, [induction and well-ordering as proof methods](/EEH2F76CYQ/).

@@ -1,29 +1,29 @@
-1. Contrapositive: if $4 \nmid n^2$, then $6 \nmid n$. Converse: if $4 \mid n^2$, then $6 \mid n$. Inverse: if $6 \nmid n$, then $4 \nmid n^2$. The statement and its contrapositive are true, because $6 \mid n$ makes $n$ even and then $4 \mid n^2$. The converse and the inverse are false: take $n = 2$.
+2. Converse: for every integer $n$, if $n$ is odd, then $n$ is prime and $n > 2$; false, since $9$ is odd and not prime. Contrapositive: for every integer $n$, if $n$ is even, then $n$ is not prime or $n \le 2$; true, like the statement. Negation: there is an integer $n$ that is prime, greater than $2$ and even; false.
 
-3. The proof fixes one element, so it proves the claim for $x = 2$ only. For arbitrary real $x$, $x^2 - 4x + 5 = (x - 2)^2 + 1 \ge 1 > 0$.
+4. (a) $n = 4$: the values for $n = 1, 2, 3$ are the primes $3, 7, 13$, and $4^2 + 4 + 1 = 21 = 3 \cdot 7$. (b) $1024 = 3 \cdot 341 + 1$, so $2^{10} \equiv 1 \pmod{341}$, hence $2^{340} = (2^{10})^{34} \equiv 1$ and $2^{341} \equiv 2$. So $341 \mid 2^{341} - 2$, and $341 = 11 \cdot 31$ is not prime.
 
-4. Only $n = 4$, since $21 = 3 \cdot 7$. For $n = 1, 2, 3$ the values $3, 7, 13$ are prime. The value $1$ at $n = 0$ is not prime, but $0$ is not a positive integer, so it fails the hypothesis and is not a counterexample.
+6. (a) Yes, it is a cycle. (b) No: nothing leads from $\set{1, 2}$ to $\set{3, 4}$. (c) Yes: $1, 2, 3$ form a cycle, and $4$ is reached from $1$ and leads to $2$. (d) No: no implication leaves $2$ or $3$.
 
-5. The case $-1 < x < 1$. There $\abs{x - 1} + \abs{x + 1} = (1 - x) + (x + 1) = 2$.
+8. (a) Yes: both sides are unchanged by every permutation of $a, b, c$, so any order can be put first. (b) No: the expression is unchanged by the cyclic shift $a \to b \to c \to a$, but not by exchanging two letters; $(1, 2, 3)$ gives $23$ and $(2, 1, 3)$ gives $25$. A cyclic shift lets you assume that $a$ is the largest, not that $a \le b \le c$.
 
-6. $x^3 = x$ has the solutions $-1$, $0$ and $1$: existence holds and uniqueness fails. Among positive reals, $x^3 = x$ means $x^2 = 1$, so $x = 1$ is the only solution: both hold.
+10. No: $1 + \dots + 10 = 55$ is odd, and two equal sums would add to an even number. Yes: the total is $78$, and $\set{6, 10, 11, 12}$ and its complement both sum to $39$.
 
-8. The first arrow holds only from left to right, since squaring loses the sign. The other two hold both ways. Checking: $x = 5$ gives $2 = 2$, while $x = 2$ gives $-1 = 1$. The only solution is $x = 5$.
+14. If $\sqrt 6 = a/b$ in lowest terms, then $a^2 = 6b^2$, so $a = 2c$, then $2c^2 = 3b^2$, so $b$ is even too. If $\sqrt 2 + \sqrt 3 = r$ were rational, then $r^2 = 5 + 2\sqrt 6$ would make $\sqrt 6 = (r^2 - 5)/2$ rational. Both goals are negative statements, so both proofs are refutations and need no excluded middle.
 
-11. Prove the contrapositive: if $n = 2k + 1$, then $n^2 - 1 = 4k(k + 1)$, and $k(k + 1)$ is even.
+15. Split at $x = \tfrac32$, where $2x - 3$ changes sign. For $x \ge \tfrac32$ the inequality reads $2x - 3 \le x$, that is, $x \le 3$. For $x < \tfrac32$ it reads $3 - 2x \le x$, that is, $x \ge 1$. Together the solutions are $1 \le x \le 3$.
 
-13. If $s = \sqrt 2 + \sqrt 3$ were rational, then so would be $s^2 = 5 + 2\sqrt 6$, and so $\sqrt 6 = (s^2 - 5)/2$.
+18. With $f(x) = x^3 - 4x + 1$: $f(-3) = -14$, $f(-2) = 1$, $f(0) = 1$, $f(1) = -2$, $f(2) = 1$. The intermediate value theorem gives roots in $(-3, -2)$, $(0, 1)$ and $(1, 2)$, and a polynomial of degree $3$ has at most three roots. The proof is non-constructive: it names no root.
 
-14. Factor $n^5 - n = n(n - 1)(n + 1)(n^2 + 1)$. If $n \equiv 0, 1, 4$ modulo $5$, one of the first three factors is divisible by $5$; if $n \equiv 2$ or $3$, then $n^2 + 1 \equiv 0$.
+20. If $g(a) = g(a')$, then $f(g(a)) = f(g(a'))$, so $a = a'$ because $f \circ g$ is injective. For the counterexample, take $A = C = \set{0}$, $B = \set{0, 1}$, $g(0) = 0$ and $f$ constant.
 
-17. Existence: $x^3 + x - 1$ is $-1$ at $0$ and $1$ at $1$, so the intermediate value theorem gives a root in $(0, 1)$. Uniqueness: if $x < y$, then $x^3 + x < y^3 + y$. The existence part is not constructive, though bisection makes it so.
+22. Cubes leave remainder $0$, $1$ or $8$ on division by $9$, as the cases $x \equiv 0, 1, \dots, 8 \pmod 9$ show. Sums of two of them leave $0, 1, 2, 7$ or $8$, never $4$.
 
-23. Let $p_1, \ldots, p_k$ be any finite list of such primes and let $N = 4 p_1 \cdots p_k - 1$. Then $N \equiv 3 \pmod 4$ and $N$ is odd. A product of numbers that are $1$ modulo $4$ is $1$ modulo $4$, so $N$ has a prime factor $q \equiv 3 \pmod 4$, and $q$ is not in the list, since every prime in the list divides $N + 1$ and $q$ cannot divide both $N$ and $N + 1$.
+23. Among the $n + 1$ numbers $1, 11, \dots$ with $1$ to $n + 1$ ones, two leave the same remainder on division by $n$. Their difference is a number of ones followed by $j$ zeros, that is, a number made of ones times $10^j$. It is divisible by $n$, and since $\gcd(n, 10) = 1$, $n$ divides the number made of ones. The argument does not say which number works. For $n = 7$ the answer is six ones ($111111 = 7 \cdot 15873$), and for $n = 17$ it is sixteen ones.
 
-24. Prove the contrapositive. If $n = ab$ with $1 < a < n$, then $2^a - 1$ divides $2^{ab} - 1$, because $x - 1$ divides $x^b - 1$; and $1 < 2^a - 1 < 2^n - 1$. For the converse, $2^{11} - 1 = 2047 = 23 \cdot 89$.
+24. For existence, let $2^k$ be the largest power of $2$ dividing $n$; then $m = n/2^k$ is odd. For uniqueness, suppose $2^k m = 2^j m'$ with $m$, $m'$ odd and $k < j$. Then $m = 2^{j - k} m'$ is even, a contradiction, so $k = j$ and then $m = m'$.
 
-25. Suppose $\sqrt n = a/b$ in lowest terms, so $a^2 = n b^2$. If a prime $p$ divides $b$, then $p \mid a^2$, so $p \mid a$, against lowest terms. So $b = 1$ and $n = a^2$.
+25. Squares are $0$, $1$ or $4$ modulo $8$, so a sum of three squares is never $7$ modulo $8$; this settles $a = 0$. If $x^2 + y^2 + z^2 \equiv 0 \pmod 4$, the remainders $0, 1$ of squares modulo $4$ force $x$, $y$, $z$ to be even, and dividing by $4$ gives a representation of $4^{a-1}(8b + 7)$. Repeat until $a = 0$.
 
-26. For integers $u \ne v$, $u - v$ divides $u^k - v^k$ for each $k$, so $u - v$ divides $p(u) - p(v)$. Here $3 - 1 = 2$ would have to divide $5 - 2 = 3$.
+26. Pair each divisor $d$ of $n$ with $n/d$. The pairs have two different elements except when $d = n/d$, that is, $d^2 = n$. So the number of divisors is even unless $n$ is a square, in which case exactly one divisor is unpaired.
 
-27. The right side is cyclic, not symmetric: exchanging $b$ and $c$ changes it to $a^2 c + c^2 b + b^2 a$. By the inequality of arithmetic and geometric means, $a^3 + a^3 + b^3 \ge 3a^2 b$. Add the three cyclic versions of this inequality.
+27. Suppose $p_1, \dots, p_k$ were all such primes, and let $N = 6p_1 \cdots p_k - 1$. Then $N \equiv 5 \pmod 6$, so $N$ is odd and not divisible by $3$, and every prime factor of $N$ is $1$ or $5$ modulo $6$. A product of numbers that are $1$ modulo $6$ is $1$ modulo $6$, so some prime factor is $5$ modulo $6$, and it is none of the $p_i$, since they divide $N + 1$.

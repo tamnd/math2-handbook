@@ -1,19 +1,25 @@
 groups:
   - title: What a heuristic is
     intro: >
-      A heuristic is a question or a suggestion that often leads to an idea and never guarantees one. The first
-      entry separates heuristics from algorithms and from proofs. The second gives Pólya's plan for a whole
-      solution, in four phases, with a list of questions for each phase.
+      A [heuristic](/6KCEWEP4WA/) is a rule of thumb for finding a solution or a proof. It leaves choices to the
+      solver, it may lead nowhere, and what it finds must still be proved; an algorithm such as Euclid's for the
+      greatest common divisor always ends with a correct answer. Small cases suggest
+      $\frac{1}{1 \cdot 2} + \dots + \frac{1}{n(n+1)} = \frac{n}{n+1}$, and only the identity
+      $\frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}$ proves it. [Pólya's four steps](/DYD57G2Y5Z/) arrange the
+      single heuristics into a plan: understand the problem, devise a plan, carry it out, look back.
     entries:
       - 6KCEWEP4WA
       - DYD57G2Y5Z
 
-  - title: Changing the size of the problem
+  - title: Related, smaller and larger problems
     intro: >
-      Three heuristics move between a problem and its relatives: a similar problem ([analogy](/7KDT0R1HF2/)), a
-      smaller class of cases ([specialization](/FTBJX4G51S/)) and a larger one
-      ([generalization](/8NJ0VN9Z97/)). The inventor's paradox explains why the larger problem is sometimes the
-      easier one, as when a stronger induction hypothesis makes an induction go through.
+      The first questions of the planning phase replace the problem by another one. An analogous problem lends its
+      method, as the Euclidean algorithm for integers finds the greatest common divisor of two polynomials. A special
+      case shows the form of the answer, and a single failing case refutes a universal claim, while no number of
+      agreeing cases proves it: $n$ points on a circle give $1, 2, 4, 8, 16$ regions and then $31$. A general
+      problem with a parameter can be easier than the given one, and the inventor's paradox goes further: the
+      bound $1 + \frac{1}{4} + \dots + \frac{1}{n^2} \le 2 - \frac{1}{n}$ has an easy induction, while the weaker
+      bound $< 2$ has none.
     entries:
       - 7KDT0R1HF2
       - FTBJX4G51S
@@ -22,18 +28,21 @@ groups:
 
   - title: Starting from the goal
     intro: >
-      When the goal is clear, ask what would come just before it. Working backwards is the analysis and
-      synthesis of Greek geometry. An auxiliary problem is the general form of the same move: solve a related
-      problem first, because its solution leads to the solution of the given one.
+      Working backwards replaces the goal by a nearer goal from which it follows, until it reaches something
+      given; then the chain is reversed, and the reversed chain is the proof, valid only if each step can be
+      reversed. An auxiliary problem is a detour of the same kind: counting the solutions of $x + y + z = 10$ in
+      nonnegative integers becomes choosing $2$ places for bars among $12$, which gives $\binom{12}{2} = 66$.
     entries:
       - 3QTB9S1THS
       - DYSJB93V11
 
   - title: Adding, splitting and changing
     intro: >
-      These heuristics act on the problem itself. Add an element that is not in the statement, such as a line,
-      a variable or a function. Split the problem into parts and put the partial results together. Drop or
-      change a condition. Or draw a figure and choose names and coordinates that show the structure.
+      These heuristics change the representation of the problem. An auxiliary element, such as the parallel to
+      $BC$ through $A$ that proves the angle sum of a triangle, adds an object that connects data and unknown.
+      Decomposing splits a problem into parts that are solved alone and then recombined, as the Chinese remainder
+      theorem recombines the answers modulo $4$ and $25$ into one modulo $100$. Variation drops or changes a
+      condition, and a figure with good notation turns words into equations.
     entries:
       - 8TKKRAXKFN
       - KEZPDNM2NH
@@ -42,9 +51,11 @@ groups:
 
   - title: Discovery beyond single rules
     intro: >
-      The last entries look at discovery as a whole. Lakatos describes how counterexamples change a theorem and
-      its concepts. Intuition guides the search and can mislead it. Poincaré and Hadamard report on sudden ideas
-      after long work. Problem posing makes new problems from solved ones.
+      The last group looks at discovery on a larger scale. In Lakatos's [proofs and refutations](/79P9CTRN0V/) a
+      counterexample to $V - E + F = 2$ points to the step of the proof that fails, and that step becomes a new
+      hypothesis: the formula holds when the surface is a topological sphere and every face is a disc. Intuition guides the choice of what to
+      try and can be wrong; the reports of Poincaré and Hadamard describe how ideas arrive; and problem posing
+      turns a solved problem into new ones by asking "what if not?".
     entries:
       - 79P9CTRN0V
       - 4BT08RE4CR

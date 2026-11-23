@@ -1,53 +1,53 @@
-1. ◦ Consider the statement "for every integer $n$, if $6 \mid n$, then $4 \mid n^2$". Write its contrapositive, its converse and its inverse. Which of the four statements are true? For each false one, give a counterexample.
+1. ◦ For each statement, name its outermost logical form and write the first line of a proof, as in [proof methods](/G9JFJGY4TQ/). (a) For every integer $n$, $n^3 - n$ is divisible by $3$. (b) There is a real number $x$ with $x^3 = x + 1$. (c) The equation $4x + 6y = 7$ has no solution in integers. (d) For all integers $a$ and $b$, $a \equiv b \pmod 2$ if and only if $a + b$ is even. (e) Not every continuous function $\R \to \R$ is differentiable.
 
-2. ◦ Write the negation of "for every $\varepsilon > 0$ there is a $\delta > 0$ such that $\abs{f(x)} < \varepsilon$ for every $x$ with $\abs{x} < \delta$", with no "not" in front of a quantifier.
+2. ◦ Write the converse, the contrapositive and the negation of "for every integer $n$, if $n$ is prime and $n > 2$, then $n$ is odd". Which of the three are true?
 
-3. ◦ A student writes: "Claim: $x^2 - 4x + 5 > 0$ for every real $x$. Proof: let $x = 2$; then $x^2 - 4x + 5 = 1 > 0$." Name the error, using the entry on [proving universal statements](/CX38X989TB/), and give a correct proof.
+3. ◦ Find the error in this argument, and give a correct proof of the claim. *Claim:* for every real $x$, $x^2 - 4x + 5 > 0$. *Argument:* suppose, for a contradiction, that $x^2 - 4x + 5 \le 0$ for every real $x$. At $x = 0$ this gives $5 \le 0$, which is false.
 
-4. ◦ Which of the numbers $n = 0, 1, 2, 3, 4$ are counterexamples to "for every positive integer $n$, the number $n^2 + n + 1$ is prime"? Say for each why it is or is not one.
+4. ◦ (a) Find the smallest [counterexample](/0ED72CTBNP/) to "for every integer $n \ge 1$, $n^2 + n + 1$ is prime". (b) Show that $n = 341$ is a counterexample to "every integer $n > 1$ with $n \mid 2^n - 2$ is prime". You may use $341 = 11 \cdot 31$ and $2^{10} = 1024$.
 
-5. ◦ A proof that $\abs{x - 1} + \abs{x + 1} \ge 2$ for every real $x$ treats the case $x \ge 1$ and the case $x \le -1$. Which case is missing? Prove the inequality in that case.
+5. ◦ Which of the following refute the claim "every continuous function $f \colon (0, 1) \to \R$ is bounded"? (a) $f(x) = 1/x$ on $(0, 1)$. (b) $f(x) = 1/x$ on $[1, 2]$. (c) $f(x) = \tan(\pi x)$. (d) $f(x) = 1/(x(1 - x))$ on $(0, 1)$. Is the claim true?
 
-6. ◦ Is there exactly one real number $x$ with $x^3 = x$? Exactly one positive real number? In each case say whether existence holds and whether uniqueness holds.
+6. ◦ A student wants to prove that four conditions $(1)$–$(4)$ are equivalent, as in [proving biconditionals and equivalences](/TFQ1845T84/). Which of these sets of proved implications is enough? (a) $1 \Rightarrow 2$, $2 \Rightarrow 3$, $3 \Rightarrow 4$, $4 \Rightarrow 1$. (b) $1 \Rightarrow 2$, $2 \Rightarrow 1$, $3 \Rightarrow 4$, $4 \Rightarrow 3$. (c) $1 \Rightarrow 2$, $2 \Rightarrow 3$, $3 \Rightarrow 1$, $1 \Rightarrow 4$, $4 \Rightarrow 2$. (d) $1 \Rightarrow 2$, $1 \Rightarrow 3$, $1 \Rightarrow 4$, $4 \Rightarrow 1$.
 
-7. ◦ For which of these statements about real numbers $x$ and $y$ is the step "without loss of generality $x \le y$" justified by exchanging $x$ and $y$? (a) $\abs{x - y} \le \abs{x} + \abs{y}$. (b) $x^2 y + x y^2 = xy(x + y)$. (c) $\max(x, y) \ge x$.
+7. ◦ Prove each statement by a [constructive proof](/01XM7JEKHY/): name a witness and check it. (a) There is a rational number strictly between $\sqrt 2$ and $\tfrac{17}{12}$. (b) There is a prime $p$ such that $p + 2$ and $p + 6$ are also prime. (c) There are integers $x$ and $y$ with $15x + 21y = 3$.
 
-8. ◦ A student solves $x - 3 = \sqrt{x - 1}$ by the chain $x - 3 = \sqrt{x - 1} \iff (x - 3)^2 = x - 1 \iff x^2 - 7x + 10 = 0 \iff x = 2 \text{ or } x = 5$. Which of the arrows hold in both directions? Which numbers solve the equation?
+8. ◦ In each proof, may you assume $a \le b \le c$ [without loss of generality](/Y7NE0E6PCV/)? Justify. (a) A proof that $a^3 + b^3 + c^3 \ge 3abc$ for all reals $a, b, c \ge 0$. (b) A proof of an inequality about the expression $a^2 b + b^2 c + c^2 a$ for all reals $a, b, c$.
 
-9. • Let $a$, $b$ and $c$ be integers. Give a [direct proof](/0NTF6DMVAP/) that if $a \mid b$ and $a \mid c$, then $a \mid 3b - 2c$.
+9. ◦ The goal is to show $x^2 < 1$ for a real number $x$. Which of these backward steps are valid in the sense of the [forward-backward method](/V8ZB838JY5/)? (a) It suffices to show $\abs x < 1$. (b) It suffices to show $x < 1$. (c) It suffices to show $0 \le x < \tfrac12$. (d) It suffices to show $x^3 < 1$.
 
-10. • Prove that $x^2 + xy + y^2 \ge 0$ for all real numbers $x$ and $y$. When does equality hold?
+10. ◦ Can the numbers $1, 2, \dots, 10$ be split into two groups with equal sums? Can the numbers $1, 2, \dots, 12$?
 
-11. • Prove that for every integer $n$, if $n^2 - 1$ is not divisible by $8$, then $n$ is even.
+11. • Give a [direct proof](/0NTF6DMVAP/) that if $a \equiv b \pmod n$ and $c \equiv d \pmod n$, then $ac \equiv bd \pmod n$. Deduce that $10^k \equiv 1 \pmod 9$ for every $k \ge 1$.
 
-12. • Prove that if $r$ is rational and $x$ is irrational, then $r + x$ is irrational, and $rx$ is irrational when $r \ne 0$. Is the sum of two irrational numbers always irrational?
+12. • Prove that $A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)$ for all sets $A$, $B$, $C$, by taking an arbitrary element of each side, as in [proving universal statements](/CX38X989TB/).
 
-13. • Prove that $\sqrt 2 + \sqrt 3$ is irrational. You may use that $\sqrt 6$ is irrational.
+13. • Use [proof by contrapositive](/0BB5TPGQ1N/) to prove: (a) for every integer $n$, if $n^2 - 6n + 5$ is even, then $n$ is odd; (b) for every real $x > 0$, if $x$ is irrational, then $\sqrt x$ is irrational.
 
-14. • Prove that $n^5 - n$ is divisible by $5$ for every integer $n$, by a [proof by cases](/0WCP0PVET6/) on the remainder of $n$ modulo $5$.
+14. • Prove by [contradiction](/0J0XBKG64S/) that $\sqrt 6$ is irrational. Then use this fact to prove that $\sqrt 2 + \sqrt 3$ is irrational. Are the two proofs refutations, or do they need the law of excluded middle?
 
-15. • Prove that for every integer $n$, $3 \mid n^2$ if and only if $3 \mid n$. Label the two directions and name the method you use for each.
+15. • Prove by [cases](/0WCP0PVET6/) that for real $x$, $\abs{2x - 3} \le x$ if and only if $1 \le x \le 3$.
 
-16. • Find irrational numbers $x$ and $y$ such that both $x + y$ and $xy$ are rational, and check your witnesses.
+16. • Prove that for every integer $n$, $6 \mid n$ if and only if $2 \mid n$ and $3 \mid n$.
 
-17. • Prove that the equation $x^3 + x = 1$ has exactly one real solution, and that it lies between $0$ and $1$. Which part of your proof is constructive?
+17. • Prove that for a nonzero real number $x$ the following are equivalent: (1) $x^2 < x$; (2) $0 < x < 1$; (3) $1/x > 1$.
 
-18. • In a group $G$ with identity $e$, prove that each element $a$ has only one inverse: if $ab = ba = e$ and $ac = ca = e$, then $b = c$.
+18. • Prove, without solving the equation, that $x^3 - 4x + 1 = 0$ has exactly three real solutions, and find for each an interval between consecutive integers that contains it. Is your proof constructive in the sense of [non-constructive existence](/JZQVJ9XT63/)?
 
-19. • Give counterexamples to these two claims. (a) For all sets $A$, $B$ and $C$, if $A \cup C = B \cup C$, then $A = B$. (b) For all functions $g \colon X \to Y$ and $f \colon Y \to Z$, if $f \circ g$ is injective, then $f$ is injective.
+19. • Prove that the equation $x^3 + x = 10$ has exactly one real solution, and find it. Label the two parts of the proof as in [proof of uniqueness](/GQHHNV79PA/).
 
-20. • Let $f(x) = \frac{2x + 1}{x - 3}$ for real $x \ne 3$. Use the [forward-backward method](/V8ZB838JY5/) to prove that for every real $y \ne 2$ there is a real $x \ne 3$ with $f(x) = y$. Write the backward search, then the proof in forward order.
+20. • Let $g \colon A \to B$ and $f \colon B \to C$ be functions with $f \circ g$ injective. Prove that $g$ is injective, and give a counterexample showing that $f$ need not be injective.
 
-21. • Prove that the equation $x^2 + y^2 = 4z + 3$ has no solution in integers $x$, $y$ and $z$.
+21. • Use the forward-backward method to find a proof that $\dfrac{x + y}{2} \ge \dfrac{2xy}{x + y}$ for all positive reals $x$ and $y$. Write the scratch work backward, then the final proof forward, and find the cases of equality.
 
-22. • Prove that $\max(a, b) = \frac{a + b + \abs{a - b}}{2}$ for all real $a$ and $b$, using one wlog step. State the symmetry that justifies it.
+22. • Prove that the equation $x^3 + y^3 = 9k + 4$ has no solution in integers $x$, $y$, $k$. This is a [proof of impossibility](/6F55216R53/) by remainders.
 
-23. ★ Prove that there are infinitely many primes that leave remainder $3$ on division by $4$.
+23. ★ Let $n$ be a positive integer with $\gcd(n, 10) = 1$. Prove that some number $11\ldots1$, written with ones only, is divisible by $n$. Is the proof constructive? Find the least number of ones for $n = 7$ and for $n = 17$.
 
-24. ★ Prove that if $2^n - 1$ is prime, then $n$ is prime. Show by an example that the converse is false.
+24. ★ Prove that every integer $n \ge 1$ can be written as $n = 2^k m$ with $k \ge 0$ and $m$ odd, and that $k$ and $m$ are unique.
 
-25. ★ Let $n$ be a positive integer that is not the square of an integer. Prove that $\sqrt n$ is irrational.
+25. ★ Prove that no integer of the form $4^a(8b + 7)$, with $a, b \ge 0$, is a sum of three squares of integers.
 
-26. ★ Prove that no polynomial $p(x)$ with integer coefficients has $p(1) = 2$ and $p(3) = 5$.
+26. ★ Prove that a positive integer has an odd number of positive divisors if and only if it is a perfect square.
 
-27. ★ Let $a$, $b$ and $c$ be non-negative real numbers. Explain why "without loss of generality $a \ge b \ge c$" is not justified for the inequality $a^3 + b^3 + c^3 \ge a^2 b + b^2 c + c^2 a$, and then prove the inequality.
+27. ★ Prove that there are infinitely many primes $p$ with $p \equiv 5 \pmod 6$.

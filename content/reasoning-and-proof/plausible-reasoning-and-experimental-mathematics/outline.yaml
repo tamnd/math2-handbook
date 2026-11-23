@@ -1,37 +1,48 @@
 groups:
-  - title: Evidence that is not proof
+  - title: Plausible reasoning and the experimental method
     intro: >
-      Pólya's patterns of plausible inference say how a verified consequence or an analogy makes a conjecture
-      more credible, and why one false consequence refutes it. Experimental mathematics does the same work with
-      a computer: it computes, guesses an exact form, and tests the guess at higher precision.
+      The first entry gives Pólya's patterns of [plausible reasoning](/8DHD3H1CJ9/): if $A$ implies $B$ and $B$
+      turns out true, then $A$ becomes more credible, while a false $B$ refutes $A$ with certainty. The second turns
+      the pattern into a working method, [experimental mathematics](/BPEPTN0TT9/): compute a quantity to many
+      digits, detect a relation with an integer relation algorithm such as PSLQ, test the relation at higher
+      precision, and only then look for a proof.
     entries:
       - 8DHD3H1CJ9
       - BPEPTN0TT9
 
-  - title: When evidence misleads
+  - title: How evidence misleads
     intro: >
-      A conjecture checked up to $10^{18}$ can still be false, and a pattern seen in the first five cases often
-      is. These entries say how much a finite check supports a claim, why small numbers agree by coincidence,
-      and what made four famous patterns fail.
+      These three entries ask how much a run of confirmed cases is worth. [Numerical evidence](/JFD3QWCX8Z/)
+      measures a check against the scale on which a conjecture can fail: the inequality $\pi(x) < \operatorname{li}(x)$
+      holds at every $x$ ever computed and is still false for some $x$, by Littlewood's theorem of 1914. The
+      [strong law of small numbers](/8AFXPXCE3N/) explains why the first few cases of a pattern say even less, and
+      [patterns that eventually fail](/A2KSJSQSF6/) collects the standard cases, with the reason each one breaks.
     entries:
       - JFD3QWCX8Z
       - 8AFXPXCE3N
       - A2KSJSQSF6
 
-  - title: From heuristic to conjecture
+  - title: From evidence to conjecture
     intro: >
-      Some evidence comes from a model rather than from data: treat the primes as random, count parameters
-      against conditions, compare the sizes of terms. Such arguments predict precise statements. Forming a
-      conjecture is the step from data or models to a statement exact enough to be proved or refuted.
+      A table becomes useful when there is a reason behind it. [Heuristic arguments](/VCQQNJ3SEZ/) give that reason
+      through a model that is not fully justified: in the Cramér model each $n \ge 3$ is prime with probability
+      $1/\ln n$, and corrections for small primes turn it into the Hardy–Littlewood prediction
+      $\pi_2(x) \approx 2C_2 \int_2^x dt/(\ln t)^2$ for twin primes. [Forming conjectures](/R2T42N5XGK/) shows how
+      tables, differences and special cases become a precise statement that is tested before anyone tries to prove
+      it.
     entries:
       - VCQQNJ3SEZ
       - R2T42N5XGK
 
-  - title: Machines and physics as sources
+  - title: Discovery by machines and by physics
     intro: >
-      Two further sources of conjectures: programs that search spaces of formulas or objects, and physical
-      systems such as levers, strings and soap films whose laws force a result. Both give candidates, and both
-      leave a proof, or an independent check, still to be done.
+      The last two entries take the method of the first group to other sources of evidence.
+      [Machine-assisted discovery](/D1YQW43N3K/) covers programs that propose conjectures or search for
+      constructions, from Graffiti to AlphaEvolve; their output is a candidate, and a construction such as a cap set
+      of $512$ vectors in dimension $8$ is accepted after an independent check. [Physical arguments](/THJV0NFPDQ/)
+      let a lever, a string or a soap film suggest a result, as Archimedes found the volume of the sphere by
+      balancing slices; each still needs a proof, and the hidden assumption is usually that an equilibrium or a
+      minimum exists.
     entries:
       - D1YQW43N3K
       - THJV0NFPDQ
