@@ -32,8 +32,8 @@ groups:
       - DEB3CF4Z2D
   - title: One logic, many calculi
     intro: >
-      The systems of the chapter prove the same sentences, and the proof of this runs once around a cycle of
-      translations. The last entry says how each system treats the equality symbol, which needs its own
+      The Hilbert calculus, natural deduction, the sequent calculus and tableaux prove the same sentences, the
+      logical consequences, and the proof of this runs once around a cycle of implications. The last entry says how each system treats the equality symbol, which needs its own
       axioms or rules in every calculus.
     entries:
       - A9AAHN4BMH

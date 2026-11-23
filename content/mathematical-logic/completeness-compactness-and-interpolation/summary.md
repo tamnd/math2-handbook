@@ -20,7 +20,7 @@
 | [Peano arithmetic](/0QFT7Z76N5/) | yes | no | no |
 | [True arithmetic](/DX0KPMH4QZ/) $\operatorname{Th}(\N, +, \cdot)$ | no | yes | no |
 
-: Five theories. The rows show that the three properties are independent of each other except for one link: a theory that is recursively axiomatizable and complete is decidable.
+: Five theories. The rows show that the three properties are independent of each other except for two links: a decidable theory is recursively axiomatizable, since it is a decidable set of axioms for itself, and a theory that is recursively axiomatizable and complete is decidable.
 
 ## Common errors
 

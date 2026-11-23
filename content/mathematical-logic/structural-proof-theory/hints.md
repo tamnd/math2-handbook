@@ -1,4 +1,4 @@
-1. (a) Context-splitting with $\Gamma = p$, $\Delta$ and $\Pi$ empty and $\Lambda = r$ gives $p \Rightarrow r$; the degree is $0$. (b) With $\Delta = p \vee q$, $\Pi = r$ and $\Lambda = s$ it gives $r \Rightarrow p \vee q, s$; the degree is $0$. The context-sharing form applies to neither pair, since its two premises must have the same contexts.
+1. (a) Context-splitting with $\Gamma = p$, $\Delta$ empty, $\Pi = s$ and $\Lambda = t$ gives $p, s \Rightarrow t$; the degree is $1$. (b) With $\Delta = p \vee q$, $\Pi = r$ and $\Lambda = s$ it gives $r \Rightarrow p \vee q, s$; the degree is $0$. The context-sharing form applies to neither pair, since its two premises must have the same contexts.
 
 2. With $\neg$ primitive there are $7$: the whole formula, $p \to q$, $\neg q \to \neg p$, $\neg q$, $\neg p$, $q$ and $p$. With $\neg A = A \to \bot$ there are $8$: the whole formula, $p \to q$, $(q \to \bot) \to (p \to \bot)$, $q \to \bot$, $p \to \bot$, $p$, $q$ and $\bot$. A cut-free derivation uses only these.
 
@@ -22,6 +22,6 @@
 
 25. A normal, fully expanded term of atomic type $p$ is a variable applied to arguments. With $f : p \to p$ and $x : p$ in the context, it is $x$ or $f N$ with $N$ of type $p$. Distinct normal forms are distinct proofs.
 
-26. For an atom or a negated atom use $\mathsf{ac}{\downarrow}$. For units use $\mathsf{t} \vee \mathsf{t} = \mathsf{t}$ and $\mathsf{f} \vee \mathsf{f} = \mathsf{f}$. For $B \wedge C$ apply medial to get $(B \vee B) \wedge (C \vee C)$, and for $B \vee C$ regroup to $(B \vee B) \vee (C \vee C)$. Then use the induction hypothesis inside the context, which is positive.
+26. For an atom or a negated atom use $\mathsf{ai}{\uparrow}$, and for a unit $\mathsf{t} \wedge \mathsf{f} = \mathsf{f}$ follows from the equations. For $B \wedge C$, write $(B \wedge C) \wedge (\bar{B} \vee \bar{C})$ as $C \wedge (B \wedge (\bar{B} \vee \bar{C}))$; switch inside gives $C \wedge ((B \wedge \bar{B}) \vee \bar{C})$, and a second switch gives $(C \wedge \bar{C}) \vee (B \wedge \bar{B})$. For $B \vee C$ the same two switches turn $\bar{B} \wedge (\bar{C} \wedge (C \vee B))$ into $(\bar{B} \wedge B) \vee (\bar{C} \wedge C)$. Then use the induction hypothesis inside the positive contexts, and $\mathsf{f} \vee \mathsf{f} = \mathsf{f}$.
 
 27. The antecedent is empty and the sequent is not an axiom, so the last rule is R${\vee}$. Now $\Rightarrow \neg p$ fails by inversion and soundness. For $\Rightarrow \neg\neg p$ invert to $\neg p \Rightarrow \bot$, whose last rule must be L${\to}$ with left premise $\neg p \Rightarrow p$, false when $p$ is false.

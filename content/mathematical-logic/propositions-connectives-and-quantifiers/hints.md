@@ -18,7 +18,7 @@
 
 17. Write $(p \to q) \to r \equiv (p \land \neg q) \lor r$ and $p \to (q \to r) \equiv \neg p \lor \neg q \lor r$. They agree when $r$ is true; when $r$ is false they differ exactly when $p$ is false. The valuations are $(\mathrm{F}, \mathrm{T}, \mathrm{F})$ and $(\mathrm{F}, \mathrm{F}, \mathrm{F})$.
 
-21. The statements give $a \leftrightarrow \neg b$ and $b \leftrightarrow (a \leftrightarrow b)$. By associativity the second is $(b \leftrightarrow b) \leftrightarrow a$, which is equivalent to $a$. So $A$ is a knight, and then $B$ is a knave.
+21. The statements give $a \leftrightarrow \neg b$ and $b \leftrightarrow (a \leftrightarrow b)$. By commutativity and associativity the second is $(b \leftrightarrow b) \leftrightarrow a$, which is equivalent to $a$. So $A$ is a knight, and then $B$ is a knave.
 
 23. For each row where the function is T, form the conjunction of the variables true in that row and the negations of the others. The disjunction of these conjunctions is the formula; if there is no such row, use $p_1 \land \neg p_1$. Then use $\neg p \equiv p \uparrow p$ and $p \land q \equiv (p \uparrow q) \uparrow (p \uparrow q)$, together with De Morgan's laws.
 

@@ -23,7 +23,7 @@ groups:
   - title: Monadic second-order logic
     intro: >
       Allowing only quantifiers over sets keeps enough power to express parity of length, connectivity and
-      colourings. On words it defines exactly the regular languages, and the link with automata makes many of
+      colorings. On words it defines exactly the regular languages, and the link with automata makes many of
       its theories decidable.
     entries:
       - 3WHQFSHR58

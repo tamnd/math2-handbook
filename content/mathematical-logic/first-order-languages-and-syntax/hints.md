@@ -1,4 +1,4 @@
-1. $f(x, g(c))$ and $g(f(c, y))$ are terms. $g(x, y)$ and $f(g(g(x)))$ give a symbol the wrong number of arguments, and $c(x)$ treats a constant as a function symbol.
+1. $f(x, g(c))$ and $g(f(c, y))$ are terms. $g(x, y)$ and $f(g(g(x)))$ give a symbol the wrong number of arguments, and $c(x)$ gives the constant $c$ an argument, although its arity is $0$.
 
 3. The free variables are $x$, $y$ and $z$, and $x$ and $y$ also have bound occurrences. The free occurrences are $y$ in $R(x, y)$, $z$ in $R(y, z)$ and $x$ in $P(x)$, which lies outside the scope of $\forall x$.
 
@@ -20,7 +20,7 @@
 
 18. One direction is an induction on terms. For the converse, use induction on length: a string with these properties that starts with a variable or a constant has length $1$, and one that starts with an $n$-ary $f$ has a rest of weight $-n$. Cut the rest where its running weight first reaches $-1$, then $-2$, and so on down to $-n$; each piece is a term by induction.
 
-19. Since the variables are separate, the existential blocks can be merged: $\forall x \, \exists y \, \exists u \, \forall z \, \forall v \, (\varphi \land \psi)$. Pulling out the quantifiers of the first conjunct and then those of the second gives $\forall x \, \exists y \, \forall z \, \exists u \, \forall v$, which alternates five times.
+19. Since the variables are separate, the existential blocks can be merged: $\forall x \, \exists y \, \exists u \, \forall z \, \forall v \, (\varphi \land \psi)$. Pulling out the quantifiers of the first conjunct and then those of the second gives $\forall x \, \exists y \, \forall z \, \exists u \, \forall v$, which has five blocks.
 
 20. The sentence is true in a structure with two elements. Any one of its elements forms a substructure with one element, where the sentence is false. A universal sentence true in the larger structure would be true in the substructure.
 

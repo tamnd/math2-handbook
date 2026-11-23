@@ -19,7 +19,7 @@ The chapter is in four groups, read in order.
 
 For a first reading, take these entries in order: [double-negation translation](/HGJVM49PA4/), [Friedman's A-translation](/6CCK0TT69P/), [Gödel's system T](/A4WR995XZP/), [Dialectica interpretation](/HZ17ES9PDY/), [no-counterexample interpretation](/4BCD1EM542/), [conservation theorems](/TNZ995J8AP/), [Parsons's theorem](/2VYJXZZDGB/) and [interpretability between theories](/8H03GRMDYG/). The A-translation is short, and it is the quickest way to see how a classical proof yields a witness. Work through its attached example on Markov's rule before the Dialectica interpretation.
 
-[Bar recursion](/8CCG6F2FAT/) can wait for a second pass; it needs the Dialectica interpretation and some comfort with functionals of type 2. [Proof mining](/XR1JXQG1CD/) and [Herbrand analysis](/MESZ87G9ET/) are easier once the interpretations are familiar, and Herbrand analysis also needs partial cut elimination.
+[Bar recursion](/8CCG6F2FAT/) can wait for a second pass; it needs the Dialectica interpretation and some comfort with functionals of type $(\N \to \N) \to \N$. [Proof mining](/XR1JXQG1CD/) and [Herbrand analysis](/MESZ87G9ET/) are easier once the interpretations are familiar, and Herbrand analysis also needs partial cut elimination.
 
 ## Before you start
 

@@ -46,7 +46,8 @@ groups:
     intro: >
       [Courcelle's theorem](/DD4JB8XJ5A/) carries tree automata over to graphs that look like trees, and gives
       linear-time algorithms for every property that monadic second-order logic can express. Seese's theorem shows
-      that bounded treewidth is also necessary for a decidable monadic theory.
+      that bounded treewidth is also necessary: a class of finite graphs with a decidable theory in this logic has
+      bounded treewidth. The converse fails for arbitrary classes.
     entries:
       - DD4JB8XJ5A
       - RT898AFHWT

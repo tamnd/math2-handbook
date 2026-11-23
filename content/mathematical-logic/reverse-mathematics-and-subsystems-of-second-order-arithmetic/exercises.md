@@ -6,7 +6,7 @@
 
 4. ◦ Which of the following does [$\mathsf{RCA}_0$](/XQENB067R3/) prove? (a) the induction scheme for $\Sigma^0_1$ formulas; (b) the induction scheme for $\Pi^0_1$ formulas; (c) the intermediate value theorem; (d) the induction scheme for $\Sigma^0_2$ formulas; (e) every set has a Turing jump.
 
-5. ◦ True or false, with all statements over $\mathsf{RCA}_0$: (a) $\mathsf{ACA}_0$ proves $\mathsf{RT}^2_2$; (b) $\mathsf{RT}^2_2$ implies $\mathsf{ACA}_0$; (c) $\mathsf{RT}^2_2$ implies weak König's lemma; (d) $\mathsf{WKL}_0$ proves $\mathsf{RT}^2_2$; (e) $\mathsf{RT}^2_2$ implies Ramsey's theorem for pairs and three colours.
+5. ◦ True or false, with all statements over $\mathsf{RCA}_0$: (a) $\mathsf{ACA}_0$ proves $\mathrm{RT}^2_2$; (b) $\mathrm{RT}^2_2$ implies $\mathsf{ACA}_0$; (c) $\mathrm{RT}^2_2$ implies weak König's lemma; (d) $\mathsf{WKL}_0$ proves $\mathrm{RT}^2_2$; (e) $\mathrm{RT}^2_2$ implies Ramsey's theorem for pairs and three colors.
 
 6. ◦ True or false: (a) every [$\beta$-model](/J0Z2GNJZ2W/) is an $\omega$-model; (b) the arithmetical sets form a $\beta$-model; (c) the full power set of $\N$ forms a $\beta$-model.
 
@@ -18,7 +18,7 @@
 
 10. • Show over $\mathsf{RCA}_0$ that the monotone convergence theorem for bounded increasing sequences of rationals implies $\mathsf{ACA}_0$, using the sequence $a_n = \sum_{i \le n} 2^{-f(i)}$ for an injection $f$.
 
-11. • Show that for each standard $k \ge 2$, $\mathsf{RCA}_0 + \mathsf{RT}^2_2$ proves $\mathsf{RT}^2_k$, Ramsey's theorem for pairs and $k$ colours.
+11. • Show that for each standard $k \ge 2$, $\mathsf{RCA}_0 + \mathrm{RT}^2_2$ proves $\mathrm{RT}^2_k$, Ramsey's theorem for pairs and $k$ colors.
 
 12. • Build a computable binary tree of measure at least $3/4$ with no computable path, by removing for each $e$ the strings that extend $\varphi_e \restriction (e + 3)$ once this is defined. Check the measure bound.
 
@@ -34,6 +34,6 @@
 
 18. ★ Show that the intersection of all $\omega$-models of $\mathsf{WKL}_0$ is exactly the class of computable sets.
 
-19. ★ A colouring $c : [\N]^2 \to 2$ is stable if $\lim_y c(x, y)$ exists for every $x$. Show over $\mathsf{RCA}_0$ that stable Ramsey's theorem $\mathsf{SRT}^2_2$ together with the cohesiveness principle $\mathsf{COH}$ implies $\mathsf{RT}^2_2$.
+19. ★ A coloring $c : [\N]^2 \to 2$ is stable if $\lim_y c(x, y)$ exists for every $x$. Show over $\mathsf{RCA}_0$ that stable Ramsey's theorem $\mathrm{SRT}^2_2$ together with the cohesiveness principle $\mathrm{COH}$ implies $\mathrm{RT}^2_2$.
 
 20. ★ For a model $M$ of Peano arithmetic, let $\mathrm{Def}(M)$ be the family of subsets of $M$ definable in $M$ with parameters. Show that $(M, \mathrm{Def}(M))$ is a model of $\mathsf{ACA}_0$, and conclude that $\mathsf{ACA}_0$ is conservative over PA for arithmetic sentences.

@@ -7,7 +7,7 @@ Everything that follows in the volume rests on this definition. The completeness
 The chapter is in five groups, read in order.
 
 1. **Structures and satisfaction.** A [structure](/983GZBQYT4/) for a signature, Tarski's definition of [satisfaction](/2RBQPV02AS/) $\mathcal{M} \models \varphi[s]$ under an assignment $s$, and [truth](/K7XDVK5854/) of a sentence, with the theory $\mathrm{Th}(\mathcal{M})$ of a structure.
-2. **Models and validity.** A [model](/MVCH6N9SNW/) of a theory and the class $\mathrm{Mod}(T)$ of its models; [validity](/5SDS9T8E7J/), its link with satisfiability and consequence, and why the set of valid sentences is computably enumerable but not decidable.
+2. **Models and validity.** A [model](/MVCH6N9SNW/) of a theory and the class $\mathrm{Mod}(T)$ of its models; [validity](/5SDS9T8E7J/), its link with satisfiability and consequence, and why the set of valid sentences is computably enumerable but, in general, not decidable.
 3. **Three basic lemmas.** The [coincidence lemma](/FM580NZ9W6/), the [substitution lemma](/A7S460KHBM/) and [isomorphism invariance](/NDTJ2E895C/).
 4. **Structures made of terms.** The [Herbrand universe](/NFW38QJ3A7/) of closed terms and [Herbrand structures](/HKW429DSDK/), the bridge to Herbrand's theorem and resolution.
 5. **Games, definability and a puzzle.** [Game-theoretic semantics](/D45Z7HETDA/), [definable relations](/1DQ1M6ZWS4/) and the automorphism method, and the [drinker paradox](/8BMQTZZEWB/).

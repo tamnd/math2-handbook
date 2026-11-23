@@ -70,8 +70,8 @@ groups:
     intro: >
       Two entries step outside the usual symbolic presentation. Peirce's [existential graphs](/D3ZS6WHPM1/)
       do propositional and first-order logic with diagrams, and the entry on logical constants asks which
-      notions count as logical at all, with the answer that they are the ones invariant under permutations
-      of the domain.
+      notions count as logical at all. It gives two answers that disagree: invariance under all permutations
+      of the domain, and introduction and elimination rules in harmony.
     entries:
       - D3ZS6WHPM1
       - 2QQ7Q5SKP8

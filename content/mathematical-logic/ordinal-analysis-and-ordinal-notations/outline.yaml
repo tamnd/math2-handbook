@@ -4,7 +4,7 @@ groups:
     intro: >
       An ordinal analysis of a theory has three parts: a natural notation system, a proof in the theory of
       transfinite induction along each initial segment of it, and a proof that the theory reaches no further.
-      The first entry states this programme; the second says what counts as a notation system and why
+      The first entry states this program; the second says what counts as a notation system and why
       Kleene's $\mathcal{O}$ and artificial orders of type $\omega$ do not.
     entries:
       - C5E5TG8PGP

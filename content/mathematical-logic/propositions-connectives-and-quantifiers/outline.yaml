@@ -89,8 +89,9 @@ groups:
   - title: Putting statements into symbols
     intro: >
       The last two entries use everything before them. [Translating into logical form](/WGZX7GV3PP/) turns a
-      sentence of mathematical English into a formula with the same truth conditions, and the
-      [knights and knaves](/K17GT0KGZF/) puzzles turn a story into a biconditional to be solved by truth table.
+      sentence of mathematical English into a formula with the same truth conditions. On the
+      [island of knights and knaves](/MVADXMFV59/), each statement $S$ of an inhabitant $A$ becomes a biconditional
+      $a \leftrightarrow S$, and the solutions of a puzzle are the rows of a truth table in which all of them are true.
     entries:
       - WGZX7GV3PP
-      - K17GT0KGZF
+      - MVADXMFV59

@@ -24,7 +24,7 @@
 
 13. • Give a 3-CNF with two new variables $x$, $y$ that is equisatisfiable with the clause $p_1 \lor p_2 \lor p_3 \lor p_4 \lor p_5$, and prove that it is.
 
-14. • Use [resolution](/ZDW6N1PGJ7/) to show that the clauses $\set{p, q}$, $\set{\neg p, r}$, $\set{\neg q, r}$, $\set{\neg r}$ are unsatisfiable.
+14. • Use [resolution](/ZDW6N1PGJ7/) to show that the clauses $\set{p, q}$, $\set{p, \neg q}$, $\set{\neg p, r}$, $\set{\neg p, \neg r}$ are unsatisfiable.
 
 15. • In the [system L](/1MGMQX43B8/), show that $\vdash (\varphi \to (\psi \to \chi)) \to (\psi \to (\varphi \to \chi))$. Use the [deduction theorem](/9X08XK5RV2/).
 

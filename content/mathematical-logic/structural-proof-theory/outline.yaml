@@ -8,7 +8,7 @@ groups:
       the cut formula and on the heights of the derivations above the cut.
     entries:
       - N4EDJNMTEF
-      - DAMGTSY6VV
+      - HGVMPZ2DXA
       - AYRZ98Y0NW
   - title: What cut-free proofs give
     intro: >
@@ -40,9 +40,10 @@ groups:
   - title: Beyond sequents
     intro: >
       Many logics have no cut-free ordinary sequent calculus. Hypersequents put several sequents side by
-      side, display calculi add structural connectives that can be moved across the turnstile, labelled
+      side, display calculi add structural connectives that can be moved across the turnstile, labeled
       calculi name the worlds of a Kripke model, and deep inference applies rules inside formulas. Each
-      format restores cut elimination and the subformula property for a wider class of logics.
+      format restores cut elimination for a wider class of logics, and the sequent-style formats also
+      the subformula property.
     entries:
       - 3PR9PEMXJ4
       - 1X7D5CBXB7
@@ -52,7 +53,7 @@ groups:
     intro: >
       Focusing restricts cut-free proofs to a normal form with alternating phases, which removes most of
       the redundant choices in proof search. The question of when two derivations are the same proof has
-      a good answer for intuitionistic logic, by normalization, and an open one for classical logic.
+      a well-studied answer for intuitionistic logic, by normalization, and no agreed one for classical logic.
     entries:
       - AMMKNENT3R
       - G7B4XWMS7Q

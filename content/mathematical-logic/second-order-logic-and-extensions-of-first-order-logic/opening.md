@@ -8,7 +8,7 @@ The chapter is in five groups, read in order.
 
 1. **Second-order logic and its two semantics.** [Second-order logic](/G6X7SZSNC5/) with the full semantics, where relation variables range over all relations; the [Henkin semantics](/KWEJFK5943/), where they range over a family fixed by the model; and the [comprehension schema](/5GS6DRJ5SY/), which says which relations a Henkin model must contain.
 2. **Higher orders and Frege's arithmetic.** [Higher-order logic](/K40YJX8K1G/) adds relations of relations and so on through the finite types. [Frege's theorem and Hume's principle](/J36EHBHF6J/) derive the Peano axioms in second-order logic from one principle about the numbers of concepts.
-3. **Monadic second-order logic.** [Monadic second-order logic](/3WHQFSHR58/) quantifies only over sets. On words it defines exactly the regular languages, and on graphs it expresses connectivity, bipartiteness and 3-colourability.
+3. **Monadic second-order logic.** [Monadic second-order logic](/3WHQFSHR58/) quantifies only over sets. On words it defines exactly the regular languages, and on graphs it expresses connectivity, bipartiteness and 3-colorability.
 4. **Branching, independence and dependence.** The [branching quantifier](/KMNVEGS34N/), [independence-friendly logic](/DPMKT2KRB8/) and [dependence logic](/DNAPTJ98WD/) change which variables an existential choice may depend on. Each has the power of existential second-order logic.
 5. **Generalized and plural quantifiers.** A [generalized quantifier](/MFV98WTF4G/) is any isomorphism-closed class of structures, such as "infinitely many" or "most". [Plural quantification](/DZVEFDYYZX/) reads set variables as "some things" and so avoids sets.
 

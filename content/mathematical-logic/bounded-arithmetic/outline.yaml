@@ -5,7 +5,8 @@ groups:
       Bounded arithmetic restricts induction to formulas in which every quantifier is bounded by a term.
       The first entry defines $\mathsf{I}\Delta_0$ and Buss's theories $S^i_2$ and $T^i_2$. The sets
       definable by bounded formulas are exactly those in the linear-time hierarchy, and Parikh's theorem
-      bounds the witnesses of every $\forall \exists$ theorem of $\mathsf{I}\Delta_0$ by a polynomial.
+      bounds the witnesses of every $\forall \exists$ theorem of $\mathsf{I}\Delta_0$ with a bounded matrix
+      by a polynomial.
     entries:
       - A2CFPP8JMN
       - FYGWNXETVJ

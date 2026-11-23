@@ -16,7 +16,7 @@
 
 9. • In the language $\set{+, -, \cdot, 0, 1}$ of rings, write a formula $d(x, y)$ that says "$x$ divides $y$", a sentence that says the ring has characteristic $3$, and a sentence that says every element is a square. Explain why your second sentence is correct.
 
-10. • Suppose every function symbol of the signature is binary. Prove by induction on terms that every term has exactly one more occurrence of variables and constants than of function symbols.
+10. • Suppose every function symbol of the signature other than the constants is binary. Prove by induction on terms that every term has exactly one more occurrence of variables and constant symbols than of binary function symbols.
 
 11. • Let $\varphi$ be $\exists y \, (x < y)$. Replace $x$ by $y$ in $\varphi$ without checking [substitution](/NCDZ969V7X/) conditions, and show that $\forall x \, \varphi$ is true in $(\N, <)$ while the result is false there. Then give the correct $\varphi[y/x]$.
 

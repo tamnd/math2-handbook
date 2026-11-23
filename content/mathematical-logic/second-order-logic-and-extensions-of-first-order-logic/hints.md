@@ -14,7 +14,7 @@
 
 13. Each finite subset of $\set{\mathrm{Fin}} \cup \set{\lambda_n : n \ge 2}$ has a finite full model, and full models are Henkin models. Henkin compactness gives an infinite Henkin model. Its $D_2$ contains the graph of no injective function that misses a point.
 
-18. For the converse, take a longest path inside the set. Its last vertex has a second neighbour in the set besides its predecessor, and by maximality that neighbour lies on the path, which closes a cycle. The forests satisfy the negation of $\exists X\, (\exists x\, X(x) \land \forall x\, (X(x) \to \exists y\, \exists z\, (y \neq z \land X(y) \land X(z) \land E(x, y) \land E(x, z))))$.
+18. For the converse, take a longest path inside the set. Its last vertex has a second neighbor in the set besides its predecessor, and by maximality that neighbor lies on the path, which closes a cycle. The forests satisfy the negation of $\exists X\, (\exists x\, X(x) \land \forall x\, (X(x) \to \exists y\, \exists z\, (y \neq z \land X(y) \land X(z) \land E(x, y) \land E(x, z))))$.
 
 20. $\forall x_1\, \exists y_1\, \forall x_2\, \exists y_2\, (=\!(x_2, y_2) \land \varphi)$, with $\varphi$ the same matrix. On $\set{1, 2, 3, 4}$ choose $y_i = f(x_i)$ with $f$ the involution that swaps $1, 2$ and swaps $3, 4$.
 

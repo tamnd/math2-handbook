@@ -6,13 +6,13 @@
 
 4. ◦ What bound on the size of the model does the [Henkin construction](/RY8KRKR097/) give when $L$ has (a) three symbols, (b) $\aleph_1$ constant symbols? Can the model it builds be smaller than the bound? Give an example.
 
-5. ◦ Write the sentence $\lambda_3$, which is true exactly in the structures with at least three elements. Then give a set of sentences whose models are exactly the infinite structures.
+5. ◦ The [compactness theorem](/1NR3HAWG9D/) writes $\lambda_n$ for the sentence "there are at least $n$ elements". Write a sentence, with quantifiers and $=$, that is true exactly in the structures with exactly two elements. Then, for a unary relation symbol $P$, give a set of sentences whose models are exactly the structures in which $P$ holds of infinitely many elements.
 
 6. ◦ For each set, say whether every finite subset has a model and whether the whole set has one. (a) $\set{\lambda_n : n \ge 2} \cup \set{\forall x\, \forall y\, (x = y)}$. (b) $\set{c_i \neq c_j : i < j}$, with constants $c_0, c_1, \ldots$. (c) $\set{\neg \lambda_n : n \ge 2}$. (d) $\set{\lambda_n : n \ge 2} \cup \set{\forall x\, \forall y\, (P(x) \to P(y))}$, with $P$ unary.
 
 7. ◦ Let $T$ be a complete, consistent, [recursively axiomatizable theory](/3ANXZC3BEG/) in a countable language. Describe an algorithm that decides, for each sentence $\sigma$, whether $T \vdash \sigma$. Where does the algorithm use completeness, and where consistency?
 
-8. ◦ Find an interpolant, in the sense of the [Craig interpolation theorem](/E2CBFNAVZY/), for $\forall x\, (P(x) \to Q(x)) \wedge P(c) \models Q(c) \vee R(c)$.
+8. ◦ Find an interpolant, in the sense of the [Craig interpolation theorem](/E2CBFNAVZY/), for $\forall x\, (P(x) \to Q(x)) \wedge \neg Q(c) \models \neg P(c) \vee R(c)$.
 
 9. ◦ In each sentence, which sense of "complete" is meant? (a) "First-order logic is complete." (b) "The theory of dense linear orders without endpoints is complete." (c) "Peano arithmetic is incomplete." State both definitions.
 

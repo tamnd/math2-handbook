@@ -1,4 +1,4 @@
-1. ◦ Apply the [cut rule](/DAMGTSY6VV/) where you can, and give the degree of each cut. (a) Premises $p \Rightarrow q$ and $q \Rightarrow r$, cut formula $q$. (b) Premises $\Rightarrow p \vee q, p$ and $p, r \Rightarrow s$, cut formula $p$. In each case say whether the context-sharing form also applies to the premises as given.
+1. ◦ Apply the [cut rule](/HGVMPZ2DXA/) where you can, and give the degree of each cut. (a) Premises $p \Rightarrow q \to r$ and $q \to r, s \Rightarrow t$, cut formula $q \to r$. (b) Premises $\Rightarrow p \vee q, p$ and $p, r \Rightarrow s$, cut formula $p$. In each case say whether the context-sharing form also applies to the premises as given.
 
 2. ◦ List the distinct subformulas of $(p \to q) \to (\neg q \to \neg p)$, first with $\neg$ as a primitive connective, then with $\neg A$ read as $A \to \bot$. By the [subformula property](/Z2NXKDK06G/), which formulas can occur in a cut-free derivation of $\Rightarrow (p \to q) \to (\neg q \to \neg p)$?
 
@@ -26,7 +26,7 @@
 
 14. • Derive $\Rightarrow (p \to q) \vee (q \to p)$ in HLC, naming every rule. Which rule of HLC is not in HLJ, and where is it used?
 
-15. • In the [labelled sequent calculus](/VW8XP95XCB/) G3KB, with the rule Sym for symmetry, derive $\Rightarrow x : p \to \Box \Diamond p$. Then give a Kripke model that shows that the formula is not valid on all frames.
+15. • In the [labeled sequent calculus](/VW8XP95XCB/) G3KB, with the rule Sym for symmetry, derive $\Rightarrow x : p \to \Box \Diamond p$. Then give a Kripke model that shows that the formula is not valid on all frames.
 
 16. • Derive $\Rightarrow x : \Box p \to \Diamond p$ in G3KD, the calculus with the rule Ser for seriality.
 
@@ -48,6 +48,6 @@
 
 25. ★ Show that the normal, fully expanded derivations of $(p \to p) \to (p \to p)$ correspond to the terms $\lambda f.\, \lambda x.\, f^n x$ with $n \ge 0$. Conclude that this formula has infinitely many distinct proofs under the normalization criterion.
 
-26. ★ Show by induction on $A$ that general contraction, from $A \vee A$ to $A$, is derivable in SKS from atomic contraction, medial and the equations, for every formula $A$ built from atoms, negated atoms, units, $\wedge$ and $\vee$.
+26. ★ Show by induction on $A$ that general cut, from $A \wedge \bar{A}$ to $\mathsf{f}$, is derivable in SKS from atomic cut $\mathsf{ai}{\uparrow}$, switch and the equations, for every formula $A$ built from atoms, negated atoms, units, $\wedge$ and $\vee$. Here $\bar{A}$ is the negation of $A$ by the De Morgan laws.
 
 27. ★ Show that if G3ip derives $\Rightarrow A \vee B$, then it derives $\Rightarrow A$ or $\Rightarrow B$. Use this to show that G3ip does not derive $\Rightarrow \neg p \vee \neg \neg p$, although HLC does.

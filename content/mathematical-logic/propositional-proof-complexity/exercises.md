@@ -12,7 +12,7 @@
 
 7. ◦ With the convention of [bounded-depth Frege](/41QJ1WEMJ3/), in which literals have depth $0$, find the depth of $(x_1 \wedge x_2) \vee \neg\bigl(x_3 \vee (x_4 \wedge x_5)\bigr)$. What is the depth of a CNF with at least two clauses, each of at least two literals?
 
-8. ◦ Each argument has an error. Find it. (a) "By Haken's theorem resolution is not polynomially bounded, so by the [Cook–Reckhow theorem](/YS1T29B00B/), $\mathrm{NP} \ne \mathrm{coNP}$." (b) "Every $\tau_n$ in a family has a Frege proof with $n$ lines, so Frege systems prove the family in polynomial size." (c) "Cutting planes p-simulates resolution, and the pigeonhole formulas need exponential-size resolution refutations, so they also need exponential-size cutting-planes refutations."
+8. ◦ Each argument has an error. Find it. (a) "By Haken's theorem resolution is not polynomially bounded, so by the [Cook-Reckhow theorem](/YS1T29B00B/), $\mathrm{NP} \ne \mathrm{coNP}$." (b) "Every $\tau_n$ in a family has a Frege proof with $n$ lines, so Frege systems prove the family in polynomial size." (c) "Cutting planes p-simulates resolution, and the pigeonhole formulas need exponential-size resolution refutations, so they also need exponential-size cutting-planes refutations."
 
 9. ◦ Apply the division rule of cutting planes to each line with the largest possible divisor $c \ge 2$, or say why the rule does not apply. (a) $2x + 4y - 6z \ge 1$. (b) $3x + 6y \ge 2$. (c) $2x + 3y \ge 1$. (d) $4x - 2y \ge -1$.
 
@@ -20,7 +20,7 @@
 
 11. • Let $F_n$ be the CNF whose clauses are all $2^n$ clauses that contain each of the variables $x_1, \dots, x_n$ exactly once, positive or negative. Prove that the least size of a resolution refutation of $F_n$, tree-like or not, is exactly $2^{n+1} - 1$ clauses.
 
-12. • Show that $\mathrm{PHP}^3_2$ has a resolution refutation of width $2$, and deduce that $w(\mathrm{PHP}^3_2 \vdash \square) = w(\mathrm{PHP}^3_2) = 2$. How many clauses does your refutation have?
+12. • Show that deleting any one of the nine clauses of $\mathrm{PHP}^3_2$ leaves a satisfiable CNF, and deduce that every resolution refutation of $\mathrm{PHP}^3_2$ has at least $17$ clauses. Compare with the width-$2$ refutation in the [pigeonhole formulas](/RJ571F7FF0/) entry.
 
 13. • Let $G$ be a finite graph that need not be connected. Show that $T(G, \chi)$ is unsatisfiable if and only if some connected component of $G$ has odd total charge. Give an example in which the total charge is even and the formula is unsatisfiable.
 
@@ -36,13 +36,13 @@
 
 19. • Take the triangle Tseitin formula with charge $(1, 0, 0)$ and its six clauses, as in the [Tseitin formulas](/JXTCC6KXNG/) entry. Show that over $\F_2$ the sum of the six clause polynomials is $1$, so that all multipliers $g_i = 1$ give a Nullstellensatz refutation of degree $2$. Compute the same sum over $\Q$.
 
-20. • Let $A(p_1, p_2, q) = \set{q \vee p_1, \ \neg q \vee p_2}$ and $B(p_1, p_2) = \set{\neg p_1, \ \neg p_2}$. Give a resolution refutation of $A \wedge B$ with $7$ clauses, run the construction of [feasible interpolation](/59GJCM8C66/) for resolution on it with the general and with the monotone rule, and show that the circuit you get is the only interpolating function for this pair.
+20. • Let $A(p_1, p_2, q) = \set{q \vee p_1, \ \neg q \vee p_2}$ and $B(p_1, p_2, r) = \set{\neg p_1 \vee r, \ \neg p_2 \vee r, \ \neg r}$. Give a resolution refutation of $A \wedge B$ with $10$ clauses, run the construction of [feasible interpolation](/59GJCM8C66/) for resolution on it with the general and with the monotone rule, and show that the circuit you get is the only interpolating function for this pair.
 
 21. • Let $A(p, q)$ and $B(p, r)$ be CNFs with $A \wedge B$ unsatisfiable, and suppose that no variable of $p$ occurs negatively in $A$. Show that the set $U = \set{a : A(a, q) \text{ is satisfiable}}$ is closed upwards in the order of $\set{0,1}^{\abs{p}}$, and that the indicator function of $U$ is a monotone interpolating function. Explain why this does not prove monotone feasible interpolation.
 
 22. • Treat the [truth-table system](/67MYPBSHCJ/) as a refutation system: a refutation of a CNF $F$ in $N$ variables is $F \# 1^{2^N}$. Show that resolution p-simulates it and that it does not p-simulate resolution.
 
-23. ★ Let $L$ be a nonempty set of strings. Call a polynomial-time function onto $L$ a proof system for $L$. Prove that $L$ has a polynomially bounded proof system if and only if $L \in \mathrm{NP}$, and deduce the Cook–Reckhow theorem.
+23. ★ Let $L$ be a nonempty set of strings. Call a polynomial-time function onto $L$ a proof system for $L$. Prove that $L$ has a polynomially bounded proof system if and only if $L \in \mathrm{NP}$, and deduce the Cook-Reckhow theorem.
 
 24. ★ Prove part 1 of the size-width relation: if $F$ has a tree-like resolution refutation with at most $2^b$ clauses, then $F$ has a refutation of width at most $w(F) + b$.
 

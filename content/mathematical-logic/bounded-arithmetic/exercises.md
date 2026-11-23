@@ -1,4 +1,4 @@
-1. ◦ With $\abs{x} = \ceil{\log_2(x + 1)}$ and $x \mathbin{\#} y = 2^{\abs x \abs y}$, compute $\abs 0$, $\abs 5$, $\abs{1000}$, $\abs{1024}$, $5 \mathbin{\#} 6$, $12 \mathbin{\#} 3$ and $1000 \mathbin{\#} 1000$.
+1. ◦ With $\abs{x} = \ceil{\log_2(x + 1)}$ and $x \mathbin{\#} y = 2^{\abs x \abs y}$, compute $\abs 0$, $\abs 5$, $\abs{1000}$, $\abs{1024}$, $5 \mathbin{\#} 6$, $12 \mathbin{\#} 7$ and $1000 \mathbin{\#} 1000$.
 
 2. ◦ Classify each formula as $\Sigma^b_0$, $\Sigma^b_1$, $\Pi^b_1$ or not bounded, where the inner parts are open: (a) $(\exists y \le x)(y \cdot y = x)$; (b) $(\forall i \le \abs x)(i \cdot i \le x)$; (c) $(\forall y \le x)(\exists z \le \abs y)(z \cdot z = y)$; (d) $\exists y\, (y \cdot y = x)$.
 
@@ -8,7 +8,7 @@
 
 5. ◦ In dyadic notation with digits $1$ and $2$, the successor functions are $s_1(x) = 2x + 1$ and $s_2(x) = 2x + 2$. Write $10$ and $13$ in dyadic notation and as terms in $s_1$, $s_2$ and $0$, and compute the value of $13$ with its last dyadic digit removed.
 
-6. ◦ Write out the [Paris–Wilkie translation](/ZVD982MVST/) at $n = 2$ of (a) $(\forall x \le n)(\alpha(x) \vee \alpha(x + 1))$ and (b) $(\exists y \le n)(y + y = 3)$, with $p_i$ the variable for $\alpha(i)$.
+6. ◦ Write out the [Paris–Wilkie translation](/ZVD982MVST/) at $n = 2$ of (a) $(\forall x \le n)(\alpha(x) \vee \alpha(x + 1))$ and (b) $(\exists y \le n)(y \cdot y = n + 2)$, with $p_i$ the variable for $\alpha(i)$.
 
 7. ◦ Answer yes, no or open: (a) $S^1_2 \subseteq T^1_2$; (b) $T^1_2 \subseteq S^2_2$; (c) $S^1_2 = T^1_2$; (d) $S_2 = T_2$; (e) $S^0_2 = T^0_2$.
 
@@ -22,13 +22,13 @@
 
 12. • Let $\mathrm{Cert}(x, c)$ be a polynomial-time predicate saying that $c$ is a valid certificate of the primality of $x$. Suppose $S^1_2$ proves $\forall x\, (x > 1 \to (\exists y \le x)(1 < y < x \wedge y \mid x) \vee (\exists c \le t(x))\, \mathrm{Cert}(x, c))$ for a term $t$. Show that some polynomial-time algorithm finds a nontrivial factor of every composite number.
 
-13. • Write the conclusion of the [Krajíček–Pudlák–Takeuti theorem](/YP7KE8E6DC/) for $\forall x\, \exists y\, \forall z\, \varphi(x, y, z)$ with $k = 2$ rounds, and describe the corresponding student–teacher game. What does the case $k = 1$ say?
+13. • Let $\forall x\, \exists y\, \forall z\, \varphi(x, y, z)$, with $\varphi$ open, be a theorem of $\mathsf{PV}_1$. Write the conclusion of the [Krajíček–Pudlák–Takeuti theorem](/YP7KE8E6DC/) for it with $k = 2$ rounds, and describe the corresponding student–teacher game. Then show directly that this conclusion implies that $\forall x\, \exists y\, \forall z\, \varphi$ is true in $\N$.
 
 14. • Let $A(x) = (\forall u \le x)(\forall v \le x)(\neg(\alpha(u) \wedge u + v = x) \vee \alpha(v))$. Compute the Paris–Wilkie translation of $A$ at $x = 3$, simplify it, and decide whether it is a tautology.
 
 15. • The propositional pigeonhole formula $\mathrm{PHP}^m_n$ has a variable $p_{ij}$ for each pigeon $i < m$ and hole $j < n$, a clause saying that each pigeon is in some hole, and a clause saying that no two pigeons share a hole. Count the variables and clauses of $\mathrm{PHP}^4_3$ and of $\mathrm{PHP}^9_3$.
 
-16. • In the notation of [approximate counting](/65K2S22DGZ/), show that the set of odd numbers below $2^n$ satisfies $X \approx_0 2^{n-1}$.
+16. • In the notation of [approximate counting](/65K2S22DGZ/), show that the upper half $X = [2^{n-1}, 2^n)$ of the interval satisfies $X \approx_0 2^{n-1}$.
 
 17. ★ Show that for every term $t(x_1, \dots, x_k)$ of Buss's language there is a polynomial $p$ with $\abs{t(\vec x)} \le p(\abs{x_1}, \dots, \abs{x_k})$ for all $\vec x$.
 

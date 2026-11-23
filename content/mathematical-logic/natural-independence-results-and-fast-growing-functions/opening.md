@@ -8,18 +8,18 @@ These results share one feature, which is growth. Each statement says that some 
 
 The chapter is in six groups, read in order.
 
-1. **Termination games.** [Goodstein's theorem](/XQMNJF241J/), the [Kirby-Paris hydra](/C028FF4TWM/) and the [Buchholz hydra](/9APRFM0G7F/). Each process stops because each step lowers an ordinal.
-2. **Ramsey-type statements.** The [strengthened finite Ramsey theorem](/4P2BAT6YC3/), its unprovability in the [Paris-Harrington theorem](/509ZWA0R26/), and the [Kanamori-McAloon theorem](/NM5WYBK6BG/) on regressive colourings.
-3. **Trees and graphs.** [Friedman's finite form of Kruskal's theorem](/12XRGBWH59/), unprovable in $\mathsf{ATR}_0$, and the [finite graph minor theorem](/WXNTPQGJ38/), unprovable in $\Pi^1_1\text{-}\mathsf{CA}_0$.
-4. **Methods of proof.** [Indicators](/JWTZ8NVVGK/) detect cuts of a model by the size of a definable function, and [provably total functions](/Z742YPHPNS/) measure a theory by growth.
-5. **Hierarchies of functions.** The [fast-growing hierarchy](/R6ZC4BJGXV/), the [Hardy hierarchy](/X8RKXQASR9/) and the [slow-growing hierarchy](/VDF6R9EVJ2/).
-6. **Worms and the general picture.** [Beklemishev's worm principle](/MHDZGDNEPS/), which comes from provability logic, and the notion of [concrete incompleteness](/E2H655A7BS/) that gathers all these examples.
+1. **Goodstein's theorem and growth.** [Goodstein's theorem](/XQMNJF241J/), whose process stops because each step lowers an ordinal, and [provably total functions](/Z742YPHPNS/), which measure a theory by growth.
+2. **Hierarchies of functions.** The [fast-growing hierarchy](/R6ZC4BJGXV/), the [Hardy hierarchy](/X8RKXQASR9/) and the [slow-growing hierarchy](/VDF6R9EVJ2/).
+3. **Hydras and worms.** The [Kirby-Paris hydra](/C028FF4TWM/) and [Beklemishev's worm principle](/MHDZGDNEPS/), which comes from provability logic. Both stop for the same reason as Goodstein sequences.
+4. **Ramsey-type statements.** The [strengthened finite Ramsey theorem](/4P2BAT6YC3/), its unprovability in the [Paris-Harrington theorem](/509ZWA0R26/), the [indicators](/JWTZ8NVVGK/) that detect cuts of a model by the size of a definable function, and the [Kanamori-McAloon theorem](/NM5WYBK6BG/) on regressive colorings.
+5. **Beyond Peano arithmetic.** The [Buchholz hydra](/9APRFM0G7F/), [Friedman's finite form of Kruskal's theorem](/12XRGBWH59/), unprovable in $\mathsf{ATR}_0$, and the [finite graph minor theorem](/WXNTPQGJ38/), unprovable in $\Pi^1_1\text{-}\mathsf{CA}_0$.
+6. **The general picture.** The notion of [concrete incompleteness](/E2H655A7BS/) that gathers all these examples.
 
 ## A first reading
 
-For a first reading, take these entries in order: [Goodstein's theorem](/XQMNJF241J/), [Kirby-Paris hydra](/C028FF4TWM/), [strengthened finite Ramsey theorem](/4P2BAT6YC3/), [Paris-Harrington theorem](/509ZWA0R26/), [provably total function](/Z742YPHPNS/), [fast-growing hierarchy](/R6ZC4BJGXV/), [Hardy hierarchy](/X8RKXQASR9/) and [concrete incompleteness](/E2H655A7BS/). Goodstein's theorem and the hydra are the best place to see how an ordinal below $\varepsilon_0$ proves that a process stops. Compute a few steps by hand before reading the proofs.
+For a first reading, take these entries in order: [Goodstein's theorem](/XQMNJF241J/), [provably total function](/Z742YPHPNS/), [fast-growing hierarchy](/R6ZC4BJGXV/), [Hardy hierarchy](/X8RKXQASR9/), [Kirby-Paris hydra](/C028FF4TWM/), [strengthened finite Ramsey theorem](/4P2BAT6YC3/), [Paris-Harrington theorem](/509ZWA0R26/) and [concrete incompleteness](/E2H655A7BS/). Goodstein's theorem and the hydra are the best place to see how an ordinal below $\varepsilon_0$ proves that a process stops. Compute a few steps by hand before reading the proofs.
 
-The Buchholz hydra, the tree and graph statements, and the slow-growing hierarchy can wait. They need the large ordinals of the chapter on ordinal analysis and the subsystems of second-order arithmetic. Indicators are the original method of Paris and Harrington and are worth a second pass; the route through provably total functions is shorter to state.
+The slow-growing hierarchy, the worm principle and the whole group beyond Peano arithmetic can wait. The group beyond Peano arithmetic needs the large ordinals of the chapter on ordinal analysis and the subsystems of second-order arithmetic. Indicators are the original method of Paris and Harrington and are worth a second pass; the route through provably total functions is shorter to state.
 
 ## Before you start
 

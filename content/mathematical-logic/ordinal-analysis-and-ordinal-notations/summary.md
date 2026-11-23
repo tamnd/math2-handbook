@@ -20,8 +20,8 @@
 | $\mathrm{ATR}$ | $\Gamma_{\varepsilon_0}$ | [proof-theoretic ordinal](/C72RBH0CDR/) |
 | $\mathrm{ID}_1$, $\mathrm{KP}\omega$ | $\psi_0(\varepsilon_{\Omega + 1}) = \psi_0(\Omega_2)$ | [Bachmann–Howard ordinal](/QH3ENXFRSV/) |
 | $\mathrm{ID}_\nu$ | $\psi_0(\varepsilon_{\Omega_\nu + 1})$ | [iterated inductive definitions](/5VNT564Y2W/) |
-| $\Pi^1_1\text{-}\mathrm{CA}_0$, $\mathrm{ID}_{<\omega}$, $\Delta^1_2\text{-}\mathrm{CA}_0$ | $\psi_0(\Omega_\omega)$ | [Π¹₁ comprehension](/2MGJJTSRFD/) |
-| $\Pi^1_1\text{-}\mathrm{CA}$ | $\psi_0(\Omega_\omega \cdot \varepsilon_0)$ | [Π¹₁ comprehension](/2MGJJTSRFD/) |
+| $\Pi^1_1\text{-}\mathrm{CA}_0$, $\mathrm{ID}_{<\omega}$ | $\psi_0(\Omega_\omega)$ | [Π¹₁ comprehension](/2MGJJTSRFD/) |
+| $\Pi^1_1\text{-}\mathrm{CA}$ | larger than $\psi_0(\Omega_\omega)$ | [Π¹₁ comprehension](/2MGJJTSRFD/) |
 | $\Pi^1_1\text{-}\mathrm{CA} + \mathrm{BI}$, $\mathrm{ID}_\omega$ | $\psi_0(\varepsilon_{\Omega_\omega + 1})$ | [Takeuti–Feferman–Buchholz ordinal](/NZWRK062WQ/) |
 | $\mathrm{KPM}$ | a value of Rathjen's $\psi_\Omega$, built on a weakly Mahlo cardinal | [Rathjen's psi function](/M7D1HEJQVH/) |
 | full second-order arithmetic | not known | [ordinal analysis](/C5E5TG8PGP/) |

@@ -2,7 +2,7 @@
 
 2. ◦ In Heyting arithmetic, write $\neg B$ for $B \to \bot$. Write out the [A-translation](/6CCK0TT69P/) of $\forall x\, (x = 0 \vee \neg\, x = 0)$ for an arbitrary formula $A$.
 
-3. ◦ In [system T](/A4WR995XZP/), with $R_0\, a\, f\, 0 \rightsquigarrow a$ and $R_0\, a\, f\, (Sn) \rightsquigarrow f\, n\, (R_0\, a\, f\, n)$: (a) find the normal form of $R_0\, 0\, (\lambda k\, r.\, S(Sr))\, \bar 3$; (b) say which function $n \mapsto R_0\, 0\, (\lambda k\, r.\, S(Sr))\, n$ is; (c) give a term of the form $R_0\, a\, f$ for the predecessor function, with $0 \mapsto 0$.
+3. ◦ In [system T](/A4WR995XZP/), with $R_{\N}\, a\, f\, 0 \rightsquigarrow a$ and $R_{\N}\, a\, f\, (Sn) \rightsquigarrow f\, n\, (R_{\N}\, a\, f\, n)$: (a) find the normal form of $R_{\N}\, 0\, (\lambda k\, r.\, S(Sr))\, \bar 3$; (b) say which function $n \mapsto R_{\N}\, 0\, (\lambda k\, r.\, S(Sr))\, n$ is; (c) give a term of the form $R_{\N}\, a\, f$ for the predecessor function, with $0 \mapsto 0$.
 
 4. ◦ Let $\varphi(n, m, k)$ be quantifier-free. Write the [Dialectica interpretation](/HZ17ES9PDY/) $\exists x\, \forall y\, A_D(x, y)$ of $A = \forall n\, \exists m\, \forall k\, \varphi(n, m, k)$, naming the types of $x$ and $y$.
 
@@ -18,9 +18,9 @@
 
 10. • Show that the A-translation of an instance $\varphi(0) \wedge \forall x\, (\varphi(x) \to \varphi(Sx)) \to \forall x\, \varphi(x)$ of the induction schema is again an instance of the induction schema.
 
-11. • Write closed terms of system T for (a) the iteration functional $\mathrm{It}$ of type $(0 \to 0) \to 0 \to 0 \to 0$ with $\mathrm{It}\, f\, n\, x = f^n(x)$, (b) addition, and (c) the function $n \mapsto 2^n$, using only the recursor $R_0$.
+11. • Write closed terms of system T for (a) the iteration functional $\mathrm{It}$ of type $(\N \to \N) \to \N \to \N \to \N$ with $\mathrm{It}\, f\, n\, x = f^n(x)$, (b) addition, and (c) the function $n \mapsto 2^n$, using only the recursor $R_{\N}$.
 
-12. • Let $A_0(n) = n + 1$, $A_{m+1}(0) = A_m(1)$ and $A_{m+1}(n+1) = A_m(A_{m+1}(n))$. Show that $A_{m+1}(n) = A_m^{n+1}(1)$, and use it to write $m \mapsto A_m$ as a term $R_{0 \to 0}\, a\, f$ of system T. Then compute $A_1(n)$, $A_2(n)$, $A_3(n)$ in closed form and the value $A_3(2)$.
+12. • Let $A_0(n) = n + 1$, $A_{m+1}(0) = A_m(1)$ and $A_{m+1}(n+1) = A_m(A_{m+1}(n))$. Show that $A_{m+1}(n) = A_m^{n+1}(1)$, and use it to write $m \mapsto A_m$ as a term $R_{\N \to \N}\, a\, f$ of system T. Then compute $A_1(n)$, $A_2(n)$, $A_3(n)$ in closed form and the value $A_3(2)$.
 
 13. • Compute the Dialectica interpretation of $\forall n\, \exists m\, \varphi(n, m) \to \forall k\, \exists l\, \psi(k, l)$ for quantifier-free $\varphi$ and $\psi$. Then take $\psi(k, l) = \varphi(k + 1, l)$ and give explicit witnessing terms.
 

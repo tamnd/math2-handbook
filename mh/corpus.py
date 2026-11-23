@@ -190,10 +190,13 @@ class Corpus:
         # The list may be split into several sections `### heading: part` or `### heading, continued: part`, read
         # in order. An area whose list of sub-areas has no section of its own keeps it as the numbered list under
         # `### How to read the area`.
-        ms = list(re.finditer(r"^### " + re.escape(heading) + r"(?:(?::|, continued:)[^\n]*)?[ \t]*\n(.*?)(?=^#|\Z)", n.body,
+        ms = list(re.finditer(r"^### " + re.escape(heading) + r"(?:(?::|, continued:?)[^\n]*)?[ \t]*\n(.*?)(?=^#|\Z)", n.body,
                               re.S | re.M))
         if not ms and heading == "Sub-areas":
             ms = list(re.finditer(r"^### How to read the area[ \t]*\n(.*?)(?=^#|\Z)", n.body, re.S | re.M))
+        if not ms and heading == "Sub-areas":
+            # An area rewritten in textbook prose lists its sub-areas as its own reading order.
+            return self.listed(tag, "Reading order")
         out = []
         for m in ms:
             for line in m.group(1).split("\n"):

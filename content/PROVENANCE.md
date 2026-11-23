@@ -96,6 +96,22 @@ corrected on the site after its release v0.5.0, in [tamnd/math2#469](https://git
 edition prints the entries as they are in v0.5.0. The entries of Volumes 2 to 4 did not change between v0.4.0 and
 v0.5.0, so their books are those of edition 0.4.0.
 
+For edition 0.5.4 (November 2026, built from release v0.5.4 of the site), the site had rewritten the entries of
+chapters 2.1 to 2.19 of Volume 2, *Mathematical logic*, in textbook prose (releases v0.5.1 to v0.5.4), and had
+fixed many mathematical slips on the way. The learner pages of those nineteen chapters were revised, not written
+again: five writers each took a run of chapters, read the change of every entry since v0.5.0, and corrected the
+pages wherever they disagreed with a new entry or repeated a slip that the rewrite fixed. Exercises that had become
+worked examples of the new entries were replaced in the same band, and every number they touched was checked by
+script. The site's new reading order of chapter 2.12 (natural independence results) is followed by its outline,
+and the introduction of Volume 2 was revised to match. The builder learned to read an area whose sub-areas are
+listed as its reading order, and a list continued under a heading without a colon. `mh check` is clean for all
+four volumes. Four errors that the writers found in four entries (a decidable set where a primitive recursive one
+is needed, a pairing function that is not onto and leaves stages undefined, a link to the propositional Hilbert
+system in place of the predicate calculus, and a count of evaluations off by one) were corrected on the site after
+its release v0.5.4, in [tamnd/math2#482](https://github.com/tamnd/math2/pull/482); this edition prints the entries
+as they are in v0.5.4. All four volumes are built again, since entries of Volumes 1, 3 and 4 also changed (among
+them the corrections of tamnd/math2#465) and their cross-references follow the new numbering of Volume 2.
+
 ## Known limits
 
 - The history in the notes rests on the `### History` sections and the sources of the entries, and on general

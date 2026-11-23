@@ -38,7 +38,7 @@
 
 20. • Give a countermodel to each argument form, as in the entry on [formal fallacies](/T5BG7Y4J0T/): (a) from $\forall x\, (P(x) \to Q(x))$ and $\exists x\, Q(x)$, conclude $\exists x\, P(x)$; (b) from $\forall x\, (P(x) \to Q(x))$ and $\exists x\, \neg P(x)$, conclude $\exists x\, \neg Q(x)$.
 
-21. • On the island of [knights and knaves](/K17GT0KGZF/), $A$ says "$B$ is a knave" and $B$ says "$A$ and I are of the same type". Write each statement as a biconditional and find the types of $A$ and $B$.
+21. • On the [island of knights and knaves](/MVADXMFV59/), $A$ says "$B$ is a knave" and $B$ says "$A$ and I are of the same type". Write each statement as a biconditional and find the types of $A$ and $B$.
 
 22. • Prove that $\forall x \in \R\; \exists y \in \R\; (y > x^2)$ is true and that $\exists y \in \R\; \forall x \in \R\; (y > x^2)$ is false. Which rule about the [order of quantifiers](/0FYQMKFE77/) does the pair illustrate?
 

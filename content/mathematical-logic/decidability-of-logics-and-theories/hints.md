@@ -14,13 +14,13 @@
 
 8. (a) and (c) are first-order: for (c), no position with $b$ comes before a position with $a$. (b) needs monadic second-order logic: guess the set of even positions.
 
-9. Invalid. Take two elements: $M = \set{1, 2}$, $P = \set{1}$, $S = \set{2}$.
+9. (a) Invalid. One element is enough: $S = M = \set{1}$ and $P = \emptyset$. (b) Valid: a witness of "some $S$ are $M$" is in $M$, so it is not in $P$ by the first premise.
 
 10. A substructure of a model of a universal sentence is again a model. With no function or constant symbols, any one element forms a substructure.
 
 11. Such an $f$ would decide finite satisfiability: check the finitely many structures of size at most $f(\abs{\sigma})$ up to isomorphism.
 
-13. Irreflexivity and transitivity need three variables; totality and "no greatest element" need two. In a finite nonempty strict linear order the greatest element exists. So the three-variable fragment lacks the finite model property; in fact it is undecidable.
+13. Transitivity needs three variables; irreflexivity, totality and "no greatest element" need at most two. In a finite nonempty strict linear order the greatest element exists. So the three-variable fragment lacks the finite model property; in fact it is undecidable.
 
 14. (a) $D_3(x) \land 0 < x$. (b) Always true: one of $x+1$, $x+2$ is even. (c) $D_3(x + 1)$.
 
@@ -38,4 +38,4 @@
 
 24. Map $(a, b)$ to $a - b$. Equality becomes $a + b' = a' + b$, addition becomes pairwise addition, and quantifiers over $\Z$ become pairs of quantifiers over $\N$.
 
-25. The sentence "there are exactly $n$ elements" is first-order, and it fails in every member of $\mathcal C$ exactly when $n \notin S$. Seese's theorem says that a decidable theory forces bounded treewidth, not the converse.
+25. The sentence "there are exactly $n$ vertices" is first-order, and it fails in every member of $\mathcal C$ exactly when $n \notin S$. Seese's theorem says that a decidable theory forces bounded treewidth, not the converse; the converse holds for the class of all graphs of treewidth at most $k$, by Courcelle's theorem, but not for each of its subclasses.

@@ -1,6 +1,6 @@
 1. The translation is $\neg(\neg\neg \forall x\, \neg\neg\neg P(x) \wedge \neg\neg\neg Q)$. Since $\neg\neg\neg B \leftrightarrow \neg B$ and $\neg(\neg\neg X \wedge Y) \leftrightarrow \neg(X \wedge Y)$ intuitionistically, it is equivalent to $\neg(\forall x\, \neg P(x) \wedge \neg Q)$.
 
-3. (a) $\bar 6$. (b) $n \mapsto 2n$. (c) $R_0\, 0\, (\lambda k\, r.\, k)$, since $R_0\, 0\, (\lambda k\, r.\, k)\, (Sn) \rightsquigarrow n$.
+3. (a) $\bar 6$. (b) $n \mapsto 2n$. (c) $R_{\N}\, 0\, (\lambda k\, r.\, k)$, since $R_{\N}\, 0\, (\lambda k\, r.\, k)\, (Sn) \rightsquigarrow n$.
 
 7. (a) True: PA interprets it, and $\mathsf{PA} + \mathrm{Con}(\mathsf{PA})$ contains PA. (b) False: PA interprets $\mathsf{PA} + \neg\mathrm{Con}(\mathsf{PA})$, so by composing PA would interpret $\mathsf{PA} + \mathrm{Con}(\mathsf{PA})$. (c) True: compose the translations. (d) True: a proof of $\bot$ in $T$ translates to a proof of $\bot$ in $S$.
 
@@ -10,7 +10,7 @@
 
 13. The interpretation is $\exists U, Y\, \forall f, k\, \bigl(\varphi(Y f k, f(Y f k)) \to \psi(k, U f k)\bigr)$. For $\psi(k, l) = \varphi(k + 1, l)$ take $Y f k = k + 1$ and $U f k = f(k + 1)$.
 
-14. Put $n_0 = 0$ and $n_{i+1} = F(n_i)$, and take the first $n_i$ with $f(F(n_i)) \le f(n_i)$. If $n_0, \dots, n_c$ all fail, then $f(n_0) < f(n_1) < \cdots < f(n_{c+1})$ are $c + 2$ distinct values in $\set{0, \dots, c}$.
+14. Put $n_0 = 0$ and $n_{i+1} = F(n_i)$, and take the first $n_i$ with $f(F(n_i)) \le f(n_i)$. If $n_0, \dots, n_c$ all fail, then $f(n_0) < f(n_1) < \cdots < f(n_{c+1})$ are $c + 2$ distinct values in $\set{0, \dots, c}$. To stay within $c + 1$ evaluations, evaluate $f(n_0), f(n_1), \dots$ in turn, and answer $n_i$ as soon as $f(n_{i+1}) \le f(n_i)$ or $f(n_i) = c$. Until then the values strictly increase, so $f(n_i) \ge i$, and at the latest $f(n_c) = c$.
 
 15. If all $K$ candidates fail, $a$ increases by more than $\varepsilon$ on each of $K$ consecutive intervals, so by more than $K\varepsilon \ge c$ in total. Here $\tilde g(n) = 2n + 1$ and $K = 6$; the candidates are $0, 1, 3, 7, 15, 31$, so the largest is $31$.
 

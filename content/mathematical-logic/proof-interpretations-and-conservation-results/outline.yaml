@@ -33,7 +33,7 @@ groups:
   - title: Interpretations between theories and Herbrand analysis
     intro: >
       A relative interpretation translates one theory into another and so compares their strength. For
-      extensions $S$ and $T$ of Peano arithmetic, $S$ interprets $T$ exactly when every $\Pi_1$ theorem of
+      recursively axiomatized extensions $S$ and $T$ of Peano arithmetic, $S$ interprets $T$ exactly when every $\Pi_1$ theorem of
       $T$ is a theorem of $S$. Herbrand analysis reads
       primitive recursive witnesses off proofs in the fragment $\mathrm{I}\Sigma_1$, and gives a proof of
       Parsons's theorem.

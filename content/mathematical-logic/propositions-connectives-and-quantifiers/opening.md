@@ -13,7 +13,7 @@ The chapter is in eight groups, read in order.
 5. **An implication and its relatives.** The [converse and inverse](/09A3N7ZN5G/), the [contrapositive](/04T1CT7212/), and [necessary and sufficient conditions](/09BJQQB3VS/).
 6. **Rules of inference and fallacies.** [Modus ponens](/0Y0MQYST0M/), [modus tollens](/32AQPJQQAM/), [hypothetical syllogism](/7MT8CPCEM4/) and [disjunctive syllogism](/6EFJF9NAYX/), the [formal fallacies](/T5BG7Y4J0T/) that imitate them, and [vacuous truth](/0V4QXPGJQK/).
 7. **Predicates and quantifiers.** [Predicates](/0QHEWQD30B/), the [universal](/0GHS47PDAQ/), [existential](/0MSRQHCNN9/) and [uniqueness](/0QAJHFGZZJ/) quantifiers, the negation of [universal](/0P3A06QNDP/) and [existential](/05SZQKH75K/) statements, and the [order of quantifiers](/0FYQMKFE77/).
-8. **Putting statements into symbols.** [Translating into logical form](/WGZX7GV3PP/), and [knights and knaves](/K17GT0KGZF/) puzzles as an exercise in the biconditional.
+8. **Putting statements into symbols.** [Translating into logical form](/WGZX7GV3PP/), and the [island of knights and knaves](/MVADXMFV59/), whose puzzles are an exercise in the biconditional.
 
 ## A first reading
 

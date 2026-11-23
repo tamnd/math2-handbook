@@ -11,7 +11,7 @@ The chapter is in seven groups, read in order.
 3. **Normal forms and clauses.** [Conjunctive](/0B3D4C8YF2/) and [disjunctive normal form](/0GVDFAY4KW/), [clauses](/T3SXVH3ZZC/) as sets of literals, and [Horn clauses](/QR92EZDTKF/), whose satisfiability takes linear time.
 4. **Which connectives are enough.** [Functional completeness](/TDZVCWYJ9F/) and [Post's theorem](/WGBR7JHBV4/), which decides it by five tests.
 5. **The Hilbert system.** The [system L](/1MGMQX43B8/) with three axiom schemas and modus ponens, the [deduction theorem](/9X08XK5RV2/), [Peirce's law](/GMSZ75D5WE/), the [implicational calculus](/ZMVBAY7ZZD/), [single axioms](/644XCQAC8C/) and the [independence of axioms](/729RCBPAM3/).
-6. **Soundness, completeness and compactness.** [Soundness](/XD629S54CS/) and [completeness](/81ZNY1XKYJ/) say that L derives exactly the consequences. [Compactness](/4X9126SEMM/) follows, with [applications](/S7SW0CZZ9V/) to colourings, orders and matchings.
+6. **Soundness, completeness and compactness.** [Soundness](/XD629S54CS/) and [completeness](/81ZNY1XKYJ/) say that L derives exactly the consequences. [Compactness](/4X9126SEMM/) follows, with [applications](/S7SW0CZZ9V/) to colorings, orders and matchings.
 7. **Resolution and interpolation.** The [resolution](/ZDW6N1PGJ7/) rule, the [Tseitin transformation](/S367PDDP61/) that feeds it, and [Craig interpolation](/TRS2HY57EG/).
 
 ## A first reading

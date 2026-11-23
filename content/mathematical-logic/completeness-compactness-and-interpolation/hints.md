@@ -6,7 +6,7 @@
 
 6. (a) No finite subset containing $\lambda_2$ has a model, so neither does the whole set. (b) Yes and yes: any infinite set with distinct values for the $c_i$. (c) Yes and yes: a one-element structure. (d) Yes and yes: an infinite set with $P$ empty.
 
-8. $Q(c)$. Its symbols $Q$ and $c$ occur on both sides, the left side implies it, and it implies the right side.
+8. $\neg P(c)$. The shared symbols are $P$ and $c$ ($Q$ occurs only on the left and $R$ only on the right). The left side gives $P(c) \to Q(c)$ and $\neg Q(c)$, hence $\neg P(c)$, and $\neg P(c)$ implies the right side.
 
 12. $\Delta$ is closed under $\vdash$. Reflexivity, symmetry and transitivity of $=$ are derivable for variables, and the generalization theorem with axiom group 2 instantiates them with closed terms. For the last claim, instantiate the generalized group 6 axiom $\forall x\, \forall y\, (x = y \to (P(x) \to P(y)))$ with $s$ and $t$ and apply modus ponens twice.
 

@@ -8,7 +8,7 @@ Friedman published the [A-translation](/6CCK0TT69P/) in "Classically and intuiti
 
 Relative interpretations go back to the Beltrami–Klein models of non-Euclidean geometry. Tarski, Mostowski and Robinson made them a tool of logic in *Undecidable Theories* (1953). Feferman's "Arithmetization of metamathematics in a general setting" (1960) proved that PA interprets $\mathsf{PA} + \neg\mathrm{Con}(\mathsf{PA})$, and Orey and Hájek characterized [interpretability](/8H03GRMDYG/) between extensions of PA by $\Pi_1$ conservativity.
 
-Kreisel asked in the 1950s what more one knows when one has a proof of a theorem, and called the programme "unwinding proofs". Kohlenbach turned it into the systematic [proof mining](/XR1JXQG1CD/) of analysis with monotone functional interpretations, from the 1990s on. Tao used the same finitary form of convergence in ergodic theory, under the name metastability.
+Kreisel asked in the 1950s what more one knows when one has a proof of a theorem, and called the program "unwinding proofs". Kohlenbach turned it into the systematic [proof mining](/XR1JXQG1CD/) of analysis with monotone functional interpretations, from the 1990s on. Tao used the same finitary form of convergence in ergodic theory, under the name metastability.
 
 ## Further reading
 

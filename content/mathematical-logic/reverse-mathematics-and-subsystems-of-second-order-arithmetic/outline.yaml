@@ -26,12 +26,12 @@ groups:
     intro: >
       Ramsey's theorem for pairs implies none of the big five systems above $\mathsf{RCA}_0$ and is implied
       by $\mathsf{ACA}_0$. Many other principles from combinatorics sit between the main systems, and the
-      zoo collects what is known about them. Weak weak König's lemma, the system for measure theory, is one
-      of them.
+      zoo collects what is known about them. Weak weak König's lemma, the principle behind measure theory and
+      randomness, is one of them.
     entries:
       - ZT5KV6KJ3E
       - E3X5B175ZR
-      - KPHM3025GW
+      - BJQ77Y2QFX
   - title: Higher-order reverse mathematics
     intro: >
       Kohlenbach's version of the program works in the language of all finite types, so that functionals

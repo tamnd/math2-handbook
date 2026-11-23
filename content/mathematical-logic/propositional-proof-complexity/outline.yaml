@@ -3,7 +3,7 @@ groups:
   - title: Proof systems and the main question
     intro: >
       A propositional proof system is a polynomial-time function onto the tautologies, and its proofs are
-      compared by size and by p-simulation. The Cook–Reckhow theorem turns the question whether some system has
+      compared by size and by p-simulation. The Cook-Reckhow theorem turns the question whether some system has
       short proofs of every tautology into the question whether NP equals coNP.
     entries:
       - 1Q046J0AW2

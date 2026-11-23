@@ -14,7 +14,7 @@
 
 8. ◦ Over the alphabet $\set{a, b}$, words are structures with an order $<$ on positions and unary predicates $P_a, P_b$. Which of these languages are definable in first-order logic, and which only in monadic second-order logic? (a) words with at least two $a$'s; (b) words of even length; (c) $a^* b^*$. Use the [Büchi-Elgot-Trakhtenbrot theorem](/AK66XQ59Z3/) to check that all three are regular.
 
-9. • Use the decision procedure of the [monadic predicate calculus](/SERN6CRVWW/) to settle the syllogism "some $M$ are $P$; some $S$ are $M$; therefore some $S$ are $P$". If it is invalid, give a countermodel with as few elements as possible.
+9. • Use the decision procedure of the [monadic predicate calculus](/SERN6CRVWW/) to settle each syllogism: (a) "every $P$ is $M$; some $S$ are $M$; therefore some $S$ are $P$"; (b) "no $M$ are $P$; some $S$ are $M$; therefore some $S$ are not $P$". For one that is invalid, give a countermodel with as few elements as possible.
 
 10. • Let $\sigma = \forall x_1 \dots \forall x_n\, \psi$ with $\psi$ quantifier-free, in a signature with relation symbols and equality but no function or constant symbols. Show that $\sigma$ is satisfiable if and only if it has a model with one element.
 

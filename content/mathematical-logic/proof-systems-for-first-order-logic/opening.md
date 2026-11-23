@@ -9,7 +9,7 @@ The chapter is in four groups, read in order.
 1. **The Hilbert calculus.** The [Hilbert-style predicate calculus](/N95HV0VWSM/) has six groups of axioms and modus ponens. The [generalization theorem](/VKSK35Y52Z/) and the [deduction theorem](/8M9ZFDR4DH/) are its two working tools, and each has a condition on free variables.
 2. **Natural deduction and sequents.** [Natural deduction](/6KT3BJZ7D1/) has an introduction and an elimination rule for each symbol, with eigenvariable conditions on ${\forall}\mathrm{I}$ and ${\exists}\mathrm{E}$. [Fitch-style natural deduction](/2B6XC7XJA8/) writes the same proofs as nested boxes. The [sequent calculus](/W72CA3R9MP/) LK works on sequents $\Gamma \Rightarrow \Delta$, and every provable sequent has a proof without the cut rule.
 3. **Refutation methods.** [Semantic tableaux](/WGWBBVE8GX/) break a set of sentences into simpler pieces with the $\alpha, \beta, \gamma, \delta$ rules. An open branch of a finished tableau is a [Hintikka set](/RJNDEG07R1/), and every Hintikka set has a model. [First-order resolution](/DEB3CF4Z2D/) refutes a set of clauses with one rule and unification.
-4. **One logic, many calculi.** The [equivalence of proof systems](/A9AAHN4BMH/) proves that all these calculi derive the same sentences, and [rules for equality](/Y90Z13AXY8/) adds the symbol $=$ to each of them.
+4. **One logic, many calculi.** The [equivalence of proof systems](/A9AAHN4BMH/) proves that the Hilbert calculus, natural deduction, the sequent calculus and tableaux derive the same sentences, exactly the logical consequences, and [rules for equality](/Y90Z13AXY8/) adds the symbol $=$ to each of them.
 
 ## A first reading
 
