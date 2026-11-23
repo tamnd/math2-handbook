@@ -1,29 +1,27 @@
-1. $A = \begin{pmatrix} 0 & 1 \\ -2 & 3 \end{pmatrix}$, since $A_{ij} = B(e_i, e_j)$. Then $B((1, 1), (1, -1)) = (1, 1) A (1, -1)^T = -1 - 2 - 3 = -6$.
+1. $A = \begin{pmatrix} 3 & -1 \\ 2 & 5 \end{pmatrix}$. Then $B(u, v) = 2$ and $B(v, u) = 11$, so $B$ is not symmetric, as $A \ne A^{\mathsf{T}}$ already shows.
 
-2. (b) and (d) are bilinear; (d) is alternating. (a) fails because $B(0, 0) = 1 \ne 0$, and (c) is not linear in $x$.
+4. Congruence does not keep eigenvalues; it keeps the rank and the determinant up to a nonzero square, and here both determinants are $1$. The matrix $P = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$, with columns $(1, 0)$ and $(1, 1)$, gives $P^{\mathsf{T}} P = C$.
 
-4. The rank is $1$. The radical is the line spanned by $(2, -1)$: both rows of the matrix are multiples of $(1, 2)$.
+7. The form $a x^2 + b y^2$ with $a, b \ne 0$ is isotropic if and only if $-b/a$ is a square. Over $\F_5$, $-2 = 3$ is not a square (the squares are $1, 4$), so the form is anisotropic. Over $\F_{11}$, $-2 = 9 = 3^2$, and $(3, 1)$ gives $9 + 2 = 11 = 0$.
 
-5. $u = e_2$, $v = e_1$: $B(e_2, e_1) = A_{21} = 0$ but $B(e_1, e_2) = A_{12} = 1$. The form is neither symmetric nor alternating, so it is not reflexive, by the theorem on [reflexive forms](/M0G958M917/).
+12. Take $f_1 = (1, 1, 0)$, with $B(f_1, f_1) = 2$. Then $f_1^\perp$ is $y_1 + y_2 + 2y_3 = 0$; take $f_2 = (1, -1, 0)$, with $B(f_2, f_2) = -2$, and then $f_3 = (1, 1, -1)$, orthogonal to both, with $B(f_3, f_3) = -2$. The matrix is $\operatorname{diag}(2, -2, -2)$. Check: $\det A = 2$, $\det P = 2$, and $8 = 2^2 \cdot 2$.
 
-7. $M_1$, because $M_1^* = M_1$. Then $h(v, v) = v^T M_1 \bar v = 7$, a real number, as it must be.
+14. $u = e_1$ and $v = (2, -1)$ give $B_2(u, v) = 0$ and $B_2(v, u) = 2$. A reflexive form is symmetric or alternating. $B_c(e_1, e_1) = 1$ rules out alternating, and $B_c$ is symmetric only for $c = 0$. Answer: $c = 0$.
 
-9. Over $\R$, $I_2$ is positive definite while $H$ takes the value $-2$ at $(1, -1)$, and congruent matrices define the same set of values. Over $\mathbb F_2$, $H$ is alternating and $I_2$ is not, and $P^T H P$ is alternating for every $P$. Over $\C$ the columns $(1, i)/\sqrt 2$ and $(1, -i)/\sqrt 2$ of $P$ work.
+15. The matrix is $\begin{pmatrix} 3 & 3 & 5 \\ 3 & 5 & 9 \\ 5 & 9 & 17 \end{pmatrix} = V^{\mathsf{T}} V$, where $V$ is the Vandermonde matrix with rows $(1, a, a^2)$ for $a = 0, 1, 2$. So its determinant is $(\det V)^2 = 2^2 = 4 \ne 0$. For $B'$, $p$ is in the radical if and only if $p(0) = p(1) = 0$, so the radical is $\operatorname{span}(t^2 - t)$.
 
-10. $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ gives $P^T P = 2 I_2$. If $I_2$ and $3 I_2$ were congruent, $x^2 + y^2$ would take the value $3$ at a rational point. Clear denominators to get $m^2 + n^2 = 3 k^2$, and use that squares are $0$ or $1$ modulo $3$ for a descent.
+16. For $B_1$, $-\det = 1$ is a square, and $x^2 + 6xy + 8y^2 = (x + 2y)(x + 4y)$. The isotropic vectors $u = (2, -1)$ and $z = (4, -1)$ have $B_1(u, z) = -2$, so $v = -\tfrac{1}{2} z = (-2, \tfrac{1}{2})$ completes the pair. For $B_2$, $x^2 + 6xy + 7y^2 = (x + 3y)^2 - 2y^2$, which is $0$ only for $x = y = 0$, because $2$ is not a square in $\Q$.
 
-12. The radical is spanned by $w = (3, -2, 1)$. The basis $e_1, e_2, w$ works, since $B(e_1, e_2) = 1$ and $w$ is orthogonal to everything.
+19. The vectors orthogonal to $e_1$ and $e_2$ satisfy $x_2 + x_3 = 0$ and $-x_1 + 2x_3 + x_4 = 0$. Correcting $e_3$ and $e_4$ by multiples of $e_1, e_2$ gives the vectors $w_3 = (2, -1, 1, 0)$ and $w_4 = (1, 0, 0, 1)$ of that complement, with $B(w_3, w_4) = 2$. Take $u_2 = w_3$ and $v_2 = \tfrac{1}{2} w_4 = (\tfrac{1}{2}, 0, 0, \tfrac{1}{2})$. Check: the Pfaffian of $A$ is $2$, and $\det P = \tfrac{1}{2}$.
 
-13. Take $u_1 = e_1$, $v_1 = e_2$. Replace $e_3$ by $e_3 + B(e_2, e_3) e_1 - B(e_1, e_3) e_2 = (1, -2, 1, 0)$ and check that $e_4$ is already orthogonal to $u_1$ and $v_1$. Then $u_2 = (1, -2, 1, 0)$ and $v_2 = e_4$ satisfy $B(u_2, v_2) = 1$.
+21. The determinant is an invariant only up to nonzero squares, and $4 = 2^2 \cdot 1$. For $a \ne 0$ the plane $\langle a, -a \rangle$ is hyperbolic, so both forms are isometric to $H \perp H$. Explicitly, the columns $e_1, e_3, (0, \tfrac{3}{2}, 0, \tfrac{1}{2}), (0, \tfrac{1}{2}, 0, \tfrac{3}{2})$ carry $\operatorname{diag}(1, 1, -1, -1)$ to $\operatorname{diag}(1, -1, 2, -2)$.
 
-14. Apply Gram-Schmidt for $h$: $f_1 = e_1$ and $f_2 = e_2 - \frac{h(e_2, e_1)}{h(e_1, e_1)} e_1 = (i/2, 1)$. Then $h(f_1, f_1) = 2$ and $h(f_2, f_2) = 5/2$, both positive.
+22. (a) $\omega((1, 1, 0, 0), (0, 0, 1, -1)) = 1 - 1 = 0$ and $\dim L = 2$. One answer is $L' = \operatorname{span}(e_1, e_4)$. (b) Take an isotropic $W$ with $W \cap L = \{0\}$ of largest dimension $k$, and suppose $k < m$. Then $(W + L)^\perp = W^\perp \cap L$ has dimension $m - k$, so $W^\perp \cap (W + L) = W + (W^\perp \cap L)$ has dimension $m < 2m - k = \dim W^\perp$. A vector $v \in W^\perp$ outside $W + L$ makes $W + Fv$ isotropic with $(W + Fv) \cap L = \{0\}$, against the choice of $W$.
 
-16. Take $H_1 = \operatorname{span}(e_1, e_3)$ and $H_2 = \operatorname{span}(e_2, e_4)$, with hyperbolic pairs $e_1 + e_3$, $\frac12 (e_1 - e_3)$ and $e_2 + e_4$, $\frac12 (e_2 - e_4)$, and the anisotropic line $\operatorname{span}(e_5)$. The Witt index is $2$.
+23. Every vector is isotropic, so the Lagrangian subspaces are the planes on which $\omega$ vanishes. Each of the $15$ nonzero vectors $u$ has $u^\perp$ of dimension $3$, which contains $u$ and $(8 - 2)/2 = 3$ such planes through $u$. Each plane has $3$ nonzero vectors, so there are $15 \cdot 3 / 3 = 15$ Lagrangian subspaces.
 
-17. Split $\R^n = V_+ \perp V_-$ with the form positive definite on $V_+$ ($\dim p$) and negative definite on $V_-$ ($\dim q$). A totally isotropic $W$ meets $V_+$ and $V_-$ only in $0$, so $\dim W \le \min(p, q)$. Pairs $e_i + f_i$ with $e_i \in V_+$, $f_i \in V_-$ of opposite squares give a totally isotropic subspace of dimension $\min(p, q)$.
+24. Let $V_+ = \operatorname{span}(e_1, \dots, e_p)$, on which $B$ is positive definite. A totally isotropic $W$ meets $V_+$ only in $0$, so $\dim W \le q$; in the same way $\dim W \le p$. The vectors $e_i + e_{p + i}$ for $i \le \min(p, q)$ span a totally isotropic subspace of dimension $\min(p, q)$, which is therefore maximal.
 
-18. On a line $\operatorname{span}(v)$, $\omega(v, v) = 0$, and in dimension $2$ the complement of a line is a line. For $\mathbb F_2^4$ the answer is $15$: a Lagrangian is a plane $\operatorname{span}(a, b)$ with $\omega(a, b) = 0$; count the pairs and divide by the $6$ ordered bases of each plane.
+25. $x - y = (0, -2, -2)$ has $B(x - y, x - y) = 4 - 4 = 0$. For $x + y = (2, 2, 2)$, $B(x + y, x + y) = 4$ and $B(x, x + y) = 2$, so $\tau_{x + y}(x) = -y$, and then $\tau_y(-y) = y$. The matrix is $\begin{pmatrix} 1 & -2 & 2 \\ 2 & -1 & 2 \\ 2 & -2 & 3 \end{pmatrix}$.
 
-19. $u = (1, i)$ and $v = \frac12 (1, -i)$ are isotropic with $B(u, v) = 1$. Pair the coordinates two at a time; for odd $n$ one line $\operatorname{span}(e_n)$ is left, and it is anisotropic.
-
-20. Let $e_1, \dots, e_m$ be a basis of $L$. Since $\omega$ is nondegenerate and $L^\perp = L$, there are $f_j$ with $\omega(e_i, f_j) = \delta_{ij}$. Replace $f_j$ by $f_j' = f_j - \sum_{k > j} \omega(f_j, f_k) e_k$ to make the $f_j'$ pairwise orthogonal; then $L' = \operatorname{span}(f_1', \dots, f_m')$ works in every characteristic.
+26. Take $u = (1, 1, 1)$, $a = (1, 1, 0)$ and $b = (0, 1, 1)$. Since $B(u, u) = 1 \ne 0$, $V = \operatorname{span}(u) \perp u^\perp$. In $H$ every vector has $B(v, v) = 2 v_1 v_2 = 0$, while $\langle 1 \rangle \perp \langle 1 \rangle$ has $B(e_1, e_1) = 1$, so they are not isometric. The theorem fails because the characteristic is $2$.

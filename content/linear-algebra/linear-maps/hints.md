@@ -1,25 +1,29 @@
-1. (a), (e) and (f) are linear. (b) sends $0$ to $(1, 0)$. (c) fails homogeneity: $T(2, 2) = (4, 0) \ne 2T(1, 1)$. (d) fails at $T(-1, 0) = (1, 0) \ne -T(1, 0)$.
+1. (a), (d) and (e) are linear. (b) is not, since $T(0) \ne 0$. (c) is not, since $T(-1, 0) \ne -T(1, 0)$. (f) is not, since $\det(2I) = 4 \ne 2 \det I$.
 
-4. The rank is $1$: the second row is twice the first. The kernel has basis $(1, 1, 0)$, $(-2, 0, 1)$, the image is spanned by $(1, 2)$, and $1 + 2 = 3$.
+4. $\ker T$ is spanned by $(1, 1, 1)$. The image is the plane $x + y + z = 0$: every column has coordinate sum $0$, and the rank is $2$.
 
-6. $T(e_1) = \frac12\big(T(1, 1) + T(1, -1)\big) = (2, 0)$ and $T(e_2) = \frac12\big(T(1, 1) - T(1, -1)\big) = (1, 1)$. So $T(x, y) = (2x + y, y)$, with matrix $\begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}$.
+5. (a) Injective. (b) Injective: if $p \ne 0$ then $p + p'$ has the same degree as $p$. (c) Not injective, since $\dim P_2 = 3 > 2$. (d) Not injective: $A (1, -2, 1)^T = 0$.
 
-7. No. The values on the basis $(1, 0)$, $(0, 1)$ fix $T$, and then $T(1, 1) = (1, 1) + (2, 0) = (3, 1) \ne (3, 2)$.
+6. (a) Rank $3$, nullity $2$. (b) Rank $1$, nullity $3$, the kernel being the symmetric matrices. (c) Rank $2$, nullity $2$. (d) Rank $2$, nullity $2$, since the third row is the sum of the first two.
 
-10. A polynomial with $p(0) = p(1) = 0$ is divisible by $x(x - 1)$, so $\ker T$ has basis $x^2 - x$, $x^3 - x^2$. The image contains $T(1) = (1, 1)$ and $T(x) = (0, 1)$, so $T$ is onto. Then $2 + 2 = 4 = \dim P_3(\R)$.
+10. $\ker T$ has basis $(1, -1, 1, 0)$, $(-1, -1, 0, 1)$. The first two columns are the pivot columns, so $\operatorname{im} T$ has basis $(1, 0, 1)$, $(1, 1, 2)$ and equation $z = x + y$. Then $2 + 2 = 4$.
 
-15. One answer is $T(v) = v - \frac{x + y + z}{3}(1, 1, 1)$ for $v = (x, y, z)$, with matrix $I - \frac13 J$, where $J$ is the matrix of ones. Its values have coordinate sum $0$, it fixes the plane, and it kills $(1, 1, 1)$.
+11. $T(1) = (1, 0)$ and $T(x - 1) = (0, 1)$, so $T$ is surjective and the nullity is $4 - 2 = 2$. A basis of the kernel is $(x - 1)^2$, $x(x - 1)^2$: the kernel is the set of $p \in P_3$ divisible by $(x - 1)^2$.
 
-16. If $w = T(v)$, then $T(w) = T(T(v)) = 0$. So $\operatorname{rank} T \le \operatorname{nullity} T = n - \operatorname{rank} T$. For $n = 2$, take $T(x, y) = (y, 0)$.
+13. A subspace can avoid $e_1$, $e_2$, $e_3$ and still be nonzero. For $\begin{pmatrix} 1 & 1 & 0 \\ 1 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$ the columns are nonzero and $(1, -1, 0)$ is in the kernel.
 
-17. On $P_n(\R)$, $D$ kills the constants and its image is $P_{n-1}(\R)$, so it is neither injective nor surjective, and its rank is $n$. On $\R[x]$, $D$ is surjective (every polynomial has an antiderivative) but not injective. The theorem needs finite dimension.
+15. $T(T(v)) = 0$ puts $T(v)$ in $\ker T$, so $\operatorname{rank} T \le \dim \ker T = n - \operatorname{rank} T$. Example: $T(x_1, x_2, x_3, x_4) = (x_3, x_4, 0, 0)$.
 
-22. The image of $S \circ T$ is $S(\operatorname{im} T)$, which lies in $\operatorname{im} S$ and has dimension at most $\dim \operatorname{im} T$. For the lower bound, apply rank-nullity to $S$ restricted to $\operatorname{im} T$: its kernel lies in $\ker S$, so $\operatorname{rank}(S \circ T) \ge \operatorname{rank} T - (\dim V - \operatorname{rank} S)$.
+20. $T^2(x, y) = (y, -x - y)$ and $T^3(x, y) = (-x, -y)$. From $T \circ (-T^2) = -T^3 = \mathrm{id}$ and $(-T^2) \circ T = \mathrm{id}$.
 
-23. Choose a basis $u_{r+1}, \dots, u_n$ of $\ker T$ and extend it by $u_1, \dots, u_r$ to a basis of $V$. Then $T(u_1), \dots, T(u_r)$ are a basis of $\operatorname{im} T$; extend them to a basis of $W$.
+21. (a) $\C$-linear. (b) Antilinear. (c) $\R$-linear and neither: $T(i) = -i$, while $i T(1) = 3i$ and $-i T(1) = -3i$. (d) None: $(2z)^2 \ne 2 z^2$.
 
-24. Pick a basis containing a sequence $b_1, b_2, \dots$ of distinct vectors, and fix the other basis vectors. The map $b_k \mapsto b_{k+1}$ is injective and misses $b_1$; the map $b_1 \mapsto 0$, $b_{k+1} \mapsto b_k$ is surjective with $b_1$ in its kernel.
+23. $\operatorname{End}(V)$ has dimension $n^2$, so the $n^2 + 1$ maps $\mathrm{id}, T, T^2, \ldots, T^{n^2}$ are dependent.
 
-25. $\operatorname{End}(V)$ has dimension $n^2$, so the $n^2 + 1$ maps $\mathrm{id}, T, T^2, \dots, T^{n^2}$ are linearly dependent. A dependence relation is a nonzero polynomial in $T$ equal to $0$.
+24. Additivity gives $f(kv) = k f(v)$ for integers $k$, then $q f(\tfrac{p}{q} v) = f(pv) = p f(v)$. Over $\R$ the argument reaches only rational scalars, and a Hamel basis of $\R$ over $\Q$ gives additive maps $\R \to \R$ that are not $\R$-linear.
 
-26. Additivity gives $f(0) = 0$, $f(-v) = -f(v)$ and $f(kv) = kf(v)$ for integers $k$. For $q = k/l$, $l\,f(qv) = f(kv) = kf(v)$, so $f(qv) = qf(v)$.
+25. For $i \ne j$, $\varphi(E_{ij}) = \varphi(E_{ii} E_{ij}) = \varphi(E_{ij} E_{ii}) = \varphi(0) = 0$. Also $\varphi(E_{ii}) = \varphi(E_{ij} E_{ji}) = \varphi(E_{ji} E_{ij}) = \varphi(E_{jj})$. Take $c = \varphi(E_{11})$.
+
+26. Take a basis of $V$ whose first $k$ vectors are a basis of $U$. In this basis the condition says that the lower left $(n - k) \times k$ block of the matrix is $0$.
+
+27. All columns are multiples of one nonzero column $u$; let $w_j$ be the multiple for column $j$. Then $A^2 = u (w^T u) w^T$ and $w^T u = \operatorname{tr} A$. For the example, $A^2 = 4A$ and $\operatorname{tr} A = 4$.

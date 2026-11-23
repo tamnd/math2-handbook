@@ -2,9 +2,11 @@
 groups:
   - title: Vector spaces and their examples
     intro: >
-      A vector space is a set with an addition and a scalar multiplication over a field that obey eight axioms.
-      The first entry states them and tests them on examples and non-examples. The others are the spaces used
-      all through the volume: lists $F^n$, matrices, polynomials, and functions and sequences.
+      A vector space over a field $F$ is a set $V$ with an addition and a multiplication by scalars of $F$
+      that satisfy eight axioms. The first entry states them, shows what goes wrong when one of them fails, and
+      gives a space whose zero vector is the number $1$. The other four entries are the spaces used in the rest
+      of the volume: $F^n$, the matrices $M_{m \times n}(F)$, the polynomials $F[x]$ and $P_n$, and the
+      functions $F^S$ on a set $S$.
     entries:
       - 000AYPA9AJ
       - 713F6AM1X1
@@ -12,11 +14,12 @@ groups:
       - 0JGZCDT5DN
       - 0GZB2SN0PH
 
-  - title: Subspaces
+  - title: Subspaces and sums
     intro: >
-      A subspace is a subset that contains $0$ and is closed under the two operations. Intersections of
-      subspaces are subspaces, unions of two subspaces almost never are, and the sum $U + W$ is the smallest
-      subspace that contains both.
+      A subset $U$ of a vector space $V$ is a subspace exactly when it contains $0$ and is closed under
+      addition and under multiplication by scalars; these three conditions replace the eight axioms. Any
+      intersection of subspaces is a subspace. The union $U \cup W$ of two subspaces is a subspace only when
+      $U \subseteq W$ or $W \subseteq U$, and the sum $U + W$ is the smallest subspace containing both.
     entries:
       - 00YC1D652K
       - 0V33SPH7RR
@@ -24,9 +27,12 @@ groups:
 
   - title: Span and linear independence
     intro: >
-      Linear combinations are the only expressions that the operations of a vector space can build. The span of
-      a set is the collection of its combinations, a spanning set reaches every vector, and an independent family
-      has no nontrivial relation. In $F^m$ both questions reduce to pivots of a matrix.
+      Every expression that the two operations can build from $v_1, \ldots, v_k$ is a linear combination
+      $a_1 v_1 + \cdots + a_k v_k$. The span of a set $S$ is the set of all combinations of its elements, and it
+      is the smallest subspace containing $S$. A family is independent when the only combination equal to $0$
+      has all coefficients $0$. For $k$ vectors of $F^m$ placed as the columns of a matrix $A$, they span $F^m$
+      exactly when every row of an echelon form of $A$ has a pivot, and they are independent exactly when every
+      column has one. In particular $m + 1$ vectors of $F^m$ are always dependent.
     entries:
       - 0V8F3E48E6
       - 0DTY8B9HMS
@@ -36,8 +42,10 @@ groups:
 
   - title: Bases and coordinates
     intro: >
-      A basis is an independent spanning family, so every vector is a combination of it in exactly one way. The
-      coefficients form the coordinate vector, and with a basis of $n$ vectors the space becomes a copy of $F^n$.
+      A basis of $V$ is an independent family that spans $V$. Equivalently, every vector of $V$ is a
+      combination of the basis in exactly one way, and the coefficients are its coordinates. A basis
+      $(b_1, \ldots, b_n)$ gives a bijection $V \to F^n$ that respects sums and scalar multiples, so a space with a
+      basis of $n$ vectors computes like $F^n$.
     entries:
       - 0KCQ9Y3QKA
       - C5QA672NPH
@@ -45,9 +53,11 @@ groups:
 
   - title: Dimension
     intro: >
-      The [Steinitz exchange lemma](/08ZDRN6H41/) says that an independent list is never longer than a spanning
-      list. It follows that all bases of a space have the same size, the dimension. A space is
-      finite-dimensional when it has a finite spanning set.
+      The Steinitz exchange lemma states: if $V$ is spanned by $n$ vectors, then every independent family in
+      $V$ has at most $n$ vectors. Hence any two bases of a finitely spanned space have the same number of
+      elements, and this number is the dimension $\dim_F V$. The theorem also holds in infinite dimension, with
+      cardinals in place of numbers. The dimension depends on the field: $\dim_\C \C = 1$ and
+      $\dim_\R \C = 2$.
     entries:
       - 08ZDRN6H41
       - 0WK0Y8RH1M
@@ -56,20 +66,22 @@ groups:
 
   - title: Building bases
     intro: >
-      A spanning set can be thinned to a basis, and an independent set can be extended to one. In finite
-      dimension this is done one vector at a time; in general it needs Zorn's lemma, which gives a basis for every
-      vector space, for example a basis of $\R$ over $\Q$.
+      In a finite-dimensional space every spanning set contains a basis and every independent set extends to
+      a basis, one vector at a time; for columns of a matrix, the pivot columns of the original matrix form a
+      basis of the column space. With Zorn's lemma both statements hold in every vector space, so every vector
+      space has a basis. This uses the axiom of choice, and so does the existence of a basis of $\R$ over $\Q$.
     entries:
       - 06MRNP4BNT
       - 0M4SXE5WW3
       - 00MS9VMQ9Z
       - ZCBD0GRGVA
 
-  - title: Counting dimensions
+  - title: Counting with dimension
     intro: >
-      In a space of dimension $n$, a subspace has dimension at most $n$, and $n$ vectors form a basis as soon as
-      they are independent or as soon as they span. Grassmann's formula relates the dimensions of $U$, $W$, their
-      sum and their intersection.
+      Let $V$ have finite dimension $n$. A subspace $U$ has $\dim U \le n$, with equality only when $U = V$. A
+      family of exactly $n$ vectors is a basis as soon as it is independent, and as soon as it spans. For
+      finite-dimensional subspaces $U$ and $W$, Grassmann's formula
+      $\dim(U + W) + \dim(U \cap W) = \dim U + \dim W$ holds; the analogous formula for three subspaces is false.
     entries:
       - 0QW084460E
       - 096V7H13H9
@@ -77,9 +89,10 @@ groups:
 
   - title: Changing the field
     intro: >
-      The theory works over every field. Over a finite field with $q$ elements a space of dimension $n$ has $q^n$
-      vectors, and its bases can be counted. Between $\R$ and $\C$, a real space can be complexified and a complex
-      space can be viewed as a real space of twice the dimension.
+      Over the field $\F_q$ with $q$ elements, a space of dimension $n$ has $q^n$ vectors and
+      $(q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$ ordered bases. Between $\R$ and $\C$, a real space $V$ has a
+      complexification with $\dim_\C V_\C = \dim_\R V$, and a complex space $W$, viewed as a real space, has
+      $\dim_\R W = 2 \dim_\C W$.
     entries:
       - J9VE1X14PV
       - CT2F31EDH8

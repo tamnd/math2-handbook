@@ -1,25 +1,45 @@
-The matrix
-$$Q = \frac{1}{3} \begin{pmatrix} 2 & -1 & 2 \\ 2 & 2 & -1 \\ -1 & 2 & 2 \end{pmatrix}$$
-has orthonormal columns, so it keeps lengths and angles: it moves $\R^3$ as a rigid body about the origin. Its determinant is $1$, so it keeps orientation, and by Euler's rotation theorem it is a rotation about an axis. The axis is the line of fixed vectors, here the line through $(1, 1, 1)$, and the angle comes from the trace: $\operatorname{tr} Q = 2 = 1 + 2 \cos \theta$, so $\theta = \pi/3$. The same few facts describe the attitude of a satellite, the orientation of a camera in computer graphics and the symmetries of a molecule.
+Take the matrix
+$$Q = \frac{1}{3}\begin{pmatrix} 2 & 2 & 1 \\ -2 & 1 & 2 \\ 1 & -2 & 2 \end{pmatrix}.$$
+Its columns $\frac{1}{3}(2, -2, 1)$, $\frac{1}{3}(2, 1, -2)$ and $\frac{1}{3}(1, 2, 2)$ have length $1$, since $4 + 4 + 1 = 9$, and they are pairwise orthogonal: $4 - 2 - 2 = 0$, $2 - 4 + 2 = 0$ and $2 + 2 - 4 = 0$. These six facts say $Q^{\mathsf{T}}Q = I$, and they are enough to make $Q$ keep every length. For example, $Q(1, 1, 1) = \frac{1}{3}(5, 1, 1)$, and both vectors have squared length $3$.
 
-The chapter studies the maps that keep the inner product, the linear isometries, and the groups they form. Over $\R$ they are the orthogonal matrices, with $Q^{\mathsf{T}} Q = I$, which form the orthogonal group $O(n)$ and the rotation group $SO(n)$. Over $\C$ they are the unitary matrices, with $U^* U = I$, which form $U(n)$ and $SU(n)$. The group $SU(2)$ is the group of unit quaternions, and it [covers the rotations of space twice](/EAK8KT5AMD/): this is how quaternions describe rotations, and how spin enters quantum mechanics. Numerical linear algebra uses orthogonal matrices because they do not magnify errors; the Householder reflections of the chapter are the basic tool of the QR decomposition.
+So $Q$ moves space as a rigid body about the origin. Which motion is it? Its determinant is $1$, so it keeps orientation, and the vector $(1, 0, 1)$ is fixed: $Q(1, 0, 1) = (1, 0, 1)$. The motion is therefore a turn about the line through $(1, 0, 1)$. To find the angle, take $(1, 0, -1)$, which is perpendicular to the axis. It goes to $\frac{1}{3}(1, -4, -1)$, and the cosine of the angle between the two is $\frac{2/3}{2} = \frac{1}{3}$. The trace gives the same number without any vector, since $\tr Q = \frac{5}{3} = 1 + 2\cos\theta$. So $Q$ turns space by $\arccos\frac{1}{3} \approx 70.5$ degrees about the line through $(1, 0, 1)$.
+
+The matrix $-Q$ also keeps lengths, but its determinant is $-1$ and it fixes no nonzero vector. It turns about the same axis and then reflects in the plane perpendicular to it. So in space every length-preserving linear map is a rotation, or a rotation followed by a reflection, and three numbers from the matrix tell them apart: the determinant, the axis and the trace.
+
+This chapter studies such maps in every dimension. The linear maps that keep the norm are exactly those that keep the inner product, and they form groups. Over $\R$ these are the orthogonal group $O(n)$ of matrices with $Q^{\mathsf{T}}Q = I$ and its subgroup $SO(n)$ of rotations; over $\C$ they are the unitary group $U(n)$ and $SU(n)$. In the plane everything is a rotation or a reflection in a line, in space Euler's theorem gives every rotation an axis, and in general an orthogonal matrix splits into turns of perpendicular planes and signs $\pm 1$. Reflections generate the whole group.
 
 ## What the chapter covers
 
 The chapter is in five groups, read in order.
 
-1. **Linear isometries.** [Linear isometries](/07SJXTWVQW/) and the fact that [isometries preserve inner products](/0R7VXTYHYZ/), with the polarization identities and the linearity of distance-preserving maps that fix $0$.
-2. **Orthogonal matrices and their groups.** [Orthogonal matrices](/0W02QESPJQ/), the [orthogonal group](/WWK2E8BRGF/) $O(n)$ and the [special orthogonal group](/6WBVP2PB1Y/) $SO(n)$, with [determinant and eigenvalues](/QDZJMFATRW/) of an orthogonal matrix.
-3. **Unitary matrices and their groups.** [Unitary matrices](/0AR68JTMDT/), the [unitary group](/VW5H9XFNJB/) $U(n)$ and the [special unitary group](/ZRYYPHWESP/) $SU(n)$, including [$SU(2)$ as the unit quaternions](/A763JSEVW8/).
-4. **Rotations and reflections.** [Rotation matrices](/HNY4CPEEJA/), [reflections](/06BRDF3F0E/) and Householder matrices, the [classification of $O(2)$](/C97Z06HHB2/), and the [classification of $O(3)$ with Euler's rotation theorem](/2ZVG43GSKA/).
-5. **The structure of orthogonal maps.** The [normal form of an orthogonal matrix](/QTY3VMFGY1/), the [Cartan-Dieudonné theorem](/0VMWGYY35Q/) on products of reflections, and the [Cayley transform](/HKQ5YY027B/).
+1. **Linear isometries.** [Linear isometries](/07SJXTWVQW/), the theorem that [isometries preserve inner products](/0R7VXTYHYZ/), and [orthogonal matrices](/0W02QESPJQ/).
+2. **The orthogonal groups.** The [orthogonal group](/WWK2E8BRGF/) $O(n)$ and the [special orthogonal group](/6WBVP2PB1Y/) $SO(n)$.
+3. **The unitary groups.** [Unitary matrices](/0AR68JTMDT/), the [unitary group](/VW5H9XFNJB/) $U(n)$ and the [special unitary group](/ZRYYPHWESP/) $SU(n)$.
+4. **Rotations and reflections in low dimension.** [Rotation matrices](/HNY4CPEEJA/), [reflections](/06BRDF3F0E/) and Householder matrices, the [classification of the orthogonal group of the plane](/C97Z06HHB2/), and the [classification of $O(3)$ with Euler's rotation theorem](/2ZVG43GSKA/).
+5. **Orthogonal maps in every dimension.** The [normal form of an orthogonal matrix](/QTY3VMFGY1/), the [Cartan–Dieudonné theorem](/0VMWGYY35Q/) on products of reflections, and the [Cayley transform](/HKQ5YY027B/).
 
 ## A first reading
 
-Read these first, in order: [linear isometry](/07SJXTWVQW/), [isometries preserve inner products](/0R7VXTYHYZ/), [orthogonal matrix](/0W02QESPJQ/), [orthogonal group](/WWK2E8BRGF/), [special orthogonal group](/6WBVP2PB1Y/), [rotation matrix](/HNY4CPEEJA/), [reflection](/06BRDF3F0E/), [classification of $O(2)$](/C97Z06HHB2/) and [classification of $O(3)$](/2ZVG43GSKA/). This path gives the full picture of rigid motions of the plane and of space.
+A short course takes these entries in order.
 
-The unitary group can be read next, or later if only the real case matters. The normal form, the Cartan-Dieudonné theorem and the Cayley transform can wait for a second pass. The normal form follows quickly from the real normal form of the previous chapter, and the Cayley transform is mainly a tool for writing rotations with rational entries.
+- [Linear isometry](/07SJXTWVQW/).
+- [Isometries preserve inner products](/0R7VXTYHYZ/).
+- [Orthogonal matrix](/0W02QESPJQ/).
+- [Orthogonal group](/WWK2E8BRGF/) and [special orthogonal group](/6WBVP2PB1Y/).
+- [Rotation matrix](/HNY4CPEEJA/).
+- [Reflection](/06BRDF3F0E/).
+- [Classification of the orthogonal group of the plane](/C97Z06HHB2/).
+- [Classification of $O(3)$ and Euler's rotation theorem](/2ZVG43GSKA/).
+- [Normal form of an orthogonal matrix](/QTY3VMFGY1/).
+
+The unitary groups can be read next, or later if only the real case is needed. The [Cartan–Dieudonné theorem](/0VMWGYY35Q/) and the [Cayley transform](/HKQ5YY027B/) can wait for a second pass.
 
 ## Before you start
 
-You need [inner product spaces](/1D4JTZ9VS3/) with orthonormal bases, the [orthogonal complements and projections](/8GQVME4SZZ/) of an earlier chapter, and the adjoints and [spectral theorems](/3YM9EK6VMB/) of the previous chapter, in particular the [normal form of a real normal operator](/G6T1FNE3JC/). From earlier chapters you need [determinants](/DTBK11SR77/), [eigenvalues](/6R1D6QPY3S/) and [diagonalization](/Z6S6PWMJPH/). The group language, subgroups, normal subgroups, index and kernels, is in [groups](/BAZT8JJ70S/) and [homomorphisms](/E1506A5A55/).
+The chapter assumes the following.
+
+- [Inner product spaces](/1D4JTZ9VS3/): orthonormal bases and the norm of an inner product.
+- [Orthogonal complements, projections and least squares](/8GQVME4SZZ/): orthogonal complements and projections.
+- [Adjoints, normal operators and the spectral theorems](/3YM9EK6VMB/): the adjoint and the [normal form of a real normal operator](/G6T1FNE3JC/).
+- [Determinants](/DTBK11SR77/), [eigenvalues](/6R1D6QPY3S/) and [diagonalization](/Z6S6PWMJPH/).
+- [Groups](/BAZT8JJ70S/) and [homomorphisms](/E1506A5A55/): subgroups, normal subgroups, index and kernels.

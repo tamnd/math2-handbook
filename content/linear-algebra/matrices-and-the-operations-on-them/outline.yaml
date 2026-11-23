@@ -1,42 +1,52 @@
 # The order of chapter 3.3, matrices and the operations on them. Groups are read in order; entries in a group too.
 groups:
-  - title: Matrices and their sizes
+  - title: Matrices, sums and products
     intro: >
-      An $m \times n$ matrix is a rectangular array of $mn$ entries from a ring or field. The square matrices,
-      with $m = n$, include the zero matrix and the identity matrix $I_n$, which play the parts of $0$ and $1$.
+      A matrix is a rectangular array of entries from a ring. The group names the square matrices, the zero
+      matrix and the identity, and defines the sum of two matrices of the same size, the product of a matrix and
+      a column vector, and the product of an $m \times n$ and an $n \times p$ matrix. The key fact is the column
+      rule: for an $m \times n$ matrix $A$ with columns $a_1, \dots, a_n$ and a vector $x = (x_1, \dots, x_n)$,
+      the product is $Ax = x_1 a_1 + \dots + x_n a_n$, and column $j$ of $AB$ is $A$ times column $j$ of $B$.
+      The identity satisfies $I_m A = A = A I_n$ for every $m \times n$ matrix $A$.
     entries:
       - 0VD9ZSWWJG
       - 0JXZKX526R
-      - 4KY5AWGMW5
-      - 6NHZRCKJNW
-  - title: Sums and products
-    intro: >
-      Matrices of the same size add entry by entry. A matrix times a vector is a combination of its columns,
-      and the product $AB$, defined when $A$ has as many columns as $B$ has rows, has the entries
-      $\sum_k a_{ik} b_{kj}$. The product is associative but not commutative.
-    entries:
+      - 0ZTKJJDGR7
+      - 06DW9BAWB1
       - 0Y7H3SAVA1
       - 0PDVQEP0ZC
       - 032Q9FB8MT
+  - title: The laws of the product and the matrix ring
+    intro: >
+      The product obeys most of the laws of numbers, but not all. The main theorem is
+      [associativity](/073E4XC016/): for matrices $A$, $B$, $C$ over any ring $R$, of sizes $m \times n$,
+      $n \times p$ and $p \times q$, one has $(AB)C = A(BC)$, and no commutativity of $R$ is needed.
+      Commutativity fails for the matrices themselves as soon as $n \ge 2$, so the square matrices of order $n$
+      form the [matrix ring](/AB2MD5CD13/) $M_n(R)$, which is not commutative and has zero divisors. Its centre
+      consists of the scalar matrices $cI_n$ with $c$ in the centre of $R$.
+    entries:
       - 073E4XC016
       - 0P506SPZP2
-  - title: The matrix ring and its simplest members
-    intro: >
-      The $n \times n$ matrices over a ring $R$ form the matrix ring $M_n(R)$, which for $R \neq 0$ is not commutative when
-      $n \ge 2$. Inside it sit the scalar matrices $cI$, which commute with everything when $R$ is commutative, the diagonal matrices,
-      which multiply entry by entry on the diagonal, and the upper triangular matrices, which are closed under
-      products.
-    entries:
       - AB2MD5CD13
       - 067NKSBEWT
+  - title: Diagonal and triangular matrices
+    intro: >
+      Some shapes of square matrices are closed under the product, and they make computation easy. Diagonal
+      matrices multiply entry by entry. The main theorem is the triangular product rule: over any ring $R$, if
+      $A$ and $B$ are upper triangular $n \times n$ matrices, then $AB$ is upper triangular with
+      $(AB)_{ii} = a_{ii} b_{ii}$, and a strictly upper triangular $N$ satisfies $N^n = 0$. The same holds for
+      lower triangular matrices.
+    entries:
       - 044JNC7ZAA
       - 0N4XY7Z3NN
-  - title: Transpose and symmetry
+  - title: The transpose and the conjugate transpose
     intro: >
-      The transpose $A^{\mathsf T}$ swaps rows and columns, and it reverses products:
-      $(AB)^{\mathsf T} = B^{\mathsf T} A^{\mathsf T}$. Symmetric matrices satisfy $A^{\mathsf T} = A$ and
-      skew-symmetric ones $A^{\mathsf T} = -A$. Over $\C$ the conjugate transpose $A^*$ takes the place of the
-      transpose, and the Hermitian matrices, $A^* = A$, take the place of the symmetric ones.
+      The transpose turns rows into columns. The main theorem is the
+      [transpose of a product](/09GK5PS824/): over a commutative ring $R$, for an $m \times n$ matrix $A$ and an
+      $n \times p$ matrix $B$, one has $(AB)^{\mathsf{T}} = B^{\mathsf{T}} A^{\mathsf{T}}$. With it the group
+      studies the symmetric matrices ($A^{\mathsf{T}} = A$) and the skew-symmetric ones ($A^{\mathsf{T}} = -A$),
+      and then repeats the story over $\mathbb{C}$ with the conjugate transpose $A^*$, which satisfies
+      $(AB)^* = B^* A^*$ and defines the Hermitian matrices ($A^* = A$).
     entries:
       - 09DXWYRD43
       - 09GK5PS824
@@ -44,29 +54,35 @@ groups:
       - 0PBY4E9GQF
       - 0DXKE10PHF
       - 0P17NGQQMQ
-  - title: Blocks
+  - title: Block matrices
     intro: >
-      Cutting a matrix along rows and columns gives a block matrix, and block matrices multiply by the usual
-      rule with blocks in place of entries, as long as the cuts line up. A block diagonal matrix acts on each
-      block separately.
+      Cutting a matrix by full horizontal and vertical lines turns it into a matrix of smaller matrices, and the
+      product still works with blocks in place of entries. The main theorem is the block multiplication rule: if
+      the column cuts of $A$ match the row cuts of $B$, then $(AB)_{ik} = \sum_j A_{ij} B_{jk}$, with the order of
+      each product kept. For block diagonal matrices this means that sums, products, powers and inverses are
+      computed one block at a time.
     entries:
       - 0ASDFEQS6P
       - 001T5FJDC1
   - title: The trace
     intro: >
-      The trace of a square matrix is the sum of its diagonal entries. It is linear, and
-      $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ even when $AB$ and $BA$ have different sizes.
+      The trace is the sum of the diagonal entries, a linear function of a square matrix. Its main property is
+      the [cyclic property](/0Y4NF1DRKD/): over a commutative ring, for an $m \times n$ matrix $A$ and an
+      $n \times m$ matrix $B$, one has $\operatorname{tr}(AB) = \operatorname{tr}(BA)$. Over a field of
+      characteristic $0$ it follows that $AB - BA = I$ has no solution.
     entries:
       - 0XC1RDBY7A
       - 0Y4NF1DRKD
-  - title: Matrices defined by equations
+  - title: Powers, commuting matrices and matrix units
     intro: >
-      Some matrices are named by an equation they satisfy: nilpotent, $N^k = 0$; idempotent, $P^2 = P$;
-      involutory, $A^2 = I$. Commuting matrices satisfy $AB = BA$. The matrix units $E_{ij}$, with a single
-      $1$, are the building blocks of all matrices and the main tool for proofs about commuting.
+      Some square matrices are defined by one polynomial equation: $N^k = 0$ (nilpotent), $P^2 = P$ (idempotent)
+      and $A^2 = I$ (involutory). For a nilpotent $N$ with $N^k = 0$, the matrix $I - N$ is invertible with
+      inverse $I + N + \dots + N^{k-1}$. Pairs with $AB = BA$ over a commutative ring satisfy the binomial theorem
+      $(A + B)^m = \sum_k \binom{m}{k} A^k B^{m-k}$. The matrix units $E_{ij}$ form the standard basis of the
+      $m \times n$ matrices and multiply by the rule $E_{ij} E_{kl} = \delta_{jk} E_{il}$.
     entries:
       - 07BSPZPSMF
       - 0KCE8CG86P
       - NH2QE3671N
       - 8G3X8MPG7E
-      - 4H93XF4RVH
+      - A4HTT7JFD1

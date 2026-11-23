@@ -1,25 +1,29 @@
-1. $A$ is $2 \times 4$, $a_{23} = -1$ and $a_{14} = 4$. Only $AB$ is defined, and it is $2 \times 3$; $BA$ would need $3 = 2$.
+1. $AB = \begin{pmatrix} 7 & 2 \\ 3 & 1 \end{pmatrix}$ and $BA = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$. They differ in both diagonal entries.
 
-2. $AB = \begin{pmatrix} 7 & 2 \\ 3 & 1 \end{pmatrix}$ and $BA = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$, so $AB \neq BA$.
+2. $AB$ is $2 \times 4$; $BA$ is not defined; $ABC$ is $2 \times 2$; $CAB$ is $4 \times 4$; $BCA$ is $3 \times 3$; $A + C^{\mathsf{T}}$ is not defined, because $C^{\mathsf{T}}$ is $2 \times 4$.
 
-5. $AB = \begin{pmatrix} 1 & 7 \\ 2 & 3 \end{pmatrix}$ and $BA = \begin{pmatrix} 1 & 1 & 3 \\ 2 & 0 & 4 \\ 0 & 3 & 3 \end{pmatrix}$. The two products have different sizes, but both traces are $4$, as the [cyclic property of the trace](/0Y4NF1DRKD/) says.
+5. The left side is $E_{11} - E_{12}$ and the right side is $E_{11}$. Expanding gives $A^2 - AB + BA - B^2$, and the student cancelled $-AB + BA$, which needs $AB = BA$. Here $AB = E_{12}$ and $BA = 0$.
 
-7. $N^2$ has $1$ in positions $(1, 3)$ and $(2, 4)$, $N^3$ has a single $1$ in position $(1, 4)$, and $N^4 = 0$. So $N$ is nilpotent, and the least $k$ is $4$.
+8. $P^2 = P$, $N^2 = 0$ and $S^2 = I$. So $P$ is idempotent, $N$ is nilpotent and $S$ is involutory.
 
-8. $\begin{pmatrix} 1 & 2 \\ -i & 3 + i \end{pmatrix}$. The first matrix is Hermitian. The second is not: its diagonal entries are not real, and in fact it is symmetric.
+10. Write $X = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$; $XJ = JX$ reduces to $c = 0$ and $a = d$. So $X = aI + bN$ with $N = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$.
 
-10. Write $X = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ and compare $XJ$ with $JX$. The equations give $c = 0$ and $a = d$, so the answer is all matrices $\begin{pmatrix} a & b \\ 0 & a \end{pmatrix}$, that is, $aI + b(J - I)$.
+12. $S = \tfrac12 (A + A^{\mathsf{T}}) = \begin{pmatrix} 1 & 3 & 3 \\ 3 & 3 & 2 \\ 3 & 2 & 2 \end{pmatrix}$ and $K = \tfrac12 (A - A^{\mathsf{T}}) = \begin{pmatrix} 0 & 1 & -3 \\ -1 & 0 & -3 \\ 3 & 3 & 0 \end{pmatrix}$.
 
-16. $AE_{11}$ keeps the first column of $A$ and makes the rest $0$, and $E_{11}A$ keeps the first row. They agree exactly when $a_{1j} = 0$ and $a_{j1} = 0$ for all $j \neq 1$: the first row and the first column are $0$ off the diagonal.
+13. $N^2$ has $8$ in position $(1,3)$ and zeros elsewhere, and $N^3 = 0$. So $U^{-1} = I - N + N^2 = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$.
 
-18. $N^2$ has the single nonzero entry $8$ in position $(1, 3)$, and $N^3 = 0$. Expanding, $(I + N)(I - N + N^2) = I + N^3 = I$. So $U^{-1} = I - N + N^2 = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$.
+16. Write $t$ for the trace and $d = ad - bc$. Subtracting the identity of exercise 15 from $P^2 = P$ gives $(1 - t)P = -dI$, so an idempotent other than $0$ and $I$ has $t = 1$ and $d = 0$. The six of these are $E_{11}$, $E_{22}$, $\begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$, $\begin{pmatrix} 1 & 0 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}$ and $\begin{pmatrix} 0 & 0 \\ 1 & 1 \end{pmatrix}$.
 
-20. Let $A$ commute with all matrices. Then $AE_{ij} = E_{ij}A$. The left side has the $i$-th column of $A$ in column $j$ and zeros elsewhere; the right side has the $j$-th row of $A$ in row $i$ and zeros elsewhere. Comparing the entries gives $a_{ki} = 0$ for $k \neq i$ and $a_{ii} = a_{jj}$.
+19. The [binomial theorem for commuting matrices](/DS9TS6AFMW/) writes $(M + N)^{p+q-1}$ as a sum of multiples of $M^k N^{p+q-1-k}$; in each term $k \ge p$ or $p + q - 1 - k \ge q$. Both $E_{12}$ and $E_{21}$ square to $0$, but $(E_{12} + E_{21})^2 = I$, so no power of the sum is $0$.
 
-21. For the converse, suppose $A^2 = 0$, so that $(\operatorname{tr} A)\, A = (\det A)\, I$. If $A$ is not a scalar matrix, both coefficients must be $0$. If $A = cI$, then $A^2 = c^2 I = 0$ gives $c = 0$.
+20. Take $H = \tfrac12 (A + A^*)$ and $K = \tfrac{1}{2i} (A - A^*)$. This gives $H = \begin{pmatrix} 1 & 1 + i \\ 1 - i & 0 \end{pmatrix}$ and $K = \begin{pmatrix} 0 & 1 - i \\ 1 + i & 3 \end{pmatrix}$.
 
-22. Besides $0$ and $I$, an idempotent matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ has trace $1$ and determinant $0$ by the identity of the previous exercise, so $\set{a, d} = \set{0, 1}$ and $bc = 0$. This gives $3 + 3 = 6$ more, so $8$ in all: $\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, $\begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$, $\begin{pmatrix} 1 & 0 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$, $\begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}$ and $\begin{pmatrix} 0 & 0 \\ 1 & 1 \end{pmatrix}$.
+22. Write the commuting matrix as $X = (x_{ij})$. The product $XN$ shifts the columns of $X$ one place to the right, and $NX$ shifts its rows one place up. Equating them forces $X$ to be upper triangular with constant diagonals, which is $aI + bN + cN^2$.
 
-23. Every power of $A$ is symmetric. If $A^{2m} = 0$, then $\operatorname{tr}\big((A^m)^{\mathsf T} A^m\big) = \operatorname{tr}(A^{2m}) = 0$, so $A^m = 0$, since the trace of $C^{\mathsf T} C$ is the sum of the squares of the entries of $C$. Start from a power $2^j \ge k$ and halve the exponent $j$ times. The matrix $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ has square $0$.
+23. $C E_{ij}$ has column $j$ equal to column $i$ of $C$, and zeros elsewhere; $E_{ij} C$ has row $i$ equal to row $j$ of $C$, and zeros elsewhere. Comparing the two gives $c_{ki} = 0$ for $k \ne i$ and $c_{ii} = c_{jj}$.
 
-24. The only nonzero column of $XE_{ij}$ is column $j$, which is the $i$-th column of $X$. So its trace is the entry $x_{ji}$. All these are $0$.
+24. Over $\Q$ the trace of $AB - BA$ is $0$, while $\operatorname{tr} I = n \ne 0$. Over $\F_2$, $E_{12} E_{21} - E_{21} E_{12} = E_{11} - E_{22} = E_{11} + E_{22} = I$. The step that fails is $n \ne 0$, since $2 = 0$ in $\F_2$.
+
+25. For $i \ne j$, $E_{ij} = E_{ii} E_{ij}$ while $E_{ij} E_{ii} = 0$, so $f(E_{ij}) = 0$. Also $E_{ij} E_{ji} = E_{ii}$ and $E_{ji} E_{ij} = E_{jj}$, so all $f(E_{ii})$ are equal to one value $c$. Linearity gives $f(A) = c \sum_i a_{ii}$.
+
+26. For real symmetric $A$, $\operatorname{tr}(A^2) = \operatorname{tr}(A^{\mathsf{T}} A) = \sum_{i,j} a_{ij}^2$. If $A$ is nilpotent, so is $A^2$, and a nilpotent matrix has trace $0$. The matrix of exercise 21 is complex symmetric, nonzero and squares to $0$.

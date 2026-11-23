@@ -1,11 +1,15 @@
-# The order of chapter 3.1, overview and vectors in the plane and in space. Groups are read in order; entries in a group too.
+# Chapter 3.1, overview and vectors in the plane and in space: five groups, read in order.
 groups:
   - title: The subject and how it is taught
     intro: >
-      Four essays look at linear algebra as a whole. The overview gives the three views of the subject,
-      equations, matrices and linear maps, and a map of the later chapters. The other three describe how
-      courses are built, how the theory of eigenvalues can avoid determinants, and the errors students make
-      most often.
+      Four essays look at linear algebra as a whole before any proof. The overview says what the subject
+      studies: maps that send sums to sums and multiples to multiples, the system $Ax = b$, and the rank-nullity
+      theorem that ties them together. The second essay compares courses that start from matrices with courses
+      that start from abstract vector spaces. The third shows how the theory of eigenvalues can avoid
+      determinants, and its main result is precise: every linear operator on a nonzero finite-dimensional
+      complex vector space has an eigenvalue. The hypothesis on the field matters, since the quarter turn of
+      the real plane has none. The fourth lists the errors students make most often, so that they can be
+      watched for from the start.
     entries:
       - Y7PBW8VD4Q
       - 9AXCDDT1Z1
@@ -13,17 +17,25 @@ groups:
       - 79YPKR857M
   - title: Vectors and their length
     intro: >
-      A vector in the plane or in space is an arrow, or a list of its components. Vectors add tip to tail and
-      are stretched by numbers. The length $\norm{v} = \sqrt{v_1^2 + \cdots + v_n^2}$ is the Pythagorean
-      theorem in coordinates, and it gives distances and unit vectors.
+      Here the concrete work begins. A vector in $\R^n$ is a list of $n$ real numbers, drawn in the plane and
+      in space as an arrow that may be slid anywhere; vectors are added and scaled component by component, and
+      the arrow from $A$ to $B$ is $B - A$. The length $\norm{v} = \sqrt{v_1^2 + \cdots + v_n^2}$ is the
+      Pythagorean theorem in coordinates. For every $v \in \R^n$ and every real $c$ it satisfies
+      $\norm{v} \ge 0$, with equality only for $v = 0$, and $\norm{cv} = \abs{c}\,\norm{v}$, so every nonzero
+      vector has a unit vector $v / \norm{v}$ in its direction.
     entries:
       - 0QN3D80AWP
       - 0XKBKGTCPC
-  - title: The dot product
+  - title: The dot product, angles and projection
     intro: >
-      The dot product $u \cdot v = u_1 v_1 + \cdots + u_n v_n$ is also $\norm{u}\,\norm{v} \cos\theta$. From it come
-      the angle between two vectors, the test $u \cdot v = 0$ for perpendicular vectors, and the projection of one
-      vector on another.
+      The dot product $u \cdot v = u_1 v_1 + \cdots + u_n v_n$ gives the length back as
+      $\norm{v}^2 = v \cdot v$, and in the plane and in space it equals $\norm{u}\,\norm{v}\cos\theta$. For
+      nonzero $u, v \in \R^n$ the angle is defined by $\cos\theta = u \cdot v / (\norm{u}\,\norm{v})$, which is
+      possible because of the Cauchy-Schwarz inequality $\abs{u \cdot v} \le \norm{u}\,\norm{v}$. The main
+      test of the group holds for all $u, v \in \R^n$: $u$ and $v$ are perpendicular exactly when
+      $u \cdot v = 0$, where the zero vector counts as perpendicular to every vector. For $v \neq 0$ the
+      projection $\frac{u \cdot v}{v \cdot v}\, v$ is the only multiple of $v$ that leaves a remainder
+      perpendicular to $v$.
     entries:
       - 0S52TNNTH9
       - 0ZEHZY85E6
@@ -31,18 +43,28 @@ groups:
       - 0JW13B48YP
   - title: Products in space
     intro: >
-      In $\R^3$ there is a second product, the cross product $a \times b$: a vector perpendicular to $a$ and $b$
-      whose length is the area of their parallelogram. Combined with the dot product it gives the scalar triple
-      product, a signed volume, and the vector triple product, which has an expansion by dot products.
+      In $\R^3$, and only there among the spaces of this chapter, two vectors have a vector product. For
+      $a, b \in \R^3$ the cross product $a \times b$ is perpendicular to $a$ and to $b$, and its length
+      $\norm{a}\,\norm{b}\sin\theta$ is the area of the parallelogram on $a$ and $b$; it is $0$ exactly when
+      $a$ and $b$ are parallel. Combined with the dot product of the previous group it gives the scalar
+      triple product $a \cdot (b \times c)$, the determinant with rows $a$, $b$, $c$, whose absolute value is
+      the volume of the parallelepiped on $a$, $b$, $c$ and which vanishes exactly when the three vectors lie
+      in one plane through $0$. The group ends with the identity
+      $a \times (b \times c) = (a \cdot c)\, b - (a \cdot b)\, c$ for all $a, b, c \in \R^3$.
     entries:
       - 0N5N15HWZ7
       - 34VJYG6GVD
       - 03FTB26QYD
-  - title: Lines, planes, distances and proofs
+  - title: Lines, planes, distances and plane geometry
     intro: >
-      A line is $a + t d$ and a plane is $n \cdot (r - a) = 0$. Projections and cross products then give the
-      distances from a point to a plane or a line and between two lines. The last entry uses vectors to prove
-      theorems of plane geometry and to solve problems with forces and velocities.
+      The products now describe figures. A line in $\R^n$ is $\set{a + td : t \in \R}$ with $d \neq 0$, and a
+      plane in $\R^3$ is the set of points $r$ with $n \cdot r = d$ for a normal vector $n \neq 0$. Projection
+      and the cross product give the distances: from a point $q$ to the plane $n \cdot r = d$ it is
+      $\abs{n \cdot q - d} / \norm{n}$; from $q$ to the line $a + td$ it is
+      $\norm{(q - a) \times d} / \norm{d}$; and between the lines $a + td$ and $b + se$ with
+      $d \times e \neq 0$ it is $\abs{(b - a) \cdot (d \times e)} / \norm{d \times e}$. The last entry turns
+      theorems of plane geometry, such as the concurrence of the medians, into short calculations with sums
+      and multiples of vectors.
     entries:
       - 0399QFDFS8
       - 07SDJ5DNE4

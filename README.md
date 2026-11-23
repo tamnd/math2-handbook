@@ -4,25 +4,25 @@ The content of [math2.tamnd.com](https://math2.tamnd.com) as a set of books that
 first page to the last: one volume per area of the site, in PDF, EPUB and LaTeX.
 
 Each area of the site is a volume, each sub-area a chapter, and each page of a sub-area's reading order an entry
-with a fixed number (2.7.3 is the third entry of chapter 7 of Volume 2, *Mathematical logic*). The worked examples
-and counterexamples of an entry are printed with it, each in a box. Around the entries, the handbook adds the pages
+with a fixed number (2.7.3 is the third entry of chapter 7 of Volume 2, *Mathematical logic*). The proofs, worked
+examples and counterexamples of an entry are printed with it, each in a box. Around the entries, the handbook adds the pages
 a reference site does not need and a textbook does: an introduction to each volume, an opening, groups and a
 reading order for each chapter, summaries, exercises in three bands with hints, notes on history and further
 reading, a bibliography and an index.
 
-## Volumes in edition 0.3.1
+## Volumes in edition 0.4.0
 
 Built from [`tamnd/math2`](https://github.com/tamnd/math2) at the commit named in [`EDITION`](EDITION), the content
-of release v0.3.1. The edition number of the handbook follows the release of the site it is built from; a larger
+of release v0.4.0. The edition number of the handbook follows the release of the site it is built from; a larger
 fourth number would mark a new build of the same release. The books are on the
 [releases page](https://github.com/tamnd/math2-handbook/releases).
 
-| | Volume | Chapters | Entries | Worked examples | Learner pages |
-|---|---|---:|---:|---:|---|
-| 1 | Reasoning and proof | 14 | 180 | 398 | written |
-| 2 | Mathematical logic | 28 | 493 | 876 | written |
-| 3 | Linear algebra | 21 | 397 | 483 | written |
-| 4 | Model theory | 27 | 86 | 125 | written for chapters 4.1–4.7; openings for the other 20 |
+| | Volume | Chapters | Entries | Proofs | Worked examples | Learner pages |
+|---|---|---:|---:|---:|---:|---|
+| 1 | Reasoning and proof | 14 | 180 | 7 | 398 | written |
+| 2 | Mathematical logic | 28 | 493 | 142 | 876 | written |
+| 3 | Linear algebra | 21 | 398 | 197 | 493 | written |
+| 4 | Model theory | 27 | 126 | 45 | 178 | written for chapters 4.1–4.11; openings for the other 16 |
 
 The other areas of the site join as their reading orders are written.
 

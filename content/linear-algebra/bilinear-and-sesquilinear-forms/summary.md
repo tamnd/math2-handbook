@@ -1,30 +1,33 @@
 ## What to remember
 
-- A **bilinear form** on $V$ over $F$ is linear in each slot. In a basis $(e_i)$ its matrix is $A_{ij} = B(e_i, e_j)$, and $B(u, v) = x^T A y$ for the coordinate vectors $x$, $y$.
-- **Change of basis.** If the columns of $P$ are the new basis vectors in old coordinates, the new matrix is $P^T A P$. So rank is an invariant, and $\det A$ is an invariant up to a nonzero square factor. Matrices related in this way are **congruent**.
-- **Symmetric and alternating.** $B$ is symmetric when $A^T = A$, and alternating when $B(v, v) = 0$ for all $v$, that is, $A^T = -A$ with zero diagonal. Alternating forms are skew-symmetric; the converse holds when $\operatorname{char} F \ne 2$. A form is **reflexive** ($B(u, v) = 0 \Rightarrow B(v, u) = 0$) exactly when it is symmetric or alternating.
-- **Nondegenerate** means that the radical is $\{0\}$, or that $A$ is invertible, or that $u \mapsto B(u, \cdot)$ is an isomorphism $V \to V^*$. For a nondegenerate form, $\dim W + \dim W^\perp = \dim V$ for every subspace $W$, but $W \cap W^\perp$ may be nonzero.
-- A vector $v \ne 0$ is **isotropic** when $B(v, v) = 0$. A **hyperbolic plane** has a basis $(u, v)$ with matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; outside characteristic $2$, every nondegenerate plane containing an isotropic vector is hyperbolic.
-- A **sesquilinear form** is linear in the first slot and conjugate-linear in the second: $h(x, y) = x^T M \bar y$, and a change of basis gives $P^T M \bar P$. It is **Hermitian** when $h(v, u) = \overline{h(u, v)}$, equivalently $M^* = M$, equivalently $h(v, v) \in \R$ for all $v$.
-- **Alternating forms** have a symplectic basis: the matrix becomes $J \oplus \cdots \oplus J \oplus 0$ with $J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$. The rank is even and is a complete invariant. A symplectic space has even dimension $2m$, and its Lagrangian subspaces ($L^\perp = L$) have dimension $m$.
-- **Witt.** Outside characteristic $2$, a nondegenerate symmetric space is $H_1 \perp \cdots \perp H_m \perp V_{\mathrm{an}}$ with hyperbolic planes $H_i$ and anisotropic $V_{\mathrm{an}}$; the number $m$, the Witt index, is the dimension of every maximal totally isotropic subspace. By Witt's theorem every isometry between subspaces extends to an isometry of $V$.
+- A bilinear form on a space of finite dimension with basis $e_1, \dots, e_n$ is $B(u, v) = x^{\mathsf{T}} A y$ with $A_{ij} = B(e_i, e_j)$. If the columns of an invertible $P$ are a new basis, the new matrix is $P^{\mathsf{T}} A P$. Congruent matrices have the same rank, and their determinants differ by the nonzero square $(\det P)^2$.
+- $B$ is symmetric when $A^{\mathsf{T}} = A$ and alternating when $B(v, v) = 0$ for all $v$, that is, when $A^{\mathsf{T}} = -A$ and the diagonal of $A$ is zero. Alternating implies skew-symmetric in every characteristic; skew-symmetric implies alternating if and only if the characteristic is not $2$.
+- Over any field, $B$ is reflexive ($B(u, v) = 0 \Rightarrow B(v, u) = 0$) if and only if it is symmetric or alternating.
+- On a space $V$ of finite dimension, $B$ is nondegenerate if and only if $\det A \ne 0$, if and only if $u \mapsto B(u, \cdot)$ is an isomorphism $V \to V^*$. Then $\dim W + \dim W^\perp = \dim V$ for every subspace $W$, and $V = W \oplus W^\perp$ if and only if $B$ restricted to $W$ is nondegenerate.
+- When the characteristic is not $2$, every symmetric form has an orthogonal basis, and a nondegenerate symmetric plane is a hyperbolic plane if and only if it contains an isotropic vector, if and only if $-\det A$ is a square.
+- A sesquilinear form on a complex space is $h(x, y) = x^{\mathsf{T}} M \bar y$, and a change of basis gives $P^{\mathsf{T}} M \bar P$. It is Hermitian if and only if $M^* = M$, if and only if $h(v, v)$ is real for every $v$.
+- Every alternating form on a space of finite dimension, over any field, has a basis in which its matrix is $J \oplus \dots \oplus J \oplus 0_k$ with $J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$. Its rank is even and decides its congruence class. A symplectic space has even dimension $2m$, and its Lagrangian subspaces have dimension $m$.
+- Let the characteristic not be $2$ and $B$ be nondegenerate symmetric on a space of finite dimension. Then $V = H_1 \perp \dots \perp H_m \perp V_{\mathrm{an}}$ with hyperbolic planes $H_i$ and $V_{\mathrm{an}}$ anisotropic; $m$ is the dimension of every maximal totally isotropic subspace, and $V_{\mathrm{an}}$ is unique up to isometry. Every isometry between two subspaces extends to an isometry of $V$.
 
-## Kinds of forms compared
+## Three kinds of form
 
-| Kind | Matrix condition | Change of basis | Complete invariant |
+| | Symmetric bilinear | Alternating bilinear | Hermitian |
 |---|---|---|---|
-| [Bilinear](/0SQZMXB6GP/) | none | $P^T A P$ | none simple in general |
-| [Symmetric](/0AXZNE5XNH/) | $A^T = A$ | $P^T A P$ | depends on $F$; over $\C$ the rank, over $\R$ the signature |
-| [Alternating](/0DGDS5XY84/) | $A^T = -A$, zero diagonal | $P^T A P$ | the rank, which is even |
-| [Sesquilinear](/054YEQ0Y8M/) | none | $P^T M \bar P$ | none simple in general |
-| [Hermitian](/48P4A1CX85/) | $M^* = M$ | $P^T M \bar P$ | the numbers of positive, negative and zero squares |
+| Field | any $F$; most results need characteristic not $2$ | any $F$ | $\C$ |
+| Matrix condition | $A^{\mathsf{T}} = A$ | $A^{\mathsf{T}} = -A$, zero diagonal | $M^* = M$ |
+| Change of basis | $P^{\mathsf{T}} A P$ | $P^{\mathsf{T}} A P$ | $P^{\mathsf{T}} M \bar P$ |
+| Value on the diagonal | any element of $F$ | always $0$ | always real |
+| Normal form | diagonal (characteristic not $2$) | $J \oplus \dots \oplus J \oplus 0_k$ | real diagonal |
+| What decides congruence | depends on the field: rank over $\C$, rank and signature over $\R$ | rank alone | rank and signature |
 
-: The main kinds of forms of the chapter. The invariants of symmetric forms over $\R$ and $\C$ are proved in the next chapter by the method used here for alternating forms, splitting off one piece at a time; the same argument gives the Hermitian case.
+: Three kinds of form, their change of basis rules and their classification.
 
 ## Common errors
 
-- **Using similarity instead of congruence.** A form changes by $P^T A P$, a linear map by $P^{-1} A P$. The two agree only for orthogonal $P$, and the eigenvalues of $A$ are not invariants of the form.
-- **Forgetting characteristic $2$.** Over $\mathbb F_2$, the identity matrix is skew-symmetric but not alternating, and some quadratic forms do not come from any symmetric bilinear form. State the characteristic whenever you use $\frac12$.
-- **Treating $W^\perp$ as a complement.** For a form that is not definite, $W$ and $W^\perp$ can intersect, and $V = W \oplus W^\perp$ holds exactly when the form restricted to $W$ is nondegenerate.
-- **Confusing the radicals.** For a form that is not reflexive, the left and right radicals can differ; they have the same dimension, $\dim V - \operatorname{rank} A$.
-- **Mixing conventions for sesquilinear forms.** Some books make the first slot conjugate-linear, and then $h(x, y) = x^* M y$. Check the convention before you copy a formula.
+- Using $P^{-1} A P$ for a form. That rule is for linear maps. A form changes by $P^{\mathsf{T}} A P$, so its eigenvalues and trace are not invariants; only the rank, the determinant up to squares and, over $\R$, the signs are.
+- Treating skew-symmetric and alternating as the same thing in characteristic $2$. Over $\F_2$ the identity matrix is skew-symmetric and nondegenerate in every size, including odd ones.
+- Assuming $V = W \oplus W^\perp$ for every subspace. It fails exactly when $W \cap W^\perp \ne \{0\}$; every line of a symplectic plane is its own complement.
+- Reading the left radical as the right radical. For a form that is not reflexive they can be different subspaces, although they always have the same dimension.
+- Dropping the bar in $P^{\mathsf{T}} M \bar P$. With real $P$ the two rules agree, so the error hides in real examples.
+- Expecting the Witt index from an orthogonal basis. The form $\operatorname{diag}(1, 1, -1, -1)$ has Witt index $2$, but no basis vector of that orthogonal basis is isotropic; the hyperbolic planes come from vectors such as $e_1 + e_3$.
+- Carrying "rank decides everything" from alternating forms to symmetric ones. Over $\Q$, $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(1, 3)$ both have rank $2$, but their determinants $1$ and $3$ do not differ by a square, so they are not congruent.

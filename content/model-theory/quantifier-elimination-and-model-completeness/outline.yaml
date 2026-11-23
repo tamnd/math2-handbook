@@ -1,0 +1,59 @@
+# The order of chapter 4.8, quantifier elimination and model completeness. Groups are read in order; entries in a group too.
+groups:
+  - title: Quantifier elimination and its tests
+    intro: >
+      A theory has quantifier elimination when every formula is equivalent, modulo the theory, to a formula
+      without quantifiers. The tests reduce this to one existential quantifier in front of a conjunction of
+      literals, or to extending embeddings of finitely generated substructures into an
+      $\omega$-saturated model.
+    entries:
+      - 7FDDXV3JK7
+      - Q1CGE4DWXQ
+  - title: Model completeness
+    intro: >
+      A theory is model complete when every embedding between two of its models is elementary. Robinson's
+      test gives three equivalent forms: models are existentially closed in their extensions that are models,
+      every formula is universal modulo the theory, and every formula is existential. Quantifier elimination
+      implies model completeness, but the real closed fields in the ring signature show that the converse
+      fails.
+    entries:
+      - YR6HCMABTE
+      - QHEADWYQ64
+  - title: Existentially closed models and model companions
+    intro: >
+      An existentially closed model of $T$ already satisfies every existential statement, with parameters
+      from it, that holds in an extension satisfying $T$. For an inductive theory, one axiomatized by
+      $\forall\exists$ sentences, every model lies in an existentially closed one, and when these models form
+      an elementary class their theory is the model companion. Fields lead to algebraically closed fields,
+      linear orders to dense linear orders, ordered fields to real closed fields.
+    entries:
+      - 6M98MCW575
+      - 68GG7QKN7C
+      - G8TRE2KSRV
+  - title: When there is no model companion
+    intro: >
+      The theory of groups is universal, so it has existentially closed models, but they do not form an
+      elementary class, and the theory has no model companion. Robinson's finite and infinite forcing pick
+      out canonical classes of existentially closed models that replace the model companion in such cases.
+    entries:
+      - 5GS2AE651W
+      - 2TYY0ZP7YQ
+  - title: Elimination for fields
+    intro: >
+      Algebraically closed fields eliminate quantifiers in the signature of rings, and real closed fields in
+      the signature of ordered rings. Cylindrical algebraic decomposition makes the real case into an
+      algorithm: it cuts $\R^n$ into cells on which given polynomials have constant sign.
+    entries:
+      - 2NBBJADY5N
+      - FSJ9NGRRPA
+      - GE8FCGKPTR
+  - title: Groups and relative elimination
+    intro: >
+      Presburger arithmetic, the theory of $\Z$-groups, eliminates quantifiers once predicates for
+      divisibility by each $n$ are added, and the divisible torsion-free abelian groups eliminate them with
+      no additions. Relative elimination pushes quantifiers into a chosen class of formulas or into
+      auxiliary sorts, the method used for valued fields.
+    entries:
+      - VKC9CR37FT
+      - BFK4T1WK38
+      - WMC3J66FAY

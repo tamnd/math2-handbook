@@ -2,49 +2,57 @@
 groups:
   - title: Positive definite and semidefinite matrices
     intro: >
-      A Hermitian matrix $A$ is positive definite when $x^* A x > 0$ for every nonzero $x$, and positive
-      semidefinite when $x^* A x \ge 0$. These matrices play the part of positive and nonnegative numbers among
-      matrices. The two definitions come first, with examples that show how easily a matrix with positive
-      entries fails the test.
+      A Hermitian matrix $A$, or a real symmetric one, is positive definite when $x^* A x > 0$ for every
+      nonzero vector $x$, and positive semidefinite when $x^* A x \ge 0$ for every $x$. Being Hermitian is
+      part of both definitions. The two entries fix the definitions and show the first examples and
+      non-examples.
     entries:
       - 0KX66CZMBB
       - 01MMVW8CKC
-  - title: Tests for definiteness
+  - title: Three tests for definiteness
     intro: >
-      Three tests decide definiteness without checking every vector. The eigenvalues must be positive; the
-      matrix must be a Gram matrix $B^* B$ with independent columns; or, by Sylvester's criterion, the leading
-      principal minors must be positive. The semidefinite case needs all principal minors, not only the
-      leading ones.
+      For a Hermitian matrix $A$ there are three ways to decide definiteness. $A$ is positive definite
+      exactly when all its eigenvalues are positive, and semidefinite exactly when they are all
+      nonnegative. For every $m \times n$ matrix $B$, the Gram matrix $B^* B$ is positive semidefinite,
+      it is definite exactly when the columns of $B$ are independent, and every positive semidefinite
+      matrix has this form. By Sylvester's criterion, $A$ is positive definite exactly when its leading
+      principal minors $\Delta_1, \dots, \Delta_n$ are all positive; for semidefiniteness all
+      $2^n - 1$ principal minors must be nonnegative.
     entries:
       - 0HYC2RHD3M
       - 0AM050KCAW
       - 0WKEF78PMV
-  - title: Factorizations of positive matrices
+  - title: Cholesky, square roots and the polar decomposition
     intro: >
-      A positive definite matrix factors as $L L^*$ with $L$ lower triangular, which is the
-      [Cholesky decomposition](/0WKG8CYY6A/), and every positive semidefinite matrix has exactly one positive
-      semidefinite square root. The square root of $A^* A$ then gives the polar decomposition $A = UP$ of any
-      square matrix, the matrix form of $z = e^{i\theta} r$.
+      A positive definite matrix $A$ has exactly one factorization $A = L L^*$ with $L$ lower triangular
+      and with real positive diagonal entries. A positive semidefinite matrix $A$ has exactly one positive
+      semidefinite square root $A^{1/2}$, and $A^{1/2} = p(A)$ for a real polynomial $p$. Every square
+      matrix factors as $A = UP$ with $U$ unitary and $P = (A^* A)^{1/2}$; the factor $P$ is always unique,
+      and $U$ is unique when $A$ is invertible.
     entries:
       - 0WKG8CYY6A
       - EQ98KW1ZN4
       - 0J2C7BDJQA
   - title: Singular values and the SVD
     intro: >
-      The singular values of an $m \times n$ matrix $A$ are the square roots of the eigenvalues of $A^* A$.
-      The singular value decomposition $A = U \Sigma V^*$ writes every matrix as a rotation, a stretch along
-      the axes and another rotation. Geometrically, $A$ maps the unit circle onto an ellipse whose semi-axes are
-      the singular values.
+      The singular values of an $m \times n$ matrix $A$ are the square roots
+      $\sigma_1 \ge \dots \ge \sigma_n \ge 0$ of the eigenvalues of $A^* A$. Every such $A$ factors as
+      $A = U \Sigma V^*$ with $U$ and $V$ unitary and $\Sigma$ diagonal with the singular values in
+      decreasing order; $\Sigma$ is unique, and the rank of $A$ is the number of nonzero singular values.
+      Geometrically, $A$ maps the unit sphere onto an ellipsoid in its column space with semi-axes
+      $\sigma_i u_i$.
     entries:
       - 09VMDSRXWJ
       - 000NPTMX6J
       - JAEKA59DNZ
-  - title: Pseudoinverse, low rank and pairs of forms
+  - title: Pseudoinverse, low-rank approximation and pairs of forms
     intro: >
-      The SVD gives the Moore-Penrose inverse $A^+$, which solves least-squares problems with the smallest
-      norm, and the best approximation of $A$ by matrices of lower rank. The last entry diagonalizes a Hermitian
-      matrix and a positive definite matrix at the same time, which is the generalized eigenvalue problem
-      $A p = \lambda B p$.
+      Every complex matrix $A$ has exactly one Moore-Penrose inverse $A^+$, the matrix that satisfies the
+      four Penrose conditions, and $A^+ = V \Sigma^+ U^*$. If $A$ has rank $r$ and $0 \le k < r$, the
+      truncated SVD $A_k$ is a nearest matrix of rank at most $k$, with error $\sigma_{k+1}$ in the
+      operator norm and $(\sigma_{k+1}^2 + \dots + \sigma_r^2)^{1/2}$ in the Frobenius norm. If $A$ is
+      Hermitian and $B$ is positive definite, one invertible $P$ gives $P^* B P = I$ and $P^* A P$ real
+      diagonal.
     entries:
       - 0YY8VX28JR
       - JJT6GC055J

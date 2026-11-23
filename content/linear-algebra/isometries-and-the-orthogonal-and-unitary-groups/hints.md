@@ -1,27 +1,25 @@
-2. $\langle Tu, Tv \rangle = \langle u, v \rangle = \frac{7 - 1 - 4}{2} = 1$, so the angle is $\arccos \frac{1}{2} = \pi/3$.
+1. $A$ and $C$ are orthogonal, both with determinant $1$; $C$ is a signed permutation matrix. $B$ is not: $B^{\mathsf{T}}B = \frac{5}{9}I$, so its columns are orthogonal but have length $\frac{\sqrt{5}}{3}$, and $B$ multiplies every length by $\frac{\sqrt{5}}{3}$.
 
-3. $\operatorname{tr} Q = 1$, so $\cos \theta = 0$ and $\theta = \pi/2$. From $Q - Q^{\mathsf{T}}$, $2 \sin \theta \, u = \frac{2}{3}(1, 2, 2)$, so the axis is $u = \frac{1}{3}(1, 2, 2)$; check $Q(1, 2, 2) = (1, 2, 2)$.
+3. The columns are orthonormal, since $\abs{1 + i}^2 + \abs{1 - i}^2 = 4$ and $(1 + i)\overline{(1 - i)} + (1 - i)\overline{(1 + i)} = 2i - 2i = 0$. $\det U = \frac{1}{4}\big((1 + i)^2 - (1 - i)^2\big) = i$, so $U \notin SU(2)$. The eigenvalue $1$ has eigenvector $(1, 1)$ and the eigenvalue $i$ has eigenvector $(1, -1)$, and $U^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
 
-6. $R(\theta) S(\alpha) = S(\alpha + \theta/2)$ gives $S(5\pi/12)$, the reflection in the line at $75°$. $S(\alpha) R(\theta) = S(\alpha - \theta/2)$ gives $S(-\pi/12)$, the line at $-15°$.
+4. $\tr R = 1$, so $\cos\theta = 0$ and $\theta = \frac{\pi}{2}$. From $R - R^{\mathsf{T}}$ the vector $(r_{32} - r_{23}, r_{13} - r_{31}, r_{21} - r_{12})$ is $\frac{1}{9}(6, 12, 12)$, so the axis is $\R(1, 2, 2)$, and indeed $R(1, 2, 2) = (1, 2, 2)$.
 
-8. $C(A) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = R(-\pi/2)$.
+6. The first has determinant $-1$ and is $S(\alpha)$ with $\cos 2\alpha = \frac{5}{13}$ and $\sin 2\alpha = \frac{12}{13}$; it fixes $(3, 2)$, which spans the mirror line. The second has determinant $1$ and is $R(\theta)$ with $\cos\theta = -\frac{7}{25}$ and $\sin\theta = -\frac{24}{25}$.
 
-11. $Q = I - \frac{2}{3} n n^{\mathsf{T}}$ with $n = (1, -1, -1)$, so $Q$ is the reflection in the plane $x - y - z = 0$.
+8. $C(A) = \frac{1}{5}\begin{pmatrix} -4 & 3 \\ -3 & -4 \end{pmatrix}$, with orthonormal columns and determinant $\frac{16 + 9}{25} = 1$. Applying the formula to $Q = C(A)$ gives back $\begin{pmatrix} 0 & -3 \\ 3 & 0 \end{pmatrix}$. The rotation $R(\pi) = -I$ is not a Cayley transform, because it has the eigenvalue $-1$.
 
-12. Choose $\lambda$ with $\lambda^n = \det U$ and put $V = \lambda^{-1} U$. There are exactly $n$ pairs, one for each $n$-th root of $\det U$.
+12. $M = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & -1 \\ -1 & 0 & 0 \end{pmatrix}$. Its trace is $0$, so $\cos\theta = -\frac{1}{2}$ and $\theta = \frac{2\pi}{3}$. The vector read off from $M - M^{\mathsf{T}}$ is $(2, 2, -2) = 2\sin\theta \cdot \frac{1}{\sqrt{3}}(1, 1, -1)$, so the axis is spanned by $(1, 1, -1)$, which $M$ fixes.
 
-14. $C(A) = Q$, the matrix of exercise 3. The axis is the line through $w$, and $\tan(\theta/2) = \norm{w} = 1$ gives $\theta = \pi/2$.
+14. Since $s_a^2 = I$, $s_b = Rs_a$. Computing $I - Rs_a = \frac{1}{9}\begin{pmatrix} 16 & -4 & -4 \\ -4 & 1 & 1 \\ -4 & 1 & 1 \end{pmatrix}$ shows that $b = (4, -1, -1)$ works. Both $a$ and $b$ are perpendicular to the axis $(1, 2, 2)$, and $\cos\angle(a, b) = \frac{9}{3 \cdot 3\sqrt{2}} = \frac{1}{\sqrt{2}}$, so the angle is $\frac{\pi}{4}$, half the angle $\frac{\pi}{2}$ of $R$.
 
-17. $R_x(\pi/2) R_y(\pi/2)$ is the cyclic permutation matrix $e_1 \mapsto e_2 \mapsto e_3 \mapsto e_1$: angle $2\pi/3$ about the line through $(1, 1, 1)$. $R_y(\pi/2) R_x(\pi/2)$ has trace $0$ and fixes $(1, 1, -1)$: angle $2\pi/3$ about that line.
+16. By the theorem that [isometries preserve inner products](/0R7VXTYHYZ/), $f$ is linear and orthogonal, so $f(0, 1)$ is a unit vector perpendicular to $\frac{1}{13}(5, 12)$. If $f(0, 1) = \frac{1}{13}(-12, 5)$, $f$ is a rotation and $f(2, 3) = (-2, 3)$. If $f(0, 1) = \frac{1}{13}(12, -5)$, $f$ is a reflection and $f(2, 3) = \frac{1}{13}(46, 9)$.
 
-18. $C = s_{(1, 0, -1)} s_{(1, -1, 0)}$: first swap $e_1$ and $e_2$, then swap $e_1$ and $e_3$. A single reflection has determinant $-1$, but $\det C = 1$.
+17. The characteristic polynomial is $t^4 - 1$, with roots $1$, $-1$, $i$ and $-i$. So $k = 1$ with $\theta_1 = \frac{\pi}{2}$, $q = 1$ and $p = 1$: the normal form is $\operatorname{diag}(R(\frac{\pi}{2}), -1, 1)$, and $\det P = -1$, the sign of a $4$-cycle.
 
-20. For orthonormal $e_i$, the vectors $e_i + e_j$ and $e_i - e_j$ are orthogonal, so $\norm{T e_i} = \norm{T e_j}$ for all $i, j$. Call this common length $c$. If $c > 0$, then $T / c$ maps an orthonormal basis to an orthonormal set.
+19. If $R$ turns by $\theta$ about the unit vector $u$, take unit vectors $a$ and $b$ perpendicular to $u$ with angle $\frac{\theta}{2}$ from $a$ to $b$. In $\R^3$, $H_a = -s_a$, so $H_bH_a = s_bs_a$, the product of the reflections in two planes through the axis $\R u$ at angle $\frac{\theta}{2}$. For $R_z(\pi/2)$ take $a = e_1$ and $b = \frac{1}{\sqrt{2}}(1, 1, 0)$.
 
-21. For unit vectors $u$ and $v$ choose $R \in SO(n)$ with $R u = v$; then $R s_u R^{-1} = s_{Ru} = s_v$. For rotations, use $R \rho R^{-1}$, where $\rho$ is the rotation by $\theta$ about $u$: it is the rotation by $\theta$ about $Ru$. Send the axis of one rotation to the axis of the other, choosing the sign of the target vector so that the senses of turning agree.
+20. For any orthogonal $R$, $Rs_uR^{-1} = s_{Ru}$. For $n \ge 2$ some rotation sends $u$ to $v$: turn the plane containing $u$ and $v$, or any plane containing $u$ if $v = \pm u$. In $O(2)$, $R(\theta)S(0)R(-\theta) = S(\theta)$, so $\theta = \frac{\pi}{4} + k\pi$ for an integer $k$.
 
-22. If $(I + A) x = 0$, then $0 = x^{\mathsf{T}} x + x^{\mathsf{T}} A x = \norm{x}^2$, since $x^{\mathsf{T}} A x = 0$. The factors $I - A$ and $(I + A)^{-1}$ commute. If $C(A) x = -x$, then $(I - A) y = -(I + A) y$ for $y = (I + A)^{-1} x$, so $y = 0$.
+21. By the spectral theorem, $U = V\operatorname{diag}(e^{i\varphi_1}, \dots, e^{i\varphi_n})V^*$ with $V$ unitary and real $\varphi_j$; take $H = V\operatorname{diag}(\varphi_1, \dots, \varphi_n)V^*$. For the swap, the eigenvalues are $1$ on $(1, 1)$ and $-1 = e^{i\pi}$ on $(1, -1)$, so one choice is $H = \frac{\pi}{2}\begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}$.
 
-23. $R = s_a s_b$ with $a, b$ orthogonal to the axis, and $s_a s_b = (-s_a)(-s_b)$. The map $-s_a$ fixes $a$ and is $-1$ on $a^\perp$, a half-turn about $\R a$.
-
-24. $U X U^*$ is again Hermitian with trace $0$, and $\det(U X U^*) = \det X$, so the map keeps the norm $\sqrt{-\det X}$. For the kernel, $U X = X U$ for all $X \in \mathcal{H}$ forces $U$ to be scalar, and a scalar in $SU(2)$ is $\pm I$.
+22. A product of $k$ reflections fixes the intersection of $k$ hyperplanes, so $\dim F \ge n - k$. Conversely, if $Qv \ne v$, the reflection $s$ in $(Qv - v)^\perp$ fixes $F$ and sends $Qv$ to $v$, so $sQ$ fixes $F + \R v$; induct on $n - \dim F$. For $P$, $F = \R(1, 1, 1, 1)$, so $3$ reflections are needed, and $P = s_{e_1 - e_4}s_{e_1 - e_3}s_{e_1 - e_2}$, a product of three transpositions.

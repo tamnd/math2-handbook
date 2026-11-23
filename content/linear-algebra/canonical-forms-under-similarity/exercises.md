@@ -1,55 +1,51 @@
-1. ◦ Let $A = \operatorname{diag}(2, 2, 3)$ act on $\Q^3$. Find the $A$-annihilators of $e_1$ and of $v = (1, 0, 1)$, as defined for a [cyclic subspace](/42MMQBTP0M/). Is $A$ cyclic? Answer from the minimal polynomial, without testing vectors.
+1. ◦ Let $A = \begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}$ over $\Q$. Find the $A$-annihilator $m_v$ of each of $v = e_1$, $v = e_2$ and $v = (1, 1)$, and say which of the three is a cyclic vector for $A$.
 
-2. ◦ Write the [companion matrix](/0ZCWPNZTQ3/) $C(p)$ of $p = x^3 - 2x^2 + 3x - 5$ in the column convention of the chapter. Find its trace and its determinant, and name a cyclic vector.
+2. ◦ Write the companion matrix $C(p)$, in the column convention, of $p = x^3 - 4x^2 + x + 6$. Factor $p$ over $\Q$, give the characteristic and minimal polynomials and the determinant of $C(p)$, and decide whether $C(p)$ is diagonalizable over $\Q$.
 
-3. ◦ Which of these lists are lists of [invariant factors](/F7GJPMVBXA/) of a matrix of the stated size? (a) $x - 1, (x - 1)^2, (x - 1)^2$ for a $5 \times 5$ matrix. (b) $x, x^2 - 1$ for a $3 \times 3$ matrix. (c) $x + 1, (x + 1)(x - 2), x(x + 1)(x - 2)$ for a $5 \times 5$ matrix. (d) $x^2, x^3$ for a $5 \times 5$ matrix.
+3. ◦ A rational matrix has the elementary divisors $x - 1$, $(x - 1)^2$, $x + 2$, $x + 2$, $x^2 + 1$. Find its size, its invariant factors, its characteristic polynomial and its minimal polynomial.
 
-4. ◦ A rational matrix has the elementary divisors $x - 1$, $(x - 1)^2$, $x - 2$, $(x - 2)^3$ and $x + 1$. What is its size? Find its invariant factors, its minimal polynomial and the sizes of the blocks of its [rational canonical form](/042JWAR3Q0/).
+4. ◦ A complex matrix has the invariant factors $x - 2$, $(x - 2)(x + 1)$, $(x - 2)^2 (x + 1)^2$. Find its size, its elementary divisors and its Jordan form, and the dimensions of the eigenspaces of $2$ and $-1$.
 
-5. ◦ Use the formula for the powers of a [Jordan block](/07PH4RX0X5/) to write down $J_2(3)^5$ and $J_3(-1)^{10}$.
+5. ◦ Find the rational canonical form of $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1 \end{pmatrix}$ over $\Q$.
 
-6. ◦ A nilpotent $7 \times 7$ matrix $N$ has $\operatorname{rank} N = 4$, $\operatorname{rank} N^2 = 2$, $\operatorname{rank} N^3 = 1$ and $N^4 = 0$. Find its partition of Jordan block sizes, the number of blocks, its nilpotency index and its Weyr structure.
+6. ◦ Compute $J_3(-1)^4$ from the formula for the powers of a Jordan block, without multiplying matrices.
 
-7. ◦ How many similarity classes of nilpotent $6 \times 6$ complex matrices are there? How many similarity classes of $5 \times 5$ complex matrices have characteristic polynomial $(x - 2)^3 (x + 1)^2$?
+7. ◦ A nilpotent $6 \times 6$ matrix $N$ has $\operatorname{rank} N = 3$, $\operatorname{rank} N^2 = 1$ and $N^3 = 0$. Find its Jordan form, its number of Jordan blocks and $\dim \ker N^2$.
 
-8. ◦ Which of these matrices are cyclic? (a) $\operatorname{diag}(1, 1, 2)$. (b) $J_2(0) \oplus J_1(1)$. (c) $J_2(5) \oplus J_2(5)$. (d) $C(x^3)$.
+8. ◦ Find the Jordan form of $A = \begin{pmatrix} 3 & 0 & -1 \\ 0 & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix}$.
 
-9. ◦ Find the [real Jordan form](/MPFT45RFGV/) of $\begin{pmatrix} 1 & -2 \\ 1 & 3 \end{pmatrix}$.
+9. ◦ Let $A = \begin{pmatrix} 3 & -5 \\ 1 & -1 \end{pmatrix}$. Find its complex eigenvalues, its real Jordan form $R(a, b)$ with $b > 0$, and a real invertible $P$ with $A P = P R(a, b)$.
 
-10. ◦ Find the dimension of the space of [matrices that commute with](/GXZGWZSJ2J/) $J_2(0) \oplus J_1(0) \oplus J_1(0)$ in two ways: from the invariant factors, and from the Weyr structure.
+10. • Let $A = \begin{pmatrix} 3 & 0 & 4 \\ 0 & 3 & 0 \\ 0 & 0 & -1 \end{pmatrix}$. Compute the determinantal divisors $D_1, D_2, D_3$ of $x I - A$, its Smith normal form, the invariant factors and the rational canonical form of $A$. Is $A$ diagonalizable over $\Q$?
 
-11. • Show that $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}$ is cyclic. Find a cyclic vector $v$ and the matrix of $A$ in the basis $v, Av, A^2 v$.
+11. • (a) List the similarity classes of $4 \times 4$ rational matrices with characteristic polynomial $(x^2 + 1)^2$ by their rational canonical forms. (b) How many similarity classes of $4 \times 4$ complex matrices have this characteristic polynomial, and how many of them contain a matrix with rational entries?
 
-12. • Let $A = \begin{pmatrix} 3 & 1 & 0 \\ -1 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix}$. Compute the determinantal divisors $D_1, D_2, D_3$ of $xI - A$, as in [similarity via the characteristic matrix](/92VZF0QRM8/). Deduce the invariant factors, the rational canonical form and the Jordan form of $A$.
+12. • Find the error. A student is given
+$$A = \begin{pmatrix} 1 & 1 & 0 & 0 \\ 0 & 2 & 1 & 0 \\ 1 & -1 & 3 & 0 \\ 0 & 0 & 0 & 2 \end{pmatrix},$$
+finds $\chi_A = (x - 2)^4$ and $\operatorname{rank}(A - 2I) = 2$, and writes: "So there are two Jordan blocks, and since the sizes add up to $4$, the Jordan form is $J_2(2) \oplus J_2(2)$." Explain the gap and find the correct Jordan form.
 
-13. • Prove that two $3 \times 3$ matrices over a field are similar if and only if they have the same characteristic polynomial and the same minimal polynomial.
+13. • Let $A = \begin{pmatrix} 0 & 1 & 0 \\ -1 & 1 & 1 \\ -1 & 0 & 2 \end{pmatrix}$. Show that $\chi_A = (x - 1)^3$ and find the Jordan form. Then find an invertible $P$ with $P^{-1} A P = J_3(1)$ by building a Jordan chain from the top.
 
-14. • Let $C = C(x^2 + bx + c) = \begin{pmatrix} 0 & -c \\ 1 & -b \end{pmatrix}$. Find all matrices $T$ with $TC = C^{\mathsf T} T$, and an invertible symmetric one among them, as [a matrix is similar to its transpose](/C708QKZPE6/) promises. What is the dimension of the space of solutions, and why is it the dimension of the centralizer of $C$?
+14. • Let $N = J_2(0) \oplus J_2(0)$ over a field $F$. (a) Reorder the standard basis to show that $N$ is similar to $W = \begin{pmatrix} 0 & I_2 \\ 0 & 0 \end{pmatrix}$, written in $2 \times 2$ blocks. (b) Find all $X$ with $X W = W X$, and the dimension of this space. (c) Check the dimension against the formula $\sum_{i, j} \deg \gcd(d_i, d_j)$.
 
-15. • Find the Jordan form $J$ of $A = \begin{pmatrix} 3 & -1 & -1 \\ 2 & 0 & -1 \\ 1 & 0 & 0 \end{pmatrix}$ and an invertible $P$ with $AP = PJ$, following [computing the Jordan form](/7M1W0ZA49Q/).
+15. • Sort the elements of $GL_2(\mathbb{F}_5)$ into conjugacy classes by type: scalar matrices, diagonalizable with two distinct eigenvalues in $\mathbb{F}_5$, not diagonalizable, and irreducible characteristic polynomial. Count the classes of each type and check that the total is $5^2 - 1$.
 
-16. • Let $A = \begin{pmatrix} 3 & 1 \\ -1 & 1 \end{pmatrix}$. Write $A = 2I + N$ and find a closed formula for $A^k$, $k \ge 1$. Why is no transition matrix needed?
+16. • List one representative of each similarity class of $2 \times 2$ matrices over $\mathbb{F}_2$, in rational canonical form, and check that there are $2^2 + 2$ classes.
 
-17. • Show that a nilpotent $n \times n$ matrix $N$ with $N^{n-1} \ne 0$ is similar to $J_n(0)$. Then show that the nilpotent $n \times n$ matrices with $N^2 = 0$ fall into exactly $\floor{n/2} + 1$ similarity classes, and that the rank tells them apart.
+17. • Over $\Q$, let $A = J_2(1) \oplus J_1(2)$ and $B = \operatorname{diag}(2, 2, 1)$. (a) Show that the $\Q[x]$-module $V_A$ is cyclic, with generator $e_2 + e_3$, and that it is isomorphic to $\Q[x] / ((x - 1)^2 (x - 2))$. (b) Show that $V_B$ is not cyclic, and write it as a direct sum of cyclic modules $\Q[x] / (d_i)$ with $d_1 \mid d_2$.
 
-18. • List the rational canonical forms of the conjugacy classes of $GL_3(\mathbb{F}_2)$, and check that there are $q^3 - q = 6$ of them, as the [count for finite fields](/4FV9TDGWWH/) says. Give the order of an element of each class.
+18. • Let $N = J_4(0) \oplus J_1(0) \oplus J_1(0)$. Find the Weyr structure of $N$ and use it to compute the dimension of the centralizer of $N$. Check the answer with the invariant factors of $N$.
 
-19. • Let $A$ be cyclic with cyclic vector $v$, and let $BA = AB$. Show directly that $B = f(A)$ for a polynomial $f$: write $Bv = f(A) v$ and compare $B$ and $f(A)$ on the basis $v, Av, A^2 v, \dots$.
+19. • Find the real Jordan form of the companion matrix $C(x^3 - 8)$.
 
-20. • Let $B$ be the $k \times k$ upper triangular matrix with $\lambda$ on the diagonal, nonzero numbers $c_1, \dots, c_{k-1}$ just above it, and $0$ elsewhere. Show that $B$ is similar to $J_k(\lambda)$ in two ways: by a diagonal change of basis, and by the [normal form of nilpotent endomorphisms](/Z2RTKWZZAZ/).
+20. • Let $A \in M_n(F)$ with $A^2 = 0$, and let $r = \operatorname{rank} A$. Show that $2r \le n$ and that $A$ is similar to the direct sum of $r$ copies of $J_2(0)$ and $n - 2r$ copies of $J_1(0)$. How many similarity classes of such matrices are there in $M_n(F)$?
 
-21. • Find the real Jordan form of the companion matrix $C((x^2 + 1)^2)$. Show that it is not similar to $C(x^2 + 1) \oplus C(x^2 + 1)$, although the two have the same characteristic polynomial.
+21. ★ Let $A \in M_n(\C)$. Show that $A$ is similar to $2A$ if and only if $A$ is nilpotent.
 
-22. • Write the [Weyr form](/9XEA4VR8WP/) of $J_3(0) \oplus J_2(0)$ as a sum of matrix units, and check that it has the same ranks of powers as $J_3(0) \oplus J_2(0)$. What is the dimension of its centralizer?
+22. ★ Let $n \ge 2$. Find the Jordan form of $J_n(0)^2$: show that it has exactly two blocks, of sizes $\lceil n/2 \rceil$ and $\lfloor n/2 \rfloor$.
 
-23. • Show that $M_2(\mathbb{F}_q)$ has exactly $q^2 + q$ similarity classes, using the [similarity classes of $2 \times 2$ matrices](/H6R274A93F/).
+23. ★ Let $q$ be a prime power. Show that $M_3(\mathbb{F}_q)$ has exactly $q^3 + q^2 + q$ similarity classes, by counting the possible lists of invariant factors. How many is that for $q = 2$?
 
-24. ★ Let $a, b \in F[x]$ be monic and nonconstant. Show that the $F[x]$-module maps $F[x]/(a) \to F[x]/(b)$ form a space of dimension $\deg \gcd(a, b)$ over $F$. Deduce the formula $\dim \mathcal{C}(A) = \sum_{i,j} \deg \gcd(d_i, d_j) = \sum_i (2r - 2i + 1) \deg d_i$ for the centralizer, and that $\dim \mathcal{C}(A) \ge n$ with equality exactly when $A$ is cyclic.
+24. ★ Let $A \in M_n(F)$ be cyclic, so that $m_A = \chi_A$. Show that the $A$-invariant subspaces are exactly the subspaces $\ker f(A)$ for the monic divisors $f$ of $\chi_A$, and that different divisors give different subspaces. How many invariant subspaces does $J_2(1) \oplus J_1(2)$ have over $\Q$?
 
-25. ★ Let $A, B \in M_n(\R)$ and $B = Q^{-1} A Q$ with $Q \in GL_n(\C)$. Without invariant factors, show that $B = P^{-1} A P$ for some $P \in GL_n(\R)$. Write $Q = X + iY$ with $X, Y$ real and look at $\det(X + tY)$.
-
-26. ★ Let $\lambda \ne 0$. Show that $J_k(\lambda)^{-1}$ is similar to $J_k(\lambda^{-1})$. Deduce that an invertible complex matrix $A$ is similar to $A^{-1}$ if and only if, for each eigenvalue $\lambda$ and each $k$, the Jordan form of $A$ has as many blocks $J_k(\lambda)$ as blocks $J_k(\lambda^{-1})$.
-
-27. ★ Prove that $GL_3(\mathbb{F}_q)$ has $q^3 - q$ conjugacy classes, by counting the assignments of partitions to monic irreducible polynomials other than $x$. You may use that there are $(q^2 - q)/2$ monic irreducible polynomials of degree $2$ and $(q^3 - q)/3$ of degree $3$ over $\mathbb{F}_q$.
-
-28. ★ Let $F$ be an infinite field and $A \in M_n(F)$. Show that $A$ is similar to $cA$ for every nonzero $c \in F$ if and only if $A$ is nilpotent. What goes wrong over $\mathbb{F}_2$?
+25. ★ (a) Show that every invertible $A \in M_n(\C)$ has a square root: a matrix $B$ with $B^2 = A$. Find one for $J_2(4)$. (b) Show that $J_2(0)$ has no square root.

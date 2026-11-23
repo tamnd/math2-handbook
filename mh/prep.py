@@ -320,7 +320,8 @@ def body_md(node: Node, refs: Refs, drop_first: bool) -> tuple[str, str]:
 
 def attached_md(node: Node, host: Node, refs: Refs) -> str:
     lead, rest = body_md(node, refs, drop_first=True)
-    title = f"{node.label}: {node.name}"
+    # most proofs are named "Proof of …": print "Proof of …", not "Proof: Proof of …"
+    title = node.name if node.name.lower().startswith(node.label.lower()) else f"{node.label}: {node.name}"
     rest = shift_headings(rest, 4)
     out = [f'::: {{#{node.slug} .proof latex-env="hbproof"}}',
            f'[{md_plain(title)}]{{.prooftitle latex-cmd="hbprooftitle"}}', "", lead, "", rest]

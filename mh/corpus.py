@@ -58,6 +58,9 @@ SLUG_KINDS = ["topic", "concept", "definition", "statement", "conjecture", "prob
 
 
 def _targets(v) -> list[str]:
+    # A field holds one target or a list of them; a single target (`proves: 0R7SVNYTJS`) is a plain string.
+    if isinstance(v, (str, dict)):
+        v = [v]
     out = []
     for x in v or []:
         if isinstance(x, str):
@@ -184,9 +187,15 @@ class Corpus:
         n = self.nodes.get(tag)
         if not n:
             return []
-        m = re.search(r"^### " + re.escape(heading) + r"[ \t]*\n(.*?)(?=^#|\Z)", n.body, re.S | re.M)
+        # The list may be split into several sections `### heading: part` or `### heading, continued: part`, read
+        # in order. An area whose list of sub-areas has no section of its own keeps it as the numbered list under
+        # `### How to read the area`.
+        ms = list(re.finditer(r"^### " + re.escape(heading) + r"(?:(?::|, continued:)[^\n]*)?[ \t]*\n(.*?)(?=^#|\Z)", n.body,
+                              re.S | re.M))
+        if not ms and heading == "Sub-areas":
+            ms = list(re.finditer(r"^### How to read the area[ \t]*\n(.*?)(?=^#|\Z)", n.body, re.S | re.M))
         out = []
-        if m:
+        for m in ms:
             for line in m.group(1).split("\n"):
                 if re.match(r"^\s*(\d+\.|[-*])\s", line):
                     k = LINK.search(line)

@@ -1,0 +1,41 @@
+# The order of chapter 4.9, preservation and definability theorems. Groups are read in order; entries in a group too.
+groups:
+  - title: Preservation theorems
+    intro: >
+      A preservation theorem says that a theory has a class of models closed under some construction exactly
+      when it is equivalent to sentences of a matching syntactic form. Substructures go with universal
+      sentences, unions of chains with $\forall\exists$ sentences, and surjective homomorphisms with positive
+      sentences. One direction is an induction on formulas; the other uses compactness and the diagram
+      lemmas.
+    entries:
+      - T69D2NS1HP
+      - 9RN0KYXNT1
+      - RK7NK2P75J
+      - 8DJSRWME2X
+  - title: Universal and universal Horn classes
+    intro: >
+      Universal classes are the elementary classes closed under substructures, and they are characterized by
+      closure under substructures and ultraproducts. Universal Horn sentences allow at most one unnegated
+      atom, which makes them survive reduced products. Among all sentences, the Horn sentences are exactly
+      the ones preserved under reduced products.
+    entries:
+      - ZSTEZ3PRT9
+      - 9A4CYWXPEA
+      - 1FF2GRE6VX
+  - title: Definability
+    intro: >
+      Beth's theorem says that a relation fixed by a theory in all models with the same reduct is defined by a
+      formula of the smaller signature. Svenonius's theorem replaces the comparison of models by invariance
+      under automorphisms of the reducts, and the Chang–Makkai theorem counts the automorphic images of a
+      set in a saturated model to decide definability with parameters.
+    entries:
+      - RJBDSA2ETP
+      - JNXY3WRYFY
+      - MFR9Z5PPH4
+  - title: Pseudo-elementary classes
+    intro: >
+      A pseudo-elementary class is the class of reducts of the models of a theory in a larger signature. Such
+      classes are closed under ultraproducts but not in general under elementary equivalence, and the Craig
+      interpolation theorem shows that two disjoint ones are separated by an elementary class.
+    entries:
+      - YEC1Q3A490

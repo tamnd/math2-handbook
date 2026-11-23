@@ -2,46 +2,56 @@
 groups:
   - title: Direct sums and products
     intro: >
-      A space is the [internal direct sum](/0XYYT5KNTX/) of subspaces when each vector splits into pieces from
-      them in exactly one way. The [external direct sum](/0S7W6EG32V/) builds such a space from spaces that are
-      not inside a common one, and the [direct product](/0EX2HPXPJ6/) allows all families of coordinates, not
-      only the finitely supported ones. For finitely many factors the two constructions agree.
+      A space $V$ is the [internal direct sum](/0XYYT5KNTX/) of subspaces $U_1, \dots, U_k$ when every vector of
+      $V$ is $u_1 + \dots + u_k$ with $u_i \in U_i$ in exactly one way. For two subspaces this holds exactly when
+      $U + W = V$ and $U \cap W = \set{0}$; for three or more, pairwise zero intersections are not enough. The
+      [external direct sum](/0S7W6EG32V/) and the [direct product](/0EX2HPXPJ6/) build such a space from spaces
+      that do not lie in a common one, and they agree for finitely many factors.
     entries:
       - 0XYYT5KNTX
       - 0S7W6EG32V
       - 0EX2HPXPJ6
+
   - title: Complements and projections
     intro: >
-      A complement of $U$ in $V$ is a subspace $W$ with $V = U \oplus W$. Every subspace has one, but it is
-      almost never unique. Choosing a complement is the same as choosing a projection, a linear map $P$ with
-      $P^2 = P$, whose image is $U$ and whose kernel is $W$.
+      A complement of a subspace $U$ of $V$ is a subspace $W$ with $V = U \oplus W$. The group proves that every
+      subspace of every vector space has a complement, by extending a basis in finite dimension and by Zorn's
+      lemma in general, and shows that complements are almost never unique. A complement is the same as a
+      [projection](/033DA1WE8Y/), a linear map $P \colon V \to V$ with $P^2 = P$, image $U$ and kernel $W$.
     entries:
       - 0M83V17KHX
       - 0P9T8WHNMH
       - 033DA1WE8Y
+
   - title: Quotient spaces
     intro: >
-      The quotient $V/U$ is the set of cosets $v + U$, with the operations inherited from $V$. It needs no
-      choice, its dimension is $\dim V - \dim U$, and a linear map that vanishes on $U$ passes to it in exactly
-      one way.
+      The [quotient](/0BR3FY5Q8M/) $V/U$ is the set of cosets $v + U$, with the operations of $V$ carried over.
+      Unlike a complement, it needs no choice. The group proves $\dim V/U = \dim V - \dim U$ for finite-dimensional
+      $V$, and the universal property: a linear map $T \colon V \to W$ with $U \subseteq \ker T$ factors as
+      $T = \bar T \circ \pi$ for exactly one linear $\bar T \colon V/U \to W$.
     entries:
       - 0BR3FY5Q8M
       - 0SXDQ6TN00
       - 0ZERJX6PH6
+
   - title: The isomorphism theorems
     intro: >
-      The three isomorphism theorems are the same as for groups, and their proofs come from the universal
-      property. The first says $V/\ker T \cong \operatorname{im} T$. The second gives the Grassmann formula for
-      $\dim(U + W)$, and the third says that quotients can be taken in stages.
+      The universal property turns into three isomorphisms, valid in every dimension. For a linear map
+      $T \colon V \to W$, the first theorem gives $V/\ker T \cong \operatorname{im} T$. For subspaces $U$ and $W$
+      of $V$, the second gives $(U + W)/W \cong U/(U \cap W)$, which contains Grassmann's dimension formula, and
+      for $W \subseteq U \subseteq V$ the third gives $(V/W)/(U/W) \cong V/U$.
     entries:
       - 0MTBGVZ4XJ
       - 0APN65D6Y6
       - 07RB3EMBWW
+
   - title: Codimension and exact sequences
     intro: >
-      The codimension of $U$ is $\dim V/U$. It measures how many independent linear conditions cut out $U$,
-      and it stays finite in many infinite-dimensional cases. Exact sequences record kernels and images along a
-      chain of maps, and over a field every short exact sequence splits.
+      The [codimension](/JJCGJ1EGCQ/) of $U$ in $V$ is $\dim V/U$; it is finite for some subspaces of
+      infinite-dimensional spaces, and the subspaces of codimension $1$ are the kernels of nonzero linear forms.
+      [Exact sequences](/946YAZNYKX/) record a chain of kernels and images at once. Every short exact sequence
+      $0 \to U \to V \to W \to 0$ of vector spaces splits, so $V \cong U \oplus W$, and in finite dimension the
+      alternating sum of the dimensions in an exact sequence is $0$.
     entries:
       - JJCGJ1EGCQ
       - 946YAZNYKX

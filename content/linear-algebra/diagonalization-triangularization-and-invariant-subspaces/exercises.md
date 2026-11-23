@@ -1,55 +1,54 @@
-1. ◦ Let $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix}$ act on $\R^3$. Which of these subspaces are [invariant](/0ACX5QT8TE/) under $A$: $\operatorname{span}(e_1)$, $\operatorname{span}(e_2)$, $\operatorname{span}(e_1, e_2)$, $\operatorname{span}(e_3)$, $\operatorname{span}(e_2, e_3)$?
+1. ◦ Let $A = \begin{pmatrix} 2 & 1 & 1 \\ 1 & 2 & 1 \\ 0 & 0 & 3 \end{pmatrix}$ act on $\R^3$. (a) Is the line spanned by $(1, -1, 0)$ invariant under $A$? Is the line spanned by $e_3$? (b) Show that $U = \operatorname{span}(e_1, e_2)$ is invariant, and write the matrix of the restriction $A|_U$ in the basis $e_1, e_2$ and the matrix of the quotient operator on $\R^3 / U$ in the basis $e_3 + U$. (c) Deduce the characteristic polynomial of $A$.
 
-2. ◦ Let $A = \begin{pmatrix} 2 & 1 & 5 \\ 1 & 2 & 7 \\ 0 & 0 & -1 \end{pmatrix}$ and $U = \operatorname{span}(e_1, e_2)$. Check that $U$ is invariant, and write the matrices of the [restriction and the quotient operator](/0KN7EPH7Z0/). Use them to factor $p_A$. Is $e_3$ an eigenvector of $A$? Find an eigenvector for the eigenvalue $-1$.
+2. ◦ Diagonalize $A = \begin{pmatrix} 5 & -2 \\ 1 & 2 \end{pmatrix}$ over $\R$: find an invertible $P$ and a diagonal $D$ with $A = P D P^{-1}$.
 
-3. ◦ Which of these real matrices are [diagonalizable](/07SQCNV233/) over $\R$? (a) $\begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}$. (b) $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$. (c) $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$. (d) $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$. Which of them are diagonalizable over $\C$?
+3. ◦ For the matrix $A$ of Exercise 2, find a formula for every entry of $A^k$, $k \ge 0$, and use it to write down $A^3$.
 
-4. ◦ Let $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}$. Find the algebraic and the geometric multiplicity of the eigenvalue $2$ and the minimal polynomial of $A$. Use the [test by multiplicities](/CDB8KCNNG9/) and then the [minimal polynomial criterion](/0MPAJRB23T/) to decide whether $A$ is diagonalizable.
+4. ◦ Decide which of these matrices are diagonalizable over $\R$, and give the reason in each case:
+$$\text{(a)} \begin{pmatrix} 1 & 4 & 5 \\ 0 & 2 & 6 \\ 0 & 0 & 3 \end{pmatrix}, \qquad \text{(b)} \begin{pmatrix} 2 & 0 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}, \qquad \text{(c)} \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}.$$
+For (c), answer the same question over $\C$.
 
-5. ◦ Let $C = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}$. Check that $C^3 = I$. Without computing any eigenvector, explain why $C$ is diagonalizable over $\C$ but not over $\R$.
+5. ◦ A real $3 \times 3$ matrix $A$ satisfies $A^2 - 3A + 2I = 0$ and $\operatorname{tr} A = 4$. Show that $A$ is diagonalizable over $\R$ and find its characteristic polynomial.
 
-6. ◦ Diagonalize $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ and give a closed formula for $A^k$, $k \ge 0$, as in [powers of a diagonalizable matrix](/0TNR9BQ871/). Check it for $k = 2$.
+6. ◦ Let $A = \begin{pmatrix} 4 & 1 \\ -1 & 2 \end{pmatrix}$. Find its eigenvalue, its eigenspace and its generalized eigenspace. Find a vector $v$ with $(A - 3I) v \ne 0$ and $(A - 3I)^2 v = 0$, and write the matrix of $A$ in the basis $(A - 3I) v, v$.
 
-7. ◦ Let $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 2 \end{pmatrix}$. Find the eigenspaces and the [generalized eigenspaces](/0AJ035ZTZE/) of $A$, and check that the dimensions of the generalized eigenspaces are the algebraic multiplicities. Is $A$ diagonalizable?
+7. ◦ Show that both matrices are nilpotent and find their indices:
+$$N_1 = \begin{pmatrix} 3 & -9 \\ 1 & -3 \end{pmatrix}, \qquad N_2 = \begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}.$$
 
-8. ◦ Which of these matrices are [nilpotent](/063D5Z2C70/), and with what index? (a) $\begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix}$. (b) $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$. (c) $\begin{pmatrix} 0 & 1 & 2 \\ 0 & 0 & 3 \\ 0 & 0 & 0 \end{pmatrix}$. (d) $\begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}$.
+8. ◦ Let $A = \begin{pmatrix} 0 & 1 \\ -4 & 4 \end{pmatrix}$. Find an invertible real matrix $Q$ such that $Q^{-1} A Q$ is upper triangular, and decide whether $A$ is diagonalizable over $\R$.
 
-9. ◦ Let $T = \begin{pmatrix} 0 & 1 & 1 \\ 0 & 0 & 1 \\ 0 & 0 & 1 \end{pmatrix}$. Compute $\ker T^j$ for $j = 1, 2, 3$, and the [Fitting decomposition](/77SACA9CVQ/) $\R^3 = \ker T^3 \oplus \operatorname{im} T^3$. At which power do the kernels stop growing?
+9. • Let $F$ be a field of characteristic different from $2$ and let $A \in M_n(F)$ satisfy $A^3 = A$. Show that $A$ is diagonalizable over $F$ with all eigenvalues in $\set{-1, 0, 1}$. Then show that $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ over $\mathbb{F}_2$ satisfies $A^3 = A$ and is not diagonalizable over $\mathbb{F}_2$.
 
-10. ◦ The matrix $A = \begin{pmatrix} 0 & 1 \\ -4 & 4 \end{pmatrix}$ has $p_A = (t - 2)^2$. Find an invertible $P$ with $P^{-1} A P$ upper triangular, as [triangularization](/0363JMQ42Y/) promises. Is $A$ diagonalizable?
+10. • Let $u, v \in F^n$ be nonzero column vectors and $A = u v^{\mathsf T}$. (a) Show that $A^2 = (v^{\mathsf T} u) A$. (b) Show that $A$ is diagonalizable over $F$ if and only if $v^{\mathsf T} u \ne 0$. (c) For $u = (1, 2, -1)^{\mathsf T}$ and $v = (3, 1, 1)^{\mathsf T}$ in $\R^3$, give the eigenvalues of $A$ with their algebraic multiplicities and a basis of eigenvectors.
 
-11. • Let $V$ be finite-dimensional, let $T \colon V \to V$ be invertible, and let $U$ be $T$-invariant. Show that $T(U) = U$ and that $U$ is invariant under $T^{-1}$. Then show that finite dimension is needed: on the space of real sequences $(x_n)_{n \in \Z}$, take the shift $(T x)_n = x_{n-1}$ and $U = \set{x : x_n = 0 \text{ for all } n < 0}$.
+11. • Let
+$$A = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & 1 \end{pmatrix}, \qquad B = \begin{pmatrix} 1 & 1 & 1 \\ 2 & 1 & 0 \\ 2 & 0 & 1 \end{pmatrix}.$$
+Check that $A B = B A$, and find one invertible $P$ such that $P^{-1} A P$ and $P^{-1} B P$ are both diagonal. Show that the basis $e_1, (0, 1, 1), (0, 1, -1)$ diagonalizes $A$ but not $B$.
 
-12. • Find all subspaces of $\R^2$ that are invariant under the shear $S = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$. Conclude that the invariant line $\R e_1$ has no invariant complement.
+12. • Let $T$ be an endomorphism of a finite-dimensional space $V$. Show that the following are equivalent: (i) $\ker T \cap \operatorname{im} T = 0$; (ii) $V = \ker T \oplus \operatorname{im} T$; (iii) $\ker T = \ker T^2$. Give a $2 \times 2$ matrix for which all three fail.
 
-13. • For which real numbers $a$ and $b$ is $\begin{pmatrix} 1 & a & b \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix}$ diagonalizable?
+13. • Find the error. "Claim: the sum of two diagonalizable $n \times n$ matrices is diagonalizable. Proof: write $A = P D P^{-1}$ and $B = P E P^{-1}$ with $D$ and $E$ diagonal; then $A + B = P (D + E) P^{-1}$." Show that the claim is false with $A = \begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & 0 \\ 0 & -1 \end{pmatrix}$, and state a hypothesis under which the conclusion holds.
 
-14. • Let $A$ be a square matrix over a field $F$ with $A^3 = A$. Show that $A$ is diagonalizable when $2 \ne 0$ in $F$, and that its eigenvalues lie in $\set{0, 1, -1}$. Give a matrix over $\mathbb{F}_2$ with $A^3 = A$ that is not diagonalizable.
+14. • Let $A = \begin{pmatrix} 1 & 1 & -1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{pmatrix}$ over $\R$. (a) Find $p_A$ and $m_A$. (b) Check that $1 = (t - 1)^2 - t (t - 2)$, and use this identity to write the projections of $\R^3$ onto $\ker (A - I)^2$ along $\ker (A - 2I)$ and onto $\ker (A - 2I)$ along $\ker (A - I)^2$ as explicit matrices. (c) Give a basis of each of the two kernels.
 
-15. • Let $A$ be an $n \times n$ matrix of rank $1$ over a field $F$. Show that $A$ is diagonalizable if and only if $\operatorname{tr} A \ne 0$.
+15. • For the matrix $A$ of Exercise 14, find the Jordan-Chevalley decomposition $A = S + N$. Show that $\operatorname{diag}(1, 1, 2)$ does not commute with $A - \operatorname{diag}(1, 1, 2)$, so the diagonal of $A$ is not $S$.
 
-16. • Let $A = \begin{pmatrix} 2 & 1 \\ 2 & 3 \end{pmatrix}$. Write the [eigendecomposition](/D0AP2R7272/) of $A$ as a spectral sum $\lambda_1 E_1 + \lambda_2 E_2$, and check that $E_1 E_2 = 0$ and $E_1 + E_2 = I$. Use it to find a matrix $B$ with $B^2 = A$ and both eigenvalues of $B$ positive, and write $B$ as a polynomial of degree at most $1$ in $A$.
+16. • Let $T = \begin{pmatrix} -1 & 1 & 0 \\ -1 & 0 & 1 \\ -1 & 1 & 0 \end{pmatrix}$ over $\R$. Find the ranks of $T$, $T^2$ and $T^3$, the Fitting components $\ker T^3$ and $\operatorname{im} T^3$, and the matrix of $T$ on each component in a basis of your choice. Check that the first is nilpotent and the second invertible.
 
-17. • Let $J$ be the $3 \times 3$ matrix of ones and $C$ $C = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}$. Show that $J$ and $C$ commute and find a basis of $\C^3$ in which both are diagonal, as [simultaneous diagonalization](/0FK17N4DKA/) promises. (Use $\omega = e^{2\pi i/3}$.)
+17. • Let $A = \begin{pmatrix} 0 & 3 \\ 1 & 0 \end{pmatrix}$ and let $B$ be the $4 \times 4$ block matrix $\begin{pmatrix} A & I_2 \\ 0 & A \end{pmatrix}$. Decide which of $A$, $A \oplus A$ and $B$ are semisimple over $\Q$, which are diagonalizable over $\Q$, and which are diagonalizable over $\R$.
 
-18. • Let $A$ and $B$ be diagonalizable $n \times n$ matrices with $A B = B A$. Show that $A + B$ and $A B$ are diagonalizable. Then give two diagonalizable $2 \times 2$ matrices whose sum is not diagonalizable.
+18. • A real $5 \times 5$ matrix $A$ has $p_A = (t - 2)^3 (t + 1)^2$, $\operatorname{rank}(A - 2I) = 3$ and $\operatorname{rank}(A + I) = 3$. Find the geometric multiplicities of $2$ and $-1$, the dimensions of the two generalized eigenspaces and $\operatorname{rank}(A - 2I)^5$. Is $A$ diagonalizable?
 
-19. • Let $C = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}$. Apply the [kernels lemma](/ACBNK1VFVG/) to the factorization $t^3 - 1 = (t - 1)(t^2 + t + 1)$ over $\R$. Find the two summands of $\R^3$, a Bézout identity $a(t)(t - 1) + b(t)(t^2 + t + 1) = 1$, and the two projections as polynomials in $C$.
+19. • The sequence $x_0 = 2$, $x_1 = 1$, $x_{k+2} = x_{k+1} + 6 x_k$ starts $2, 1, 13, 19, \dots$. Write $v_{k+1} = A v_k$ with $v_k = (x_{k+1}, x_k)$, diagonalize $A$, and find a closed formula for $x_k$. Compute $x_6$.
 
-20. • Find the [Jordan-Chevalley decomposition](/011K11VPJN/) $A = S + N$ of $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 2 \end{pmatrix}$. Write $S$ and $N$ as polynomials in $A$, and check that $S N = N S$.
+20. • Let $A \in M_n(\C)$. Show that $A$ is diagonalizable if and only if $\ker (A - \lambda I) = \ker (A - \lambda I)^2$ for every eigenvalue $\lambda$ of $A$.
 
-21. • Let $N$ be a nilpotent $3 \times 3$ matrix with $N^2 \ne 0$. Show that there is a vector $v$ such that $N^2 v, N v, v$ is a basis of $F^3$, and write the matrix of $N$ in this basis.
+21. ★ Let $F$ be a field, $n \ge 1$, and let $N$ be the endomorphism of $F^n$ with $N e_1 = 0$ and $N e_i = e_{i-1}$ for $2 \le i \le n$. Show that the $N$-invariant subspaces are exactly $0$ and $\operatorname{span}(e_1, \dots, e_k)$ for $1 \le k \le n$, so there are exactly $n + 1$ of them.
 
-22. • Decide whether each real matrix is [semisimple](/08VRX3Q4PB/), and whether it is diagonalizable over $\C$. (a) $\begin{pmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$. (b) $\begin{pmatrix} 0 & -1 & 1 & 0 \\ 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}$.
+22. ★ Let $q$ be a prime power and $D = \operatorname{diag}(1, 1, 0)$ over $\mathbb{F}_q$. Show that $D$ has exactly $2(q + 3)$ invariant subspaces in $\mathbb{F}_q^3$. How many is that for $q = 2$?
 
-23. • Let $T$ be an endomorphism of a finite-dimensional space $V$. Show that these conditions are equivalent: (a) $\ker T \cap \operatorname{im} T = 0$; (b) $V = \ker T \oplus \operatorname{im} T$; (c) $\ker T = \ker T^2$.
+23. ★ Show that the diagonalizable matrices are dense in $M_n(\C)$: for every $A \in M_n(\C)$ and every $\varepsilon > 0$ there is a diagonalizable $B$ with $\abs{a_{ij} - b_{ij}} < \varepsilon$ for all $i, j$.
 
-24. ★ Prove that the diagonalizable matrices are dense in $M_n(\C)$: for every $A$ and every $\varepsilon > 0$ there is a diagonalizable $B$ whose entries all differ from those of $A$ by less than $\varepsilon$. Use [triangularization](/0363JMQ42Y/) rather than the discriminant.
+24. ★ Let $T$ be an invertible endomorphism of a finite-dimensional complex vector space. Show that there is exactly one pair $S, U$ with $T = S U$, $S$ diagonalizable, $U - \mathrm{id}$ nilpotent and $S U = U S$.
 
-25. ★ Let $A \in M_n(\C)$. Prove that $A$ is diagonalizable if and only if $\ker(A - \lambda I) = \ker(A - \lambda I)^2$ for every eigenvalue $\lambda$ of $A$.
-
-26. ★ Prove the uniqueness part of the Jordan-Chevalley decomposition: if $T = S + N = S' + N'$, where $S, S'$ are diagonalizable, $N, N'$ are nilpotent, $S N = N S$, $S' N' = N' S'$, and $S$, $N$ are polynomials in $T$, then $S = S'$ and $N = N'$.
-
-27. ★ Let $N$ be the nilpotent Jordan block of size $n$ over a field $F$, with $N e_1 = 0$ and $N e_i = e_{i-1}$ for $i \ge 2$. Prove that $N$ has exactly $n + 1$ invariant subspaces, namely $\ker N^k = \operatorname{span}(e_1, \dots, e_k)$ for $k = 0, 1, \dots, n$.
-
-28. ★ Let $T$ be invertible with $p_T$ split, and let $T = S + N$ be its Jordan-Chevalley decomposition. Show that $T = S U$ with $U = I + S^{-1} N$, that $S$ and $U$ commute, and that $U - I$ is nilpotent. Show that this multiplicative decomposition is unique: if $T = S' U'$ with $S'$ diagonalizable, $U' - I$ nilpotent and $S' U' = U' S'$, then $S' = S$ and $U' = U$.
+25. ★ (a) Let $T$ be an invertible endomorphism of a finite-dimensional space $V$ and let $U$ be $T$-invariant. Show that $T(U) = U$ and that $U$ is $T^{-1}$-invariant. (b) Let $V = F[x, x^{-1}]$ be the space of Laurent polynomials over a field $F$, $T$ the multiplication by $x$, and $U = F[x]$. Show that $T$ is invertible and $U$ is $T$-invariant, but $T(U) \ne U$ and $U$ is not $T^{-1}$-invariant.

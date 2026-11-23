@@ -1,32 +1,31 @@
 ## What to remember
 
-- A Hermitian matrix $A$ is **positive definite** when $x^* A x > 0$ for all $x \ne 0$, and **positive semidefinite** when $x^* A x \ge 0$ for all $x$. The definitions in this book require $A$ to be Hermitian (real symmetric in the real case).
-- **Tests.** For Hermitian $A$: $A$ is positive definite $\iff$ all eigenvalues are positive $\iff$ $A = B^* B$ with $B$ invertible $\iff$ all leading principal minors $\Delta_1, \dots, \Delta_n$ are positive. $A$ is positive semidefinite $\iff$ all eigenvalues are $\ge 0$ $\iff$ $A = B^* B$ for some $B$ $\iff$ all principal minors $\det A_S$ are $\ge 0$.
-- **Cholesky.** A positive definite $A$ has exactly one factorization $A = L L^*$ with $L$ lower triangular and positive real diagonal entries.
-- **Square root and polar form.** A positive semidefinite $A$ has exactly one positive semidefinite $B$ with $B^2 = A$. Every square matrix is $A = UP$ with $U$ unitary and $P = (A^* A)^{1/2}$; $U$ is unique when $A$ is invertible.
-- **Singular values** of an $m \times n$ matrix $A$ are $\sigma_i = \sqrt{\lambda_i(A^* A)}$, in decreasing order. The number of nonzero ones is the rank, $\norm{A}_2 = \sigma_1$, and $\norm{A}_F^2 = \sum \sigma_i^2$.
-- **SVD.** $A = U \Sigma V^* = \sum_{i=1}^r \sigma_i u_i v_i^*$ with $U$, $V$ unitary. The first $r$ columns of $U$ and $V$ are orthonormal bases of the column spaces of $A$ and $A^*$; the remaining columns span the null spaces of $A^*$ and $A$.
-- **Pseudoinverse.** $A^+ = \sum_{i=1}^r \sigma_i^{-1} v_i u_i^*$ is the unique matrix that satisfies the four Penrose conditions, and $A^+ b$ is the least-squares solution of $Ax = b$ of smallest norm. With independent columns, $A^+ = (A^* A)^{-1} A^*$.
-- **Eckart-Young-Mirsky.** The truncated SVD $A_k = \sum_{i \le k} \sigma_i u_i v_i^*$ is a best approximation of rank at most $k$, with $\norm{A - A_k}_2 = \sigma_{k+1}$ and $\norm{A - A_k}_F^2 = \sigma_{k+1}^2 + \cdots + \sigma_r^2$.
-- **Pairs.** For $A$ Hermitian and $B$ positive definite there is an invertible $P$ with $P^* B P = I$ and $P^* A P$ real diagonal; the diagonal entries are the roots of $\det(A - \lambda B) = 0$.
+- **Definitions.** A Hermitian $n \times n$ matrix $A$ is positive definite if $x^* A x > 0$ for every $x \ne 0$, and positive semidefinite if $x^* A x \ge 0$ for every $x$. A matrix that is not Hermitian is neither, whatever its quadratic form does. For real matrices, read "real symmetric" and $x^{\mathsf{T}} A x$.
+- **Eigenvalue test.** A Hermitian $A$ is positive definite if and only if all its eigenvalues are positive, and semidefinite if and only if they are all nonnegative.
+- **Gram matrices.** For every $m \times n$ matrix $B$, $B^* B$ is positive semidefinite, because $x^* B^* B x = \norm{Bx}^2$. It is definite exactly when the columns of $B$ are independent. Every positive semidefinite matrix is of the form $B^* B$.
+- **Sylvester's criterion.** A Hermitian $A$ is positive definite if and only if its leading principal minors $\Delta_1, \dots, \Delta_n$ are all positive. It is semidefinite if and only if all $2^n - 1$ principal minors $\det A_S$ are nonnegative.
+- **Cholesky and the square root.** A positive definite $A$ has exactly one factorization $A = L L^*$ with $L$ lower triangular and with real positive diagonal entries. A positive semidefinite $A$ has exactly one positive semidefinite square root, $A^{1/2} = U \operatorname{diag}(\sqrt{\lambda_i}) U^*$ when $A = U \operatorname{diag}(\lambda_i) U^*$.
+- **Polar decomposition.** Every square $A$ is $UP$ with $U$ unitary and $P = (A^* A)^{1/2}$. The factor $P$ is unique, and $U$ is unique when $A$ is invertible.
+- **SVD.** Every $m \times n$ matrix of rank $r$ is $A = U \Sigma V^* = \sum_{i=1}^r \sigma_i u_i v_i^*$ with $\sigma_1 \ge \dots \ge \sigma_r > 0$. The $u_i$ with $i \le r$ span the column space, the $v_i$ with $i > r$ span the null space, $\norm{A}_2 = \sigma_1$ and $\norm{A}_F^2 = \sum \sigma_i^2$.
+- **Pseudoinverse and best approximation.** $A^+ = V \Sigma^+ U^*$ is the only matrix that satisfies the four Penrose conditions, and $A^+ b$ is the least-squares solution of $Ax = b$ of least norm. The truncation $A_k = \sum_{i \le k} \sigma_i u_i v_i^*$ is a nearest matrix of rank at most $k$, at distance $\sigma_{k+1}$ in the operator norm.
+- **Pairs of forms.** If $A$ is Hermitian and $B$ is positive definite, there is an invertible $P$ with $P^* B P = I$ and $P^* A P$ real diagonal, with the roots of $\det(A - \lambda B) = 0$ on the diagonal.
 
-## Decompositions compared
-
-| Decomposition | Applies to | Factors | Unique |
+| Factorization | Applies to | Form | Unique? |
 |---|---|---|---|
-| [Spectral](/0DGZBQWZWN/) $A = U D U^*$ | Hermitian $A$ | $U$ unitary, $D$ real diagonal | $D$ up to order |
-| [Cholesky](/0WKG8CYY6A/) $A = L L^*$ | positive definite $A$ | $L$ lower triangular, diagonal $> 0$ | yes |
-| [Square root](/EQ98KW1ZN4/) $A = B^2$ | positive semidefinite $A$ | $B$ positive semidefinite | yes |
-| [Polar](/0J2C7BDJQA/) $A = UP$ | square $A$ | $U$ unitary, $P$ positive semidefinite | $P$ always; $U$ if $A$ is invertible |
-| [SVD](/000NPTMX6J/) $A = U \Sigma V^*$ | any $m \times n$ matrix $A$ | $U$, $V$ unitary, $\Sigma$ diagonal with entries $\ge 0$ | $\Sigma$ always; $U$, $V$ not |
+| Spectral | Hermitian $A$ | $A = U D U^*$, $U$ unitary, $D$ real diagonal | $D$ up to order |
+| Cholesky | positive definite $A$ | $A = L L^*$, $L$ lower triangular, $l_{ii} > 0$ | yes |
+| Square root | positive semidefinite $A$ | $A = B^2$, $B$ positive semidefinite | yes |
+| Polar | square $A$ | $A = UP$, $U$ unitary, $P$ semidefinite | $P$ always; $U$ if $A$ is invertible |
+| SVD | any $m \times n$ $A$ | $A = U \Sigma V^*$, $U$ and $V$ unitary | $\Sigma$ yes; $U$ and $V$ no |
+| Simultaneous | $A$ Hermitian, $B$ positive definite | $P^* B P = I$, $P^* A P = D$ | $D$ up to order |
 
-: Five factorizations of the chapter and its prerequisites. The last four use only positive semidefinite matrices and unitary factors, the matrix versions of $r \ge 0$ and $e^{i\theta}$.
+: The factorizations of the chapter, what they need and what in them is unique.
 
 ## Common errors
 
-- **Positive entries are not positive definiteness.** The matrix $\begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}$ has $x^T A x = -4$ at $x = (1, -1)$. Conversely, a positive definite matrix can have negative entries off the diagonal.
-- **Leading minors for semidefiniteness.** Nonnegative leading minors do not give a positive semidefinite matrix: $\operatorname{diag}(0, -1)$ has leading minors $0$ and $0$. Check all principal minors, or the eigenvalues.
-- **Dropping symmetry.** Sylvester's criterion and the eigenvalue test are for Hermitian matrices. The matrix $\begin{pmatrix} 1 & 5 \\ 0 & 1 \end{pmatrix}$ has positive leading minors and the eigenvalue $1$ only, yet $x^T A x = -3$ at $x = (1, -1)$.
-- **Eigenvalues are not singular values.** For a non-normal matrix such as a shear, the numbers $\abs{\lambda_i}$ and $\sigma_i$ differ. They agree for normal matrices.
-- **Mismatched vectors in the SVD.** Choosing $U$ and $V$ separately as eigenvectors of $A A^*$ and $A^* A$ can give wrong signs. Choose $v_i$ first, then put $u_i = A v_i / \sigma_i$.
-- **Inverting $A^* A$ when it is singular.** The formula $(A^* A)^{-1} A^*$ needs independent columns. In general, use the SVD to find $A^+$.
+- **Positive entries are not positive definiteness.** The matrix with $1$ on the diagonal and $3$ off it has the eigenvalue $-2$. Conversely, a positive definite matrix may have negative entries off the diagonal.
+- **Leading minors for semidefiniteness.** Nonnegative leading minors do not make a Hermitian matrix semidefinite; part 2 of Sylvester's criterion needs every principal minor.
+- **Eigenvalues for singular values.** For a matrix that is not normal, the singular values are not the absolute values of the eigenvalues. Compute the eigenvalues of $A^* A$ and take square roots.
+- **The non-Hermitian case.** A real matrix whose quadratic form is positive is not called positive definite unless it is symmetric, and the tests of the chapter apply only to Hermitian matrices.
+- **Normalizing in the wrong inner product.** In simultaneous diagonalization the vectors must satisfy $p_i^* B p_i = 1$, not $p_i^* p_i = 1$, and $P$ is in general not unitary.
+- **The pseudoinverse as an inverse.** $A A^+$ and $A^+ A$ are orthogonal projections, not identities, and in general $(AB)^+ \ne B^+ A^+$.

@@ -14,11 +14,11 @@ This volume treats proof as mathematicians practise it, not as an object of form
 
 ## The chapters
 
-**Chapter 1.1, Proof, theorems and mathematical method**, explains what a [proof](/0B94TKFQJX/) is, how [deduction differs from induction and abduction](/5V35SGEN1T/), and what the labels theorem, lemma and corollary signal. It treats the [axiomatic method](/GD2JBXJV5Z/), [conjectures](/WMEMMHZ3BH/), and the uses of examples, abstraction and [classification](/9HQ3TADPA8/) in mathematical practice.
+**Chapter 1.1, Proof, theorems and mathematical method**, explains what a [proof](/0B94TKFQJX/) is, how [deduction differs from induction and abduction](/5V35SGEN1T/), what the labels [theorem, lemma, corollary and proposition](/KK5F0F03ZW/) signal, and what the [hypotheses and conclusion](/W48XN2MEM9/) of a theorem are. It treats the [axiomatic method](/GD2JBXJV5Z/), [conjectures](/WMEMMHZ3BH/), the [functions of proof](/ENY0GKRJS8/) beyond verification, the [methodology of mathematics](/3FJ3XMV9KD/), the uses of examples, abstraction and [classification](/9HQ3TADPA8/) in mathematical practice, and the two temperaments of [problem solvers and theory builders](/Z29HM45R29/).
 
 **Chapter 1.2, The language of mathematical statements**, reads [statements](/S9MHMRAX88/) word by word: connectives, [conditionals](/FA6YZGR2SS/), [quantifiers](/EGTZPA6QH3/), [negation](/K930V33BSC/), [existence and uniqueness](/ACSC75R7R5/) and the ambiguities of mathematical English. It ends with the [Wason selection task](/7GYZJ2MGY9/), a test of how people read a conditional.
 
-**Chapter 1.3, Definitions in mathematics**, sets out the logical form of a [definition](/8ZCZ3HW91Z/), its kinds, the duty to prove that a definition is [well-defined](/HNGZEBKVY2/), [equivalent definitions](/NZ42PS2P1A/), the phrase [up to](/CBC72TX3NQ/), and why good definitions take the form they do.
+**Chapter 1.3, Definitions in mathematics**, sets out the logical form of a [definition](/8ZCZ3HW91Z/), its kinds, the duty to prove that a definition is [well-defined](/HNGZEBKVY2/), [equivalent definitions](/NZ42PS2P1A/), the phrase [up to](/CBC72TX3NQ/), [definite descriptions](/5P955TVSS2/), the [primitive notions](/QMQEJKFEYZ/) that every definition rests on, and why good definitions take the form they do.
 
 **Chapter 1.4, Notation, conventions and jargon**, collects the symbols, the [conflicting conventions](/CSFEP56A7D/), the safe [abuses of notation](/JV68YRB5YZ/), and the informal words of the trade, from [trivial and obvious](/Y0HXCJRB9B/) to [sufficiently large](/FEQ7WATMHF/) and [sharp](/KWQV0G0VJ3/).
 
@@ -52,7 +52,7 @@ Each entry stands on its own. Its facts box lists what it needs, with the number
 
 ## What you need first
 
-Very little. The examples use school algebra and geometry: even and odd numbers, divisibility, primes, inequalities and triangles. A few entries in Chapters 1.1 and 1.8 use first-year calculus and algebra, such as limits, continuity and groups. Some entries use [sets](/0BSJ7RQ9BW/) and [functions](/0EPAT51DXQ/) in the plain sense of a first course; their formal theory is elsewhere in the book. Formal logic is not needed, and [Volume 2](/DYJ0KGTPMR/) is there for the reader who wants it.
+Very little. The examples use school algebra and geometry: even and odd numbers, divisibility, primes, inequalities and triangles. Some examples in Chapters 1.1 to 1.3 and 1.8 use first-year calculus and algebra, such as limits, continuity, vector spaces and groups; a reader who has not met them can pass over those examples. Some entries use [sets](/0BSJ7RQ9BW/) and [functions](/0EPAT51DXQ/) in the plain sense of a first course; their formal theory is elsewhere in the book. Formal logic is not needed, and [Volume 2](/DYJ0KGTPMR/) is there for the reader who wants it.
 
 ## The exercises
 

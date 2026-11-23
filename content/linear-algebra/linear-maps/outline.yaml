@@ -1,11 +1,13 @@
 # The order of chapter 3.6, linear maps. Groups are read in order; entries in a group too.
 groups:
-  - title: Linear maps and their examples
+  - title: Linear maps and matrices
     intro: >
-      A linear map is a function between vector spaces that respects addition and scalar multiplication. The
-      first entries give the definition with its non-examples, then the standard examples: derivatives,
-      integrals, shifts, the maps $x \mapsto Ax$, and the rotations, reflections, shears and projections of the
-      plane. Composites of linear maps are linear, and for matrix maps composition is the matrix product.
+      A map $T \colon V \to W$ between vector spaces over the same field $F$ is linear when
+      $T(u + v) = T(u) + T(v)$ and $T(av) = a T(v)$ for all vectors $u, v$ and scalars $a$. The group gives
+      examples (derivatives, integrals, shifts, the trace, the transpose, maps of the plane) and proves that every
+      linear map $T \colon F^n \to F^m$ is $x \mapsto Ax$ for exactly one $m \times n$ matrix $A$, whose $j$-th
+      column is $T(e_j)$. If $S$ has matrix $A$ and $T$ has matrix $B$, then $S \circ T$ has matrix $AB$, and in
+      general $AB \ne BA$.
     entries:
       - 0NRYHJPQG2
       - 0SS770NS8B
@@ -15,30 +17,34 @@ groups:
 
   - title: Kernel and image
     intro: >
-      Every linear map $T \colon V \to W$ has two subspaces attached: the kernel, the vectors sent to $0$, and the
-      image, the values taken. The kernel decides injectivity: $T$ is one-to-one exactly when
-      $\ker T = \set{0}$.
+      For a linear map $T \colon V \to W$, the kernel $\ker T = \set{v : T(v) = 0}$ is a subspace of $V$ and
+      the image $\operatorname{im} T$ is a subspace of $W$. The map $T$ is injective exactly when
+      $\ker T = \set{0}$. If $(v_i)$ is a basis of $V$ and $(w_i)$ is any family in $W$ with the same index set,
+      there is exactly one linear map with $T(v_i) = w_i$ for all $i$.
     entries:
       - 0S23E6YE83
       - 0WSFKKT6FF
       - 0BJBYCGMWE
-
-  - title: Bases, rank and nullity
-    intro: >
-      A linear map is fixed by its values on a basis, and these values can be chosen freely. The rank and the
-      nullity are the dimensions of the image and of the kernel, and the [rank-nullity theorem](/0W4FSW1TVB/)
-      says that they add up to the dimension of the domain.
-    entries:
       - 0R8X9XA83A
+
+  - title: Rank and nullity
+    intro: >
+      The rank of $T$ is $\dim \operatorname{im} T$ and the nullity is $\dim \ker T$. The rank-nullity theorem
+      states: if $V$ is finite-dimensional and $T \colon V \to W$ is linear, then
+      $\dim V = \operatorname{rank} T + \dim \ker T$. For a matrix, the rank is the number of pivots and the
+      nullity the number of free variables, so the theorem counts columns.
+    entries:
       - 0ZZXSBTR4J
       - 0APCFW7639
       - 0W4FSW1TVB
 
   - title: Isomorphisms
     intro: >
-      A bijective linear map is an isomorphism, and its inverse is again linear. Finite-dimensional spaces over
-      the same field are isomorphic exactly when they have the same dimension. For a map from a
-      finite-dimensional space to itself, injective, surjective and bijective are the same condition.
+      The inverse of a bijective linear map is linear, so a linear bijection is an isomorphism. Two
+      finite-dimensional spaces over $F$ are isomorphic exactly when they have the same dimension, and
+      $V \cong F^n$ when $\dim V = n$. For an endomorphism $T$ of a finite-dimensional space, rank-nullity shows
+      that injective, surjective and bijective are equivalent; the shift operators show that this fails in
+      infinite dimension.
     entries:
       - 0B8T10CE7N
       - 0VJBSK15SN
@@ -46,9 +52,12 @@ groups:
 
   - title: Spaces of maps and the algebra of endomorphisms
     intro: >
-      The linear maps from $V$ to $W$ form a vector space $\operatorname{Hom}(V, W)$ of dimension
-      $\dim V \cdot \dim W$. The maps from a space to itself can also be composed, and with composition as
-      product they form an algebra, which a basis identifies with the matrix algebra $M_n(F)$.
+      The linear maps $V \to W$ form a vector space $\operatorname{Hom}(V, W)$ under pointwise operations. If
+      $V$ and $W$ are finite-dimensional, then
+      $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$. The endomorphisms of $V$ form an algebra
+      $\operatorname{End}(V)$ under composition, and a basis of $V$ with $n$ elements gives an isomorphism of
+      algebras $\operatorname{End}(V) \cong M_n(F)$. For $n \ge 2$ this algebra is not commutative, has zero
+      divisors, and its centre consists of the scalar maps.
     entries:
       - 0X9MBPP2Z3
       - 0Z9N1ER0W0
@@ -57,8 +66,10 @@ groups:
 
   - title: Semilinear maps
     intro: >
-      A semilinear map is additive but moves scalars by an automorphism of the field, as in
-      $T(\lambda v) = \bar\lambda\, T(v)$ over $\C$. Such maps appear with complex conjugation and in projective
-      geometry.
+      A map $T$ between vector spaces over a field $K$ is semilinear with respect to an automorphism $\sigma$
+      of $K$ when it is additive and $T(av) = \sigma(a) T(v)$. Complex conjugation on $\C^n$ is the basic
+      example; it is antilinear, the case $K = \C$ and $\sigma(a) = \bar a$. If $T \ne 0$, the automorphism
+      $\sigma$ is determined by $T$, and the composite of a $\sigma$-semilinear map and a $\tau$-semilinear map
+      is semilinear with respect to the composite automorphism.
     entries:
       - BNPDDM95KF

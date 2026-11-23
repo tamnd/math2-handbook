@@ -1,43 +1,45 @@
-1. ◦ Which of these are [linear forms](/07YQ1C78G0/)? (a) $(x, y, z) \mapsto 2x - z$ on $\R^3$. (b) $x \mapsto x + 1$ on $\R$. (c) $(x, y) \mapsto xy$ on $\R^2$. (d) $p \mapsto p'(1)$ on the polynomials of degree at most $2$. (e) $A \mapsto \operatorname{tr} A + a_{12}$ on $M_2(\R)$.
+1. ◦ Decide which of these maps are [linear forms](/07YQ1C78G0/): $f(x, y, z) = x - 2y + 3z$ on $\R^3$; $g(x, y) = xy$ on $\R^2$; $h(p) = p'(0) + p(1)$ on $P_2$; $k(p) = p(0)^2$ on $P_2$. For each linear form on $P_2$, give its row in the basis $(1, x, x^2)$.
 
-2. ◦ Find the [dual basis](/0ZD2CF6ZS0/) of the basis $(1, 0, 0)$, $(1, 1, 0)$, $(1, 1, 1)$ of $\R^3$, as linear forms in $x, y, z$.
+2. ◦ Find a nonzero linear form on $\R^3$ whose kernel is the plane spanned by $(1, 1, 0)$ and $(0, 1, 1)$. How many such forms are there?
 
-3. ◦ Write the form $f = 3x + 2y - z$ in the dual basis of Exercise 2.
+3. ◦ Find the [dual basis](/0ZD2CF6ZS0/) of the basis $(1, 0, 0)$, $(1, 1, 0)$, $(1, 1, 1)$ of $\R^3$, and use it to find the coordinates of $(2, 5, 3)$ in this basis.
 
-4. ◦ Find the [annihilator](/0ASHNYF7AG/) of $U = \operatorname{span}\set{(1, 0, 1), (0, 1, 1)}$ in $(\R^3)^*$, and check that $\dim U + \dim U^0 = 3$.
+4. ◦ Let $U = \operatorname{span}\set{(1, 0, 2, 0), (0, 1, 0, -1)}$ in $\R^4$. Find a basis of the [annihilator](/0ASHNYF7AG/) $U^0$.
 
-5. ◦ Find (a) $\dim M_{2 \times 3}(\R)^*$; (b) $\dim U^0$ for a $2$-dimensional subspace $U$ of $\R^5$; (c) the dimension of the dual of $\Q^{(\N)}$, the space of finitely supported rational sequences, over $\Q$.
+5. ◦ Let $f \colon \R^2 \to \R^3$, $f(x, y) = (x + 2y, 3x, x - y)$, and let $\varphi(y_1, y_2, y_3) = 2y_1 - y_2 + y_3$. Compute $f^*(\varphi)$. Between which spaces does $f^*$ go, and what is the size of its matrix?
 
-6. ◦ Let $f \colon \R^2 \to \R^3$ be $f(x, y) = (x, x + y, 2y)$, and let $e_1^*, e_2^*, e_3^*$ be the coordinate forms. Compute the [dual map](/0AZ5ARP287/) on $e_2^*$, and write down the matrix of $f^*$ in the dual standard bases.
+6. ◦ Find the error: "Let $V = F^{(\N)}$ be the space of sequences with finitely many nonzero terms, and $e_n^*$ the coordinate forms. Every linear form on $V$ is a finite combination of the $e_n^*$." Give a form that is not.
 
-7. ◦ Find the error: "A linear form is determined by its kernel, since its kernel is a hyperplane and the hyperplane fixes the form." State what is true.
+7. ◦ In $\R^2$ let $\varphi_1 = x + 2y$ and $\varphi_2 = x - y$, a basis of $(\R^2)^*$. Let $\Phi \in (\R^2)^{**}$ with $\Phi(\varphi_1) = 4$ and $\Phi(\varphi_2) = 1$. Find the vector $v$ with $\Phi = \operatorname{ev}(v)$.
 
-8. ◦ How many hyperplanes does $\F_3^3$ have?
+8. ◦ Use the [Erdős-Kaplansky theorem](/S5ET1HG2ZX/) to find the dimension of the dual of $\Q^{(\N)}$ and of the dual of $\mathbb{F}_2^{(\N)}$. Is either dual isomorphic to a space with a countable basis?
 
-9. • Show that the evaluations $\operatorname{ev}_{-1}$, $\operatorname{ev}_0$, $\operatorname{ev}_1$ form a basis of $P_2^*$, and find the basis of $P_2$ to which they are dual. Then write the form $p \mapsto p'(0)$ in this basis of $P_2^*$.
+9. • On $P_2$ let $f_0(p) = p(0)$, $f_1(p) = p'(0)$ and $f_2(p) = p''(0)$. Find the basis of $P_2$ whose dual basis is $f_0, f_1, f_2$, and write the form $p \mapsto p(1)$ in terms of $f_0, f_1, f_2$.
 
-10. • Identify $M_2(\R)$ with its dual through the trace pairing $A \mapsto (X \mapsto \operatorname{tr}(AX))$. Which matrices $A$ correspond to forms in the annihilator of the symmetric matrices?
+10. • Show that the forms $p \mapsto p(0)$, $p \mapsto p(1)$ and $p \mapsto \int_0^1 p(t)\,dt$ are a basis of $P_2^*$, and find the basis of $P_2$ of which they are the dual basis.
 
-11. • In $\R^4$, let $U = \operatorname{span}\set{(1, 1, 0, 0), (0, 1, 1, 0)}$ and $W = \R(0, 0, 1, 1)$. Find bases of $U^0$, $W^0$ and $(U + W)^0$, and check that $(U + W)^0 = U^0 \cap W^0$.
+11. • Let $f = x + y + z$ and $g = 2x - y$ on $\R^3$. Find $\ker f \cap \ker g$. Show that $h = x + 4y + 3z$ vanishes on it and write $h$ as a combination of $f$ and $g$.
 
-12. • Let $f_1, \ldots, f_k$ be linear forms on a finite-dimensional space $V$. Show that they are linearly independent if and only if the map $V \to F^k$, $v \mapsto (f_1(v), \ldots, f_k(v))$, is surjective.
+12. • Let $U$ and $W$ be subspaces of $V$. Show that $(U + W)^0 = U^0 \cap W^0$. If $V$ is finite-dimensional, show that $(U \cap W)^0 = U^0 + W^0$.
 
-13. • Let $f \colon \R^3 \to \R^2$ be $f(x, y, z) = (x + y, y + z)$. Find $\ker f^*$ and $\operatorname{im} f^*$, and check the theorem on the [kernel and image of the dual map](/7FA499AW3T/).
+13. • In $P_3$ let $\varphi_i$ be the form that takes the coefficient of $x^i$, and let $U = \operatorname{span}\set{1, x^2}$. Find a basis of $U^0$ in terms of the $\varphi_i$, and show that $p \mapsto p'(0)$ and $p \mapsto p(1) - p(-1)$ are another basis of $U^0$.
 
-14. • Let $U = \operatorname{span}\set{(1, 1, 0), (0, 1, 1)}$ in $\R^3$, and let $g$ be the form on $U$ with $g(1, 1, 0) = 1$ and $g(0, 1, 1) = 2$. Find all linear forms on $\R^3$ whose restriction to $U$ is $g$.
+14. • Let $T \colon P_2 \to P_2$, $T(p)(x) = p(x + 1)$. Find the matrix of $T$ in the basis $(1, x, x^2)$ and compute $T^*(\varphi_0)$, $T^*(\varphi_1)$, $T^*(\varphi_2)$ for the coefficient forms $\varphi_i$. Check that the [matrix of the dual map is the transpose](/0ZPB3180AY/). What is $T^*$ of the form $p \mapsto p(0)$?
 
-15. • Use annihilators to show that $\F_2^4$ has as many subspaces of dimension $1$ as of dimension $3$, and count them.
+15. • Let $f \colon \R^3 \to \R^2$, $f(x, y, z) = (x + y - z, 2x + 2y - 2z)$, and write $u, v$ for the coordinate forms of $\R^2$. Find $\ker f^*$ and $\operatorname{im} f^*$, and check that $\ker f^* = (\operatorname{im} f)^0$ and $\operatorname{im} f^* = (\ker f)^0$.
 
-16. • Let $f_1 = x + y + z$ and $f_2 = x - y$ on $\R^3$. Decide whether $g = 2x - y + z$ and $h = 3x + y + 2z$ lie in $\operatorname{span}\set{f_1, f_2}$ by testing them on $\ker f_1 \cap \ker f_2$. Write the one that does as a combination of $f_1$ and $f_2$.
+16. • Let $P$ be the matrix whose columns are a basis $B'$ of $F^n$. Show that the dual basis of $B'$, written as rows, is the list of rows of $P^{-1}$. Use this to find the dual basis of $(1, 0), (2, 1)$ in $\R^2$.
 
-17. • Find the basis $b_1, b_2$ of $\R^2$ whose dual basis is $f_1 = x + y$, $f_2 = x - y$.
+17. • Find the matrix $A$ with $\operatorname{tr}(AX) = x_{11} + 2x_{12} - x_{21}$ for all $X = (x_{ij})$ in $M_2(\R)$.
 
-18. • Let $U$ be a subspace of $V$ and $\pi \colon V \to V/U$ the quotient map. Show that $\pi^* \colon (V/U)^* \to V^*$ is injective and that its image is $U^0$.
+18. • Let $V$ have dimension $n$ and let $\varphi_1, \dots, \varphi_n \in V^*$. Show that $\varphi_1, \dots, \varphi_n$ is a basis of $V^*$ if and only if the only $v$ with $\varphi_i(v) = 0$ for all $i$ is $v = 0$.
 
-19. ★ Let $f_1, \ldots, f_k$ be linear forms on an $n$-dimensional space $V$. Show that $\dim(\ker f_1 \cap \cdots \cap \ker f_k) = n - \dim \operatorname{span}\set{f_1, \ldots, f_k}$. Deduce that a subspace of dimension $d$ is the common kernel of $n - d$ forms and of no fewer.
+19. ★ Let $f, g$ be linear forms on $V$ with $f(v)g(v) = 0$ for every $v \in V$. Show that $f = 0$ or $g = 0$. (A vector space is never the union of two proper subspaces.) Show that $\mathbb{F}_2^2$ is the union of three proper subspaces.
 
-20. ★ Show that the trace pairing $A \mapsto (X \mapsto \operatorname{tr}(AX))$ is an isomorphism $M_n(F) \to M_n(F)^*$. Which matrix corresponds to the form $X \mapsto x_{ij}$ that reads off one entry?
+20. ★ Let $V$ be a space of dimension $n$ over $F$. Show that $U \mapsto U^0$ is a bijection from the subspaces of dimension $k$ of $V$ to the subspaces of dimension $n - k$ of $V^*$ that reverses inclusion. Deduce that $\mathbb{F}_q^n$ has as many hyperplanes as lines, namely $(q^n - 1)/(q - 1)$.
 
-21. ★ Let $T \colon V \to V$ be linear, with $V$ finite-dimensional, and let $U$ be a subspace. Show that $T(U) \subseteq U$ if and only if $T^*(U^0) \subseteq U^0$.
+21. ★ Let $f \colon V \to W$ be a linear map between finite-dimensional spaces. Using $\operatorname{im} f^* = (\ker f)^0$ and the [dimension of the annihilator](/06Q1EFVH0Q/), show that $\operatorname{rank} f^* = \operatorname{rank} f$, and explain why this proves that the row rank of a matrix equals its column rank.
 
-22. ★ Let $V = \Q^{(\N)}$. Without using the [Erdős–Kaplansky theorem](/S5ET1HG2ZX/), show that $V^*$ has uncountable dimension over $\Q$, so that $V^* \not\cong V$.
+22. ★ Let $\varphi_1, \dots, \varphi_k \in V^*$. Show that they are linearly independent if and only if the map $V \to F^k$, $v \mapsto (\varphi_1(v), \dots, \varphi_k(v))$, is onto.
+
+23. ★ Let $V$ be a vector space over $\mathbb{F}_2$ with a countable infinite basis. Show without the Erdős-Kaplansky theorem that $V$ is countable, that $V^*$ is uncountable, and deduce that $\dim V^*$ is uncountable.

@@ -1,29 +1,27 @@
 ## What to remember
 
-- **Linear forms.** A linear form on $V$ is a linear map $V \to F$. Every form on $F^n$ is $x \mapsto c_1 x_1 + \cdots + c_n x_n$ for a unique row $(c_1, \ldots, c_n)$. A nonzero form is surjective, its kernel is a hyperplane, and if $\ker f \subseteq \ker g$ with $f \ne 0$, then $g = cf$ for some scalar $c$.
-- **Dual basis.** For a basis $b_1, \ldots, b_n$ of $V$, the forms $b_i^*$ with $b_i^*(b_j) = \delta_{ij}$ are a basis of $V^*$. They read off coordinates, $v = \sum_i b_i^*(v)\, b_i$, and every form is $f = \sum_i f(b_i)\, b_i^*$. In $F^n$, if the $b_j$ are the columns of $P$, the $b_i^*$ are the rows of $P^{-1}$.
-- **Dimension.** $\dim V^* = \dim V$ for finite-dimensional $V$, but the isomorphism $b_i \mapsto b_i^*$ depends on the basis. For infinite-dimensional $V$, $\dim V^* = \abs{F}^{\dim V} > \dim V$ (Erdős–Kaplansky).
-- **Double dual.** The evaluation map $\operatorname{ev} \colon V \to V^{**}$, $\operatorname{ev}(v)(\varphi) = \varphi(v)$, is linear and injective for every $V$, and it is an isomorphism exactly when $V$ is finite-dimensional.
-- **Annihilators.** $U^0 = \set{\varphi \in V^* : \varphi(U) = 0}$. Larger subspaces have smaller annihilators, $(U + W)^0 = U^0 \cap W^0$, and in finite dimension $(U \cap W)^0 = U^0 + W^0$ and $\dim U + \dim U^0 = \dim V$. Also $U^0 \cong (V/U)^*$ and $V^*/U^0 \cong U^*$.
-- **Dual map.** $f^*(\varphi) = \varphi \circ f$ defines $f^* \colon W^* \to V^*$, with $(g \circ f)^* = f^* \circ g^*$ and $\operatorname{id}^* = \operatorname{id}$. In dual bases, $[f^*]_{B^*,C^*} = ([f]_{C,B})^\top$.
-- **Kernel and image.** $\ker f^* = (\operatorname{im} f)^0$ and $\operatorname{im} f^* = (\ker f)^0$. So $f$ is surjective exactly when $f^*$ is injective, $f$ is injective exactly when $f^*$ is surjective, and in finite dimension $\operatorname{rank} f^* = \operatorname{rank} f$, which is row rank equals column rank.
+- **[Linear forms and hyperplanes](/XR0EQN0H8T/):** a linear form is a linear map $f \colon V \to F$. If $f \ne 0$, then $\ker f$ is a hyperplane and $V = \ker f \oplus Fv$ for every $v$ with $f(v) \ne 0$; every hyperplane is such a kernel, and $\ker f \subseteq \ker g$ with $f \ne 0$ gives $g = cf$ for exactly one $c \in F$. In dimension $n \ge 1$ the hyperplanes are the subspaces of dimension $n - 1$.
+- **[Dual basis](/0ZD2CF6ZS0/):** for a basis $b_1, \dots, b_n$ of $V$, the coordinate forms $b_i^*$ with $b_i^*(b_j) = 1$ for $i = j$ and $0$ otherwise form a [basis of $V^*$](/00889YD15K/), and every form is $f = \sum_i f(b_i)\, b_i^*$. So $\dim V^* = \dim V$ in finite dimension. The form $b_i^*$ depends on the whole basis, not on $b_i$ alone.
+- **Infinite dimension:** if $V$ has an infinite basis $B$, the coordinate forms span only the forms that vanish on all but finitely many $b \in B$, and the [Erdős-Kaplansky theorem](/S5ET1HG2ZX/) gives $\dim V^* = \abs{F}^{\dim V} > \dim V$.
+- **[Double dual](/0ZJM9D7NPS/):** the evaluation map $V \to V^{**}$, $v \mapsto (f \mapsto f(v))$, is linear and injective for every $V$, and it is an isomorphism exactly when $V$ is finite-dimensional. It uses no basis.
+- **[Annihilator](/0ASHNYF7AG/):** $U^0 = \set{f \in V^* : f(u) = 0 \text{ for all } u \in U}$. Taking annihilators reverses inclusions, $(U + W)^0 = U^0 \cap W^0$, and [in every dimension](/06Q1EFVH0Q/) $U^0 \cong (V/U)^*$ and $V^*/U^0 \cong U^*$. If $V$ is finite-dimensional, $\dim U + \dim U^0 = \dim V$.
+- **[Dual map](/0AZ5ARP287/):** a linear map $f \colon V \to W$ gives $f^* \colon W^* \to V^*$, $f^*(\varphi) = \varphi \circ f$. It reverses composition, $(g \circ f)^* = f^* \circ g^*$, and in dual bases its [matrix is the transpose](/0ZPB3180AY/) of the matrix of $f$.
+- **[Kernel and image of the dual map](/7FA499AW3T/):** $\ker f^* = (\operatorname{im} f)^0$ and $\operatorname{im} f^* = (\ker f)^0$. So $f$ is onto exactly when $f^*$ is injective, and in finite dimension $\operatorname{rank} f^* = \operatorname{rank} f$, which is row rank equals column rank.
 
-## Finite and infinite dimension
-
-| Statement | $\dim V < \infty$ | $\dim V = \infty$ |
+| | Finite dimension $n$ | Infinite dimension |
 |---|---|---|
-| The dual basis is a basis of $V^*$ | yes | no: it spans only the forms that vanish on all but finitely many $b_i$ |
-| $V^* \cong V$ | yes, through a basis | no: $\dim V^* > \dim V$ |
-| $\operatorname{ev} \colon V \to V^{**}$ is injective | yes | yes |
-| $\operatorname{ev} \colon V \to V^{**}$ is surjective | yes | no |
-| Every form on a subspace $U$ extends to $V$ | yes | yes, using a complement of $U$ |
+| $\dim V^*$ | $n$ | $\abs{F}^{\dim V}$, larger than $\dim V$ |
+| Coordinate forms of a basis | a basis of $V^*$ | independent, but do not span $V^*$ |
+| Evaluation $V \to V^{**}$ | isomorphism | injective, not onto |
+| $\dim U + \dim U^0$ | $n$ | no such count; $U^0 \cong (V/U)^*$ still holds |
+| $V \cong V^*$ | yes, by a choice of basis | never |
 
-: How duality behaves in finite and infinite dimension. The injectivity of evaluation and the extension of forms hold in general; the other statements need finite dimension.
+: What duality gives in finite and in infinite dimension.
 
 ## Common errors
 
-- **Thinking that $b_i^*$ depends only on $b_i$.** The form $b_1^*$ depends on the whole basis. In $\R^2$ the basis $(1, 0), (0, 1)$ gives $b_1^* = x$, while $(1, 0), (1, 1)$ gives $b_1^* = x - y$, with the same first vector.
-- **Using the wrong side of the transpose.** If the basis vectors are the columns of $P$, the dual basis consists of the rows of $P^{-1}$, not the rows of $P$ or of $P^\top$. Coordinates of forms change by $(P^{-1})^\top$ when coordinates of vectors change by $P^{-1}$.
-- **Identifying the annihilator with the orthogonal complement.** $U^0$ lies in $V^*$, and it needs no inner product. It corresponds to the [orthogonal complement](/0XJXTBCB2T/) only after an inner product identifies $V$ with $V^*$.
-- **Letting $f^*$ run in the same direction as $f$.** A map $V \to W$ gives a map $W^* \to V^*$, and the order of a composition reverses.
-- **Extending finite-dimensional facts.** For $V$ of countable dimension, the coordinate forms $e_n^*$ do not span $V^*$, and $V \to V^{**}$ is not onto. Arguments that count dimensions work only in finite dimension.
+- **Taking $b_i^*$ to depend on $b_i$ only.** Change one other basis vector and $b_i^*$ can change. In $\R^n$ the dual basis is the rows of $P^{-1}$, where $P$ has the basis vectors as columns, not the rows of $P^{\mathsf{T}}$.
+- **Confusing the annihilator with the orthogonal complement.** $U^0$ lives in $V^*$ and needs no inner product; the orthogonal complement $U^\perp$ lives in $V$. They correspond only after identifying $V$ with $V^*$ through an inner product.
+- **Getting the direction of the dual map wrong.** $f \colon V \to W$ gives $f^* \colon W^* \to V^*$, and $(g \circ f)^* = f^* \circ g^*$, in the reverse order.
+- **Confusing the dual map with the adjoint.** The adjoint of an inner product space map is a map $W \to V$; the dual map acts on forms. Over $\R$ the transpose is the matrix of the dual map in dual bases of any basis, but the matrix of the adjoint only in orthonormal bases; over $\C$ the adjoint also conjugates.
+- **Carrying finite-dimensional facts to infinite dimension.** A space with a countable basis has a dual of uncountable dimension, and the coordinate forms are not a basis of it.

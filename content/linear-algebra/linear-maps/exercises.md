@@ -1,51 +1,53 @@
-1. ◦ Which of these maps are [linear](/0NRYHJPQG2/)? (a) $T(x, y) = (2x - y, 3y)$ on $\R^2$. (b) $T(x, y) = (x + 1, y)$. (c) $T(x, y) = (xy, 0)$. (d) $T(x, y) = (\abs{x}, y)$. (e) $T(x, y, z) = x + y + z$, from $\R^3$ to $\R$. (f) $T(p) = p(2)$, from the real polynomials of degree at most $2$ to $\R$.
+1. ◦ Which of these maps are [linear](/0NRYHJPQG2/)? Give a reason for each. (a) $T \colon \R^3 \to \R^2$, $T(x, y, z) = (x - z, 2y)$. (b) $T \colon \R^2 \to \R^3$, $T(x, y) = (x, y, 1)$. (c) $T \colon \R^2 \to \R^2$, $T(x, y) = (\abs{x}, y)$. (d) $T \colon P_2 \to \R$, $T(p) = p(1) + p'(0)$. (e) $T \colon M_2(\R) \to M_2(\R)$, $T(A) = A + A^T$. (f) $T \colon M_2(\R) \to \R$, $T(A) = \det A$.
 
-2. ◦ Find the standard matrix of $T \colon \R^3 \to \R^2$, $T(x, y, z) = (x + 2y, 3z - x)$.
+2. ◦ Find the [standard matrix](/W6KB0J3SZZ/) of (a) $T \colon \R^3 \to \R^2$, $T(x, y, z) = (2x - y + z, x + 3z)$, and (b) the reflection of $\R^2$ in the line $y = -x$.
 
-3. ◦ Find the standard matrices of the reflection of $\R^2$ in the line $y = -x$ and of the orthogonal projection of $\R^2$ onto the line $y = x$. Check each on the vectors $(1, 1)$ and $(1, -1)$.
+3. ◦ Let $S(x, y) = (x + y, 2y)$ and $T(x, y) = (y, x - y)$ on $\R^2$. Find the matrices of $S \circ T$ and $T \circ S$, and check that they differ.
 
-4. ◦ Let $A = \begin{pmatrix} 1 & -1 & 2 \\ 2 & -2 & 4 \end{pmatrix}$. Find a basis of the [kernel](/0S23E6YE83/) and of the [image](/0WSFKKT6FF/) of $x \mapsto Ax$, and check the [rank-nullity theorem](/0W4FSW1TVB/).
+4. ◦ Let $T \colon \R^3 \to \R^3$ be $x \mapsto Ax$ with $A = \begin{pmatrix} 1 & -1 & 0 \\ 0 & 1 & -1 \\ -1 & 0 & 1 \end{pmatrix}$. Find the [kernel](/0S23E6YE83/) and the [image](/0WSFKKT6FF/) of $T$, each described by a basis or by equations.
 
-5. ◦ Answer from rank-nullity alone. (a) A linear map $\R^7 \to \R^4$ is surjective; what is its nullity? (b) A linear map $\R^5 \to \R^8$ is injective; what is its rank? (c) Can a linear map $\R^3 \to \R^5$ be surjective? (d) Can a linear map $\R^5 \to \R^3$ be injective?
+5. ◦ Which of these linear maps are injective? (a) $T \colon \R^2 \to \R^3$, $T(x, y) = (x - y, x + y, 2x)$. (b) $T \colon P_2 \to P_2$, $T(p) = p + p'$. (c) $T \colon P_2 \to \R^2$, $T(p) = (p(0), p(1))$. (d) $T \colon \R^3 \to \R^3$, $x \mapsto Ax$ with $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$.
 
-6. ◦ A linear map $T \colon \R^2 \to \R^2$ has $T(1, 1) = (3, 1)$ and $T(1, -1) = (1, -1)$. Find $T(x, y)$ and the standard matrix of $T$.
+6. ◦ Give the [rank](/0ZZXSBTR4J/) and the [nullity](/0APCFW7639/) of each map. (a) The second derivative $p \mapsto p''$ on $P_4$. (b) $A \mapsto A - A^T$ on $M_2(\R)$. (c) $T \colon \R^4 \to \R^2$, $T(x_1, x_2, x_3, x_4) = (x_1 + x_2, x_3 + x_4)$. (d) $x \mapsto Ax$ with $A = \begin{pmatrix} 1 & 2 & 0 & 1 \\ 2 & 4 & 1 & 1 \\ 3 & 6 & 1 & 2 \end{pmatrix}$.
 
-7. ◦ Is there a linear map $T \colon \R^2 \to \R^2$ with $T(1, 0) = (1, 1)$, $T(0, 1) = (2, 0)$ and $T(1, 1) = (3, 2)$? Explain with the theorem that [linear maps are determined by a basis](/0R8X9XA83A/).
+7. ◦ There is exactly one linear map $T \colon \R^2 \to \R^2$ with $T(1, 1) = (3, 1)$ and $T(1, 2) = (5, 0)$. Find $T(x, y)$ and the matrix of $T$.
 
-8. ◦ Give the dimensions of $\operatorname{Hom}(\R^3, \R^2)$, of $\operatorname{Hom}(P_2(\R), P_3(\R))$, where $P_n(\R)$ is the space of real polynomials of degree at most $n$, and of $\operatorname{End}(M_{2 \times 2}(\R))$.
+8. ◦ (a) A linear map $T \colon \R^7 \to \R^4$ is surjective. What is its nullity? (b) Can a linear map $\R^3 \to \R^5$ be surjective? (c) Can a linear map $\R^5 \to \R^3$ be injective? Answer (b) and (c) with the [rank-nullity theorem](/0W4FSW1TVB/).
 
-9. ◦ Let $S(x, y) = (x + y, y)$ and $T(x, y) = (2x, x - y)$ on $\R^2$. Compute $T \circ S$ and $S \circ T$, and their standard matrices. Do the two maps commute?
+9. ◦ Give the dimensions of (a) $\operatorname{Hom}(P_2, M_{2 \times 3}(\R))$, (b) $\operatorname{End}(\R^4)$, (c) the real vector space of $\R$-linear maps $\C^2 \to \C^3$.
 
-10. • Let $T \colon P_3(\R) \to \R^2$ be $T(p) = (p(0), p(1))$. Show that $T$ is linear and surjective, find a basis of $\ker T$, and check rank-nullity.
+10. • Let $T \colon \R^4 \to \R^3$ be $x \mapsto Ax$ with $A = \begin{pmatrix} 1 & 1 & 0 & 2 \\ 0 & 1 & 1 & 1 \\ 1 & 2 & 1 & 3 \end{pmatrix}$. Find a basis of $\ker T$, a basis of $\operatorname{im} T$, and an equation for $\operatorname{im} T$, and check the rank-nullity theorem.
 
-11. • Show that the trace $M_{n \times n}(F) \to F$ is linear and surjective, and use rank-nullity to find the dimension of the space of $n \times n$ matrices of trace $0$.
+11. • Let $T \colon P_3 \to \R^2$ be $T(p) = (p(1), p'(1))$. Show that $T$ is linear and surjective, find a basis of $\ker T$, and describe $\ker T$ in terms of divisibility.
 
-12. • Let $T \colon M_{2 \times 2}(\R) \to M_{2 \times 2}(\R)$ be $T(X) = X - X^{\mathsf{T}}$. Find $\ker T$ and $\operatorname{im} T$ with their dimensions.
+12. • Let $T \colon V \to W$ be linear and $v_1, \ldots, v_k \in V$. (a) Prove that if $T(v_1), \ldots, T(v_k)$ are independent, then $v_1, \ldots, v_k$ are independent. (b) Show by an example that the converse is false. (c) Prove that the converse holds when $T$ is injective.
 
-13. • Let $T \colon V \to W$ be linear, with $V$ and $W$ finite-dimensional. Show that if $T$ is injective then $\dim V \le \dim W$, and if $T$ is surjective then $\dim V \ge \dim W$.
+13. • Find the error. "Claim: a linear map $T \colon \R^3 \to \R^3$ with $T(e_1)$, $T(e_2)$, $T(e_3)$ all nonzero is injective. Proof: none of $e_1, e_2, e_3$ lies in $\ker T$, so $\ker T = \set{0}$, and $T$ is injective." Name the wrong step and give a $3 \times 3$ matrix for which the claim fails.
 
-14. • Give an explicit [linear isomorphism](/0B8T10CE7N/) between $P_3(\R)$ and $M_{2 \times 2}(\R)$. Explain why neither space is isomorphic to $\R^3$.
+14. • Let $T \colon U \to V$ and $S \colon V \to W$ be linear, with $U$, $V$ finite-dimensional. Prove that $\operatorname{rank}(S \circ T) \le \min(\operatorname{rank} S, \operatorname{rank} T)$. Then check that for $S(x, y, z) = (x, y, 0)$ and $T(x, y, z) = (0, y, z)$ on $\R^3$ the inequality is strict.
 
-15. • Find a linear map $T \colon \R^3 \to \R^3$ whose kernel is the line spanned by $(1, 1, 1)$ and whose image is the plane $x + y + z = 0$.
+15. • Let $T \colon \R^n \to \R^n$ be linear with $T \circ T = 0$. Prove that $\operatorname{im} T \subseteq \ker T$ and that $\operatorname{rank} T \le n/2$. Give such a $T$ on $\R^4$ with rank $2$.
 
-16. • Let $T$ be an endomorphism of a space $V$ of dimension $n$ with $T \circ T = 0$. Show that $\operatorname{im} T \subseteq \ker T$, and deduce that $\operatorname{rank} T \le n/2$. Give an example with equality for $n = 2$.
+16. • Let $T \colon P_2 \to \R^3$ be $T(p) = (p(0), p(1), p(2))$. Prove that $T$ is an [isomorphism](/0B8T10CE7N/), and find the polynomial $p$ with $T(p) = (1, 3, 9)$.
 
-17. • Let $D$ be differentiation. Decide whether $D \colon P_n(\R) \to P_n(\R)$ is injective or surjective, and find its rank. Then do the same for $D \colon \R[x] \to \R[x]$. Why does this not contradict the theorem on [injective, surjective and bijective endomorphisms](/0912EEEVCT/)?
+17. • On the space of real sequences, let $T(x_0, x_1, x_2, \ldots) = (x_0, 0, x_1, 0, x_2, 0, \ldots)$ and $S(x_0, x_1, x_2, \ldots) = (x_0, x_2, x_4, \ldots)$. Show that $S \circ T = \mathrm{id}$, that $T$ is injective and not surjective, and that $S$ is surjective and not injective. Explain why this does not contradict the theorem on [endomorphisms of finite-dimensional spaces](/0912EEEVCT/).
 
-18. • Let $T \colon U \to V$ and $S \colon V \to W$ be linear. Show that if $S \circ T$ is injective then $T$ is injective, and if $S \circ T$ is surjective then $S$ is surjective. Find $T \colon \R \to \R^2$ and $S \colon \R^2 \to \R$ with $S \circ T = \mathrm{id}_{\R}$ but $T \circ S \ne \mathrm{id}_{\R^2}$.
+18. • Let $T \colon V \to W$ be linear with $V$ finite-dimensional, and let $U$ be a subspace of $V$. Prove that $\dim T(U) = \dim U - \dim(U \cap \ker T)$.
 
-19. • Let $\varphi_a \colon P_2(\R) \to \R$ be evaluation at $a$, $\varphi_a(p) = p(a)$. Show that $\varphi_0, \varphi_1, \varphi_2$ form a basis of $\operatorname{Hom}(P_2(\R), \R)$.
+19. • Show that $\set{T \in \operatorname{Hom}(\R^3, \R^2) : T(1, 1, 0) = 0}$ is a subspace of $\operatorname{Hom}(\R^3, \R^2)$ and find its dimension.
 
-20. • Let $U$ be a subspace of $V$. Show that the endomorphisms $T$ of $V$ with $T(U) \subseteq U$ form a subalgebra of $\operatorname{End}(V)$: a subspace that contains the identity and is closed under composition. Find its dimension when $V = \R^3$ and $U$ is a line.
+20. • Let $T(x, y) = (x + y, -x)$ on $\R^2$. Compute $T^2$ and $T^3$, show that $T^3 = -\mathrm{id}$, and deduce that $T$ is an isomorphism with $T^{-1} = -T^2$.
 
-21. • Show that $T(z, w) = (\bar w, \bar z)$ on $\C^2$ is [antilinear](/BNPDDM95KF/) and not linear, and that the composite of two antilinear maps is linear.
+21. • For each map $\C \to \C$, decide whether it is $\R$-linear, $\C$-linear, [antilinear](/BNPDDM95KF/), or none of these. (a) $z \mapsto 3z$. (b) $z \mapsto i \bar z$. (c) $z \mapsto z + 2 \bar z$. (d) $z \mapsto z^2$.
 
-22. ★ Let $T \colon U \to V$ and $S \colon V \to W$ be linear, with $V$ finite-dimensional. Prove that $\operatorname{rank}(S \circ T) \le \min(\operatorname{rank} S, \operatorname{rank} T)$ and Sylvester's inequality $\operatorname{rank}(S \circ T) \ge \operatorname{rank} S + \operatorname{rank} T - \dim V$.
+22. • Let $A \colon \C^n \to \C^n$ be antilinear. Prove that there is exactly one complex $n \times n$ matrix $M$ with $A(z) = M \bar z$ for all $z$, where $\bar z$ is conjugated entrywise. Find $M$ for $A(z, w) = (i \bar z + \bar w, 2 \bar z)$.
 
-23. ★ Let $T \colon V \to W$ be linear of rank $r$, with $V$ and $W$ finite-dimensional. Show that there are bases of $V$ and of $W$ in which the matrix of $T$ is $\begin{pmatrix} I_r & 0 \\ 0 & 0 \end{pmatrix}$.
+23. ★ Let $V$ be a vector space of finite dimension $n$ and $T \in \operatorname{End}(V)$. Prove that there is a nonzero polynomial $p$ of degree at most $n^2$ with $p(T) = 0$.
 
-24. ★ Show that every infinite-dimensional vector space has an endomorphism that is injective but not surjective, and one that is surjective but not injective.
+24. ★ Let $f \colon \Q^n \to \Q^m$ satisfy $f(u + v) = f(u) + f(v)$ for all $u, v$. Prove that $f$ is $\Q$-linear. Explain why the same argument does not show that an additive map $\R \to \R$ is $\R$-linear.
 
-25. ★ Let $V$ have dimension $n$ and let $T \in \operatorname{End}(V)$. Show that there is a nonzero polynomial $p$ of degree at most $n^2$ with $p(T) = 0$.
+25. ★ Let $\varphi \colon M_n(F) \to F$ be linear with $\varphi(AB) = \varphi(BA)$ for all $A, B \in M_n(F)$. Prove that $\varphi = c \operatorname{tr}$ for some $c \in F$. Use the matrix units $E_{ij}$.
 
-26. ★ Show that every additive map $f \colon \Q^n \to \Q^m$, that is, every map with $f(u + v) = f(u) + f(v)$, is $\Q$-linear.
+26. ★ Let $V$ have finite dimension $n$ and let $U$ be a subspace of dimension $k$. Prove that $\set{T \in \operatorname{End}(V) : T(U) \subseteq U}$ is a subspace of $\operatorname{End}(V)$ closed under composition, and that its dimension is $n^2 - k(n - k)$.
+
+27. ★ Let $A \in M_n(F)$ have rank $1$. Prove that $A = u w^T$ for some nonzero columns $u, w \in F^n$, and that $A^2 = (\operatorname{tr} A) A$. Check this for $A = \begin{pmatrix} 2 & 4 \\ 1 & 2 \end{pmatrix}$.

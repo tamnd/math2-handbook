@@ -1,30 +1,42 @@
 groups:
-  - title: What a definition is and what it must prove
+  - title: What a definition is and the forms it takes
     intro: >
-      A definition gives a new term an exact meaning in known terms; it is a stipulation, not a claim. Yet each
-      kind of definition carries a proof obligation: a recursion needs the recursion theorem, a definition by
-      abstraction needs an equivalence relation, and a rule on classes needs a proof that it does not depend on
-      the representative chosen.
+      A definition gives a new word an exact meaning in words already understood, and it is read as an
+      "if and only if" even when it is written with "if". Definitions come in several forms: explicit, recursive,
+      inductive, by abstraction, axiomatic, implicit, by a universal property and by construction, and each form
+      tells you what must be proved before the definition may be used. The main tool is the
+      [principle of recursive definition](/BQ1D7T0EGD/):
+      given a value $a$ and, for each $n \in \N$, a rule that computes a new value from earlier ones, there is
+      exactly one function $f$ on $\N$ with $f(0) = a$ that obeys the rule at every $n$. An inductive definition
+      ("the smallest set that contains these and is closed under those") rests on a simpler fact: the
+      intersection of all the closed sets is itself closed, so a smallest one exists.
     entries:
       - 8ZCZ3HW91Z
       - B60DBNF77S
-      - HNGZEBKVY2
 
-  - title: One object, several descriptions
+  - title: The claims a definition carries
     intro: >
-      A notion often has several definitions that pick out the same objects, and proving that they agree is a
-      theorem. A definition that says "the $x$ such that ..." needs existence and uniqueness, and when strict
-      uniqueness fails, a weaker uniqueness "up to" an equivalence relation is often what is true.
+      Many definitions hide a claim that must be proved before the defined thing exists. The central test is
+      the one for functions on classes: let $\sim$ be an equivalence relation on a set $X$ and $g \colon X \to Y$
+      a function. Then there is a function $f$ on the classes with $f([x]) = g(x)$ for every $x$ if and only if
+      $x \sim x'$ implies $g(x) = g(x')$, and in that case $f$ is unique. The same group shows that two
+      definitions of one notion must be proved equivalent, and only in the setting where they agree; that
+      "the $x$ such that $P(x)$" is legal only once exactly one $x$ satisfies $P$; and that "unique up to
+      $\sim$" means that such objects exist and any two of them are related by $\sim$.
     entries:
+      - HNGZEBKVY2
       - NZ42PS2P1A
       - 5P955TVSS2
       - CBC72TX3NQ
 
-  - title: Where definitions start and how they change
+  - title: Where definitions start and how they are chosen
     intro: >
-      Not every term can be defined: a theory starts from primitive notions, such as point and line, fixed only
-      by axioms. The last entry asks why definitions take the form they do, from the exclusion of $1$ from the
-      primes to the repairs of the definition of a polyhedron that Lakatos described.
+      Defining every word in terms of earlier words must stop somewhere. A theory starts from primitive
+      notions, which are not defined, and from axioms, which say all that proofs may use about them. A model of
+      the axioms is any choice of meaning that makes them true, and every theorem holds in every model. So a
+      statement that is true in one model of the axioms and false in another cannot be proved from those
+      axioms. The last entry asks why definitions take the form they do, with $1$ not prime and $0$ even as
+      examples: a good definition makes the important theorems true without exceptions.
     entries:
       - QMQEJKFEYZ
       - S1R1VD31BS

@@ -1,39 +1,57 @@
-1. ◦ Decide for each real symmetric matrix whether it is positive definite, positive semidefinite but not definite, or neither: $\begin{pmatrix} 3 & 2 \\ 2 & 2 \end{pmatrix}$, $\begin{pmatrix} 1 & 3 \\ 3 & 4 \end{pmatrix}$, $\begin{pmatrix} 4 & 6 \\ 6 & 9 \end{pmatrix}$.
+1. ◦ Classify each real symmetric matrix as positive definite, positive semidefinite but not definite, negative definite, or indefinite:
+$$\begin{pmatrix} 1 & 3 \\ 3 & 4 \end{pmatrix}, \qquad \begin{pmatrix} 4 & 6 \\ 6 & 9 \end{pmatrix}, \qquad \begin{pmatrix} -2 & 1 \\ 1 & -3 \end{pmatrix}.$$
 
-2. ◦ For which real $t$ is $\begin{pmatrix} 1 & t \\ t & 4 \end{pmatrix}$ positive definite? For which is it positive semidefinite?
+2. ◦ For which real numbers $t$ is $\begin{pmatrix} 2 & t \\ t & 8 \end{pmatrix}$ positive definite? For which is it positive semidefinite?
 
-3. ◦ Compute the leading principal minors of $A = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 2 & 2 \\ 1 & 2 & 3 \end{pmatrix}$ and use [Sylvester's criterion](/0WKEF78PMV/) to decide whether $A$ is positive definite.
+3. ◦ Compute the leading principal minors of $\begin{pmatrix} 1 & 1 & 1 \\ 1 & 2 & 2 \\ 1 & 2 & 3 \end{pmatrix}$ and decide with [Sylvester's criterion](/0WKEF78PMV/) whether the matrix is positive definite.
 
-4. ◦ Find the [singular values](/09VMDSRXWJ/) of $\begin{pmatrix} 0 & 2 \\ -3 & 0 \end{pmatrix}$ and of the $1 \times 3$ matrix $\begin{pmatrix} 1 & 2 & 2 \end{pmatrix}$.
+4. ◦ Find the singular values of $\begin{pmatrix} 0 & 2 \\ -3 & 0 \end{pmatrix}$ and compare them with the absolute values of its eigenvalues.
 
-5. ◦ Write down the [Moore-Penrose inverse](/0YY8VX28JR/) of $\operatorname{diag}(2, 0, -1)$ and of the column vector $\begin{pmatrix} 3 \\ 4 \end{pmatrix}$.
+5. ◦ Find the singular value of the $1 \times 3$ matrix $A = (1 \ 2 \ 2)$ and its pseudoinverse $A^+$.
 
-6. ◦ True or false, for real $n \times n$ matrices: (a) every positive definite matrix has positive diagonal entries; (b) every symmetric matrix with positive entries is positive semidefinite; (c) a matrix whose eigenvalues are all positive satisfies $x^T A x > 0$ for all $x \ne 0$. Give a counterexample to each false statement.
+6. ◦ True or false? Give a reason or a counterexample for each.
+(a) A real symmetric matrix whose entries are all positive is positive definite.
+(b) Every diagonal entry of a positive definite matrix is real and positive.
+(c) A real $2 \times 2$ matrix whose eigenvalues are both positive satisfies $x^{\mathsf{T}} A x > 0$ for all $x \ne 0$.
 
-7. ◦ Find the positive semidefinite [square root](/EQ98KW1ZN4/) of $\begin{pmatrix} 13 & 12 \\ 12 & 13 \end{pmatrix}$.
+7. ◦ Find the error. A student writes: "$A = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}$ is triangular with diagonal $2, 2$, so its singular values are $2$ and $2$." Find the singular values of $A$ and check your answer against $\abs{\det A}$.
 
-8. • Find the [Cholesky decomposition](/0WKG8CYY6A/) of the matrix $A$ of exercise 3. Then show that for every $n$ the $n \times n$ matrix with entries $\min(i, j)$ is $L L^T$, where $L$ is the lower triangular matrix of ones, and deduce that it is positive definite.
+8. ◦ Let $A = \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$ and $X = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$. Which of the four Penrose conditions does $X$ satisfy? Find $A^+$.
 
-9. • Let $A$ be positive definite. Show that $A^{-1}$ is positive definite and that $\det A > 0$. Is $A^2$ positive definite? Is $A + A^{-1}$?
+9. ◦ Show that every singular value of a unitary matrix equals $1$, and that the singular values of a Hermitian matrix are the absolute values of its eigenvalues.
 
-10. • Let $A$ be positive semidefinite and $x^* A x = 0$. Show that $A x = 0$. Give a Hermitian matrix that is not semidefinite for which the conclusion fails.
+10. • Find the [Cholesky decomposition](/0WKG8CYY6A/) of
+$$A = \begin{pmatrix} 4 & -2 & 4 \\ -2 & 10 & 1 \\ 4 & 1 & 9 \end{pmatrix},$$
+and use it to compute $\det A$.
 
-11. • Find the [polar decomposition](/0J2C7BDJQA/) $A = UP$ of the symmetric matrix $A = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$. Describe $U$ geometrically.
+11. • Find the error. A student argues that $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{pmatrix}$ is positive definite because it is symmetric, its diagonal entries are positive and $\det A > 0$. Compute $\det A$ and the leading minors, find a vector $x$ with $x^{\mathsf{T}} A x < 0$, and find the eigenvalues of $A$.
 
-12. • Find a full [singular value decomposition](/000NPTMX6J/) $A = U \Sigma V^T$ of $A = \begin{pmatrix} 2 & 2 \\ -1 & 1 \end{pmatrix}$.
+12. • Let $A$ be positive definite. Prove that $A$ is invertible and that $A^{-1}$ is positive definite.
 
-13. • Show that every singular value of a unitary matrix is $1$, and that the singular values of a Hermitian matrix are the absolute values of its eigenvalues.
+13. • Let $A$ be positive semidefinite and $x$ a vector with $x^* A x = 0$. Prove that $A x = 0$. Show by an example that the conclusion fails for a Hermitian matrix that is not semidefinite.
 
-14. • Find the pseudoinverse of $J = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$, check the four Penrose conditions, and find the least-squares solution of smallest norm of $J x = (1, 3)^T$.
+14. • Find the [square root](/EQ98KW1ZN4/) of $A = \begin{pmatrix} 10 & 6 \\ 6 & 10 \end{pmatrix}$, and a real polynomial $p$ of degree at most $1$ with $p(A) = A^{1/2}$.
 
-15. • Use exercise 12 and the [Eckart-Young-Mirsky theorem](/JJT6GC055J/) to find a best rank-one approximation $A_1$ of $\begin{pmatrix} 2 & 2 \\ -1 & 1 \end{pmatrix}$, and compute $\norm{A - A_1}_2$ and $\norm{A - A_1}_F$.
+15. • Find the [polar decomposition](/0J2C7BDJQA/) $A = UP$ of $A = \begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}$. Check that $UP = PU$ here, and say why this was to be expected.
 
-16. • Let $A = \begin{pmatrix} 2 & 2 \\ 2 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 1 \\ 1 & 2 \end{pmatrix}$. Check that $B$ is positive definite, solve $\det(A - \lambda B) = 0$, and find an invertible $P$ with $P^T B P = I$ and $P^T A P$ diagonal, as in the [simultaneous diagonalization theorem](/K559AQ9H67/). Is $A$ positive definite?
+16. • Find a [singular value decomposition](/000NPTMX6J/) of $A = \begin{pmatrix} 2 & 2 \\ -1 & 1 \end{pmatrix}$.
 
-17. ★ Let $A$ be positive definite and $B$ Hermitian, both $n \times n$. Show that $AB$ is diagonalizable with real eigenvalues, and that its eigenvalues are positive when $B$ is also positive definite.
+17. • For the matrix $A$ of exercise 16, find the best rank-one approximation $A_1$ and its error in the operator norm and in the Frobenius norm. Then compute the operator norm error of the rank-one matrix $B = \begin{pmatrix} 2 & 2 \\ -1 & -1 \end{pmatrix}$, which keeps the first row of $A$.
 
-18. ★ Prove Hadamard's inequality for positive definite matrices: $\det A \le a_{11} a_{22} \cdots a_{nn}$. Use the Cholesky decomposition. When does equality hold?
+18. • Let $A = \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}$. Find $A^+$ and check the four Penrose conditions. Then find the least-squares solution of least norm of $Ax = (1, 3)$.
 
-19. ★ Let $A$ and $B$ be positive definite $n \times n$ matrices. Prove that $\det(A + B) \ge \det A + \det B$, with equality only for $n = 1$.
+19. • Let $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$. Compute $A^+ = A^{\mathsf{T}} (A A^{\mathsf{T}})^{-1}$ and use it to find the solution of least norm of $x_1 + x_2 = 1$, $x_2 + x_3 = 2$. Check that it is orthogonal to the null space of $A$.
 
-20. ★ Let $A$ be an $m \times n$ matrix of rank $r \ge 1$. Prove that $\norm{A}_2 \le \norm{A}_F \le \sqrt r\, \norm{A}_2$, and describe the matrices for which each inequality is an equality.
+20. • Let $A = \begin{pmatrix} 2 & 2 \\ 2 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 1 \\ 1 & 2 \end{pmatrix}$. Find the roots of $\det(A - \lambda B) = 0$ and a real invertible $P$ with $P^{\mathsf{T}} B P = I$ and $P^{\mathsf{T}} A P$ diagonal. What does the result say about the definiteness of $A$?
+
+21. • Let $A$ be a matrix of rank $r \ge 1$. Prove that $\norm{A}_2 \le \norm{A}_F \le \sqrt r \, \norm{A}_2$, and give a matrix for which each inequality is an equality.
+
+22. ★ Let $A$ and $B$ be positive definite $n \times n$ matrices. Show by an example that $AB$ need not be Hermitian. Then prove that $AB$ is always diagonalizable and that its eigenvalues are real and positive.
+
+23. ★ Prove Hadamard's inequality: if $A$ is positive definite, then $\det A \le a_{11} a_{22} \cdots a_{nn}$, with equality exactly when $A$ is diagonal.
+
+24. ★ Let $A$ and $B$ be positive definite $n \times n$ matrices. Prove that $\det(A + B) \ge \det A + \det B$.
+
+25. ★ Let $A$ be an $n \times n$ complex matrix with polar decomposition $A = UP$. Prove that $\norm{A - U}_F \le \norm{A - W}_F$ for every unitary $W$. Find the orthogonal matrix nearest to the matrix of exercise 15 in the Frobenius norm, and the distance.
+
+26. ★ Let $A$ be an $m \times n$ complex matrix. Prove that $(A^* A + \varepsilon I)^{-1} A^*$ exists for every $\varepsilon > 0$ and tends to $A^+$ as $\varepsilon \to 0^+$.

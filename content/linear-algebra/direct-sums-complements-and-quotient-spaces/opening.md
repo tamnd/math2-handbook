@@ -1,25 +1,53 @@
-There are two ways to cut a vector space into simpler parts. The first is to split it. Every square real matrix is a symmetric matrix plus a skew-symmetric one, in exactly one way:
-$$A = \tfrac12 (A + A^\top) + \tfrac12 (A - A^\top),$$
-so the space of $n \times n$ matrices is the direct sum of the symmetric and the skew-symmetric matrices. A linear map can then be studied one piece at a time. The second way is to ignore part of the space. Differentiation sends two polynomials to the same derivative exactly when they differ by a constant. If you treat polynomials that differ by a constant as one object, differentiation becomes injective. That object is the quotient of $\R[x]$ by the constants, and the map it induces is an isomorphism onto $\R[x]$.
+Take the plane $U$ given by $x + y + z = 0$ in $\R^3$ and the line $L = \R(1, 1, 1)$.
+Every vector $v = (x, y, z)$ splits into a piece in $U$ and a piece in $L$.
+Put $s = (x + y + z)/3$; then
+$$v = \bigl(v - s(1, 1, 1)\bigr) + s(1, 1, 1),$$
+and the first piece has coordinate sum $0$, so it lies in $U$.
+For $v = (2, 5, -1)$ we get $s = 2$ and $v = (0, 3, -3) + (2, 2, 2)$.
+The splitting is unique, because $U \cap L = \set{0}$, and so $\R^3$ is the [internal direct sum](/0XYYT5KNTX/) $U \oplus L$.
 
-The two ways are related. A subspace $U$ of $V$ always has a complement $W$, a subspace with $V = U \oplus W$, and every complement is isomorphic to the quotient $V/U$. A complement is a choice, and there are usually many. The quotient is not a choice, and it is the same whatever complement you pick. In finite dimension the two give the same numbers. The quotient matters in infinite dimension, in proofs that should not depend on a basis, and later in algebra, where modules may have no complements at all.
+The line $L$ is not the only choice.
+The $x$-axis also meets $U$ only in $0$, and it splits the same vector as
+$$(2, 5, -1) = (-4, 5, -1) + (6, 0, 0).$$
+Both lines are [complements](/0M83V17KHX/) of $U$, the two pieces in $U$ differ, and nothing in the plane prefers one line to the other; the example of [two complements of a plane](/DVP2D04EZD/) works this out.
+Each choice of complement gives a [projection](/033DA1WE8Y/) onto $U$, and the two projections are different maps.
+
+One number does not depend on any choice: the sum $x + y + z$.
+Two vectors differ by an element of $U$ exactly when they have the same coordinate sum, so this number labels the planes $v + U$ parallel to $U$.
+These parallel planes, the cosets of $U$, form a vector space of their own, the [quotient space](/0BR3FY5Q8M/) $\R^3/U$.
+The map $v + U \mapsto x + y + z$ is an isomorphism $\R^3/U \to \R$, as the example of [the quotient by the plane](/7SNB2G6Q36/) shows, and it was found without choosing a basis or a complement.
+
+So a subspace $U$ of $V$ can be cut away in two ways.
+A complement $W$ with $V = U \oplus W$ lives inside $V$ but must be chosen.
+The quotient $V/U$ lives outside $V$ but is canonical.
+In finite dimension both have dimension $\dim V - \dim U$, and every complement is isomorphic to the quotient.
+The quotient is the tool behind many later constructions: the solution set of $Ax = b$ is a coset of the null space, the first isomorphism theorem $V/\ker T \cong \operatorname{im} T$ is a coordinate-free form of rank-nullity, and polynomials modulo a fixed polynomial, such as $\R[x]$ modulo the multiples of $x^2$, are quotients.
 
 ## What the chapter covers
 
-The chapter is in five groups, read in order.
-
-1. **Direct sums and products.** The [internal direct sum](/0XYYT5KNTX/) of subspaces, with the test $U \cap W = 0$ for two of them. The [external direct sum](/0S7W6EG32V/) of arbitrary spaces and its universal property, and the [direct product](/0EX2HPXPJ6/), which differs from it for infinite families.
-2. **Complements and projections.** A [complementary subspace](/0M83V17KHX/) of $U$, the theorem that [one always exists](/0P9T8WHNMH/), and [projections](/033DA1WE8Y/), the maps with $P^2 = P$, which match the decompositions $V = U \oplus W$ one to one.
-3. **Quotient spaces.** The [quotient space](/0BR3FY5Q8M/) $V/U$, the formula $\dim V/U = \dim V - \dim U$ for the [dimension of a quotient](/0SXDQ6TN00/), and the [universal property](/0ZERJX6PH6/) that lets linear maps pass to the quotient.
-4. **The isomorphism theorems.** The [first](/0MTBGVZ4XJ/), [second](/0APN65D6Y6/) and [third](/07RB3EMBWW/) isomorphism theorems for vector spaces, with the Grassmann formula as a consequence of the second.
-5. **Codimension and exact sequences.** The [codimension](/JJCGJ1EGCQ/) of a subspace, defined as $\dim V/U$, and [exact sequences](/946YAZNYKX/), the language in which the theorems of the chapter are often stated.
+1. Direct sums and products. The [internal direct sum](/0XYYT5KNTX/) of subspaces, the [external direct sum](/0S7W6EG32V/) of arbitrary spaces and the [direct product](/0EX2HPXPJ6/), which differs from the direct sum only for infinite families.
+2. Complements and projections. Every subspace has a [complementary subspace](/0M83V17KHX/), by the [existence theorem](/0P9T8WHNMH/), and a choice of complement is the same as a [projection](/033DA1WE8Y/), a linear map with $P^2 = P$.
+3. Quotient spaces. The [quotient space](/0BR3FY5Q8M/) $V/U$, the formula for its [dimension](/0SXDQ6TN00/), and its [universal property](/0ZERJX6PH6/): a map that vanishes on $U$ passes to $V/U$.
+4. The isomorphism theorems. The [first](/0MTBGVZ4XJ/), [second](/0APN65D6Y6/) and [third](/07RB3EMBWW/) isomorphism theorems, each a short consequence of the universal property.
+5. Codimension and exact sequences. The [codimension](/JJCGJ1EGCQ/) $\dim V/U$, which can be finite in infinite-dimensional spaces, and [exact sequences](/946YAZNYKX/), which package kernels and images and always split for vector spaces.
 
 ## A first reading
 
-Read these entries first, in order: [internal direct sum](/0XYYT5KNTX/), [complementary subspace](/0M83V17KHX/), [existence of a complement](/0P9T8WHNMH/), [projection](/033DA1WE8Y/), [quotient space](/0BR3FY5Q8M/), [dimension of a quotient](/0SXDQ6TN00/), [universal property of the quotient](/0ZERJX6PH6/) and the [first isomorphism theorem](/0MTBGVZ4XJ/). The attached examples of the quotient space are worth doing by hand, since cosets take some getting used to.
+For a first pass, read these entries in order:
 
-The external direct sum and the direct product can wait if you only work with subspaces of one space; they matter for infinite families. The second and third isomorphism theorems, codimension and exact sequences can be left for a second pass. They state facts you can already prove with bases, but they state them in a form that also works without bases and carries over to groups and modules.
+1. [Internal direct sum](/0XYYT5KNTX/)
+2. [Complementary subspace](/0M83V17KHX/)
+3. [Projection](/033DA1WE8Y/)
+4. [Quotient space](/0BR3FY5Q8M/)
+5. [Dimension of a quotient space](/0SXDQ6TN00/)
+6. [Universal property of the quotient space](/0ZERJX6PH6/)
+7. [First isomorphism theorem](/0MTBGVZ4XJ/)
+8. [Codimension](/JJCGJ1EGCQ/)
+
+You can skip at first the infinite families in the external sum and the product, the proof of the existence of complements by Zorn's lemma, the third isomorphism theorem, and exact sequences of more than three nonzero terms.
+In finite dimension the first two reduce to direct sums of finitely many spaces and to extending a basis.
 
 ## Before you start
 
-You need [vector spaces, span, independence, bases and dimension](/MVH97H8B2J/): [subspaces](/0EPTJA5QV4/), the [sum](/0JMTY8MF54/) and [intersection](/0V33SPH7RR/) of subspaces, [extension to a basis](/0M4SXE5WW3/) and the [Grassmann formula](/06HTJNCMPA/). You also need [linear maps](/9080WQTZ3M/): the [kernel](/0S23E6YE83/), the [image](/0WSFKKT6FF/), [isomorphisms](/0B8T10CE7N/) and the [rank–nullity theorem](/0W4FSW1TVB/). The proof that complements exist in infinite dimension uses [Zorn's lemma](/04RXTQA5ZA/). If you know the [first isomorphism theorem for groups](/0CXXJNG5B6/), the third group of entries will look familiar.
+You need subspaces, sums and intersections of subspaces, bases and dimension from [vector spaces, span, independence, bases and dimension](/MVH97H8B2J/), and kernels, images and isomorphisms from [linear maps](/9080WQTZ3M/), including the [rank-nullity theorem](/0W4FSW1TVB/).
+For infinite-dimensional spaces the chapter uses the theorem that [every vector space has a basis](/00MS9VMQ9Z/), which rests on the [axiom of choice](/0HTGB13FE2/).

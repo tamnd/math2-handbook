@@ -1,19 +1,22 @@
 # The order of chapter 3.12, diagonalization, triangularization and invariant subspaces. Groups are read in order; entries in a group too.
 groups:
-  - title: Invariant subspaces
+  - title: Invariant subspaces and the two pieces of a map
     intro: >
-      A subspace $U$ with $T(U) \subseteq U$ lets you cut $T$ into two smaller maps: the restriction to $U$
-      and the induced map on $V / U$. In a basis that starts with a basis of $U$ the matrix of $T$ is block
-      upper triangular, and the characteristic polynomial of $T$ is the product of those of the two pieces.
+      A subspace $U$ with $T(U) \subseteq U$ is the tool behind every result of the chapter. It cuts $T$
+      into the restriction $T|_U$ and the quotient operator $\bar T$ on $V / U$. Main result: if $V$ has
+      finite dimension and $U$ is $T$-invariant, then in a basis that starts with a basis of $U$ the matrix
+      of $T$ is block upper triangular, and $p_T = p_{T|_U} \cdot p_{\bar T}$.
     entries:
       - 0ACX5QT8TE
       - 0KN7EPH7Z0
   - title: When a map is diagonalizable
     intro: >
-      A map is diagonalizable when some basis consists of eigenvectors. Three tests decide it: $n$ distinct
-      eigenvalues (sufficient, not necessary), equal geometric and algebraic multiplicities once $p_T$
-      splits, and a minimal polynomial that splits with simple roots. The last entry collects the matrices
-      that fail, and the two different reasons why.
+      A map is diagonalizable when some basis is made of eigenvectors, and this group gives the tests. The
+      multiplicity test compares the dimension of each eigenspace with the multiplicity of its eigenvalue as
+      a root of $p_T$, which the block triangular form of the first group bounds. Main theorem: for $T$ on a space of finite dimension
+      $n \ge 1$ over a field $F$, $T$ is diagonalizable over $F$ if and only if $p_T$ splits over $F$ and
+      $\dim \ker(T - \lambda) = m_\lambda$ for every eigenvalue $\lambda$, if and only if $m_T$ is a product of
+      distinct linear factors over $F$. The last entry shows what the matrices that fail look like.
     entries:
       - 07SQCNV233
       - 056SW1E0AC
@@ -23,44 +26,54 @@ groups:
       - 5F2AV5855Y
   - title: Using a diagonalization
     intro: >
-      Once $A = P D P^{-1}$, every polynomial in $A$ is computed on the diagonal. The eigendecomposition
-      writes $A$ as a sum of eigenvalues times rank-one matrices, and the powers $A^k = P D^k P^{-1}$ give
-      closed formulas for linear recurrences and the long-term behaviour of linear models.
+      Once $A = P D P^{-1}$ with $D$ diagonal, every power and every polynomial of $A$ is computed on the
+      diagonal, and $A$ becomes a sum of eigenvalues times projections. Several maps at once can share one
+      such basis. Main theorem: a set of diagonalizable endomorphisms of a finite-dimensional space is
+      simultaneously diagonalizable if and only if its members commute pairwise.
     entries:
       - D0AP2R7272
       - 0TNR9BQ871
-  - title: Commuting families and triangular forms
-    intro: >
-      Commuting diagonalizable maps share one basis of eigenvectors. A map that is not diagonalizable can
-      still be made upper triangular exactly when its characteristic polynomial splits, and commuting maps
-      over $\C$ can be made upper triangular together.
-    entries:
       - 0FK17N4DKA
+  - title: Triangular forms
+    intro: >
+      When a map is not diagonalizable, an upper triangular matrix is the next best thing, and it is built
+      from a flag of invariant subspaces, one dimension at a time. Main theorem: for $T$ on a space of finite
+      dimension $n \ge 1$ over a field $F$, there is a basis in which the matrix of $T$ is upper triangular if
+      and only if $p_T$ splits over $F$; commuting maps whose characteristic polynomials split have a common
+      triangular basis.
+    entries:
       - 0363JMQ42Y
       - 42PG67Q5YN
   - title: Splitting the space with polynomials
     intro: >
-      If $p$ and $q$ are coprime, the kernel of $(pq)(T)$ is the direct sum of the kernels of $p(T)$ and
-      $q(T)$, with projections that are polynomials in $T$. Applied to the factorization of the minimal
-      polynomial, this [kernels lemma](/ACBNK1VFVG/) gives the primary decomposition, over any field.
+      Coprime polynomials split kernels, and the pieces are cut out by polynomials in $T$, so they are
+      invariant. Main theorem: if $V$ has finite dimension and $m_T = p_1^{e_1} \cdots p_k^{e_k}$ with distinct
+      monic irreducible $p_i$ over $F$, then $V = \ker p_1(T)^{e_1} \oplus \cdots \oplus \ker p_k(T)^{e_k}$, each
+      piece is invariant, the minimal polynomial of $T$ on the $i$-th piece is $p_i^{e_i}$, and the projections
+      onto the pieces are polynomials in $T$.
     entries:
       - ACBNK1VFVG
       - 49ZHBMYKVE
   - title: Generalized eigenvectors
     intro: >
-      When eigenspaces are too small, vectors killed by a power of $T - \lambda$ fill the gap. The generalized
-      eigenspace of $\lambda$ always has dimension equal to the algebraic multiplicity, and when $p_T$ splits
-      the space is the direct sum of the generalized eigenspaces.
+      A defective map has too few eigenvectors, and vectors killed by a power of $T - \lambda$ make up the
+      deficit. When the irreducible factors of the previous group are all linear, the pieces are the
+      generalized eigenspaces. Main theorem: if $V$ has finite dimension $n \ge 1$ and
+      $p_T = (t - \lambda_1)^{m_1} \cdots (t - \lambda_k)^{m_k}$ splits over $F$ with distinct $\lambda_i$, then
+      $V = V_{\lambda_1} \oplus \cdots \oplus V_{\lambda_k}$, each $V_{\lambda_i}$ is invariant of dimension $m_i$, and
+      $T - \lambda_i$ is nilpotent on $V_{\lambda_i}$.
     entries:
       - 01H6QKWGDH
       - 0AJ035ZTZE
       - 0Z3GDY89T5
   - title: Nilpotent and semisimple parts
     intro: >
-      A nilpotent map has a vanishing power; a semisimple map has an invariant complement for every
-      invariant subspace. The Jordan-Chevalley decomposition writes a map with split characteristic
-      polynomial as a commuting sum of a diagonalizable and a nilpotent part, both polynomials in the map.
-      The Fitting decomposition splits off the nilpotent and the invertible behaviour of a single map.
+      The decomposition of the previous group writes $T$ as a scalar plus a nilpotent map on each piece, and
+      this group makes the split global and unique. Semisimple maps replace diagonalizable ones over fields
+      where eigenvalues are missing. Main theorem (Jordan-Chevalley): if $V$ has finite dimension and $p_T$
+      splits over $F$, there is exactly one pair $S, N$ with $T = S + N$, $S$ diagonalizable, $N$ nilpotent
+      and $S N = N S$, and both are polynomials in $T$. Fitting's decomposition
+      $V = \ker T^n \oplus \operatorname{im} T^n$ needs no splitting at all.
     entries:
       - 063D5Z2C70
       - 08VRX3Q4PB

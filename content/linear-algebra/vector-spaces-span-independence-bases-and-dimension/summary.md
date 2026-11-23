@@ -1,34 +1,31 @@
 ## What to remember
 
-- **Vector space:** a set $V$ with an addition and a scalar multiplication by a field $F$, satisfying eight axioms: addition is associative and commutative with a zero and negatives, and $a(bv) = (ab)v$, $1v = v$, $a(u + v) = au + av$, $(a + b)v = av + bv$.
-- **Subspace:** a subset that contains $0$ and is closed under addition and scalar multiplication. Intersections of subspaces are subspaces. $U \cup W$ is a subspace only if $U \subseteq W$ or $W \subseteq U$. The smallest subspace containing both is $U + W = \set{u + w : u \in U, w \in W}$.
-- **Span and independence:** the span of $S$ is the set of finite linear combinations of vectors of $S$, the smallest subspace that contains $S$. A family is linearly independent when $a_1v_1 + \cdots + a_kv_k = 0$ forces all $a_i = 0$; equivalently, no vector is a combination of the others.
-- **Column test:** the columns of an $m \times n$ matrix $A$ are independent if and only if $Ax = 0$ has only the solution $0$, if and only if every column has a pivot. More than $m$ vectors in $F^m$ are dependent. The columns span $F^m$ if and only if every row has a pivot.
-- **Basis and coordinates:** a basis is an independent spanning family. Each $v$ is then $a_1b_1 + \cdots + a_nb_n$ for exactly one list of scalars, its coordinate vector $[v]_B$, and $v \mapsto [v]_B$ identifies $V$ with $F^n$.
-- **Steinitz and dimension:** if $u_1, \dots, u_m$ are independent and $w_1, \dots, w_n$ span $V$, then $m \le n$. So all bases have the same size, $\dim V$. Every vector space has a basis (by Zorn's lemma); every spanning set contains one, and every independent set extends to one.
-- **Counting in dimension $n$:** a subspace $W$ has $\dim W \le n$, with equality only for $W = V$. Any $n$ independent vectors form a basis, and so do any $n$ spanning vectors. For finite-dimensional subspaces, $\dim(U + W) + \dim(U \cap W) = \dim U + \dim W$.
-- **Other fields:** a space of dimension $n$ over $\mathbb{F}_q$ has $q^n$ vectors and $(q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$ ordered bases. A complex space of dimension $n$ is a real space of dimension $2n$, and $\dim_\C V_\C = \dim_\R V$.
+- **[Vector space](/000AYPA9AJ/):** a set $V$ with an addition and a multiplication by the scalars of a field $F$, satisfying eight axioms: addition is associative and commutative, there is a zero vector and each vector has a negative, $a(bv) = (ab)v$, $1v = v$, and both distributive laws hold. Examples: [$F^n$](/713F6AM1X1/), [$M_{m \times n}(F)$](/0RE6X3BGPN/), [$F[x]$ and $P_n$](/0JGZCDT5DN/), [$F^S$](/0GZB2SN0PH/).
+- **[Subspaces](/00YC1D652K/):** a subset $U \subseteq V$ is a subspace exactly when $0 \in U$ and $U$ is closed under addition and under scalar multiplication. [Intersections](/0V33SPH7RR/) of subspaces are subspaces; $U \cup W$ is one only when $U \subseteq W$ or $W \subseteq U$. The [sum](/0JMTY8MF54/) $U + W = \set{u + w : u \in U, \ w \in W}$ is the smallest subspace containing $U$ and $W$.
+- **[Span](/0DTY8B9HMS/) and [independence](/0CRMGPAH83/):** the span of $S$ is the set of all finite linear combinations of elements of $S$, the smallest subspace containing $S$. A family is independent when $a_1 v_1 + \cdots + a_k v_k = 0$ forces $a_1 = \cdots = a_k = 0$. Independence depends on the field: a family can be independent over $\R$ and dependent over $\F_2$.
+- **[Basis](/0KCQ9Y3QKA/) and [coordinates](/04CYQHN6MC/):** a basis is an independent spanning family. With a basis $(b_1, \ldots, b_n)$ every $v \in V$ is $a_1 b_1 + \cdots + a_n b_n$ for exactly one $(a_1, \ldots, a_n) \in F^n$, and $v \mapsto (a_1, \ldots, a_n)$ is a bijection $V \to F^n$ that respects sums and scalar multiples.
+- **[Dimension](/03GSZ8RTZJ/):** by the [Steinitz exchange lemma](/08ZDRN6H41/), if $V$ is spanned by $n$ vectors then every independent family in $V$ has at most $n$ vectors. Hence all bases of $V$ have the same size ([dimension theorem](/0WK0Y8RH1M/)), in infinite dimension as cardinals. $V$ is [finite-dimensional](/0ZHWKQMVX5/) when it has a finite spanning set. It depends on $F$: $\dim_\R \C^n = 2n$.
+- **Building bases:** in a finite-dimensional space, every spanning set [contains a basis](/06MRNP4BNT/) and every independent set [extends to a basis](/0M4SXE5WW3/). With Zorn's lemma, [every vector space has a basis](/00MS9VMQ9Z/); over ZF this statement implies the axiom of choice. A [Hamel basis](/ZCBD0GRGVA/) of $\R$ over $\Q$ exists, and its existence rests on the axiom of choice.
+- **Counting, for $\dim V = n$ finite:** a subspace $U$ has [$\dim U \le n$](/0QW084460E/), and $\dim U = n$ forces $U = V$. A family of exactly $n$ vectors is a basis as soon as it is independent, and as soon as it spans ([right-size criterion](/096V7H13H9/)). For finite-dimensional subspaces $U$, $W$: [$\dim(U + W) = \dim U + \dim W - \dim(U \cap W)$](/06HTJNCMPA/).
+- **Other fields:** a space of dimension $n$ over [$\F_q$](/J9VE1X14PV/) has $q^n$ vectors and $(q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$ ordered bases. For a real space $V$ and a complex space $W$, [$\dim_\C V_\C = \dim_\R V$ and $\dim_\R W_\R = 2 \dim_\C W$](/CT2F31EDH8/).
 
-## Standard spaces
+## Three tests for columns
 
-| Space | Dimension | A basis |
+| Property of $v_1, \ldots, v_k \in F^m$ | Test on an echelon form of $A = (v_1 \cdots v_k)$ | Forces |
 |---|---|---|
-| [$F^n$](/713F6AM1X1/) | $n$ | $e_1, \dots, e_n$ |
-| [$M_{m \times n}(F)$](/0RE6X3BGPN/) | $mn$ | the matrix units $E_{ij}$ |
-| [$P_n(F)$](/0JGZCDT5DN/), degree at most $n$ | $n + 1$ | $1, x, \dots, x^n$ |
-| $F[x]$ | $\aleph_0$ | $1, x, x^2, \dots$ |
-| [$F^{(S)}$](/0GZB2SN0PH/), finitely supported functions | $\abs{S}$ | the functions $\delta_s$ |
-| $F^S$, $S$ infinite | infinite | one exists by Zorn's lemma; the $\delta_s$ do not span |
-| $\C$ over $\R$ | $2$ | $1, i$ |
-| $\R$ over $\Q$ | $2^{\aleph_0}$ | a [Hamel basis](/ZCBD0GRGVA/), which exists but cannot be listed |
+| [spanning $F^m$](/088RYKAWK9/) | a pivot in every row | $k \ge m$ |
+| [independent](/76GG9B25A1/) | a pivot in every column | $k \le m$ |
+| [basis of $F^m$](/0KCQ9Y3QKA/) | a pivot in every row and every column | $k = m$ |
 
-: Some spaces of the chapter, with their dimensions. The same set can have different dimensions over different fields: $\C$ has dimension $1$ over $\C$ and $2$ over $\R$.
+: Spanning and independence are tested on different lines of the same echelon form. The inequalities are necessary only: $k = m$ vectors can fail both tests.
 
 ## Common errors
 
-- **Forgetting the zero vector.** A set that does not contain $0$, such as the plane $x + y + z = 1$ or the functions with $f(0) = 1$, is not a subspace. Check $0$ first.
-- **Treating independence of a set as independence of each pair.** The vectors $(1, 0)$, $(0, 1)$, $(1, 1)$ are pairwise independent, but the three together are dependent.
-- **Ignoring the field.** Independence and dimension depend on the scalars. A family of vectors with integer entries can be independent over $\R$ and dependent over $\mathbb{F}_2$.
-- **Allowing infinite sums.** Spans and bases use finite combinations only. The vectors $e_1, e_2, \dots$ are a basis of the finitely supported sequences but not of the space of all sequences.
-- **Using the right-size criterion without knowing the dimension.** "$n$ independent vectors form a basis" holds only in a space of dimension $n$. In practice: find $\dim V$ first, then check only one of independence and spanning.
-- **Reading pivots off the wrong matrix.** For the column test, put the vectors as columns and use the pivot columns of the original matrix, not of its echelon form, as the basis of the span.
+- **Forgetting the zero vector.** The plane $x + y + z = 1$ does not contain $0$, so it is not a subspace.
+- **Union for sum.** The union of the two axes of $\R^2$ is not a subspace; their sum is $\R^2$.
+- **Pairwise for global.** Three vectors that are pairwise independent can be dependent, as $(1, 0)$, $(0, 1)$, $(1, 1)$ are. Independence is a property of the whole family.
+- **Dividing by a coefficient that may be zero.** From a dependence relation $a_1 v_1 + \cdots + a_k v_k = 0$ one can only solve for a $v_i$ with $a_i \ne 0$.
+- **Reading the basis off the reduced matrix.** The pivot columns tell which of the original columns to keep; the columns of the echelon form usually do not lie in the column space.
+- **Dropping finite dimension.** A subspace of the same dimension equals the whole space only in finite dimension: the polynomials with zero constant term form a proper subspace of $F[x]$ of the same, countable, dimension.
+- **Forgetting the field.** $\C$ has dimension $1$ over $\C$ and $2$ over $\R$. State the field with every dimension.
+- **Inclusion–exclusion for three subspaces.** Grassmann's formula is for two subspaces. For three lines through $0$ in $\R^2$ the three-term analogue fails.

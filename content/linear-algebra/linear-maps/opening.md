@@ -1,24 +1,44 @@
-Differentiation sends $x^3 + 2x$ to $3x^2 + 2$, and it turns a sum into the sum of the derivatives and $c\,p$ into $c\,p'$. Rotating the plane by an angle sends the sum of two arrows to the sum of the rotated arrows. Multiplying a vector by a fixed matrix, taking the trace of a matrix, and evaluating a polynomial at $2$ all behave in the same way. These are linear maps: functions between vector spaces with $T(u + v) = T(u) + T(v)$ and $T(av) = a\,T(v)$. The translation $x \mapsto x + 1$ and the squaring map $x \mapsto x^2$ are not linear.
+Take the matrix
+$$
+A = \begin{pmatrix} 1 & 1 & 2 \\ 1 & 2 & 3 \\ 2 & 3 & 5 \end{pmatrix}
+$$
+and ask for which $b \in \R^3$ the system $Ax = b$ has a solution, and how many solutions it then has. Row reduction answers both questions. The third row of $A$ is the sum of the first two, so a solution can exist only when $b_3 = b_1 + b_2$; for $b = (2, 3, 5)$ one solution is $x = (1, 1, 0)$, and for $b = (1, 0, 0)$ there is none. The homogeneous system $Ax = 0$ has the solutions $t(1, 1, -1)$, and adding them to one solution of $Ax = (2, 3, 5)$ gives all of them: $(1 + t, 1 + t, -t)$ for $t \in \R$.
 
-Linear maps are what linear algebra studies, and matrices are the way to compute with them. Every linear map $F^n \to F^m$ is $x \mapsto Ax$ for exactly one matrix $A$, whose columns are the images of the standard basis vectors, and composing two maps multiplies their matrices. Two subspaces describe what a linear map does: the kernel, which it sends to $0$, and the image, which it reaches. The rank-nullity theorem ties their dimensions together. For a system $Ax = b$ with $n$ unknowns, it says that the number of free parameters of the solutions is $n$ minus the rank of $A$.
+The same computation, read as a statement about the map $x \mapsto Ax$ from $\R^3$ to $\R^3$, says more. The vectors $b$ that are reached form a plane, the [image](/0WSFKKT6FF/) of the map. The vectors sent to $0$ form a line, the [kernel](/0S23E6YE83/). The map is not injective because its kernel is not $\set{0}$, and it is not surjective because its image is a plane. The numbers fit: the plane has dimension $2$, the line has dimension $1$, and $2 + 1 = 3$ is the dimension of the domain. The [rank-nullity theorem](/0W4FSW1TVB/) says this always happens, so after finding the line of solutions of $Ax = 0$ one knows without further work that the image is a plane and not all of $\R^3$.
+
+None of this depends on $A$ being a matrix. Differentiation of polynomials, the shift of a sequence, the trace of a square matrix and a rotation of the plane all send sums to sums and multiples to multiples, so each is a [linear map](/0NRYHJPQG2/) with a kernel, an image and a rank. In finite dimension a choice of bases turns any linear map into a matrix, but the theorems are cleaner without the choice, and in infinite dimension there is no matrix to fall back on. The chapter therefore studies linear maps as maps, and uses matrices to compute.
 
 ## What the chapter covers
 
 The chapter is in six groups, read in order.
 
-1. **Linear maps and their examples.** The [linear map](/0NRYHJPQG2/), the standard [examples](/0SS770NS8B/), [matrix transformations of $F^n$](/W6KB0J3SZZ/), [linear transformations of the plane](/5BXHREC8C8/), and the [composition](/00BKRZKMSS/) of linear maps.
-2. **Kernel and image.** The [kernel](/0S23E6YE83/) and the [image](/0WSFKKT6FF/), and the test that a linear map is [injective exactly when its kernel is zero](/0BJBYCGMWE/).
-3. **Bases, rank and nullity.** A linear map is [determined by its values on a basis](/0R8X9XA83A/). The [rank](/0ZZXSBTR4J/) and the [nullity](/0APCFW7639/) satisfy the [rank-nullity theorem](/0W4FSW1TVB/).
-4. **Isomorphisms.** The [linear isomorphism](/0B8T10CE7N/), the [classification of spaces by dimension](/0VJBSK15SN/), and the equivalence of [injective, surjective and bijective endomorphisms](/0912EEEVCT/) in finite dimension.
-5. **Spaces of maps and the algebra of endomorphisms.** The [space of linear maps](/0X9MBPP2Z3/) $\operatorname{Hom}(V, W)$ and [its dimension](/0Z9N1ER0W0/), [endomorphisms](/0J7H0YBFDJ/), and the [algebra of endomorphisms](/5JA4CYT1TB/).
+1. **Linear maps and matrices.** The [definition](/0NRYHJPQG2/) and [examples](/0SS770NS8B/), the theorem that every linear map $F^n \to F^m$ is a [matrix transformation](/W6KB0J3SZZ/), [maps of the plane](/5BXHREC8C8/), and [composition](/00BKRZKMSS/) as matrix multiplication.
+2. **Kernel and image.** The [kernel](/0S23E6YE83/), the [image](/0WSFKKT6FF/), the [kernel test for injectivity](/0BJBYCGMWE/), and the fact that a linear map is [determined by its values on a basis](/0R8X9XA83A/), which can be chosen freely.
+3. **Rank and nullity.** The [rank](/0ZZXSBTR4J/), the [nullity](/0APCFW7639/) and the [rank-nullity theorem](/0W4FSW1TVB/).
+4. **Isomorphisms.** [Linear isomorphisms](/0B8T10CE7N/), the [classification of spaces by dimension](/0VJBSK15SN/), and [endomorphisms](/0912EEEVCT/) for which injective, surjective and bijective agree.
+5. **Spaces of maps and the algebra of endomorphisms.** The [space $\operatorname{Hom}(V, W)$](/0X9MBPP2Z3/), its [dimension](/0Z9N1ER0W0/), [endomorphisms](/0J7H0YBFDJ/) and their powers, and the [algebra $\operatorname{End}(V)$](/5JA4CYT1TB/).
 6. **Semilinear maps.** [Semilinear and antilinear maps](/BNPDDM95KF/), which twist the scalars by an automorphism of the field.
 
 ## A first reading
 
-For a first reading, take these entries in order: [linear map](/0NRYHJPQG2/), [examples of linear maps](/0SS770NS8B/), [matrix transformations of $F^n$](/W6KB0J3SZZ/), [composition of linear maps](/00BKRZKMSS/), [kernel](/0S23E6YE83/), [image](/0WSFKKT6FF/), [injectivity and the kernel](/0BJBYCGMWE/), [linear maps are determined by a basis](/0R8X9XA83A/), [rank-nullity theorem](/0W4FSW1TVB/), [linear isomorphism](/0B8T10CE7N/) and [classification by dimension](/0VJBSK15SN/). Work through the attached example that computes the kernel, image, rank and nullity of a $3 \times 3$ matrix map; it is the computation used most often.
+A first pass through the chapter can take these entries in order.
 
-The space $\operatorname{Hom}(V, W)$, the algebra of endomorphisms and semilinear maps can wait. They matter for dual spaces, for eigenvalues and for the polynomial of an endomorphism, and the semilinear maps return with inner products over $\C$.
+- [Linear map](/0NRYHJPQG2/), with the non-examples.
+- [Matrix transformations of $F^n$](/W6KB0J3SZZ/).
+- [Composition of linear maps](/00BKRZKMSS/).
+- [Kernel](/0S23E6YE83/) and [image](/0WSFKKT6FF/) of a linear map.
+- [Injectivity and the kernel](/0BJBYCGMWE/).
+- [Linear maps are determined by a basis](/0R8X9XA83A/).
+- [Rank-nullity theorem](/0W4FSW1TVB/).
+- [Linear isomorphism](/0B8T10CE7N/) and the [classification by dimension](/0VJBSK15SN/).
+- [Injective, surjective and bijective endomorphisms](/0912EEEVCT/).
+
+The [space of linear maps](/0X9MBPP2Z3/) and the [algebra of endomorphisms](/5JA4CYT1TB/) are needed for dual spaces and eigenvalues. [Semilinear maps](/BNPDDM95KF/) are needed for Hermitian forms and projective geometry and can wait until then.
 
 ## Before you start
 
-You need the previous chapter: [vector spaces](/000AYPA9AJ/), [subspaces](/00YC1D652K/), [span](/0DTY8B9HMS/), [linear independence](/0CRMGPAH83/), [bases](/0KCQ9Y3QKA/) and [dimension](/03GSZ8RTZJ/). From the chapter on matrices you need the [matrix-vector product](/0PDVQEP0ZC/), [matrix multiplication](/032Q9FB8MT/), the [matrix units](/4H93XF4RVH/) and the [matrix ring](/AB2MD5CD13/). From the chapter on systems you need the [homogeneous system](/04KGXJG1A2/) $Ax = 0$, [pivots and free variables](/0J0BBCMJ5W/), and the [structure of solution sets](/PDH3HKXWAZ/). The [invertible matrix theorem](/ACDFDABVQK/) of the chapter on invertible matrices is the matrix form of several results here.
+The chapter assumes the following.
+
+- [Vector spaces, span, independence, bases and dimension](/MVH97H8B2J/): subspaces, bases, coordinates and dimension.
+- [Matrices and the operations on them](/Y1ESNQ2V52/): the matrix product, the matrix units and the ring $M_n(F)$.
+- [Systems of linear equations](/DXSXFVDMXQ/): row reduction, used to compute kernels and images.

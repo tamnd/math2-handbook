@@ -2,10 +2,12 @@
 groups:
   - title: Orthogonal complements
     intro: >
-      The orthogonal complement $U^\perp$ of a subspace $U$ is the set of vectors orthogonal to all of $U$, and in
-      $\R^n$ it is the null space of a matrix whose rows span $U$. In finite dimension $V = U \oplus U^\perp$ and
-      $(U^\perp)^\perp = U$. For a matrix these facts pair the four fundamental subspaces: the null space is the
-      complement of the row space, and the left null space is the complement of the column space.
+      The group builds the splitting that the rest of the chapter uses. For a subspace $U$ of an inner product
+      space $V$, the complement $U^\perp$ is a subspace, and in $\R^n$ it is the null space of a matrix whose
+      rows span $U$. If $U$ is finite-dimensional, then $V = U \oplus U^\perp$; if $V$ is finite-dimensional, then
+      also $\dim U + \dim U^\perp = \dim V$ and $(U^\perp)^\perp = U$. For a real $m \times n$ matrix $A$ this gives
+      $\R^n = \operatorname{Row} A \oplus \operatorname{Nul} A$ and $\R^m = \operatorname{Col} A \oplus
+      \operatorname{Nul} A^{\mathsf{T}}$, orthogonal sums, with $A^*$ in place of $A^{\mathsf{T}}$ over $\C$.
     entries:
       - 0XJXTBCB2T
       - 0SP7P0G7KQ
@@ -13,29 +15,37 @@ groups:
       - GQF2KG1R1N
   - title: Projection and best approximation
     intro: >
-      The decomposition $v = u + u'$ with $u \in U$ and $u' \in U^\perp$ defines the orthogonal projection
-      $P_U v = u$. Its matrix is $A (A^{\mathsf{T}} A)^{-1} A^{\mathsf{T}}$ for a basis in the columns of $A$, and
-      $Q Q^{\mathsf{T}}$ for an orthonormal one. The best approximation theorem says that $P_U v$ is the unique
-      point of $U$ closest to $v$.
+      The decomposition $v = u + w$ with $u \in U$ and $w \in U^\perp$ of the first group defines the orthogonal
+      projection $P_U v = u$, for a finite-dimensional subspace $U$. For an orthonormal basis $e_1, \dots, e_k$ of
+      $U$ it is $P_U v = \sum_i \ip{v}{e_i} e_i$, and for a real matrix $A$ with linearly independent columns the
+      projection onto its column space has the matrix $A(A^{\mathsf{T}}A)^{-1}A^{\mathsf{T}}$. The orthogonal
+      projections are exactly the operators with $P^2 = P = P^*$. The best approximation theorem says that
+      $\norm{v - P_U v} < \norm{v - u}$ for every $u \in U$ with $u \neq P_U v$.
     entries:
       - 0B8KZRT28M
       - 0MCDDSCB9Z
   - title: Least squares
     intro: >
-      A system $Ax = b$ with no solution has least-squares solutions: the $x$ with $Ax = P b$, where $P$ projects
-      onto the column space. The normal equations $A^{\mathsf{T}} A x = A^{\mathsf{T}} b$ find them, the QR
-      decomposition finds them with better accuracy, and for a system with many solutions the same geometry picks
-      the shortest one.
+      The best approximation theorem, applied to the column space of a real $m \times n$ matrix $A$, solves a
+      system $Ax = b$ that has no solution. A vector $\hat x$ minimizes $\norm{Ax - b}$ exactly when $A\hat x$ is
+      the projection of $b$ onto $\operatorname{Col} A$, and exactly when $A^{\mathsf{T}}A\hat x =
+      A^{\mathsf{T}}b$. These normal equations always have a solution, and it is unique exactly when the columns
+      of $A$ are linearly independent. In that case $A = QR$ with orthonormal columns in $Q$ and an upper
+      triangular $R$ with positive diagonal, both unique, and $R\hat x = Q^{\mathsf{T}}b$ gives the same solution
+      without forming $A^{\mathsf{T}}A$.
     entries:
       - 0BYTQ4X1HC
       - 4D7MRG4D91
       - 0ERWG4NXQ9
-      - QM2Y84VDX8
-  - title: Angles and spaces of functions
+  - title: Three more uses
     intro: >
-      Principal angles measure how two subspaces sit relative to each other, through the singular values of
-      $Q_1^{\mathsf{T}} Q_2$. The last entry carries projection into spaces of functions, where Legendre
-      polynomials and Fourier coefficients give best mean-square approximations.
+      The same projections answer three further questions. If $Ax = b$ is consistent, exactly one of its
+      solutions lies in the row space, and it is the shortest; for $A$ with linearly independent rows it is
+      $A^{\mathsf{T}}(AA^{\mathsf{T}})^{-1}b$. For subspaces with orthonormal bases in the columns of $Q_1$ and
+      $Q_2$, the cosines of the principal angles are the singular values of $Q_1^{\mathsf{T}}Q_2$. In a space of
+      functions with an integral inner product, the closest polynomial or trigonometric polynomial is a sum of
+      Legendre or Fourier terms.
     entries:
+      - QM2Y84VDX8
       - YHVD3773AW
       - 899D63WW04

@@ -1,48 +1,64 @@
 # The order of chapter 3.20, quadratic forms over fields and the principal axis theorem. Groups are read in order; entries in a group too.
 groups:
-  - title: Quadratic forms and polar forms
+  - title: Quadratic forms and their polar forms
     intro: >
-      A quadratic form is a homogeneous polynomial of degree $2$, or, without coordinates, a map with
-      $Q(av) = a^2 Q(v)$ whose polar form $Q(u + v) - Q(u) - Q(v)$ is bilinear. Outside characteristic $2$,
-      quadratic forms and symmetric bilinear forms determine each other, and $Q(x) = x^T A x$ for exactly one
-      symmetric matrix $A$.
+      The group defines a quadratic form on a vector space over a field $F$ as a map $Q$ with
+      $Q(av) = a^2 Q(v)$ whose polar form $b_Q(u, v) = Q(u + v) - Q(u) - Q(v)$ is bilinear. On $F^n$ these
+      are the homogeneous polynomials of degree $2$. The main fact is the correspondence: if the characteristic
+      of $F$ is not $2$, then $B = \tfrac12 b_Q$ is the only symmetric bilinear form with $B(v, v) = Q(v)$, and
+      on $F^n$ there is exactly one symmetric matrix $A$ with $Q(x) = x^{\mathsf T} A x$. A change of variables
+      $x = Py$ with $P$ invertible replaces $A$ by the congruent matrix $P^{\mathsf T} A P$. In characteristic
+      $2$ the correspondence breaks, and the polar form is alternating.
     entries:
       - 0RBQS1JJCR
       - 0HYFWKKY3C
   - title: Diagonalization and the law of inertia
     intro: >
-      Every quadratic form outside characteristic $2$ becomes a sum $a_1 x_1^2 + \cdots + a_n x_n^2$ in a
-      suitable basis, found for example by completing squares. Over $\R$ the numbers of positive, negative and
-      zero coefficients do not depend on the choice, by Sylvester's law of inertia, and the triple
-      $(p, q, r)$ classifies real forms.
+      With the polar form in hand, the group removes cross terms. If $V$ has finite dimension and the
+      characteristic of $F$ is not $2$, then $V$ has a basis orthogonal for $B$, and in it
+      $Q = a_1 x_1^2 + \cdots + a_n x_n^2$; Lagrange's method finds such a basis by completing squares. The
+      coefficients $a_i$ are not unique. Over $\R$, Sylvester's law of inertia says that the number $p$ of
+      positive, $q$ of negative and $r$ of zero coefficients are the same in every diagonal form, and that two
+      real quadratic forms on $V$ are equivalent if and only if they have the same $p$ and $q$. The triple
+      $(p, q, r)$ is the signature.
     entries:
       - 0Z3FEWZ8HA
       - 0WFED3K3DQ
       - 07EZA80NEH
   - title: Forms over other fields
     intro: >
-      Over $\C$ the rank is the only invariant. Over a finite field of odd order, the dimension and the
-      determinant modulo squares classify the nondegenerate forms, and every form in three or more variables
-      has a nontrivial zero. The discriminant, the determinant modulo nonzero squares, is the first invariant
-      over every field.
+      Diagonalization works over any field of characteristic not $2$; what remains is to decide which
+      diagonal forms are equivalent. Scaling a basis vector by $c \ne 0$ multiplies its coefficient by
+      $c^2$, so the squares of the field govern the answer. Over an
+      algebraically closed field of characteristic not $2$ every coefficient is a square, and two forms on $V$
+      are equivalent if and only if they have the same rank. Over a finite field $\F_q$ with $q$ odd, two
+      nondegenerate forms of the same dimension are equivalent if and only if their discriminants, the
+      determinants modulo $\F_q^{\times 2}$, are equal. The discriminant is defined over every field of
+      characteristic not $2$; over $\Q$ it is not enough to classify forms.
     entries:
       - 0CEX9BRXRZ
       - 2HBR7137AD
       - MZFRXECCMC
   - title: Definite and indefinite forms
     intro: >
-      A real form is positive definite when $Q(v) > 0$ for all $v \ne 0$; these are the squared norms of
-      inner products. Together with the negative definite, the two semidefinite and the indefinite forms they
-      make five types, which decide the shape of a graph near a critical point.
+      Back over $\R$, the group sorts forms by the signs of their values. A real quadratic form $Q$ on a space
+      of finite dimension $n$ is positive definite when $Q(v) > 0$ for every $v \ne 0$. By the law of inertia
+      this holds exactly when the signature is $(n, 0, 0)$, and for $Q = x^{\mathsf T} A x$ with $A$ symmetric
+      it holds if and only if all eigenvalues of $A$ are positive, if and only if all leading principal minors
+      of $A$ are positive. Semidefinite, negative definite and indefinite forms complete the five types, which
+      the second derivative test reads from a Hessian.
     entries:
       - 0RP20HFYM3
       - 01RBSSGMY5
   - title: The principal axis theorem and its geometry
     intro: >
-      Over $\R$ the diagonalization can be done by a rotation: the [principal axis theorem](/0PR5P9Z4KM/)
-      writes $Q = \lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$ with the eigenvalues of $A$. Applied to conics and
-      quadric surfaces, it gives their axes and their normal forms. On unit vectors, $Q$ ranges exactly between
-      the smallest and the largest eigenvalue.
+      Congruence keeps only the signs of the diagonal coefficients; an orthogonal change of variables keeps
+      lengths and angles, and with them the eigenvalues. The principal axis theorem uses the real spectral
+      theorem: for a real symmetric $n \times n$ matrix $A$ with eigenvalues $\lambda_1, \ldots, \lambda_n$
+      there is an orthogonal $P$ with $\det P = 1$ such that $x = Py$ turns $x^{\mathsf T} A x$ into
+      $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$. The group applies it to name plane conics and quadric
+      surfaces and to find the largest and smallest values of a form on the unit sphere, which are the largest
+      and smallest eigenvalues.
     entries:
       - 0PR5P9Z4KM
       - 1DGT7X9E35

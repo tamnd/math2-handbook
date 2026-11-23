@@ -1,29 +1,27 @@
-1. $n = 41$, where the value is $41^2 = 1681$. For $1 \leq n \leq 40$ the value equals $m^2 + m + 41$ with $m = n - 1$, so it is one of the forty primes of the polynomial $m^2 + m + 41$.
+1. (a) Deductive. (b) Enumerative induction. (c) Abductive. All three conclusions are true: $(10^k + 1)^2 = 10^{2k} + 2 \cdot 10^k + 1$ has the digits $1$, then $k - 1$ zeros, $2$, $k - 1$ zeros, $1$; and $\frac1k - \frac{1}{k+1} = \frac{1}{k(k+1)}$, so the sum of the first $n$ terms is $1 - \frac{1}{n+1} = \frac{n}{n+1}$. The truth of (b) and (c) comes from these deductions, not from the arguments given.
 
-2. (a) Deductive. (b) Inductive: three cases suggest the formula but do not prove it. (c) Abductive: it proposes the most likely explanation of a fact.
+4. For $n = 0, \dots, 15$ the values $17, 19, 23, \dots, 227, 257$ are all prime. At $n = 16$ the value is $289 = 17^2$, and this is forced: $16^2 + 16 + 17 = 16 \cdot 17 + 17 = 17 \cdot 17$.
 
-4. Theorems: Fermat's Last Theorem (Wiles, 1994), the Kepler conjecture (Hales) and the Poincaré conjecture (Perelman). Refuted: Euler's sum of powers conjecture (1966) and the Mertens conjecture (1985). Open: Goldbach and twin primes.
+5. (a) Open. (b) Theorem: Andrew Wiles, proved in 1994 and published in 1995, with one step done jointly with Richard Taylor. (c) Refuted by Euler: $2^{32} + 1 = 641 \cdot 6700417$. (d) Refuted by Lander and Parkin in 1966: $27^5 + 84^5 + 110^5 + 133^5 = 144^5$. (e) Theorem: Grigori Perelman, in work posted in 2002 and 2003. (f) Theorem: Appel and Haken, 1976, with a computer check. (g) Open.
 
-6. All $n \geq 1$ except $n = 3$, where $8 < 9$. At $n = 2$ and $n = 4$ the two sides are equal.
+9. $6 \mid 2 \cdot 3$, but $6 \nmid 2$ and $6 \nmid 3$. The statement holds for all $a, b$ exactly when $n$ is prime: for prime $n$ it is Euclid's lemma, and a composite $n = cd$ with $1 < c, d < n$ divides $cd$ but neither $c$ nor $d$.
 
-7. $3^6 \equiv 1 \pmod 7$ and $100 = 6 \cdot 16 + 4$, so $3^{100} \equiv 3^4 = 81 \equiv 4$. The remainder is $4$.
+10. Each line contains $\binom32 = 3$ pairs of points, and each of the $\binom42 = 6$ pairs lies on exactly one line, so there are exactly $6/3 = 2$ lines. Two $3$-element subsets of a $4$-element set share at least two points, and those two points would lie on two lines.
 
-10. Write $n^3 - n = (n - 1)n(n + 1)$. Among three consecutive integers one is even and one is a multiple of $3$, and since $2$ and $3$ are coprime, $6$ divides the product.
+12. Not reflexive: the empty relation on $\set{1, 2}$. Not symmetric: $\le$ on $\set{1, 2}$. Not transitive: on $\set{1, 2, 3}$, the relation containing every $(x, x)$ and $(1,2), (2,1), (2,3), (3,2)$. The argument assumes that some $b$ with $a \mathrel{R} b$ exists; for an element related to nothing there is no such $b$, as the first example shows.
 
-11. $p = 11$: $2^{11} - 1 = 2047 = 23 \cdot 89$. For the other part, if $n = ab$ with $1 < a < n$, then $2^a - 1$ divides $2^{ab} - 1$, because $x - 1$ divides $x^b - 1$; take $x = 2^a$.
+14. (a) $p \mid a^2 - b^2 = (a - b)(a + b)$, and Euclid's lemma gives $p \mid a - b$ or $p \mid a + b$. (b) $3^2 \equiv 1^2 \pmod 8$ with $3 \not\equiv \pm 1$; $4^2 = 16 \equiv 1^2 \pmod{15}$ with $4 \not\equiv \pm 1$. The proof used that the modulus is prime, through Euclid's lemma. (c) $n = 4$: $2^2 \equiv 0^2$ but $2 \not\equiv 0$.
 
-13. $\Z/6$ is abelian and $S_3$ is not. Also, $\Z/6$ has one element of order $2$ and two of order $6$, while $S_3$ has three of order $2$ and none of order $6$.
+17. The formula gives $31$ for $n = 6$ and $57$ for $n = 7$, not $32$ and $64$, so the conjecture is refuted at $n = 6$. It came from enumerative induction on five cases.
 
-16. The units are $1, 2, 4, 7, 8, 11, 13, 14$. Their squares are $1$ or $4$ modulo $15$, and $4^2 = 16 \equiv 1$, so every fourth power is $1$.
+18. An even square is $4k^2$ and an odd square is $4k^2 + 4k + 1$. So a sum of two squares is $0$, $1$ or $2$ modulo $4$, never $3$; and $2023 = 4 \cdot 505 + 3$. The converse is false; the smallest counterexample is $6$, since $6 - 0$, $6 - 1$ and $6 - 4$ are not squares.
 
-18. $n = 6$, $a = 2$, $b = 3$. The statement is true when $\gcd(n, a) = 1$.
+23. Fix a point $P$. Each of the other $v - 1$ points lies on exactly one line with $P$, and each line through $P$ contains exactly two of them, so $P$ lies on $r = (v - 1)/2$ lines. Counting pairs (point, line through it) in two ways gives $vr = 3b$, so $b = v(v-1)/6$. Then $v$ is odd and $6 \mid v(v - 1)$, which excludes $v \equiv 5 \pmod 6$. From $6$ to $13$ only $7$, $9$ and $13$ pass. The values $7$ and $9$ do have models: Exercise 11, and the $9$ points of $(\Z/3)^2$ with its $12$ lines.
 
-19. If $\sqrt n = a/b$ in lowest terms, then $n b^2 = a^2$. Compare the exponent of each prime on both sides: in $a^2$ and $b^2$ every exponent is even, so every exponent in $n$ is even.
+24. By Exercise 23 there are $7$ lines and each point lies on $3$ of them. Fix a line $L = \set{a, b, c}$. Each of $a, b, c$ lies on two lines other than $L$, which gives $6$ pairs (point of $L$, other line through it). No other line meets $L$ in two points, by the first axiom, and there are exactly $6$ other lines, so each of them meets $L$ in exactly one point.
 
-20. Only $n = 3$, where both sides are $27$. For $n \geq 4$ use induction: $3^{n+1} > 3n^3 \geq (n + 1)^3$, because $(1 + 1/n)^3 \leq (5/4)^3 < 3$.
+25. If $f(0)$ is not prime, you are done; otherwise let $p = f(0)$. For every integer $k$, $f(kp) - f(0)$ is a sum of multiples of $kp$, so $p \mid f(kp)$. A polynomial of positive degree takes the value $p$ at only finitely many points, so for some $k \ge 1$ the number $f(kp)$ is a multiple of $p$ other than $p$, and it is not prime. For $f(n) = n^2 + n + 17$ this gives $f(17) = 17 \cdot 19$.
 
-21. Colour the square in row $i$ and column $j$ with the colour $(i + j) \bmod 4$. Each tile covers one square of each colour, so a tiling needs $25$ squares of each colour. Count them: the colours occur $25$, $26$, $25$ and $24$ times.
+26. Number the rows and columns $0$ to $9$ and give the square $(i, j)$ the colour $(i + j) \bmod 4$. Each $1 \times 4$ tile covers one square of each colour, so $25$ tiles cover $25$ squares of each colour. The colours occur $25$, $26$, $25$ and $24$ times.
 
-22. If $f(a) = p$ is prime for some $a \geq 0$, then $f(a + kp) \equiv f(a) \equiv 0 \pmod p$ for every $k \geq 0$. If all these values are prime, they all equal $p$, so $f - p$ has infinitely many roots and $f$ is constant.
-
-23. Fix a point. The other $v - 1$ points fall into pairs, one pair on each line through it, so $v$ is odd. Counting pairs of points gives $v(v - 1)/6$ lines, which must be an integer.
+27. The values are $3 > 1$, $9 > 8$, $27 = 27$, $81 > 64$, $243 > 125$, $729 > 216$. Conjecture: $3^n \ge n^3$ for all $n \ge 1$, with equality only at $n = 3$. For $n \ge 4$, if $3^n > n^3$ then $3^{n+1} > 3n^3 \ge (n+1)^3$, because $\left(\frac{n+1}{n}\right)^3 \le \left(\frac54\right)^3 = \frac{125}{64} < 3$.

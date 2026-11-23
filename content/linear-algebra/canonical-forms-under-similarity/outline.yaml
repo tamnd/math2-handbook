@@ -1,63 +1,71 @@
 # The order of chapter 3.13, canonical forms under similarity. Groups are read in order; entries in a group too.
 groups:
-  - title: Cyclic subspaces and companion matrices
+  - title: Cyclic subspaces, companion matrices and modules
     intro: >
-      The smallest invariant subspace that contains a vector $v$ is spanned by $v, Tv, T^2 v, \dots$. On it
-      the map acts in the simplest way, and its matrix in the basis $v, Tv, \dots$ is the companion matrix of
-      one polynomial, the $T$-annihilator of $v$. These two entries supply the building blocks of every
-      canonical form in the chapter.
+      A single vector $v$ and its images $v, T v, T^2 v, \dots$ span the smallest invariant subspace that
+      contains $v$, and on it $T$ acts by a companion matrix. Letting $x$ act as $T$ turns $V$ into an
+      $F[x]$-module $V_T$, whose submodules are the invariant subspaces and whose cyclic submodules are these
+      cyclic subspaces. Main results: for $T$ on a finite-dimensional space over a field $F$ and $v \ne 0$,
+      $\dim Z(v; T) = \deg m_v$; for a monic $p \in F[x]$ of degree $n \ge 1$, the companion matrix $C(p)$ has
+      characteristic and minimal polynomial both equal to $p$; and $A, B \in M_n(F)$ are similar if and only if
+      the modules $V_A$ and $V_B$ are isomorphic.
     entries:
       - 42MMQBTP0M
       - 0ZCWPNZTQ3
-
+      - KGVTFBZX59
   - title: Invariant factors and the rational canonical form
     intro: >
-      Every space splits into cyclic subspaces whose annihilators divide each other. These annihilators, the
-      invariant factors, are a complete list of invariants of similarity, and they give one normal form in
-      each class, the rational canonical form. The last entry computes them by row and column operations on
-      the characteristic matrix $xI - A$.
+      Every operator splits the space into cyclic subspaces of the first group, and a divisibility condition
+      makes the split unique. Main theorem: for $A \in M_n(F)$ with $n \ge 1$ over any field $F$, there are
+      unique monic nonconstant $d_1 \mid d_2 \mid \cdots \mid d_r$ with $A$ similar to
+      $C(d_1) \oplus \cdots \oplus C(d_r)$; here $d_r = m_A$ and $d_1 \cdots d_r = \chi_A$, and two matrices are
+      similar exactly when their invariant factors agree. The same polynomials are the nonconstant diagonal
+      entries of the Smith normal form of $xI - A$, which can be computed with no roots at all.
     entries:
       - R3Z20J19BR
       - F7GJPMVBXA
       - 042JWAR3Q0
       - 92VZF0QRM8
-
-  - title: Two consequences over every field
+  - title: Two consequences
     intro: >
-      The invariant factors are computed inside the field of the entries, so two matrices that are similar
-      over a larger field are already similar over the smaller one. The same computation shows that $A$ and
-      $A^{\mathsf T}$ are always similar.
+      Because the invariant factors are computed by operations inside the field of the entries, they do not
+      change when the field grows. Main theorems: if $K \subseteq L$ are fields and $A, B \in M_n(K)$ are similar
+      over $L$, then they are similar over $K$; and every $A \in M_n(F)$ is similar to its transpose by an
+      invertible symmetric matrix.
     entries:
       - 5PVFX89NM7
       - C708QKZPE6
-
   - title: The Jordan normal form
     intro: >
-      When the characteristic polynomial splits, a finer normal form is available. The
-      [Jordan block](/07PH4RX0X5/) $\lambda I + N$ is the piece; the normal form of nilpotent maps, by
-      Jordan chains and partitions, does the work on each generalized eigenspace; and the ranks of the powers
-      of $A - \lambda I$ give the block sizes in practice.
+      When the characteristic polynomial splits, each cyclic piece can be cut further into Jordan blocks. The
+      nilpotent case comes first, and the ranks of powers decide everything. Main theorems: a nilpotent $N$ on
+      a space of dimension $n$ is similar to a unique direct sum of nilpotent Jordan blocks, with
+      $\operatorname{rank} N^{j-1} - 2 \operatorname{rank} N^j + \operatorname{rank} N^{j+1}$ blocks of size $j$;
+      and if $\chi_A$ splits over $F$, then $A \in M_n(F)$ is similar over $F$ to a direct sum of Jordan blocks
+      $J_k(\lambda)$ with $\lambda \in F$, unique up to the order of the blocks.
     entries:
       - 07PH4RX0X5
       - Z2RTKWZZAZ
       - 085HQ5G5TE
       - 7M1W0ZA49Q
-
-  - title: Other forms for special purposes
+  - title: Other normal forms
     intro: >
-      A real matrix may have nonreal eigenvalues, and the real Jordan form keeps the matrix real by pairing
-      conjugate blocks into real blocks of size $2k$. The Weyr form carries the same data as the Jordan form
-      in a different basis, one in which the matrices that commute with $A$ become block upper triangular.
+      Two variants of the Jordan form handle situations it does not. Main theorem: every $A \in M_n(\R)$ is
+      similar over $\R$ to a direct sum of real Jordan blocks $J_k(\lambda)$ with $\lambda \in \R$ and blocks
+      $C_k(a, b)$ with $b > 0$, and each $C_k(a, b)$ is similar over $\C$ to $J_k(a + ib) \oplus J_k(a - ib)$.
+      The Weyr form reorders a Jordan basis by height, so that the matrices commuting with it become block
+      upper triangular.
     entries:
       - MPFT45RFGV
       - 9XEA4VR8WP
-
-  - title: Centralizers and the shape of the classification
+  - title: Commuting matrices and classification
     intro: >
-      The invariant factors also measure the matrices that commute with $A$: their dimension is at least $n$,
-      with equality exactly for cyclic $A$. The chapter ends with an overview of what the classification
-      achieves, why pairs of matrices are a different kind of problem, and a count of the conjugacy classes
-      of $GL_n$ over a finite field.
+      The invariant factors of the second group answer questions about a whole similarity class. Main
+      theorem: for $A \in M_n(F)$ with invariant factors $d_1 \mid \cdots \mid d_r$, the matrices commuting with
+      $A$ form a space of dimension $\sum_{i, j} \deg \gcd(d_i, d_j) \ge n$, with equality if and only if $A$ is
+      cyclic, and then each of them is a polynomial in $A$. The group then sets the normal forms side by side
+      and counts the conjugacy classes of $GL_n(\mathbb{F}_q)$, which correspond to the rational canonical
+      forms $C(d_1) \oplus \cdots \oplus C(d_r)$ of size $n$ over $\mathbb{F}_q$ with $d_r(0) \ne 0$.
     entries:
       - GXZGWZSJ2J
       - H3E52HTEZ2

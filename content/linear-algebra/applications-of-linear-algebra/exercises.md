@@ -1,39 +1,62 @@
-1. ◦ Balance the chemical equation $x_1\, \mathrm{CH_4} + x_2\, \mathrm{O_2} \to x_3\, \mathrm{CO_2} + x_4\, \mathrm{H_2O}$ by writing one linear equation for each element and finding the smallest positive integer solution.
+1. ◦ Balance the combustion of ethane, $a\,\mathrm{C_2H_6} + b\,\mathrm{O_2} \to c\,\mathrm{CO_2} + d\,\mathrm{H_2O}$. Write one equation for each element, find the null space of the $3 \times 4$ coefficient matrix, and give the smallest positive integer solution.
 
-2. ◦ Find the polynomial $p$ of degree at most $2$ with $p(0) = 1$, $p(1) = 3$ and $p(2) = 7$ by solving the [Vandermonde system](/5T4DY28JSK/).
+2. ◦ A one-way roundabout has three junctions, met in the order $A$, $B$, $C$. Let $x_1$, $x_2$, $x_3$ be the flows, in cars per hour, on the arcs $A \to B$, $B \to C$ and $C \to A$. At $A$, $400$ cars per hour enter and $100$ leave; at $B$, $200$ enter and $500$ leave; at $C$, $300$ enter and $300$ leave. Write the three conservation equations, solve them in parametric form, and find the smallest possible flow on the arc $A \to B$ if no flow is negative.
 
-3. ◦ An economy has two sectors with consumption matrix $C = \begin{pmatrix} 0.2 & 0.3 \\ 0.4 & 0.1 \end{pmatrix}$ in the [input-output model](/PF15E9SVQV/). Find the production $x$ that meets the outside demand $d = (50, 50)$, that is, solve $(I - C) x = d$.
+3. ◦ A $12\,\mathrm{V}$ battery in series with a $2\,\Omega$ resistor feeds two resistors of $6\,\Omega$ and $3\,\Omega$ connected in parallel. Let $I_1$ be the current through the battery and $I_2$, $I_3$ the currents through the $6\,\Omega$ and $3\,\Omega$ resistors. Write the junction equation and the two loop equations, and solve them.
 
-4. ◦ Find the [steady-state vector](/TA8QR5HFAY/) of the Markov chain with transition matrix $P = \begin{pmatrix} 0.9 & 0.2 \\ 0.1 & 0.8 \end{pmatrix}$.
+4. ◦ Find the polynomial $p$ of degree at most $2$ with $p(-1) = 4$, $p(0) = 1$ and $p(2) = 1$, by solving the Vandermonde system. Compute the determinant of the Vandermonde matrix from the product formula, and write down the Lagrange basis polynomial that is $1$ at $t = 0$ and $0$ at $t = -1$ and $t = 2$.
 
-5. ◦ In [homogeneous coordinates](/FS9FRJ17D2/) for the plane, write the $3 \times 3$ matrix of the scaling by the factor $2$ about the point $(1, 1)$.
+5. • In a two-sector economy, producing one unit of good $1$ uses $0.2$ units of good $1$ and $0.4$ units of good $2$, and producing one unit of good $2$ uses $0.3$ units of good $1$ and $0.1$ units of good $2$. Write the consumption matrix $C$, compute $(I - C)^{-1}$, and find the production $x$ that meets the outside demand $d = (50, 50)$. By how much must each sector raise its output when the outside demand for good $1$ rises by one unit?
 
-6. ◦ Let $A$ be the [adjacency matrix](/08B9CX109G/) of the cycle with four vertices $1, 2, 3, 4$ in this order. Compute $A^2$ and $A^3$. How many walks of length $3$ go from vertex $1$ to vertex $2$, and how many triangles does the graph have?
+6. • Fit the line $y = c_0 + c_1 x$ to the points $(0, 1)$, $(1, 1)$, $(2, 2)$, $(3, 2)$ by least squares. Compute the residual vector, check that it is orthogonal to both columns of the design matrix, and compute $R^2$.
 
-7. ◦ On the $3 \times 3$ Lights Out board only the top middle light is on. Find the cells to press to switch every light off, and check the answer by counting switches.
+7. • Find the error. A student fits the line through the origin $y = c x$ to the points $(1, 2)$, $(2, 3)$, $(3, 2)$ by least squares, gets $c = 1$, and computes $R^2 = 1 - \norm{r}^2 / \norm{y - \bar y \mathbf 1}^2$. The result is negative, so the student concludes that the fit must contain an arithmetic mistake. Compute this number, and explain what is actually wrong.
 
-8. • Find the least-squares line $y = c_0 + c_1 x$ for the points $(0, 1)$, $(1, 1)$, $(2, 2)$, $(3, 2)$ from the [normal equations](/4D7MRG4D91/), and compute $R^2$.
+8. ★ Let $(x_1, y_1), \dots, (x_m, y_m)$ be real data whose $x_i$ are not all equal, and let $y = \hat c_0 + \hat c_1 x$ be the least-squares line. Prove that the line passes through $(\bar x, \bar y)$, that $\hat c_1 = S_{xy}/S_{xx}$ with $S_{xy} = \sum (x_i - \bar x)(y_i - \bar y)$ and $S_{xx} = \sum (x_i - \bar x)^2$, and that $R^2 = S_{xy}^2 / (S_{xx} S_{yy})$, the square of the correlation coefficient, when the $y_i$ are not all equal.
 
-9. • Solve the recurrence $a_{n+2} = a_{n+1} + 2a_n$ with $a_0 = 0$, $a_1 = 1$ by diagonalizing its companion matrix, and give a closed formula for $a_n$.
+9. ◦ Let $a_0 = 2$, $a_1 = 1$ and $a_{n+2} = a_{n+1} + 6 a_n$. Write the companion matrix $M$ with $(a_{n+1}, a_{n+2})^{\mathsf T} = M (a_n, a_{n+1})^{\mathsf T}$, find its eigenvalues, and give a closed formula for $a_n$. Check it against $a_5$ computed from the recurrence.
 
-10. • A population has two age classes with the [Leslie matrix](/CHAYZAWENA/) $L = \begin{pmatrix} 1 & 4 \\ 0.5 & 0 \end{pmatrix}$. Find the eigenvalues of $L$, the long-run growth rate per step and the long-run ratio of young to old.
+10. • A population has juveniles and adults, counted once a year. Each juvenile produces on average $1$ juvenile and each adult $4$ juveniles in the next count; half of the juveniles survive to become adults, and no adult survives two counts. Write the Leslie matrix $L$, find its eigenvalues and eigenvectors, and give a formula for $x_k = L^k x_0$ when $x_0 = (6, 0)$. What are the long-run growth factor and the long-run ratio of juveniles to adults?
 
-11. • Solve $x' = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix} x$ with $x(0) = (1, 0)$, and describe the origin as an equilibrium.
+11. • Let $A = \begin{pmatrix} 0.8 & 0.6 \\ 0.3 & 0.5 \end{pmatrix}$ and $x_{k+1} = A x_k$. Find the eigenvalues and eigenvectors, decide whether the origin is an attractor, a repeller or a saddle, and write $x_k$ in closed form for $x_0 = (3, 0)$. For which starting vectors does $x_k \to 0$?
 
-12. • Solve $x' = \begin{pmatrix} -1 & -2 \\ 2 & -1 \end{pmatrix} x$ with $x(0) = (1, 0)$ in real form, and describe the trajectories.
+12. ◦ For the column-stochastic matrix $P = \begin{pmatrix} 0.7 & 0.2 \\ 0.3 & 0.8 \end{pmatrix}$, find the eigenvalues, the steady-state vector, and the distribution $x_k = P^k x_0$ for $x_0 = (1, 0)$.
 
-13. • Three web pages link as follows: $1 \to 2$, $2 \to 3$, $3 \to 1$ and $3 \to 2$. Write the column-stochastic link matrix (each page shares its vote equally among its links), find its PageRank vector without damping, and show that some power of the matrix has all entries positive.
+13. • Find the error. Let
+$$P = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}.$$
+A student checks that $P$ is column-stochastic and that $(\tfrac13, \tfrac13, \tfrac13)$ is its only steady-state vector, and concludes that $P^k x_0 \to (\tfrac13, \tfrac13, \tfrac13)$ for every probability vector $x_0$. Show that the conclusion is false, and say which hypothesis of the convergence theorem fails.
 
-14. • Use the orthonormal Haar basis $h_0 = \frac12(1, 1, 1, 1)$, $h_1 = \frac12(1, 1, -1, -1)$, $h_2 = \frac{1}{\sqrt2}(1, -1, 0, 0)$, $h_3 = \frac{1}{\sqrt2}(0, 0, 1, -1)$ to find the coordinates of $x = (2, 4, 6, 6)$. Check [Parseval's identity](/047RFCNVSK/), and find the error made by dropping the smallest nonzero coefficient.
+14. ★ Let $0 \le a, b \le 1$ with $a + b > 0$, and let $P = \begin{pmatrix} 1 - a & b \\ a & 1 - b \end{pmatrix}$. Show that $q = \frac{1}{a + b} (b, a)$ is the unique steady-state vector, that the other eigenvalue is $1 - a - b$, and that every probability vector $x_0$ satisfies $P^k x_0 = q + (1 - a - b)^k (x_{0,1} - q_1)(1, -1)$. Deduce that $P^k x_0 \to q$ for every $x_0$ unless $a = b = 1$.
 
-15. • Find the singular values of $A = \begin{pmatrix} 2 & 2 & 0 \\ 2 & 2 & 0 \\ 0 & 0 & 1 \end{pmatrix}$, its best rank-one approximation $A_1$, the error $\norm{A - A_1}_F$, and the share of $\norm{A}_F^2$ kept by $A_1$.
+15. • Three web pages link as follows: page $1$ links to page $2$, page $2$ links to page $3$, and page $3$ links to pages $1$ and $2$. Write the link matrix $S$, and find the steady-state vector of $S$. Then find the PageRank vector for the damping factor $\alpha = \tfrac12$, that is, the steady-state vector of $G = \tfrac12 S + \tfrac16 J$. Which page ranks first in each case?
 
-16. • For the cycle $C_4$, find the eigenvalues of the [Laplacian matrix](/7YBM0AXY23/), the number of spanning trees by [Kirchhoff's theorem](/BDZGK4PHPR/), and the [effective resistance](/57DPMSN7H8/) between two opposite vertices and between two adjacent vertices when every edge is a $1\ \Omega$ resistor.
+16. ★ Let $S$ be an $n \times n$ column-stochastic matrix, $0 < \alpha < 1$, $J$ the $n \times n$ all-ones matrix and $G = \alpha S + \frac{1 - \alpha}{n} J$. Prove that $I - \alpha S$ is invertible, and that the steady-state vector of $G$ is
+$$r = \frac{1 - \alpha}{n} (I - \alpha S)^{-1} \mathbf 1.$$
 
-17. ★ On the $4 \times 4$ Lights Out board all sixteen lights are on. Show that the state can be switched off, find the number of solutions, and find a solution with the fewest presses.
+17. ◦ Solve $x' = Ax$ with $A = \begin{pmatrix} 4 & -2 \\ 1 & 1 \end{pmatrix}$ and $x(0) = (3, 2)$.
 
-18. ★ Let $P = \begin{pmatrix} 1 - a & b \\ a & 1 - b \end{pmatrix}$ with $0 < a, b < 1$. Find the eigenvalues and the steady state of $P$, compute $\lim_{n \to \infty} P^n$, and show that the distance from the steady state decays like $\abs{1 - a - b}^n$.
+18. • Solve $x' = Ax$ with $A = \begin{pmatrix} -1 & -2 \\ 2 & -1 \end{pmatrix}$ and $x(0) = (1, 0)$, as a real function of $t$. Describe the path of $x(t)$ in the plane.
 
-19. ★ Prove that the least-squares line $y = c_0 + c_1 x$ for data $(x_i, y_i)$, $i = 1, \dots, m$, with not all $x_i$ equal, passes through the mean point $(\bar x, \bar y)$, and that its $R^2$ equals the square of the [correlation coefficient](/0DNN9B6Q2F/) of the data.
+19. ◦ In homogeneous coordinates of the plane, let $T$ be the translation by $(1, 2)$ and $F$ the reflection in the $x$-axis. Write $FT$ and $TF$ as $3 \times 3$ matrices, and find the images of the point $(1, 1)$ under both. Which of the two products means "first translate, then reflect"?
 
-20. ★ For the complete graph $K_4$, find the eigenvalues of the Laplacian, the dimension of the cycle space (the null space of the incidence matrix), and the number of spanning trees.
+20. • Find the error. To rotate the plane by $90^\circ$ anticlockwise about the point $(2, 1)$, a student uses the matrix $R\, T_{(-2,-1)}\, T_{(2,1)}$, where $R$ is the rotation about the origin and $T_v$ the translation by $v$, in homogeneous coordinates. Compute where the student's matrix sends $(3, 1)$, give the correct matrix, and find the correct image of $(3, 1)$.
+
+21. ◦ With $\omega = e^{-2\pi i/4} = -i$ and $F_{jk} = \omega^{jk}$ for $0 \le j, k \le 3$, compute the discrete Fourier transforms $X = Fx$ of $x = (1, 0, -1, 0)$ and of $x = (0, 1, 0, -1)$. Check that $\norm{X}^2 = 4 \norm{x}^2$ in both cases.
+
+22. • Find the coordinates of $x = (2, 4, 6, 6)$ in the orthonormal Haar basis $h_0 = \tfrac12 (1, 1, 1, 1)$, $h_1 = \tfrac12 (1, 1, -1, -1)$, $h_2 = \tfrac{1}{\sqrt 2} (1, -1, 0, 0)$, $h_3 = \tfrac{1}{\sqrt 2} (0, 0, 1, -1)$. Keep only the two coordinates of largest absolute value, write the compressed vector, and give the length of the error.
+
+23. • Let
+$$B = \begin{pmatrix} 2 & 2 & 0 \\ 2 & 2 & 0 \\ 0 & 0 & 1 \end{pmatrix}.$$
+Find the singular values of $B$, the best approximation $B_1$ of rank $1$, and $\norm{B - B_1}_F$. What share of the energy $\norm{B}_F^2$ does $B_1$ keep, and how many numbers does it take to store $B_1$ as $\sigma_1 u_1 v_1^{\mathsf T}$?
+
+24. ◦ Let $A$ be the adjacency matrix of the $4$-cycle with the edges $12$, $23$, $34$, $41$. Compute $A^2$ and $A^3$, and show that $A^3 = 4A$. How many walks of length $3$ go from vertex $1$ to vertex $2$, and how many from vertex $1$ to vertex $3$? Why does the $4$-cycle have no closed walk of odd length?
+
+25. • On the $3 \times 3$ Lights Out board, with all lights off, find the presses that switch on the top middle light and nothing else. Explain why this set of presses is the only one.
+
+26. ★ Let $A$ be the Lights Out matrix of the $n \times n$ board, over $\mathbb F_2$. Prove that $y^{\mathsf T} A y = \sum_i y_i$ for every $y \in \mathbb F_2^{n^2}$, and deduce that the pattern with all lights on can be switched off on every board.
+
+27. • Let $\Gamma$ be a graph with $n$ vertices, incidence matrix $B$ (for some orientation of the edges) and Laplacian $L = B B^{\mathsf T}$. Prove that $x^{\mathsf T} L x = \sum_{ij} (x_i - x_j)^2$, where the sum runs over the edges, and deduce that $L$ is positive semidefinite and that the dimension of the null space of $L$ is the number of connected components of $\Gamma$.
+
+28. • For the $4$-cycle of Exercise 24, write the Laplacian $L$, find its eigenvalues, and use the matrix-tree theorem to count the spanning trees. Treat each edge as a $1\,\Omega$ resistor and find the effective resistance between two opposite vertices and between two adjacent vertices.
+
+29. ★ For the complete graph $K_4$, show that $L = 4I - J$, find the eigenvalues of $L$, the dimension of the cycle space and the number of spanning trees, and show that the effective resistance between any two vertices is $\tfrac12\,\Omega$ when every edge is a $1\,\Omega$ resistor.

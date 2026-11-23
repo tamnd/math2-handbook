@@ -1,33 +1,30 @@
-1. $p_A(t) = t^2 - 5t + 6 = (t - 2)(t - 3)$. The vector $(1, 1)$ is an eigenvector for $2$, and $(2, 1)$ is one for $3$.
+1. $p_A(t) = t^2 - 5t + 6 = (t - 2)(t - 3)$. The eigenspace for $2$ is spanned by $(1, 1)$, and the one for $3$ by $(2, 1)$.
 
-2. $A(1, 2, 1) = (3, 2, 3)$, which is not a multiple of $(1, 2, 1)$. $A(1, 1, 1) = 2(1, 1, 1)$, with eigenvalue $2$, and $A(1, 0, -1) = (1, 0, -1)$, with eigenvalue $1$. Since $\operatorname{tr} A = 2$, the third eigenvalue is $2 - 2 - 1 = -1$.
+3. $p(t) = t^2 - 2$ in each case. Over $\Q$ the spectrum is empty, and over $\R$ it is $\set{\sqrt{2}, -\sqrt{2}}$. In $\F_7$, $3^2 = 9 = 2$, so the spectrum is $\set{3, 4}$. In $\F_5$ the squares are $0, 1, 4$, so the spectrum is empty.
 
-3. $\operatorname{tr} A = 9$. The principal minors are $5$, $8$ and $11$, with sum $24$, and $\det A = 18$. So $p_A(t) = t^3 - 9t^2 + 24t - 18$.
+5. Expanding along the second row, $p_A(t) = (t - 3)\bigl((t - 1)(t - 3) + 1\bigr) = (t - 2)^2 (t - 3)$. For $2$: algebraic multiplicity $2$, but $\operatorname{rank}(A - 2I) = 2$, so the geometric multiplicity is $1$, with eigenvector $(1, 0, 1)$. For $3$: both multiplicities are $1$, with eigenvector $(0, 1, 0)$. The eigenspaces have dimensions adding up to $2 < 3$, so there is no basis of eigenvectors.
 
-5. $p_A(t) = (t - 5)^2 (t - 2)$, so $a(5) = 2$ and $a(2) = 1$. The matrix $A - 5I$ has rank $2$, so $g(5) = 1$, and $g(2) = 1$. There is no basis of eigenvectors, since $1 + 1 < 3$.
+8. Row operations do not preserve eigenvalues; this one keeps the determinant $6$ but changes the trace from $7$ to $5$. In fact $p_A(t) = t^2 - 7t + 6 = (t - 1)(t - 6)$, so the eigenvalues are $1$ and $6$.
 
-6. $p_A(t) = t^2 - 2t + 2$, with discriminant $-4$. The spectrum is empty over $\R$, $\set{1 + i, 1 - i}$ over $\C$, $\set{3, 4}$ over $\F_5$, and empty over $\F_3$, where $p_A$ takes the values $2, 1, 2$ at $0, 1, 2$.
+9. $p_A(t) = t^3 - 3t^2 + 3t - 2$, so $A(A^2 - 3A + 3I) = 2I$ and
+$$A^{-1} = \tfrac{1}{2}(A^2 - 3A + 3I) = \tfrac{1}{2} \begin{pmatrix} 1 & 1 & -1 \\ -1 & 1 & 1 \\ 1 & -1 & 1 \end{pmatrix}.$$
 
-7. For $\operatorname{diag}(2, 2, 5)$, $(A - 2I)(A - 5I) = 0$, so $m = (x - 2)(x - 5)$, while $p = (x - 2)^2 (x - 5)$. For the second matrix $(A - 2I)(A - 5I) \ne 0$, so $m = p = (x - 2)^2 (x - 5)$.
+12. From $Nv = \lambda v$ with $v \ne 0$ follows $0 = N^k v = \lambda^k v$, so $\lambda = 0$. The minimal polynomial divides $t^k$, so it is a power of $t$; since $p_N$ divides $m_N^{\,n}$ and is monic of degree $n$, $p_N = t^n$. Cayley–Hamilton gives $N^n = 0$.
 
-8. $p_A(t) = t^2 - 4t + 1$, so $A^2 = 4A - I$. Then $A(4I - A) = I$ gives $A^{-1} = 4I - A = \begin{pmatrix} 1 & -1 \\ -2 & 3 \end{pmatrix}$, and $A^3 = 4A^2 - A = 15A - 4I = \begin{pmatrix} 41 & 15 \\ 30 & 11 \end{pmatrix}$.
+17. Put $N = A - 2I$; the geometric multiplicity is $3 - \operatorname{rank} N$. If $a = b = 0$: it is $3$ and $m_A = t - 2$. If exactly one of $a, b$ is zero: it is $2$, $N \ne 0$ and $N^2 = 0$, so $m_A = (t - 2)^2$. If $a \ne 0$ and $b \ne 0$: it is $1$, and $N^2$ has the entry $ab \ne 0$ in position $(1, 3)$, so $m_A = (t - 2)^3$.
 
-10. $p_A(t) = (t - 1)(t - 3)^2$. $E_1$ is spanned by $(1, -1, 0)$ and $E_3$ by $(1, 1, 0)$, so $g(3) = 1 < 2 = a(3)$ and there is no basis of eigenvectors. The product $(A - I)(A - 3I)$ is not $0$, so $m_A = (x - 1)(x - 3)^2$.
+20. The minimal polynomial divides $t^2 + t + 1$, which has no real root, so $A$ has no real eigenvalue; for odd $n$ this contradicts [the result on real maps](/KAV44BRV77/). Over $\C$, the roots of $p_A$ are roots of $m_A$, so they are $\omega$ and $\bar\omega$ with $\omega = e^{2\pi i/3}$. As $p_A$ is real, both occur $n/2$ times, and $\det A = (\omega \bar\omega)^{n/2} = 1$. Example: $\begin{pmatrix} 0 & -1 \\ 1 & -1 \end{pmatrix}$.
 
-12. Solve $\pi(P - I) = 0$: this gives $\pi_2 = 2\pi_1$, so $\pi = (1/3, 2/3)$. The trace is $5/4$, so the other eigenvalue is $1/4$, with right eigenvector $v = (2, -1)$. Then $\pi v = 2/3 - 2/3 = 0$.
+21. If $\lambda_1, \lambda_2, \lambda_3$ are the eigenvalues, then $e_1 = \sum \lambda_i = 3$, $e_2 = \sum_{i<j} \lambda_i \lambda_j = \tfrac{1}{2}(3^2 - 11) = -1$, and Newton's identity $\sum \lambda_i^3 = e_1 \sum \lambda_i^2 - e_2 \sum \lambda_i + 3 e_3$ gives $e_3 = -3$. So $p_A(t) = t^3 - 3t^2 - t + 3 = (t - 3)(t - 1)(t + 1)$, and the eigenvalues are $3, 1, -1$.
 
-16. The minimal polynomial divides $(x - 1)(x - 2)$ and has degree $2$, because $A$ is not a multiple of $I$; so $m_A = (x - 1)(x - 2)$. The characteristic polynomial has degree $3$, its roots are $1$ and $2$, and both occur: $(x - 1)^2 (x - 2)$ or $(x - 1)(x - 2)^2$.
+23. Over $\C$, $p_A$ splits, and $\operatorname{tr} A^k$ is the $k$-th power sum of its roots. Newton's identities $k e_k = \sum_{i=1}^{k} (-1)^{i-1} e_{k-i} \operatorname{tr}(A^i)$ give $e_1 = \dots = e_n = 0$; this step divides by $k$, which needs characteristic $0$. So $p_A = t^n$, and $A^n = 0$ by Cayley–Hamilton. Over $\F_2$, $I_2$ has $\operatorname{tr} I_2 = \operatorname{tr} I_2^2 = 2 = 0$ and is not nilpotent.
 
-17. The minimal polynomial is $(x - 2)(x + 1)$, for example for $\operatorname{diag}(2, 2, -1)$, or $(x - 2)^2 (x + 1)$, for example for $\begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & -1 \end{pmatrix}$.
+24. From $AX = XB$ follows $f(A) X = X f(B)$ for every polynomial $f$. Take $f = p_A$: then $X p_A(B) = 0$. Since $p_A$ and $p_B$ are coprime, $u p_A + v p_B = 1$ for some $u, v \in F[t]$; evaluating at $B$ and using $p_B(B) = 0$ gives $u(B) p_A(B) = I$, so $p_A(B)$ is invertible and $X = 0$.
 
-20. Take the trace: $\operatorname{tr}(AB - BA) = 0$, but $\operatorname{tr} I = n \ne 0$ in characteristic $0$. Over $\F_2$, $A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ give $AB - BA = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = I$.
+25. The characteristic polynomial of $T|_U$ divides $p_T$, so it has $\dim U$ distinct roots, and $T|_U$ has $\dim U$ independent eigenvectors, which are eigenvectors of $T$ in $U$. Each eigenspace of $T$ is a line, so $U$ is the sum of the eigenlines it contains. Distinct sets of eigenlines give distinct sums, and there are $2^n$ sets.
 
-22. If $A$ is invertible, $BA = A^{-1}(AB)A$ is similar to $AB$. For general $A$, the matrix $A - sI$ is invertible for all but at most $n$ values of $s$. Both $\det(tI - (A - sI)B)$ and $\det(tI - B(A - sI))$ are polynomials in $s$ and $t$, so they agree for all $s$, in particular for $s = 0$.
+26. $f(M) = \operatorname{diag}(f(A), f(B))$, so $f(M) = 0$ exactly when both $m_A$ and $m_B$ divide $f$. Here $p_A = (t - 2)^2$ and $A \ne 2I$, so $m_A = (t - 2)^2$, while $m_B = (t - 2)(t - 5)$. Hence $m_M = (t - 2)^2 (t - 5)$ and $p_M = (t - 2)^3 (t - 5)$.
 
-23. With $g = \dim E_\lambda$, the matrix of $T$ in the extended basis is $\begin{pmatrix} \lambda I_g & C \\ 0 & D \end{pmatrix}$. So $p_T(t) = (t - \lambda)^g p_D(t)$, and $(t - \lambda)^g$ divides $p_T$.
+27. $P(x_1, x_2, x_3) = (x_3, x_1, x_2)$, so for $\zeta^3 = 1$ the vector $(1, \zeta^2, \zeta)$ is an eigenvector for $\zeta$. Then $C v = f(\zeta) v$ with $f(t) = 1 + 2t + 3t^2$. The eigenvalues are $f(1) = 6$ and $f(\omega) = -2 - \omega$ with its conjugate, and $\det C = 6 \abs{2 + \omega}^2 = 6 \cdot 3 = 18$.
 
-24. If $Av = \lambda v$, then $A(Bv) = BAv = \lambda Bv$, so $Bv \in E_\lambda$, which has dimension $1$; hence $Bv = \mu v$. In a basis of eigenvectors of $A$, both matrices are diagonal. Choose $f$ by Lagrange interpolation with $f(\lambda_i) = \mu_i$ for each $i$.
-
-25. Let $\mu_1, \ldots, \mu_r$ be the distinct nonzero eigenvalues, with algebraic multiplicities $m_1, \ldots, m_r$, and suppose $r \ge 1$. Then $\sum_j m_j \mu_j^k = \operatorname{tr}(A^k) = 0$ for $k = 1, \ldots, r$. The matrix $(\mu_j^k)$ is a Vandermonde matrix times $\operatorname{diag}(\mu_j)$, so it is invertible, and every $m_j = 0$. So all eigenvalues are $0$, $p_A = t^n$, and Cayley-Hamilton gives $A^n = 0$.
-
-26. $T$ maps $T^{k-1} v$ to $T^k v \in W$, so $W$ is invariant. $q(T) T^j v = T^j q(T) v = 0$, so $q(T|_W) = 0$, and no nonzero polynomial of degree less than $k$ kills $v$, by the choice of $k$. Since $m_T(T|_W) = 0$, the polynomial $q$ divides $m_T$, and the roots of $m_T$ in $F$ are eigenvalues.
+28. $f(L)$ is the map $X \mapsto f(A) X$, which is zero exactly when $f(A) = 0$ (take $X = I$). So $L$ and $A$ have the same annihilating polynomials. In the basis $E_{11}, \dots, E_{n1}, E_{12}, \dots, E_{nn}$, taken column by column, $L$ has the block diagonal matrix with $n$ blocks $A$.

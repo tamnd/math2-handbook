@@ -1,0 +1,32 @@
+# The order of chapter 4.10, interpretations and imaginaries. Groups are read in order; entries in a group too.
+groups:
+  - title: Interpretations
+    intro: >
+      An interpretation builds a structure $N$ from a definable set of $n$-tuples of a structure $M$, a definable
+      equivalence relation on it and definable relations on the quotient. Every formula about $N$ then translates
+      into a formula about $M$, so decidability and stability pass from $M$ to $N$. Bi-interpretability asks for
+      interpretations both ways whose composites are definable, and it is the notion of sameness the rest of the
+      chapter uses.
+    entries:
+      - 7R0SJPH37J
+      - KHZ1E7RMMQ
+  - title: Imaginaries and their elimination
+    intro: >
+      The structure $M^{\mathrm{eq}}$ adds a sort for each $\emptyset$-definable equivalence relation, so that
+      classes, cosets and definable sets become elements. A theory eliminates imaginaries when each of these new
+      elements is interdefinable with a tuple of ordinary elements, as Poizat proved for algebraically closed
+      fields. A stably embedded set is one whose definable subsets, with parameters from anywhere, are already
+      definable from inside it, so that it can be studied as a structure of its own.
+    entries:
+      - Q0HM88QQKN
+      - 6M2R0ER3KV
+      - 14WPPDDK8M
+  - title: Beyond imaginaries
+    intro: >
+      Hyperimaginaries are classes of equivalence relations defined by a partial type rather than by one formula,
+      and the question is when they reduce to sequences of imaginaries. The chapter ends with the reconstruction
+      theorem of Ahlbrandt and Ziegler: a countable $\omega$-categorical structure is determined up to
+      bi-interpretation by its automorphism group as a topological group.
+    entries:
+      - NQPCDVV3NB
+      - AM0523XJ9D

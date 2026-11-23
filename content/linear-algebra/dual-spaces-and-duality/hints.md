@@ -1,25 +1,27 @@
-1. (a), (d) and (e) are linear forms. (b) does not send $0$ to $0$, and (c) is not additive: $(1, 0)$ and $(0, 1)$ map to $0$, but their sum maps to $1$.
+1. $f$ and $h$ are linear forms; $g$ and $k$ are not, since $g(2v) = 4g(v)$ and $k(2p) = 4k(p)$. On $P_2$, $h(a + bx + cx^2) = b + (a + b + c)$, so its row is $(1, 2, 1)$.
 
-2. The basis vectors are the columns of an upper triangular $P$, and the dual basis is the rows of $P^{-1}$: $x - y$, $y - z$, $z$.
+3. The dual basis is $x - y$, $y - z$, $z$, the rows of $P^{-1}$ for the matrix $P$ with the basis vectors as columns. The coordinates of $(2, 5, 3)$ are $(-3, 2, 3)$.
 
-4. A form $ax + by + cz$ vanishes on $U$ when $a + c = 0$ and $b + c = 0$, so $U^0 = \R(x + y - z)$, of dimension $1$.
+5. $f^*(\varphi) = \varphi \circ f = 2(x + 2y) - 3x + (x - y) = 3y$. The dual map goes from $(\R^3)^*$ to $(\R^2)^*$, and its matrix is $2 \times 3$, the transpose of the $3 \times 2$ matrix of $f$.
 
-5. (a) $6$. (b) $3$. (c) $2^{\aleph_0}$, the cardinality of $\Q^{\N}$.
+6. The form $s(a) = \sum_n a_n$ is defined on $V$, because each sequence has only finitely many nonzero terms. It takes the value $1$ on every $e_n$, while a finite combination of the $e_n^*$ vanishes on all but finitely many $e_n$.
 
-8. Hyperplanes correspond to nonzero forms up to a nonzero scalar: $(3^3 - 1)/(3 - 1) = 13$.
+8. Both duals have dimension $2^{\aleph_0}$, the cardinal of the continuum, since $\abs{\Q}^{\aleph_0} = \abs{\mathbb{F}_2}^{\aleph_0} = 2^{\aleph_0}$. Neither is isomorphic to a space with a countable basis.
 
-9. The dual basis is the Lagrange basis $\tfrac12 x(x - 1)$, $1 - x^2$, $\tfrac12 x(x + 1)$. The derivatives of these at $0$ are $-\tfrac12$, $0$, $\tfrac12$, so $p'(0) = \tfrac12 (p(1) - p(-1))$.
+10. The matrix of the three forms on $1, x, x^2$ has determinant $-1/6$, so they are independent. The dual basis is $1 - 4x + 3x^2$, $-2x + 3x^2$, $6x - 6x^2$; check each against the three forms.
 
-11. $U^0$ has basis $x_1 - x_2 + x_3$, $x_4$; $W^0$ has basis $x_1$, $x_2$, $x_3 - x_4$; and $(U + W)^0 = \R(x_1 - x_2 + x_3 - x_4)$.
+12. The first equality is immediate from the definitions. For the second, $U^0 + W^0 \subseteq (U \cap W)^0$ is clear. By the first equality, $\dim(U^0 \cap W^0) = n - \dim(U + W)$; the formula for the dimension of a sum, used once in $V^*$ and once in $V$, then gives $\dim(U^0 + W^0) = n - \dim(U \cap W)$.
 
-13. $f$ is surjective, so $\ker f^* = 0$. Its kernel is $\R(1, -1, 1)$, so $\operatorname{im} f^*$ is the plane of forms $ax + by + cz$ with $a - b + c = 0$, spanned by $f^*(e_1^*) = x + y$ and $f^*(e_2^*) = y + z$.
+14. The matrix is $\begin{pmatrix} 1 & 1 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}$. Then $T^*(\varphi_0) = \varphi_0 + \varphi_1 + \varphi_2$, $T^*(\varphi_1) = \varphi_1 + 2\varphi_2$ and $T^*(\varphi_2) = \varphi_2$. The form $p \mapsto p(0)$ goes to $p \mapsto p(1)$.
 
-16. The common kernel is $\R(1, 1, -2)$. Since $g(1, 1, -2) = -1$, $g$ is not in the span. Since $h(1, 1, -2) = 0$, it is: $h = 2f_1 + f_2$.
+16. $P^{-1}P = I$ says that row $i$ of $P^{-1}$ takes the value $1$ on column $i$ of $P$ and $0$ on the other columns. Here $P^{-1} = \begin{pmatrix} 1 & -2 \\ 0 & 1 \end{pmatrix}$, so the dual basis is $x - 2y$, $y$.
 
-19. Apply rank–nullity to $v \mapsto (f_1(v), \ldots, f_k(v))$. Its kernel is the intersection, and its rank is the rank of the $k \times n$ matrix whose rows are the coordinates of the $f_i$, which is $\dim \operatorname{span}\set{f_i}$.
+19. $V = \ker f \cup \ker g$. If neither kernel is $V$, take $u \notin \ker f$ and $w \notin \ker g$; if $u \in \ker g$ and $w \in \ker f$, then $u + w$ lies in neither kernel. In $\mathbb{F}_2^2$ the three lines spanned by $(1, 0)$, $(0, 1)$ and $(1, 1)$ cover the four vectors.
 
-20. The map is injective, since $\operatorname{tr}(A E_{ji}) = a_{ij}$, so $A \ne 0$ gives a nonzero form; both spaces have dimension $n^2$. The form $X \mapsto x_{ij}$ is $X \mapsto \operatorname{tr}(E_{ji} X)$.
+20. The dimension formula sends dimension $k$ to $n - k$. Under the canonical isomorphism $V \cong V^{**}$, the annihilator of $U^0$ is $U$, so the map is a bijection with inverse $W \mapsto W^0$. With $k = 1$, lines correspond to hyperplanes, and $\mathbb{F}_q^n$ has $(q^n - 1)/(q - 1)$ lines, since each line has $q - 1$ nonzero vectors.
 
-21. If $T(U) \subseteq U$ and $\varphi \in U^0$, then $(T^* \varphi)(u) = \varphi(Tu) = 0$. For the converse, apply the same argument to $T^*$ and $U^0$, and use $U^{00} = \operatorname{ev}(U)$ and $T^{**} \circ \operatorname{ev} = \operatorname{ev} \circ T$.
+21. $\operatorname{rank} f^* = \dim (\ker f)^0 = \dim V - \dim \ker f = \operatorname{rank} f$. For a matrix $A$, the matrix of the dual map is $A^{\mathsf{T}}$, and the rank of $A^{\mathsf{T}}$ is the column rank of $A^{\mathsf{T}}$, which is the row rank of $A$.
 
-22. $V$ is countable, and a form is any choice of values on the basis $e_n$, so $V^* \cong \Q^{\N}$, which is uncountable. A $\Q$-space with a countable basis is a countable set.
+22. If the map is not onto, its image lies in a hyperplane of $F^k$, which is the kernel of a nonzero form $(a_1, \dots, a_k)$; then $\sum a_i \varphi_i = 0$. Conversely, a relation $\sum a_i \varphi_i = 0$ with some $a_i \ne 0$ puts the image in the kernel of the form $\sum a_i y_i$.
+
+23. $V$ is the union over $n$ of the finite sets of combinations of the first $n$ basis vectors, so it is countable. A form is fixed by any choice of values in $\mathbb{F}_2$ on the basis vectors, so $V^* \cong \mathbb{F}_2^{\N}$, which is uncountable by Cantor's diagonal argument. A space with a countable basis over $\mathbb{F}_2$ is countable, so $V^*$ has no countable basis.

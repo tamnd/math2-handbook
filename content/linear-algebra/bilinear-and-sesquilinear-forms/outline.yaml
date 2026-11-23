@@ -2,9 +2,11 @@
 groups:
   - title: Bilinear forms and their matrices
     intro: >
-      A bilinear form is a map $B \colon V \times V \to F$ that is linear in each slot. In a basis it is
-      $B(x, y) = x^T A y$ with $A_{ij} = B(e_i, e_j)$, and a change of basis replaces $A$ by $P^T A P$. This rule
-      defines congruence of matrices, which plays for forms the part that similarity plays for linear maps.
+      A bilinear form is a map $B \colon V \times V \to F$ that is linear in each slot. On a space of finite
+      dimension $n$ with a basis $e_1, \dots, e_n$ it is $B(u, v) = x^{\mathsf{T}} A y$, where $A_{ij} = B(e_i, e_j)$
+      and $x, y$ are the coordinate vectors. If the columns of an invertible $P$ are the new basis vectors, the new
+      matrix is $P^{\mathsf{T}} A P$. This is congruence, not similarity: the rank is kept, and the determinant
+      changes by the square $(\det P)^2$.
     entries:
       - 0SQZMXB6GP
       - 0QK6K857HS
@@ -12,20 +14,23 @@ groups:
       - WJWNYSQKK8
   - title: Symmetric, alternating and reflexive forms
     intro: >
-      Two kinds of form carry most of the theory: symmetric forms, with $B(u, v) = B(v, u)$, and alternating
-      forms, with $B(v, v) = 0$. They are exactly the forms for which orthogonality is a symmetric relation, by
-      the theorem on [reflexive forms](/M0G958M917/). Outside characteristic $2$, alternating and
-      skew-symmetric mean the same.
+      Two kinds of form carry the theory: symmetric forms, with $A^{\mathsf{T}} = A$, and alternating forms, with
+      $B(v, v) = 0$ for every $v$, which in matrices means $A^{\mathsf{T}} = -A$ and a zero diagonal. An
+      alternating form is always skew-symmetric, and the converse holds exactly when the characteristic is not $2$.
+      The main theorem of the group explains why only these two kinds matter: over any field, a bilinear form for
+      which $B(u, v) = 0$ implies $B(v, u) = 0$ is either symmetric or alternating.
     entries:
       - 0AXZNE5XNH
       - 0DGDS5XY84
       - M0G958M917
   - title: Nondegeneracy, orthogonality and isotropy
     intro: >
-      A form is nondegenerate when its radical is zero, that is, when its matrix is invertible; then
-      $u \mapsto B(u, \cdot)$ identifies $V$ with its dual. For such a form, orthogonal complements still satisfy
-      $\dim W + \dim W^\perp = \dim V$, but a vector can be orthogonal to itself. Such isotropic vectors lead to
-      the hyperbolic plane, the basic piece of every isotropic form.
+      For a reflexive form, orthogonality is a symmetric relation, so $W^\perp$ is well defined. When $B$ is
+      nondegenerate on a space $V$ of finite dimension, $\dim W + \dim W^\perp = \dim V$ for every subspace $W$, and
+      $V = W \oplus W^\perp$ holds exactly when $B$ restricted to $W$ is nondegenerate. Isotropic vectors, with
+      $B(v, v) = 0$ and $v \ne 0$, are what can break this. The group ends with the hyperbolic plane: when the
+      characteristic is not $2$, a nondegenerate symmetric plane is hyperbolic if and only if it contains an
+      isotropic vector.
     entries:
       - 01NHFZF2SK
       - 01TXN7ETH2
@@ -33,27 +38,32 @@ groups:
       - 1X5PZSK44P
   - title: Sesquilinear and Hermitian forms
     intro: >
-      Over $\C$ a bilinear form cannot be positive, since $B(iv, iv) = -B(v, v)$. A sesquilinear form is
-      conjugate-linear in the second slot, and a Hermitian form adds $h(v, u) = \overline{h(u, v)}$. The complex
-      inner products are the positive definite Hermitian forms.
+      Over $\C$ a bilinear form cannot give real lengths, so the second slot is conjugated: a sesquilinear form
+      has $h(x, y) = x^{\mathsf{T}} M \bar y$, and a change of basis gives $P^{\mathsf{T}} M \bar P$. The rank,
+      radical and orthogonality of the previous groups carry over with this one change. A sesquilinear form on a
+      complex space is Hermitian, $h(v, u) = \overline{h(u, v)}$, if and only if $M^* = M$, if and only if $h(v, v)$
+      is real for every $v$.
     entries:
       - 054YEQ0Y8M
       - 48P4A1CX85
   - title: Alternating forms and symplectic spaces
     intro: >
-      Alternating forms have a complete classification over every field: there is a basis in which the matrix
-      is a sum of blocks $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ and a zero block, so the rank is even
-      and is the only invariant. A nondegenerate alternating form makes a symplectic space, whose Lagrangian
-      subspaces have half its dimension.
+      Every alternating form $B$ on a space of finite dimension, over any field, has a basis in which its matrix
+      is $J \oplus \dots \oplus J \oplus 0$ with $J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$. So the rank
+      is even and is the only invariant under congruence. The proof splits off one plane at a time, using the
+      orthogonal decomposition of the previous groups. A nondegenerate alternating form makes a symplectic space,
+      which has even dimension $2m$ and Lagrangian subspaces of dimension $m$.
     entries:
       - V8KKHKXXB3
       - PQ7JJY0VPH
   - title: Witt's theory of symmetric forms
     intro: >
-      For a nondegenerate symmetric form outside characteristic $2$, the space splits into hyperbolic planes and
-      an anisotropic part, and the number of planes is the Witt index. Witt's theorem says that every isometry
-      between two subspaces extends to the whole space; in particular, an isometry carries any totally
-      isotropic subspace onto any other of the same dimension.
+      Let the characteristic not be $2$, and let $B$ be a nondegenerate symmetric form on a space of finite
+      dimension. Then $V$ is an orthogonal sum of $m$ hyperbolic planes and an anisotropic part, the number $m$ is
+      the dimension of every maximal totally isotropic subspace, and the anisotropic part is unique up to
+      isometry. Witt's theorem says more: every isometry between two subspaces, degenerate or not, extends to an
+      isometry of $V$. This is the analogue for symmetric forms of the symplectic basis, built from the hyperbolic
+      planes of the third group.
     entries:
       - BPMRSPB6GD
       - CCB8VNQCV0

@@ -1,67 +1,83 @@
 # The order of chapter 3.14, inner product spaces. Groups are read in order; entries in a group too.
 groups:
-  - title: Inner products
+  - title: Inner products and the spaces that carry them
     intro: >
-      An inner product is a map with three axioms: linear in the first slot, conjugate symmetric and positive
-      definite. Over $\R$ the dot product is the model; over $\C$ the second factor carries a conjugate, so that
-      $\ip{x}{x}$ is a sum of squared moduli. An inner product space is a vector space together with one chosen
-      inner product, and the same space can carry many.
+      An inner product on a vector space $V$ over $\mathbb{K} = \R$ or $\C$ is a map
+      $V \times V \to \mathbb{K}$ that is linear in the first slot, conjugate symmetric and positive definite.
+      Over $\R$ it is a symmetric bilinear form with $\langle x, x\rangle > 0$ for $x \ne 0$; over $\C$ the
+      conjugate is what keeps $\langle x, x\rangle$ real and positive. An inner product space is the pair of
+      a space and one chosen inner product, so the same vectors can carry different geometries. Main fact:
+      the second slot is conjugate-linear, $\langle x, ay + bz\rangle = \bar a\langle x, y\rangle +
+      \bar b\langle x, z\rangle$, and $\langle x, x\rangle$ is real and nonnegative for every $x$.
     entries:
       - 0NB0AWGJBW
       - 0QVNCJXRY3
   - title: Length and the two inequalities
     intro: >
-      The inner product gives every vector a length $\norm{x} = \sqrt{\ip{x}{x}}$. The
-      [Cauchy-Schwarz inequality](/0RFWW56Y22/) bounds $\abs{\ip{x}{y}}$ by $\norm{x}\norm{y}$, and the
-      [triangle inequality](/SRN4T2G6AM/) follows from it, so the length is a norm and $\norm{x - y}$ is a
-      distance.
+      From the first group every vector gets a length $\norm{x} = \sqrt{\langle x, x\rangle}$, and every pair
+      a distance $\norm{x - y}$. Main theorems: in any inner product space over $\R$ or $\C$,
+      $\abs{\langle x, y\rangle} \le \norm{x}\norm{y}$ for all $x, y$, with equality if and only if $x$ and
+      $y$ are linearly dependent; and $\norm{x + y} \le \norm{x} + \norm{y}$, with equality if and only if
+      $y = 0$ or $x = cy$ for a real $c \ge 0$. So the induced length is a norm and the distance is a metric.
     entries:
       - 0MFJJV97RJ
       - 0RFWW56Y22
       - SRN4T2G6AM
   - title: The norm and the inner product determine each other
     intro: >
-      Every induced norm satisfies the parallelogram law, and the polarization identity recovers the inner
-      product from the norm. Together they say which norms come from inner products, and they show that a
-      linear map that keeps lengths also keeps inner products.
+      The second group went from the inner product to the norm; this group goes back. Main theorems: in any
+      inner product space $\norm{x + y}^2 + \norm{x - y}^2 = 2\norm{x}^2 + 2\norm{y}^2$; over $\R$,
+      $\langle x, y\rangle = \frac14(\norm{x + y}^2 - \norm{x - y}^2)$, and over $\C$, with the inner product
+      linear in the first slot, $\langle x, y\rangle = \frac14\sum_{k=0}^{3} i^k\norm{x + i^k y}^2$. Hence a
+      linear map between inner product spaces over the same field that keeps every norm keeps every inner
+      product.
     entries:
       - 026HPGYGS4
       - 05FKHRT0B4
   - title: Right angles
     intro: >
-      Two vectors are orthogonal when their inner product is $0$. The Pythagorean theorem holds in every inner
-      product space, but its converse holds only over $\R$: over $\C$ the identity
-      $\norm{x + y}^2 = \norm{x}^2 + \norm{y}^2$ detects only $\operatorname{Re}\ip{x}{y} = 0$.
+      Vectors are orthogonal when their inner product is $0$, a condition that depends on the chosen inner
+      product. Expanding $\norm{x + y}^2$ as in the third group gives the main theorem: in any inner product
+      space, pairwise orthogonal $x_1, \dots, x_k$ satisfy $\norm{x_1 + \dots + x_k}^2 = \norm{x_1}^2 + \dots
+      + \norm{x_k}^2$; for two vectors, $\norm{x + y}^2 = \norm{x}^2 + \norm{y}^2$ holds exactly when
+      $\operatorname{Re}\langle x, y\rangle = 0$, so the converse holds over $\R$ and fails over $\C$.
     entries:
       - 0Y2X7P2WB7
       - 0BVTDM872V
   - title: Orthonormal families and coordinates
     intro: >
-      An orthonormal family is made of unit vectors at right angles. In an orthonormal basis each coordinate is
-      one inner product, $v = \sum_i \ip{v}{e_i} e_i$. Bessel's inequality bounds the squared coordinates of a
-      vector on any orthonormal family by $\norm{v}^2$, and Parseval's identity is the case of equality, for a
-      basis.
+      An orthonormal family is a family of unit vectors that are pairwise orthogonal; by the fourth group it
+      is linearly independent. Main theorems, for an inner product linear in the first slot: if
+      $e_1, \dots, e_k$ is orthonormal in any inner product space, then $\sum_i \abs{\langle x, e_i\rangle}^2
+      \le \norm{x}^2$, with equality if and only if $x$ lies in their span; and if $e_1, \dots, e_n$ is an
+      orthonormal basis of a finite-dimensional space, then $v = \sum_i \langle v, e_i\rangle e_i$ and
+      $\langle x, y\rangle = \sum_i \langle x, e_i\rangle\overline{\langle y, e_i\rangle}$.
     entries:
       - 0RW9TNNT87
       - 0S9GGTR0EX
       - 09DZ8CD1AK
       - 0RBT5PB74K
       - 047RFCNVSK
-  - title: Making a basis orthonormal
+  - title: Building orthonormal bases
     intro: >
-      The [Gram-Schmidt process](/0VT6P0GNQR/) subtracts from each vector its components along the earlier
-      directions and then normalizes. It keeps the spans of the first $j$ vectors, and it proves that every
-      finite-dimensional inner product space has an orthonormal basis, and that every orthonormal family extends
-      to one.
+      The coordinate formulas of the fifth group need an orthonormal basis, and this group produces one. The
+      Gram-Schmidt process takes linearly independent $v_1, \dots, v_k$ in an inner product space and
+      subtracts from each $v_j$ its components along the earlier directions. Main theorems: the result is an
+      orthonormal family with $\operatorname{span}(e_1, \dots, e_j) = \operatorname{span}(v_1, \dots, v_j)$
+      for each $j$; and every inner product space of finite dimension $n$ has an orthonormal basis, every
+      orthonormal family in it has at most $n$ vectors and extends to an orthonormal basis.
     entries:
       - 0VT6P0GNQR
       - 0Y85GYEGSF
   - title: The Gram matrix and linear forms
     intro: >
-      The [Gram matrix](/00SPJSDT3Z/) of a family holds all its inner products. It is Hermitian and positive
-      semidefinite, invertible exactly when the family is independent, and its determinant is a squared volume.
-      The Riesz representation theorem writes each linear form as $\ip{\cdot}{u}$ for one vector $u$, which
-      depends antilinearly on the form over $\C$.
+      The Gram matrix $G_{ij} = \langle v_i, v_j\rangle$ stores all lengths and angles of a finite family. It
+      is Hermitian and positive semidefinite, it is invertible if and only if the family is linearly
+      independent, and its determinant is the product of the squared lengths from Gram-Schmidt. With an
+      orthonormal basis from the sixth group, linear forms become vectors. Main theorem: on a
+      finite-dimensional inner product space, linear in the first slot, each linear form $f$ equals
+      $\langle \cdot, u\rangle$ for exactly one $u$, namely $u = \sum_i \overline{f(e_i)}\, e_i$, and the map
+      $u \mapsto \langle \cdot, u\rangle$ is a bijection onto the dual space that is conjugate-linear.
     entries:
       - 00SPJSDT3Z
       - 04GYPXDXNH

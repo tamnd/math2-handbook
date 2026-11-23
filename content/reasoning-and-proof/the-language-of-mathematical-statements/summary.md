@@ -1,33 +1,33 @@
 ## What to remember
 
-- A **statement** is a sentence with exactly one truth value, true or false, even if no one knows which. An **open sentence** such as $x^2 = 4$ has a free variable; it becomes a statement when the variable is given a value or bound by a quantifier. Questions and commands such as "let $x = 3$" are not statements.
-- In mathematics **"or" is inclusive**: "$P$ or $Q$" is true when at least one of them is true. "But" means "and", with a hint of contrast.
-- The **conditional** "if $P$, then $Q$" is false only when $P$ is true and $Q$ is false. So a conditional with a false hypothesis is true, and a statement about all members of an empty set is [vacuously true](/0V4QXPGJQK/).
-- "$P$ only if $Q$", "$Q$ if $P$", "$P$ is sufficient for $Q$" and "$Q$ is [necessary](/09BJQQB3VS/) for $P$" all mean $P \Rightarrow Q$. "$P$ if and only if $Q$" means both directions; see the [biconditional](/0S6GMNJ62Y/).
-- **Quantifiers** are often hidden: an identity such as $(a + b)^2 = a^2 + 2ab + b^2$ means "for all $a, b$", and the variable of a definition is universally quantified. The [order of quantifiers](/0FYQMKFE77/) matters: $\forall x \, \exists y$ lets $y$ depend on $x$, and $\exists y \, \forall x$ does not.
-- **Negation** follows five rules: $\neg \forall x \, P \equiv \exists x \, \neg P$, $\neg \exists x \, P \equiv \forall x \, \neg P$, $\neg(P \wedge Q) \equiv \neg P \vee \neg Q$, $\neg(P \vee Q) \equiv \neg P \wedge \neg Q$ (the [De Morgan laws](/09PKJKA6J0/)), and $\neg(P \Rightarrow Q) \equiv P \wedge \neg Q$.
-- "There is exactly one $x$ with $P(x)$", written with the [uniqueness quantifier](/0QAJHFGZZJ/) $\exists! x \, P(x)$, is proved in two parts: existence, and uniqueness ("if $P(x)$ and $P(y)$, then $x = y$"). The statement $\exists! x \, \exists! y \, P(x, y)$ does not say that exactly one pair satisfies $P$.
-- In the Wason task with cards $E$, $K$, $4$, $7$ and the rule "if a card has a vowel on one side, then it has an even number on the other", the cards to turn are $E$ and $7$. Fewer than about $10$ percent of people choose exactly these in the abstract form.
+- A [statement](/S9MHMRAX88/) is a declarative sentence that is true or false and not both, even if nobody knows which. An open sentence $P(x)$ is not a statement; it becomes one when $x$ gets a value or is bound by a quantifier. Questions and commands are not statements.
+- "$P$ and $Q$" is true when both are true, and "but" means "and". "$P$ or $Q$" is inclusive: it is true when at least one is true, including both. "Neither $P$ nor $Q$" means $\neg P \land \neg Q$. An "and" between two names, as in "$2$ and $3$ are coprime", may state a relation and not join two statements.
+- "If $P$, then $Q$" is false only when $P$ is true and $Q$ is false. "$P$ only if $Q$", "$Q$ if $P$", "$Q$ whenever $P$", "$P$ is sufficient for $Q$" and "$Q$ is necessary for $P$" all mean $P \Rightarrow Q$. "$P$ unless $Q$" means $\neg Q \Rightarrow P$. A conditional with variables carries a hidden "for every".
+- A conditional is equivalent to its [contrapositive](/04T1CT7212/) $\neg Q \Rightarrow \neg P$, and not in general to its [converse](/09A3N7ZN5G/) $Q \Rightarrow P$ or its [inverse](/VB7B8766D2/) $\neg P \Rightarrow \neg Q$, which are equivalent to each other. The "if" in a definition means "if and only if".
+- "For every $x \in A$, $P(x)$" means $\forall x \, (x \in A \Rightarrow P(x))$, and "some $x \in A$ has $P(x)$" means $\exists x \, (x \in A \land P(x))$. Quantifiers of the same kind may change places; $\forall x \, \exists y$ and $\exists y \, \forall x$ in general say different things, and the second implies the first.
+- To negate, push "not" inward: $\neg(P \land Q) \equiv \neg P \lor \neg Q$, $\neg(P \lor Q) \equiv \neg P \land \neg Q$, $\neg(P \Rightarrow Q) \equiv P \land \neg Q$, $\neg \forall x \in A \, P(x) \equiv \exists x \in A \, \neg P(x)$ and $\neg \exists x \in A \, P(x) \equiv \forall x \in A \, \neg P(x)$. The domain $A$ of a bounded quantifier is not negated.
+- $\exists! x \, P(x)$ means existence, $\exists x \, P(x)$, together with uniqueness, $\forall x \, \forall y \, (P(x) \land P(y) \Rightarrow x = y)$. Uniqueness alone says "at most one". Writing "the $x$ with $P(x)$" presupposes both.
+- "Any" can mean "every" or "some", and the scope of "not" in "all … are not …" is unclear. Write "every", "some", "no" and "not all" instead.
 
-## The forms of a conditional
-
-| Sentence | In symbols | Same meaning as "if $P$, then $Q$"? |
+| Sentence | As a conditional | Equivalent to $P \Rightarrow Q$ |
 |---|---|---|
-| $Q$ if $P$; $P$ only if $Q$ | $P \Rightarrow Q$ | yes |
-| $P$ is sufficient for $Q$; $Q$ is necessary for $P$ | $P \Rightarrow Q$ | yes |
-| [Contrapositive](/04T1CT7212/): if not $Q$, then not $P$ | $\neg Q \Rightarrow \neg P$ | yes |
+| If $P$, then $Q$; $Q$ whenever $P$ | $P \Rightarrow Q$ | yes |
+| $P$ only if $Q$ | $P \Rightarrow Q$ | yes |
+| $P$ is sufficient for $Q$ | $P \Rightarrow Q$ | yes |
+| $Q$ is necessary for $P$ | $P \Rightarrow Q$ | yes |
+| $Q$ unless $\neg P$ | $P \Rightarrow Q$ | yes |
+| Contrapositive: if not $Q$, then not $P$ | $\neg Q \Rightarrow \neg P$ | yes |
 | Converse: if $Q$, then $P$ | $Q \Rightarrow P$ | no |
-| [Inverse](/VB7B8766D2/): if not $P$, then not $Q$ | $\neg P \Rightarrow \neg Q$ | no; it is the contrapositive of the converse |
-| $P$ if and only if $Q$ | $P \Leftrightarrow Q$ | no; it also asserts the converse |
-| Negation: $P$ and not $Q$ | $P \wedge \neg Q$ | no; it is true exactly when the conditional is false |
+| Inverse: if not $P$, then not $Q$ | $\neg P \Rightarrow \neg Q$ | no |
+| $P$ if and only if $Q$ | $(P \Rightarrow Q) \land (Q \Rightarrow P)$ | no, it says more |
+| Negation | $P \land \neg Q$ | no, it contradicts it |
 
-: English forms of a conditional and their relation to $P \Rightarrow Q$. In a definition, "if" is read as "if and only if"; everywhere else it means only $P \Rightarrow Q$.
+: Ways of writing a conditional and the statements most often confused with it
 
 ## Common errors
 
-- **Proving the converse.** To prove "$P$ only if $Q$", assume $P$ and derive $Q$, not the other way round.
-- **Negating a conditional as a conditional.** The negation of "if $x > 0$ then $x^2 > x$" is "$x > 0$ and $x^2 \leq x$", not "if $x > 0$ then $x^2 \leq x$".
-- **Moving "not" without flipping quantifiers.** "Not every prime is odd" says that some prime is even. It does not say that every prime is even.
-- **Swapping quantifiers.** In the definition of a limit, $N$ may depend on $\varepsilon$, so "for every $\varepsilon > 0$ there is $N$" cannot be replaced by "there is $N$ such that for every $\varepsilon > 0$".
-- **Writing "any".** "$P(x)$ for any $x$" can mean "for every $x$" or "for some $x$". Write "every" or "some".
-- **Reading scope by ear.** "All primes are not even" can mean "no prime is even" (false) or "not all primes are even" (true). Rewrite such a sentence so that only one reading is possible.
+- **Reading "only if" as "if".** "$P$ only if $Q$" puts $Q$ in the conclusion. Proving $Q \Rightarrow P$ instead proves the converse, which may be false: "$n$ is divisible by $4$ only if $n$ is even" is true, and its converse fails at $n = 2$.
+- **Treating the converse or the inverse as equivalent.** From "every differentiable function is continuous" nothing follows about continuous functions; $\abs{x}$ is continuous at $0$ and not differentiable there.
+- **Negating a conditional with a conditional.** The negation of "if $P$, then $Q$" is "$P$ and not $Q$", not "if $P$, then not $Q$". With a hidden "for every $x$", the negation is one counterexample: some $x$ with $P(x)$ and not $Q(x)$.
+- **Swapping quantifiers.** In "for every $x$ there is a $y$", $y$ may depend on $x$. The gap between continuity and uniform continuity is exactly this swap.
+- **Proving half of "exactly one".** A solution found by computation gives existence only. A uniqueness argument that divides by $x$ loses the solution $x = 0$.

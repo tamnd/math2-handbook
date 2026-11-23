@@ -65,6 +65,23 @@ entry) were corrected on the site after its release v0.3.1, in
 [tamnd/math2#412](https://github.com/tamnd/math2/pull/412); this edition prints the entries as they are in v0.3.1.
 The other pages of Volumes 1 to 3 are those of edition 0.3.0.
 
+For edition 0.4.0 (November 2026, built from release v0.4.0 of the site), the site had rewritten the entries of
+Volume 3, *Linear algebra*, and of chapters 1.1 to 1.3 in textbook prose, so the learner pages of those chapters
+were written again from scratch, with a brief that asked for more than before. Each opening starts from a
+computation done by hand; each group introduction states its main theorem with all its hypotheses; each summary
+repeats the hypotheses and ends with common errors. There are 18 to 30 exercises per chapter, in bands of about
+35, 45 and 20 per cent, and none repeats an example printed in the entries. Every numerical answer was checked in
+exact rational arithmetic, and every count over a finite field by brute force. Nine writers shared the 21 chapters
+of Volume 3, its introduction, and chapters 1.1 to 1.3, two or three chapters each. The writer of chapters 1.1 to
+1.3 also reported three gaps in the introduction of Volume 1, which was corrected. Chapters 4.8 to 4.11 of Volume 4
+(quantifier elimination and model completeness; preservation and definability theorems; interpretations and
+imaginaries; indiscernibles and two-cardinal theorems), which have entries in this release, were written with the
+same brief, and the introduction of Volume 4 was revised for the eleven written chapters. `mh check` is clean for
+all four volumes. Four errors that the writers found in four entries (a missing pair of braces, a doubled word, the
+year of Wiles's proof, and the sign of the homogeneous system behind an augmented matrix) were corrected on the
+site after its release v0.4.0, in [tamnd/math2#465](https://github.com/tamnd/math2/pull/465); this edition prints
+the entries as they are in v0.4.0. The pages of chapters 1.4 to 1.14 and of Volume 2 are those of edition 0.3.1.
+
 ## Known limits
 
 - The history in the notes rests on the `### History` sections and the sources of the entries, and on general

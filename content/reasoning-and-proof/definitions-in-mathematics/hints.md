@@ -1,35 +1,31 @@
-1. The definiendum is "$n$ is a perfect square" and the definiens is "$n = k^2$ for some integer $k$". $0 = 0^2$ is a perfect square; $-4$ is not, because $k^2 \geq 0$. Saying that $-4$ is not a perfect square uses the "only if" half, which a definition always includes.
+4. Every fraction is $\tfrac{ka}{kb}$ for its reduced form $\tfrac{a}{b}$ and some nonzero integer $k$, so it is enough to compare each rule on $\tfrac{a}{b}$ and $\tfrac{ka}{kb}$. In (a) and (c) the factor $k$ cancels, so these are well defined. Rule (b) fails: $\tfrac12 = \tfrac24$, but $1 \cdot 2 = 2$ and $2 \cdot 4 = 8$. Rule (d) fails on the same pair, giving $1$ and $2$.
 
-2. The divisors of $12$ are $\pm 1, \pm 2, \pm 3, \pm 4, \pm 6, \pm 12$. Only $b = 0$ is divisible by $0$, since $0 \cdot k = 0$.
+5. Two representatives of one class differ by an integer, $x' = x + m$. (a) is well defined, since $x' + y' = (x + y) + (m + n)$. (b) is not: $[0] = [1]$, but $[\tfrac12] \cdot [0] = [0]$ while $[\tfrac12] \cdot [1] = [\tfrac12]$. (c) is well defined because $\cos$ has period $2\pi$. (d) is not, since $\floor{0} = 0$ and $\floor{1} = 1$. (e) is well defined, since $\floor{x + m} = \floor{x} + m$.
 
-3. (a) Explicit, by cases. (b) Recursive. (c) Inductive. (d) Implicit. (e) Axiomatic. (f) By abstraction.
+7. (a) The number $x = 0$ also satisfies $x^2 = 2x$, so the description "the real number with $x^2 = 2x$" is not legal, and dividing by $x$ loses this solution. (b) Here $\tfrac{f(1) - f(-1)}{2} = 1$, and $3c^2 = 1$ has the two solutions $c = \pm \tfrac{1}{\sqrt 3}$, both in $(-1, 1)$. The theorem gives a point, not the point.
 
-4. No. $\frac12 = \frac24$, but the rule gives $3$ and $6$.
+12. In (a) and (c) every value is computed from earlier ones and the starting values are given, so the principle of recursive definition gives exactly one function: $f(n) = n^2$ in (a) and the Fibonacci numbers in (c). Rule (b) runs upwards; rewritten as $f(n + 1) = f(n)/2$ it forces $f(1) = \tfrac32 \notin \Z$, so there is no function. In (d) the value $f(1)$ is free, and $f(1) = c$ gives $f(n) = c F_n$. In (e) the case $n = 0$ says only $f(0) = f(0)$, so $f(0) = c$ is free, and then $f(n) = c + s(n)$, where $s(n)$ is the number of ones in the binary expansion of $n$.
 
-5. Three lists for $12$ ($2, 2, 3$ in some order) and six for $30$. The theorem says that all the lists for one number are rearrangements of each other: the factorization is unique up to order.
+14. The rule is well defined exactly when $a' = a + 6k$ always gives $4a' \equiv 4a \pmod m$, that is, when $m \mid 24k$ for every $k$. So the answer is $m \mid 24$: $m = 1, 2, 3, 4, 6, 8, 12, 24$. For necessity compare the representatives $0$ and $6$ of $[0]_6$, which give $0$ and $24$.
 
-6. (a) and (d). In (b) both $3$ and $-3$ qualify, and in (c) both $3$ and $4$.
+15. The powers $2, 2^2, 2^3, 2^4$ are $2, 4, 3, 1$ modulo $5$, so $2^{a + 4j} \equiv 2^a \pmod 5$ and $2^b \equiv 1 \pmod 5$ only when $4 \mid b$. For the converse compare the representatives $0$ and $n$ of $[0]_n$.
 
-8. $x \equiv 2$ and $x \equiv 5 \pmod 6$. The solution is unique modulo $3$ but not modulo $6$.
+16. (a) The numbers $a$ and $a + 9$ have opposite parity, so every class modulo $9$ has an even representative. Two even representatives differ by a multiple of $18$, so their halves differ by a multiple of $9$. Since $2 \cdot 5 = 10 \equiv 1 \pmod 9$, halving is multiplication by $k = 5$. (b) Every representative $1 + 10j$ of $[1]_{10}$ is odd, so $h([1]_{10})$ has no value. The class $[4]_{10}$ has the even representatives $4$ and $14$, whose halves $2$ and $7$ lie in different classes.
 
-10. Exactly when $m \mid 12$, so $m \in \set{1, 2, 3, 4, 6, 12}$. If $m \mid 12$, then $a \equiv a' \pmod{12}$ gives $a \equiv a' \pmod m$. If $m \nmid 12$, the representatives $0$ and $12$ of $[0]_{12}$ go to different classes modulo $m$.
+17. The argument starts from equal outputs and ends with equal classes, which proves that the map is injective. A well-defined map needs the other direction. That direction holds: if $a' = a + 3k$, then $3a' = 3a + 9k$, so $[3a']_9 = [3a]_9$. The claim is true, and the map is also injective.
 
-11. $0 \equiv 5 \pmod 5$, but $2^0 = 1$ and $2^5 = 32 \equiv 2 \pmod 5$. For the second rule, $2^4 = 16 \equiv 1 \pmod 5$, so $a' = a + 4k$ gives $2^{a'} = 2^a \cdot 16^k \equiv 2^a$.
+20. If $1 + \sqrt{-5} = \alpha \beta$, then $N(\alpha) N(\beta) = 6$. The equation $a^2 + 5b^2 = 2$ has no integer solutions, and neither has $a^2 + 5b^2 = 3$, so one factor has norm $1$ and is $\pm 1$, a unit. The element itself is not a unit, since its norm is $6$. For "not prime" use $(1 + \sqrt{-5})(1 - \sqrt{-5}) = 6 = 2 \cdot 3$: if $1 + \sqrt{-5}$ divided $2$, then $6$ would divide $N(2) = 4$, and if it divided $3$, then $6$ would divide $N(3) = 9$.
 
-12. If $n = de$ with $1 < d < n$, then $1 < e < n$ too, and the smaller of $d$ and $e$ is at most $\sqrt n$.
+22. In the four-point model a line $\set{P, Q}$ and a point $R$ off it leave exactly one line through $R$ that misses both $P$ and $Q$, namely $\set{R, S}$ with $S$ the fourth point. In the three-point model any two lines meet, so no line through $C$ misses $\set{A, B}$. Every theorem of I1 to I3 holds in every model, so neither Playfair's axiom nor its negation can be proved from I1 to I3.
 
-15. Existence: $ab$ is a positive common multiple, so the set of positive common multiples is nonempty and has a least element. Uniqueness: two least elements are each at most the other.
+24. Suppose the rule is well defined and let $h \in H$. Then $hH = H = eH$, so $(hH)(g^{-1}H) = (eH)(g^{-1}H)$, that is, $hg^{-1}H = g^{-1}H$, which says $g h g^{-1} \in H$. Conversely, if $g' = g h_1$ and $k' = k h_2$, then $g'k' = gk \, (k^{-1} h_1 k) \, h_2$, and normality puts $k^{-1} h_1 k$ in $H$.
 
-16. The model satisfies the incidence axioms and has no parallel lines, so the parallel axiom does not follow from the incidence axioms.
+25. For transitivity add $a + d = b + c$ and $c + f = d + e$ and cancel $c + d$, which is allowed in $\N$. The formula is unchanged when the two pairs are swapped, so it is enough to change the first pair. If $a + b' = b + a'$, then
+$$(ac + bd) + (a'd + b'c) = c(a + b') + d(b + a') = c(b + a') + d(a + b') = (ad + bc) + (a'c + b'd),$$
+which is the relation between the two products. No subtraction is needed.
 
-17. Uniqueness fails: $6 = 2 \cdot 3 = 1 \cdot 2 \cdot 3$. If $0 = 1$, then every $x$ satisfies $x = x \cdot 1 = x \cdot 0 = 0$.
+26. From any $n \in S$ the steps $+3, +3, -5$ give $n + 1 \in S$, and $+3, +3, +3, -5, -5$ give $n - 1 \in S$. Since $0 \in S$, induction in both directions gives $S = \Z$. With $+4$ and $-6$ the answer is $2\Z$: the even integers contain $0$ and are closed under both steps, so $S \subseteq 2\Z$, and the steps $+4, +4, -6$ and $+4, -6$ give $n + 2$ and $n - 2$, so $2\Z \subseteq S$.
 
-18. $V = 15$, $E = 24$, $F = 12$, so $V - E + F = 3$. A condition at each vertex excludes it, for example that the faces around each vertex form a single cycle.
+27. (i) implies (ii): if $n = k^2$, the factorization of $n$ is that of $k$ with every exponent doubled, and by uniqueness of factorization it is the only one. (ii) implies (iii): $n = \prod p_i^{e_i}$ has $\prod (e_i + 1)$ positive divisors, a product of odd numbers. (iii) implies (i): pair each divisor $d$ with $n/d$. A divisor is its own partner only when $d^2 = n$, so an odd number of divisors forces $n$ to be a square. The first two steps use the [fundamental theorem of arithmetic](/084HH1NDCB/).
 
-19. If $H$ is normal and $g' = g h_1$, $k' = k h_2$, then $g'k' = gk (k^{-1} h_1 k) h_2 \in gkH$. Conversely, if the rule is well defined, compare $(eH)(gH)$ with $(hH)(gH)$ for $h \in H$: this gives $hgH = gH$, so $g^{-1}hg \in H$.
-
-20. For (a) $\Rightarrow$ (b), fix $a_0 \in A$ and send $b$ to its preimage if it has one, and to $a_0$ otherwise. For (c) $\Rightarrow$ (a), take $C$ to be a one-point set.
-
-21. $0 + 3 + 3 - 5 = 1$, so $S$ is closed under $n \mapsto n + 1$, and $-1 = 3 + 3 + 3 - 5 - 5$ gives closure under $n \mapsto n - 1$. For $4$ and $6$ the answer is $2\Z$: it contains $0$ and is closed, so it contains the smallest set, and $4 - 6 = -2$ and $4 + 4 - 6 = 2$ give the reverse inclusion.
-
-22. If $G = \set{e, a, b}$, then $a^2$ cannot be $e$ (order $2$ does not divide $3$) or $a$ (then $a = e$), so $a^2 = b$ and $G$ is cyclic. On $\set{0, 1, 2}$ with identity $0$ this forces the whole table: there is exactly one such operation.
+28. Row and column $0$ are fixed, and each row and each column must be a permutation of $0, 1, 2, 3$. If every element is its own inverse, the table is forced and gives the Klein four-group. Otherwise exactly one nonzero element $t$ satisfies $t^2 = 0$, and the other two generate a cyclic group; each choice of $t$ gives one table. That makes four operations: three cyclic and one Klein. With a free identity, each of the four elements can be the identity, giving $16$ operations; equivalently $\tfrac{4!}{2} + \tfrac{4!}{6} = 16$, dividing by the numbers of automorphisms of the two groups.

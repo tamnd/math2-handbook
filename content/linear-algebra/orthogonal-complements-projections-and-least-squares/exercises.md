@@ -1,47 +1,50 @@
-1. ◦ Let $U = \operatorname{span}\set{(1, 0, 1, 0), (0, 1, 0, 1)}$ in $\R^4$ with the dot product. Find a basis of the [orthogonal complement](/0XJXTBCB2T/) $U^\perp$ and check that $\dim U + \dim U^\perp = 4$.
+1. ◦ Let $U$ be the span of $(1, 2, -1, 0)$ and $(0, 1, 1, 1)$ in $\R^4$. Find a basis of the [orthogonal complement](/0XJXTBCB2T/) $U^\perp$ and check that $\dim U + \dim U^\perp = 4$.
 
-2. ◦ Let $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$. Find a basis of each of $\operatorname{Row}(A)$, $\operatorname{Nul}(A)$, $\operatorname{Col}(A)$ and $\operatorname{Nul}(A^{\mathsf{T}})$, and check the two orthogonality relations of the [fundamental subspaces](/GQF2KG1R1N/).
+2. ◦ On the space $P_2$ of real polynomials of degree at most $2$, use the inner product $\ip{p}{q} = \int_0^1 p(x)q(x)\,dx$. Let $U$ be the subspace of constant polynomials. Describe $U^\perp$ by one condition on $p$, give its dimension, and find a basis of the form $x - a$, $x^2 - b$.
 
-3. ◦ Find the matrix $P$ of the [orthogonal projection](/0B8KZRT28M/) of $\R^2$ onto the line $\R(3, 4)$. Compute $P(1, 0)$, the trace of $P$, and check that $P^2 = P$.
+3. ◦ Find the orthogonal projection of $v = (3, 3, 0)$ onto the line spanned by $a = (2, -1, 2)$ in $\R^3$, and the distance from $v$ to the line.
 
-4. ◦ Which of these matrices are orthogonal projections of $\R^2$? (a) $\begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$. (b) $\frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$. (c) $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$. (d) $\frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}$. For each one that is not, say which of $P^2 = P$ and $P^{\mathsf{T}} = P$ fails.
+4. ◦ Let $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$. Give a basis of each of the four [fundamental subspaces](/GQF2KG1R1N/) $\operatorname{Row} A$, $\operatorname{Nul} A$, $\operatorname{Col} A$ and $\operatorname{Nul} A^{\mathsf{T}}$, and check the two orthogonality relations. Then use $\operatorname{Nul} A^{\mathsf{T}}$ to decide whether $Ax = (1, 3)$ and $Ax = (2, 4)$ have solutions.
 
-5. ◦ Find the point of the plane $x + y + z = 0$ closest to $b = (1, 2, 3)$, and the distance from $b$ to the plane.
+5. ◦ Which of the following are [orthogonal projections](/0B8KZRT28M/) of $\R^2$? For each one that is, name the line it projects onto; for each one that is not, say which condition fails.
+$$P_1 = \frac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \quad P_2 = \begin{pmatrix} 1 & 0 \\ 1 & 0 \end{pmatrix}, \quad P_3 = \frac{1}{10}\begin{pmatrix} 1 & 3 \\ 3 & 9 \end{pmatrix}, \quad P_4 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.$$
 
-6. ◦ Fit a line $y = st$ through the origin to the points $(1, 1)$, $(2, 3)$, $(3, 4)$ by [least squares](/0BYTQ4X1HC/). Find $s$.
+6. ◦ Find the [QR decomposition](/0ERWG4NXQ9/) of $A = \begin{pmatrix} 2 & 4 \\ 1 & -1 \\ 2 & 1 \end{pmatrix}$, with $Q$ a $3 \times 2$ matrix with orthonormal columns and $R$ upper triangular with positive diagonal.
 
-7. ◦ A student argues: "The columns of $A$ are independent, so $A^{\mathsf{T}} A$ is invertible; by symmetry $A A^{\mathsf{T}}$ is invertible too." Give a $2 \times 1$ matrix $A$ that refutes the second claim, and say for which shapes of $A$ the matrix $A A^{\mathsf{T}}$ can be invertible.
+7. ◦ Find the [minimum-norm solution](/QM2Y84VDX8/) of the single equation $2x_1 - x_2 + 2x_3 = 18$ and its length. Explain why this length is the distance from the origin to the plane $2x_1 - x_2 + 2x_3 = 18$.
 
-8. ◦ Find the [QR decomposition](/0ERWG4NXQ9/) of $A = \begin{pmatrix} 3 & 0 \\ 4 & 5 \end{pmatrix}$ with positive diagonal entries in $R$.
+8. ◦ Find the [principal angles](/YHVD3773AW/) between the planes $z = 0$ and $x = z$ in $\R^3$.
 
-9. • Let $U$ and $W$ be subspaces of a finite-dimensional inner product space. Show that $(U + W)^\perp = U^\perp \cap W^\perp$. Then use the [double complement](/0PXN9G4MX1/) to show that $(U \cap W)^\perp = U^\perp + W^\perp$.
+9. • Let $U$ be the plane in $\R^3$ spanned by $(1, 0, 1)$ and $(1, 1, 0)$. Compute the matrix of the projection onto $U$ in two ways: as $A(A^{\mathsf{T}}A)^{-1}A^{\mathsf{T}}$, and as $I - \frac{nn^{\mathsf{T}}}{n^{\mathsf{T}}n}$ for a normal vector $n$. Then project $v = (3, 0, 0)$ onto $U$ and find the distance from $v$ to $U$.
 
-10. • Let $P$ be the orthogonal projection onto a subspace $U$ of a finite-dimensional inner product space. Show that $I - P$ is the orthogonal projection onto $U^\perp$, and that $\norm{v}^2 = \norm{P v}^2 + \norm{v - P v}^2$ for every $v$.
+10. • Use the QR decomposition of Exercise 6 to find the least-squares solution $\hat x$ of $Ax = b$ for $b = (1, 2, 3)$. Check the answer with the [normal equations](/4D7MRG4D91/), compute the residual $r = b - A\hat x$, and verify that $\norm{b}^2 = \norm{A\hat x}^2 + \norm{r}^2$.
 
-11. • Let $U$ be the plane in $\R^3$ spanned by $u_1 = (1, 0, 1)$ and $u_2 = (1, 1, -1)$. Compute the projection of $v = (1, 1, 1)$ onto $U$ in two ways: with the orthogonal basis $u_1, u_2$, and as $v$ minus its component along a normal vector of $U$. Find the distance from $v$ to $U$.
+11. • Find the [least-squares](/0BYTQ4X1HC/) line $y = c_0 + c_1 t$ for the points $(-1, 1)$, $(0, 0)$, $(1, 2)$, $(2, 5)$. Give the residuals, check that they add up to $0$, and give the sum of their squares.
 
-12. • Fit a parabola $y = a + bt + ct^2$ to the points $(-1, 1)$, $(0, 0)$, $(1, 0)$, $(2, 2)$ by the [normal equations](/4D7MRG4D91/). Give $a$, $b$, $c$ and the residual sum of squares.
+12. • Let $P$ and $Q$ be orthogonal projections on a finite-dimensional inner product space. Prove that $PQ$ is an orthogonal projection if and only if $PQ = QP$, and that in this case its image is $\operatorname{im} P \cap \operatorname{im} Q$. Then let $P$ project $\R^2$ onto the $x$-axis and $Q$ onto the line $y = x$, and show that $PQ$ is not even idempotent.
 
-13. • Show that $\operatorname{Nul}(A^{\mathsf{T}} A) = \operatorname{Nul}(A)$ for every real matrix $A$. Deduce that $A^{\mathsf{T}} A$ is invertible exactly when the columns of $A$ are independent.
+13. • Find the error. To project $v = (1, 2, 3)$ onto the plane spanned by $u_1 = (1, 1, 0)$ and $u_2 = (1, 0, 1)$, a student computes
+$$\frac{\ip{v}{u_1}}{\ip{u_1}{u_1}}u_1 + \frac{\ip{v}{u_2}}{\ip{u_2}{u_2}}u_2 = \frac{3}{2}(1, 1, 0) + 2(1, 0, 1) = \left(\tfrac{7}{2}, \tfrac{3}{2}, 2\right).$$
+Show that the answer is wrong by a test that does not need the correct answer, and then find the correct projection.
 
-14. • Find the [minimum-norm solution](/QM2Y84VDX8/) of the system $x + y + z = 3$, $x - y = 1$, and its norm. Check that it lies in the row space of the coefficient matrix.
+14. • On the space of real $2 \times 2$ matrices take $\ip{A}{B} = \tr(A^{\mathsf{T}}B)$. Show that the symmetric matrices and the skew-symmetric matrices are orthogonal complements of each other. Find the symmetric matrix closest to $A = \begin{pmatrix} 1 & 4 \\ 0 & 3 \end{pmatrix}$ and the distance from $A$ to the symmetric matrices.
 
-15. • Find the thin QR decomposition of $A = \begin{pmatrix} 2 & 6 \\ 1 & -3 \\ 2 & 0 \end{pmatrix}$. Use it to find the least-squares solution of $Ax = (1, 1, 1)$, and check the answer with the normal equations.
+15. • On the polynomials with $\ip{p}{q} = \int_{-1}^{1} p(x)q(x)\,dx$, find the polynomial of degree at most $2$ closest to $x^4$, using the Legendre polynomials $1$, $x$ and $\frac{1}{2}(3x^2 - 1)$. Give the squared distance as a fraction.
 
-16. • Find the [principal angles](/YHVD3773AW/) between the planes $z = 0$ and $x = z$ in $\R^3$, and a pair of principal vectors for each angle.
+16. • On the continuous functions on $[-\pi, \pi]$ with $\ip{f}{g} = \int_{-\pi}^{\pi} f(x)g(x)\,dx$, find the function of the form $a_0 + a_1\cos x + b_1\sin x$ closest to $f(x) = x^2$, and the squared distance in closed form.
 
-17. • Let $A = \begin{pmatrix} 1 & 1 \\ \varepsilon & 0 \\ 0 & \varepsilon \end{pmatrix}$ with $\varepsilon > 0$. Find the singular values of $A$, and show that $\kappa(A^{\mathsf{T}} A) = \kappa(A)^2$. Explain what goes wrong when $A^{\mathsf{T}} A$ is formed in arithmetic that rounds $1 + \varepsilon^2$ to $1$.
+17. • Find all solutions of $x_1 + x_2 + x_3 = 3$, $x_1 - x_3 = 2$. Show that exactly one of them lies in the row space of the coefficient matrix, that it is the shortest, and that it equals $A^{\mathsf{T}}(AA^{\mathsf{T}})^{-1}b$.
 
-18. • Let $A = \begin{pmatrix} 1 & -1 \\ -1 & 1 \\ 2 & -2 \end{pmatrix}$ and $b = (1, 0, 1)$. Describe all least-squares solutions of $Ax = b$, and find the one of least norm.
+18. • In $\R^4$ let $U$ be the span of $e_1$ and $e_2$, and $W$ the span of $(1, 1, 1, 1)$ and $(1, -1, 1, -1)$. Find the principal angles between $U$ and $W$, and show that every unit vector of $U$ makes the same angle with $W$.
 
-19. • In $C[-1, 1]$ with $\langle f, g \rangle = \int_{-1}^{1} f g \, dx$, find the polynomial $p$ of degree at most $2$ that is closest to $f(x) = x^4$, using [Legendre polynomials](/QFYGJVA996/). Compute $\norm{f - p}^2$.
+19. • Find the error. To solve the inconsistent system $x_1 = 2$, $x_2 = 1$, $x_1 - x_2 = 0$ by least squares, a student drops the last equation, which is the only one that fails, and answers $(x_1, x_2) = (2, 1)$. Find the least-squares solution and compare the two sums of squared errors.
 
-20. ★ Let $P$ be a linear map of a finite-dimensional inner product space with $P^2 = P$ and $\norm{P v} \le \norm{v}$ for all $v$. Show that $P$ is the orthogonal projection onto its image.
+20. ★ Let $P$ be an operator on a finite-dimensional inner product space with $P^2 = P$ and $\norm{Pv} \le \norm{v}$ for all $v$. Prove that $P$ is the orthogonal projection onto its image. Show by an example that the inequality cannot be dropped.
 
-21. ★ In $V = C[-1, 1]$ with $\langle f, g \rangle = \int_{-1}^{1} f g \, dx$, let $U$ be the subspace of polynomials. Use the Weierstrass approximation theorem to show that $U^\perp = \set{0}$. Conclude that $(U^\perp)^\perp \neq U$, and that $V \neq U \oplus U^\perp$.
+21. ★ Let $u_1, \dots, u_k$ be linearly independent vectors in a real inner product space, $U$ their span, and $G(w_1, \dots, w_j)$ the Gram matrix with entries $\ip{w_i}{w_l}$. Prove that for every $v$
+$$d(v, U)^2 = \frac{\det G(u_1, \dots, u_k, v)}{\det G(u_1, \dots, u_k)}.$$
+Check the formula on the data of Exercise 9.
 
-22. ★ Let $U$ and $W$ be two distinct planes through $0$ in $\R^3$, with normal vectors $n_1$ and $n_2$. Show that their principal angles are $0$ and $\theta$, where $\cos \theta = \abs{n_1 \cdot n_2} / (\norm{n_1} \norm{n_2})$.
+22. ★ Let $V$ be the space of real sequences with only finitely many nonzero terms, with $\ip{x}{y} = \sum_n x_n y_n$, and let $U = \set{x \in V : \sum_n x_n / n = 0}$. Prove that $U^\perp = \set{0}$. Deduce that $V \neq U \oplus U^\perp$ and $(U^\perp)^\perp \neq U$, and say which hypothesis of the [orthogonal decomposition](/0SP7P0G7KQ/) theorem fails.
 
-23. ★ Prove the uniqueness part of the thin QR decomposition: if $A = Q_1 R_1 = Q_2 R_2$, where $Q_1, Q_2$ have orthonormal columns and $R_1, R_2$ are upper triangular with positive diagonals, then $Q_1 = Q_2$ and $R_1 = R_2$.
-
-24. ★ Among all monic polynomials $p(x) = x^3 + a x^2 + b x + c$, find the one that minimizes $\int_{-1}^{1} p(x)^2 \, dx$, and the minimum value. Explain with best approximation why the answer is a multiple of the Legendre polynomial $P_3$.
+23. ★ Let $A = \begin{pmatrix} 1 & -1 \\ -1 & 1 \\ 2 & -2 \end{pmatrix}$ and $b = (1, 2, 3)$. Show that the least-squares solutions of $Ax = b$ are exactly the $x$ with $x_1 - x_2 = \frac{5}{6}$. Prove that, for any real matrix, exactly one least-squares solution lies in the row space and that it is the shortest, and find it here.

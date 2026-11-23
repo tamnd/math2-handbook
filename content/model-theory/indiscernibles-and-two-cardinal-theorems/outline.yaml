@@ -1,0 +1,25 @@
+# The order of chapter 4.11, indiscernibles and two-cardinal theorems. Groups are read in order; entries in a group too.
+groups:
+  - title: Indiscernibles and Ehrenfeucht–Mostowski models
+    intro: >
+      An indiscernible sequence is one whose increasing tuples of each length all have the same type. Ramsey's
+      theorem and compactness give such sequences, indexed by any infinite linear order, in a model of every
+      theory with infinite models. The Skolem hull of one of them is an Ehrenfeucht–Mostowski model, whose
+      automorphisms and types are controlled by the index order. Generalized indiscernibles replace the order by
+      other index structures, such as graphs and trees.
+    entries:
+      - 4016QKAHFB
+      - RG6D2FAS14
+      - TSGB29FJM0
+      - RQS808ZC8T
+  - title: Two-cardinal theorems and Hanf numbers
+    intro: >
+      A $(\kappa, \lambda)$-model is a model of size $\kappa$ in which a predicate $P$ has size $\lambda$.
+      Vaught's theorem moves any gap $\kappa > \lambda \ge \aleph_0$ down to $(\aleph_1, \aleph_0)$, and Chang's
+      theorem moves it up to $(\kappa^+, \kappa)$ when $\kappa^{<\kappa} = \kappa$. The Hanf number of a logic is
+      the size beyond which every sentence with a model has arbitrarily large models; it is $\aleph_0$ for
+      first-order logic and $\beth_{\omega_1}$ for $L_{\omega_1\omega}$.
+    entries:
+      - XT227BYP7B
+      - 4STP69KESQ
+      - A9XBRF3A7Z

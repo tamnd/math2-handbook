@@ -1,10 +1,12 @@
+# The order of chapter 1.2, the language of mathematical statements. Groups are read in order; entries in a group too.
 groups:
   - title: Statements and the words that join them
     intro: >
-      Mathematical English mixes words and symbols under stricter rules than ordinary English. A statement is a
-      sentence with exactly one truth value; an open sentence such as $x > 2$ becomes one only when $x$ is fixed
-      or quantified. The connectives "and", "or", "not" and "but" build longer statements, and the mathematical
-      "or" is inclusive.
+      Mathematical English mixes words and symbols, and its small words have fixed meanings. A statement is a
+      declarative sentence that is true or false and not both; an open sentence $P(x)$ becomes a statement
+      when $x$ gets a value or is bound by a quantifier. The connectives then build longer statements whose
+      truth value depends only on the parts: "$P$ and $Q$" (also "$P$ but $Q$") is true when both parts are
+      true, "$P$ or $Q$" when at least one is, so that "or" is inclusive, and "not $P$" when $P$ is false.
     entries:
       - 661V0DH7V3
       - S9MHMRAX88
@@ -12,27 +14,36 @@ groups:
 
   - title: Conditionals and quantifiers
     intro: >
-      Most theorems have the form "if $P$, then $Q$", often with "for every" or "there is" in front. These two
-      entries give the many English forms of a conditional, including "only if", "necessary" and "sufficient",
-      and show how quantifiers are written, hidden and bounded.
+      Most theorems join two open sentences of the first group in the shape "for every $x$, if $P(x)$, then $Q(x)$". The conditional "if $P$, then
+      $Q$" is false exactly when $P$ is true and $Q$ is false, so it is true whenever $P$ is false; it agrees
+      with its contrapositive and not, in general, with its converse. "$P$ only if $Q$", "$Q$ whenever $P$",
+      "$P$ is sufficient for $Q$" and "$Q$ is necessary for $P$" all say "if $P$, then $Q$", and "$P$ unless
+      $Q$" says "if not $Q$, then $P$". A bounded quantifier unpacks as $\forall x \, (x \in A \Rightarrow
+      P(x))$ or as $\exists x \, (x \in A \land P(x))$, and two quantifiers of different kinds may not change
+      places.
     entries:
       - FA6YZGR2SS
       - EGTZPA6QH3
 
   - title: Negation, existence and uniqueness
     intro: >
-      To prove a statement false, or to argue by contradiction, you must state its negation, and five rules push
-      "not" inward through the connectives and quantifiers. Statements of the form "there is exactly one" are
-      proved in two parts: existence and uniqueness.
+      Five rules push "not" inward until it stands next to simple statements: De Morgan's two laws,
+      $\neg(P \Rightarrow Q) \equiv P \land \neg Q$, and the swap of $\forall$ and $\exists$, with the domain of
+      a bounded quantifier kept as it is. Applied to a definition such as continuity, they say what a
+      counterexample must provide. The statement $\exists! x \, P(x)$ is the conjunction of existence, some
+      $x$ has $P(x)$, and uniqueness, for all $x$ and $y$, $P(x)$ and $P(y)$ imply $x = y$; each half needs its
+      own proof, and each is what the word "the" takes for granted.
     entries:
       - K930V33BSC
       - ACSC75R7R5
 
-  - title: Where ordinary language misleads
+  - title: Where ordinary English misleads
     intro: >
-      Words such as "a", "the", "any" and "or", the scope of "not", and the grouping of spoken formulas can each
-      give a sentence two readings. The Wason selection task shows how often careful readers still misread a
-      plain conditional.
+      The words "any", "a", "the" and "or", the scope of "not", and formulas spoken aloud can each give a
+      sentence two readings with different truth values. The fixes are conventions and careful words: write
+      "every" or "some" for "any", say "but not both" for the exclusive or, and prove existence and uniqueness
+      before writing "the". The Wason selection task tests the reading of one plain conditional, and most
+      people fail it.
     entries:
       - 8BZPKYF912
       - 7GYZJ2MGY9

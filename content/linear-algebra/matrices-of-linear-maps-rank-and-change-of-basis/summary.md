@@ -1,30 +1,29 @@
 ## What to remember
 
-- **Matrix of a map.** For bases $B = (b_1, \ldots, b_n)$ of $V$ and $C$ of $W$, column $j$ of $[T]_{C,B}$ is $[T b_j]_C$, and $[T v]_C = [T]_{C,B} [v]_B$. The map $T \mapsto [T]_{C,B}$ is an isomorphism $\operatorname{Hom}(V, W) \cong M_{m \times n}(F)$, and $[S \circ T] = [S][T]$ in matching bases.
-- **Bases from row reduction.** The pivot columns of $A$ (not of its echelon form) are a basis of the column space. The nonzero rows of an echelon form are a basis of the row space. The special solutions, one per free variable, are a basis of the null space. Row operations keep the row space and the null space and change the column space.
-- **Four fundamental subspaces.** For $A$ of size $m \times n$ and rank $r$, the column space and the row space have dimension $r$, the null space $n - r$ and the left null space $m - r$. Over $\R$, the null space is the orthogonal complement of the row space, and the left null space that of the column space.
-- **Rank.** Row rank equals column rank. $\operatorname{rank} A + \dim \operatorname{Null}(A) = n$. The rank can depend on the field: an integer matrix can have smaller rank over $\F_p$ than over $\Q$.
-- **Rank of a product.** $\operatorname{rank}(AB) \le \min(\operatorname{rank} A, \operatorname{rank} B)$, and by Sylvester's inequality $\operatorname{rank} A + \operatorname{rank} B - n \le \operatorname{rank}(AB)$ when $A$ has $n$ columns. Multiplying by an invertible matrix does not change the rank.
-- **Rank factorization.** A matrix of rank $r$ is $A = CR$ with $C$ of size $m \times r$ and $R$ of size $r \times n$, both of rank $r$; one choice is $C$ = the pivot columns and $R$ = the nonzero rows of the reduced echelon form. The rank-one matrices are exactly the products $u v^\top$ with $u, v \ne 0$.
-- **Change of basis.** If column $j$ of $P$ is $[b'_j]_B$, then $[v]_B = P [v]_{B'}$, and $[T]_{C',B'} = Q^{-1} [T]_{C,B} P$. For an endomorphism, $[T]_{B'} = P^{-1} [T]_B P$.
-- **Similarity.** $A \sim B$ when $B = P^{-1} A P$ for an invertible $P$. Similar matrices have the same rank, trace, determinant, characteristic polynomial and minimal polynomial, but matrices that share all of these need not be similar.
-- **Fredholm alternative.** $Ax = b$ has a solution if and only if $y^\top b = 0$ for every $y$ with $A^\top y = 0$. For square $A$, either $Ax = b$ has exactly one solution for every $b$, or $Ax = 0$ has a nonzero solution.
+- **[Matrix of a linear map](/0YQSGNYE3K/):** for bases $B$ of $V$ and $C$ of $W$, column $j$ of $[f]_{C,B}$ is the coordinate vector $[f(b_j)]_C$, and $[f(v)]_C = [f]_{C,B}[v]_B$. The map $f \mapsto [f]_{C,B}$ is an [isomorphism](/06HMCTAQH3/) $\operatorname{Hom}(V, W) \cong M_{m \times n}(F)$, and the [matrix of a composition is the product](/05Q1B7MH0M/), $[g \circ f]_{D,B} = [g]_{D,C}[f]_{C,B}$.
+- **[Four fundamental subspaces](/73DVECPAT6/):** an $m \times n$ matrix $A$ of rank $r$ has $\dim \operatorname{Col} A = \dim \operatorname{Row} A = r$, $\dim \operatorname{Null} A = n - r$ and $\dim \operatorname{Null} A^{\mathsf{T}} = m - r$. A basis of the column space is given by the pivot columns of $A$ itself, not of its echelon form; a basis of the row space by the nonzero rows of any echelon form.
+- **[Rank](/0ZC9YTXZRY/):** the rank of $A$ is the number of pivots, the dimension of the column space, the dimension of the row space ([row rank equals column rank](/0TZAG60ZYT/)) and the largest size of a nonzero minor. It depends on the field: a matrix of integers can have a smaller rank over $\mathbb{F}_p$ than over $\Q$.
+- **[Rank-nullity for matrices](/TR48YQGCCA/):** $\operatorname{rank} A + \dim \operatorname{Null} A = n$, the number of columns.
+- **[Rank of a product](/02FDWY55AS/):** $\operatorname{rank}(AB) \le \min(\operatorname{rank} A, \operatorname{rank} B)$, with equality for the rank of $B$ when $A$ is invertible, and [Sylvester's inequality](/GS8WE1ZYV9/) $\operatorname{rank}(AB) \ge \operatorname{rank} A + \operatorname{rank} B - n$ for $A$ of size $m \times n$.
+- **[Rank factorization](/5JGAG62VN8/):** a matrix of rank $r \ge 1$ is $CR$ with $C$ of size $m \times r$ and $R$ of size $r \times n$, both of rank $r$; take the pivot columns of $A$ and the nonzero rows of its reduced row echelon form. A matrix has rank $1$ exactly when it is $uv^{\mathsf{T}}$ with $u, v \ne 0$.
+- **[Change of basis](/0MQXVZEBMT/):** if column $j$ of $P$ is $[b'_j]_B$, then $[v]_B = P[v]_{B'}$ and $[v]_{B'} = P^{-1}[v]_B$. With $Q$ the matrix for the bases $C$, $C'$ of $W$, $[T]_{C',B'} = Q^{-1}[T]_{C,B}P$; for an endomorphism, $[T]_{B'} = P^{-1}[T]_B P$.
+- **[Similarity](/0E89HQATM8/):** $A$ and $B$ are similar when $B = P^{-1}AP$ for an invertible $P$, that is, when they are matrices of one endomorphism. Similar matrices have the same rank, trace, determinant, characteristic polynomial and minimal polynomial, but [these do not decide similarity](/J4Q3B9ZNHF/).
+- **[Trace](/0KZDNGA561/) and [Fredholm alternative](/4HH8C9V8JQ/):** the trace of an endomorphism is the trace of any of its matrices, and a projection $P$ has $\operatorname{tr} P = (\operatorname{rank} P) \cdot 1_F$. For $A$ of size $m \times n$, $Ax = b$ has a solution if and only if $y^{\mathsf{T}} b = 0$ for every $y$ with $A^{\mathsf{T}} y = 0$.
 
-## The four subspaces
+| Subspace | Lives in | Dimension | Basis from row reduction |
+|---|---|---|---|
+| [Column space](/03AJKXH1AV/) $\operatorname{Col} A$ | $F^m$ | $r$ | pivot columns of $A$ |
+| [Row space](/069MCGX635/) $\operatorname{Row} A$ | $F^n$ | $r$ | nonzero rows of an echelon form |
+| [Null space](/0PHDYNR24D/) $\operatorname{Null} A$ | $F^n$ | $n - r$ | one vector for each free variable |
+| Left null space $\operatorname{Null} A^{\mathsf{T}}$ | $F^m$ | $m - r$ | null space of $A^{\mathsf{T}}$, or the last $m - r$ rows of $E$ with $EA$ in echelon form |
 
-| Subspace | Lies in | Dimension | Basis from | Orthogonal complement over $\R$ |
-|---|---|---|---|---|
-| [Column space](/03AJKXH1AV/) $\operatorname{Col}(A)$ | $F^m$ | $r$ | pivot columns of $A$ | left null space |
-| [Row space](/069MCGX635/) $\operatorname{Row}(A)$ | $F^n$ | $r$ | nonzero rows of an echelon form | null space |
-| [Null space](/0PHDYNR24D/) $\operatorname{Null}(A)$ | $F^n$ | $n - r$ | special solutions | row space |
-| Left null space $\operatorname{Null}(A^\top)$ | $F^m$ | $m - r$ | special solutions of $A^\top y = 0$ | column space |
-
-: The [four fundamental subspaces](/73DVECPAT6/) of an $m \times n$ matrix $A$ of rank $r$. The last column holds only over $\R$ with the dot product; over $\F_2$ the vector $(1, 1)$ is orthogonal to itself, so a subspace and its orthogonal can meet.
+: The four subspaces of an $m \times n$ matrix $A$ of rank $r$.
 
 ## Common errors
 
-- **Writing images as rows.** The coordinates of $T b_j$ go in column $j$, not row $j$. Writing them as rows gives the transpose, which is the matrix of a different map.
-- **Taking the pivot columns of the reduced form.** They span the column space of the reduced matrix, which is in general a different subspace. Read off the positions of the pivots from the reduced form, then take those columns of $A$ itself.
-- **Mixing up the two directions of change of basis.** With $P$ as above, $[v]_{B'} = P^{-1}[v]_B$, not $P[v]_B$. Before using a formula from another book, check whether its $P$ is this one or its inverse.
-- **Deciding similarity by invariants alone.** Equal trace and determinant settle nothing in general. To show two matrices are not similar, find an invariant that differs, such as $\operatorname{rank}(A - \lambda I)$ for an eigenvalue $\lambda$. To show they are similar, find $P$ or bring both to the same canonical form.
-- **Expecting $\operatorname{rank}(AB) = \operatorname{rank}(BA)$.** For $A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, $AB = 0$ while $BA = A$ has rank $1$.
+- **Writing images as rows.** The columns of $[f]_{C,B}$ are the coordinates of the images $f(b_j)$. Writing them as rows gives the transpose, which is the matrix of a different map.
+- **Using the pivot columns of the echelon form.** Row operations change the column space. The pivot positions are read from the echelon form, but the basis vectors must be taken from $A$.
+- **Turning the change of basis matrix the wrong way.** $P$ with the new basis vectors as columns turns new coordinates into old ones. New coordinates are $P^{-1}[v]_B$, not $P[v]_B$.
+- **Taking the trace in two bases.** The diagonal of a matrix of $T \colon V \to V$ is the trace only when the same basis is used for the input and the output.
+- **Deciding similarity by invariants.** Equal rank, trace, determinant and characteristic polynomial do not prove that two matrices are similar; one different value proves that they are not.
+- **Forgetting the field.** The rank of the same integer matrix can drop when the entries are read modulo a prime, and a trace that counts a rank over $\R$ can be $0$ over $\mathbb{F}_2$.

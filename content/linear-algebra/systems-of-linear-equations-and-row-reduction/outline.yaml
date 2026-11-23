@@ -1,10 +1,13 @@
-# The order of chapter 3.2, systems of linear equations and row reduction. Groups are read in order; entries in a group too.
+# Chapter 3.2, systems of linear equations and row reduction: six groups, read in order.
 groups:
-  - title: Linear equations and systems
+  - title: Equations and systems
     intro: >
-      A linear equation over a field $F$ is $a_1 x_1 + \cdots + a_n x_n = b$, and a system is a finite list of
-      them with the same unknowns. A system is consistent when it has a solution. A homogeneous system, with
-      all constants $0$, always has the solution $x = 0$.
+      The group fixes the objects of the chapter. Over a field $F$, a linear equation in $x_1, \dots, x_n$ is
+      $a_1 x_1 + \cdots + a_n x_n = b$ with $a_i, b \in F$, and a system is a finite list of such equations,
+      written $Ax = b$; a solution is a point of $F^n$ that satisfies every equation at once. A system is
+      consistent when it has at least one solution. The main fact of the group is about homogeneous systems:
+      for every $m \times n$ matrix $A$ over $F$, the system $Ax = 0$ is consistent, since $x = 0$ solves it,
+      and its solution set is closed under addition and under multiplication by elements of $F$.
     entries:
       - 0Q3ZT8J05R
       - 0GT4WWGWH2
@@ -12,10 +15,13 @@ groups:
       - 04KGXJG1A2
   - title: Matrices and row operations
     intro: >
-      A system is stored as its coefficient matrix $A$ and its augmented matrix $[A \mid b]$. The three
-      elementary row operations, a swap, a scaling by a nonzero number and the addition of a multiple of
-      another row, can each be undone, so they do not change the solution set. Matrices joined by a chain of
-      them are row equivalent.
+      A system is stored as its coefficient matrix $A$ and its augmented matrix $[A \mid b]$, and the three
+      moves of elimination become operations on rows: swapping two rows, multiplying a row by a nonzero
+      element of $F$, and adding a multiple of one row to another. Each operation is undone by one of the same
+      kind. The main theorem of the group is that if $[A \mid b]$ is changed into $[A' \mid b']$ by
+      elementary row operations, then $Ax = b$ and $A'x = b'$ have the same solutions in $F^n$. Row
+      equivalence, being joined by such a sequence, is an equivalence relation on the $m \times n$ matrices
+      over $F$.
     entries:
       - 0P7A2MJD24
       - 0YCDZ7N8VD
@@ -23,41 +29,57 @@ groups:
       - 006BHFWMAP
   - title: Echelon forms and pivots
     intro: >
-      Row operations bring every matrix to a staircase shape, the row echelon form, and further to the
-      reduced row echelon form. The reduced form is unique, so the positions of its leading entries, the
-      pivots, belong to the matrix itself. The pivot columns give the basic variables and the others the free
-      variables.
+      The group names the simple shapes that row operations aim for. In row echelon form the zero rows are at
+      the bottom and each leading entry lies to the right of the one above it; in reduced row echelon form
+      every leading entry is $1$ and is the only nonzero entry of its column. The main theorem is that every
+      $m \times n$ matrix over a field is row equivalent to exactly one matrix in reduced row echelon form.
+      Because of uniqueness, the pivot positions, the split of the unknowns into basic and free variables,
+      and the number of pivots, the rank, depend only on the matrix and not on the operations used.
     entries:
       - 0VYCDGMJJJ
       - 0WF5AQYTW6
       - BF9SMZMJZE
       - 0J0BBCMJ5W
-  - title: The algorithms
+  - title: The elimination algorithms
     intro: >
-      Gaussian elimination reaches a row echelon form in about $\tfrac23 n^3$ operations for an $n \times n$
-      matrix, and back substitution then solves a triangular system in about $n^2$ more. Gauss–Jordan
-      elimination continues to the reduced form, from which the solutions are read off directly.
+      The operations of the second group, applied column by column, give the algorithms. Gaussian
+      elimination turns any matrix over a field into a row echelon form in finitely many steps, using about
+      $\tfrac23 n^3$ arithmetic operations for an $n \times n$ matrix. Back substitution then solves a
+      triangular system $Ux = c$, with $U$ upper triangular and all diagonal entries nonzero, uniquely and in
+      about $n^2$ operations. Gauss-Jordan elimination continues to the reduced row echelon form of the third
+      group, so the solutions can be read off directly; it also computes the inverse of an invertible matrix
+      by reducing $[A \mid I]$ to $[I \mid A^{-1}]$.
     entries:
       - 0JVJ2WCXZH
       - 0ATFVE08MW
       - 098D6FQN3N
   - title: The solution set
     intro: >
-      The system $Ax = b$ asks whether $b$ is a linear combination of the columns of $A$. The echelon form
-      decides whether a solution exists and whether it is unique, and the free variables become the parameters
-      of the solution set. That set is empty or a translate $p + N$ of the null space $N$ of $A$, and the
-      Rouché–Capelli theorem says the same with ranks.
+      With echelon forms in hand, the group answers the two questions about every system: is there a
+      solution, and how many. Reading $Ax = b$ as $x_1 v_1 + \cdots + x_n v_n = b$ for the columns $v_j$ shows
+      that it is consistent exactly when $b$ lies in the span of the columns. The existence and uniqueness
+      theorem says that, over a field $F$, the system is consistent exactly when the last column of an echelon
+      form of $[A \mid b]$ is not a pivot column; if it is consistent and $k$ of the first $n$ columns have no
+      pivot, there is exactly one solution when $k = 0$, infinitely many when $k \ge 1$ and $F$ is infinite,
+      and $q^k$ when $F$ has $q$ elements. The free variables give the parametric form of the solutions, and
+      the structure theorem says that a nonempty solution set is $p + N$ for any one solution $p$, where $N$
+      is the solution space of $Ax = 0$, of dimension $n - \operatorname{rank} A$. The Rouché-Capelli theorem
+      states the existence test as $\operatorname{rank} A = \operatorname{rank}\,[A \mid b]$.
     entries:
       - E7SAHXQEVC
       - BKA191KD1S
       - KQT68YPHD1
       - PDH3HKXWAZ
       - 0HV1SKWPMS
-  - title: Shapes and fields
+  - title: Shapes of systems and other fields
     intro: >
-      Systems with more equations than unknowns usually have no solution, and systems with fewer equations than
-      unknowns never have exactly one. The last entry runs row reduction over finite fields, where a
-      consistent system over a field of $q$ elements has exactly $q^k$ solutions, $k$ the number of free variables.
+      The last group applies the theory of the previous one to two special situations. Comparing the number
+      $m$ of equations with the number $n$ of unknowns: over any field, a system with $m < n$ never has
+      exactly one solution, because the rank is at most $m$ and so at least $n - m$ columns lack a pivot, and
+      a homogeneous system with $m < n$ has a nonzero solution. A system with $m > n$ is usually
+      inconsistent, which leads to least squares. Over a finite field with $q$ elements the steps of row
+      reduction do not change, and a consistent system of rank $r$ in $n$ unknowns has exactly $q^{n - r}$
+      solutions.
     entries:
       - QJ0P26J9BV
       - J6A58MEM8R

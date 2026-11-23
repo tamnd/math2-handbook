@@ -1,48 +1,51 @@
-1. ◦ Let $A = \begin{pmatrix} 1 & -2 & 0 & 4 \\ 3 & 5 & -1 & 2 \end{pmatrix}$ and let $B$ be a $4 \times 3$ [matrix](/0VD9ZSWWJG/). Give the size of $A$ and the entries $a_{23}$ and $a_{14}$. Which of the products $AB$ and $BA$ is defined, and what is its size?
+1. ◦ Let $A = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 3 & 1 \end{pmatrix}$. Compute $AB$ and $BA$, and name one entry in which they differ.
 
-2. ◦ Compute $AB$ and $BA$ for $A = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 3 & 1 \end{pmatrix}$.
+2. ◦ Let $A$ be $2 \times 3$, $B$ be $3 \times 4$ and $C$ be $4 \times 2$. For each of $AB$, $BA$, $ABC$, $CAB$, $BCA$ and $A + C^{\mathsf{T}}$, say whether it is defined and, if so, give its size.
 
-3. ◦ Compute the [matrix–vector product](/0PDVQEP0ZC/) $\begin{pmatrix} 2 & -1 & 0 \\ 1 & 3 & 4 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ once by rows and once as a combination of the columns.
+3. ◦ Write $\begin{pmatrix} 1 & 0 & 2 \\ 3 & 1 & -1 \end{pmatrix} \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$ as a combination of the columns of the matrix, and evaluate it.
 
-4. ◦ A student writes $(AB)^{\mathsf T} = A^{\mathsf T} B^{\mathsf T}$. Let $A$ be $2 \times 3$ and $B$ be $3 \times 4$. Show that the right side is not even defined, and state the correct rule for the [transpose of a product](/09GK5PS824/).
+4. ◦ Let $A = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & -1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 1 \\ 2 & 0 \\ 0 & 3 \end{pmatrix}$. Compute $AB$ and $BA$. They have different sizes; compare their [traces](/0XC1RDBY7A/).
 
-5. ◦ Let $A = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 1 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 1 \\ 2 & 0 \\ 0 & 3 \end{pmatrix}$. Compute $AB$, $BA$ and their [traces](/0XC1RDBY7A/).
+5. ◦ A student writes $(A + B)(A - B) = A^2 - B^2$ for square matrices. Test the claim with the [matrix units](/A4HTT7JFD1/) $A = E_{11}$ and $B = E_{12}$ of size $2 \times 2$, and name the law the student used that fails for matrices.
 
-6. ◦ Say for each matrix whether it is [symmetric](/0VR671PHE5/), [skew-symmetric](/0PBY4E9GQF/), both or neither:
-$$\begin{pmatrix} 0 & 2 \\ -2 & 0 \end{pmatrix}, \quad \begin{pmatrix} 1 & 2 \\ 2 & 3 \end{pmatrix}, \quad \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}, \quad \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}.$$
+6. ◦ Classify each real matrix as [symmetric](/0VR671PHE5/), [skew-symmetric](/0PBY4E9GQF/), both or neither: $\begin{pmatrix} 0 & 3 \\ -3 & 0 \end{pmatrix}$, $\begin{pmatrix} 2 & 5 \\ 5 & -1 \end{pmatrix}$, the $2 \times 2$ zero matrix, $\begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}$.
 
-7. ◦ Let $N$ be the $4 \times 4$ matrix with $1$ in the positions $(1, 2)$, $(2, 3)$, $(3, 4)$ and $0$ elsewhere. Compute $N^2$, $N^3$ and $N^4$. Is $N$ [nilpotent](/07BSPZPSMF/), and what is the least $k$ with $N^k = 0$?
+7. ◦ Which of these complex matrices are [Hermitian](/0P17NGQQMQ/)? $\begin{pmatrix} 2 & 3 - i \\ 3 + i & -1 \end{pmatrix}$, $\begin{pmatrix} 1 & i \\ i & 2 \end{pmatrix}$, $\begin{pmatrix} i & 0 \\ 0 & 1 \end{pmatrix}$, $\begin{pmatrix} 0 & -2i \\ 2i & 5 \end{pmatrix}$. For each one that is not, name an entry that breaks the condition.
 
-8. ◦ Compute the [conjugate transpose](/0DXKE10PHF/) of $\begin{pmatrix} 1 & i \\ 2 & 3 - i \end{pmatrix}$. Which of $\begin{pmatrix} 2 & 1 + i \\ 1 - i & 3 \end{pmatrix}$ and $\begin{pmatrix} i & 1 \\ 1 & i \end{pmatrix}$ is [Hermitian](/0P17NGQQMQ/)?
+8. ◦ Compute the squares of $P = \begin{pmatrix} 2 & -2 \\ 1 & -1 \end{pmatrix}$, $N = \begin{pmatrix} 3 & 9 \\ -1 & -3 \end{pmatrix}$ and $S = \begin{pmatrix} 5 & -12 \\ 2 & -5 \end{pmatrix}$. Which is [idempotent](/0KCE8CG86P/), which is [nilpotent](/07BSPZPSMF/) and which is [involutory](/NH2QE3671N/)?
 
-9. • Let $A = \begin{pmatrix} 2 & 1 \\ 0 & 3 \end{pmatrix}$. Show that $(A - 2I)(A - 3I) = 0$, although neither factor is $0$. What does this say about cancellation in the [matrix ring](/AB2MD5CD13/)?
+9. ◦ Use $E_{ij} E_{kl} = \delta_{jk} E_{il}$ for the $3 \times 3$ matrix units to evaluate $E_{13} E_{32} E_{21}$, $E_{21} E_{13} E_{32}$ and $E_{13} E_{13}$ without writing out any matrix.
 
-10. • Find all real $2 \times 2$ matrices that [commute](/8G3X8MPG7E/) with $J = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
+10. • Find all real $2 \times 2$ matrices $X$ with $XJ = JX$, where $J = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$. Write the answer in the form $aI + bN$ for a fixed matrix $N$.
 
-11. • Prove that for square matrices $A$ and $B$ of the same size, $(A + B)^2 = A^2 + 2AB + B^2$ if and only if $AB = BA$.
+11. • Show that for square matrices $A$ and $B$ over a field, $(A + B)^2 = A^2 + 2AB + B^2$ holds if and only if $AB = BA$.
 
-12. • Write $A = \begin{pmatrix} 1 & 4 & 0 \\ 2 & 3 & -1 \\ 6 & 5 & 2 \end{pmatrix}$ as the sum of a symmetric and a skew-symmetric matrix.
+12. • Write $A = \begin{pmatrix} 1 & 4 & 0 \\ 2 & 3 & -1 \\ 6 & 5 & 2 \end{pmatrix}$ as the sum of a symmetric and a skew-symmetric matrix, and check that both parts have the right shape.
 
-13. • Let $P = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $a + d = 1$ and $ad - bc = 0$. Prove that $P$ is [idempotent](/0KCE8CG86P/), and check it for $P = \begin{pmatrix} 2 & -2 \\ 1 & -1 \end{pmatrix}$. Show that $I - P$ is then idempotent too.
+13. • Let $U = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 0 & 0 & 1 \end{pmatrix}$. Write $U = I + N$ with $N$ strictly upper triangular, compute $N^2$ and $N^3$, and use the result to find $U^{-1}$ as a polynomial in $N$. Check your answer by multiplying.
 
-14. • Let $A$ be a real square matrix. Prove that $A$ is [involutory](/NH2QE3671N/), $A^2 = I$, if and only if $P = \tfrac12 (I + A)$ is idempotent.
+14. • Let $X$ be an $n \times n$ matrix over a field with $\operatorname{tr}(XA) = 0$ for every $n \times n$ matrix $A$. Prove that $X = 0$. (Compute $\operatorname{tr}(X E_{ji})$.)
 
-15. • Let $X$ be an $n \times n$ matrix and $M = \begin{pmatrix} I & X \\ 0 & I \end{pmatrix}$, a [block matrix](/0ASDFEQS6P/) of size $2n \times 2n$. Prove that $M^k = \begin{pmatrix} I & kX \\ 0 & I \end{pmatrix}$ for every $k \ge 1$, and find $M^{-1}$.
+15. • For $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ over a commutative ring, verify by direct computation that $A^2 - (a + d) A + (ad - bc) I = 0$. Deduce that a $2 \times 2$ matrix with trace $1$ and $ad - bc = 0$ is idempotent, and give one such matrix with no zero entry.
 
-16. • Let $E_{11}$ be the $n \times n$ [matrix unit](/4H93XF4RVH/) with a single $1$ in position $(1, 1)$. Find all $n \times n$ matrices $A$ with $AE_{11} = E_{11}A$.
+16. • List all idempotent $2 \times 2$ matrices over the field $\F_2$ with two elements, and check that there are eight.
 
-17. • Prove that for every real $m \times n$ matrix $A$, $\operatorname{tr}(A^{\mathsf T} A)$ is the sum of the squares of the entries of $A$. Deduce that $A^{\mathsf T} A = 0$ only if $A = 0$.
+17. • A student argues: "If $A$ and $B$ are symmetric, then $(AB)^{\mathsf{T}} = A^{\mathsf{T}} B^{\mathsf{T}} = AB$, so $AB$ is symmetric." Find the error, and give real symmetric $A$ and $B$ with $AB$ not symmetric.
 
-18. • Let $U = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 0 & 0 & 1 \end{pmatrix}$ and $N = U - I$. Show that $N^3 = 0$, prove that $(I + N)(I - N + N^2) = I$, and use this to compute $U^{-1}$.
+18. • Let $X$ be any $2 \times 2$ matrix. Show with [block multiplication](/0ASDFEQS6P/) that $\begin{pmatrix} I_2 & X \\ 0 & -I_2 \end{pmatrix}$ is an involutory $4 \times 4$ matrix. Conclude that there are infinitely many real involutory $4 \times 4$ matrices.
 
-19. • Let $A$ and $B$ be symmetric $n \times n$ matrices. Prove that $AB$ is symmetric if and only if $AB = BA$. Prove also that $C^{\mathsf T} C$ is symmetric for every $m \times n$ matrix $C$.
+19. • Let $M$ and $N$ be square matrices over a commutative ring with $MN = NM$, $M^p = 0$ and $N^q = 0$. Prove that $(M + N)^{p + q - 1} = 0$. Then show that the hypothesis $MN = NM$ cannot be dropped, using $E_{12}$ and $E_{21}$.
 
-20. ★ Prove that an $n \times n$ matrix over a field that commutes with every $n \times n$ matrix is a [scalar matrix](/067NKSBEWT/) $cI$. (Use the matrix units $E_{ij}$.)
+20. • Find Hermitian $H$ and $K$ with $A = H + iK$ for $A = \begin{pmatrix} 1 & 2 + 2i \\ 0 & 3i \end{pmatrix}$.
 
-21. ★ Let $A$ be a $2 \times 2$ matrix over a field. Check by computation that $A^2 = (\operatorname{tr} A)\, A - (\det A)\, I$, where $\det A = a_{11}a_{22} - a_{12}a_{21}$. Deduce that $A^2 = 0$ if and only if $\operatorname{tr} A = 0$ and $\det A = 0$.
+21. • Prove that a real matrix $A$ with $A^{\mathsf{T}} A = 0$ is zero. Then show that $A = \begin{pmatrix} 1 & i \\ i & -1 \end{pmatrix}$ has $A^{\mathsf{T}} A = 0$, and compute $A^* A$ for the same matrix.
 
-22. ★ Find all idempotent $2 \times 2$ matrices over $\F_2$, and say how many there are.
+22. ★ Let $N$ be the $3 \times 3$ matrix with $1$ in positions $(1,2)$ and $(2,3)$ and $0$ elsewhere. Find all $3 \times 3$ matrices over a field that commute with $N$, and show that they are exactly the polynomials $aI + bN + cN^2$.
 
-23. ★ Let $A$ be a real symmetric matrix with $A^k = 0$ for some $k \ge 1$. Prove that $A = 0$. Give a real $2 \times 2$ matrix that shows the hypothesis "symmetric" is needed.
+23. ★ Prove that a matrix $C \in M_n(F)$ over a field that commutes with every $E_{ij}$ is a scalar matrix. Deduce the [centre of the matrix ring](/DVZ1V4A884/).
 
-24. ★ Let $X$ be an $n \times n$ matrix over a field with $\operatorname{tr}(XA) = 0$ for every $n \times n$ matrix $A$. Prove that $X = 0$. (Compute $\operatorname{tr}(X E_{ij})$.)
+24. ★ Prove that there are no $n \times n$ matrices $A$ and $B$ over $\Q$ with $AB - BA = I$. Then show that over $\F_2$ the matrices $E_{12}$ and $E_{21}$ of size $2 \times 2$ satisfy $AB - BA = I$, and say which step of your proof fails there.
+
+25. ★ Let $f$ be a linear map from $M_n(F)$ to $F$ with $f(AB) = f(BA)$ for all $A$ and $B$. Prove that $f = c \operatorname{tr}$ for some $c \in F$. (Look at $f(E_{ij})$ for $i \ne j$, and at $f(E_{ii}) - f(E_{jj})$.)
+
+26. ★ Prove that a real symmetric nilpotent matrix is zero. Give a complex symmetric $2 \times 2$ matrix that is nilpotent and not zero.

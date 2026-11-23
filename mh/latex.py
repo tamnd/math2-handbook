@@ -69,11 +69,11 @@ def brace_scripts(tex: str) -> str:
     tex = re.sub(r"(?<!\\)([_^])(\\triangle)(?![a-zA-Z])", r"\1{\2}", tex)
     # a prime, then a subscript, then a superscript: KaTeX allows it, TeX sees a double superscript
     tex = _PRIME_SUB_SUP.sub(_prime_sub_sup, tex)
-    # unicode-math sets \mathrm in the text font, which has no math Greek: `\mathrm{k\Omega}` (a unit) loses its Ω.
+    # unicode-math sets \mathrm (and \mathsf) in the text font, which has no math Greek: `\mathrm{k\Omega}` (a unit) loses its Ω.
     # The Greek letter goes outside, upright from the math font (\symup; \mathup is the text font too).
     # the math italic font has no Ł: `x \to_{Ł} y` (the Łukasiewicz conditional) loses its subscript; set it upright
     tex = re.sub(r"(?<!\\)([_^])(?:\{Ł\}|Ł)", r"\1{\\mathrm{Ł}}", tex)
-    tex = _MATHRM_GREEK.sub(lambda m: (r"\mathrm{" + m[1] + "}" if m[1] else "") + r"\symup{" + "\\" + m[2] + "}", tex)
+    tex = _MATHRM_GREEK.sub(lambda m: (f"\\{m[1]}{{" + m[2] + "}" if m[2] else "") + r"\symup{" + "\\" + m[3] + "}", tex)
     # unicode-math's \not looks for a negated character; ↝ has none and XeTeX dies ("bad native font flag"),
     # and before a group, as in the negated "|~" \not\mathrel{|\!\sim}, it gives "Missing { inserted"
     tex = re.sub(r"\\not\s*\\mathrel\{([^{}]*)\}", lambda m: r"\centernot{\mathrel{" + m[1] + "}}", tex)
@@ -83,7 +83,8 @@ def brace_scripts(tex: str) -> str:
 
 _GREEK = ("alpha beta gamma delta epsilon varepsilon zeta eta theta vartheta iota kappa lambda mu nu xi pi rho sigma "
           "tau upsilon phi varphi chi psi omega Gamma Delta Theta Lambda Xi Pi Sigma Upsilon Phi Psi Omega").split()
-_MATHRM_GREEK = re.compile(r"\\mathrm\{([^{}\\]*)\\(" + "|".join(_GREEK) + r")\s*\}")
+# \mathsf too: `\mathsf{I\Sigma}_1` (the theory IΣ₁) is set in the sans text font, which has no math Greek
+_MATHRM_GREEK = re.compile(r"\\(mathrm|mathsf)\{([^{}\\]*)\\(" + "|".join(_GREEK) + r")\s*\}")
 
 
 _PRIME_SUB_SUP = re.compile(r"(\\[a-zA-Z]+|[A-Za-z0-9)\]}])('+)(_(?:\{[^{}]*\}|\\?[A-Za-z0-9]+))(?=\^)")

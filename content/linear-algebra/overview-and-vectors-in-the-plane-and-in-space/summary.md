@@ -1,29 +1,31 @@
 ## What to remember
 
-- A [vector](/0QN3D80AWP/) in $\R^n$ is a list $v = (v_1, \ldots, v_n)$. Vectors add componentwise and are multiplied by numbers componentwise. Its [length](/0XKBKGTCPC/) is $\norm{v} = \sqrt{v_1^2 + \cdots + v_n^2}$, and the distance between points $p$ and $q$ is $\norm{p - q}$.
-- The [dot product](/0S52TNNTH9/) is $u \cdot v = u_1 v_1 + \cdots + u_n v_n = \norm{u}\,\norm{v} \cos\theta$, where $\theta \in [0, \pi]$ is the [angle](/0ZEHZY85E6/) between $u$ and $v$. In particular $v \cdot v = \norm{v}^2$.
-- Two vectors are [perpendicular](/03NK6RSRQ1/) if and only if $u \cdot v = 0$. The angle is acute when $u \cdot v > 0$ and obtuse when $u \cdot v < 0$.
-- For $v \neq 0$ the [projection](/0JW13B48YP/) of $u$ along $v$ is $\operatorname{proj}_v u = \dfrac{u \cdot v}{v \cdot v}\, v$. It is the only multiple $p$ of $v$ with $u - p \perp v$.
-- The [cross product](/0N5N15HWZ7/) $a \times b$ of two vectors in $\R^3$ is perpendicular to $a$ and to $b$. Its length $\norm{a}\,\norm{b} \sin\theta$ is the area of the parallelogram on $a$ and $b$. It is anticommutative, $b \times a = -a \times b$, and it is not associative.
-- The [scalar triple product](/34VJYG6GVD/) $a \cdot (b \times c)$ is the determinant with rows $a$, $b$, $c$. Its absolute value is the volume of the parallelepiped on the three vectors, and it is $0$ exactly when they lie in one plane through $0$. The [vector triple product](/03FTB26QYD/) expands as $a \times (b \times c) = (a \cdot c)\, b - (a \cdot b)\, c$.
-- A [line](/0399QFDFS8/) is $\set{a + t d : t \in \R}$ with $d \neq 0$. A [plane](/07SDJ5DNE4/) with normal $n \neq 0$ through $a$ is $n \cdot (r - a) = 0$, or $n_1 x + n_2 y + n_3 z = d$ with $d = n \cdot a$.
-- The [distances](/C6GAS92QHX/) are lengths of projections and cross products. The table gives the formulas.
+- A [vector](/0QN3D80AWP/) of $\R^n$ is a list $v = (v_1, \dots, v_n)$ of real numbers. Vectors add and scale component by component, and the arrow from the point $A$ to the point $B$ is $B - A$.
+- For $v \in \R^n$ the [length](/0XKBKGTCPC/) is $\norm{v} = \sqrt{v \cdot v}$. It is $0$ only for $v = 0$, and $\norm{cv} = \abs{c}\,\norm{v}$ for every real $c$. For $v \neq 0$ the vector $v / \norm{v}$ is the unit vector in the direction of $v$.
+- For $u, v \in \R^n$ the [dot product](/0S52TNNTH9/) is $u \cdot v = u_1 v_1 + \cdots + u_n v_n$. It is symmetric and linear in each factor; $\abs{u \cdot v} \le \norm{u}\,\norm{v}$ by the [Cauchy-Schwarz inequality](/0RFWW56Y22/), with equality exactly when one vector is a multiple of the other.
+- For nonzero $u, v \in \R^n$ the [angle](/0ZEHZY85E6/) $\theta \in [0, \pi]$ is given by $\cos\theta = \dfrac{u \cdot v}{\norm{u}\,\norm{v}}$. For all $u, v \in \R^n$, $u$ and $v$ are [perpendicular](/03NK6RSRQ1/) exactly when $u \cdot v = 0$; the zero vector is perpendicular to every vector and is the only vector with this property.
+- For $u, v \in \R^n$ with $v \neq 0$ the [projection](/0JW13B48YP/) of $u$ along $v$ is $p = \dfrac{u \cdot v}{v \cdot v}\, v$. It is the only multiple of $v$ with $(u - p) \cdot v = 0$, and $\norm{u}^2 = \norm{p}^2 + \norm{u - p}^2$.
+- For $a, b \in \R^3$ the [cross product](/0N5N15HWZ7/) $a \times b$ is perpendicular to $a$ and $b$, has length $\norm{a}\,\norm{b}\sin\theta$ (the area of the parallelogram on $a$ and $b$), and satisfies $b \times a = -\, a \times b$. It is $0$ exactly when $a$ and $b$ are parallel, one being a multiple of the other.
+- For $a, b, c \in \R^3$ the [scalar triple product](/34VJYG6GVD/) $a \cdot (b \times c)$ is the determinant with rows $a$, $b$, $c$. Its absolute value is the volume of the parallelepiped on $a$, $b$, $c$, and it is $0$ exactly when the three vectors lie in one plane through $0$. The [vector triple product](/03FTB26QYD/) is $a \times (b \times c) = (a \cdot c)\, b - (a \cdot b)\, c$.
+- A [line](/0399QFDFS8/) is $\set{a + td : t \in \R}$ with $d \neq 0$, and a [plane](/07SDJ5DNE4/) in $\R^3$ is $\set{r : n \cdot r = d}$ with $n \neq 0$. The [distance](/C6GAS92QHX/) from $q$ to the plane is $\abs{n \cdot q - d} / \norm{n}$, from $q$ to the line $a + td$ it is $\norm{(q - a) \times d} / \norm{d}$, and between the lines $a + td$ and $b + se$ with $d \times e \neq 0$ it is $\abs{(b - a) \cdot (d \times e)} / \norm{d \times e}$.
 
-| Distance | Formula | Condition |
+The dot product and the cross product are easy to confuse, because both take two vectors.
+
+| | Dot product $u \cdot v$ | Cross product $a \times b$ |
 |---|---|---|
-| point $q$ to plane $n \cdot r = d$ | $\dfrac{\abs{n \cdot q - d}}{\norm{n}}$ | $n \neq 0$ |
-| point $q$ to line $a + t d$ | $\dfrac{\norm{(q - a) \times d}}{\norm{d}}$ | $d \neq 0$ |
-| line $a + t d$ to line $b + s e$ | $\dfrac{\abs{(b - a) \cdot (d \times e)}}{\norm{d \times e}}$ | $d \times e \neq 0$ |
-| parallel lines $a + t d$ and $b + s d$ | $\dfrac{\norm{(b - a) \times d}}{\norm{d}}$ | $d \neq 0$ |
-| parallel planes $n \cdot r = d_1$ and $n \cdot r = d_2$ | $\dfrac{\abs{d_1 - d_2}}{\norm{n}}$ | the same normal $n$ |
+| Defined for | $u, v \in \R^n$, any $n$ | $a, b \in \R^3$ only |
+| Value | a number | a vector of $\R^3$ |
+| Swapping the factors | unchanged | changes sign |
+| Zero exactly when | the vectors are perpendicular | the vectors are parallel |
+| Size | $\norm{u}\,\norm{v}\cos\theta$ | length $\norm{a}\,\norm{b}\sin\theta$ |
 
-: Distance formulas in $\R^3$. The closest points are where the connecting vector is perpendicular to the given sets.
+: The two products of vectors compared
 
 ## Common errors
 
-- **Forgetting to divide.** The number $\abs{n \cdot q - d}$ alone is not a distance: it doubles when the equation of the plane is multiplied by $2$. Divide by $\norm{n}$, $\norm{d}$ or $\norm{d \times e}$ as the formula says.
-- **Projecting along a vector that is not a unit vector.** $(u \cdot v)\, v$ is the projection only when $\norm{v} = 1$. In general, divide by $v \cdot v$.
-- **Treating the cross product like a product of numbers.** $b \times a = -\,a \times b$, and $a \times (b \times c)$ is in general not $(a \times b) \times c$. Also $a \times b = 0$ does not force $a = 0$ or $b = 0$: it means that $a$ and $b$ are parallel.
-- **Distance between base points.** The distance between two lines is not the distance between the points $a$ and $b$ used to write them down. For skew lines it is the length of the part of $b - a$ along the common perpendicular $d \times e$.
-- **Two lines in space that do not meet need not be parallel.** In $\R^3$ two lines can be parallel, meet in one point, or be skew. Check $d \times e$ first, then whether a common point exists.
-- **Reading the angle from the cross product.** $\norm{a \times b} = \norm{a}\,\norm{b}\sin\theta$ cannot tell $\theta$ from $\pi - \theta$. Use $\cos\theta = \dfrac{u \cdot v}{\norm{u}\,\norm{v}}$, which fixes $\theta \in [0, \pi]$.
+- Dividing by a dot product. From $u \cdot v = u \cdot w$ with $u \neq 0$ it follows only that $u \perp (v - w)$, not that $v = w$. The same holds for the cross product: $a \times v = a \times w$ says only that $v - w$ is parallel to $a$.
+- Treating the cross product as associative or commutative. In general $a \times (b \times c) \neq (a \times b) \times c$, and $a \times b = -\, b \times a$.
+- Using the angle formula with a zero vector. The angle is defined only for nonzero vectors, although the test $u \cdot v = 0$ for perpendicularity holds for all vectors.
+- Forgetting to divide by $\norm{n}$ in the distance to a plane. The number $\abs{n \cdot q - d}$ is the distance only when $n$ is a unit vector.
+- Confusing the projection $\frac{u \cdot v}{v \cdot v}\, v$, a vector, with the scalar component $\frac{u \cdot v}{\norm{v}}$, a number that can be negative.
+- Taking two lines in space that do not meet to be parallel. In $\R^3$ they can be skew: their directions are not parallel and they still have no common point.

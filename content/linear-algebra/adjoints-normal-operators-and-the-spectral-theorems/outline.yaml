@@ -2,48 +2,60 @@
 groups:
   - title: The adjoint
     intro: >
-      Every linear map $T$ between finite-dimensional inner product spaces has a unique adjoint $T^*$ with
-      $\langle Tv, w \rangle = \langle v, T^* w \rangle$. In orthonormal bases its matrix is the conjugate
-      transpose; in other bases a Gram matrix corrects the formula. The kernel of $T^*$ is the orthogonal
-      complement of the image of $T$, which is the fundamental-subspace picture without matrices.
+      For a linear map $T \colon V \to W$ between finite-dimensional inner product spaces over $\R$ or $\C$,
+      the Riesz representation gives a unique linear map $T^* \colon W \to V$ with $\ip{Tv}{w} = \ip{v}{T^*w}$
+      for all $v$ and $w$. In orthonormal bases the matrix of $T^*$ is the conjugate transpose of the matrix of
+      $T$; in other bases it is not. The adjoint exchanges kernels and images up to complements, with
+      $\ker T^* = (\im T)^\perp$ and $\im T^* = (\ker T)^\perp$, so $T$ and $T^*$ have the same rank.
     entries:
       - 0R9NMSM1ZP
       - 0DBTE6HVBD
       - YPP8XT6B7Y
-  - title: Self-adjoint operators
+  - title: Self-adjoint operators and their eigenvectors
     intro: >
-      An operator with $T^* = T$ is self-adjoint; in an orthonormal basis its matrix is Hermitian, or symmetric over
-      $\R$. Its eigenvalues are real, it has an eigenvector even over $\R$, found as a maximum of
-      $\langle Tv, v \rangle$ on the unit sphere, and eigenvectors for distinct eigenvalues are orthogonal.
+      An operator $T$ on a finite-dimensional inner product space is self-adjoint when $T^* = T$; in an
+      orthonormal basis its matrix is Hermitian, or real symmetric over $\R$. The group proves the two facts
+      behind the spectral theorems, using the adjoint of the first group: every eigenvalue of a self-adjoint
+      operator is real, and for a normal operator, in particular a self-adjoint one, eigenvectors for distinct
+      eigenvalues are orthogonal.
     entries:
       - 0NEGN5CRSC
       - 0C4NT4GT3X
       - 0JHGAV9H25
-  - title: Schur's theorem and normal operators
+  - title: Triangular form and normal operators
     intro: >
-      Over $\C$ every operator is upper triangular in some orthonormal basis. This is Schur's theorem, and it is
-      the key to the spectral theorems. Normal operators, those with $T T^* = T^* T$, are the ones whose
-      triangular form is in fact diagonal.
+      Schur's theorem says that every operator on a finite-dimensional complex inner product space has an
+      upper triangular matrix in some orthonormal basis, so every complex square matrix is $QUQ^*$ with $Q$
+      unitary and $U$ upper triangular; a real matrix has a real block form. Normal operators, with
+      $TT^* = T^*T$, are introduced next, together with the identity $\norm{Tv} = \norm{T^*v}$ and the fact
+      that a normal operator and its adjoint share eigenvectors, with conjugate eigenvalues.
     entries:
       - V1JG4C7R7B
       - 0C8BR8XRTR
   - title: The spectral theorems
     intro: >
-      Over $\C$, an operator has an orthonormal basis of eigenvectors exactly when it is normal. Over $\R$, exactly
-      when it is self-adjoint. In matrix form, a Hermitian matrix is $U D U^*$ with $U$ unitary and $D$ real, and a
-      real symmetric matrix is $Q D Q^{\mathsf{T}}$ with $Q$ orthogonal.
+      Combining Schur's triangular form with normality gives the complex spectral theorem: an operator on a
+      finite-dimensional complex inner product space has an orthonormal basis of eigenvectors if and only if it
+      is normal, because a normal upper triangular matrix is diagonal. A Hermitian matrix is then $UDU^*$ with
+      $U$ unitary and $D$ real. Over $\R$ the condition is stronger: a real operator has an orthonormal
+      eigenbasis if and only if it is self-adjoint, and a real matrix is $QDQ^{\mathsf{T}}$ with $Q$ orthogonal
+      if and only if it is symmetric. The spectral decomposition rewrites the result as
+      $T = \sum_i \lambda_i P_i$, with orthogonal projections $P_i$ onto the eigenspaces.
     entries:
       - 04CW1P44VD
       - 0DGZBQWZWN
       - 06J4PXRG22
-  - title: Consequences of the spectral theorems
-    intro: >
-      An operator with an orthonormal eigenbasis is a sum $\sum_j \lambda_j P_j$ of orthogonal projections, so
-      functions of it are computed eigenvalue by eigenvalue. A real normal operator has a block form with
-      $2 \times 2$ rotation-like blocks, commuting normal operators share an eigenbasis, and the Rayleigh quotient
-      gives the extreme eigenvalues as extreme values.
-    entries:
       - D5KVBA1K9R
+  - title: Real normal operators, commuting families and the Rayleigh quotient
+    intro: >
+      Three consequences of the spectral theorems. A real normal matrix is orthogonally similar to a block
+      diagonal matrix with $1 \times 1$ blocks and $2 \times 2$ blocks of rotation-and-scaling type, and a
+      skew-symmetric one has only zero blocks and blocks $\begin{pmatrix} 0 & -b \\ b & 0 \end{pmatrix}$.
+      A family of normal operators on a complex space, or of self-adjoint operators on a real space, has a
+      common orthonormal eigenbasis if and only if its members commute. Finally, for a self-adjoint $T$ the
+      Rayleigh quotient $\ip{Tv}{v}/\ip{v}{v}$ is a weighted average of eigenvalues, so it lies between the
+      smallest and the largest eigenvalue and reaches them exactly at eigenvectors.
+    entries:
       - G6T1FNE3JC
       - BFQQDA489F
       - 06WHP8SE98

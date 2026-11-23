@@ -1,31 +1,31 @@
 ## What to remember
 
-- A **proof** of a statement is a finite chain of steps that ends with the statement. Each step is a hypothesis, an axiom, a definition, a result already proved, or a consequence of earlier steps by a valid rule such as [modus ponens](/0Y0MQYST0M/). A proof covers every case its hypotheses allow; a list of checked cases covers only those cases.
-- **Only deduction proves.** In a deduction the conclusion must be true whenever all the premises are. Inductive reasoning, from many cases to a general claim, and abductive reasoning, from a fact to a hypothesis that would explain it, only suggest. Mathematical induction is a deduction.
-- **Theorem, proposition, lemma, corollary and claim** all name proved statements. They differ only in the role the author gives them: a main result, a smaller result, a step towards another result, a quick consequence, a step inside a proof.
-- A theorem has the form "if $H_1, \ldots, H_k$, then $C$". It says nothing about cases where a hypothesis fails. To see why a hypothesis is there, drop it and look for a counterexample: $\abs{x}$ on $[-1, 1]$ satisfies every hypothesis of [Rolle's theorem](/0194DY35BG/) except differentiability at $0$, and its derivative is never $0$.
-- The **axiomatic method** fixes primitive terms and axioms, then defines and proves everything else. A model in which all the axioms hold shows that they are consistent relative to the model; a model in which one axiom fails and the others hold shows that the axiom is independent of them.
-- A **conjecture** is a statement that is believed but not proved. Its status changes by a proof, as for [Fermat's Last Theorem](/0Y5X3SDBCZ/) in 1994, or by a counterexample, as for [Euler's sum of powers conjecture](/E486QA4JS4/) in 1966.
-- A proof serves five **functions**: verification, explanation, communication, discovery and systematization. Two proofs of one theorem can serve them differently.
-- A **classification** lists the objects of a kind up to an equivalence. An **invariant** takes equal values on equivalent objects, so different values prove that two objects are not equivalent; a complete set of invariants also proves the converse.
+- A **proof** of a statement is a finite sequence of steps ending with the statement, where each step is a hypothesis, an axiom, a definition, a result proved earlier, or a consequence of earlier steps by a valid rule of inference such as modus ponens. An informal proof leaves routine steps to the reader; a formal proof gives every step, so that a computer can check it.
+- **Deduction** is the only kind of reasoning that proves: its conclusion is true whenever all its premises are true. Checking many cases (enumerative induction) and proposing an explanation (abduction) produce conjectures, not theorems. Proof by [mathematical induction](/0ASJVEFA9J/) is a deduction, despite its name.
+- **Theorem, proposition, lemma, corollary** and **claim** all mean "proved". A lemma is proved mainly to help prove another result, and a corollary follows quickly from a result just proved. The labels are conventions of writing; a lemma is exactly as true as a theorem.
+- A result "if $H_1, \dots, H_k$, then $C$" asserts $C$ in every case where all the $H_i$ hold, and **nothing** in the other cases. A hypothesis is needed when the statement becomes false without it, which one counterexample shows; it is sharp when no weaker condition of the same kind suffices.
+- An **axiom system** consists of primitive terms, axioms, definitions and the theorems proved from them. A theorem holds in every model of the axioms. The system is **consistent** if it has a model, and an axiom is **independent** of the others if some model satisfies the others but not it.
+- A **conjecture** is an exact statement that is believed and is neither proved nor disproved. It ends in a proof (it becomes a theorem), a disproof (often a counterexample), or a proof that the accepted axioms cannot settle it.
+- Proofs have several **functions**: verification, explanation, communication, discovery and systematization (in the list of Michael de Villiers). Two correct proofs of one theorem can serve different functions.
+- An **example** of a notion satisfies every condition of its definition; a useful **non-example** fails exactly one condition; a **counterexample** makes a universal statement false, and one counterexample is enough.
+- Let $\sim$ be an equivalence relation on a class $X$. An **invariant** is a function $f$ on $X$ with $x \sim y \Rightarrow f(x) = f(y)$, so different values prove $x \not\sim y$. It is **complete** if also $f(x) = f(y) \Rightarrow x \sim y$. For finite-dimensional vector spaces over a fixed field, dimension is a complete invariant for isomorphism; for finite groups, the order is an invariant but not a complete one.
 
-## Kinds of statements
+## Three kinds of reasoning
 
-| Kind | Status | How it is justified | Example from the entries |
+| Kind | Passes from | To | Is the conclusion certain? |
 |---|---|---|---|
-| Axiom | assumed | not proved; chosen to fix a theory | the [parallel postulate](/2PC3XY0PYZ/) |
-| Definition | stipulated | not proved; it introduces a word | "$n$ is even if $n = 2k$ for some integer $k$" |
-| Theorem | proved | a proof; a main result | the [fundamental theorem of arithmetic](/084HH1NDCB/) |
-| Lemma | proved | a proof; used to prove another result | [Euclid's lemma](/051VYKA1EX/) |
-| Corollary | proved | a short proof from a result just proved | the [irrationality of the square root of 2](/0DZGSDHD92/) |
-| Conjecture | open | evidence only; no proof and no counterexample | [Goldbach's conjecture](/063JNBSMJ0/) |
+| Deduction | premises | a conclusion true whenever all premises are true | yes, given the premises |
+| Enumerative induction | many checked cases | a general claim | no: $n^2 + n + 41$ is prime for $40$ cases and then fails |
+| Abduction | an observed fact | a hypothesis that would explain it | no: it proposes a reason that must then be proved |
 
-: The status of a mathematical statement. The labels of proved statements are conventions of writing, so the same result can be a lemma in one book and a theorem in another.
+: Only the first row produces theorems. The other two produce conjectures, which a deduction must then confirm or refute.
 
 ## Common errors
 
-- **Taking cases for a proof.** The [Mertens conjecture](/4Y4HWKA2MP/) agrees with every value computed so far, and it is false: Odlyzko and te Riele disproved it in 1985 without exhibiting a counterexample.
-- **Affirming the consequent.** From "if $P$ then $Q$" and $Q$, nothing follows about $P$. "Every multiple of $4$ is even, and $6$ is even" does not make $6$ a multiple of $4$.
-- **Using a theorem outside its hypotheses.** Before you apply a result, check each hypothesis on your object, including the hidden ones, such as a closed interval or a nonzero denominator.
-- **Reading the label as a measure of depth.** Zorn's lemma and the Yoneda lemma are major results, and Fermat's "last theorem" was a conjecture for over three centuries.
-- **Trusting a special figure.** A drawing with a right angle or equal sides can make a false general claim look true. Test a geometric claim on a generic figure, not only on a symmetric one.
+- **Proof by examples.** Checking $n = 1, \dots, 100$ proves nothing about all $n$.
+- **Affirming the consequent.** From "if $P$ then $Q$" and $Q$, nothing follows about $P$. The converse of a theorem is a new statement that needs its own proof, and it is often false.
+- **Using a theorem without its hypotheses.** Check every hypothesis in the case at hand; $|x|$ on $[-1, 1]$ satisfies all hypotheses of Rolle's theorem except differentiability at $0$, and its derivative is never $0$.
+- **Reading a failed hypothesis as a failed conclusion.** If a hypothesis fails, the theorem is silent; the conclusion may still be true. For $x^2$ on $[-1, 2]$ the endpoint values differ, yet the derivative vanishes at $0$.
+- **Using an unstated assumption.** A proof inside an axiom system may use only the axioms, the definitions and earlier theorems. Euclid's first proposition takes a point where two circles meet, and none of his postulates gives one.
+- **Using an invariant backwards.** Equal values of an invariant prove nothing unless the invariant is complete: $\Z/4$ and the Klein four-group both have order $4$ and are not isomorphic.
+- **Generalizing a rule without its hypothesis.** The identity $(a + b)^2 = a^2 + 2ab + b^2$ uses $ab = ba$, and it fails for most pairs of square matrices.

@@ -1,29 +1,28 @@
 ## What to remember
 
-- The **orthogonal complement** of a subspace $U$ is $U^\perp = \set{v : \langle v, u \rangle = 0 \text{ for all } u \in U}$. It is always a subspace. If $U$ is spanned by the rows of a real matrix $A$, then $U^\perp = \operatorname{Nul}(A)$.
-- **Orthogonal decomposition:** for a finite-dimensional subspace $U$, $V = U \oplus U^\perp$. In finite dimension $\dim U^\perp = \dim V - \dim U$ and $(U^\perp)^\perp = U$.
-- **Fundamental subspaces:** for a real $m \times n$ matrix, $\operatorname{Nul}(A) = \operatorname{Row}(A)^\perp$ in $\R^n$ and $\operatorname{Nul}(A^{\mathsf{T}}) = \operatorname{Col}(A)^\perp$ in $\R^m$. So $Ax = b$ is solvable exactly when $b \perp y$ for every $y$ with $A^{\mathsf{T}} y = 0$.
-- **Orthogonal projection:** $P_U v$ is the part of $v$ in $U$. With an orthonormal basis $e_1, \dots, e_k$ of $U$, $P_U v = \sum_i \langle v, e_i \rangle e_i$, and its matrix is $Q Q^{\mathsf{T}}$. With a basis in the columns of $A$, the matrix is $A (A^{\mathsf{T}} A)^{-1} A^{\mathsf{T}}$. A matrix is an orthogonal projection exactly when $P^2 = P = P^{\mathsf{T}}$.
-- **Best approximation:** $P_U v$ is the unique closest point of $U$ to $v$, and $u_0 \in U$ is the closest point exactly when $v - u_0 \in U^\perp$. The distance satisfies $d(v, U)^2 = \norm{v}^2 - \norm{P_U v}^2$.
-- **Least squares:** $\hat x$ minimizes $\norm{Ax - b}$ exactly when $A \hat x$ is the projection of $b$ onto $\operatorname{Col}(A)$, exactly when $A^{\mathsf{T}} A \hat x = A^{\mathsf{T}} b$. The solution is unique exactly when the columns of $A$ are independent; otherwise the solutions form $\hat x + \operatorname{Nul}(A)$.
-- **QR:** a matrix with independent columns is $A = QR$, with orthonormal columns in $Q$ and $R$ upper triangular with positive diagonal; $Q$ and $R$ are unique. The least-squares solution solves $R \hat x = Q^{\mathsf{T}} b$, and the method avoids $A^{\mathsf{T}} A$, whose condition number is $\kappa(A)^2$.
-- **Minimum norm:** if $Ax = b$ is solvable, it has exactly one solution $x_0$ in the row space, and it is the shortest solution. For full row rank, $x_0 = A^{\mathsf{T}} (A A^{\mathsf{T}})^{-1} b$.
-- **Principal angles** between subspaces of dimensions $p \le q$ are $0 \le \theta_1 \le \dots \le \theta_p \le \pi/2$, with $\cos \theta_k$ the $k$-th singular value of $Q_1^{\mathsf{T}} Q_2$. The number of zero angles is $\dim (U \cap W)$.
+- **[Orthogonal complement](/0XJXTBCB2T/):** for any subset $S$ of an inner product space $V$, the set $S^\perp$ of vectors orthogonal to every element of $S$ is a subspace, and $S^\perp = (\operatorname{span} S)^\perp$. In $\R^n$, the complement of the span of $u_1, \dots, u_k$ is the null space of the matrix with rows $u_1^{\mathsf{T}}, \dots, u_k^{\mathsf{T}}$.
+- **[Orthogonal decomposition](/0SP7P0G7KQ/):** if $U$ is a finite-dimensional subspace of $V$, every $v \in V$ is uniquely $u + w$ with $u \in U$ and $w \in U^\perp$, so $V = U \oplus U^\perp$. If $V$ has finite dimension, $\dim U + \dim U^\perp = \dim V$ and the [double complement](/0PXN9G4MX1/) is $(U^\perp)^\perp = U$. Both can fail for an infinite-dimensional $U$.
+- **[Fundamental subspaces](/GQF2KG1R1N/):** for a real $m \times n$ matrix $A$, $\operatorname{Nul} A = (\operatorname{Row} A)^\perp$ in $\R^n$ and $\operatorname{Nul} A^{\mathsf{T}} = (\operatorname{Col} A)^\perp$ in $\R^m$. So $Ax = b$ is solvable exactly when $b$ is orthogonal to every solution of $A^{\mathsf{T}}y = 0$. Over $\C$, use $A^*$.
+- **[Orthogonal projection](/0B8KZRT28M/):** for $U$ finite-dimensional with orthonormal basis $e_1, \dots, e_k$, $P_U v = \sum_i \ip{v}{e_i} e_i$. If the columns of a real $A$ form a basis of $U$, the matrix is $A(A^{\mathsf{T}}A)^{-1}A^{\mathsf{T}}$, and $QQ^{\mathsf{T}}$ if they are orthonormal. An operator on a finite-dimensional space is an orthogonal projection exactly when $P^2 = P$ and $P^* = P$.
+- **[Best approximation](/0MCDDSCB9Z/):** for $U$ finite-dimensional, $P_U v$ is the unique closest point of $U$ to $v$, and with an orthonormal basis of $U$ the distance is given by $d(v, U)^2 = \norm{v}^2 - \sum_i \abs{\ip{v}{e_i}}^2$.
+- **[Least squares](/0BYTQ4X1HC/) and the [normal equations](/4D7MRG4D91/):** for a real $m \times n$ matrix $A$ and $b \in \R^m$, $\hat x$ minimizes $\norm{Ax - b}$ exactly when $A^{\mathsf{T}}A\hat x = A^{\mathsf{T}}b$. These equations are always consistent, since $\operatorname{Nul}(A^{\mathsf{T}}A) = \operatorname{Nul} A$, and the solution is unique exactly when the columns of $A$ are independent. The residual $b - A\hat x$ is orthogonal to $\operatorname{Col} A$.
+- **[QR decomposition](/0ERWG4NXQ9/):** a real $m \times n$ matrix with independent columns is $QR$ with $Q^{\mathsf{T}}Q = I_n$ and $R$ upper triangular with positive diagonal, and the pair is unique. Least squares becomes $R\hat x = Q^{\mathsf{T}}b$, which avoids the squared condition number $\kappa(A^{\mathsf{T}}A) = \kappa(A)^2$.
+- **[Minimum-norm solution](/QM2Y84VDX8/):** a consistent system $Ax = b$ has exactly one solution in $\operatorname{Row} A$, and it is the shortest. For independent rows it is $A^{\mathsf{T}}(AA^{\mathsf{T}})^{-1}b$.
+- **[Principal angles](/YHVD3773AW/):** for subspaces with orthonormal bases in the columns of $Q_1$ and $Q_2$, $\cos\theta_k = \sigma_k(Q_1^{\mathsf{T}}Q_2)$. [Legendre and Fourier approximation](/899D63WW04/) is the projection formula with an orthogonal basis of functions.
 
-## Three ways to solve least squares
-
-| Method | What it computes | Needs | Accuracy |
+| Method | Solves | Needs | Accuracy |
 |---|---|---|---|
-| [Normal equations](/4D7MRG4D91/) | $A^{\mathsf{T}} A \hat x = A^{\mathsf{T}} b$ | independent columns for a unique answer | depends on $\kappa(A)^2$ |
-| [QR decomposition](/0ERWG4NXQ9/) | $R \hat x = Q^{\mathsf{T}} b$ | independent columns | depends on $\kappa(A)$ |
-| [Least squares by the SVD](/SBP2PCHH9M/) | $\hat x = A^+ b$, the shortest least-squares solution | nothing; works for any rank | the most reliable, and the most work |
+| [Normal equations](/4D7MRG4D91/) | $A^{\mathsf{T}}A\hat x = A^{\mathsf{T}}b$ | nothing; unique $\hat x$ if columns independent | condition number squared |
+| [QR decomposition](/0ERWG4NXQ9/) | $R\hat x = Q^{\mathsf{T}}b$ | independent columns | condition number of $A$ |
+| [Pseudoinverse](/0YY8VX28JR/) | $\hat x = A^+ b$ | nothing | condition number of $A$; gives the shortest $\hat x$ |
 
-: Three routes to the same least-squares solution. They agree in exact arithmetic; they differ in what they need and how errors in the data grow.
+: Three ways to compute a least-squares solution of $Ax = b$.
 
 ## Common errors
 
-- **Using the orthonormal-basis formula with a basis that is not orthonormal.** The sum $\sum_i \langle v, u_i \rangle u_i$ is the projection only for an orthonormal basis. For an orthogonal basis divide each term by $\langle u_i, u_i \rangle$; for an arbitrary basis use $A (A^{\mathsf{T}} A)^{-1} A^{\mathsf{T}}$.
-- **Cancelling $A^{\mathsf{T}}$ in the normal equations.** $A^{\mathsf{T}} A x = A^{\mathsf{T}} b$ does not give $Ax = b$: $A^{\mathsf{T}}$ has a null space, and the residual $b - A \hat x$ lies in it.
-- **Confusing $A^{\mathsf{T}} A$ with $A A^{\mathsf{T}}$.** Independent columns make the $n \times n$ matrix $A^{\mathsf{T}} A$ invertible; independent rows make the $m \times m$ matrix $A A^{\mathsf{T}}$ invertible. A tall matrix never has $A A^{\mathsf{T}}$ invertible.
-- **Expecting $(U^\perp)^\perp = U$ everywhere.** In infinite dimension the double complement is the closure of $U$; the polynomials in $C[-1, 1]$ have complement $0$.
-- **Reading the angle between two chosen vectors as a principal angle.** Principal angles come from maximizing pairs or from singular values, not from the first vectors of two bases.
+- **Projecting onto a basis that is not orthogonal.** The sum $\sum_i \frac{\ip{v}{u_i}}{\ip{u_i}{u_i}} u_i$ is the projection only when the $u_i$ are pairwise orthogonal. Otherwise orthogonalize first, or solve the normal equations.
+- **Cancelling inverses of rectangular matrices.** $A(A^{\mathsf{T}}A)^{-1}A^{\mathsf{T}}$ is not $I$ when $A$ is $m \times n$ with $m > n$, since $A$ has no inverse.
+- **Taking an idempotent for an orthogonal projection.** $P^2 = P$ gives a projection along some complement. It is orthogonal only if, in addition, $P^* = P$, as $\begin{pmatrix} 1 & 0 \\ 1 & 0 \end{pmatrix}$ shows.
+- **Forgetting finite dimension.** $V = U \oplus U^\perp$ and $(U^\perp)^\perp = U$ need $U$ finite-dimensional, or closed in a Hilbert space.
+- **Discarding equations.** Solving a square subsystem of an overdetermined system does not give the least-squares solution. Every equation enters the normal equations.
+- **Using the transpose over $\C$.** For complex matrices the left null space that is orthogonal to the column space is $\operatorname{Nul} A^*$, not $\operatorname{Nul} A^{\mathsf{T}}$.

@@ -1,41 +1,38 @@
-2. $A e_1 = (2, 1, 0)$ and $A e_2 = (1, 2, 0)$ lie in $U$. The restriction has the matrix $\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$, with characteristic polynomial $(t - 3)(t - 1)$. The quotient operator sends $e_3 + U$ to $(5, 7, -1) + U = -e_3 + U$, so its matrix is $(-1)$. Hence $p_A = (t - 3)(t - 1)(t + 1)$. The vector $e_3$ is not an eigenvector, since $A e_3 = (5, 7, -1)$; an eigenvector for $-1$ is $(1, 2, -1)$.
+1. (a) $A (1, -1, 0) = (1, -1, 0)$, so that line is invariant, with eigenvalue $1$. $A e_3 = (1, 1, 3)$ is not a multiple of $e_3$, so the line spanned by $e_3$ is not invariant. (b) $A e_1 = (2, 1, 0)$ and $A e_2 = (1, 2, 0)$ lie in $U$; the restriction has the matrix $\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$, and $A e_3 \equiv 3 e_3 \pmod U$, so the quotient operator is $(3)$. (c) $p_A = (t - 1)(t - 3) \cdot (t - 3) = (t - 1)(t - 3)^2$.
 
-4. The algebraic multiplicity is $3$. The matrix $A - 2I$ has rank $1$, so the geometric multiplicity is $2 < 3$. Also $(A - 2I)^2 = 0$ and $A \ne 2I$, so $m_A = (t - 2)^2$, which has a repeated root. Both tests say that $A$ is not diagonalizable.
+2. The trace is $7$ and the determinant $12$, so the eigenvalues are $3$ and $4$, with eigenvectors $(1, 1)$ and $(2, 1)$. Take $P = \begin{pmatrix} 1 & 2 \\ 1 & 1 \end{pmatrix}$ and $D = \operatorname{diag}(3, 4)$.
 
-5. The polynomial $t^3 - 1$ kills $C$ and has the three distinct roots $1, \omega, \omega^2$ in $\C$, where $\omega = e^{2\pi i/3}$. Over $\R$, $p_C = t^3 - 1 = (t - 1)(t^2 + t + 1)$ does not split.
+3. With $P^{-1} = \begin{pmatrix} -1 & 2 \\ 1 & -1 \end{pmatrix}$,
+$$A^k = \begin{pmatrix} 2 \cdot 4^k - 3^k & 2 \cdot 3^k - 2 \cdot 4^k \\ 4^k - 3^k & 2 \cdot 3^k - 4^k \end{pmatrix}, \qquad A^3 = \begin{pmatrix} 101 & -74 \\ 37 & -10 \end{pmatrix}.$$
 
-6. The eigenvectors are $(1, 0)$ for $3$ and $(1, -1)$ for $2$. With $P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$, which is its own inverse, $A^k = \begin{pmatrix} 3^k & 3^k - 2^k \\ 0 & 2^k \end{pmatrix}$. For $k = 2$ this is $\begin{pmatrix} 9 & 5 \\ 0 & 4 \end{pmatrix}$.
+6. The only eigenvalue is $3$, with eigenspace spanned by $(1, -1)$. Since $(A - 3I)^2 = 0$, the generalized eigenspace is $\R^2$. Take $v = (1, 0)$: then $(A - 3I) v = (1, -1)$, and in the basis $(1, -1), (1, 0)$ the matrix of $A$ is $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$.
 
-7. $p_A = (t - 1)^2 (t - 2)$. The eigenspace of $1$ is $\operatorname{span}(e_1)$, while $\ker(A - I)^2 = \operatorname{span}(e_1, e_2 - e_3)$ is the generalized eigenspace, of dimension $2$. For $2$, the eigenspace and the generalized eigenspace are both $\operatorname{span}(e_3)$. $A$ is not diagonalizable.
+8. The only eigenvalue is $2$, with eigenvector $(1, 2)$. With $Q = \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}$ one gets $Q^{-1} A Q = \begin{pmatrix} 2 & 1 \\ 0 & 2 \end{pmatrix}$. $A$ is not diagonalizable, since $A \ne 2I$ and $2$ is its only eigenvalue.
 
-8. (a) Nilpotent of index $2$. (b) Not nilpotent: its square is $I$. (c) Nilpotent of index $3$: the square is $3 E_{13}$, which is not $0$. (d) Not nilpotent: it equals its own square.
+9. The polynomial $t^3 - t = t (t - 1)(t + 1)$ kills $A$, and its roots $0, 1, -1$ are distinct when $1 \ne -1$, that is, when the characteristic is not $2$. Apply the minimal polynomial test. Over $\mathbb{F}_2$, $A^2 = I$, so $A^3 = A$; but $1$ is the only eigenvalue and $A \ne I$.
 
-9. $\ker T = \operatorname{span}(e_1)$ and $\ker T^2 = \ker T^3 = \operatorname{span}(e_1, e_2)$, so the kernels stop growing at $j = 2$. Also $T^3 = T^2$ has image $\operatorname{span}(2, 1, 1)$, which meets the plane $z = 0$ only in $0$.
+11. Both products equal $\begin{pmatrix} 2 & 2 & 2 \\ 4 & 1 & 1 \\ 4 & 1 & 1 \end{pmatrix}$. The eigenspace of $A$ for $2$ is the plane spanned by $e_1$ and $(0, 1, 1)$; $B$ maps this plane to itself, and its eigenvectors there are $(1, 1, 1)$ and $(1, -1, -1)$. Take $P$ with columns $(1, 1, 1)$, $(1, -1, -1)$, $(0, 1, -1)$: then $P^{-1} A P = \operatorname{diag}(2, 2, 0)$ and $P^{-1} B P = \operatorname{diag}(3, -1, 1)$. In the other basis, $B e_1 = (1, 2, 2)$ is not a multiple of $e_1$.
 
-11. $T|_U \colon U \to U$ is injective, so it is onto $U$ by dimension. For the shift, $T(U)$ consists of the sequences that vanish for $n < 1$, which is smaller than $U$, and $T^{-1}$ sends $e_0 \in U$ to $e_{-1} \notin U$.
+14. (a) $p_A = m_A = (t - 1)^2 (t - 2)$. (b) The projection onto $\ker (A - 2I)$ is $(A - I)^2$ and the projection onto $\ker (A - I)^2$ is $-A (A - 2I) = I - (A - I)^2$:
+$$(A - I)^2 = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 1 \end{pmatrix}, \qquad I - (A - I)^2 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{pmatrix}.$$
+(c) $\ker (A - I)^2 = \operatorname{span}(e_1, e_2)$ and $\ker (A - 2I) = \operatorname{span}((0, 1, 1))$.
 
-13. Exactly when $a = 0$, for every $b$. The eigenvalue $1$ has algebraic multiplicity $2$, and $A - I$ has rank $1$ when $a = 0$ and rank $2$ when $a \ne 0$.
+15. $S$ is $1$ on $\ker (A - I)^2$ and $2$ on $\ker (A - 2I)$, so $S = I + (A - I)^2$:
+$$S = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{pmatrix}, \qquad N = \begin{pmatrix} 0 & 1 & -1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}.$$
+With $X = A - \operatorname{diag}(1, 1, 2)$, the products $\operatorname{diag}(1, 1, 2) X$ and $X \operatorname{diag}(1, 1, 2)$ differ in the last column: $(-1, 1, 0)$ against $(-2, 2, 0)$.
 
-15. Write $A = u v^{\mathsf T}$ with nonzero column vectors $u$ and $v$. Then $A^2 = (v^{\mathsf T} u) A = (\operatorname{tr} A) A$. If $\operatorname{tr} A \ne 0$, the polynomial $t(t - \operatorname{tr} A)$ has distinct roots and kills $A$. If $\operatorname{tr} A = 0$, then $A$ is nonzero and nilpotent.
+16. The ranks are $2, 1, 1$, so the chains are constant from $T^2$ on. $\ker T^3 = \operatorname{span}(e_1, (0, 1, 1))$ and $\operatorname{im} T^3 = \operatorname{span}((1, 0, 1))$. On the first, in the basis $e_1, (0, 1, 1)$, $T$ has matrix $\begin{pmatrix} -1 & 1 \\ -1 & 1 \end{pmatrix}$, whose square is $0$; on the second, $T$ is multiplication by $-1$.
 
-16. The eigenvalues are $4$ and $1$, with $E_1 = \tfrac{1}{3}\begin{pmatrix} 1 & 1 \\ 2 & 2 \end{pmatrix}$ for $4$ and $E_2 = \tfrac{1}{3}\begin{pmatrix} 2 & -1 \\ -2 & 1 \end{pmatrix}$ for $1$. Then $B = 2 E_1 + E_2 = \tfrac{1}{3}\begin{pmatrix} 4 & 1 \\ 2 & 5 \end{pmatrix}$. The line $f(t) = (t + 2)/3$ has $f(4) = 2$ and $f(1) = 1$, so $B = \tfrac{1}{3}(A + 2I)$.
+18. The geometric multiplicities are $5 - 3 = 2$ for both eigenvalues, and the generalized eigenspaces have dimensions $3$ and $2$. Then $\operatorname{rank}(A - 2I)^5 = 5 - 3 = 2$. $A$ is not diagonalizable, since $2 < 3$ for the eigenvalue $2$.
 
-17. Both $J C$ and $C J$ equal $J$. The vectors $(1, \omega^k, \omega^{2k})$ for $k = 0, 1, 2$ are eigenvectors of $C$ for $\omega^k$, and of $J$ for $3, 0, 0$.
+19. $A = \begin{pmatrix} 1 & 6 \\ 1 & 0 \end{pmatrix}$ has eigenvalues $3$ and $-2$. Write $x_k = \alpha 3^k + \beta (-2)^k$ and solve with $x_0, x_1$: $x_k = 3^k + (-2)^k$, and $x_6 = 793$.
 
-19. The summands are the line $\ker(C - I) = \operatorname{span}(1, 1, 1)$ and the plane $\ker(C^2 + C + I) = \set{x + y + z = 0}$. A Bézout identity is $-\tfrac{1}{3}(t + 2)(t - 1) + \tfrac{1}{3}(t^2 + t + 1) = 1$. The projection onto the line is $\tfrac{1}{3}(C^2 + C + I) = \tfrac{1}{3} J$, and the projection onto the plane is $I - \tfrac{1}{3} J$.
+21. Let $U$ be invariant of dimension $k$. The restriction $N|_U$ is nilpotent on a $k$-dimensional space, so $N^k$ vanishes on $U$, and $U \subseteq \ker N^k = \operatorname{span}(e_1, \dots, e_k)$. Compare dimensions.
 
-20. From $(t - 1)^2 - t(t - 2) = 1$, the projection onto $\ker(A - I)^2$ is $-A(A - 2I)$ and the projection onto $\ker(A - 2I)$ is $(A - I)^2$. So $S = A^2 - 2A + 2I = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 2 \end{pmatrix}$ and $N = A - S = -(A - I)(A - 2I)$, the matrix with a single $1$ in row $1$, column $2$.
+22. $D$ is diagonalizable with eigenspaces $E_1 = \operatorname{span}(e_1, e_2)$ and $E_0 = \operatorname{span}(e_3)$. An invariant subspace is $(W \cap E_1) \oplus (W \cap E_0)$, and conversely every such sum is invariant. The plane $E_1$ has $q + 3$ subspaces ($0$, $q + 1$ lines, itself), and $E_0$ has $2$. For $q = 2$ there are $10$.
 
-21. Choose $v$ with $N^2 v \ne 0$; then $N^3 = 0$ because $N$ is nilpotent on a space of dimension $3$. Apply $N^2$, then $N$, to a relation $a v + b N v + c N^2 v = 0$. The matrix is the nilpotent Jordan block with ones just above the diagonal.
+23. Triangularize: $A = P U P^{-1}$ with $U$ upper triangular. Add small numbers to the diagonal of $U$ to make its diagonal entries distinct. The perturbed matrix has distinct eigenvalues, and the entries of $P (U + E) P^{-1}$ differ from those of $A$ by at most a constant, depending on $P$, times the largest entry of $E$.
 
-23. Rank-nullity gives (a) $\Leftrightarrow$ (b). If $x \in \ker T^2$, then $T x \in \ker T \cap \operatorname{im} T$. Conversely, if $y = T x$ lies in $\ker T$, then $x \in \ker T^2$.
+24. Take the Jordan-Chevalley decomposition $T = S + N$. The eigenvalues of $S$ are those of $T$, so $S$ is invertible; put $U = \mathrm{id} + S^{-1} N$, where $S^{-1} N$ is nilpotent because $S^{-1}$ and $N$ commute. For uniqueness, rewrite $T = S U$ as $T = S + S (U - \mathrm{id})$ and use the uniqueness of the additive decomposition.
 
-24. Write $A = P U P^{-1}$ with $U$ upper triangular. Add to $U$ a small diagonal matrix $D$ chosen so that the diagonal entries of $U + D$ are distinct. Then $P(U + D)P^{-1}$ has $n$ distinct eigenvalues, and it tends to $A$ as $D \to 0$.
-
-25. If $\ker(A - \lambda I) = \ker(A - \lambda I)^2$, show by induction that $\ker(A - \lambda I)^j = \ker(A - \lambda I)$ for every $j \ge 1$, so the generalized eigenspace is the eigenspace. Then use the [decomposition into generalized eigenspaces](/0Z3GDY89T5/). For the converse, a diagonalizable $A - \lambda I$ is diagonal in some basis, where its kernel and the kernel of its square are visibly equal.
-
-26. $S'$ commutes with $N'$, hence with $T = S' + N'$, hence with the polynomials $S$ and $N$ in $T$; so does $N'$. Then $S - S' = N' - N$ is diagonalizable, by simultaneous diagonalization, and nilpotent, by the binomial theorem. A map that is both is $0$.
-
-27. Let $U$ be invariant of dimension $k$. Then $N|_U$ is nilpotent on a $k$-dimensional space, so $N^k$ kills $U$, and $U \subseteq \ker N^k$. Both have dimension $k$.
-
-28. The eigenvalues of $S$ are those of $T$, so $S$ is invertible, and $S^{-1}$ is a polynomial in $S$, so it commutes with $N$; hence $S^{-1} N$ is nilpotent. For uniqueness, write $T = S' + S'(U' - I)$ and check that $S'(U' - I)$ is nilpotent and commutes with $S'$. The additive uniqueness gives $S' = S$, and then $U' = S^{-1} T = U$.
+25. (a) $T|_U$ is injective on the finite-dimensional space $U$, so it is onto $U$. Then $U = T(U)$ gives $T^{-1}(U) = U$. (b) $T(F[x]) = x F[x]$, which misses the constant $1$, and $T^{-1}(1) = x^{-1} \notin F[x]$.

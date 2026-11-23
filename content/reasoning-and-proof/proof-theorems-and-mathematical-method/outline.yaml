@@ -1,46 +1,55 @@
 groups:
   - title: What a proof is
     intro: >
-      The area page gives a map of the whole volume. The next two entries say what counts as a proof, a finite
-      chain of justified steps, and why only deduction proves, while checking cases and guessing explanations only
-      suggest. Forty prime values of $n^2 + n + 41$ in a row still prove nothing about all $n$.
+      The area page maps the volume. The next two entries fix the central notion: a [proof](/0B94TKFQJX/) of a
+      statement is a finite chain of steps, each a hypothesis, an axiom, a definition, an earlier result or a
+      consequence of earlier steps by a valid rule of inference. Only deduction gives such a chain; checking cases
+      (induction in the everyday sense) and guessing an explanation (abduction) suggest statements but prove none,
+      as $n^2 + n + 41$ shows: it is prime for $n = 0, 1, \dots, 39$ and equals $41^2$ at $n = 40$.
     entries:
       - SGSVYFDSYK
       - 0B94TKFQJX
       - 5V35SGEN1T
 
-  - title: How results are stated
+  - title: How results are labelled and read
     intro: >
-      A proved statement gets a label, such as theorem, lemma or corollary, that tells the reader its role. Its
-      content is a conclusion that holds under stated hypotheses. These entries show how to read a statement and
-      how to test each hypothesis by dropping it and looking for a counterexample.
+      Once a statement is proved it gets a label. Theorem, proposition, lemma and corollary all mean "this has a
+      proof" and differ only in the role the statement plays in the text. Most results have the form "if
+      $H_1, \dots, H_k$, then $C$", and promise $C$ only when every hypothesis holds. The way to see
+      why a hypothesis is there is to drop it and find a counterexample, as $|x|$ on $[-1, 1]$ does for the
+      differentiability hypothesis of Rolle's theorem.
     entries:
       - KK5F0F03ZW
       - W48XN2MEM9
 
   - title: Axioms and conjectures
     intro: >
-      A theory starts from primitive terms and axioms and proves everything else. At the other end are statements
-      that are believed but not proved. The two entries show where proofs start, and how a conjecture becomes a
-      theorem, like [Fermat's Last Theorem](/0Y5X3SDBCZ/), or falls to a counterexample.
+      A chain of proofs must start somewhere, and the axiomatic method starts it on purpose, from primitive terms and
+      axioms. A system is consistent when it has a model, and an axiom is independent of the others when some model
+      satisfies the others and not it. At the far end of the chain stand conjectures: exact statements that are
+      believed but not proved, which end as theorems, as counterexamples, or as statements independent of the
+      axioms.
     entries:
       - GD2JBXJV5Z
       - WMEMMHZ3BH
 
-  - title: Why mathematicians prove, and how they work
+  - title: What proofs do and how mathematics is made
     intro: >
-      A proof does more than verify. It explains, communicates, leads to new results and puts results in order.
-      The second entry describes the wider method: how concepts are formed, how problems are chosen and how
-      results are tested before a proof exists.
+      A proof verifies, but it also explains, communicates, leads to new results and fits a result into a system of
+      axioms and theorems; two correct proofs of one statement can do different jobs. The methodology of mathematics
+      studies the path behind the finished proof: examples, special cases, analogies, conjectures and refutations.
+      This group uses the notions of proof, conjecture and axiom system from the first three groups.
     entries:
       - ENY0GKRJS8
       - 3FJ3XMV9KD
 
   - title: Examples, generalization and classification
     intro: >
-      Mathematicians learn from examples and non-examples, pass from cases to general notions, and sort objects
-      into lists up to equivalence with invariants. The last entry contrasts two styles of research: solving hard
-      single problems and building general theories.
+      Examples and non-examples give a definition its content and test conjectures. Abstraction and generalization make one proof cover many cases, as Lagrange's theorem for a finite
+      group gives Fermat's little theorem $a^{p-1} \equiv 1 \pmod p$ for every prime $p$ and every $a$ not divisible
+      by $p$. Classification sorts objects up to an equivalence relation by invariants: equal invariants are
+      necessary for equivalence, and a complete invariant is also sufficient, as dimension is for finite-dimensional
+      vector spaces over one field. The last entry contrasts problem solving with theory building.
     entries:
       - F3NNR77WKP
       - 976RZZCT1H

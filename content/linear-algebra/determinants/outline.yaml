@@ -2,26 +2,30 @@
 groups:
   - title: Small determinants
     intro: >
-      The formula $ad - bc$ decides whether a $2 \times 2$ system has a unique solution and gives the signed
-      area of a parallelogram. The rule of Sarrus does the same for $3 \times 3$ matrices, and its attached
-      examples show why no such picture works from size $4$ on.
+      For a $2 \times 2$ matrix the number $ad - bc$ is nonzero exactly when the matrix is invertible, and its
+      absolute value is the area of the parallelogram spanned by the columns. The rule of Sarrus gives the six
+      terms of the $3 \times 3$ case. Both are the patterns that the general definition must explain.
     entries:
       - 0ZN2J42SK7
       - 7H2P40X0MV
   - title: The definition
     intro: >
-      An alternating multilinear map is linear in each argument and vanishes when two arguments are equal.
-      The determinant is the unique such map of the columns that takes the value $1$ at the identity matrix.
-      The Leibniz formula writes it out as a signed sum over all $n!$ permutations.
+      A multilinear map of $n$ vectors is alternating when it vanishes whenever two arguments are equal; it is then
+      antisymmetric, and the converse holds when $2$ is invertible. Over a commutative ring $R$ there is exactly one
+      alternating multilinear map of the $n$ columns of an $n \times n$ matrix that takes the value $1$ at $I_n$.
+      This is the determinant, and the Leibniz formula writes it as $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma)
+      \prod_i a_{i \sigma(i)}$.
     entries:
       - 0K6CH0MT0F
       - 00KDZRW4C0
       - 016PE4VZ8Q
   - title: Rules for computing
     intro: >
-      These rules turn the definition into a method. Linearity in each row, the effect of the three row
-      operations and the triangular rule give the standard computation by elimination. The transpose rule
-      lets every statement about rows be read for columns.
+      From the Leibniz formula: the determinant is linear in each row, vanishes when two rows are equal or a row is
+      zero, changes sign under a swap of rows, is unchanged when a multiple of one row is added to another, equals
+      the product of the diagonal entries for a triangular matrix, and satisfies $\det A^{\mathsf{T}} = \det A$, so
+      every rule for rows holds for columns. Together these let Gaussian elimination compute a determinant in about
+      $n^3$ operations.
     entries:
       - 0PPG793642
       - 0K4VQB7HWR
@@ -30,10 +34,9 @@ groups:
       - 0ZZQ2E1MTE
   - title: Products and invertibility
     intro: >
-      The determinant is multiplicative, so it is a group homomorphism from invertible matrices to nonzero
-      scalars. Over a field a matrix is invertible exactly when its determinant is nonzero. Over a commutative
-      ring the condition is that the determinant is a unit, which settles when an integer matrix has an
-      integer inverse.
+      Over a commutative ring, $\det(AB) = \det A \det B$ for square matrices of the same size. Hence
+      $\det(A^{-1}) = (\det A)^{-1}$ for invertible $A$. Over a field, a square matrix is invertible exactly when
+      its determinant is nonzero; over a commutative ring, exactly when its determinant is a unit of the ring.
     entries:
       - 04CPJ6AF00
       - 0783S9D0ZH
@@ -41,10 +44,12 @@ groups:
       - 03Q7RE2HXR
   - title: Minors, cofactors and the adjugate
     intro: >
-      A minor is the determinant of a square submatrix, and a cofactor is a signed minor of size $n - 1$.
-      Laplace expansion computes a determinant from the cofactors of one row or column. The adjugate collects
-      the cofactors, satisfies $A \operatorname{adj} A = \det A \cdot I$ over every commutative ring, and gives
-      a formula for the inverse and Cramer's rule.
+      Deleting a row and a column leaves a minor, and the signed minors are the cofactors. For $n \ge 2$ the
+      Laplace expansion computes $\det A$ along any row or column, and an expansion with the cofactors of a
+      different row gives $0$. Over any commutative ring this is the identity $A \operatorname{adj} A =
+      \operatorname{adj} A \, A = (\det A) I$. It gives the inverse $(\det A)^{-1} \operatorname{adj} A$ when
+      $\det A$ is a unit, and Cramer's rule $x_i = \det A_i / \det A$ for a square system over a field with
+      $\det A \ne 0$.
     entries:
       - 0BT9BYWVRY
       - 0XPKR18APA
@@ -55,10 +60,13 @@ groups:
       - 0977KZ6PQB
   - title: Block matrices and classical identities
     intro: >
-      Block triangular matrices and the Schur complement reduce a large determinant to smaller ones. The
-      Vandermonde, Cauchy-Binet, Weinstein-Aronszajn and rank one update formulas follow, together with the
-      identities of Sylvester and Desnanot-Jacobi that justify Dodgson condensation. The group ends with the
-      description of the rank by nonzero minors.
+      With square diagonal blocks, a block triangular matrix has determinant $\det A \det D$; when $A$ is
+      invertible, row operations on blocks give $\det \begin{pmatrix} A & B \\ C & D \end{pmatrix} = \det A
+      \det(D - C A^{-1} B)$. From these and the product rule come the Vandermonde determinant
+      $\prod_{i<j} (x_j - x_i)$, the Cauchy–Binet formula for $\det(AB)$ with $A$ of size $m \times n$ and $B$ of
+      size $n \times m$, the identity $\det(I_m + AB) = \det(I_n + BA)$, the matrix determinant lemma,
+      Sylvester's identity and Dodgson condensation. The group ends with the rank of a matrix over a field as the
+      largest size of a nonzero minor.
     entries:
       - 0J9TVTNB4K
       - 0KA7A4ENVJ
@@ -69,22 +77,24 @@ groups:
       - 7SSKBQYFW1
       - RQ44FKS5QM
       - HVHQ50TJB1
-  - title: Maps, volume and orientation
+  - title: Linear maps, volume and orientation
     intro: >
-      Similar matrices have the same determinant, so an endomorphism of a finite-dimensional space has a
-      determinant of its own. Measured against a basis, the determinant of a family of vectors is a signed
-      volume. Over $\R$ its absolute value is the factor by which a map scales volume, and its sign says
-      whether the map keeps or reverses orientation.
+      For an endomorphism $T$ of a finite-dimensional vector space, the determinant of its matrix in one basis
+      used on both sides does not depend on the basis, by the product rule; this defines $\det T$. A family of
+      $n$ vectors has a determinant in a basis, and a real linear map $x \mapsto Ax$ multiplies Lebesgue measure by
+      $\abs{\det A}$. Two ordered bases of a real space have the same orientation when the change of basis matrix
+      has positive determinant.
     entries:
       - 0X0HQYSZ0K
       - 05CJSSXPR3
       - RC5BTSG8T2
       - 0QJJAQ6ZYZ
-  - title: Derivative and Pfaffian
+  - title: The derivative and the Pfaffian
     intro: >
-      Jacobi's formula differentiates a determinant along a curve of matrices, through the adjugate and the
-      trace. For a skew-symmetric matrix of even size the determinant is the square of a polynomial in the
-      entries, the Pfaffian.
+      For a differentiable matrix function $A(t)$ over $\R$ or $\C$, Jacobi's formula gives
+      $\frac{d}{dt} \det A(t) = \operatorname{tr}(\operatorname{adj} A(t) \, A'(t))$, which uses the adjugate of
+      the fifth group. For a skew-symmetric matrix of even size the determinant is the square of a polynomial in
+      the entries, the Pfaffian, and $\operatorname{pf}(B A B^{\mathsf{T}}) = \det B \operatorname{pf} A$.
     entries:
       - 357FEAZ0Q4
       - NH5HWBPWS9

@@ -1,25 +1,33 @@
-2. The third row is the sum of the first two and the first two rows are independent, so the rank is $2$. The column space and the row space have dimension $2$, the null space $3$ and the left null space $1$, spanned by $(1, 1, -1)$.
+1. Write each image in the basis $C$: $(a, b) = a(1, 1) + (b - a)(0, 1)$. The images $(1, 0)$, $(0, 1)$, $(2, -1)$ give $[T]_{C,E} = \begin{pmatrix} 1 & 0 & 2 \\ -1 & 1 & -3 \end{pmatrix}$.
 
-3. The column space of $R$ is not that of $A$. The pivot is in column $1$, so take column $1$ of $A$: $(1, 2)$ is a basis.
+3. The columns $(1, 1, 1)$ and $(1, 2, 3)$ span the plane $b_1 - 2b_2 + b_3 = 0$. The vector $(2, 3, 5)$ is not in it, since $2 - 6 + 5 = 1$. The vector $(1, 0, -1)$ is, and $x = (2, -1)$.
 
-5. (a) Similar: both have trace $5$ and determinant $-2$, so the same two distinct eigenvalues, and both are diagonalizable. (b) Not similar: the traces are $5$ and $6$. (c) Not similar: the ranks are $1$ and $0$.
+5. Rows $1$ and $3$ are multiples of $(1, 2, 3)$, and row $2$ is a multiple of it exactly when $t = 6$. So the rank is $1$ for $t = 6$ and $2$ otherwise.
 
-7. $3 + 4 - 5 \le \operatorname{rank}(AB) \le \min(3, 4)$, so the rank is $2$ or $3$.
+6. The determinant is $2$, so the rank over $\R$ is $3$. Over $\mathbb{F}_2$ the determinant is $0$ and the sum of the three rows is $0$, while the first two rows are independent; the rank is $2$.
 
-8. $\operatorname{Null}(A^\top)$ is spanned by $(1, -2, 1)$, so the condition is $b_1 - 2b_2 + b_3 = 0$. The first system is solvable, with $x = (0, 1)$; the second is not.
+7. Conjugate by $P = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, which reverses the order of the basis. The determinants are $-2$ and $0$, so the second pair is not similar.
 
-11. The reduced form is $\begin{pmatrix} 1 & 2 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$ with pivots in columns $1$ and $3$. Column space: $(1, 2, 1)$, $(1, 3, 2)$. Row space: $(1, 2, 0)$, $(0, 0, 1)$. Null space: $(-2, 1, 0)$. Left null space: $(1, -1, 1)$. Then $C$ has columns $(1, 2, 1)$ and $(1, 3, 2)$, and $R$ is the first two rows of the reduced form.
+9. $P$ has the new basis vectors as columns, so it turns new coordinates into old ones. The new coordinates are $P^{-1}\binom{3}{4} = \binom{3}{-2}$, and indeed $3(1, 2) - 2(0, 1) = (3, 4)$.
 
-15. On the basis of matrix units, $X \mapsto AXB$ has trace $\operatorname{tr} A \cdot \operatorname{tr} B$: the coefficient of $E_{ij}$ in $A E_{ij} B$ is $a_{ii} b_{jj}$. Hence $X \mapsto AX - XA$ has trace $n \operatorname{tr} A - n \operatorname{tr} A = 0$.
+10. The matrix is $\begin{pmatrix} 1 & -1 & 1 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \end{pmatrix}$, with determinant $2$. Solving gives $p = 1 + x^2$.
 
-20. The third row is twice the first plus the second, so $(2, 1, -1)$ spans $\operatorname{Null}(A^\top)$, and the condition is $2b_1 + b_2 - b_3 = 0$.
+13. $AB = 0$ says $\operatorname{Col} B \subseteq \operatorname{Null} A$. So $\operatorname{rank} B \le \dim \operatorname{Null} A = n - \operatorname{rank} A$.
 
-21. If the eigenvalues are distinct, both matrices are similar to the same diagonal matrix. If there is one eigenvalue $\lambda$ and $A \ne \lambda I$, pick $v$ with $(A - \lambda I)v \ne 0$; in the basis $(A - \lambda I)v$, $v$ the matrix is $\begin{pmatrix} \lambda & 1 \\ 0 & \lambda \end{pmatrix}$. A multiple of $I$ is similar only to itself.
+16. $\det A = 0$ and $\operatorname{Null} A^{\mathsf{T}} = \R(1, -1, 1)$, so the condition is $b_1 - b_2 + b_3 = 0$. For $b = (1, 5, 4)$ the solutions are $(3, -1, 0) + t(-1, 1, 1)$. For $b = (1, 0, 0)$ the test gives $1 \ne 0$.
 
-22. Use matrix units. For $i \ne j$, $E_{ij} = E_{ij} E_{jj}$ and $E_{jj} E_{ij} = 0$, so $f(E_{ij}) = 0$. Also $f(E_{ii}) = f(E_{i1} E_{1i}) = f(E_{1i} E_{i1}) = f(E_{11})$. Take $c = f(E_{11})$.
+18. $BA = A^{-1}(AB)A$. For the counterexample take $A = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ and $B = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$: then $AB = B \ne 0$ but $BA = 0$, and only $0$ is similar to $0$.
 
-23. Restrict $A$ to $\operatorname{Col}(B)$ and to its subspace $\operatorname{Col}(BC)$. By rank–nullity, $\operatorname{rank} B - \operatorname{rank}(AB)$ and $\operatorname{rank}(BC) - \operatorname{rank}(ABC)$ are the dimensions of $\ker A \cap \operatorname{Col}(B)$ and $\ker A \cap \operatorname{Col}(BC)$, and the second space lies in the first.
+19. Take traces: $\operatorname{tr}(XY - YX) = 0$, while $\operatorname{tr} I = n \cdot 1$. Over $\mathbb{F}_2$, $X = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $Y = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ give $XY - YX = \operatorname{diag}(1, -1) = I$.
 
-24. $A^2 = 0$ means $\operatorname{Col}(A) \subseteq \operatorname{Null}(A)$, so $r \le n - r$. The matrix with $a_{12} = a_{34} = 1$ and all other entries $0$ has rank $2$.
+20. $A = u\mathbf{1}^{\mathsf{T}} + \mathbf{1}u^{\mathsf{T}}$ with $u = (1, 2, \dots, n)$, a sum of two matrices of rank $1$, so the rank is at most $2$. The top left $2 \times 2$ block $\begin{pmatrix} 2 & 3 \\ 3 & 4 \end{pmatrix}$ has determinant $-1$.
 
-25. $T$ fixes each $E_{ii}$ and swaps $E_{ij}$ with $E_{ji}$ for $i < j$. So in the basis of matrix units, $T$ is a direct sum of $n$ blocks $(1)$ and $n(n-1)/2$ blocks $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, each of trace $0$ and determinant $-1$.
+21. Choose a basis of $F^n$ whose last $n - r$ vectors span $\operatorname{Null} A$. The images of the first $r$ vectors are a basis of $\operatorname{Col} A$; extend them to a basis of $F^m$. In these bases the matrix of $x \mapsto Ax$ is the block matrix, and the change of basis formula gives $P$ and $Q$.
+
+22. Use the matrix units $E_{ij}$. For $i \ne j$, $E_{ij} = E_{ii}E_{ij}$ while $E_{ij}E_{ii} = 0$, so $f(E_{ij}) = 0$. Also $E_{ii} = E_{ij}E_{ji}$ and $E_{jj} = E_{ji}E_{ij}$, so $f(E_{ii}) = f(E_{jj}) = c$ for all $i, j$.
+
+23. Apply rank-nullity to the restriction of $x \mapsto Ax$ to $\operatorname{Col} B$: its image is $\operatorname{Col}(AB)$ and its kernel is $\operatorname{Col} B \cap \operatorname{Null} A$. That kernel has dimension at most $\dim \operatorname{Null} A = n - \operatorname{rank} A$.
+
+24. If $A$ is not scalar, some $v$ is not an eigenvector, and $v$, $Av$ is a basis. By the Cayley–Hamilton relation $A^2 = (\operatorname{tr} A)A - (\det A)I$, the matrix of $A$ in this basis is $\begin{pmatrix} 0 & -\det A \\ 1 & \operatorname{tr} A \end{pmatrix}$. The transpose is not scalar either and has the same trace and determinant, so it is similar to the same matrix.
+
+25. Write $A = uv^{\mathsf{T}}$, so $\operatorname{tr} A = v^{\mathsf{T}}u$. If $\operatorname{tr} A \ne 0$, take $u$ followed by a basis of $\operatorname{Null} A = \set{x : v^{\mathsf{T}}x = 0}$. If $\operatorname{tr} A = 0$, then $u \in \operatorname{Null} A$; take $u$, then a vector $w$ with $v^{\mathsf{T}}w = 1$, then $n - 2$ further vectors that complete $u$ to a basis of $\operatorname{Null} A$.

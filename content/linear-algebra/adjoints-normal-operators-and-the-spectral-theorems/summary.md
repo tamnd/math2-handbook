@@ -1,31 +1,29 @@
 ## What to remember
 
-- The **adjoint** of $T \colon V \to W$ is the unique linear map $T^* \colon W \to V$ with $\langle Tv, w \rangle = \langle v, T^* w \rangle$. In orthonormal bases $[T^*] = [T]^*$, the conjugate transpose. In an arbitrary basis $B$ of $V$, $[T^*]_B = H^{-1} [T]_B^* H$ with $H_{ij} = \langle b_j, b_i \rangle$.
-- $\ker T^* = (\operatorname{im} T)^\perp$ and $\operatorname{im} T^* = (\ker T)^\perp$, so $\operatorname{rank} T^* = \operatorname{rank} T$.
-- A **self-adjoint** operator, $T^* = T$, has only real eigenvalues, and it has an eigenvector even over $\R$: the maximum of $\langle Tv, v \rangle$ on the unit sphere is an eigenvalue. Over $\C$, $T$ is self-adjoint exactly when $\langle Tv, v \rangle$ is real for all $v$.
-- For a **normal** operator, $T T^* = T^* T$, eigenvectors for distinct eigenvalues are orthogonal, and $\norm{Tv} = \norm{T^* v}$ for all $v$.
-- **Schur:** every complex square matrix is $A = Q U Q^*$ with $Q$ unitary and $U$ upper triangular, with the eigenvalues on the diagonal. A real matrix has a real form with $1 \times 1$ and $2 \times 2$ diagonal blocks and an orthogonal $Q$.
-- **Spectral theorems:** over $\C$, $T$ has an orthonormal eigenbasis exactly when $T$ is normal, so $A = U D U^*$. Over $\R$, exactly when $T$ is self-adjoint, so a real matrix is $Q D Q^{\mathsf{T}}$ with $Q$ orthogonal exactly when it is symmetric.
-- **Spectral decomposition:** $T = \sum_j \lambda_j P_j$, with $P_j$ the orthogonal projections onto the eigenspaces, $P_i P_j = 0$ for $i \ne j$ and $\sum_j P_j = I$. Then $p(T) = \sum_j p(\lambda_j) P_j$ for every polynomial $p$, and $T^* = \sum_j \overline{\lambda_j} P_j$.
-- A **real normal** matrix is orthogonally similar to a block diagonal matrix with blocks $(c)$ and $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$, $b > 0$, one for each pair $a \pm ib$ of non-real eigenvalues.
-- **Rayleigh quotient:** for self-adjoint $T$, $R(v) = \langle Tv, v \rangle / \langle v, v \rangle$ has maximum $\lambda_{\max}$ and minimum $\lambda_{\min}$, and an error of size $\varepsilon$ in an eigenvector gives an error of size $\varepsilon^2$ in $R$.
+- **[Adjoint](/0R9NMSM1ZP/):** for a linear map $T \colon V \to W$ between finite-dimensional inner product spaces over $\R$ or $\C$, there is exactly one linear map $T^* \colon W \to V$ with $\ip{Tv}{w} = \ip{v}{T^*w}$ for all $v \in V$ and $w \in W$. It satisfies $(ST)^* = T^*S^*$ and $(T^*)^* = T$.
+- **[Matrix of the adjoint](/0DBTE6HVBD/):** if $B$ and $C$ are orthonormal bases, the matrix of $T^*$ is the conjugate transpose of the matrix of $T$, and over $\R$ the transpose. In a basis that is not orthonormal, $[T^*]_B = H^{-1}[T]_B^* H$ with $H_{ij} = \ip{b_j}{b_i}$.
+- **[Kernel and image](/YPP8XT6B7Y/):** for $T \colon V \to W$ with $V$ and $W$ finite-dimensional, $\ker T^* = (\im T)^\perp$ and $\im T^* = (\ker T)^\perp$, so $\rank T^* = \rank T$, and $T$ is injective exactly when $T^*$ is surjective.
+- **[Self-adjoint operators](/0NEGN5CRSC/):** if $T^* = T$ on a finite-dimensional inner product space, then [every eigenvalue is real](/0C4NT4GT3X/) and, if $V \ne 0$, an eigenvalue exists, even over $\R$. If $T$ is normal, in particular self-adjoint, then [eigenvectors for distinct eigenvalues are orthogonal](/0JHGAV9H25/).
+- **[Schur decomposition](/V1JG4C7R7B/):** every complex $n \times n$ matrix is $QUQ^*$ with $Q$ unitary and $U$ upper triangular, the eigenvalues on the diagonal of $U$. A real matrix is $QMQ^{\mathsf{T}}$ with $Q$ real orthogonal and $M$ block upper triangular, with blocks of size $1$ and $2$.
+- **[Spectral theorems](/04CW1P44VD/):** on a finite-dimensional complex inner product space, $T$ has an orthonormal basis of eigenvectors if and only if $T$ is [normal](/0C8BR8XRTR/), $TT^* = T^*T$. On a finite-dimensional real inner product space, $T$ has one if and only if $T$ is self-adjoint, so a real matrix is $QDQ^{\mathsf{T}}$ with $Q$ orthogonal and $D$ diagonal exactly when it is [symmetric](/06J4PXRG22/). A [Hermitian matrix](/0DGZBQWZWN/) is $UDU^*$ with $U$ unitary and $D$ real.
+- **[Spectral decomposition](/D5KVBA1K9R/):** if $V$ has an orthonormal eigenbasis of $T$, with distinct eigenvalues $\lambda_1, \dots, \lambda_m$ and orthogonal projections $P_i$ onto the eigenspaces, then $T = \sum_i \lambda_i P_i$, $\sum_i P_i = I$, $P_iP_j = 0$ for $i \ne j$, $p(T) = \sum_i p(\lambda_i)P_i$ for every polynomial $p$, and $P_i = \prod_{j \ne i} (T - \lambda_j I)/(\lambda_i - \lambda_j)$.
+- **[Real normal operators](/G6T1FNE3JC/) and [commuting families](/BFQQDA489F/):** a real normal matrix $A$ has $Q^{\mathsf{T}}AQ$ block diagonal for some orthogonal $Q$, with $1 \times 1$ blocks and blocks $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ with $b > 0$. A set of normal operators on a finite-dimensional complex space, or of self-adjoint operators on a real one, has a common orthonormal eigenbasis if and only if its members commute pairwise.
+- **[Rayleigh quotient](/06WHP8SE98/):** for $T$ self-adjoint on a finite-dimensional space and $v \ne 0$, $R(v) = \ip{Tv}{v}/\ip{v}{v}$ is a weighted average of the eigenvalues, so $\lambda_{\min} \le R(v) \le \lambda_{\max}$, with equality exactly at eigenvectors of the extreme eigenvalues.
 
-## Which operators diagonalize in an orthonormal basis
+| Class | Condition | Eigenvalues | Orthonormal eigenbasis over $\R$ |
+|---|---|---|---|
+| [Self-adjoint](/0NEGN5CRSC/) | $T^* = T$ | real | yes |
+| Skew-adjoint | $T^* = -T$ | purely imaginary | only if $T = 0$ |
+| Unitary or orthogonal | $T^*T = I$ | of absolute value $1$ | only if every eigenvalue is $\pm 1$ |
+| [Normal](/0C8BR8XRTR/) | $TT^* = T^*T$ | any complex numbers | only if all eigenvalues are real |
 
-| Operator | Condition | Eigenvalues | Orthonormal eigenbasis over $\C$ | over $\R$ |
-|---|---|---|---|---|
-| [Self-adjoint](/0NEGN5CRSC/) | $T^* = T$ | real | yes | yes |
-| Skew-adjoint | $T^* = -T$ | purely imaginary or $0$ | yes | only if $T = 0$ |
-| [Unitary or orthogonal](/0AR68JTMDT/) | $T^* T = I$ | $\abs{\lambda} = 1$ | yes | only if $T^2 = I$ |
-| [Normal](/0C8BR8XRTR/) | $T T^* = T^* T$ | any | yes | only if self-adjoint |
-| General | none | any | not in general; [Schur](/V1JG4C7R7B/) gives a triangular form | not in general |
-
-: Each class in the first four rows is normal. Over $\R$ the eigenbasis exists only when all eigenvalues are real, which for a normal operator means self-adjoint; otherwise the real normal form uses $2 \times 2$ blocks.
+: The classes of normal operators; over $\C$ each has an orthonormal eigenbasis.
 
 ## Common errors
 
-- **Taking the transpose in a basis that is not orthonormal.** $[T^*]_B = [T]_B^*$ needs an orthonormal basis $B$. With a weighted inner product or a skew basis, use $H^{-1} [T]_B^* H$.
-- **Concluding orthogonality from distinct eigenvalues alone.** $\begin{pmatrix} 2 & 3 \\ 0 & -1 \end{pmatrix}$ has distinct eigenvalues and eigenvectors $(1, 0)$ and $(1, -1)$, which are not orthogonal. Orthogonality needs normality.
-- **Reading a complex symmetric matrix as Hermitian.** $A^{\mathsf{T}} = A$ over $\C$ says nothing about real eigenvalues; Hermitian means $A^* = A$.
-- **Choosing any eigenbasis for simultaneous diagonalization.** When an operator has a repeated eigenvalue, not every orthonormal eigenbasis of it diagonalizes a commuting partner; diagonalize inside each eigenspace.
-- **Using the Rayleigh bounds for a non-symmetric matrix.** For $\begin{pmatrix} 1 & 4 \\ 0 & 1 \end{pmatrix}$ the quotient takes the values $3$ and $-1$, outside the only eigenvalue $1$.
+- **Transposing in a basis that is not orthonormal.** The matrix of $T^*$ is the conjugate transpose of the matrix of $T$ only in orthonormal bases.
+- **Forgetting the conjugate.** Over $\C$ the adjoint matrix is $\bar A^{\mathsf{T}}$, not $A^{\mathsf{T}}$. A complex symmetric matrix such as $\begin{pmatrix} 1 & i \\ i & -1 \end{pmatrix}$ need not be normal, or even diagonalizable.
+- **Real eigenvalues are not enough.** A real matrix with real eigenvalues and an eigenbasis, such as $\begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$, need not have an orthogonal one. The spectral theorem needs symmetry, or normality over $\C$.
+- **Using the complex spectral theorem over $\R$.** A real normal matrix such as a rotation by a right angle has no real eigenvectors. Over $\R$ only the block form of the normal form theorem survives.
+- **Choosing an arbitrary basis in a repeated eigenspace.** Within an eigenspace of dimension $2$ or more, the eigenvectors must be orthonormalized by Gram–Schmidt. For a commuting family, an arbitrary eigenbasis of one member need not diagonalize the others.
+- **Reading the Rayleigh bounds for a matrix that is not symmetric.** For a real matrix that is not symmetric, $x^{\mathsf{T}}Ax/x^{\mathsf{T}}x$ sees only the symmetric part, so it need not lie between the eigenvalues.

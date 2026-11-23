@@ -57,6 +57,9 @@ def _arg(s: str, i: int) -> tuple[str, int] | None:
     return s[i], i + 1
 
 
+_ACCENT = re.compile(r"\\(?:overline|underline|bar|hat|tilde|vec|dot|ddot|check|breve|widehat|widetilde|sqrt)$")
+
+
 def expand(math: str, defs: dict[str, tuple[int, str]], depth: int = 0) -> str:
     if depth > 8 or "\\" not in math:
         return math
@@ -94,7 +97,9 @@ def expand(math: str, defs: dict[str, tuple[int, str]], depth: int = 0) -> str:
         # also after a body that ends in a control word: `\ip{x}{u}u` → `\left\langle x, u\right\rangle u`
         if math[j:j + 1].isalpha() and ((not n and rep[-1:].isalpha()) or re.search(r"\\[A-Za-z]+$", rep)):
             rep += " "
-        if math[:m.start()].rstrip()[-1:] in ("_", "^"):   # a bare script, `S_\N`: it needs its braces
+        before = math[:m.start()].rstrip()
+        # a bare script, `S_\N`, or a bare accent, `\overline \Q` (it would take only the \mathbb): it needs its braces
+        if before[-1:] in ("_", "^") or (n == 0 and _ACCENT.search(before)):
             rep = "{" + rep + "}"
         out.append(math[i:m.start()] + rep)
         i = j

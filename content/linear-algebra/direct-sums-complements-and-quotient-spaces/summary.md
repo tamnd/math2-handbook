@@ -1,32 +1,30 @@
 ## What to remember
 
-- **Direct sum.** $V = U_1 \oplus \cdots \oplus U_k$ when every $v \in V$ is $u_1 + \cdots + u_k$ with $u_i \in U_i$ in exactly one way. For two subspaces this holds exactly when $U + W = V$ and $U \cap W = 0$; in finite dimension, when $U \cap W = 0$ and $\dim U + \dim W = \dim V$. For three or more subspaces, zero pairwise intersections are not enough.
-- **External sum and product.** The direct sum $\bigoplus_i V_i$ consists of the families $(v_i)$ with only finitely many $v_i \ne 0$; the product $\prod_i V_i$ allows all families. They agree for finitely many factors. Maps out of $\bigoplus_i V_i$ and maps into $\prod_i V_i$ are given by families of maps on the factors.
-- **Complements** exist for every subspace, by extending a basis of $U$ to a basis of $V$ (Zorn's lemma in general). They are unique only when $U = 0$ or $U = V$, and every complement of $U$ is isomorphic to $V/U$.
-- **Projections.** A linear map $P \colon V \to V$ with $P^2 = P$ gives $V = \operatorname{im} P \oplus \ker P$, and every decomposition $V = U \oplus W$ comes from exactly one projection, the one onto $U$ along $W$.
-- **Quotient.** $V/U = \set{v + U : v \in V}$, with $v + U = v' + U$ exactly when $v - v' \in U$. The quotient map $\pi(v) = v + U$ is linear and surjective with kernel $U$, and $\dim V/U = \dim V - \dim U$ when $V$ is finite-dimensional.
-- **Universal property.** If $T \colon V \to W$ is linear and $U \subseteq \ker T$, there is exactly one linear $\bar T \colon V/U \to W$ with $\bar T \circ \pi = T$, namely $\bar T(v + U) = T(v)$.
-- **Isomorphism theorems.** $V/\ker T \cong \operatorname{im} T$; $\;U/(U \cap W) \cong (U + W)/W$; and for $W \subseteq U \subseteq V$, $\;(V/W)/(U/W) \cong V/U$.
-- **Codimension.** $\operatorname{codim} U = \dim V/U$. Always $\operatorname{codim}(U \cap W) \le \operatorname{codim} U + \operatorname{codim} W$, with equality when $U + W = V$ and both codimensions are finite.
-- **Exact sequences.** $0 \to U \xrightarrow{f} V \xrightarrow{g} W \to 0$ is exact when $f$ is injective, $g$ is surjective and $\operatorname{im} f = \ker g$. Over a field it always splits, $V \cong U \oplus W$, and for a finite exact sequence of finite-dimensional spaces the alternating sum of the dimensions is $0$.
+- **[Internal direct sum](/0XYYT5KNTX/):** for subspaces $U_1, \dots, U_k$ of $V$, the sum $U_1 + \dots + U_k$ is direct when every vector of the sum is $u_1 + \dots + u_k$ with $u_i \in U_i$ in only one way, equivalently when $0$ has only the trivial decomposition. For two subspaces this means $U \cap W = \set{0}$. For three or more, pairwise trivial intersections are not enough; the test is $U_i \cap \sum_{j \ne i} U_j = \set{0}$ for each $i$.
+- **[Sums and products](/0EX2HPXPJ6/):** the [external direct sum](/0S7W6EG32V/) $\bigoplus_i V_i$ consists of the families $(v_i)$ with only finitely many $v_i \ne 0$; the direct product $\prod_i V_i$ allows all families. They agree for finitely many factors and differ for infinitely many.
+- **[Complements](/0M83V17KHX/):** a complement of $U$ in $V$ is a subspace $W$ with $V = U \oplus W$. [Every subspace has one](/0P9T8WHNMH/): extend a basis of $U$ to a basis of $V$ and take the span of the new vectors (in infinite dimension this uses the axiom of choice). Complements are not unique unless $U = \set{0}$ or $U = V$.
+- **[Projections](/033DA1WE8Y/):** a linear map $P \colon V \to V$ with $P^2 = P$ gives $V = \operatorname{im} P \oplus \ker P$, and every decomposition $V = U \oplus W$ comes from exactly one projection with image $U$ and kernel $W$. Then $I - P$ is the projection with image $W$ and kernel $U$.
+- **[Quotient space](/0BR3FY5Q8M/):** for a subspace $U$ of $V$, the cosets $v + U$ form a vector space $V/U$ with $(v + U) + (w + U) = (v + w) + U$ and $c(v + U) = cv + U$. Two cosets are equal, $v + U = w + U$, exactly when $v - w \in U$. If $V$ is finite-dimensional, [$\dim V/U = \dim V - \dim U$](/0SXDQ6TN00/), and every complement of $U$ maps isomorphically onto $V/U$.
+- **[Universal property](/0ZERJX6PH6/):** if $T \colon V \to W$ is linear and $U \subseteq \ker T$, there is exactly one linear $\bar T \colon V/U \to W$ with $\bar T(v + U) = T(v)$. It is injective exactly when $U = \ker T$.
+- **Isomorphism theorems:** [first](/0MTBGVZ4XJ/), $V/\ker T \cong \operatorname{im} T$; [second](/0APN65D6Y6/), $(U + W)/W \cong U/(U \cap W)$; [third](/07RB3EMBWW/), $(V/W)/(U/W) \cong V/U$ for $W \subseteq U \subseteq V$. None of them needs finite dimension.
+- **[Codimension](/JJCGJ1EGCQ/):** $\operatorname{codim} U = \dim V/U$, the dimension of any complement. A subspace of codimension $1$ is a hyperplane; $x\F[x]$ has codimension $1$ in $\F[x]$ though both are infinite-dimensional.
+- **[Exact sequences](/946YAZNYKX/):** $0 \to U \xrightarrow{f} V \xrightarrow{g} W \to 0$ is exact when $f$ is injective, $g$ is surjective and $\operatorname{im} f = \ker g$. For vector spaces every such sequence splits, $V \cong U \oplus W$, and in finite dimension $\dim V = \dim U + \dim W$.
 
-## Constructions compared
+| | Complement $W$ of $U$ | Quotient $V/U$ |
+|---|---|---|
+| Where it lives | inside $V$ | outside $V$, as a set of cosets |
+| Depends on a choice | yes | no |
+| Dimension (finite $V$) | $\dim V - \dim U$ | $\dim V - \dim U$ |
+| Comes with a map | inclusion $W \to V$ and projection along $U$ | quotient map $V \to V/U$, $v \mapsto v + U$ |
+| Used for | splitting a vector into parts | maps that vanish on $U$ |
 
-| Construction | Elements | Dimension in finite cases | Depends on a choice |
-|---|---|---|---|
-| [Internal direct sum](/0XYYT5KNTX/) $U \oplus W$ | sums $u + w$, written uniquely | $\dim U + \dim W$ | no |
-| [External direct sum](/0S7W6EG32V/) $\bigoplus_i V_i$ | finitely supported families | $\sum_i \dim V_i$ | no |
-| [Direct product](/0EX2HPXPJ6/) $\prod_i V_i$ | all families | $\sum_i \dim V_i$ | no |
-| [Complement](/0M83V17KHX/) $W$ of $U$ | vectors of a subspace of $V$ | $\dim V - \dim U$ | yes |
-| [Quotient](/0BR3FY5Q8M/) $V/U$ | cosets $v + U$ | $\dim V - \dim U$ | no |
-
-: Five constructions. The direct sum and the product differ only for infinite families: $\bigoplus_{n \in \N} \R$ has countable dimension, while $\R^{\N}$ does not. A complement and the quotient are isomorphic, but only the quotient comes without a choice.
+: Two ways to cut away a subspace; restricting the quotient map to any complement is an isomorphism.
 
 ## Common errors
 
-- **Checking only pairwise intersections.** Three lines in $\R^2$ meet pairwise in $0$, but their sum is not direct. For several subspaces, test that each $U_i$ meets the sum of the others in $0$, or compare dimensions.
-- **Taking the orthogonal complement as the only complement.** In $\R^n$ the [orthogonal complement](/0XJXTBCB2T/) is one complement among many; any subspace of the right dimension that meets $U$ in $0$ will do.
-- **Treating a coset as a vector of $V$.** The coset $v + U$ is a set; $v$ is one of its representatives. A formula on $V/U$ is well defined only if it gives the same value for every representative; the condition $U \subseteq \ker T$ ensures this.
-- **Concluding $P = 0$ or $P = I$ from $P^2 = P$.** The equation $P(P - I) = 0$ has many solutions, because matrices have zero divisors. Every projection other than $0$ and $I$ is one.
-- **Reading $g \circ f = 0$ as exactness.** It says only $\operatorname{im} f \subseteq \ker g$. Exactness asks for equality.
-- **Carrying splitting over to groups.** The sequence $0 \to \Z \xrightarrow{2} \Z \to \Z/2 \to 0$ is exact but does not split, and $2\Z$ has no complement in $\Z$. Complements exist because the scalars form a field.
+- **Adding dimensions without checking the intersection.** $\dim U + \dim W = \dim V$ does not give $V = U \oplus W$; the subspaces may overlap. Check $U \cap W = \set{0}$ as well.
+- **Testing a sum of three subspaces pairwise.** Three distinct lines in $\R^2$ meet pairwise in $0$, but their sum is not direct.
+- **Calling a complement "the" complement.** A plane in $\R^3$ has infinitely many complementary lines. Only with an inner product is there a preferred one, the orthogonal complement.
+- **Defining a map on $V/U$ through a representative without checking it.** A formula $v + U \mapsto T(v)$ is well defined only when $T$ vanishes on $U$.
+- **Treating cosets as subspaces.** $v + U$ is a subspace only when $v \in U$, and then it is $U$ itself.
+- **Confusing the direct sum and the product.** For infinitely many factors, $\bigoplus$ is a proper subspace of $\prod$; the sequences with finitely many nonzero terms are not all sequences.

@@ -1,0 +1,18 @@
+## History
+
+Interpretations began as a tool for undecidability. Alfred Tarski, Andrzej Mostowski and Raphael Robinson set out the method in their book *Undecidable Theories* of 1953: if one theory interprets another whose theory is undecidable, then it is undecidable too. Julia Robinson had shown in 1949 that the integers are definable in the field $\Q$, so the theory of $\Q$ is undecidable because the theory of the ring $\Z$ is, and the [interpretation](/7R0SJPH37J/) of $\Q$ in $\Z$ goes the other way.
+
+Inside model theory the decisive step was Saharon Shelah's construction of $M^{\mathrm{eq}}$ and $T^{\mathrm{eq}}$ in his 1978 book *Classification Theory and the Number of Nonisomorphic Models*. Adding a sort for every quotient by a $\emptyset$-definable equivalence relation lets canonical parameters, canonical bases and definable groups and their cosets be treated as elements. Bruno Poizat introduced [elimination of imaginaries](/6M2R0ER3KV/) in "Une théorie de Galois imaginaire" (1983), where he proved it for algebraically closed fields and used it to give a Galois theory of definable closure. Real closed fields and differentially closed fields of characteristic $0$ were found to eliminate imaginaries as well. For algebraically closed valued fields, Deirdre Haskell, Ehud Hrushovski and Dugald Macpherson showed in 2006 that elimination holds after adding the geometric sorts, and their work used the [stable embeddedness](/14WPPDDK8M/) of the residue field and the value group. Zoé Chatzidakis and Hrushovski had made stably embedded sets a standard tool in their study of difference fields.
+
+Gisela Ahlbrandt and Martin Ziegler used [bi-interpretations](/KHZ1E7RMMQ/) in 1986, in a paper on totally categorical theories, and proved there that countable $\omega$-categorical structures are determined up to bi-interpretation by their automorphism groups as topological groups. The question of when the topology can be recovered from the abstract group led to the [small index property](/RZAF6NVEXC/), which Hodges, Hodkinson, Lascar and Shelah proved for the random graph and for the $\omega$-stable $\omega$-categorical structures.
+
+Hyperimaginaries came from stability and simplicity theory. Anand Pillay and Poizat proved in 1987 that in a stable theory every type-definable equivalence relation is an intersection of definable ones, so that stable theories eliminate hyperimaginaries. Bradd Hart, Byunghan Kim and Pillay introduced [hyperimaginaries](/NQPCDVV3NB/) in their work on canonical bases in simple theories, published in 2000, and Steven Buechler, Pillay and Frank Wagner proved in 2001 that supersimple theories eliminate them.
+
+## Further reading
+
+- Wilfrid Hodges, *Model Theory* (1993). The fullest textbook treatment of interpretations, with the coordinate map as part of the data, and of bi-interpretations and $M^{\mathrm{eq}}$.
+- Wilfrid Hodges, *A Shorter Model Theory* (1997). The same material on interpretations in a shorter form.
+- David Marker, *Model Theory: An Introduction* (2002). Interpretations in a first course, and imaginaries with the examples of algebraically closed fields.
+- Katrin Tent and Martin Ziegler, *A Course in Model Theory* (2012). A clear account of $M^{\mathrm{eq}}$, the three forms of elimination of imaginaries and Poizat's theorem.
+- Anand Pillay, *Geometric Stability Theory* (1996). Imaginaries, canonical parameters and stable embeddedness as they are used in stability theory.
+- Enrique Casanovas, *Simple Theories and Hyperimaginaries* (2011). Type-definable equivalence relations, hyperimaginaries and Lascar strong types.
